@@ -4,9 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 9 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'app-doc/*' 'app-text/*' 'dev-ml/*' 'games-engines/*' 'gnustep-base/*' 'mate-extra/*' 'net-irc/*' 'sci-chemistry/*' 'sys-freebsd/*' 'x11-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable --profile-disable-dev --profile-disable-exp
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
++ pkgcheck -r gentoo --reporter FancyReporter 'app-doc/*' 'app-text/*' 'dev-ml/*' 'games-engines/*' 'gnustep-base/*' 'mate-extra/*' 'net-irc/*' 'sci-chemistry/*' 'sys-freebsd/*' 'x11-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -67,8 +65,6 @@ app-doc/single-unix-specification
 
 app-doc/tldp-howto
   DeprecatedEAPI: version 20100701: uses deprecated EAPI: 2
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -76,8 +72,8 @@ app-text/7plus
   DeprecatedEAPI: version 2.25: uses deprecated EAPI: 0
 
 app-text/a2ps
-  NonExistentDeps: version 4.14-r1: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
   DeprecatedEAPI: version 4.14-r1: uses deprecated EAPI: 0
+  NonExistentDeps: version 4.14-r1: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
   DeprecatedEAPI: version 4.14-r2: uses deprecated EAPI: 3
 
 app-text/acroread
@@ -101,10 +97,10 @@ app-text/antixls
   DeprecatedEAPI: version 0.3b: uses deprecated EAPI: 0
 
 app-text/asciidoc
+  DeprecatedEAPI: version 8.6.5: uses deprecated EAPI: 3
   DeprecatedEclass: version 8.6.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 8.6.5: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 8.6.5: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
-  DeprecatedEAPI: version 8.6.5: uses deprecated EAPI: 3
 
 app-text/atril
   NonExistentDeps: version 1.8.0: depset depends: nonexistent atoms [ >=mate-base/mate-file-manager-1.6:0 ]
@@ -119,8 +115,8 @@ app-text/bibletime
   DroppedKeywordWarning: version 2.10.1: keywords dropped: ppc
 
 app-text/bibus
-  DeprecatedEclass: version 1.5.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.5.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.5.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 1.5.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-text/bibutils
@@ -135,9 +131,9 @@ app-text/calibre
   NonsolvableDeps: version 2.27.0: nonsolvable depset(rdepends) keyword(~arm) profile (default/linux/arm/13.0): solutions: [ >=dev-python/PyQt5-5.2.0[gui,network,printsupport,python_targets_python2_7(-),svg,webkit,widgets] ]
 
 app-text/chm2pdf
+  DeprecatedEAPI: version 0.9.1-r1: uses deprecated EAPI: 2
   DeprecatedEclass: version 0.9.1-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.9.1-r1: depset rdepends: nonexistent atoms [ <dev-libs/chmlib-0.40-r1 ]
-  DeprecatedEAPI: version 0.9.1-r1: uses deprecated EAPI: 2
 
 app-text/clara
   DeprecatedEAPI: version 20031214: uses deprecated EAPI: 0
@@ -145,8 +141,8 @@ app-text/clara
 app-text/cmigemo
   DeprecatedEAPI: version 1.3c: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.3c-r1: uses deprecated EAPI: 2
-  NonExistentDeps: version 1.3c-r2: depset depends: nonexistent atoms [ net-misc/fetch ]
   DeprecatedEAPI: version 1.3c-r2: uses deprecated EAPI: 2
+  NonExistentDeps: version 1.3c-r2: depset depends: nonexistent atoms [ net-misc/fetch ]
 
 app-text/code2html
   DeprecatedEAPI: version 0.9.1-r1: uses deprecated EAPI: 3
@@ -211,8 +207,8 @@ app-text/docbook-xml-simple-dtd
   DeprecatedEAPI: version 4.1.2.5-r2: uses deprecated EAPI: 0
 
 app-text/duali
-  DeprecatedEclass: version 0.2.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.2.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-text/dvibook
   DeprecatedEAPI: version 20001129: uses deprecated EAPI: 0
@@ -245,8 +241,8 @@ app-text/gentoo-guide-xml-dtd
   DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 0
 
 app-text/glark
-  DeprecatedEclass: version 1.8.0: uses deprecated eclass(es): [ bash-completion (migrate to bash-completion-r1) ]
   DeprecatedEAPI: version 1.8.0: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.8.0: uses deprecated eclass(es): [ bash-completion (migrate to bash-completion-r1) ]
   DroppedKeywordWarning: version 1.10.4: keywords dropped: mips
 
 app-text/gnopaster
@@ -272,8 +268,8 @@ app-text/jmupdf
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 app-text/landslide
-  DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-text/lcdf-typetools
   DeprecatedEAPI: version 2.97: uses deprecated EAPI: 2
@@ -347,12 +343,12 @@ app-text/namazu
   DroppedKeywordWarning: version 2.0.22_p1: keywords dropped: amd64, ppc, ppc64, x86
 
 app-text/nfoview
-  DeprecatedEclass: version 1.9.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.9.1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.10: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 1.9.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.10: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.12.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 1.10: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.12.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.12.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 app-text/noweb
@@ -393,20 +389,20 @@ app-text/psutils
   DeprecatedEAPI: version 1.17-r2: uses deprecated EAPI: 3
 
 app-text/pybookreader
-  DeprecatedEclass: version 0.5.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.5.0: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.5.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-text/pytextile
   DroppedKeywordWarning: version 2.2.1: keywords dropped: ppc, sparc
 
 app-text/queequeg
-  DeprecatedEclass: version 0.91: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.91: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.91: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-text/refbase
+  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 2
   NonExistentDeps: version 0.9.5: depset depends: nonexistent atoms [ <dev-lang/php-5.3 ]
   NonExistentDeps: version 0.9.5: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
-  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 2
 
 app-text/referencer
   DeprecatedEclass: version 1.2.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -416,8 +412,8 @@ app-text/rhyme
   DeprecatedEAPI: version 0.9-r1: uses deprecated EAPI: 2
 
 app-text/rpl
-  DeprecatedEclass: version 1.5.5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.5.5: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.5.5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-text/sablotron
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
@@ -438,8 +434,8 @@ app-text/sgml-common
   DeprecatedEAPI: version 0.6.3-r5: uses deprecated EAPI: 3
 
 app-text/silvercity
-  DeprecatedEclass: version 0.9.7: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.9.7: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-text/skribe
   DeprecatedEAPI: version 1.2l: uses deprecated EAPI: 3
@@ -486,8 +482,8 @@ app-text/tuxcards
   DeprecatedEAPI: version 2.2.1: uses deprecated EAPI: 3
 
 app-text/txt2tags
-  DeprecatedEclass: version 2.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.6: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-text/unpaper
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -499,20 +495,20 @@ app-text/vlna
   DeprecatedEAPI: version 1.5: uses deprecated EAPI: 0
 
 app-text/winefish
+  DeprecatedEAPI: version 1.3.3-r1: uses deprecated EAPI: 3
   MetadataError: version 1.3.3-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-text/winefish-1.3.3-r1, attr fetchables
 error: mirror://berlios/winefish/winefish-1.3.3.tgz is unparseable
 flagged token- uri mirror://berlios/winefish/winefish-1.3.3.tgz is has no known mirror tier
-  DeprecatedEAPI: version 1.3.3-r1: uses deprecated EAPI: 3
 
 app-text/wklej
+  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.2.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.2.0: depset depends: nonexistent atoms [ =dev-lang/python-3.1* ]
   NonExistentDeps: version 0.2.0: depset rdepends: nonexistent atoms [ =dev-lang/python-3.1* ]
-  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.2.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.2.1: depset depends: nonexistent atoms [ =dev-lang/python-3.1* ]
   NonExistentDeps: version 0.2.1: depset rdepends: nonexistent atoms [ =dev-lang/python-3.1* ]
-  DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 3
 
 app-text/writerperfect
   DroppedKeywordWarning: version 0.9.2: keywords dropped: ppc
@@ -531,8 +527,8 @@ app-text/xindy
   DeprecatedEAPI: version 2.4: uses deprecated EAPI: 3
 
 app-text/xmldiff
-  DeprecatedEclass: version 0.6.10: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.6.10: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.6.10: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-text/xournal
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -557,8 +553,6 @@ app-text/zathura-ps
 
 app-text/zemberek-server
   DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 2
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -576,12 +570,8 @@ dev-ml/pcre-ocaml
 
 dev-ml/react
   DroppedKeywordWarning: version 1.2.0: keywords dropped: x86
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -591,8 +581,6 @@ gnustep-base/gnustep-updater
 gnustep-base/mknfonts
   DeprecatedEAPI: version 0.5-r1: uses deprecated EAPI: 0
   MissingChksum: version 0.5-r1: "mknfonts.tool_0.5.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -603,8 +591,6 @@ mate-extra/caja-dropbox
 mate-extra/mate-user-share
   NonExistentDeps: version 1.8.0: depset depends: nonexistent atoms [ >=net-wireless/mate-bluetooth-1.6:0, >=mate-base/mate-file-manager-1.6:0 ]
   NonExistentDeps: version 1.8.0: depset rdepends: nonexistent atoms [ >=net-wireless/mate-bluetooth-1.6:0, >=mate-base/mate-file-manager-1.6:0 ]
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -650,9 +636,9 @@ net-irc/irker
   DeprecatedEclass: version 1.20: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 net-irc/irssi-otr
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 2
   NonExistentDeps: version 0.2: depset depends: nonexistent atoms [ net-irc/irssi-svn ]
   NonExistentDeps: version 0.2: depset rdepends: nonexistent atoms [ net-irc/irssi-svn ]
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 2
 
 net-irc/irssistats
   DeprecatedEAPI: version 0.75: uses deprecated EAPI: 0
@@ -692,14 +678,12 @@ net-irc/srvx
   DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
 
 net-irc/xchat-otr
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 2
   NonExistentDeps: version 0.3: depset depends: nonexistent atoms [ net-irc/xchat ]
   NonExistentDeps: version 0.3: depset rdepends: nonexistent atoms [ net-irc/xchat ]
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 2
 
 net-irc/znc
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -707,21 +691,23 @@ sci-chemistry/PyMca
   DeprecatedEclass: version 4.6.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 sci-chemistry/acpype
-  DeprecatedEclass: version 366: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 366: uses deprecated EAPI: 3
+  DeprecatedEclass: version 366: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 374: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 374: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 374: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
   MissingChksum: version 366: "acpype-366.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/apbs
+  WrongIndentFound: version 1.2.1b-r4: ebuild has whitespace in indentation on line 68
 
 sci-chemistry/ambertools
   MissingChksum: version 1.5-r1: "AmberTools-1.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.5-r1: "ambertools-1.5-bugfix_1-10.patch.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-chemistry/apbs
-  WrongIndentFound: version 1.2.1b-r4: ebuild has whitespace in indentation on line 68
-  DeprecatedEclass: version 1.2.1b-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.2.1b-r4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.2.1b-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 1.2.1b-r4: "apbs-1.2.1b-source.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-chemistry/aqua
@@ -732,12 +718,12 @@ sci-chemistry/avogadro
   DroppedKeywordWarning: version 1.1.0: keywords dropped: ppc, ppc64
 
 sci-chemistry/azara
-  DeprecatedEclass: version 2.8-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.8-r4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.8-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 sci-chemistry/balbes
-  DeprecatedEclass: version 1.0.0_p100317-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.0.0_p100317-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.0.0_p100317-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 1.0.0_p100317-r2: "balbes-1.0.0_p100317.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.0.0_p100317-r2: "ccp4-6.1.3-core-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
@@ -795,17 +781,17 @@ sci-chemistry/molrep
   MissingChksum: version 11.0.02: "molrep-11.0.02.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-chemistry/molsketch
+  DeprecatedEAPI: version 0.2.0-r1: uses deprecated EAPI: 3
   NonExistentDeps: version 0.2.0-r1: depset depends: nonexistent atoms [ <dev-qt/qthelp-4.7.0:4 ]
   NonExistentDeps: version 0.2.0-r1: depset rdepends: nonexistent atoms [ <dev-qt/qthelp-4.7.0:4 ]
-  DeprecatedEAPI: version 0.2.0-r1: uses deprecated EAPI: 3
 
 sci-chemistry/mpqc
   DeprecatedEAPI: version 2.3.1-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.3.1-r2: uses deprecated EAPI: 2
 
 sci-chemistry/mrbump
-  DeprecatedEclass: version 0.4.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.4.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.4.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0.4.4: "mrbump-0.4.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 sci-chemistry/msms-bin
@@ -816,19 +802,19 @@ sci-chemistry/mustang
   MissingChksum: version 3.2.1: "mustang_v3.2.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 sci-chemistry/openbabel
-  DeprecatedEclass: version 2.2.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.2.3: uses deprecated EAPI: 3
-  MissingChksum: version 2.2.3: "openbabel-2.2.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  DeprecatedEclass: version 2.2.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DroppedKeywordWarning: version 2.3.2: keywords dropped: ppc64
+  MissingChksum: version 2.2.3: "openbabel-2.2.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-chemistry/ortep3
   MissingChksum: version 1.0.3-r1: "ortep.f" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-chemistry/p3d
-  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 3
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0.4.3: "p3d-0.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 sci-chemistry/pdb-extract
@@ -837,10 +823,10 @@ sci-chemistry/pdb-extract
   MissingChksum: version 3.11: "pdb-extract-v3.11-prod-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 sci-chemistry/pdb2pqr
+  DeprecatedEAPI: version 1.5.0-r2: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.5.0-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 1.5.0-r2: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 1.5.0-r2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
-  DeprecatedEAPI: version 1.5.0-r2: uses deprecated EAPI: 3
   MissingChksum: version 1.5.0-r2: "pdb2pqr-1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-chemistry/pdbcns
@@ -854,8 +840,8 @@ sci-chemistry/platon
 
 sci-chemistry/pointless
   DeprecatedEclass: version 1.6.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 1.6.14: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.6.14: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.6.14: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 1.6.2: "pointless-1.6.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-chemistry/prekin
@@ -866,31 +852,31 @@ sci-chemistry/procheck
   MissingChksum: version 3.5.4-r1: "procheck-3.5.4-manual.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-chemistry/pymol-apbs-plugin
-  DeprecatedEclass: version 0_p15: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0_p15: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0_p18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0_p15: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0_p18: uses deprecated EAPI: 3
-  DeprecatedEclass: version 2.1_p24: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0_p18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.1_p24: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.1_p24: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0_p15: "pymol-apbs-plugin-0_p15.py" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0_p18: "pymol-apbs-plugin-0_p18.py" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-chemistry/pymol-plugins-bni-tools
-  DeprecatedEclass: version 0.25.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.25.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.25.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 sci-chemistry/pymol-plugins-dssp
-  DeprecatedEclass: version 110430: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 110430: uses deprecated EAPI: 3
+  DeprecatedEclass: version 110430: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 sci-chemistry/pymol-plugins-emovie
-  DeprecatedEclass: version 1.0.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.0.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 1.0.4: "eMovie_package.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 sci-chemistry/pymol-plugins-msms
-  DeprecatedEclass: version 100415: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 100415: uses deprecated EAPI: 3
+  DeprecatedEclass: version 100415: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 sci-chemistry/reduce
   DeprecatedEAPI: version 3.13.080428-r1: uses deprecated EAPI: 3
@@ -916,8 +902,8 @@ sci-chemistry/tinker
   MissingChksum: version 6: "tinker-6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-chemistry/viewmol
-  DeprecatedEclass: version 2.4.1-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.4.1-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.4.1-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 2.4.1-r2: "viewmol-2.4.1.src.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-chemistry/votca-csg
@@ -937,18 +923,18 @@ sci-chemistry/xdsi
   MissingChksum: version 0.92-r1: "xdsi_0.92.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-chemistry/xia2
-  DeprecatedEclass: version 0.3.1.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.3.1.0: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.3.1.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.3.1.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.3.1.6: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.3.1.7: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.3.1.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.3.1.7: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.3.3.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.3.1.7: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.3.3.1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.3.3.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.3.3.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.3.3.3: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.3.4.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.3.3.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.3.4.0: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.4.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0.3.1.0: "xia2-0.3.1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.3.1.6: "xia2-0.3.1.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.3.1.7: "xia2-0.3.1.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -958,8 +944,6 @@ sci-chemistry/xia2
 
 sci-chemistry/xyza2pipe
   DeprecatedEAPI: version 20101129: uses deprecated EAPI: 3
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1044,15 +1028,13 @@ sys-freebsd/freebsd-usbin
 
 sys-freebsd/virtio-kmod
   MissingChksum: version 0.228301-r1: "virtio-0.228301.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
 x11-libs/agg
+  DeprecatedEAPI: version 2.5-r2: uses deprecated EAPI: 2
   NonExistentDeps: version 2.5-r2: depset depends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
   NonExistentDeps: version 2.5-r2: depset rdepends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
-  DeprecatedEAPI: version 2.5-r2: uses deprecated EAPI: 2
 
 x11-libs/dnd
   DeprecatedEAPI: version 1.1-r1: uses deprecated EAPI: 0
@@ -1086,10 +1068,10 @@ x11-libs/gtkmathview
   NonExistentDeps: version 0.8.0-r2: depset rdepends: nonexistent atoms [ <x11-libs/pango-1.31 ]
 
 x11-libs/ige-mac-integration
-  DeprecatedEclass: version 0.8.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.8.2: uses deprecated EAPI: 3
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.8.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0.8.2: "ige-mac-integration-0.8.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 x11-libs/libXCalibrate
@@ -1099,8 +1081,8 @@ x11-libs/libXScrnSaver
   DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 3
 
 x11-libs/libXTrap
-  DeprecatedEclass: version 1.0.0: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
   DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+  DeprecatedEclass: version 1.0.0: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
 
 x11-libs/libXcomposite
   DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 3

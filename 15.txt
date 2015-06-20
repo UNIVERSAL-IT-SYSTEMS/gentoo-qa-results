@@ -4,9 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 15 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'app-i18n/*' 'dev-dotnet/*' 'dev-scheme/*' 'games-roguelike/*' 'kde-base/*' 'media-sound/*' 'net-nntp/*' 'sci-physics/*' 'sys-process/*' 'x11-wm/*' -d imlate -d unstable_only -d cleanup -d stale_unstable --profile-disable-dev --profile-disable-exp
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
++ pkgcheck -r gentoo --reporter FancyReporter 'app-i18n/*' 'dev-dotnet/*' 'dev-scheme/*' 'games-roguelike/*' 'kde-base/*' 'media-sound/*' 'net-nntp/*' 'sci-physics/*' 'sys-process/*' 'x11-wm/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -32,10 +30,10 @@ app-i18n/freewnn
   DeprecatedEAPI: version 1.1.1_alpha21-r1: uses deprecated EAPI: 0
 
 app-i18n/ibus-anthy
+  DeprecatedEAPI: version 1.2.7-r1: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.2.7-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 1.2.7-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 1.2.7-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
-  DeprecatedEAPI: version 1.2.7-r1: uses deprecated EAPI: 3
 
 app-i18n/ibus-handwrite
   DeprecatedEclass: version 2.1.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -90,18 +88,18 @@ app-i18n/ibus-sunpinyin
   NonExistentDeps: version 2.0.4_pre20130108-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
 
 app-i18n/ibus-table
+  DeprecatedEAPI: version 1.2.0.20100111: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.2.0.20100111: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 1.2.0.20100111: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 1.2.0.20100111: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
-  DeprecatedEAPI: version 1.2.0.20100111: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1.3.0.20100621: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.3.0.20100621: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 1.3.0.20100621: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 1.3.0.20100621: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
-  DeprecatedEAPI: version 1.3.0.20100621: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1.3.9.20110827-r1: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.3.9.20110827-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 1.3.9.20110827-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 1.3.9.20110827-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
-  DeprecatedEAPI: version 1.3.9.20110827-r1: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.5.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 1.5.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 1.5.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
@@ -159,8 +157,8 @@ app-i18n/libtabe
   DeprecatedEAPI: version 0.2.6.1.2: uses deprecated EAPI: 0
 
 app-i18n/libtomoe-gtk
-  DeprecatedEclass: version 0.6.0-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.6.0-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.6.0-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-i18n/man-pages-fr
   DeprecatedEAPI: version 2.39.0: uses deprecated EAPI: 0
@@ -199,9 +197,9 @@ app-i18n/scim-canna
   DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
 
 app-i18n/scim-hangul
+  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 2
   NonExistentDeps: version 0.3.2: depset depends: nonexistent atoms [ >=app-i18n/scim-cvs-0.99.8 ]
   NonExistentDeps: version 0.3.2: depset rdepends: nonexistent atoms [ >=app-i18n/scim-cvs-0.99.8 ]
-  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 2
   NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ >=app-i18n/scim-cvs-0.99.8 ]
   NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ >=app-i18n/scim-cvs-0.99.8 ]
 
@@ -209,15 +207,15 @@ app-i18n/scim-input-pad
   DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 1
 
 app-i18n/scim-m17n
+  DeprecatedEAPI: version 0.2.2: uses deprecated EAPI: 0
   NonExistentDeps: version 0.2.2: depset depends: nonexistent atoms [ >=app-i18n/scim-cvs-1.4 ]
   NonExistentDeps: version 0.2.2: depset rdepends: nonexistent atoms [ >=app-i18n/scim-cvs-1.4 ]
-  DeprecatedEAPI: version 0.2.2: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.2.3: uses deprecated EAPI: 0
 
 app-i18n/scim-pinyin
+  DeprecatedEAPI: version 0.5.91-r3: uses deprecated EAPI: 0
   NonExistentDeps: version 0.5.91-r3: depset depends: nonexistent atoms [ >=app-i18n/scim-cvs-1.1 ]
   NonExistentDeps: version 0.5.91-r3: depset rdepends: nonexistent atoms [ >=app-i18n/scim-cvs-1.1 ]
-  DeprecatedEAPI: version 0.5.91-r3: uses deprecated EAPI: 0
   NonExistentDeps: version 0.5.92: depset depends: nonexistent atoms [ >=app-i18n/scim-cvs-1.1 ]
   NonExistentDeps: version 0.5.92: depset rdepends: nonexistent atoms [ >=app-i18n/scim-cvs-1.1 ]
 
@@ -225,17 +223,17 @@ app-i18n/scim-sayura
   DeprecatedEAPI: version 0.3.3: uses deprecated EAPI: 2
 
 app-i18n/scim-skk
+  DeprecatedEAPI: version 0.5.2-r1: uses deprecated EAPI: 0
   NonExistentDeps: version 0.5.2-r1: depset depends: nonexistent atoms [ >=app-i18n/scim-cvs-1.2 ]
   NonExistentDeps: version 0.5.2-r1: depset rdepends: nonexistent atoms [ >=app-i18n/scim-cvs-1.2 ]
-  DeprecatedEAPI: version 0.5.2-r1: uses deprecated EAPI: 0
 
 app-i18n/scim-tables
   DeprecatedEAPI: version 0.5.13: uses deprecated EAPI: 0
 
 app-i18n/scim-tomoe
+  DeprecatedEAPI: version 0.6.0: uses deprecated EAPI: 0
   NonExistentDeps: version 0.6.0: depset depends: nonexistent atoms [ >=app-i18n/scim-cvs-1.2.0 ]
   NonExistentDeps: version 0.6.0: depset rdepends: nonexistent atoms [ >=app-i18n/scim-cvs-1.2.0 ]
-  DeprecatedEAPI: version 0.6.0: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.6.0-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.6.0-r2: uses deprecated EAPI: 2
 
@@ -246,12 +244,12 @@ app-i18n/scim-wijesekera
   DeprecatedEAPI: version 0.3.3-r1: uses deprecated EAPI: 2
 
 app-i18n/scim-wnn
+  DeprecatedEAPI: version 0.2.4: uses deprecated EAPI: 0
   NonExistentDeps: version 0.2.4: depset depends: nonexistent atoms [ >=app-i18n/scim-cvs-1.0 ]
   NonExistentDeps: version 0.2.4: depset rdepends: nonexistent atoms [ >=app-i18n/scim-cvs-1.0 ]
-  DeprecatedEAPI: version 0.2.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 2
   NonExistentDeps: version 1.0.0: depset depends: nonexistent atoms [ >=app-i18n/scim-cvs-1.0 ]
   NonExistentDeps: version 1.0.0: depset rdepends: nonexistent atoms [ >=app-i18n/scim-cvs-1.0 ]
-  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 2
   DeprecatedEAPI: version 1.0.0-r1: uses deprecated EAPI: 2
 
 app-i18n/skk-jisyo
@@ -265,13 +263,13 @@ app-i18n/sunpinyin
   DeprecatedEAPI: version 2.0.3-r1: uses deprecated EAPI: 3
 
 app-i18n/tomoe
-  DeprecatedEclass: version 0.6.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.6.0-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.6.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-i18n/uim-tomoe-gtk
+  DeprecatedEAPI: version 0.6.0: uses deprecated EAPI: 0
   NonExistentDeps: version 0.6.0: depset depends: nonexistent atoms [ app-i18n/uim-svn ]
   NonExistentDeps: version 0.6.0: depset rdepends: nonexistent atoms [ app-i18n/uim-svn ]
-  DeprecatedEAPI: version 0.6.0: uses deprecated EAPI: 0
 
 app-i18n/unicode-data
   DeprecatedEAPI: version 6.0.0: uses deprecated EAPI: 0
@@ -293,18 +291,16 @@ app-i18n/xvnkb
 
 app-i18n/zhcon
   DeprecatedEAPI: version 0.2.6-r2: uses deprecated EAPI: 3
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
 dev-dotnet/art-sharp
-  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/atk-sharp
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/dbus-sharp
   DeprecatedEclass: version 0.7.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
@@ -313,82 +309,82 @@ dev-dotnet/dbus-sharp-glib
   DeprecatedEclass: version 0.5.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/flickrnet-bin
-  DeprecatedEclass: version 2.2-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 2.2-r1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.2-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/gconf-sharp
-  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/gdk-sharp
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/gio-sharp
   DeprecatedEclass: version 0.3: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/gkeyfile-sharp
-  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/glade-sharp
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/glib-sharp
   DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/gnome-desktop-sharp
-  DeprecatedEclass: version 2.26.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 2.26.0-r1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.26.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/gnome-keyring-sharp
-  DeprecatedEclass: version 1.0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 2
+  DeprecatedEclass: version 1.0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/gnome-sharp
-  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/gnomevfs-sharp
-  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/google-gdata-sharp
-  DeprecatedEclass: version 1.4.0.2-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 1.4.0.2-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.4.0.2-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/gsf-sharp
-  DeprecatedEclass: version 0.8.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.8.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/gtk-dotnet-sharp
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/gtk-sharp
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/gtk-sharp-beans
-  DeprecatedEclass: version 2.14.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 2.14.0: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.14.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/gtk-sharp-docs
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/gtk-sharp-gapi
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/gtksourceview-sharp
-  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/gudev-sharp
-  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/ikvm
   DeprecatedEclass: version 0.46.0.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
@@ -401,8 +397,8 @@ dev-dotnet/ikvm-bin
   DeprecatedEclass: version 7.1.4532.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/libgdiplus
-  DeprecatedEclass: version 2.10.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 2.10.9: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.10.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEclass: version 2.10.9-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEclass: version 2.10.9-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
@@ -416,57 +412,57 @@ dev-dotnet/mono-nat
   DeprecatedEclass: version 1.1.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/mono-zeroconf
-  DeprecatedEclass: version 0.9.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.9.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/monocalendar
-  DeprecatedEclass: version 0.7.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.7.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/monotorrent
-  DeprecatedEclass: version 0.80: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 0.80: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.80: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/nant
   DeprecatedEclass: version 0.92: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/ndesk-dbus
-  DeprecatedEclass: version 0.6.1a: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 0.6.1a: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.6.1a: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/ndesk-dbus-glib
-  DeprecatedEclass: version 0.4.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.4.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/nini
-  DeprecatedEclass: version 1.1.0-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 1.1.0-r2: uses deprecated EAPI: 2
+  DeprecatedEclass: version 1.1.0-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/notify-sharp
   DeprecatedEclass: version 0.4.0_pre20090305: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/pango-sharp
-  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/rsvg-sharp
-  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/taglib-sharp
   DeprecatedEclass: version 2.0.4.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEclass: version 2.1.0.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/vte-sharp
-  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/webkit-sharp
   DeprecatedEclass: version 0.3-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/wnck-sharp
-  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
 dev-dotnet/xsp
   DeprecatedEclass: version 2.10.2-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
@@ -474,8 +470,6 @@ dev-dotnet/xsp
 dev-dotnet/zeitgeist-sharp
   DeprecatedEclass: version 0.8.0.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEclass: version 0.8.0.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -555,8 +549,8 @@ dev-scheme/net-http
   MissingChksum: version 0.3.1: "net-http-0.3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 dev-scheme/racket
-  MissingChksum: version 5.1.2: "racket-5.1.2-src-unix.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   DroppedKeywordWarning: version 6.0.1: keywords dropped: ppc, ppc64
+  MissingChksum: version 5.1.2: "racket-5.1.2-src-unix.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 dev-scheme/schemik
   DeprecatedEAPI: version 1.2.40.0: uses deprecated EAPI: 2
@@ -606,8 +600,6 @@ dev-scheme/tinyscheme
   MissingChksum: version 1.38-r1: "tinyscheme1.38.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.39-r1: "tinyscheme1.39.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.40: "tinyscheme-1.40.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -615,8 +607,6 @@ games-roguelike/slashem
   DeprecatedEAPI: version 0.0.772: uses deprecated EAPI: 0
   MissingChksum: version 0.0.772: "se007e7f2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.0.772: "conf12s.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -635,8 +625,6 @@ kde-base/kdepim-meta
 kde-base/kinfocenter
   NoFinalNewline: version 4.11.19: ebuild lacks an ending newline
   NoFinalNewline: version 4.11.20: ebuild lacks an ending newline
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -659,8 +647,8 @@ media-sound/adplay
 media-sound/aeolus
   DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.8.4: uses deprecated EAPI: 0
-  MissingChksum: version 0.8.1: "aeolus-0.8.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   DroppedKeywordWarning: version 0.9.0: keywords dropped: x86
+  MissingChksum: version 0.8.1: "aeolus-0.8.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/alac_decoder
   DeprecatedEAPI: version 0.1.3: uses deprecated EAPI: 2
@@ -679,8 +667,8 @@ media-sound/ams
   MissingChksum: version 2.0.1: "ams-2.0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/apetag
-  DeprecatedEclass: version 1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.12: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 1.12: "apetag.1.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/ardour
@@ -776,8 +764,8 @@ media-sound/combine_wave
   MissingChksum: version 0.3.1-r1: "combine_wave-0.3.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/cplay
-  DeprecatedEclass: version 1.49: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.49: uses deprecated EAPI: 2
+  DeprecatedEclass: version 1.49: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 1.49: "cplay-1.49.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/cvoicecontrol
@@ -813,10 +801,10 @@ media-sound/easytag
   DroppedKeywordWarning: version 2.2.2: keywords dropped: ppc, sparc
 
 media-sound/ecasound
-  DeprecatedEclass: version 2.6.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.6.0: uses deprecated EAPI: 3
-  DeprecatedEclass: version 2.8.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 2.6.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.8.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.8.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 2.9.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 2.9.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 2.6.0: "ecasound-2.6.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -830,10 +818,10 @@ media-sound/erec
   MissingChksum: version 2.2.0.1: "erec-2.2.0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/exaile
-  DeprecatedEclass: version 0.3.2.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.3.2.0: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.3.2.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.3.2.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.3.2.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.2.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0.3.2.0: "exaile-0.3.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.3.2.1: "exaile-0.3.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
@@ -935,10 +923,10 @@ media-sound/herrie
   MissingChksum: version 2.2: "herrie-2.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/horgand
+  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 2
   MetadataError: version 1.14: attr(fetchables): error- Metadata Exception: pkg ebuild src: media-sound/horgand-1.14, attr fetchables
 error: mirror://berlios/horgand/horgand-1.14.tar.gz is unparseable
 flagged token- uri mirror://berlios/horgand/horgand-1.14.tar.gz is has no known mirror tier
-  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 2
 
 media-sound/icecream
   DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
@@ -961,8 +949,8 @@ media-sound/id3v2
   MissingChksum: version 0.1.12: "id3v2-0.1.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/ifp-gnome
-  DeprecatedEclass: version 0.7: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.7: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.7: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0.7: "ifp-gnome-0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/imp3sh
@@ -973,8 +961,8 @@ media-sound/jaaa
   MissingChksum: version 0.4.2: "jaaa-0.4.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/jack
-  DeprecatedEclass: version 3.1.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 3.1.1-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 3.1.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 media-sound/jack-rack
   MissingChksum: version 1.4.7-r1: "jack-rack-1.4.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -988,8 +976,8 @@ media-sound/jamin
   MissingChksum: version 0.95.0-r2: "jamin-0.95.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/justeport
-  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   MissingChksum: version 0.2: "JustePort-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/k4guitune
@@ -1005,8 +993,8 @@ media-sound/lash
   DeprecatedEclass: version 0.5.4-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 media-sound/lilycomp
-  DeprecatedEclass: version 1.0.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.0.2-r1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 1.0.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 1.0.2-r1: "lilycomp.1.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/lingot
@@ -1124,8 +1112,8 @@ media-sound/mserv
 
 media-sound/mt-daapd
   DeprecatedEAPI: version 0.2.4.2: uses deprecated EAPI: 2
-  MissingChksum: version 0.2.4.2: "mt-daapd-0.2.4.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   ExecutableFile: "files/mt-daapd.init.2" has unnecessary executable bit
+  MissingChksum: version 0.2.4.2: "mt-daapd-0.2.4.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/multimux
   DeprecatedEAPI: version 0.2.5.2: uses deprecated EAPI: 0
@@ -1169,8 +1157,8 @@ media-sound/pavumeter
 
 media-sound/peercast
   DeprecatedEAPI: version 0.1218-r2: uses deprecated EAPI: 2
-  MissingChksum: version 0.1218-r2: "peercast-0.1218-src.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   ExecutableFile: "files/peercast.initd" has unnecessary executable bit
+  MissingChksum: version 0.1218-r2: "peercast-0.1218-src.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/phasex
   DeprecatedEAPI: version 0.12.0_beta3: uses deprecated EAPI: 2
@@ -1197,8 +1185,8 @@ media-sound/playmidi
 
 media-sound/pms
   DeprecatedEAPI: version 0.42: uses deprecated EAPI: 2
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 media-sound/pnmixer
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -1218,8 +1206,8 @@ media-sound/podracer
   DeprecatedEAPI: version 1.4: uses deprecated EAPI: 3
 
 media-sound/positron
-  DeprecatedEclass: version 1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 1.1: "positron-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/protux
@@ -1239,8 +1227,8 @@ media-sound/pwavecat
   MissingChksum: version 0.4.5: "pwavecat-0.4.5.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/pympd
-  DeprecatedEclass: version 0.08.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.08.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.08.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0.08.1: "pympd-0.08.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/qarecord
@@ -1302,8 +1290,8 @@ media-sound/rexima
   MissingChksum: version 1.4: "rexima-1.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/rip
-  NonExistentDeps: version 1.07: depset rdepends: nonexistent atoms [ media-sound/gogo ]
   DeprecatedEAPI: version 1.07: uses deprecated EAPI: 0
+  NonExistentDeps: version 1.07: depset rdepends: nonexistent atoms [ media-sound/gogo ]
   MissingChksum: version 1.07: "rip-1.07.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/rplay
@@ -1345,10 +1333,10 @@ media-sound/shorten
   MissingChksum: version 3.6.1: "shorten-3.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/shoutcast-search
-  DeprecatedEclass: version 0.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.3: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.3.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0.3: "shoutcast-search-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 0.3.1: "shoutcast-search-0.3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
@@ -1384,7 +1372,7 @@ media-sound/sooperlooper
   MissingChksum: version 1.6.18: "sooperlooper-1.6.18.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/sound-juicer
-  DroppedKeywordWarning: version 3.16.1: keywords dropped: alpha, sparc
+  DroppedKeywordWarning: version 3.16.1: keywords dropped: alpha
 
 media-sound/sox
   DroppedKeywordWarning: version 14.4.2: keywords dropped: ia64
@@ -1467,8 +1455,8 @@ media-sound/ttaenc
   MissingChksum: version 3.4.1-r1: "ttaenc-3.4.1-src.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/tunapie
-  DeprecatedEclass: version 2.1.17: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.1.17: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.1.17: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 2.1.17: "tunapie-2.1.17.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/umix
@@ -1509,8 +1497,8 @@ media-sound/vlorb
   MissingChksum: version 1.2: "vlorb-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/volti
-  DeprecatedEclass: version 0.2.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.2.3: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.2.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 media-sound/volumeicon
   MissingChksum: version 0.4.6: "volumeicon-0.4.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -1545,8 +1533,8 @@ media-sound/xineadump
   MissingChksum: version 0.1-r1: "xineadump-0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/xmms2
-  DeprecatedEclass: version 0.8-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.8-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.8-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 media-sound/xmp
   MissingChksum: version 3.5.0: "xmp-3.5.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -1556,8 +1544,6 @@ media-sound/xnoise
 
 media-sound/zynaddsubfx
   MissingChksum: version 2.4.1: "ZynAddSubFX-2.4.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1565,8 +1551,8 @@ net-nntp/brag
   MissingChksum: version 1.4.3: "brag-1.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-nntp/hellanzb
-  DeprecatedEclass: version 0.13-r8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.13-r8: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.13-r8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0.13-r8: "hellanzb-0.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-nntp/sabnzbd
@@ -1594,8 +1580,6 @@ net-nntp/ubh
 net-nntp/xrn
   DeprecatedEAPI: version 9.02: uses deprecated EAPI: 0
   MissingChksum: version 9.02: "xrn-9.02.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1643,8 +1627,6 @@ sci-physics/sassena
 
 sci-physics/xfoil
   MissingChksum: version 6.97: "dataflow.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1663,16 +1645,16 @@ sys-process/atop
   DeprecatedEAPI: version 1.27_p3: uses deprecated EAPI: 3
 
 sys-process/audit
-  DeprecatedEclass: version 1.7.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.7.18: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.7.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.0.5: uses deprecated EAPI: 3
   DeprecatedEclass: version 2.0.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 2.0.5: depset depends: nonexistent atoms [ dev-libs/libprelude ]
   NonExistentDeps: version 2.0.5: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
-  DeprecatedEAPI: version 2.0.5: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.1.3-r1: uses deprecated EAPI: 3
   DeprecatedEclass: version 2.1.3-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 2.1.3-r1: depset depends: nonexistent atoms [ dev-libs/libprelude ]
   NonExistentDeps: version 2.1.3-r1: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
-  DeprecatedEAPI: version 2.1.3-r1: uses deprecated EAPI: 3
   NonExistentDeps: version 2.2.2-r2: depset depends: nonexistent atoms [ dev-libs/libprelude ]
   NonExistentDeps: version 2.2.2-r2: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
   NonExistentDeps: version 2.2.2-r3: depset depends: nonexistent atoms [ dev-libs/libprelude ]
@@ -1685,11 +1667,15 @@ sys-process/bcron
 
 sys-process/cronbase
   DeprecatedEAPI: version 0.3.3: uses deprecated EAPI: 0
-  ExecutableFile: "files/run-crons-0.3.3" has unnecessary executable bit
 
 sys-process/cronie
   BadInsIntoDir: version 1.4.12: ebuild uses insinto /etc/conf.d on line 48
   BadInsIntoDir: version 1.4.12: ebuild uses insinto /etc/cron.hourly on line 73
+
+sys-process/cronbase
+  ExecutableFile: "files/run-crons-0.3.3" has unnecessary executable bit
+
+sys-process/cronie
   BadInsIntoDir: version 1.5.0: ebuild uses insinto /etc/conf.d on line 48
   BadInsIntoDir: version 1.5.0: ebuild uses insinto /etc/cron.hourly on line 73
 
@@ -1777,8 +1763,6 @@ sys-process/vixie-cron
 sys-process/watchpid
   DeprecatedEAPI: version 0.1-r1: uses deprecated EAPI: 0
   MissingChksum: version 0.1-r1: "watchpid_0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1787,16 +1771,16 @@ x11-wm/aewm++
   MissingChksum: version 1.1.5-r1: "aewm++-1.1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-wm/afterstep
-  MissingChksum: version 2.2.9: "AfterStep-2.2.9.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   ExecutableFile: "files/afterstep" has unnecessary executable bit
+  MissingChksum: version 2.2.9: "AfterStep-2.2.9.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-wm/amiwm
   MissingChksum: version 0.21_p2: "amiwm0.21pl2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-wm/awesome
+  DeprecatedEAPI: version 3.4.15: uses deprecated EAPI: 3
   NonExistentDeps: version 3.4.15: depset depends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
   NonExistentDeps: version 3.4.15: depset rdepends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
-  DeprecatedEAPI: version 3.4.15: uses deprecated EAPI: 3
   NonExistentDeps: version 3.5.2: depset depends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
   NonExistentDeps: version 3.5.2: depset rdepends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
   NonExistentDeps: version 3.5.2-r1: depset depends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
@@ -1841,9 +1825,9 @@ x11-wm/enlightenment
 x11-wm/evilwm
   DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 3
   DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 3
+  DroppedKeywordWarning: version 1.1.0: keywords dropped: alpha, amd64, ppc, sparc, x86
   MissingChksum: version 1.0.1: "evilwm-1.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.1.0: "evilwm-1.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  DroppedKeywordWarning: version 1.1.0: keywords dropped: alpha, amd64, ppc, sparc, x86
 
 x11-wm/fluxbox
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -1895,10 +1879,10 @@ x11-wm/oroborus
   MissingChksum: version 2.0.20: "oroborus_2.0.20.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-wm/plwm
-  DeprecatedEclass: version 2.5-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.5-r1: uses deprecated EAPI: 0
-  DeprecatedEclass: version 2.7_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 2.5-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.7_rc1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.7_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 2.5-r1: "plwm-2.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.7_rc1: "PLWM-2.7rc1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 

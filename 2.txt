@@ -4,9 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 2 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'app-antivirus/*' 'app-misc/*' 'dev-go/*' 'dev-texlive/*' 'games-simulation/*' 'kde-plasma/*' 'net-analyzer/*' 'net-proxy/*' 'sys-apps/*' 'www-client/*' 'virtual/*' -d imlate -d unstable_only -d cleanup -d stale_unstable --profile-disable-dev --profile-disable-exp
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
++ pkgcheck -r gentoo --reporter FancyReporter 'app-antivirus/*' 'app-misc/*' 'dev-go/*' 'dev-texlive/*' 'games-simulation/*' 'kde-plasma/*' 'net-analyzer/*' 'net-proxy/*' 'sys-apps/*' 'www-client/*' 'virtual/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -14,8 +12,6 @@ app-antivirus/clamav
   ExecutableFile: "files/clamd.initd-r3" has unnecessary executable bit
   ExecutableFile: "files/clamd.initd-r5" has unnecessary executable bit
   ExecutableFile: "files/clamd.initd-r6" has unnecessary executable bit
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -47,24 +43,24 @@ app-misc/bottlerocket
   DeprecatedEAPI: version 0.04c-r1: uses deprecated EAPI: 2
 
 app-misc/ca-certificates
-  DeprecatedEAPI: version 20090709: uses deprecated EAPI: 0
   NonExistentDeps: version 20090709: depset depends: nonexistent atoms [ sys-apps/mktemp ]
   NonExistentDeps: version 20090709: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
+  DeprecatedEAPI: version 20090709: uses deprecated EAPI: 0
   VulnerablePackage: version 20090709: vulnerable via glsa(201412-09) ( ver-rev < 20110502-r1 ), keywords ('alpha', 'amd64', 'arm', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  DeprecatedEAPI: version 20110421: uses deprecated EAPI: 0
   NonExistentDeps: version 20110421: depset depends: nonexistent atoms [ sys-apps/mktemp ]
   NonExistentDeps: version 20110421: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
+  DeprecatedEAPI: version 20110421: uses deprecated EAPI: 0
   VulnerablePackage: version 20110421: vulnerable via glsa(201412-09) ( ver-rev < 20110502-r1 ), keywords ('alpha', 'amd64', 'arm', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  DeprecatedEAPI: version 20110502: uses deprecated EAPI: 0
   NonExistentDeps: version 20110502: depset depends: nonexistent atoms [ sys-apps/mktemp ]
   NonExistentDeps: version 20110502: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
+  DeprecatedEAPI: version 20110502: uses deprecated EAPI: 0
   VulnerablePackage: version 20110502: vulnerable via glsa(201412-09) ( ver-rev < 20110502-r1 ), keywords ('alpha', 'amd64', 'arm', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  DeprecatedEAPI: version 20110502-r1: uses deprecated EAPI: 0
   NonExistentDeps: version 20110502-r1: depset depends: nonexistent atoms [ sys-apps/mktemp ]
   NonExistentDeps: version 20110502-r1: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
-  DeprecatedEAPI: version 20110502-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20110502-r1: uses deprecated EAPI: 0
   NonExistentDeps: version 20110502-r2: depset depends: nonexistent atoms [ sys-apps/mktemp ]
   NonExistentDeps: version 20110502-r2: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
+  DeprecatedEAPI: version 20110502-r2: uses deprecated EAPI: 3
   DeprecatedEAPI: version 20110502-r3: uses deprecated EAPI: 3
   DeprecatedEAPI: version 20110502-r4: uses deprecated EAPI: 3
   DeprecatedEAPI: version 20111025: uses deprecated EAPI: 3
@@ -341,14 +337,14 @@ app-misc/ps3pf_utils
   DeprecatedEAPI: version 2.3: uses deprecated EAPI: 0
 
 app-misc/pysmssend
-  DeprecatedEclass: version 1.48: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.48: uses deprecated EAPI: 3
   NonExistentDeps: version 1.48: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 1.48: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.48: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.48: uses deprecated EAPI: 3
   NonExistentDeps: version 9999: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
 
 app-misc/pystopwatch
   DeprecatedEclass: version 2012.12.24.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -403,9 +399,9 @@ app-misc/symlinks
   DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
 
 app-misc/tablix
-  DeprecatedEAPI: version 0.3.5-r1: uses deprecated EAPI: 2
   NonExistentDeps: version 0.3.5-r1: depset depends: nonexistent atoms [ sys-cluster/pvm ]
   NonExistentDeps: version 0.3.5-r1: depset rdepends: nonexistent atoms [ sys-cluster/pvm ]
+  DeprecatedEAPI: version 0.3.5-r1: uses deprecated EAPI: 2
 
 app-misc/tasque
   DeprecatedEclass: version 0.1.11: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
@@ -473,12 +469,8 @@ app-misc/yagtd
 app-misc/zisofs-tools
   DeprecatedEAPI: version 1.0.6: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.0.8: uses deprecated EAPI: 0
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -601,23 +593,17 @@ dev-texlive/texlive-science
 
 dev-texlive/texlive-xetex
   DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
 games-simulation/openttd
   ExecutableFile: "files/openttd.initd" has unnecessary executable bit
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
 kde-plasma/plasma-workspace
   NonExistentDeps: version 5.3.1: depset depends: nonexistent atoms [ media-libs/prison:5 ]
   NonExistentDeps: version 5.3.1: depset rdepends: nonexistent atoms [ media-libs/prison:5 ]
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -842,8 +828,6 @@ net-analyzer/w3af
 
 net-analyzer/wireshark
   DroppedKeywordWarning: version 1.99.7: keywords dropped: alpha, amd64, arm, hppa, ia64, ppc, ppc64, sparc, x86
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -904,8 +888,6 @@ net-proxy/ufdbguard
 net-proxy/webscarab
   DeprecatedEAPI: version 20070504: uses deprecated EAPI: 0
   MissingChksum: version 20070504: "webscarab-selfcontained-20070504-1631.jar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1157,8 +1139,8 @@ sys-apps/makedev
   DeprecatedEAPI: version 3.23.1: uses deprecated EAPI: 2
 
 sys-apps/man
-  DeprecatedEAPI: version 1.6g: uses deprecated EAPI: 2
   NonExistentDeps: version 1.6g: depset rdepends: nonexistent atoms [ app-doc/heirloom-doctools ]
+  DeprecatedEAPI: version 1.6g: uses deprecated EAPI: 2
   NonExistentDeps: version 1.6g-r1: depset rdepends: nonexistent atoms [ app-doc/heirloom-doctools ]
 
 sys-apps/man-pages-posix
@@ -1240,10 +1222,10 @@ sys-apps/pacman
   MissingChksum: version 4.0.1: "pacman-4.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-apps/paludis
-  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 0
   NonExistentDeps: version 1.2.0: depset depends: nonexistent atoms [ <=app-doc/doxygen-1.5.1 ]
-  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 0
   NonExistentDeps: version 1.4.0: depset depends: nonexistent atoms [ <=app-doc/doxygen-1.5.1 ]
+  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 0
   NonExistentDeps: version 1.4.2-r1: depset depends: nonexistent atoms [ <=app-doc/doxygen-1.5.1 ]
   NonExistentDeps: version 2.0.0: depset depends: nonexistent atoms [ <=app-doc/doxygen-1.5.1 ]
   NonExistentDeps: version 2.2.0: depset depends: nonexistent atoms [ <=app-doc/doxygen-1.5.1 ]
@@ -1255,8 +1237,8 @@ sys-apps/pcsc-slb-rf72-drv
   DeprecatedEAPI: version 1.1.0-r2: uses deprecated EAPI: 2
 
 sys-apps/portage
-  DeprecatedEAPI: version 2.2.8-r2: uses deprecated EAPI: 2
   NonExistentDeps: version 2.2.8-r2: depset rdepends: nonexistent atoms [ <sys-libs/libselinux-2.0.94 ]
+  DeprecatedEAPI: version 2.2.8-r2: uses deprecated EAPI: 2
 
 sys-apps/powerpc-utils
   DeprecatedEAPI: version 1.1.3.18-r2: uses deprecated EAPI: 2
@@ -1351,8 +1333,8 @@ sys-apps/setserial
   ExecutableFile: "files/serial-2.17-r4" has unnecessary executable bit
 
 sys-apps/sparc-utils
-  DeprecatedEAPI: version 1.9-r4: uses deprecated EAPI: 0
   NonExistentDeps: version 1.9-r4: depset rdepends: nonexistent atoms [ sys-apps/setarch ]
+  DeprecatedEAPI: version 1.9-r4: uses deprecated EAPI: 0
   MissingChksum: version 1.9-r4: "sparc-utils_1.9.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.9-r4: "sparc-utils_1.9-3.diff.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
@@ -1466,8 +1448,6 @@ sys-apps/xmbmon
 sys-apps/zorroutils
   DeprecatedEAPI: version 0.04: uses deprecated EAPI: 0
   MissingChksum: version 0.04: "zorroutils-0.04.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1510,8 +1490,6 @@ www-client/weboob
 
 www-client/xombrero
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-*** not running UnusedLicense (not a full repo scan)
-*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1528,8 +1506,8 @@ virtual/awk
   DeprecatedEAPI: version 1: uses deprecated EAPI: 0
 
 virtual/blas
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
   NonExistentDeps: version 1.0: depset rdepends: nonexistent atoms [ sci-libs/blas-goto ]
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
 
 virtual/cblas
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 2
@@ -1538,8 +1516,8 @@ virtual/cdrtools
   DeprecatedEAPI: version 0: uses deprecated EAPI: 0
 
 virtual/checkpassword
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 0
   NonExistentDeps: version 0: depset rdepends: nonexistent atoms [ net-mail/vmailmgr ]
+  DeprecatedEAPI: version 0: uses deprecated EAPI: 0
 
 virtual/commonlisp
   NonExistentDeps: version 0: depset rdepends: nonexistent atoms [ dev-lisp/openmcl ]
@@ -1647,12 +1625,12 @@ virtual/man
   DeprecatedEAPI: version 0-r1: uses deprecated EAPI: 3
 
 virtual/mda
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 3
   NonExistentDeps: version 0: depset rdepends: nonexistent atoms [ mail-mta/citadel ]
+  DeprecatedEAPI: version 0: uses deprecated EAPI: 3
 
 virtual/mta
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 3
   NonExistentDeps: version 0: depset rdepends: nonexistent atoms [ mail-mta/citadel, <mail-mta/msmtp-1.4.19-r1, <mail-mta/ssmtp-2.64-r2 ]
+  DeprecatedEAPI: version 0: uses deprecated EAPI: 3
   NonExistentDeps: version 1: depset rdepends: nonexistent atoms [ mail-mta/citadel ]
 
 virtual/opengl
@@ -1917,8 +1895,8 @@ virtual/perl-version
   NonExistentDeps: version 0.990.900-r2: depset rdepends: nonexistent atoms [ ~perl-core/version-0.990.900 ]
 
 virtual/pmake
-  DeprecatedEAPI: version 0: uses deprecated EAPI: 0
   NonExistentDeps: version 0: depset rdepends: nonexistent atoms [ sys-devel/bsdmake ]
+  DeprecatedEAPI: version 0: uses deprecated EAPI: 0
 
 virtual/pyfits
   NonExistentDeps: version 0: depset rdepends: nonexistent atoms [ <dev-python/astropy-0.3 ]
@@ -1930,8 +1908,8 @@ virtual/pywcs
   NonExistentDeps: version 0: depset rdepends: nonexistent atoms [ <dev-python/astropy-0.3 ]
 
 virtual/qmail
-  DeprecatedEAPI: version 1.03: uses deprecated EAPI: 0
   NonExistentDeps: version 1.03: depset rdepends: nonexistent atoms [ ~mail-mta/netqmail-1.05 ]
+  DeprecatedEAPI: version 1.03: uses deprecated EAPI: 0
 
 virtual/ruby-ffi
   DeprecatedEAPI: version 2: uses deprecated EAPI: 2

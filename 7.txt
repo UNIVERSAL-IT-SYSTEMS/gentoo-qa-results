@@ -4,9 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 7 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'app-crypt/*' 'app-portage/*' 'dev-lisp/*' 'games-board/*' 'gnome-extra/*' 'mail-mta/*' 'net-ftp/*' 'sci-biology/*' 'sys-devel/*' 'x11-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable --profile-disable-dev --profile-disable-exp
-*** not running UnusedGlobalFlags (not a full repo scan)
-*** not running UnusedLicense (not a full repo scan)
++ pkgcheck -r gentoo --reporter FancyReporter 'app-crypt/*' 'app-portage/*' 'dev-lisp/*' 'games-board/*' 'gnome-extra/*' 'mail-mta/*' 'net-ftp/*' 'sci-biology/*' 'sys-devel/*' 'x11-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -162,8 +160,6 @@ app-crypt/truecrypt
 
 app-crypt/xor-analyze
   DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
-*** not running UnusedGlobalFlags (not a full repo scan)
-*** not running UnusedLicense (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -171,19 +167,19 @@ app-portage/demerge
   DeprecatedEAPI: version 0.047-r1: uses deprecated EAPI: 0
 
 app-portage/distpatch
+  DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.1.1: depset depends: nonexistent atoms [ =dev-lang/python-3.1* ]
   NonExistentDeps: version 0.1.1: depset rdepends: nonexistent atoms [ =dev-lang/python-3.1* ]
-  DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 3
 
 app-portage/eclass-manpages
   ExecutableFile: "files/eclass-to-manpage.sh" has unnecessary executable bit
 
 app-portage/elogv
-  DeprecatedEclass: version 0.7.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.7.4: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.7.4-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.7.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.7.4-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.7.4-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-portage/elogviewer
   DroppedKeywordWarning: version 2.5: keywords dropped: sparc
@@ -198,28 +194,28 @@ app-portage/esearch
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 app-portage/etc-proposals
-  MetadataError: version 1.4.3-r2: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-portage/etc-proposals-1.4.3-r2, attr fetchables
-error: mirror://berlios/etc-proposals/etc-proposals-1.4.3.tar.gz is unparseable
-flagged token- uri mirror://berlios/etc-proposals/etc-proposals-1.4.3.tar.gz is has no known mirror tier
+  DeprecatedEAPI: version 1.4.3-r2: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.4.3-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 1.4.3-r2: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 1.4.3-r2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
-  DeprecatedEAPI: version 1.4.3-r2: uses deprecated EAPI: 3
+  MetadataError: version 1.4.3-r2: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-portage/etc-proposals-1.4.3-r2, attr fetchables
+error: mirror://berlios/etc-proposals/etc-proposals-1.4.3.tar.gz is unparseable
+flagged token- uri mirror://berlios/etc-proposals/etc-proposals-1.4.3.tar.gz is has no known mirror tier
 
 app-portage/euscan
-  DeprecatedEclass: version 0.1.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.1.0: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.1.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 app-portage/g-ctan
-  NonExistentDeps: version 2011.1: depset rdepends: nonexistent atoms [ ~app-text/texlive-2011 ]
   DeprecatedEAPI: version 2011.1: uses deprecated EAPI: 2
+  NonExistentDeps: version 2011.1: depset rdepends: nonexistent atoms [ ~app-text/texlive-2011 ]
 
 app-portage/g-octave
-  DeprecatedEclass: version 0.4.1-r4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.4.1-r4: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.4.1-r4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-portage/g-sorcery
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -229,16 +225,16 @@ app-portage/genlop
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 app-portage/gentoolkit-dev
+  DeprecatedEAPI: version 0.2.6.14: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.2.6.14: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.2.6.14: depset depends: nonexistent atoms [ =dev-lang/python-3.1* ]
   NonExistentDeps: version 0.2.6.14: depset rdepends: nonexistent atoms [ =dev-lang/python-3.1* ]
-  DeprecatedEAPI: version 0.2.6.14: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.2.7: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.2.7: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.2.7: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.2.8: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.2.8: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.2.8: depset depends: nonexistent atoms [ =dev-lang/python-3.1* ]
   NonExistentDeps: version 0.2.8: depset rdepends: nonexistent atoms [ =dev-lang/python-3.1* ]
-  DeprecatedEAPI: version 0.2.8: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.2.8.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.2.8.3: depset depends: nonexistent atoms [ =dev-lang/python-3.1* ]
   NonExistentDeps: version 0.2.8.3: depset rdepends: nonexistent atoms [ =dev-lang/python-3.1* ]
@@ -247,8 +243,8 @@ app-portage/getdelta
   DeprecatedEAPI: version 0.7.8: uses deprecated EAPI: 0
 
 app-portage/gpytage
-  DeprecatedEclass: version 0.3.0_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.3.0_rc1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.0_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-portage/gs-elpa
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -261,12 +257,12 @@ app-portage/layman
   DroppedKeywordWarning: version 2.3.0: keywords dropped: alpha, arm64, ia64, m68k, sh, sparc
 
 app-portage/layman-dbtools
-  DeprecatedEclass: version 0_p20100322: uses deprecated eclass(es): [ git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0_p20100322: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0_p20100322: uses deprecated eclass(es): [ git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-portage/maintainer-helper
-  DeprecatedEclass: version 0.1.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.1.2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.1.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-portage/mirrorselect
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -296,12 +292,12 @@ app-portage/portage-utils
   ExecutableFile: "files/post_sync" has unnecessary executable bit
 
 app-portage/porthole
-  DeprecatedEclass: version 0.6.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.6.1-r1: uses deprecated EAPI: 2
-  DeprecatedEclass: version 0.6.1-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.6.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.6.1-r2: uses deprecated EAPI: 2
-  DeprecatedEclass: version 0.6.1-r3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.6.1-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.6.1-r3: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.6.1-r3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-portage/prefix-chain-setup
   DeprecatedEAPI: version 0.4-r5: uses deprecated EAPI: 0
@@ -314,8 +310,6 @@ app-portage/repo-commit
 
 app-portage/ufed
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-*** not running UnusedGlobalFlags (not a full repo scan)
-*** not running UnusedLicense (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -370,20 +364,20 @@ dev-lisp/gentoo-init
 dev-lisp/hyperspec
   DeprecatedEAPI: version 7.0: uses deprecated EAPI: 0
   DeprecatedEAPI: version 7.0-r1: uses deprecated EAPI: 0
-  MissingChksum: version 7.0-r1: "HyperSpec-7-0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 dev-lisp/sbcl
   WhitespaceFound: version 1.0.55-r1: ebuild has leading whitespace on lines 50, 62
+
+dev-lisp/hyperspec
+  MissingChksum: version 7.0-r1: "HyperSpec-7-0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+dev-lisp/sbcl
   DeprecatedEAPI: version 1.0.55-r1: uses deprecated EAPI: 3
   NonExistentDeps: version 1.1.18: depset rdepends: nonexistent atoms [ <sys-libs/glibc-2.6 ]
   NonExistentDeps: version 1.2.2: depset rdepends: nonexistent atoms [ <sys-libs/glibc-2.6 ]
   NonExistentDeps: version 1.2.4: depset rdepends: nonexistent atoms [ <sys-libs/glibc-2.6 ]
-*** not running UnusedGlobalFlags (not a full repo scan)
-*** not running UnusedLicense (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
-*** not running UnusedGlobalFlags (not a full repo scan)
-*** not running UnusedLicense (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -409,12 +403,10 @@ gnome-extra/gnome-dvb-daemon
   NonExistentDeps: version 0.2.10: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
 
 gnome-extra/gnome-power-manager
-  DroppedKeywordWarning: version 3.16.1: keywords dropped: alpha, sparc
+  DroppedKeywordWarning: version 3.16.1: keywords dropped: alpha
 
 gnome-extra/nm-applet
   DroppedKeywordWarning: version 0.9.10.0: keywords dropped: alpha, arm, ia64, ppc, ppc64, sparc
-*** not running UnusedGlobalFlags (not a full repo scan)
-*** not running UnusedLicense (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -463,8 +455,6 @@ mail-mta/qmail-ldap
 mail-mta/qpsmtpd
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   DroppedKeywordWarning: version 0.95: keywords dropped: amd64, x86
-*** not running UnusedGlobalFlags (not a full repo scan)
-*** not running UnusedLicense (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -507,8 +497,6 @@ net-ftp/tlswrap
 
 net-ftp/tnftp
   DeprecatedEAPI: version 20100108: uses deprecated EAPI: 2
-*** not running UnusedGlobalFlags (not a full repo scan)
-*** not running UnusedLicense (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -706,19 +694,19 @@ sci-biology/goby
   MissingChksum: version 1.9.8.1: "goby_1.9.8.1-deps.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-biology/goby-cpp
-  MissingChksum: version 1.9.7.3: "goby_1.9.7.3-cpp.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   SizeViolation: "files/Alignments.proto" exceeds 20k in size; 26192 bytes total
+  MissingChksum: version 1.9.7.3: "goby_1.9.7.3-cpp.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-biology/hmmer
+  DeprecatedEAPI: version 2.3.2-r1: uses deprecated EAPI: 0
   NonExistentDeps: version 2.3.2-r1: depset depends: nonexistent atoms [ sys-cluster/pvm ]
   NonExistentDeps: version 2.3.2-r1: depset rdepends: nonexistent atoms [ sys-cluster/pvm ]
-  DeprecatedEAPI: version 2.3.2-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.3.2-r2: uses deprecated EAPI: 0
   NonExistentDeps: version 2.3.2-r2: depset depends: nonexistent atoms [ sys-cluster/pvm ]
   NonExistentDeps: version 2.3.2-r2: depset rdepends: nonexistent atoms [ sys-cluster/pvm ]
-  DeprecatedEAPI: version 2.3.2-r2: uses deprecated EAPI: 0
+  DroppedKeywordWarning: version 3.0: keywords dropped: alpha, ia64, ppc, ppc64, sparc
   MissingChksum: version 2.3.2-r1: "hmmer-2.3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.0: "hmmer-3.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  DroppedKeywordWarning: version 3.0: keywords dropped: alpha, ia64, ppc, ppc64, sparc
 
 sci-biology/iedera
   DeprecatedEAPI: version 1.04: uses deprecated EAPI: 2
@@ -835,10 +823,10 @@ sci-biology/prosite
   MissingChksum: version 20.72: "prosite-20.72.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 sci-biology/psipred
-  NonExistentDeps: version 3.1: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
   DeprecatedEAPI: version 3.1: uses deprecated EAPI: 3
-  NonExistentDeps: version 3.2: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
+  NonExistentDeps: version 3.1: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
   DeprecatedEAPI: version 3.2: uses deprecated EAPI: 3
+  NonExistentDeps: version 3.2: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
   NonExistentDeps: version 3.2.1: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
   NonExistentDeps: version 3.3: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
   NonExistentDeps: version 3.4: depset rdepends: nonexistent atoms [ sci-biology/ncbi-tools++ ]
@@ -900,8 +888,6 @@ sci-biology/yass
   DeprecatedEAPI: version 1.14: uses deprecated EAPI: 2
   DeprecatedEAPI: version 1.14-r1: uses deprecated EAPI: 2
   MissingChksum: version 1.14: "yass-1.14.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-*** not running UnusedGlobalFlags (not a full repo scan)
-*** not running UnusedLicense (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1007,12 +993,12 @@ sys-devel/byfl
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 sys-devel/clang
-  DeprecatedEclass: version 2.8-r3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.8-r3: uses deprecated EAPI: 3
-  DeprecatedEclass: version 2.9-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 2.8-r3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.9-r1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 3.0-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 2.9-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 3.0-r4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 3.0-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 3.1-r5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 2.8-r3: "clang-2.8.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
@@ -1055,8 +1041,8 @@ sys-devel/gcc
   NonExistentDeps: version 4.7.0: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
   NonExistentDeps: version 4.7.1: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
   NonExistentDeps: version 4.7.2-r1: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
-  NonExistentDeps: version 4.7.3-r1: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
   DeprecatedEAPI: version 4.7.3-r1: uses deprecated EAPI: 2
+  NonExistentDeps: version 4.7.3-r1: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
   NonExistentDeps: version 4.7.4: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
   NonExistentDeps: version 4.8.0: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
   NonExistentDeps: version 4.8.1-r1: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
@@ -1136,8 +1122,8 @@ sys-devel/gnuconfig
   DeprecatedEAPI: version 20140728: uses deprecated EAPI: 2
   DeprecatedEAPI: version 20150304: uses deprecated EAPI: 2
   DeprecatedEAPI: version 20150308: uses deprecated EAPI: 2
-  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   DeprecatedEAPI: version 99999999: uses deprecated EAPI: 2
+  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 sys-devel/kgcc64
   DroppedKeywordWarning: version 4.3.5: keywords dropped: ppc, s390
@@ -1192,8 +1178,6 @@ sys-devel/sparse
 
 sys-devel/ucpp
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-*** not running UnusedGlobalFlags (not a full repo scan)
-*** not running UnusedLicense (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
