@@ -5,8 +5,8 @@
 + [[ 10 == global ]]
 + set +x
 + pkgcheck -r gentoo --reporter FancyReporter 'app-editors/*' 'app-vim/*' 'dev-perl/*' 'games-fps/*' 'gnustep-libs/*' 'media-fonts/*' 'net-libs/*' 'sci-electronics/*' 'sys-fs/*' 'x11-misc/*' -d imlate -d unstable_only -d cleanup -d stale_unstable --profile-disable-dev --profile-disable-exp
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -74,8 +74,12 @@ app-editors/vim
 
 app-editors/wily
   DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
-*** not running UnusedGlobalFlags (not a full repo scan)
+
+app-editors/xemacs
+  WhitespaceFound: version 21.4.22-r4: ebuild has trailing whitespace on line 183
+  WhitespaceFound: version 21.4.24: ebuild has trailing whitespace on line 165
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -359,8 +363,8 @@ app-vim/xsl-syntax
 
 app-vim/zoomwin
   DeprecatedEAPI: version 23: uses deprecated EAPI: 0
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -391,8 +395,8 @@ dev-perl/Test-Trap
 dev-perl/WWW-Mechanize
   NonExistentDeps: version 1.730.0-r1: depset depends: nonexistent atoms [ <dev-perl/libwww-perl-6 ]
   NonExistentDeps: version 1.730.0-r1: depset rdepends: nonexistent atoms [ <dev-perl/libwww-perl-6 ]
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -697,8 +701,8 @@ games-fps/wolfgl
   MissingChksum: version 0.93-r1: "wolfgl-0.93.tbz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.93-r1: "wolfdata.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.93-r1: "sdmdata.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -737,8 +741,8 @@ gnustep-libs/renaissance
 gnustep-libs/smbkit
   DeprecatedEAPI: version 0.0.1.20061010: uses deprecated EAPI: 0
   MissingChksum: version 0.0.1.20061010: "smbkit-0.0.1.20061010.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1351,8 +1355,8 @@ media-fonts/zh-kcfonts
   DeprecatedEAPI: version 1.05-r3: uses deprecated EAPI: 0
   MissingChksum: version 1.05-r3: "kcfonts-1.05.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.05-r3: "kcfonts-1.05-freebsd-aa_ad.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1558,8 +1562,8 @@ net-libs/webkit-gtk
 net-libs/wt
   DeprecatedEAPI: version 3.2.2_p1-r1: uses deprecated EAPI: 3
   DeprecatedEAPI: version 3.3.1: uses deprecated EAPI: 3
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1651,8 +1655,8 @@ sci-electronics/spice
 sci-electronics/vbs
   DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 2
   MissingChksum: version 1.4.0: "vbs-1.4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1936,8 +1940,8 @@ sys-fs/zfs
 
 sys-fs/zfs-kmod
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
