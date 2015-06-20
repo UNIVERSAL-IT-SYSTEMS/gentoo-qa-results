@@ -5,8 +5,8 @@
 + [[ 6 == global ]]
 + set +x
 + pkgcheck -r gentoo --reporter FancyReporter 'app-cdr/*' 'app-pda/*' 'dev-libs/*' 'games-arcade/*' 'gnome-base/*' 'mail-filter/*' 'net-fs/*' 'sci-astronomy/*' 'sys-cluster/*' 'x11-apps/*' -d imlate -d unstable_only -d cleanup -d stale_unstable --profile-disable-dev --profile-disable-exp
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -168,8 +168,8 @@ app-cdr/xcdroast
 
 app-cdr/xdvdfs-tools
   DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 0
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -227,13 +227,13 @@ app-pda/libopensync-plugin-palm
   DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
 
 app-pda/libopensync-plugin-python
+  DeprecatedEclass: version 0.22: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.22: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 0.22: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
-  DeprecatedEclass: version 0.22: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 9999: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
 
 app-pda/libopensync-plugin-sunbird
@@ -261,8 +261,8 @@ app-pda/synce-core
 
 app-pda/synce-sync-engine
   DeprecatedEclass: version 0.15.1-r3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -340,8 +340,8 @@ dev-libs/cygwin
   DeprecatedEAPI: version 1.5.25.15: uses deprecated EAPI: 0
 
 dev-libs/cyrus-sasl
-  VulnerablePackage: version 2.1.23-r7: vulnerable via glsa(201309-01) ( ver-rev < 2.1.26-r3 ), keywords ('alpha', 'amd64', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
   DeprecatedEAPI: version 2.1.23-r7: uses deprecated EAPI: 2
+  VulnerablePackage: version 2.1.23-r7: vulnerable via glsa(201309-01) ( ver-rev < 2.1.26-r3 ), keywords ('alpha', 'amd64', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
 
 dev-libs/darts
   DeprecatedEAPI: version 0.32: uses deprecated EAPI: 0
@@ -562,8 +562,8 @@ dev-libs/liblist
   DeprecatedEAPI: version 2.3.1-r1: uses deprecated EAPI: 3
 
 dev-libs/liblzw
-  VulnerablePackage: version 0.1.2: vulnerable via glsa(201412-08) ( ver < 0.2 ), keywords ('amd64', 'arm', 'hppa', 'ia64', 'm68k', 's390', 'sh', 'x86')
   DeprecatedEAPI: version 0.1.2: uses deprecated EAPI: 0
+  VulnerablePackage: version 0.1.2: vulnerable via glsa(201412-08) ( ver < 0.2 ), keywords ('amd64', 'arm', 'hppa', 'ia64', 'm68k', 's390', 'sh', 'x86')
   DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
 
 dev-libs/libmcal
@@ -723,8 +723,8 @@ dev-libs/mpfr
   SizeViolation: "files/patch07" exceeds 20k in size; 25023 bytes total
 
 dev-libs/nspr
-  VulnerablePackage: version 4.10.2: vulnerable via glsa(201504-01) ( ver < 4.10.6 ), keywords ('alpha', 'amd64', 'amd64-fbsd', 'amd64-linux', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc-aix', 'ppc64', 's390', 'sh', 'sparc', 'sparc-solaris', 'x64-macos', 'x64-solaris', 'x86', 'x86-fbsd', 'x86-linux', 'x86-macos', 'x86-solaris')
   DeprecatedEAPI: version 4.10.2: uses deprecated EAPI: 3
+  VulnerablePackage: version 4.10.2: vulnerable via glsa(201504-01) ( ver < 4.10.6 ), keywords ('alpha', 'amd64', 'amd64-fbsd', 'amd64-linux', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc-aix', 'ppc64', 's390', 'sh', 'sparc', 'sparc-solaris', 'x64-macos', 'x64-solaris', 'x86', 'x86-fbsd', 'x86-linux', 'x86-macos', 'x86-solaris')
 
 dev-libs/ntl
   DeprecatedEAPI: version 5.5.2: uses deprecated EAPI: 3
@@ -872,8 +872,8 @@ dev-libs/zziplib
   DeprecatedEclass: version 0.13.60-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.13.60-r1: uses deprecated EAPI: 2
   DeprecatedEclass: version 0.13.62: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -907,8 +907,8 @@ games-arcade/opentyrian
 
 games-arcade/tuxanci
   DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -934,8 +934,8 @@ gnome-base/gvfs
 
 gnome-base/librsvg
   DroppedKeywordWarning: version 2.40.8: keywords dropped: arm64
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1066,8 +1066,8 @@ mail-filter/tmda
   DeprecatedEclass: version 1.1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.1.12: uses deprecated EAPI: 3
   MissingChksum: version 1.1.12: "tmda-1.1.12.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1098,15 +1098,15 @@ net-fs/smbtad
 
 net-fs/wdfs
   DeprecatedEAPI: version 1.4.2: uses deprecated EAPI: 0
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
 sci-astronomy/swarp
   MissingChksum: version 2.19.1: "swarp-2.19.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1216,9 +1216,9 @@ sys-cluster/heartbeat
 sys-cluster/ipvsadm
   DeprecatedEAPI: version 1.21-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.24: uses deprecated EAPI: 0
-  DroppedKeywordWarning: version 1.24: keywords dropped: ppc
   MissingChksum: version 1.21-r1: "ipvsadm-1.21-11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.24: "ipvsadm-1.24.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  DroppedKeywordWarning: version 1.24: keywords dropped: ppc
 
 sys-cluster/knem
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -1301,8 +1301,8 @@ sys-cluster/resource-agents
   DeprecatedEAPI: version 1.0.4-r2: uses deprecated EAPI: 2
 
 sys-cluster/rgmanager
-  VulnerablePackage: version 2.03.09: vulnerable via glsa(201110-18) ( ver-rev < 2.03.09-r1 ), keywords ('amd64', 'x86')
   DeprecatedEAPI: version 2.03.09: uses deprecated EAPI: 0
+  VulnerablePackage: version 2.03.09: vulnerable via glsa(201110-18) ( ver-rev < 2.03.09-r1 ), keywords ('amd64', 'x86')
   DeprecatedEAPI: version 2.03.09-r1: uses deprecated EAPI: 2
   MissingChksum: version 2.03.09: "cluster-2.03.09.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 3.1.5: "cluster-3.1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
@@ -1326,8 +1326,8 @@ sys-cluster/wulfware
 sys-cluster/xgridagent
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
   MissingChksum: version 1.0: "xgridagent-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 

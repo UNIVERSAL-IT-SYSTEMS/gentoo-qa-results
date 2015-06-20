@@ -5,8 +5,8 @@
 + [[ 9 == global ]]
 + set +x
 + pkgcheck -r gentoo --reporter FancyReporter 'app-doc/*' 'app-text/*' 'dev-ml/*' 'games-engines/*' 'gnustep-base/*' 'mate-extra/*' 'net-irc/*' 'sci-chemistry/*' 'sys-freebsd/*' 'x11-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable --profile-disable-dev --profile-disable-exp
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -67,8 +67,8 @@ app-doc/single-unix-specification
 
 app-doc/tldp-howto
   DeprecatedEAPI: version 20100701: uses deprecated EAPI: 2
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -94,16 +94,16 @@ app-text/aiksaurus
   DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 2
 
 app-text/antiword
-  VulnerablePackage: version 0.37: vulnerable via glsa(201502-09) ( ver-rev < 0.37-r1 ), keywords ('alpha', 'amd64', 'amd64-linux', 'hppa', 'ia64-hpux', 'ppc', 'ppc-aix', 'ppc-macos', 'ppc64', 'sparc', 'sparc-solaris', 'x64-macos', 'x64-solaris', 'x86', 'x86-linux', 'x86-macos', 'x86-solaris')
   DeprecatedEAPI: version 0.37: uses deprecated EAPI: 3
+  VulnerablePackage: version 0.37: vulnerable via glsa(201502-09) ( ver-rev < 0.37-r1 ), keywords ('alpha', 'amd64', 'amd64-linux', 'hppa', 'ia64-hpux', 'ppc', 'ppc-aix', 'ppc-macos', 'ppc64', 'sparc', 'sparc-solaris', 'x64-macos', 'x64-solaris', 'x86', 'x86-linux', 'x86-macos', 'x86-solaris')
 
 app-text/antixls
   DeprecatedEAPI: version 0.3b: uses deprecated EAPI: 0
 
 app-text/asciidoc
+  DeprecatedEclass: version 8.6.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 8.6.5: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 8.6.5: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
-  DeprecatedEclass: version 8.6.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 8.6.5: uses deprecated EAPI: 3
 
 app-text/atril
@@ -135,8 +135,8 @@ app-text/calibre
   NonsolvableDeps: version 2.27.0: nonsolvable depset(rdepends) keyword(~arm) profile (default/linux/arm/13.0): solutions: [ >=dev-python/PyQt5-5.2.0[gui,network,printsupport,python_targets_python2_7(-),svg,webkit,widgets] ]
 
 app-text/chm2pdf
-  NonExistentDeps: version 0.9.1-r1: depset rdepends: nonexistent atoms [ <dev-libs/chmlib-0.40-r1 ]
   DeprecatedEclass: version 0.9.1-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.9.1-r1: depset rdepends: nonexistent atoms [ <dev-libs/chmlib-0.40-r1 ]
   DeprecatedEAPI: version 0.9.1-r1: uses deprecated EAPI: 2
 
 app-text/clara
@@ -505,13 +505,13 @@ flagged token- uri mirror://berlios/winefish/winefish-1.3.3.tgz is has no known 
   DeprecatedEAPI: version 1.3.3-r1: uses deprecated EAPI: 3
 
 app-text/wklej
+  DeprecatedEclass: version 0.2.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.2.0: depset depends: nonexistent atoms [ =dev-lang/python-3.1* ]
   NonExistentDeps: version 0.2.0: depset rdepends: nonexistent atoms [ =dev-lang/python-3.1* ]
-  DeprecatedEclass: version 0.2.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.2.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.2.1: depset depends: nonexistent atoms [ =dev-lang/python-3.1* ]
   NonExistentDeps: version 0.2.1: depset rdepends: nonexistent atoms [ =dev-lang/python-3.1* ]
-  DeprecatedEclass: version 0.2.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 3
 
 app-text/writerperfect
@@ -557,8 +557,8 @@ app-text/zathura-ps
 
 app-text/zemberek-server
   DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 2
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -576,12 +576,12 @@ dev-ml/pcre-ocaml
 
 dev-ml/react
   DroppedKeywordWarning: version 1.2.0: keywords dropped: x86
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -591,8 +591,8 @@ gnustep-base/gnustep-updater
 gnustep-base/mknfonts
   DeprecatedEAPI: version 0.5-r1: uses deprecated EAPI: 0
   MissingChksum: version 0.5-r1: "mknfonts.tool_0.5.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -603,8 +603,8 @@ mate-extra/caja-dropbox
 mate-extra/mate-user-share
   NonExistentDeps: version 1.8.0: depset depends: nonexistent atoms [ >=net-wireless/mate-bluetooth-1.6:0, >=mate-base/mate-file-manager-1.6:0 ]
   NonExistentDeps: version 1.8.0: depset rdepends: nonexistent atoms [ >=net-wireless/mate-bluetooth-1.6:0, >=mate-base/mate-file-manager-1.6:0 ]
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -698,8 +698,8 @@ net-irc/xchat-otr
 
 net-irc/znc
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -709,9 +709,9 @@ sci-chemistry/PyMca
 sci-chemistry/acpype
   DeprecatedEclass: version 366: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 366: uses deprecated EAPI: 3
+  DeprecatedEclass: version 374: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 374: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 374: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
-  DeprecatedEclass: version 374: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 366: "acpype-366.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-chemistry/ambertools
@@ -818,8 +818,8 @@ sci-chemistry/mustang
 sci-chemistry/openbabel
   DeprecatedEclass: version 2.2.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.2.3: uses deprecated EAPI: 3
-  DroppedKeywordWarning: version 2.3.2: keywords dropped: ppc64
   MissingChksum: version 2.2.3: "openbabel-2.2.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  DroppedKeywordWarning: version 2.3.2: keywords dropped: ppc64
 
 sci-chemistry/ortep3
   MissingChksum: version 1.0.3-r1: "ortep.f" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -837,9 +837,9 @@ sci-chemistry/pdb-extract
   MissingChksum: version 3.11: "pdb-extract-v3.11-prod-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 sci-chemistry/pdb2pqr
+  DeprecatedEclass: version 1.5.0-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 1.5.0-r2: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 1.5.0-r2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
-  DeprecatedEclass: version 1.5.0-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.5.0-r2: uses deprecated EAPI: 3
   MissingChksum: version 1.5.0-r2: "pdb2pqr-1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
@@ -958,8 +958,8 @@ sci-chemistry/xia2
 
 sci-chemistry/xyza2pipe
   DeprecatedEAPI: version 20101129: uses deprecated EAPI: 3
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1044,8 +1044,8 @@ sys-freebsd/freebsd-usbin
 
 sys-freebsd/virtio-kmod
   MissingChksum: version 0.228301-r1: "virtio-0.228301.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 

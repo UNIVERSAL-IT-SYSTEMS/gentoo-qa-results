@@ -5,8 +5,8 @@
 + [[ 5 == global ]]
 + set +x
 + pkgcheck -r gentoo --reporter FancyReporter 'app-benchmarks/*' 'app-officeext/*' 'dev-lang/*' 'games-action/*' 'games-util/*' 'mail-client/*' 'net-firewall/*' 'perl-core/*' 'sys-boot/*' 'www-servers/*' -d imlate -d unstable_only -d cleanup -d stale_unstable --profile-disable-dev --profile-disable-exp
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -65,8 +65,8 @@ app-benchmarks/tiobench
 
 app-benchmarks/volanomark
   DeprecatedEAPI: version 2.5.0.9: uses deprecated EAPI: 0
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -109,8 +109,8 @@ app-officeext/texmaths
   NonExistentDeps: version 0.37-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
   NonExistentDeps: version 0.41: depset depends: nonexistent atoms [ app-office/openoffice ]
   NonExistentDeps: version 0.41: depset rdepends: nonexistent atoms [ app-office/openoffice ]
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -155,7 +155,6 @@ dev-lang/gnat-gcc
   DeprecatedEAPI: version 4.4.7: uses deprecated EAPI: 0
   DeprecatedEAPI: version 4.5.4: uses deprecated EAPI: 0
   DeprecatedEAPI: version 4.6.4: uses deprecated EAPI: 0
-  DroppedKeywordWarning: version 4.4.7: keywords dropped: ppc
   MissingChksum: version 3.4.6: "gcc-core-3.4.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.4.6: "gcc-ada-3.4.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.4.6: "gnatboot-3.4-ppc.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -168,6 +167,7 @@ dev-lang/gnat-gcc
   MissingChksum: version 4.2.3: "gcc-core-4.2.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 4.2.3: "gcc-ada-4.2.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 4.3.5: "gnatboot-4.3-sparc.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  DroppedKeywordWarning: version 4.4.7: keywords dropped: ppc
 
 dev-lang/gnat-gpl
   DeprecatedEAPI: version 3.4.5.2005: uses deprecated EAPI: 0
@@ -281,8 +281,8 @@ dev-lang/polyml
 
 dev-lang/python
   NonExistentDeps: version 2.6.9: depset rdepends: nonexistent atoms [ dev-python/python-docs:2.6 ]
-  VulnerablePackage: version 2.6.9: vulnerable via glsa(201503-10) ( ver-rev < 3.3.5-r1 && not ( ver = 2.7.9 && ver-rev >= 2.7.9-r1 ) && ver not = 2.7.10 && ver not = 2.7.11 && ver not = 2.7.12 && ver not = 2.7.13 && ver not = 2.7.14 && ver not = 2.7.15 ), keywords ()
   DeprecatedEAPI: version 2.6.9: uses deprecated EAPI: 2
+  VulnerablePackage: version 2.6.9: vulnerable via glsa(201503-10) ( ver-rev < 3.3.5-r1 && not ( ver = 2.7.9 && ver-rev >= 2.7.9-r1 ) && ver not = 2.7.10 && ver not = 2.7.11 && ver not = 2.7.12 && ver not = 2.7.13 && ver not = 2.7.14 && ver not = 2.7.15 ), keywords ()
   NonExistentDeps: version 2.7.9-r1: depset depends: nonexistent atoms [ sys-libs/db:5.2, sys-libs/db:5.0 ]
   NonExistentDeps: version 2.7.9-r1: depset rdepends: nonexistent atoms [ sys-libs/db:5.2, sys-libs/db:5.0 ]
   NonExistentDeps: version 2.7.9-r2: depset depends: nonexistent atoms [ sys-libs/db:5.2, sys-libs/db:5.0 ]
@@ -338,8 +338,8 @@ dev-lang/tuprolog
   DeprecatedEAPI: version 2.7.0: uses deprecated EAPI: 3
   DeprecatedEAPI: version 2.7.2: uses deprecated EAPI: 3
   DeprecatedEAPI: version 2.9.0: uses deprecated EAPI: 3
-  DroppedKeywordWarning: version 2.6.0: keywords dropped: ppc
   MissingChksum: version 2.5.0: "tuprolog-2.5.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  DroppedKeywordWarning: version 2.6.0: keywords dropped: ppc
 
 dev-lang/ucblogo
   DeprecatedEAPI: version 5.5: uses deprecated EAPI: 0
@@ -359,8 +359,8 @@ dev-lang/yap
 dev-lang/yasm
   DeprecatedEclass: version 1.2.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -381,8 +381,8 @@ games-action/shadowgrounds-survivor-bin
 
 games-action/trine-bin
   MissingChksum: version 1.08: "Trine.64.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -419,8 +419,8 @@ games-util/nml
 
 games-util/pyfa
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -519,8 +519,8 @@ mail-client/thunderbird
 mail-client/trojita
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   DroppedKeywordWarning: version 0.5: keywords dropped: ppc
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -578,15 +578,15 @@ net-firewall/shapecfg
 
 net-firewall/xtables-addons
   MissingChksum: version 1.37: "xtables-addons-1.37.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
 perl-core/DB_File
   ExecutableFile: "files/config.in" has unnecessary executable bit
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -716,8 +716,8 @@ sys-boot/syslinux
 
 sys-boot/yaboot
   ExecutableFile: "files/new-ofpath" has unnecessary executable bit
-*** not running UnusedGlobalFlags (not a full repo scan)
 *** not running UnusedLicense (not a full repo scan)
+*** not running UnusedGlobalFlags (not a full repo scan)
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
