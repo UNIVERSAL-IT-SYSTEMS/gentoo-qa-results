@@ -86,12 +86,6 @@ app-crypt/keylookup
   DeprecatedEAPI: version 2.2: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.2-r9999: uses deprecated EAPI: 0
 
-app-crypt/libu2f-host
-  NonsolvableDeps: version 0.0.2: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd[acl] ]
-  NonsolvableDeps: version 0.0.2: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd[acl] ]
-  NonsolvableDeps: version 0.0.4: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd[acl] ]
-  NonsolvableDeps: version 0.0.4: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd[acl] ]
-
 app-crypt/mcrypt
   DeprecatedEAPI: version 2.6.8-r1: uses deprecated EAPI: 2
   VulnerablePackage: version 2.6.8-r1: vulnerable via glsa(201405-19) ( ver-rev < 2.6.8-r2 ), keywords ('amd64', 'ppc', 'sparc', 'x86', 'x86-macos')
@@ -394,45 +388,6 @@ gnome-extra/avant-window-navigator-extras
 gnome-extra/cameramonitor
   DeprecatedEclass: version 0.3.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-gnome-extra/cinnamon-screensaver
-  NonsolvableDeps: version 2.4.1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=sys-apps/systemd-31:0 ]
-  NonsolvableDeps: version 2.4.1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=sys-apps/systemd-31:0 ]
-  NonsolvableDeps: version 2.4.1: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=sys-apps/systemd-31:0 ]
-  NonsolvableDeps: version 2.4.2: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=sys-apps/systemd-31:0 ]
-  NonsolvableDeps: version 2.4.2: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=sys-apps/systemd-31:0 ]
-  NonsolvableDeps: version 2.4.2: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ >=sys-apps/systemd-31:0 ]
-  NonsolvableDeps: version 2.6.3: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=sys-apps/systemd-31:0 ]
-  NonsolvableDeps: version 2.6.3: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=sys-apps/systemd-31:0 ]
-  NonsolvableDeps: version 2.6.3: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ >=sys-apps/systemd-31:0 ]
-
-gnome-extra/cinnamon-session
-  NonsolvableDeps: version 2.4.3: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=sys-apps/systemd-183 ]
-  NonsolvableDeps: version 2.4.3: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=sys-apps/systemd-183 ]
-  NonsolvableDeps: version 2.4.3: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=sys-apps/systemd-183 ]
-  NonsolvableDeps: version 2.4.3: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=sys-apps/systemd-183 ]
-  NonsolvableDeps: version 2.4.3: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=sys-apps/systemd-183 ]
-  NonsolvableDeps: version 2.4.3: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=sys-apps/systemd-183 ]
-  NonsolvableDeps: version 2.6.2: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=sys-apps/systemd-183 ]
-  NonsolvableDeps: version 2.6.2: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=sys-apps/systemd-183 ]
-  NonsolvableDeps: version 2.6.2: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ >=sys-apps/systemd-183 ]
-  NonsolvableDeps: version 2.6.2: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=sys-apps/systemd-183 ]
-  NonsolvableDeps: version 2.6.2: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=sys-apps/systemd-183 ]
-  NonsolvableDeps: version 2.6.2: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ >=sys-apps/systemd-183 ]
-
-gnome-extra/cinnamon-settings-daemon
-  NonsolvableDeps: version 2.4.3: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd:0 ]
-  NonsolvableDeps: version 2.4.3: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd:0 ]
-  NonsolvableDeps: version 2.4.3: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd:0 ]
-  NonsolvableDeps: version 2.4.3: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd:0 ]
-  NonsolvableDeps: version 2.4.3: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd:0 ]
-  NonsolvableDeps: version 2.4.3: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd:0 ]
-  NonsolvableDeps: version 2.6.2: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd:0 ]
-  NonsolvableDeps: version 2.6.2: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd:0 ]
-  NonsolvableDeps: version 2.6.2: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd:0 ]
-  NonsolvableDeps: version 2.6.2: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd:0 ]
-  NonsolvableDeps: version 2.6.2: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd:0 ]
-  NonsolvableDeps: version 2.6.2: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd:0 ]
-
 gnome-extra/docky
   DeprecatedEclass: version 2.2.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
@@ -447,44 +402,11 @@ gnome-extra/gnome-dvb-daemon
   NonExistentDeps: version 0.2.10: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 0.2.10: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
 
-gnome-extra/gnome-logs
-  NonsolvableDeps: version 3.16.2: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 3.16.2: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 3.16.2: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 3.16.2: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
-
-gnome-extra/gnome-packagekit
-  NonsolvableDeps: version 3.12.2: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=sys-apps/systemd-42 ]
-  NonsolvableDeps: version 3.12.2: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=sys-apps/systemd-42 ]
-  NonsolvableDeps: version 3.12.2: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ >=sys-apps/systemd-42 ]
-  NonsolvableDeps: version 3.12.2: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=sys-apps/systemd-42 ]
-  NonsolvableDeps: version 3.12.2: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=sys-apps/systemd-42 ]
-  NonsolvableDeps: version 3.12.2: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ >=sys-apps/systemd-42 ]
-
 gnome-extra/gnome-power-manager
   DroppedKeywordWarning: version 3.16.1: keywords dropped: alpha
 
-gnome-extra/gnome-system-monitor
-  NonsolvableDeps: version 3.14.1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=sys-apps/systemd-38:0 ]
-  NonsolvableDeps: version 3.14.1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=sys-apps/systemd-38:0 ]
-  NonsolvableDeps: version 3.14.1: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=sys-apps/systemd-38:0 ]
-  NonsolvableDeps: version 3.14.1: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=sys-apps/systemd-38:0 ]
-  NonsolvableDeps: version 3.14.1: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=sys-apps/systemd-38:0 ]
-  NonsolvableDeps: version 3.14.1: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=sys-apps/systemd-38:0 ]
-  NonsolvableDeps: version 3.16.0: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=sys-apps/systemd-38:0 ]
-  NonsolvableDeps: version 3.16.0: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=sys-apps/systemd-38:0 ]
-  NonsolvableDeps: version 3.16.0: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ >=sys-apps/systemd-38:0 ]
-  NonsolvableDeps: version 3.16.0: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=sys-apps/systemd-38:0 ]
-  NonsolvableDeps: version 3.16.0: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=sys-apps/systemd-38:0 ]
-  NonsolvableDeps: version 3.16.0: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ >=sys-apps/systemd-38:0 ]
-
 gnome-extra/nm-applet
   DroppedKeywordWarning: version 0.9.10.0: keywords dropped: alpha, arm, ia64, ppc, ppc64, sparc
-
-gnome-extra/office-runner
-  NonsolvableDeps: version 1.0.2: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=sys-apps/systemd-190 ]
-  NonsolvableDeps: version 1.0.2: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=sys-apps/systemd-190 ]
-  NonsolvableDeps: version 1.0.2: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=sys-apps/systemd-190 ]
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1289,36 +1211,6 @@ x11-base/xorg-drivers
 x11-base/xorg-server
   VulnerablePackage: version 1.12.4-r4: vulnerable via glsa(201405-07) ( ver-rev < 1.14.3-r2 ), keywords ('alpha', 'amd64', 'amd64-fbsd', 'arm', 'ia64', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'x86', 'x86-fbsd')
   VulnerablePackage: version 1.12.4-r5: vulnerable via glsa(201405-07) ( ver-rev < 1.14.3-r2 ), keywords ('alpha', 'amd64', 'amd64-fbsd', 'arm', 'ia64', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'x86', 'x86-fbsd')
-  NonsolvableDeps: version 1.16.4: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.16.4: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.16.4: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.16.4: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.16.4: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.16.4: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.16.4-r1: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.16.4-r1: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.16.4-r1: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.16.4-r1: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.16.4-r1: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.16.4-r1: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.16.4-r2: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.16.4-r2: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.16.4-r2: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.16.4-r2: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.16.4-r2: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.16.4-r2: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.17.1: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.17.1: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.17.1: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.17.1: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.17.1: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.17.1: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.17.1-r1: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.17.1-r1: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.17.1-r1: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.17.1-r1: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.17.1-r1: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
-  NonsolvableDeps: version 1.17.1-r1: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
 
 x11-base/xorg-x11
   DeprecatedEAPI: version 7.4-r2: uses deprecated EAPI: 2
