@@ -620,6 +620,12 @@ mate-base/mate-control-center
   NonExistentDeps: version 1.8.3: depset rdepends: nonexistent atoms [ >=mate-base/mate-file-manager-1.6:0, >=x11-wm/mate-window-manager-1.6:0 ]
 
 mate-base/mate-session-manager
+  NonsolvableDeps: version 1.8.1-r1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 1.8.1-r1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 1.8.1-r1: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 1.8.1-r1: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 1.8.1-r1: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 1.8.1-r1: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
   ExecutableFile: "files/10-user-dirs-update-mate" has unnecessary executable bit
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set

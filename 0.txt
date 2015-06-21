@@ -646,6 +646,20 @@ net-p2p/syrep
   DeprecatedEAPI: version 0.9: uses deprecated EAPI: 2
   MissingChksum: version 0.9: "syrep-0.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+net-p2p/transmission
+  NonsolvableDeps: version 2.84: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 2.84: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 2.84: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 2.84: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 2.84: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 2.84: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 2.84-r1: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 2.84-r1: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 2.84-r1: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 2.84-r1: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 2.84-r1: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 2.84-r1: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
+
 net-p2p/transmission-remote-gtk
   MissingChksum: version 1.0: "transmission-remote-gtk-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 

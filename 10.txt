@@ -1806,6 +1806,12 @@ sys-fs/mtools
   DeprecatedEAPI: version 4.0.16: uses deprecated EAPI: 2
 
 sys-fs/multipath-tools
+  NonsolvableDeps: version 0.5.0-r1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 0.5.0-r1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 0.5.0-r1: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 0.5.0-r1: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 0.5.0-r1: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 0.5.0-r1: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
   ExecutableFile: "files/multipath.rc" has unnecessary executable bit
 
 sys-fs/obexfs
@@ -1883,6 +1889,14 @@ sys-fs/udev
 
 sys-fs/udftools
   DeprecatedEAPI: version 1.0.0b-r9: uses deprecated EAPI: 2
+
+sys-fs/udisks
+  NonsolvableDeps: version 2.1.4: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 2.1.4: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 2.1.4: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 2.1.4: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 2.1.4: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 2.1.4: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
 
 sys-fs/ufsutils
   WhitespaceFound: version 8.2_p3: ebuild has leading whitespace on line 28
@@ -2010,6 +2024,20 @@ x11-misc/cairo-clock
 x11-misc/chgres
   MissingChksum: version 0.1-r1: "chgres-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
+x11-misc/colord
+  NonsolvableDeps: version 1.2.9: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=sys-apps/systemd-44:0 ]
+  NonsolvableDeps: version 1.2.9: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=sys-apps/systemd-44:0 ]
+  NonsolvableDeps: version 1.2.9: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=sys-apps/systemd-44:0 ]
+  NonsolvableDeps: version 1.2.9: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=sys-apps/systemd-44:0 ]
+  NonsolvableDeps: version 1.2.9: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=sys-apps/systemd-44:0 ]
+  NonsolvableDeps: version 1.2.9: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=sys-apps/systemd-44:0 ]
+  NonsolvableDeps: version 1.2.10: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=sys-apps/systemd-44:0 ]
+  NonsolvableDeps: version 1.2.10: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=sys-apps/systemd-44:0 ]
+  NonsolvableDeps: version 1.2.10: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ >=sys-apps/systemd-44:0 ]
+  NonsolvableDeps: version 1.2.10: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=sys-apps/systemd-44:0 ]
+  NonsolvableDeps: version 1.2.10: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=sys-apps/systemd-44:0 ]
+  NonsolvableDeps: version 1.2.10: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ >=sys-apps/systemd-44:0 ]
+
 x11-misc/compton
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
@@ -2136,6 +2164,14 @@ x11-misc/imwheel
 x11-misc/ipager
   DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 2
 
+x11-misc/light-locker
+  NonsolvableDeps: version 1.6.0: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 1.6.0: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 1.6.0: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 1.6.0: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 1.6.0: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 1.6.0: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
+
 x11-misc/lightdm
   DroppedKeywordWarning: version 1.13.2: keywords dropped: arm64
 
@@ -2246,6 +2282,20 @@ x11-misc/redshift
 x11-misc/rendercheck
   DeprecatedEAPI: version 1.4: uses deprecated EAPI: 3
   MissingChksum: version 1.4: "rendercheck-1.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-misc/sddm
+  NonsolvableDeps: version 0.10.0: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 0.10.0: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 0.10.0: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 0.10.0: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 0.10.0: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 0.10.0: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 0.11.0: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 0.11.0: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 0.11.0: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 0.11.0: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 0.11.0: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ sys-apps/systemd ]
+  NonsolvableDeps: version 0.11.0: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ sys-apps/systemd ]
 
 x11-misc/set_opacity
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
