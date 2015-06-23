@@ -853,9 +853,9 @@ media-video/episoder
   MissingChksum: version 0.4.7: "episoder-0.4.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/ffmpeg
+  VulnerablePackage: version 0.10.16: vulnerable via glsa(201310-12) ( ver < 1.0.7 ), keywords ('alpha', 'amd64', 'amd64-fbsd', 'amd64-linux', 'arm', 'arm-linux', 'hppa', 'ia64', 'ppc', 'ppc64', 'sparc', 'x86', 'x86-fbsd', 'x86-linux')
   MetadataError: version 0.10.16: attr(depends): blocks itself
   MetadataError: version 0.10.16: attr(rdepends): blocks itself
-  VulnerablePackage: version 0.10.16: vulnerable via glsa(201310-12) ( ver < 1.0.7 ), keywords ('alpha', 'amd64', 'amd64-fbsd', 'amd64-linux', 'arm', 'arm-linux', 'hppa', 'ia64', 'ppc', 'ppc64', 'sparc', 'x86', 'x86-fbsd', 'x86-linux')
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 media-video/ffmpeg2theora
@@ -913,9 +913,9 @@ media-video/kplayer
   NonExistentDeps: version 0.7.2-r1: depset rdepends: nonexistent atoms [ media-video/mplayer2 ]
 
 media-video/libav
+  VulnerablePackage: version 9.14: vulnerable via glsa(201502-08) ( ver < 9.17 ), keywords ('alpha', 'amd64', 'amd64-linux', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc-macos', 'ppc64', 'sparc', 'x64-macos', 'x64-solaris', 'x86', 'x86-fbsd', 'x86-linux', 'x86-macos', 'x86-solaris')
   NonExistentDeps: version 9.14: depset depends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
   NonExistentDeps: version 9.14: depset rdepends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
-  VulnerablePackage: version 9.14: vulnerable via glsa(201502-08) ( ver < 9.17 ), keywords ('alpha', 'amd64', 'amd64-linux', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc-macos', 'ppc64', 'sparc', 'x64-macos', 'x64-solaris', 'x86', 'x86-fbsd', 'x86-linux', 'x86-macos', 'x86-solaris')
   NonExistentDeps: version 9.17: depset depends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
   NonExistentDeps: version 9.17: depset rdepends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
   NonExistentDeps: version 10.5: depset depends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
@@ -997,12 +997,10 @@ media-video/mplayer-sh
 
 media-video/pgmfindclip
   DeprecatedEAPI: version 1.13: uses deprecated EAPI: 0
+  MissingChksum: version 1.13: "pgmfindclip-1.13.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/photofilmstrip
   WhitespaceFound: version 1.9.91-r1: ebuild has leading whitespace on lines 37, 38, 42, 43
-
-media-video/pgmfindclip
-  MissingChksum: version 1.13: "pgmfindclip-1.13.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/pymp
   NonExistentDeps: version 1.1: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
@@ -1319,11 +1317,11 @@ www-apps/freeradius-dialupadmin
   MissingChksum: version 1.70.3: "freeradius-1.1.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.80: "freeradius-server-2.1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-www-apps/gitit
-  WhitespaceFound: version 0.10.3.1-r3: ebuild has leading whitespace on line 73
-
 www-apps/gallery
   ExecutableFile: "files/postinstall-en2.txt" has unnecessary executable bit
+
+www-apps/gitit
+  WhitespaceFound: version 0.10.3.1-r3: ebuild has leading whitespace on line 73
 
 www-apps/gnopaste
   MissingChksum: version 0.5.5: "gnopaste-0.5.5.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -1468,14 +1466,10 @@ www-apps/novnc
 
 www-apps/openwebstats
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
-
-www-apps/otrs
-  WrongIndentFound: version 3.2.7: ebuild has whitespace in indentation on line 129
-
-www-apps/openwebstats
   MissingChksum: version 1.1: "openwebstats-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 www-apps/otrs
+  WrongIndentFound: version 3.2.7: ebuild has whitespace in indentation on line 129
   DeprecatedEAPI: version 3.2.7: uses deprecated EAPI: 2
   WrongIndentFound: version 3.2.8: ebuild has whitespace in indentation on line 129
   DeprecatedEAPI: version 3.2.8: uses deprecated EAPI: 2
@@ -1560,8 +1554,8 @@ www-apps/trac-mercurial
   DeprecatedEclass: version 0.12.0.29_pre10899: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.12.0.29_pre10899: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.0.0.3_pre20130206: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingChksum: version 0.12.0.29_pre10899: "TracMercurial-0.12.0.29dev-r10899.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   DroppedKeywordWarning: version 1.0.0.3_pre20130206: keywords dropped: amd64, x86
+  MissingChksum: version 0.12.0.29_pre10899: "TracMercurial-0.12.0.29dev-r10899.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 www-apps/trac-tags
   DeprecatedEclass: version 0.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]

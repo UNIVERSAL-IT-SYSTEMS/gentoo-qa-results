@@ -43,18 +43,18 @@ app-misc/bottlerocket
   DeprecatedEAPI: version 0.04c-r1: uses deprecated EAPI: 2
 
 app-misc/ca-certificates
+  VulnerablePackage: version 20090709: vulnerable via glsa(201412-09) ( ver-rev < 20110502-r1 ), keywords ('alpha', 'amd64', 'arm', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
   NonExistentDeps: version 20090709: depset depends: nonexistent atoms [ sys-apps/mktemp ]
   NonExistentDeps: version 20090709: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
   DeprecatedEAPI: version 20090709: uses deprecated EAPI: 0
-  VulnerablePackage: version 20090709: vulnerable via glsa(201412-09) ( ver-rev < 20110502-r1 ), keywords ('alpha', 'amd64', 'arm', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
+  VulnerablePackage: version 20110421: vulnerable via glsa(201412-09) ( ver-rev < 20110502-r1 ), keywords ('alpha', 'amd64', 'arm', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
   NonExistentDeps: version 20110421: depset depends: nonexistent atoms [ sys-apps/mktemp ]
   NonExistentDeps: version 20110421: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
   DeprecatedEAPI: version 20110421: uses deprecated EAPI: 0
-  VulnerablePackage: version 20110421: vulnerable via glsa(201412-09) ( ver-rev < 20110502-r1 ), keywords ('alpha', 'amd64', 'arm', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
+  VulnerablePackage: version 20110502: vulnerable via glsa(201412-09) ( ver-rev < 20110502-r1 ), keywords ('alpha', 'amd64', 'arm', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
   NonExistentDeps: version 20110502: depset depends: nonexistent atoms [ sys-apps/mktemp ]
   NonExistentDeps: version 20110502: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
   DeprecatedEAPI: version 20110502: uses deprecated EAPI: 0
-  VulnerablePackage: version 20110502: vulnerable via glsa(201412-09) ( ver-rev < 20110502-r1 ), keywords ('alpha', 'amd64', 'arm', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
   NonExistentDeps: version 20110502-r1: depset depends: nonexistent atoms [ sys-apps/mktemp ]
   NonExistentDeps: version 20110502-r1: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
   DeprecatedEAPI: version 20110502-r1: uses deprecated EAPI: 0
@@ -242,10 +242,10 @@ app-misc/ktoblzcheck
   DeprecatedEclass: version 1.39: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 app-misc/lcd-stuff
-  DeprecatedEAPI: version 0.1.6: uses deprecated EAPI: 2
   MetadataError: version 0.1.6: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-misc/lcd-stuff-0.1.6, attr fetchables
 error: mirror://berlios/lcd-stuff/lcd-stuff-0.1.6.tar.bz2 is unparseable
 flagged token- uri mirror://berlios/lcd-stuff/lcd-stuff-0.1.6.tar.bz2 is has no known mirror tier
+  DeprecatedEAPI: version 0.1.6: uses deprecated EAPI: 2
 
 app-misc/lcdproc
   DeprecatedEAPI: version 0.5.2-r1: uses deprecated EAPI: 0
@@ -1120,10 +1120,10 @@ sys-apps/logwatch
   ExecutableFile: "files/logwatch" has unnecessary executable bit
 
 sys-apps/lsadb
-  DeprecatedEAPI: version 0.1.3: uses deprecated EAPI: 0
   MetadataError: version 0.1.3: attr(fetchables): error- Metadata Exception: pkg ebuild src: sys-apps/lsadb-0.1.3, attr fetchables
 error: mirror://berlios/pub/pbbuttons/lsadb-0.1.3.tgz is unparseable: uri mirror://berlios/pub/pbbuttons/lsadb-0.1.3.tgz is has no known mirror tier
 flagged token- mirror://berlios/pub/pbbuttons/lsadb-0.1.3.tgz
+  DeprecatedEAPI: version 0.1.3: uses deprecated EAPI: 0
 
 sys-apps/lsb-release
   DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
@@ -1246,13 +1246,11 @@ sys-apps/powerpc-utils
   MissingChksum: version 1.1.3.18-r2: "powerpc-utils_1.1.3-18.diff.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.1.3.18-r2: "powerpc-utils-cleanup.patch.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-sys-apps/prefix-chain-utils
-  BadInsIntoDir: version 0.2-r5: ebuild uses insinto /etc/env.d on line 51
-
 sys-apps/prctl
   MissingChksum: version 1.5: "prctl-1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-apps/prefix-chain-utils
+  BadInsIntoDir: version 0.2-r5: ebuild uses insinto /etc/env.d on line 51
   DeprecatedEAPI: version 0.2-r5: uses deprecated EAPI: 0
 
 sys-apps/preload
@@ -1329,8 +1327,8 @@ sys-apps/servicelog
 
 sys-apps/setserial
   DeprecatedEAPI: version 2.17-r4: uses deprecated EAPI: 0
-  MissingChksum: version 2.17-r4: "setserial-2.17.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   ExecutableFile: "files/serial-2.17-r4" has unnecessary executable bit
+  MissingChksum: version 2.17-r4: "setserial-2.17.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 sys-apps/sparc-utils
   NonExistentDeps: version 1.9-r4: depset rdepends: nonexistent atoms [ sys-apps/setarch ]
@@ -1349,8 +1347,8 @@ sys-apps/stroke
   MissingChksum: version 0.1.3: "stroke-0.1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-apps/superiotool
-  MissingChksum: version 6637: "superiotool-6637.tar.xz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   ExecutableFile: "files/make-tarball.sh" has unnecessary executable bit
+  MissingChksum: version 6637: "superiotool-6637.tar.xz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 sys-apps/syscriptor
   DeprecatedEAPI: version 1.5.15: uses deprecated EAPI: 0
@@ -1462,8 +1460,8 @@ www-client/fetch
   DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
 
 www-client/firefox
-  DeprecatedEAPI: version 24.3.0: uses deprecated EAPI: 3
   VulnerablePackage: version 24.3.0: vulnerable via glsa(201504-01) ( ver < 31.5.3 ), keywords ('alpha', 'amd64', 'amd64-linux', 'arm', 'hppa', 'ia64', 'ppc', 'ppc64', 'x86', 'x86-linux')
+  DeprecatedEAPI: version 24.3.0: uses deprecated EAPI: 3
 
 www-client/jumanji
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
