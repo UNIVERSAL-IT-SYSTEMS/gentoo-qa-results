@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 7 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-texlive/*' 'media-fonts/*' 'x11-themes/*' 'net-dns/*' 'www-servers/*' 'sci-visualization/*' 'sys-firmware/*' 'kde-plasma/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-texlive/*' 'media-fonts/*' 'x11-themes/*' 'net-dns/*' 'app-cdr/*' 'sci-visualization/*' 'sys-firmware/*' 'kde-plasma/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1942,57 +1942,164 @@ net-dns/valtz
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-www-servers/fnord
-  DeprecatedEAPI: version 1.10-r2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
-  MissingChksum: version 1.10-r2: "fnord-1.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-cdr/b5i2iso
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+  MetadataError: version 0.2: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/b5i2iso-0.2, attr fetchables
+error: mirror://berlios/b5i2iso/b5i2iso.tar.bz2 is unparseable: uri mirror://berlios/b5i2iso/b5i2iso.tar.bz2 is has no known mirror tier
+flagged token- mirror://berlios/b5i2iso/b5i2iso.tar.bz2
 
-www-servers/gatling
-  MissingChksum: version 0.12-r2: "gatling-0.12.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-cdr/backlite
+  SizeViolation: "files/backlite-1.0.3-ffmpeg-0.11.patch" exceeds 20k in size; 23775 bytes total
 
-www-servers/gunicorn
-  DeprecatedEclass: version 0.17.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+app-cdr/bashburn
+  DeprecatedEAPI: version 3.0.1: uses deprecated EAPI: 2
 
-www-servers/lighttpd
-  SizeViolation: "files/lighttpd-1.4.29-mod_uploadprogress.patch" exceeds 20k in size; 22472 bytes total
+app-cdr/bchunk
+  DeprecatedEAPI: version 1.2.0-r1: uses deprecated EAPI: 0
 
-www-servers/pound
-  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 2
-  MissingChksum: version 2.6: "Pound-2.6.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-cdr/bin2iso
+  DeprecatedEAPI: version 19b-r2: uses deprecated EAPI: 0
 
-www-servers/resin
-  DeprecatedEAPI: version 4.0.22: uses deprecated EAPI: 2
-  MissingChksum: version 4.0.22: "resin-4.0.22-src.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 4.0.22: "resin-gentoo-patches-4.0.22-r1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 4.0.25: "resin-4.0.25-src.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 4.0.25: "resin-gentoo-patches-4.0.25-r1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 4.0.26: "resin-4.0.26-src.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 4.0.26: "resin-gentoo-patches-4.0.26.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-cdr/burn-cd
+  DeprecatedEAPI: version 1.7.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.8.0: uses deprecated EAPI: 0
 
-www-servers/servefile
-  DeprecatedEclass: version 0.4.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+app-cdr/burncdda
+  DeprecatedEAPI: version 1.8.0: uses deprecated EAPI: 0
 
-www-servers/skunkweb
-  DeprecatedEAPI: version 3.4.4: uses deprecated EAPI: 3
-  DeprecatedEclass: version 3.4.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  ExecutableFile: "files/skunkweb-cron-cache_cleaner" has unnecessary executable bit
-  ExecutableFile: "files/skunkweb-init" has unnecessary executable bit
-  MissingChksum: version 3.4.4: "skunkweb-3.4.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-cdr/burncenter
+  DeprecatedEAPI: version 3.2.1: uses deprecated EAPI: 0
 
-www-servers/thttpd
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-cdr/ccd2iso
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
 
-www-servers/tomcat
-  VulnerablePackage: version 6.0.44: vulnerable via glsa(201412-29) ( ver < 7.0.56 && ver not = 6.0.41 ), keywords ('amd64', 'ppc', 'ppc64', 'x86', 'x86-fbsd')
-  DroppedKeywordWarning: version 8.0.22: keywords dropped: ppc, ppc64
+app-cdr/cdcover
+  DeprecatedEAPI: version 0.7.4: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.7.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-www-servers/tornado
-  DroppedKeywordWarning: version 4.1.0: keywords dropped: ppc
+app-cdr/cdlabelgen
+  DeprecatedEAPI: version 4.0.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.1.0: uses deprecated EAPI: 2
 
-www-servers/varnish
-  ExecutableFile: "files/varnishd.initd-r1" has unnecessary executable bit
-  ExecutableFile: "files/varnishd.initd-r2" has unnecessary executable bit
+app-cdr/cdrkit
+  DeprecatedEAPI: version 1.1.11: uses deprecated EAPI: 3
+  DroppedKeywordWarning: version 1.1.11-r2: keywords dropped: s390
+
+app-cdr/cue2toc
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+
+app-cdr/cuecue
+  MetadataError: version 0.2.2-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/cuecue-0.2.2-r1, attr fetchables
+error: mirror://berlios/cuecue/cuecue-0.2.2.tar.gz is unparseable
+flagged token- uri mirror://berlios/cuecue/cuecue-0.2.2.tar.gz is has no known mirror tier
+
+app-cdr/cuegen
+  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 2
+
+app-cdr/cuetools
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
+  MetadataError: version 1.3.1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/cuetools-1.3.1, attr fetchables
+error: mirror://berlios/cuetools/cuetools-1.3.1.tar.gz mirror://gentoo/cuetools-1.3.1-debian.patch.bz2 is unparseable: uri mirror://berlios/cuetools/cuetools-1.3.1.tar.gz is has no known mirror tier
+flagged token- mirror://berlios/cuetools/cuetools-1.3.1.tar.gz
+  MetadataError: version 1.3.1-r2: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/cuetools-1.3.1-r2, attr fetchables
+error: mirror://berlios/cuetools/cuetools-1.3.1.tar.gz mirror://gentoo/cuetools-1.3.1-debian.patch.bz2 is unparseable
+flagged token- uri mirror://berlios/cuetools/cuetools-1.3.1.tar.gz is has no known mirror tier
+  DroppedKeywordWarning: version 1.3.1-r2: keywords dropped: ppc
+
+app-cdr/daa2iso
+  DeprecatedEAPI: version 0.1.7e: uses deprecated EAPI: 2
+
+app-cdr/disc-cover
+  DeprecatedEAPI: version 1.5.6: uses deprecated EAPI: 0
+
+app-cdr/dvd+rw-tools
+  DeprecatedEAPI: version 7.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 7.1-r1: uses deprecated EAPI: 3
+
+app-cdr/dvd95
+  DeprecatedEAPI: version 1.6_p0: uses deprecated EAPI: 2
+
+app-cdr/dvdshrink
+  DeprecatedEAPI: version 2.6.1_p10: uses deprecated EAPI: 2
+
+app-cdr/extract-xiso
+  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
+
+app-cdr/gaffitter
+  DeprecatedEAPI: version 0.6.0-r1: uses deprecated EAPI: 2
+
+app-cdr/gtkcdlabel
+  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.14: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-cdr/iat
+  DeprecatedEAPI: version 0.1.3: uses deprecated EAPI: 0
+  MetadataError: version 0.1.3: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/iat-0.1.3, attr fetchables
+error: mirror://berlios/iat/iat-0.1.3-src.tar.bz2 is unparseable: uri mirror://berlios/iat/iat-0.1.3-src.tar.bz2 is has no known mirror tier
+flagged token- mirror://berlios/iat/iat-0.1.3-src.tar.bz2
+  DeprecatedEAPI: version 0.1.7-r1: uses deprecated EAPI: 2
+  MetadataError: version 0.1.7-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/iat-0.1.7-r1, attr fetchables
+error: mirror://berlios/iat/iat-0.1.7.tar.bz2 is unparseable
+flagged token- uri mirror://berlios/iat/iat-0.1.7.tar.bz2 is has no known mirror tier
+
+app-cdr/isomaster
+  DeprecatedEAPI: version 1.3.5: uses deprecated EAPI: 2
+
+app-cdr/k9copy
+  SizeViolation: "files/k9copy-2.3.8-ffmpeg-0.11.patch" exceeds 20k in size; 32790 bytes total
+
+app-cdr/mkcdtoc
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+app-cdr/mode2cdmaker
+  DeprecatedEAPI: version 1.5.1: uses deprecated EAPI: 0
+
+app-cdr/mp3burn
+  DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 0
+
+app-cdr/multicd
+  DeprecatedEAPI: version 1.7.5-r1: uses deprecated EAPI: 0
+
+app-cdr/mybashburn
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
+
+app-cdr/nrg2iso
+  DeprecatedEAPI: version 0.4-r1: uses deprecated EAPI: 0
+
+app-cdr/poweriso
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+
+app-cdr/qmultirecord
+  DeprecatedEAPI: version 0.0.3: uses deprecated EAPI: 2
+
+app-cdr/qpxtool
+  DeprecatedEAPI: version 0.7.0-r1: uses deprecated EAPI: 2
+
+app-cdr/recorder
+  DeprecatedEclass: version 1.4.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-cdr/sync2cd
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-cdr/uif2iso
+  DeprecatedEAPI: version 0.1.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.1.7c: uses deprecated EAPI: 0
+
+app-cdr/webcdwriter
+  DeprecatedEAPI: version 2.8.2-r2: uses deprecated EAPI: 0
+
+app-cdr/xbiso
+  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 0
+
+app-cdr/xcdroast
+  DeprecatedEAPI: version 0.98_alpha16: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.98_alpha16-r1: uses deprecated EAPI: 2
+
+app-cdr/xdvdfs-tools
+  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 0
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
