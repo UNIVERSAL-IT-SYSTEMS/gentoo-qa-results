@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 10 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'virtual/*' 'dev-vcs/*' 'app-portage/*' 'dev-tex/*' 'net-firewall/*' 'games-strategy/*' 'app-benchmarks/*' 'net-nntp/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'virtual/*' 'dev-vcs/*' 'app-portage/*' 'dev-tex/*' 'net-firewall/*' 'games-strategy/*' 'app-benchmarks/*' 'net-nntp/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1732,12 +1732,39 @@ net-nntp/xrn
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-net-voip/gnugk
-  ExecutableFile: "files/gnugk.rc6" has unnecessary executable bit
+gnustep-libs/camerakit
+  DeprecatedEAPI: version 0.0.1.20041011-r1: uses deprecated EAPI: 0
 
-net-voip/homer
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+gnustep-libs/cenonlibrary
+  MissingChksum: version 3.9.4: "CenonLibrary-3.9.4-1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-voip/yate
-  ExecutableFile: "files/yate.rc6" has unnecessary executable bit
+gnustep-libs/gsldap
+  DeprecatedEAPI: version 0.0.1_pre20070219: uses deprecated EAPI: 3
+  MissingChksum: version 0.0.1_pre20070219: "gsldap-0.0.1_pre20070219.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+gnustep-libs/highlighterkit
+  MissingChksum: version 0.1.2: "HighlighterKit-0.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-libs/iconkit
+  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.4.1: "etoile-0.4.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+gnustep-libs/netclasses
+  DeprecatedEAPI: version 1.06-r1: uses deprecated EAPI: 0
+  MissingChksum: version 1.06-r1: "netclasses-1.06.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-libs/pantomime
+  MissingChksum: version 1.2.0: "Pantomime-1.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-libs/prefsmodule
+  DeprecatedEAPI: version 1.1.1_pre20061204-r1: uses deprecated EAPI: 0
+  MissingChksum: version 1.1.1_pre20061204-r1: "prefsmodule-1.1.1_pre20061204.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-libs/renaissance
+  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 0
+  MissingChksum: version 0.9.0: "Renaissance-0.9.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+gnustep-libs/smbkit
+  DeprecatedEAPI: version 0.0.1.20061010: uses deprecated EAPI: 0
+  MissingChksum: version 0.0.1.20061010: "smbkit-0.0.1.20061010.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 + [[ 0 == 0 ]]
