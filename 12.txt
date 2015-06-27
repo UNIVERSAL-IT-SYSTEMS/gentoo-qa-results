@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 12 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'dev-ml/*' 'kde-misc/*' 'xfce-extra/*' 'sys-boot/*' 'gnustep-apps/*' 'sys-infiniband/*' 'dev-ada/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'dev-ml/*' 'kde-misc/*' 'xfce-extra/*' 'app-cdr/*' 'gnustep-apps/*' 'sys-infiniband/*' 'dev-ada/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -760,132 +760,148 @@ xfce-extra/xfce4-volumed
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-sys-boot/aboot
-  DeprecatedEAPI: version 1.0_pre20040408-r3: uses deprecated EAPI: 0
-  MissingChksum: version 1.0_pre20040408-r3: "aboot-1.0_pre20040408.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.0_pre20040408-r3: "gentoo-headers-base-2.6.22.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.0_pre20040408-r3: "aboot_gentoo.diff.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-cdr/b5i2iso
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+  MetadataError: version 0.2: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/b5i2iso-0.2, attr fetchables
+error: mirror://berlios/b5i2iso/b5i2iso.tar.bz2 is unparseable: uri mirror://berlios/b5i2iso/b5i2iso.tar.bz2 is has no known mirror tier
+flagged token- mirror://berlios/b5i2iso/b5i2iso.tar.bz2
 
-sys-boot/arcload
-  MissingChksum: version 0.50-r1: "arcload-0.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-cdr/backlite
+  SizeViolation: "files/backlite-1.0.3-ffmpeg-0.11.patch" exceeds 20k in size; 23775 bytes total
 
-sys-boot/bootcreator
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
-  MissingChksum: version 1.1: "bootcreator-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-cdr/bashburn
+  DeprecatedEAPI: version 3.0.1: uses deprecated EAPI: 2
 
-sys-boot/colo
-  DeprecatedEAPI: version 1.22: uses deprecated EAPI: 0
-  MissingChksum: version 1.22: "colo-1.22.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-cdr/bchunk
+  DeprecatedEAPI: version 1.2.0-r1: uses deprecated EAPI: 0
 
-sys-boot/cromwell
-  MissingChksum: version 2.40-r3: "cromwell-2.40.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 2.40-r3: "cromwell-2.40-r3-cvs-fixes.patch.lzma" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-cdr/bin2iso
+  DeprecatedEAPI: version 19b-r2: uses deprecated EAPI: 0
 
-sys-boot/cromwell-bin
-  DeprecatedEAPI: version 2.31: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.40: uses deprecated EAPI: 0
-  MissingChksum: version 2.31: "cromwell-2.31.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 2.40: "cromwell-2.40.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-cdr/burn-cd
+  DeprecatedEAPI: version 1.7.4: uses deprecated EAPI: 0
 
-sys-boot/dvhtool
-  MissingChksum: version 1.0.1-r2: "dvhtool_1.0.1.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-cdr/burncdda
+  DeprecatedEAPI: version 1.8.0: uses deprecated EAPI: 0
 
-sys-boot/efibootmgr
-  DeprecatedEAPI: version 0.5.4: uses deprecated EAPI: 0
+app-cdr/burncenter
+  DeprecatedEAPI: version 3.2.1: uses deprecated EAPI: 0
 
-sys-boot/elilo
-  DeprecatedEAPI: version 3.6_p20060314: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.12: uses deprecated EAPI: 0
-  MissingChksum: version 3.6_p20060314: "elilo-nightly_2006-03-14.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.6_p20060314: "elilo_3.6-1.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.10: "elilo-3.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.10: "elilo_3.10-1.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.12: "elilo-3.12-source.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.12: "elilo_3.12-1.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-cdr/ccd2iso
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
 
-sys-boot/gnu-efi
-  DeprecatedEAPI: version 3.0a-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.0g: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.0i: uses deprecated EAPI: 0
-  MissingChksum: version 3.0a-r1: "gnu-efi-3.0a.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.0g: "gnu-efi_3.0g.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-cdr/cdlabelgen
+  DeprecatedEAPI: version 4.0.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.1.0: uses deprecated EAPI: 2
 
-sys-boot/grub-static
-  DeprecatedEAPI: version 0.96-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.97: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.97-r6: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.97-r9: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.97-r10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.97-r12: uses deprecated EAPI: 0
-  MissingChksum: version 0.96-r1: "grub-static-0.96.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.97: "grub-static-0.97.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.97-r6: "grub-static-0.97-r6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-cdr/cdrkit
+  DeprecatedEAPI: version 1.1.11: uses deprecated EAPI: 3
+  DroppedKeywordWarning: version 1.1.11-r2: keywords dropped: s390
 
-sys-boot/lilo
-  DeprecatedEAPI: version 22.8-r2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 23.2-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 23.2-r2: uses deprecated EAPI: 2
+app-cdr/cue2toc
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
 
-sys-boot/makebootfat
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
+app-cdr/cuecue
+  MetadataError: version 0.2.2-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/cuecue-0.2.2-r1, attr fetchables
+error: mirror://berlios/cuecue/cuecue-0.2.2.tar.gz is unparseable
+flagged token- uri mirror://berlios/cuecue/cuecue-0.2.2.tar.gz is has no known mirror tier
 
-sys-boot/mbr
-  DeprecatedEAPI: version 1.1.11: uses deprecated EAPI: 0
-  MissingChksum: version 1.1.11: "mbr-1.1.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-cdr/cuegen
+  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 2
 
-sys-boot/mbr-gpt
-  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 0
-  MissingChksum: version 0.0.1: "mbr-gpt_0.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-cdr/cuetools
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
+  MetadataError: version 1.3.1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/cuetools-1.3.1, attr fetchables
+error: mirror://berlios/cuetools/cuetools-1.3.1.tar.gz mirror://gentoo/cuetools-1.3.1-debian.patch.bz2 is unparseable: uri mirror://berlios/cuetools/cuetools-1.3.1.tar.gz is has no known mirror tier
+flagged token- mirror://berlios/cuetools/cuetools-1.3.1.tar.gz
+  MetadataError: version 1.3.1-r2: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/cuetools-1.3.1-r2, attr fetchables
+error: mirror://berlios/cuetools/cuetools-1.3.1.tar.gz mirror://gentoo/cuetools-1.3.1-debian.patch.bz2 is unparseable
+flagged token- uri mirror://berlios/cuetools/cuetools-1.3.1.tar.gz is has no known mirror tier
+  DroppedKeywordWarning: version 1.3.1-r2: keywords dropped: ppc
 
-sys-boot/milo
-  DeprecatedEAPI: version 2.4.18: uses deprecated EAPI: 0
-  MissingChksum: version 2.4.18: "milo-2.2-18.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 2.4.18: "linux-2.2.25.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 2.4.18: "ldmilo-patched-20010430" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 2.4.18: "linux-2.2.20-reiserfs-3.5.35.diff.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 2.4.18: "linload.exe" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 2.4.18: "MILO-HOWTO" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-cdr/daa2iso
+  DeprecatedEAPI: version 0.1.7e: uses deprecated EAPI: 2
 
-sys-boot/netboot
-  DeprecatedEAPI: version 0.10.2: uses deprecated EAPI: 2
+app-cdr/disc-cover
+  DeprecatedEAPI: version 1.5.6: uses deprecated EAPI: 0
 
-sys-boot/nettrom
-  DeprecatedEAPI: version 2.3.3: uses deprecated EAPI: 0
+app-cdr/dvd+rw-tools
+  DeprecatedEAPI: version 7.1-r1: uses deprecated EAPI: 3
 
-sys-boot/plymouth-openrc-plugin
-  MissingChksum: version 0.1.2: "plymouth-openrc-plugin-0.1.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-cdr/dvd95
+  DeprecatedEAPI: version 1.6_p0: uses deprecated EAPI: 2
 
-sys-boot/psoload
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
-  MissingChksum: version 2.0: "PSOloadV2.0_Linux.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-cdr/dvdshrink
+  DeprecatedEAPI: version 2.6.1_p10: uses deprecated EAPI: 2
 
-sys-boot/quik
-  DeprecatedEAPI: version 2.1.6: uses deprecated EAPI: 0
-  MissingChksum: version 2.1.6: "quik-2.1-6.ydl4.src.rpm" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-cdr/extract-xiso
+  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
 
-sys-boot/raincoat
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 0
-  MissingChksum: version 0.5: "raincoat-0.5+.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.11: "raincoat-0.11.tbz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-cdr/gaffitter
+  DeprecatedEAPI: version 0.6.0-r1: uses deprecated EAPI: 2
 
-sys-boot/shlilo-lantank
-  DeprecatedEAPI: version 20040408: uses deprecated EAPI: 0
-  MissingChksum: version 20040408: "sh-lilo-sel-20040408.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-cdr/gtkcdlabel
+  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-sys-boot/silo
-  DeprecatedEAPI: version 1.4.14_p20100228: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.4.14_p20120226: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.4.14_p20120819: uses deprecated EAPI: 0
+app-cdr/iat
+  DeprecatedEAPI: version 0.1.7-r1: uses deprecated EAPI: 2
+  MetadataError: version 0.1.7-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-cdr/iat-0.1.7-r1, attr fetchables
+error: mirror://berlios/iat/iat-0.1.7.tar.bz2 is unparseable
+flagged token- uri mirror://berlios/iat/iat-0.1.7.tar.bz2 is has no known mirror tier
 
-sys-boot/syslinux
-  DeprecatedEAPI: version 3.86: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.07: uses deprecated EAPI: 0
+app-cdr/isomaster
+  DeprecatedEAPI: version 1.3.5: uses deprecated EAPI: 2
 
-sys-boot/yaboot
-  ExecutableFile: "files/new-ofpath" has unnecessary executable bit
+app-cdr/k9copy
+  SizeViolation: "files/k9copy-2.3.8-ffmpeg-0.11.patch" exceeds 20k in size; 32790 bytes total
+
+app-cdr/mkcdtoc
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+app-cdr/mode2cdmaker
+  DeprecatedEAPI: version 1.5.1: uses deprecated EAPI: 0
+
+app-cdr/mp3burn
+  DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 0
+
+app-cdr/multicd
+  DeprecatedEAPI: version 1.7.5-r1: uses deprecated EAPI: 0
+
+app-cdr/mybashburn
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
+
+app-cdr/nrg2iso
+  DeprecatedEAPI: version 0.4-r1: uses deprecated EAPI: 0
+
+app-cdr/poweriso
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+
+app-cdr/qmultirecord
+  DeprecatedEAPI: version 0.0.3: uses deprecated EAPI: 2
+
+app-cdr/recorder
+  DeprecatedEclass: version 1.4.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-cdr/sync2cd
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-cdr/uif2iso
+  DeprecatedEAPI: version 0.1.7c: uses deprecated EAPI: 0
+
+app-cdr/webcdwriter
+  DeprecatedEAPI: version 2.8.2-r2: uses deprecated EAPI: 0
+
+app-cdr/xbiso
+  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 0
+
+app-cdr/xcdroast
+  DeprecatedEAPI: version 0.98_alpha16: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.98_alpha16-r1: uses deprecated EAPI: 2
+
+app-cdr/xdvdfs-tools
+  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 0
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
