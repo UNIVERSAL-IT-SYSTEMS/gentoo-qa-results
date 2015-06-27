@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 7 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-texlive/*' 'media-fonts/*' 'x11-themes/*' 'net-dns/*' 'sys-process/*' 'net-dialup/*' 'sys-firmware/*' 'kde-plasma/*' 'dev-go/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-texlive/*' 'media-fonts/*' 'x11-themes/*' 'dev-embedded/*' 'sys-process/*' 'games-strategy/*' 'sys-firmware/*' 'kde-plasma/*' 'dev-go/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1860,85 +1860,151 @@ x11-themes/yasis-icon-theme
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-net-dns/avahi
-  DroppedKeywordWarning: version 0.6.31-r7: keywords dropped: m68k
+dev-embedded/avr-libc
+  DeprecatedEAPI: version 1.6.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.6.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.6.8: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.7.0: uses deprecated EAPI: 2
 
-net-dns/bind
-  VulnerablePackage: version 9.9.5-r3: vulnerable via glsa(201502-03) ( ver < 9.10.1_p1 ), keywords ('alpha', 'amd64', 'amd64-linux', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc-macos', 'ppc64', 's390', 'sh', 'sparc', 'sparc-solaris', 'sparc64-solaris', 'x64-macos', 'x64-solaris', 'x86', 'x86-fbsd', 'x86-linux', 'x86-macos', 'x86-solaris')
-  DeprecatedEclass: version 9.9.5-r3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  ExecutableFile: "files/generate-rndc-key.sh" has unnecessary executable bit
+dev-embedded/bitbake
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-dns/bind-dns-keygen
-  DeprecatedEAPI: version 9.3.2.39-r1: uses deprecated EAPI: 0
+dev-embedded/gnap
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
 
-net-dns/c-ares
-  DeprecatedEAPI: version 1.7.4: uses deprecated EAPI: 2
-  DroppedKeywordWarning: version 1.10.0: keywords dropped: arm64
+dev-embedded/gnap-dev
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
 
-net-dns/cagibi
-  MissingChksum: version 0.2.0: "cagibi-0.2.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+dev-embedded/gnap-ext
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
 
-net-dns/dnrd
-  DeprecatedEAPI: version 2.20.3-r1: uses deprecated EAPI: 0
-  MissingChksum: version 2.20.3-r1: "dnrd-2.20.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+dev-embedded/gputils
+  DeprecatedEAPI: version 0.13.6-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.13.7: uses deprecated EAPI: 2
 
-net-dns/dnssec-check
-  DroppedKeywordWarning: version 2.1: keywords dropped: amd64, x86
+dev-embedded/jal
+  DeprecatedEAPI: version 0.4.60: uses deprecated EAPI: 0
 
-net-dns/dnssec-root
-  DeprecatedEAPI: version 20100715: uses deprecated EAPI: 0
-  WhitespaceFound: version 20150403: ebuild has trailing whitespace on line 13
+dev-embedded/libftdi
+  DeprecatedEAPI: version 0.19: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.20: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.20: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-dns/hesinfo
-  DeprecatedEAPI: version 3.1.0: uses deprecated EAPI: 2
-  MissingChksum: version 3.1.0: "hesinfo-3.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+dev-embedded/openocd
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-dns/hesiod
-  DeprecatedEAPI: version 3.1.0: uses deprecated EAPI: 2
-  MissingChksum: version 3.1.0: "hesiod-3.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.1.0: "hesiod-3.1.0-patches.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+dev-embedded/parapin
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
 
-net-dns/host
-  DeprecatedEAPI: version 20070128-r1: uses deprecated EAPI: 2
+dev-embedded/pista
+  DeprecatedEAPI: version 0.70: uses deprecated EAPI: 0
 
-net-dns/knot
-  DroppedKeywordWarning: version 2.0.0_beta: keywords dropped: amd64, x86
+dev-embedded/scratchbox
+  DeprecatedEAPI: version 1.0.19: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.20: uses deprecated EAPI: 0
 
-net-dns/ldns-utils
-  DeprecatedEAPI: version 1.6.12: uses deprecated EAPI: 3
+dev-embedded/scratchbox-devkit-apt-https
+  DeprecatedEAPI: version 1.0.10: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.11: uses deprecated EAPI: 0
 
-net-dns/ndu
-  DeprecatedEAPI: version 0.4-r4: uses deprecated EAPI: 0
-  MissingChksum: version 0.4-r4: "ndu-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+dev-embedded/scratchbox-devkit-cputransp
+  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.9: uses deprecated EAPI: 0
 
-net-dns/odsclient
-  DeprecatedEAPI: version 1.03-r1: uses deprecated EAPI: 2
+dev-embedded/scratchbox-devkit-debian
+  DeprecatedEAPI: version 1.0.10: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.11: uses deprecated EAPI: 0
 
-net-dns/pdns-recursor
-  VulnerablePackage: version 3.5.3-r1: vulnerable via glsa(201412-33) ( ver-rev < 3.6.1-r1 ), keywords ('amd64', 'x86')
-  VulnerablePackage: version 3.6.1: vulnerable via glsa(201412-33) ( ver-rev < 3.6.1-r1 ), keywords ('amd64', 'x86')
+dev-embedded/scratchbox-devkit-debian-squeeze
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 0
 
-net-dns/rbldnsd
-  DeprecatedEAPI: version 0.996b: uses deprecated EAPI: 0
+dev-embedded/scratchbox-devkit-doctools
+  DeprecatedEAPI: version 1.0.9: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.13: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.14: uses deprecated EAPI: 0
 
-net-dns/tinystats
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
-  MissingChksum: version 1.1: "tinystats-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+dev-embedded/scratchbox-devkit-git
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
 
-net-dns/totd
-  ExecutableFile: "files/totd" has unnecessary executable bit
-  MissingChksum: version 1.5.1: "totd-1.5.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+dev-embedded/scratchbox-devkit-maemo3
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 0
 
-net-dns/unbound
-  DroppedKeywordWarning: version 1.5.1-r2: keywords dropped: alpha, ia64, m68k, mips, s390, sh, sparc
+dev-embedded/scratchbox-devkit-perl
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 0
 
-net-dns/updatedd
-  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 0
-  MissingChksum: version 2.6: "updatedd_2.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+dev-embedded/scratchbox-devkit-qemu
+  DeprecatedEAPI: version 0.10.0.0.10: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.11.50.0.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.12.50.0.3: uses deprecated EAPI: 0
 
-net-dns/valtz
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
-  MissingChksum: version 0.7: "valtz.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+dev-embedded/scratchbox-devkit-svn
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-toolchain-cs2005q3_2-glibc2_5
+  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-toolchain-cs2007q3-glibc2_5
+  DeprecatedEAPI: version 1.0.12: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.14: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.14-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.16: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-toolchain-cs2009q1-203sb1
+  DeprecatedEAPI: version 1.0.13: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-toolchain-cs2009q1-eglibc2_8
+  DeprecatedEAPI: version 1.0.17: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.19: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox-toolchain-cs2009q3-eglibc2_10
+  DeprecatedEAPI: version 1.0.17-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.18: uses deprecated EAPI: 0
+
+dev-embedded/scratchbox2
+  DeprecatedEAPI: version 2.0-r1: uses deprecated EAPI: 2
+
+dev-embedded/sdcc
+  DeprecatedEAPI: version 2.5.0_p20060502: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.6.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.7.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.8.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.9.0: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+
+dev-embedded/sgpp-lite-arm-eabi-bin
+  DeprecatedEAPI: version 2010.09.51: uses deprecated EAPI: 0
+
+dev-embedded/sgpp-lite-arm-linux-bin
+  DeprecatedEAPI: version 2010.09.50: uses deprecated EAPI: 0
+
+dev-embedded/sgpp-lite-arm-uclinux-bin
+  DeprecatedEAPI: version 2010.09.58: uses deprecated EAPI: 0
+
+dev-embedded/tavrasm
+  DeprecatedEAPI: version 1.22-r1: uses deprecated EAPI: 2
+
+dev-embedded/tigcc
+  DeprecatedEAPI: version 0.96_beta7: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.96_beta8-r1: uses deprecated EAPI: 0
+
+dev-embedded/upslug2
+  DeprecatedEAPI: version 11: uses deprecated EAPI: 0
+
+dev-embedded/urjtag
+  DeprecatedEAPI: version 0.10: uses deprecated EAPI: 0
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+dev-embedded/usbprog
+  MetadataError: version 0.2.0: attr(fetchables): error- Metadata Exception: pkg ebuild src: dev-embedded/usbprog-0.2.0, attr fetchables
+error: mirror://berlios/usbprog/usbprog-0.2.0.tar.bz2 is unparseable
+flagged token- uri mirror://berlios/usbprog/usbprog-0.2.0.tar.bz2 is has no known mirror tier
+
+dev-embedded/zmac
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -2078,115 +2144,39 @@ sys-process/watchpid
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-net-dialup/capidivert
-  DeprecatedEAPI: version 0.0.2: uses deprecated EAPI: 0
+games-strategy/attal
+  DeprecatedEAPI: version 0.10.1: uses deprecated EAPI: 2
+  MissingChksum: version 0.10.1: "attal-src-0.10.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.10.1: "themes-0.10.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-dialup/capifwd
-  DeprecatedEAPI: version 0.6.3-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.6.3-r1: "capifwd-0.6.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-strategy/coldwar
+  MissingChksum: version 1.0.1-r1: "coldwar-1.0-1.0.1-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-dialup/cistronradius
-  MissingChksum: version 1.6.8-r1: "radiusd-cistron-1.6.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-strategy/darwinia-demo
+  MissingChksum: version 1.3.0: "darwinia-demo2-1.3.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-dialup/dgcmodem
-  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
-  MissingChksum: version 1.10: "dgcmodem-1.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-strategy/defcon-demo
+  ExecutableFile: "files/defcon" has unnecessary executable bit
 
-net-dialup/dial
-  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.2-r1: "dial-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-strategy/heroes3
+  MissingChksum: version 1.3.1a-r2: "heroes3-1.3.1a-cdrom-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.3.1a-r2: "heroes3-1.3.1a-ppc.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-dialup/diald
-  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 0
-  MissingChksum: version 1.0-r2: "diald-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-strategy/knights-demo
+  MissingChksum: version 1.32-r1: "knights-demo-1.32.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-dialup/drdsl
-  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 0
-  MissingChksum: version 1.2.0: "drdsl-1.0-1.i586.rpm" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.2.0: "drdsl-1.0-1.x86_64.rpm" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+games-strategy/openra
+  DeprecatedEclass: version 20120630: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
-net-dialup/dwun
-  DeprecatedEAPI: version 0.96e-r2: uses deprecated EAPI: 2
+games-strategy/revenge-of-the-titans
+  MissingChksum: version 1.80.12: "revenge-of-the-titans-1.80.12-amd64.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.80.12: "revenge-of-the-titans-1.80.12-i386.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-dialup/freeradius
-  DroppedKeywordWarning: version 3.0.3: keywords dropped: amd64, ppc, ppc64, sparc, x86
+games-strategy/xbattle
+  MissingChksum: version 5.4.1: "xbattle-5.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-dialup/freeradius-client
-  DeprecatedEAPI: version 1.1.6: uses deprecated EAPI: 2
-  MissingChksum: version 1.1.6: "freeradius-client-1.1.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dialup/globespan-adsl
-  DeprecatedEAPI: version 0.11-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 0
-  MissingChksum: version 0.11-r1: "eciadsl-usermode-0.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.12: "eciadsl-usermode-0.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dialup/hcfpcimodem
-  DeprecatedEAPI: version 1.20: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.21: uses deprecated EAPI: 2
-
-net-dialup/intel-536ep
-  DeprecatedEAPI: version 4.71: uses deprecated EAPI: 0
-  MissingChksum: version 4.71: "intel-536ep-4.71.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-dialup/itund
-  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 0
-  MissingChksum: version 0.3.1: "itund-0.3.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dialup/linux-atm
-  DeprecatedEAPI: version 2.5.0: uses deprecated EAPI: 0
-
-net-dialup/lrzsz
-  DeprecatedEAPI: version 0.12.20-r3: uses deprecated EAPI: 2
-
-net-dialup/mingetty
-  DeprecatedEAPI: version 1.08: uses deprecated EAPI: 0
-  MissingChksum: version 1.08: "mingetty-1.08.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dialup/mwavem
-  DeprecatedEAPI: version 2.0-r1: uses deprecated EAPI: 2
-  ExecutableFile: "files/mwave-dev-handler" has unnecessary executable bit
-
-net-dialup/neocon
-  MissingChksum: version 20110228: "neocon-20110228.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-dialup/ppp
-  DeprecatedEAPI: version 2.4.4-r25: uses deprecated EAPI: 2
-  VulnerablePackage: version 2.4.4-r25: vulnerable via glsa(201412-19) ( ver < 2.4.7 ), keywords ('alpha', 'amd64', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'x86')
-  VulnerablePackage: version 2.4.5-r3: vulnerable via glsa(201412-19) ( ver < 2.4.7 ), keywords ('alpha', 'amd64', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'x86')
-  VulnerablePackage: version 2.4.6-r3: vulnerable via glsa(201412-19) ( ver < 2.4.7 ), keywords ('alpha', 'amd64', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'x86')
-
-net-dialup/pppconfig
-  DeprecatedEAPI: version 2.3.17-r1: uses deprecated EAPI: 0
-
-net-dialup/qtwvdialer
-  DeprecatedEAPI: version 0.4.4_p20091228: uses deprecated EAPI: 2
-  MissingChksum: version 0.4.4_p20091228: "qtwvdialer-0.4.4_p20091228.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dialup/radiusclient
-  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 0
-
-net-dialup/rp-pppoe
-  DeprecatedEAPI: version 3.8-r2: uses deprecated EAPI: 0
-
-net-dialup/sercd
-  MissingChksum: version 3.0.0-r1: "sercd-3.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dialup/speedtouch-usb
-  DeprecatedEAPI: version 3.0.1.2-r3: uses deprecated EAPI: 0
-  MissingChksum: version 3.0.1.2-r3: "SpeedTouch330_firmware_3012.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dialup/ueagle-atm
-  DeprecatedEAPI: version 1.1-r3: uses deprecated EAPI: 2
-  MissingChksum: version 1.1-r3: "ueagle-data-src-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-dialup/ueagle4-atm
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 2
-  MissingChksum: version 1.0: "ueagle4-data-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-dialup/wvdial
-  DeprecatedEAPI: version 1.61: uses deprecated EAPI: 3
-  MissingChksum: version 1.61: "wvdial-1.61.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+games-strategy/xbattleai
+  MissingChksum: version 1.2.2-r1: "xbattleai-1.2.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
