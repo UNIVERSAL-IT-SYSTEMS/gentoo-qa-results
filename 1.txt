@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 1 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'net-analyzer/*' 'sys-libs/*' 'app-arch/*' 'sys-auth/*' 'net-irc/*' 'gnome-base/*' 'app-accessibility/*' 'app-mobilephone/*' 'net-news/*' 'gpe-utils/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'net-analyzer/*' 'sys-libs/*' 'app-arch/*' 'sys-auth/*' 'sci-geosciences/*' 'gnome-base/*' 'app-accessibility/*' 'app-mobilephone/*' 'net-news/*' 'gpe-utils/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
@@ -781,96 +781,100 @@ sys-auth/thinkfinger
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-net-irc/asuka
-  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
+sci-geosciences/bt747
+  MissingChksum: version 2.0.3: "BT747_2.0.3_full.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-irc/atheme-services
+sci-geosciences/foxtrotgps
+  MissingChksum: version 1.1.0: "foxtrotgps-1.1.0.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-geosciences/gdal-grass
+  MissingChksum: version 1.4.3-r1: "gdal-grass-1.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-geosciences/gmt
+  MissingChksum: version 4.5.6: "GMT4.5.6_src.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 4.5.6: "GMT4.5.6_share.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 4.5.6: "GSHHS2.1.1_coast.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 4.5.6: "GMT4.5.6_suppl.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 4.5.6: "GMT4.5.6_doc.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 4.5.6: "GSHHS2.1.1_full.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 4.5.6: "GSHHS2.1.1_high.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 4.5.6: "GMT4.5.6_triangle.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 4.5.8: "gmt-4.5.8-non-gpl.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-geosciences/gpsbabel
+  MissingChksum: version 1.4.3: "gpsbabel.org-style3.css" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-geosciences/gpscorrelate
+  MissingChksum: version 1.6.1: "gpscorrelate-1.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-geosciences/gpsd
+  DeprecatedEclass: version 2.95-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.95-r1: uses deprecated EAPI: 3
+  MetadataError: version 2.95-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: sci-geosciences/gpsd-2.95-r1, attr fetchables
+error: mirror://berlios/gpsd/gpsd-2.95.tar.gz is unparseable
+flagged token- uri mirror://berlios/gpsd/gpsd-2.95.tar.gz is has no known mirror tier
+  DeprecatedEclass: version 2.96-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.96-r1: uses deprecated EAPI: 3
+  MetadataError: version 2.96-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: sci-geosciences/gpsd-2.96-r1, attr fetchables
+error: mirror://berlios/gpsd/gpsd-2.96bis.tar.gz is unparseable
+flagged token- uri mirror://berlios/gpsd/gpsd-2.96bis.tar.gz is has no known mirror tier
+  DeprecatedEclass: version 3.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 3.7: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 3.8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 3.9: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 3.9-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  ExecutableFile: "files/gpsd.init-2" has unnecessary executable bit
 
-net-irc/bip
-  DeprecatedEAPI: version 0.8.8-r1: uses deprecated EAPI: 2
+sci-geosciences/grass
+  DeprecatedEclass: version 6.4.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-irc/bnc
-  DeprecatedEAPI: version 2.9.4: uses deprecated EAPI: 0
+sci-geosciences/josm-plugins
+  DeprecatedEAPI: version 20101206: uses deprecated EAPI: 3
+  MissingChksum: version 20101206: "josm-plugins-20101206.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-irc/charybdis
-  VulnerablePackage: version 3.3.0: vulnerable via glsa(201405-21) ( ver < 3.4.2 ), keywords ('amd64', 'x86')
+sci-geosciences/mapnik
+  DeprecatedEclass: version 2.0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 2.0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 2.1.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-irc/dccserver
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+sci-geosciences/mapnik-world-boundaries
+  DeprecatedEAPI: version 20090514: uses deprecated EAPI: 2
 
-net-irc/dircproxy
-  DeprecatedEAPI: version 1.2.0_rc1: uses deprecated EAPI: 0
+sci-geosciences/mapserver
+  DeprecatedEclass: version 6.0.1-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-irc/hexchat
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sci-geosciences/mc2bsbh
+  MissingChksum: version 0.0.9: "mc2bsbh-beta09.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-irc/iip
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 2
+sci-geosciences/mkgmap
+  MissingChksum: version 1995: "mkgmap-r1995-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-irc/irc-client
-  DeprecatedEAPI: version 2.10.3_p7: uses deprecated EAPI: 0
-  MetadataError: version 2.10.3_p7: attr(rdepends): blocks itself
+sci-geosciences/mtkbabel
+  MissingChksum: version 0.8.2: "mtkbabel-0.8.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-irc/irc-server
-  DeprecatedEAPI: version 2.11.1_p1-r2: uses deprecated EAPI: 0
+sci-geosciences/osm-gps-map
+  ExecutableFile: "files/osm-gps-map-0.7.3-disable-compiler-warnings.patch" has unnecessary executable bit
+  ExecutableFile: "files/osm-gps-map-0.7.3-fix-docs-location.patch" has unnecessary executable bit
 
-net-irc/ircmap
-  DeprecatedEAPI: version 0.99: uses deprecated EAPI: 0
+sci-geosciences/osm2mp
+  MissingChksum: version 0.80: "osm2mp_v080.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-irc/irker
-  DeprecatedEclass: version 1.19: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 1.20: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+sci-geosciences/osm2pgsql
+  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-irc/irssi-otr
-  NonExistentDeps: version 0.2: depset depends: nonexistent atoms [ net-irc/irssi-svn ]
-  NonExistentDeps: version 0.2: depset rdepends: nonexistent atoms [ net-irc/irssi-svn ]
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 2
+sci-geosciences/osmosis
+  MissingChksum: version 0.35.1: "osmosis-0.35.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-irc/irssistats
-  DeprecatedEAPI: version 0.75: uses deprecated EAPI: 0
+sci-geosciences/qgis
+  DeprecatedEclass: version 1.7.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.7.0: uses deprecated EAPI: 3
 
-net-irc/jircii
-  DeprecatedEAPI: version 41: uses deprecated EAPI: 0
+sci-geosciences/qlandkartegt-garmindev
+  MissingChksum: version 0.3.4: "garmindev-0.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-irc/kvirc
-  DeprecatedEclass: version 4.4_pre6250: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-net-irc/miau
-  DeprecatedEAPI: version 0.6.6: uses deprecated EAPI: 0
-
-net-irc/muh
-  DeprecatedEAPI: version 2.2a: uses deprecated EAPI: 0
-
-net-irc/ninja
-  DeprecatedEAPI: version 1.5.9_pre14: uses deprecated EAPI: 0
-
-net-irc/onis
-  DeprecatedEAPI: version 0.8.2: uses deprecated EAPI: 0
-
-net-irc/psybnc
-  DeprecatedEAPI: version 2.3.2.9-r2: uses deprecated EAPI: 2
-
-net-irc/ptlink-opm
-  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
-
-net-irc/rhapsody
-  DeprecatedEAPI: version 0.28b: uses deprecated EAPI: 0
-
-net-irc/smuxi
-  DeprecatedEclass: version 0.8.10.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-
-net-irc/srvx
-  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
-
-net-irc/xchat-otr
-  NonExistentDeps: version 0.3: depset depends: nonexistent atoms [ net-irc/xchat ]
-  NonExistentDeps: version 0.3: depset rdepends: nonexistent atoms [ net-irc/xchat ]
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 2
-
-net-irc/znc
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sci-geosciences/readosm
+  MissingChksum: version 1.0.0: "readosm-1.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
