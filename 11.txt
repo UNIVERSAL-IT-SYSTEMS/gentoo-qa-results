@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 11 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'sys-fs/*' 'dev-vcs/*' 'app-office/*' 'www-apache/*' 'media-tv/*' 'gnustep-apps/*' 'x11-proto/*' 'app-laptop/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'sys-fs/*' 'dev-vcs/*' 'app-office/*' 'www-apache/*' 'sys-process/*' 'gnustep-apps/*' 'x11-proto/*' 'app-laptop/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1635,82 +1635,139 @@ www-apache/modsec-flameeyes
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-media-tv/dvbstream
-  DeprecatedEAPI: version 0.7_pre20080516: uses deprecated EAPI: 0
-  MissingChksum: version 0.7_pre20080516: "dvbstream-snapshot-20080302.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sys-process/acct
+  DeprecatedEAPI: version 6.5.5-r3: uses deprecated EAPI: 3
 
-media-tv/dvbstreamer
-  DeprecatedEAPI: version 1.1-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.0.0_rc1: uses deprecated EAPI: 2
-  MissingChksum: version 1.1-r1: "dvbstreamer-1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 2.0.0_rc1: "dvbstreamer-2.0.0rc1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sys-process/anacron
+  DeprecatedEAPI: version 2.3-r2: uses deprecated EAPI: 0
+  ExecutableFile: "files/anacron.rc6" has unnecessary executable bit
 
-media-tv/freevo
-  DeprecatedEAPI: version 1.9.0: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.9.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 1.9.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
-  NonExistentDeps: version 1.9.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
-  ExecutableFile: "files/freevo.boot" has unnecessary executable bit
+sys-process/at
+  ExecutableFile: "files/atd.rc7" has unnecessary executable bit
+  ExecutableFile: "files/atd.rc8" has unnecessary executable bit
 
-media-tv/ivtvplayer
-  WrongIndentFound: version 0.1.3-r1: ebuild has whitespace in indentation on line 18
+sys-process/atop
+  DeprecatedEAPI: version 1.27_p3: uses deprecated EAPI: 3
 
-media-tv/ivtv-utils
-  MissingChksum: version 1.4.1: "ivtv-utils-1.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sys-process/audit
+  DeprecatedEAPI: version 1.7.18: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.7.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.0.5: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.0.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 2.0.5: depset depends: nonexistent atoms [ dev-libs/libprelude ]
+  NonExistentDeps: version 2.0.5: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
+  DeprecatedEAPI: version 2.1.3-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.1.3-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 2.1.3-r1: depset depends: nonexistent atoms [ dev-libs/libprelude ]
+  NonExistentDeps: version 2.1.3-r1: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
+  NonExistentDeps: version 2.2.2-r2: depset depends: nonexistent atoms [ dev-libs/libprelude ]
+  NonExistentDeps: version 2.2.2-r2: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
+  NonExistentDeps: version 2.2.2-r3: depset depends: nonexistent atoms [ dev-libs/libprelude ]
+  NonExistentDeps: version 2.2.2-r3: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
 
-media-tv/ivtvplayer
-  DeprecatedEAPI: version 0.1.3-r1: uses deprecated EAPI: 2
-  NonExistentDeps: version 0.1.3-r1: depset rdepends: nonexistent atoms [ media-tv/ivtv ]
-  MissingChksum: version 0.1.3-r1: "ivtvplayer-0.1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sys-process/bcron
+  DeprecatedEAPI: version 0.09: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.09-r2: uses deprecated EAPI: 2
+  MissingChksum: version 0.09: "bcron-0.09.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-media-tv/kodi
-  ExecutableFile: "files/generate.sh" has unnecessary executable bit
+sys-process/cronbase
+  DeprecatedEAPI: version 0.3.3: uses deprecated EAPI: 0
 
-media-tv/linuxtv-dvb-firmware
-  DeprecatedEAPI: version 2009.07.06-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2009.09.19: uses deprecated EAPI: 0
+sys-process/cronie
+  BadInsIntoDir: version 1.4.12: ebuild uses insinto /etc/conf.d on line 48
+  BadInsIntoDir: version 1.4.12: ebuild uses insinto /etc/cron.hourly on line 73
 
-media-tv/mythtv
-  DeprecatedEclass: version 0.26.0_p20130922: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.27_p20140321: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.27.1_p20140713: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.27.1_p20140817: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.27.3_p20140907: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.27.3_p20141009: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.27.4_p20141018: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.27.4_p20150124: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.27.5_p20150627: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+sys-process/cronbase
+  ExecutableFile: "files/run-crons-0.3.3" has unnecessary executable bit
 
-media-tv/nvtv
-  DeprecatedEAPI: version 0.4.7-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.4.7-r1: "nvtv-0.4.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sys-process/cronie
+  BadInsIntoDir: version 1.5.0: ebuild uses insinto /etc/conf.d on line 48
+  BadInsIntoDir: version 1.5.0: ebuild uses insinto /etc/cron.hourly on line 73
 
-media-tv/shoutcast2vdr
-  DeprecatedEAPI: version 0.0.8: uses deprecated EAPI: 0
+sys-process/daemontools
+  DeprecatedEAPI: version 0.76-r7: uses deprecated EAPI: 0
+  MissingChksum: version 0.76-r7: "daemontools-0.76.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.76-r7: "daemontools-0.76-man-20020131.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-media-tv/tvbrowser
-  WhitespaceFound: version 9999: ebuild has trailing whitespace on line 111
-  SizeViolation: "files/tvbrowser-9999-build.xml" exceeds 20k in size; 37346 bytes total
+sys-process/dcron
+  DeprecatedEAPI: version 3.2-r1: uses deprecated EAPI: 0
+  BadInsIntoDir: version 4.4: ebuild uses insinto /etc/cron.d on line 39
+  DeprecatedEAPI: version 4.4: uses deprecated EAPI: 2
+  BadInsIntoDir: version 4.5: ebuild uses insinto /etc/cron.d on line 38
+  DeprecatedEAPI: version 4.5: uses deprecated EAPI: 2
+  BadInsIntoDir: version 4.5-r1: ebuild uses insinto /etc/cron.d on line 38
+  ExecutableFile: "files/dcron" has unnecessary executable bit
+  ExecutableFile: "files/dcron.init" has unnecessary executable bit
+  ExecutableFile: "files/dcron.init-4.4" has unnecessary executable bit
+  ExecutableFile: "files/dcron.init-4.5" has unnecessary executable bit
 
-media-tv/tvheadend
+sys-process/fuser-bsd
+  DeprecatedEAPI: version 1142334561: uses deprecated EAPI: 2
+  MissingChksum: version 1142334561: "fuser-1142334561.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1142334561: "fuser-bsd-patches-1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sys-process/latencytop
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+
+sys-process/lsof
+  DeprecatedEAPI: version 4.85-r2: uses deprecated EAPI: 2
+
+sys-process/minit
+  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.10: uses deprecated EAPI: 0
+  MissingChksum: version 0.9.1: "minit-0.9.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.10: "minit-0.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-process/numad
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-media-tv/tvmovie2vdr
-  DeprecatedEAPI: version 0.5.13: uses deprecated EAPI: 0
-  MissingChksum: version 0.5.13: "tvmovie2vdr-0.5.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sys-process/pidof-bsd
+  DeprecatedEAPI: version 20050501-r4: uses deprecated EAPI: 0
+  MissingChksum: version 20050501-r4: "pidof-bsd-20050501.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-media-tv/wis-go7007
-  DeprecatedEAPI: version 0.9.8-r3: uses deprecated EAPI: 0
-  MissingChksum: version 0.9.8-r3: "wis-go7007-linux-0.9.8.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sys-process/pkill-darwin
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 3
+  MissingChksum: version 1.0: "pkill-darwin-1.0.tar.xz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-media-tv/xawtv
-  DeprecatedEAPI: version 3.95-r2: uses deprecated EAPI: 1
+sys-process/prll
+  MissingChksum: version 0.6.2: "prll-0.6.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-media-tv/xbmc
-  DeprecatedEclass: version 11.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 11.0: depset depends: nonexistent atoms [ <media-video/libav-0.8.2-r1 ]
-  NonExistentDeps: version 11.0: depset rdepends: nonexistent atoms [ <media-video/libav-0.8.2-r1 ]
-  ExecutableFile: "files/generate.sh" has unnecessary executable bit
+sys-process/psinfo
+  MissingChksum: version 0.12: "psinfo-0.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sys-process/runit
+  BadInsIntoDir: version 2.1.1-r1: ebuild uses insinto /etc/env.d on line 61
+  DeprecatedEAPI: version 2.1.1-r1: uses deprecated EAPI: 3
+  BadInsIntoDir: version 2.1.2: ebuild uses insinto /etc/env.d on line 71
+  ExecutableFile: "files/1" has unnecessary executable bit
+  ExecutableFile: "files/2" has unnecessary executable bit
+  ExecutableFile: "files/3" has unnecessary executable bit
+  ExecutableFile: "files/ctrlaltdel" has unnecessary executable bit
+  ExecutableFile: "files/finish.getty" has unnecessary executable bit
+  ExecutableFile: "files/run.getty" has unnecessary executable bit
+
+sys-process/supervise-scripts
+  DeprecatedEAPI: version 3.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.0: uses deprecated EAPI: 2
+  MissingChksum: version 3.5: "supervise-scripts-3.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 4.0: "supervise-scripts-4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sys-process/top-apple
+  MissingChksum: version 73: "top-73.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 73: "libutil-11-top-73.h" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-process/unixtop
+  DeprecatedEAPI: version 3.8_beta1-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.8_beta1-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.8_beta1-r3: uses deprecated EAPI: 0
+
+sys-process/vixie-cron
+  DeprecatedEAPI: version 4.1-r14: uses deprecated EAPI: 0
+  ExecutableFile: "files/vixie-cron.rc6" has unnecessary executable bit
+
+sys-process/watchpid
+  DeprecatedEAPI: version 0.1-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.1-r1: "watchpid_0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 

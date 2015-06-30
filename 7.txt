@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 7 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-texlive/*' 'media-fonts/*' 'x11-themes/*' 'dev-embedded/*' 'sys-process/*' 'games-strategy/*' 'sys-firmware/*' 'kde-plasma/*' 'dev-go/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-texlive/*' 'media-fonts/*' 'x11-themes/*' 'dev-embedded/*' 'net-firewall/*' 'games-strategy/*' 'sys-firmware/*' 'kde-plasma/*' 'dev-go/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -2008,139 +2008,60 @@ dev-embedded/zmac
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-sys-process/acct
-  DeprecatedEAPI: version 6.5.5-r3: uses deprecated EAPI: 3
+net-firewall/arno-iptables-firewall
+  NonExistentDeps: version 2.0.1d-r2: depset rdepends: nonexistent atoms [ <sys-apps/coreutils-8.20 ]
+  NonExistentDeps: version 2.0.1e: depset rdepends: nonexistent atoms [ <sys-apps/coreutils-8.20 ]
 
-sys-process/anacron
-  DeprecatedEAPI: version 2.3-r2: uses deprecated EAPI: 0
-  ExecutableFile: "files/anacron.rc6" has unnecessary executable bit
+net-firewall/arptables
+  DeprecatedEAPI: version 0.0.3.4-r2: uses deprecated EAPI: 2
+  MissingChksum: version 0.0.3.4-r2: "arptables-v0.0.3-4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sys-process/at
-  ExecutableFile: "files/atd.rc7" has unnecessary executable bit
-  ExecutableFile: "files/atd.rc8" has unnecessary executable bit
+net-firewall/dshieldpy
+  DeprecatedEclass: version 3.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 3.2-r1: "dshieldpy-3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sys-process/atop
-  DeprecatedEAPI: version 1.27_p3: uses deprecated EAPI: 3
+net-firewall/fwanalog
+  DeprecatedEAPI: version 0.6.4: uses deprecated EAPI: 0
 
-sys-process/audit
-  DeprecatedEAPI: version 1.7.18: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.7.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.0.5: uses deprecated EAPI: 3
-  DeprecatedEclass: version 2.0.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 2.0.5: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.0.5: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
-  DeprecatedEAPI: version 2.1.3-r1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 2.1.3-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 2.1.3-r1: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.1.3-r1: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.2.2-r2: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.2.2-r2: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.2.2-r3: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.2.2-r3: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
+net-firewall/fwbuilder
+  MissingChksum: version 5.0.1.3592-r1: "fwbuilder-5.0.1.3592.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 5.1.0.3599: "fwbuilder-5.1.0.3599.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sys-process/bcron
-  DeprecatedEAPI: version 0.09: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.09-r2: uses deprecated EAPI: 2
-  MissingChksum: version 0.09: "bcron-0.09.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+net-firewall/fwipsec
+  DeprecatedEAPI: version 0.4.2-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.4.2-r1: "fwipsec-0.4.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sys-process/cronbase
-  DeprecatedEAPI: version 0.3.3: uses deprecated EAPI: 0
+net-firewall/ipkungfu
+  DeprecatedEAPI: version 0.5.2-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.5.2-r1: "ipkungfu-0.5.2.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.6.1: "ipkungfu-0.6.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-sys-process/cronie
-  BadInsIntoDir: version 1.4.12: ebuild uses insinto /etc/conf.d on line 48
-  BadInsIntoDir: version 1.4.12: ebuild uses insinto /etc/cron.hourly on line 73
+net-firewall/iptables
+  DeprecatedEAPI: version 1.4.6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.4.10: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.4.10-r1: uses deprecated EAPI: 2
+  ExecutableFile: "files/iptables-1.3.2.init" has unnecessary executable bit
 
-sys-process/cronbase
-  ExecutableFile: "files/run-crons-0.3.3" has unnecessary executable bit
+net-firewall/nufw
+  NonExistentDeps: version 2.2.22-r1: depset depends: nonexistent atoms [ dev-libs/libprelude ]
+  NonExistentDeps: version 2.2.22-r1: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
 
-sys-process/cronie
-  BadInsIntoDir: version 1.5.0: ebuild uses insinto /etc/conf.d on line 48
-  BadInsIntoDir: version 1.5.0: ebuild uses insinto /etc/cron.hourly on line 73
-
-sys-process/daemontools
-  DeprecatedEAPI: version 0.76-r7: uses deprecated EAPI: 0
-  MissingChksum: version 0.76-r7: "daemontools-0.76.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 0.76-r7: "daemontools-0.76-man-20020131.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-sys-process/dcron
-  DeprecatedEAPI: version 3.2-r1: uses deprecated EAPI: 0
-  BadInsIntoDir: version 4.4: ebuild uses insinto /etc/cron.d on line 39
-  DeprecatedEAPI: version 4.4: uses deprecated EAPI: 2
-  BadInsIntoDir: version 4.5: ebuild uses insinto /etc/cron.d on line 38
-  DeprecatedEAPI: version 4.5: uses deprecated EAPI: 2
-  BadInsIntoDir: version 4.5-r1: ebuild uses insinto /etc/cron.d on line 38
-  ExecutableFile: "files/dcron" has unnecessary executable bit
-  ExecutableFile: "files/dcron.init" has unnecessary executable bit
-  ExecutableFile: "files/dcron.init-4.4" has unnecessary executable bit
-  ExecutableFile: "files/dcron.init-4.5" has unnecessary executable bit
-
-sys-process/fuser-bsd
-  DeprecatedEAPI: version 1142334561: uses deprecated EAPI: 2
-  MissingChksum: version 1142334561: "fuser-1142334561.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1142334561: "fuser-bsd-patches-1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-sys-process/latencytop
+net-firewall/pftop
   DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
+  MissingChksum: version 0.5: "pftop-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sys-process/lsof
-  DeprecatedEAPI: version 4.85-r2: uses deprecated EAPI: 2
+net-firewall/quicktables
+  DeprecatedEAPI: version 2.3: uses deprecated EAPI: 0
+  MissingChksum: version 2.3: "quicktables-2.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-sys-process/minit
-  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.10: uses deprecated EAPI: 0
-  MissingChksum: version 0.9.1: "minit-0.9.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.10: "minit-0.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-firewall/shapecfg
+  DeprecatedEAPI: version 36: uses deprecated EAPI: 0
+  MissingChksum: version 36: "shaper.36.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-sys-process/numad
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-sys-process/pidof-bsd
-  DeprecatedEAPI: version 20050501-r4: uses deprecated EAPI: 0
-  MissingChksum: version 20050501-r4: "pidof-bsd-20050501.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sys-process/pkill-darwin
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 3
-  MissingChksum: version 1.0: "pkill-darwin-1.0.tar.xz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-sys-process/prll
-  MissingChksum: version 0.6.2: "prll-0.6.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sys-process/psinfo
-  MissingChksum: version 0.12: "psinfo-0.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-sys-process/runit
-  BadInsIntoDir: version 2.1.1-r1: ebuild uses insinto /etc/env.d on line 61
-  DeprecatedEAPI: version 2.1.1-r1: uses deprecated EAPI: 3
-  BadInsIntoDir: version 2.1.2: ebuild uses insinto /etc/env.d on line 71
-  ExecutableFile: "files/1" has unnecessary executable bit
-  ExecutableFile: "files/2" has unnecessary executable bit
-  ExecutableFile: "files/3" has unnecessary executable bit
-  ExecutableFile: "files/ctrlaltdel" has unnecessary executable bit
-  ExecutableFile: "files/finish.getty" has unnecessary executable bit
-  ExecutableFile: "files/run.getty" has unnecessary executable bit
-
-sys-process/supervise-scripts
-  DeprecatedEAPI: version 3.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.0: uses deprecated EAPI: 2
-  MissingChksum: version 3.5: "supervise-scripts-3.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 4.0: "supervise-scripts-4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-sys-process/top-apple
-  MissingChksum: version 73: "top-73.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 73: "libutil-11-top-73.h" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sys-process/unixtop
-  DeprecatedEAPI: version 3.8_beta1-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.8_beta1-r2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.8_beta1-r3: uses deprecated EAPI: 0
-
-sys-process/vixie-cron
-  DeprecatedEAPI: version 4.1-r14: uses deprecated EAPI: 0
-  ExecutableFile: "files/vixie-cron.rc6" has unnecessary executable bit
-
-sys-process/watchpid
-  DeprecatedEAPI: version 0.1-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.1-r1: "watchpid_0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+net-firewall/xtables-addons
+  MissingChksum: version 1.37: "xtables-addons-1.37.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
