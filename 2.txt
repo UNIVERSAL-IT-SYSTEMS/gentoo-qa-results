@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 2 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'net-analyzer/*' 'sys-libs/*' 'sys-cluster/*' 'games-fps/*' 'net-irc/*' 'games-emulation/*' 'net-fs/*' 'dev-games/*' 'games-roguelike/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'app-emulation/*' 'sys-libs/*' 'sys-cluster/*' 'games-fps/*' 'net-irc/*' 'games-emulation/*' 'net-fs/*' 'dev-games/*' 'games-roguelike/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -35,227 +35,156 @@ dev-perl/WWW-Mechanize
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-net-analyzer/2ping
-  MissingChksum: version 1.2.3: "2ping-1.2.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-emulation/bochs
+  DeprecatedEAPI: version 2.4.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.4.5: uses deprecated EAPI: 0
 
-net-analyzer/authforce
-  MissingChksum: version 0.9.9-r1: "authforce-0.9.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-emulation/coldfire
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 2
 
-net-analyzer/barnyard
-  DeprecatedEAPI: version 0.2.0-r3: uses deprecated EAPI: 2
-  MissingChksum: version 0.2.0-r3: "barnyard-0.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.2.0-r3: "barnyard-0.2.0-patches.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-emulation/crossover-office-bin
+  MissingChksum: version 6.0.0: "install-crossover-standard-6.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.0.1: "install-crossover-standard-6.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.1.0: "install-crossover-standard-6.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.2.0: "install-crossover-standard-6.2.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-analyzer/barnyard2
-  DeprecatedEAPI: version 1.9: uses deprecated EAPI: 2
-  MissingChksum: version 1.9: "barnyard2-1.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-emulation/crossover-office-pro-bin
+  MissingChksum: version 5.0.0: "install-crossover-pro-5.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 5.0.1: "install-crossover-pro-5.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 5.0.3: "install-crossover-pro-5.0.3.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.0.0: "install-crossover-pro-6.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.1.0: "install-crossover-pro-6.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.2.0: "install-crossover-pro-6.2.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 7.0.2: "install-crossover-pro-7.0.2.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 7.1.0: "install-crossover-pro-7.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 8.0.0: "install-crossover-pro-8.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 9.0.0: "install-crossover-pro-9.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 9.0.1: "install-crossover-pro-9.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 9.1.0: "install-crossover-pro-9.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 9.2.0: "install-crossover-pro-9.2.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-analyzer/bing
-  DeprecatedEAPI: version 1.1.3-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.1.3-r1: "bing_1.1.3.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-emulation/dlx
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.0-r1: uses deprecated EAPI: 0
 
-net-analyzer/bsnmp
-  DeprecatedEAPI: version 1.11a: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.12-r1: uses deprecated EAPI: 0
-  MissingChksum: version 1.11a: "bsnmp-1.11a.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-emulation/docker
+  ExecutableFile: "files/docker-r2.initd" has unnecessary executable bit
 
-net-analyzer/chaosreader
-  DeprecatedEAPI: version 0.94: uses deprecated EAPI: 2
-  MissingChksum: version 0.94: "chaosreader-0.94.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-emulation/domi
+  DeprecatedEAPI: version 20060816: uses deprecated EAPI: 0
 
-net-analyzer/dhcp_probe
-  DeprecatedEAPI: version 1.3.0-r3: uses deprecated EAPI: 2
-  MissingChksum: version 1.3.0-r3: "dhcp_probe-1.3.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-emulation/dosemu
+  DeprecatedEAPI: version 1.4.1_pre20091009: uses deprecated EAPI: 0
 
-net-analyzer/dietsniff
-  MissingChksum: version 0.4: "dietsniff-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-emulation/e-uae
+  DeprecatedEAPI: version 0.8.29_rc4-r2: uses deprecated EAPI: 3
 
-net-analyzer/dsniff
-  DeprecatedEAPI: version 2.4_beta1-r4: uses deprecated EAPI: 0
+app-emulation/fuse-utils
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 3
 
-net-analyzer/echoping
-  VulnerablePackage: version 6.0.2-r2: vulnerable via glsa(201406-07) ( ver < 6.0.2_p434 ), keywords ('amd64', 'hppa', 'x86')
+app-emulation/ganeti
+  BadInsIntoDir: version 2.10.5-r4: ebuild uses insinto /etc/cron.d on line 155
+  BadInsIntoDir: version 2.11.6-r2: ebuild uses insinto /etc/cron.d on line 192
+  BadInsIntoDir: version 2.12.1-r3: ebuild uses insinto /etc/cron.d on line 225
+  BadInsIntoDir: version 2.12.3-r2: ebuild uses insinto /etc/cron.d on line 233
+  BadInsIntoDir: version 2.13.0-r2: ebuild uses insinto /etc/cron.d on line 229
 
-net-analyzer/flow-tools
-  ExecutableFile: "files/flowcapture.confd" has unnecessary executable bit
-  ExecutableFile: "files/flowcapture.initd" has unnecessary executable bit
-  ExecutableFile: "files/linkme" has unnecessary executable bit
+app-emulation/ganeti-htools
+  DeprecatedEAPI: version 0.2.8: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 2
 
-net-analyzer/fprobe
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
+app-emulation/ganeti-instance-debian-etch
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
 
-net-analyzer/gr-fosphor
+app-emulation/ganeti-instance-debootstrap
+  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 2
+
+app-emulation/ganeti-instance-image
+  NonExistentDeps: version 0.6: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
+
+app-emulation/hercules
+  DeprecatedEAPI: version 3.04: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.05: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.06: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.07: uses deprecated EAPI: 0
+
+app-emulation/kvm-kmod
+  DeprecatedEAPI: version 3.3.6: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 3.4: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 3.6: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 3.8: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 3.10.1: uses deprecated EAPI: 2
+
+app-emulation/libspectrum
+  DeprecatedEAPI: version 0.2.2-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.5.0.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 3
+
+app-emulation/lxc
+  DroppedKeywordWarning: version 1.1.0-r6: keywords dropped: arm64, ppc64, x86
+
+app-emulation/phpvirtualbox
+  DeprecatedEAPI: version 4.1.7-r2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 4.1.11: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 4.2.3b: uses deprecated EAPI: 2
+
+app-emulation/qemu
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-analyzer/greenbone-security-assistant
-  ExecutableFile: "files/gsad" has unnecessary executable bit
+app-emulation/simh
+  DeprecatedEAPI: version 3.3.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.8.1: uses deprecated EAPI: 0
 
-net-analyzer/gsm-receiver
+app-emulation/skyeye
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 2
+
+app-emulation/softgun
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.16: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.19: uses deprecated EAPI: 2
+
+app-emulation/spectemu
+  DeprecatedEAPI: version 0.99.3: uses deprecated EAPI: 0
+
+app-emulation/spim
+  DeprecatedEAPI: version 8.0-r1: uses deprecated EAPI: 3
+
+app-emulation/virt-manager
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-analyzer/gspoof
-  MissingChksum: version 3.2-r2: "gspoof-3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-emulation/virtualbox
+  ExecutableFile: "files/virtualbox-ose-3-wrapper" has unnecessary executable bit
 
-net-analyzer/hping
-  DeprecatedEAPI: version 3_pre20051105-r3: uses deprecated EAPI: 2
+app-emulation/virtualbox-bin
+  ExecutableFile: "files/virtualbox-bin-3-wrapper" has unnecessary executable bit
 
-net-analyzer/icinga2
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-emulation/virtualbox-modules
+  ExecutableFile: "files/create_vbox_modules_tarball.sh" has unnecessary executable bit
 
-net-analyzer/ike-scan
-  MissingChksum: version 1.9-r1: "ike-scan-1.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-emulation/vmips
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
 
-net-analyzer/ipaudit
-  DeprecatedEAPI: version 1.0_beta2: uses deprecated EAPI: 0
-  MissingChksum: version 1.0_beta2: "ipaudit-1.0BETA2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-emulation/vmips-cross-bin
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
 
-net-analyzer/metasploit
-  DeprecatedEAPI: version 2.7: uses deprecated EAPI: 0
-  DroppedKeywordWarning: version 4.9.3: keywords dropped: ppc
+app-emulation/vmware-modules
+  SizeViolation: "files/271-3.10.0.patch" exceeds 20k in size; 23418 bytes total
 
-net-analyzer/multimon-ng
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-emulation/vmware-tools
+  DeprecatedEAPI: version 9.2.3.1031769: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.6.1.1379776: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.6.2.1744117: uses deprecated EAPI: 0
 
-net-analyzer/munin
-  DeprecatedEclass: version 2.1.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-emulation/vov
+  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 0
 
-net-analyzer/nagios-check_logfiles
-  DeprecatedEAPI: version 2.3.2.1-r1: uses deprecated EAPI: 0
-
-net-analyzer/nagios-check_rbl
-  DroppedKeywordWarning: version 1.3.7: keywords dropped: x86
-
-net-analyzer/nagios-plugins-flameeyes
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-analyzer/nagios-sap-ccms-plugin
-  DeprecatedEAPI: version 0.7.3-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.7.3-r1: "sap-ccms-plugin-0.7.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.8: "sap-ccms-plugin-0.8.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-analyzer/nagircbot
-  ExecutableFile: "files/init" has unnecessary executable bit
-
-net-analyzer/nagstamon
-  DeprecatedEclass: version 0.9.11_rc1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-net-analyzer/nagtrap
-  DeprecatedEAPI: version 0.1.3: uses deprecated EAPI: 2
-
-net-analyzer/ncrack
-  DeprecatedEAPI: version 0.3_alpha: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.4_alpha: uses deprecated EAPI: 2
-  MissingChksum: version 0.3_alpha: "ncrack-0.3ALPHA.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 0.4_alpha: "ncrack-0.4ALPHA.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-analyzer/ndoutils
-  ExecutableFile: "files/ndo2db.init-nagios3" has unnecessary executable bit
-
-net-analyzer/nepenthes
-  DeprecatedEAPI: version 0.2.2: uses deprecated EAPI: 2
-
-net-analyzer/nessus
-  DeprecatedEAPI: version 2.2.9: uses deprecated EAPI: 0
-
-net-analyzer/nessus-bin
-  DeprecatedEAPI: version 4.4.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 5.0.1: uses deprecated EAPI: 0
-  MissingChksum: version 4.4.1: "Nessus-4.4.1-es6.i686.rpm" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 4.4.1: "Nessus-4.4.1-es6.x86_64.rpm" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-analyzer/nessus-client
-  DeprecatedEAPI: version 1.0.2-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.0.2-r1: "NessusClient-1.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.0.2-r1: "nessus-client.png.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-analyzer/nessus-core
-  NonExistentDeps: version 2.2.9-r1: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.2.9-r1: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
-  MissingChksum: version 2.2.9-r1: "nessus-core-2.2.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-analyzer/nessus-libraries
-  MissingChksum: version 2.2.9-r1: "nessus-libraries-2.2.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-analyzer/nessus-plugins
-  MissingChksum: version 2.2.9-r1: "nessus-plugins-GPL-2.2.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-analyzer/neti
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
-
-net-analyzer/netsniff-ng
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-analyzer/nikto
-  DeprecatedEAPI: version 1.36: uses deprecated EAPI: 0
-  MissingChksum: version 1.36: "nikto-1.36.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-analyzer/nmbscan
-  DeprecatedEAPI: version 1.2.5: uses deprecated EAPI: 2
-
-net-analyzer/ntop
-  DeprecatedEAPI: version 4.0.3: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 4.1.0: uses deprecated EAPI: 2
-
-net-analyzer/p0f
-  DeprecatedEAPI: version 2.0.8-r2: uses deprecated EAPI: 3
-  ExecutableFile: "files/p0f.initd3" has unnecessary executable bit
-
-net-analyzer/poink
-  DeprecatedEAPI: version 2.03: uses deprecated EAPI: 0
-  MissingChksum: version 2.03: "poink-2.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-analyzer/portbunny
-  DeprecatedEAPI: version 1.0_p20080423: uses deprecated EAPI: 0
-  MissingChksum: version 1.0_p20080423: "PortBunny230408.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-analyzer/postal
-  MissingChksum: version 0.72: "postal-0.72.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-analyzer/raddump
-  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 0
-  MissingChksum: version 0.3.1: "raddump-0.3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-analyzer/rrdtool
-  DroppedKeywordWarning: version 1.5.3-r1: keywords dropped: alpha, ia64, sparc
-
-net-analyzer/sguil-server
-  ExecutableFile: "files/sguild.initd" has unnecessary executable bit
-
-net-analyzer/smokeping
-  ExecutableFile: "files/smokeping.init.3" has unnecessary executable bit
-
-net-analyzer/snips
-  DeprecatedEAPI: version 1.2-r2: uses deprecated EAPI: 0
-
-net-analyzer/snmptt
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
-  MissingChksum: version 1.2: "snmptt_1.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-analyzer/snortsam
-  DeprecatedEAPI: version 2.50-r1: uses deprecated EAPI: 0
-
-net-analyzer/tcpdump
-  SizeViolation: "files/tcpdump-4.6.2-CVE-2014-8769.patch" exceeds 20k in size; 21421 bytes total
-
-net-analyzer/tcping
-  MissingChksum: version 1.3.5: "tcping-1.3.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-analyzer/tcpstat
-  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 0
-
-net-analyzer/traceroute
-  DeprecatedEAPI: version 2.0.18: uses deprecated EAPI: 3
-
-net-analyzer/tsung
-  DeprecatedEAPI: version 1.5.1: uses deprecated EAPI: 3
-
-net-analyzer/w3af
-  DroppedKeywordWarning: version 1.5: keywords dropped: amd64, x86
-
-net-analyzer/wireshark
-  DroppedKeywordWarning: version 1.99.7: keywords dropped: alpha, amd64, arm, hppa, ia64, ppc, ppc64, sparc, x86
+app-emulation/xen-tools
+  ExecutableFile: "files/xenstored.initd" has unnecessary executable bit
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
