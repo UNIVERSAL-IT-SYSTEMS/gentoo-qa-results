@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 4 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'dev-ruby/*' 'sci-libs/*' 'sci-biology/*' 'x11-drivers/*' 'x11-apps/*' 'www-servers/*' 'sci-visualization/*' 'net-ftp/*' 'sci-astronomy/*' 'games-simulation/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'dev-ruby/*' 'sci-libs/*' 'sci-biology/*' 'x11-drivers/*' 'x11-apps/*' 'www-servers/*' 'sci-visualization/*' 'app-pda/*' 'xfce-base/*' 'games-simulation/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1131,50 +1131,102 @@ sci-visualization/xgraph
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-net-ftp/atftp
-  ExecutableFile: "files/atftp.init" has unnecessary executable bit
+app-pda/iripdb
+  DeprecatedEAPI: version 0.1.3b: uses deprecated EAPI: 0
 
-net-ftp/bareftp
-  DeprecatedEclass: version 0.3.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEclass: version 0.3.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  MissingChksum: version 0.3.9: "bareftp-0.3.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-pda/jpilot
+  DeprecatedEAPI: version 1.8.0: uses deprecated EAPI: 2
 
-net-ftp/ftp
-  DeprecatedEAPI: version 0.17-r7: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.17.23.0.2.1: uses deprecated EAPI: 2
-  MissingChksum: version 0.17-r7: "netkit-ftp-0.17-patches-1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-pda/jpilot-backup
+  DeprecatedEAPI: version 0.60: uses deprecated EAPI: 2
 
-net-ftp/ftpbase
-  DeprecatedEAPI: version 0.01-r2: uses deprecated EAPI: 0
+app-pda/jpilot-mail
+  DeprecatedEAPI: version 0.1.7: uses deprecated EAPI: 2
 
-net-ftp/netkit-ftpd
-  DeprecatedEAPI: version 0.17-r8: uses deprecated EAPI: 0
+app-pda/jpilot-plucker
+  DeprecatedEAPI: version 0.02: uses deprecated EAPI: 2
 
-net-ftp/oftpd
-  DeprecatedEAPI: version 0.3.7-r7: uses deprecated EAPI: 2
+app-pda/jpilot-syncmal
+  DeprecatedEAPI: version 0.81: uses deprecated EAPI: 2
 
-net-ftp/oneclickftp
-  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 2
-  MissingChksum: version 0.5.1: "oneclickftp-0.5.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-pda/libopensync
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.22-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.22-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.36-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.36-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.39-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.39-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-ftp/pure-ftpd
-  DroppedKeywordWarning: version 1.0.40: keywords dropped: alpha, sparc
+app-pda/libopensync-plugin-file
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
 
-net-ftp/scythia
-  DeprecatedEAPI: version 0.9.3_p2: uses deprecated EAPI: 3
-  MissingChksum: version 0.9.3_p2: "scythia_0.9.3-2-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-pda/libopensync-plugin-gnokii
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
 
-net-ftp/tlswrap
-  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
-  MissingChksum: version 1.04: "tlswrap-1.04.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-pda/libopensync-plugin-gpe
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
 
-net-ftp/tnftp
-  DeprecatedEAPI: version 20100108: uses deprecated EAPI: 2
+app-pda/libopensync-plugin-moto
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.22: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-pda/libopensync-plugin-palm
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+
+app-pda/libopensync-plugin-python
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.22: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.22: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
+  NonExistentDeps: version 0.22: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 9999: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
+
+app-pda/libopensync-plugin-sunbird
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+
+app-pda/libopensync-plugin-vformat
+  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+
+app-pda/msynctool
+  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+
+app-pda/osynctool
+  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+
+app-pda/p3nfs
+  DeprecatedEAPI: version 5.19-r2: uses deprecated EAPI: 2
+
+app-pda/pilot-link
+  SizeViolation: "files/pilot-link-0.12.5-perl514.patch" exceeds 20k in size; 22730 bytes total
+
+app-pda/synce-core
+  DeprecatedEclass: version 0.16-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-pda/synce-sync-engine
+  DeprecatedEclass: version 0.15.1-r3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-sci-astronomy/swarp
-  MissingChksum: version 2.19.1: "swarp-2.19.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+xfce-base/xfce4-session
+  NonExistentDeps: version 4.10.1-r2: depset rdepends: nonexistent atoms [ gnome-extra/gnome-screensaver ]
+  NonExistentDeps: version 4.11.0-r2: depset rdepends: nonexistent atoms [ gnome-extra/gnome-screensaver ]
+  NonExistentDeps: version 4.12.0-r1: depset rdepends: nonexistent atoms [ gnome-extra/gnome-screensaver ]
+  NonExistentDeps: version 4.12.1: depset rdepends: nonexistent atoms [ gnome-extra/gnome-screensaver ]
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 

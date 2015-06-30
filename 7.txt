@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 7 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-texlive/*' 'media-fonts/*' 'x11-themes/*' 'dev-embedded/*' 'net-firewall/*' 'games-strategy/*' 'sys-firmware/*' 'kde-plasma/*' 'dev-go/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-texlive/*' 'media-fonts/*' 'x11-themes/*' 'dev-embedded/*' 'net-firewall/*' 'sci-physics/*' 'net-nds/*' 'lxde-base/*' 'dev-go/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -2065,76 +2065,158 @@ net-firewall/xtables-addons
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-games-strategy/attal
-  DeprecatedEAPI: version 0.10.1: uses deprecated EAPI: 2
-  MissingChksum: version 0.10.1: "attal-src-0.10.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.10.1: "themes-0.10.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-physics/cernlib
+  DeprecatedEAPI: version 2006-r3: uses deprecated EAPI: 3
+  MissingChksum: version 2006-r3: "cernlib_2006.dfsg.2.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2006-r3: "cernlib_2006.dfsg.2-14.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-strategy/coldwar
-  MissingChksum: version 1.0.1-r1: "coldwar-1.0-1.0.1-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-physics/clhep
+  DeprecatedEAPI: version 2.0.4.6: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.1.0.1: uses deprecated EAPI: 2
+  MissingChksum: version 2.0.4.6: "clhep-2.0.4.6.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-strategy/darwinia-demo
-  MissingChksum: version 1.3.0: "darwinia-demo2-1.3.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-physics/geant
+  DeprecatedEAPI: version 3.21.14-r2: uses deprecated EAPI: 2
 
-games-strategy/defcon-demo
-  ExecutableFile: "files/defcon" has unnecessary executable bit
+sci-physics/hepmc
+  DeprecatedEAPI: version 2.06.03: uses deprecated EAPI: 2
+  MissingChksum: version 2.06.03: "HepMC-2.06.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-strategy/heroes3
-  MissingChksum: version 1.3.1a-r2: "heroes3-1.3.1a-cdrom-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.3.1a-r2: "heroes3-1.3.1a-ppc.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-physics/herwig
+  DeprecatedEAPI: version 6.5.10: uses deprecated EAPI: 2
+  MissingChksum: version 6.5.10: "herwig6510.f" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.5.10: "herwig6510.inc" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.5.21: "hw65_manual.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-strategy/knights-demo
-  MissingChksum: version 1.32-r1: "knights-demo-1.32.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-physics/lhapdf
+  DeprecatedEAPI: version 5.8.4: uses deprecated EAPI: 2
+  MissingChksum: version 5.8.4: "lhapdf-5.8.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 5.8.4: "wrapheragrid.f" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 5.8.4: "wrapheragrid-lite.f" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-strategy/openra
-  DeprecatedEclass: version 20120630: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+sci-physics/meep
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 2
 
-games-strategy/revenge-of-the-titans
-  MissingChksum: version 1.80.12: "revenge-of-the-titans-1.80.12-amd64.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.80.12: "revenge-of-the-titans-1.80.12-i386.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-physics/paw
+  DeprecatedEAPI: version 2.14.04-r2: uses deprecated EAPI: 2
+  MissingChksum: version 2.14.04-r2: "paw_2.14.04.dfsg.2-6.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-strategy/xbattle
-  MissingChksum: version 5.4.1: "xbattle-5.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-physics/root
+  DeprecatedEclass: version 5.32.03-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-games-strategy/xbattleai
-  MissingChksum: version 1.2.2-r1: "xbattleai-1.2.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-physics/sassena
+  MissingChksum: version 1.4.1: "sassena-v1.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-physics/xfoil
+  MissingChksum: version 6.97: "dataflow.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-sys-firmware/iwl1000-ucode
-  DroppedKeywordWarning: version 128.50.3.1: keywords dropped: amd64, x86
-  MissingChksum: version 128.50.3.1: "iwlwifi-1000-ucode-128.50.3.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-nds/389-admin
+  NonExistentDeps: version 1.1.31: depset depends: nonexistent atoms [ <=dev-libs/nspr-4.8.3-r3 ]
+  NonExistentDeps: version 1.1.31: depset rdepends: nonexistent atoms [ <=dev-libs/nspr-4.8.3-r3 ]
 
-sys-firmware/iwl6000-ucode
-  DeprecatedEAPI: version 9.221.4.1: uses deprecated EAPI: 0
+net-nds/gosa-core
+  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
+  MissingChksum: version 2.6.10: "gosa-core-2.6.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.6.11: "gosa-core-2.6.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.6.12: "gosa-core-2.6.12.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sys-firmware/iwl6005-ucode
-  DeprecatedEAPI: version 17.168.5.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 18.168.6.1: uses deprecated EAPI: 0
+net-nds/gosa-plugin-mail
+  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
+  MissingChksum: version 2.6.10: "gosa-plugin-mail-2.6.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 2.6.11: "gosa-plugin-mail-2.6.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 2.6.12: "gosa-plugins-mail-2.6.12.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-sys-firmware/iwl6030-ucode
-  DeprecatedEAPI: version 17.168.5.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 18.168.6.1: uses deprecated EAPI: 0
-  MissingChksum: version 17.168.5.2: "iwlwifi-6000g2b-ucode-17.168.5.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 18.168.6.1: "iwlwifi-6000g2b-ucode-18.168.6.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-nds/gosa-plugin-samba
+  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
+  MissingChksum: version 2.6.10: "gosa-plugin-samba-2.6.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 2.6.11: "gosa-plugin-samba-2.6.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 2.6.12: "gosa-plugins-samba-2.6.12.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-sys-firmware/iwl6050-ucode
-  DeprecatedEAPI: version 9.201.4.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 41.28.5.1: uses deprecated EAPI: 0
-  MissingChksum: version 9.201.4.1: "iwlwifi-6050-ucode-9.201.4.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 41.28.5.1: "iwlwifi-6050-ucode-41.28.5.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-nds/gosa-plugin-systems
+  DeprecatedEAPI: version 2.6.10: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.6.11: uses deprecated EAPI: 3
+  MissingChksum: version 2.6.10: "gosa-plugin-systems-2.6.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 2.6.11: "gosa-plugin-systems-2.6.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 2.6.12: "gosa-plugins-systems-2.6.12.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-sys-firmware/sigrok-firmware-fx2lafw
+net-nds/jxplorer
+  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 0
+
+net-nds/lat
+  DeprecatedEclass: version 1.2.3: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+net-nds/ldapvi
+  DeprecatedEAPI: version 1.7-r1: uses deprecated EAPI: 2
+
+net-nds/led
+  DeprecatedEAPI: version 1.111: uses deprecated EAPI: 0
+
+net-nds/nsscache
+  DeprecatedEAPI: version 0.8.8: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.8.8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.21.14: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.21.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.23: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.8.8: "nsscache-0.8.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-nds/openldap
+  DeprecatedEAPI: version 2.3.43-r3: uses deprecated EAPI: 2
+  VulnerablePackage: version 2.3.43-r3: vulnerable via glsa(201406-36) ( ver < 2.4.35 ), keywords ('alpha', 'amd64', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
+  NonExistentDeps: version 2.3.43-r3: depset depends: nonexistent atoms [ <dev-lang/perl-5.16 ]
+  NonExistentDeps: version 2.3.43-r3: depset rdepends: nonexistent atoms [ <dev-lang/perl-5.16 ]
+  DeprecatedEAPI: version 2.3.43-r4: uses deprecated EAPI: 2
+  VulnerablePackage: version 2.3.43-r4: vulnerable via glsa(201406-36) ( ver < 2.4.35 ), keywords ('alpha', 'amd64', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
+  NonExistentDeps: version 2.3.43-r4: depset depends: nonexistent atoms [ <dev-lang/perl-5.16 ]
+  NonExistentDeps: version 2.3.43-r4: depset rdepends: nonexistent atoms [ <dev-lang/perl-5.16 ]
+
+net-nds/phpldapadmin
+  NonExistentDeps: version 1.2.3: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
+  NonExistentDeps: version 1.2.3-r1: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
+
+net-nds/portmap
+  DeprecatedEAPI: version 6.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 0
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-sys-firmware/vgabios
-  DroppedKeywordWarning: version 0.7a: keywords dropped: ppc, ppc64
+net-nds/rpcbind
+  DeprecatedEAPI: version 0.2.0-r1: uses deprecated EAPI: 2
+  ExecutableFile: "files/rpcbind.confd" has unnecessary executable bit
+  ExecutableFile: "files/rpcbind.initd" has unnecessary executable bit
+
+net-nds/smbldap-tools
+  MissingChksum: version 0.9.8: "smbldap-tools-0.9.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-nds/ypserv
+  ExecutableFile: "files/ypserv" has unnecessary executable bit
+  MissingChksum: version 2.26: "ypserv-2.26.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-kde-plasma/plasma-workspace
-  NonExistentDeps: version 5.3.1: depset depends: nonexistent atoms [ media-libs/prison:5 ]
-  NonExistentDeps: version 5.3.1: depset rdepends: nonexistent atoms [ media-libs/prison:5 ]
+lxde-base/lxde-meta
+  DeprecatedEAPI: version 0.5.5-r4: uses deprecated EAPI: 2
+
+lxde-base/lxdm
+  DeprecatedEAPI: version 0.4.1-r9: uses deprecated EAPI: 2
+
+lxde-base/lxpanel
+  DroppedKeywordWarning: version 0.8.1: keywords dropped: alpha
+
+lxde-base/lxpolkit
+  MissingChksum: version 0.1.0-r1: "lxpolkit-0.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+lxde-base/lxsession
+  DroppedKeywordWarning: version 0.4.9.2: keywords dropped: arm64
+
+lxde-base/lxtask
+  DroppedKeywordWarning: version 0.1.6: keywords dropped: arm64
+
+lxde-base/lxterminal
+  DroppedKeywordWarning: version 0.2.0: keywords dropped: arm64
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 + [[ 0 == 0 ]]
