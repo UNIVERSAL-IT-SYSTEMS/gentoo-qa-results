@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 8 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'app-admin/*' 'www-apps/*' 'net-wireless/*' 'games-puzzle/*' 'net-firewall/*' 'games-strategy/*' 'sys-firmware/*' 'sci-calculators/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'app-admin/*' 'www-apps/*' 'net-wireless/*' 'games-puzzle/*' 'net-firewall/*' 'games-strategy/*' 'sys-firmware/*' 'sci-calculators/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1665,12 +1665,12 @@ sci-calculators/wcalc
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-mate-base/mate-control-center
-  NonExistentDeps: version 1.8.1: depset depends: nonexistent atoms [ >=mate-base/mate-file-manager-1.6:0, >=x11-wm/mate-window-manager-1.6:0 ]
-  NonExistentDeps: version 1.8.1: depset rdepends: nonexistent atoms [ >=mate-base/mate-file-manager-1.6:0, >=x11-wm/mate-window-manager-1.6:0 ]
-  NonExistentDeps: version 1.8.3: depset depends: nonexistent atoms [ >=mate-base/mate-file-manager-1.6:0, >=x11-wm/mate-window-manager-1.6:0 ]
-  NonExistentDeps: version 1.8.3: depset rdepends: nonexistent atoms [ >=mate-base/mate-file-manager-1.6:0, >=x11-wm/mate-window-manager-1.6:0 ]
+net-voip/gnugk
+  ExecutableFile: "files/gnugk.rc6" has unnecessary executable bit
 
-mate-base/mate-session-manager
-  ExecutableFile: "files/10-user-dirs-update-mate" has unnecessary executable bit
+net-voip/homer
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+net-voip/yate
+  ExecutableFile: "files/yate.rc6" has unnecessary executable bit
 + [[ 0 == 0 ]]
