@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 12 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'dev-ml/*' 'kde-misc/*' 'xfce-extra/*' 'app-cdr/*' 'gnustep-apps/*' 'x11-proto/*' 'www-plugins/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'app-text/*' 'dev-php/*' 'dev-ml/*' 'kde-misc/*' 'xfce-extra/*' 'app-cdr/*' 'gnustep-apps/*' 'x11-proto/*' 'www-plugins/*' 'dev-go/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1045,12 +1045,4 @@ www-plugins/pipelight
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
-
-mate-extra/caja-dropbox
-  NonExistentDeps: version 1.8.0: depset depends: nonexistent atoms [ >=mate-base/mate-file-manager-1.6:0 ]
-  NonExistentDeps: version 1.8.0: depset rdepends: nonexistent atoms [ >=mate-base/mate-file-manager-1.6:0 ]
-
-mate-extra/mate-user-share
-  NonExistentDeps: version 1.8.0: depset depends: nonexistent atoms [ >=net-wireless/mate-bluetooth-1.6:0, >=mate-base/mate-file-manager-1.6:0 ]
-  NonExistentDeps: version 1.8.0: depset rdepends: nonexistent atoms [ >=net-wireless/mate-bluetooth-1.6:0, >=mate-base/mate-file-manager-1.6:0 ]
 + [[ 0 == 0 ]]
