@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 14 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'media-gfx/*' 'sys-devel/*' 'sci-chemistry/*' 'gnome-extra/*' 'app-backup/*' 'perl-core/*' 'dev-scheme/*' 'sys-freebsd/*' 'www-misc/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'media-gfx/*' 'sys-devel/*' 'sci-chemistry/*' 'gnome-extra/*' 'app-backup/*' 'perl-core/*' 'dev-scheme/*' 'sys-freebsd/*' 'gnustep-base/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1530,36 +1530,12 @@ sys-freebsd/virtio-kmod
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-www-misc/bookmarksync
-  DeprecatedEAPI: version 0.3.4-r2: uses deprecated EAPI: 2
+gnustep-base/gnustep-updater
+  MissingChksum: version 0.2: "gnustep-updater-0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-www-misc/fcgiwrap
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-www-misc/htdig
-  DeprecatedEAPI: version 3.2.0_beta6-r3: uses deprecated EAPI: 0
-
-www-misc/log-toolkit
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 0
-  MissingChksum: version 0.9.6: "log-toolkit-0.9.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-www-misc/reflector
-  DeprecatedEAPI: version 2011.05.13.1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 2011.05.13.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 2011.05.13.1: depset depends: nonexistent atoms [ =dev-lang/python-3.1* ]
-  NonExistentDeps: version 2011.05.13.1: depset rdepends: nonexistent atoms [ =dev-lang/python-3.1* ]
-  MissingChksum: version 2011.05.13.1: "reflector-2011.05.13.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-www-misc/visitors
-  DeprecatedEAPI: version 0.7-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.7-r1: "visitors-0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-www-misc/wsmake
-  DeprecatedEAPI: version 0.6.4: uses deprecated EAPI: 0
-  MissingChksum: version 0.6.4: "wsmake-0.6.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-www-misc/xxv
-  MissingChksum: version 1.6.1: "xxv-1.6.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+gnustep-base/mknfonts
+  DeprecatedEAPI: version 0.5-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.5-r1: "mknfonts.tool_0.5.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 

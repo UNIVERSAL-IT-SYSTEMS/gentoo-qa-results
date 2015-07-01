@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 10 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'virtual/*' 'app-i18n/*' 'app-portage/*' 'net-p2p/*' 'media-tv/*' 'net-proxy/*' 'lxqt-base/*' 'net-nntp/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'virtual/*' 'app-i18n/*' 'app-portage/*' 'net-p2p/*' 'media-tv/*' 'net-proxy/*' 'lxqt-base/*' 'app-laptop/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1833,39 +1833,33 @@ lxqt-base/lxqt-session
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-net-nntp/brag
-  MissingChksum: version 1.4.3: "brag-1.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-laptop/batti
+  DeprecatedEclass: version 0.3.8-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-nntp/hellanzb
-  DeprecatedEAPI: version 0.13-r8: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.13-r8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingChksum: version 0.13-r8: "hellanzb-0.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-laptop/hdapsd
+  WhitespaceFound: version 20141203: ebuild has leading whitespace on lines 66, 70
 
-net-nntp/sabnzbd
-  DeprecatedEclass: version 0.7.16: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.7.17: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.7.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.7.19: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.7.20: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+app-laptop/lphdisk
+  DeprecatedEAPI: version 0.9.1-r2: uses deprecated EAPI: 2
 
-net-nntp/slrnconf
-  DeprecatedEAPI: version 0.8.4: uses deprecated EAPI: 0
-  MissingChksum: version 0.8.4: "slrnconf-0.8.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-laptop/pbbuttonsd
+  DeprecatedEAPI: version 0.8.1-r3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.8.1-r4: uses deprecated EAPI: 0
 
-net-nntp/sn
-  MissingChksum: version 0.3.8: "sn-0.3.8.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-laptop/pommed
+  ExecutableFile: "files/pommed.rc" has unnecessary executable bit
 
-net-nntp/suck
-  DeprecatedEAPI: version 4.3.2: uses deprecated EAPI: 0
-  MissingChksum: version 4.3.2: "suck-4.3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-laptop/powerprefs
+  DeprecatedEAPI: version 0.8.0: uses deprecated EAPI: 2
 
-net-nntp/ubh
-  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
-  MissingChksum: version 2.5: "ubh-2.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-laptop/prey
+  BadInsIntoDir: version 0.5.4-r1: ebuild uses insinto /etc/cron.d on line 136
 
-net-nntp/xrn
-  DeprecatedEAPI: version 9.02: uses deprecated EAPI: 0
-  MissingChksum: version 9.02: "xrn-9.02.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-laptop/tp_smapi
+  ExecutableFile: "files/tp_smapi-0.40-initd" has unnecessary executable bit
+
+app-laptop/tpacpi-bat
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
