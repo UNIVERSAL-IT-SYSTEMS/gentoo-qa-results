@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 6 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'dev-lang/*' 'kde-base/*' 'net-mail/*' 'net-dns/*' 'mail-client/*' 'kde-plasma/*' 'dev-dotnet/*' 'lxde-base/*' 'gpe-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'dev-lang/*' 'kde-base/*' 'net-mail/*' 'net-dns/*' 'mail-client/*' 'kde-plasma/*' 'dev-dotnet/*' 'lxde-base/*' 'mate-base/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1573,72 +1573,12 @@ lxde-base/lxterminal
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-gpe-base/gpe
-  DeprecatedEAPI: version 2.8: uses deprecated EAPI: 2
+mate-base/mate-control-center
+  NonExistentDeps: version 1.8.1: depset depends: nonexistent atoms [ >=mate-base/mate-file-manager-1.6:0, >=x11-wm/mate-window-manager-1.6:0 ]
+  NonExistentDeps: version 1.8.1: depset rdepends: nonexistent atoms [ >=mate-base/mate-file-manager-1.6:0, >=x11-wm/mate-window-manager-1.6:0 ]
+  NonExistentDeps: version 1.8.3: depset depends: nonexistent atoms [ >=mate-base/mate-file-manager-1.6:0, >=x11-wm/mate-window-manager-1.6:0 ]
+  NonExistentDeps: version 1.8.3: depset rdepends: nonexistent atoms [ >=mate-base/mate-file-manager-1.6:0, >=x11-wm/mate-window-manager-1.6:0 ]
 
-gpe-base/gpe-calculator
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
-
-gpe-base/gpe-contacts
-  DeprecatedEAPI: version 0.49: uses deprecated EAPI: 0
-
-gpe-base/gpe-dm
-  DeprecatedEAPI: version 0.51-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.52: uses deprecated EAPI: 0
-  MissingChksum: version 0.51-r1: "gpe-dm-0.51.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-gpe-base/gpe-gallery
-  DeprecatedEAPI: version 0.97: uses deprecated EAPI: 0
-  MissingChksum: version 0.97: "gpe-gallery-0.97.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-gpe-base/gpe-icons
-  DeprecatedEAPI: version 0.25: uses deprecated EAPI: 1
-  MissingChksum: version 0.25: "gpe-icons-0.25.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-gpe-base/gpe-login
-  DeprecatedEAPI: version 0.95-r4: uses deprecated EAPI: 0
-
-gpe-base/libcontactsdb
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
-  MissingChksum: version 0.5: "libcontactsdb-0.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-gpe-base/libdisplaymigration
-  DeprecatedEAPI: version 0.99: uses deprecated EAPI: 2
-  MissingChksum: version 0.99: "libdisplaymigration-0.99.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-gpe-base/libeventdb
-  DeprecatedEAPI: version 0.90: uses deprecated EAPI: 0
-  MissingChksum: version 0.90: "libeventdb-0.90.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-gpe-base/libgpelaunch
-  DeprecatedEAPI: version 0.14: uses deprecated EAPI: 0
-  MissingChksum: version 0.14: "libgpelaunch-0.14.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-gpe-base/libgpepimc
-  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 1
-  MissingChksum: version 0.9: "libgpepimc-0.9.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-gpe-base/libgpevtype
-  DeprecatedEAPI: version 0.50: uses deprecated EAPI: 0
-  MissingChksum: version 0.50: "libgpevtype-0.50.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-gpe-base/libgtkstylus
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
-  MissingChksum: version 0.3: "libgtkstylus-0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-gpe-base/libhandoff
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-  MissingChksum: version 0.1: "libhandoff-0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-gpe-base/libmimedir
-  DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 0
-
-gpe-base/libschedule
-  DeprecatedEAPI: version 0.17: uses deprecated EAPI: 0
-  MissingChksum: version 0.17: "libschedule-0.17.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-gpe-base/libtododb
-  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 0
-  MissingChksum: version 0.11: "libtododb-0.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+mate-base/mate-session-manager
+  ExecutableFile: "files/10-user-dirs-update-mate" has unnecessary executable bit
 + [[ 0 == 0 ]]
