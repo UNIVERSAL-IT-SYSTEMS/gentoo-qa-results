@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 2 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'app-emulation/*' 'dev-db/*' 'sys-cluster/*' 'games-fps/*' 'net-irc/*' 'net-print/*' 'app-accessibility/*' 'app-mobilephone/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'app-emulation/*' 'dev-db/*' 'sys-cluster/*' 'games-fps/*' 'net-irc/*' 'net-print/*' 'net-fs/*' 'app-mobilephone/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1017,62 +1017,32 @@ net-print/xerox-drivers
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-app-accessibility/SphinxTrain
-  DroppedKeywordWarning: version 1.0.8: keywords dropped: ppc
+net-fs/davfs2
+  DeprecatedEAPI: version 1.4.5-r1: uses deprecated EAPI: 2
 
-app-accessibility/espeakup
+net-fs/libnfs
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-accessibility/festival
-  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 2
+net-fs/nfs-utils
+  ExecutableFile: "files/nfs.initd" has unnecessary executable bit
+  ExecutableFile: "files/nfsmount.initd" has unnecessary executable bit
+  ExecutableFile: "files/rpc.gssd.initd" has unnecessary executable bit
+  ExecutableFile: "files/rpc.idmapd.initd" has unnecessary executable bit
+  ExecutableFile: "files/rpc.statd.initd" has unnecessary executable bit
+  ExecutableFile: "files/rpc.svcgssd.initd" has unnecessary executable bit
 
-app-accessibility/festival-fi
-  DeprecatedEAPI: version 20041119: uses deprecated EAPI: 2
+net-fs/samba
+  VulnerablePackage: version 3.5.21: vulnerable via glsa(201502-15) ( ver < 3.6.25 ), keywords ('alpha', 'amd64', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'x86', 'x86-fbsd')
+  VulnerablePackage: version 3.5.22: vulnerable via glsa(201502-15) ( ver < 3.6.25 ), keywords ('alpha', 'amd64', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'x86', 'x86-fbsd')
+  DroppedKeywordWarning: version 4.0.26: keywords dropped: alpha, arm, ia64, mips, ppc, ppc64, sparc
+  DroppedKeywordWarning: version 3.6.25: keywords dropped: s390, sh
+  DroppedKeywordWarning: version 4.2.0: keywords dropped: arm64
 
-app-accessibility/festival-freebsoft-utils
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+net-fs/smbtad
+  ExecutableFile: "files/smbtad.rc" has unnecessary executable bit
 
-app-accessibility/festival-hts
-  DeprecatedEAPI: version 2.1: uses deprecated EAPI: 2
-
-app-accessibility/festival-ru
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 2
-  MetadataError: version 0.5: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-accessibility/festival-ru-0.5, attr fetchables
-error: mirror://berlios/festlang/msu_ru_nsh_clunits-0.5.tar.bz2 is unparseable
-flagged token- uri mirror://berlios/festlang/msu_ru_nsh_clunits-0.5.tar.bz2 is has no known mirror tier
-
-app-accessibility/freetts
-  DeprecatedEAPI: version 1.2.1-r2: uses deprecated EAPI: 0
-
-app-accessibility/mbrola
-  DeprecatedEAPI: version 3.0.1h-r6: uses deprecated EAPI: 0
-
-app-accessibility/nfbtrans
-  DeprecatedEAPI: version 7.74: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 7.74-r1: uses deprecated EAPI: 3
-
-app-accessibility/pidgin-festival
-  DeprecatedEAPI: version 2.4: uses deprecated EAPI: 2
-
-app-accessibility/sound-icons
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-
-app-accessibility/speakup
-  DeprecatedEAPI: version 3.1.6_p201011120508: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-app-accessibility/speechd-up
-  DeprecatedEAPI: version 0.4-r3: uses deprecated EAPI: 0
-
-app-accessibility/sphinx2
-  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 2
-
-app-accessibility/sphinx3
-  DeprecatedEAPI: version 0.6.3: uses deprecated EAPI: 0
-
-app-accessibility/yasr
-  DeprecatedEAPI: version 0.6.9-r1: uses deprecated EAPI: 2
+net-fs/wdfs
+  DeprecatedEAPI: version 1.4.2: uses deprecated EAPI: 0
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
