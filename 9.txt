@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 9 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'dev-util/*' 'x11-libs/*' 'app-emacs/*' 'sci-mathematics/*' 'games-puzzle/*' 'sys-boot/*' 'net-print/*' 'dev-lisp/*' 'net-nntp/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'dev-util/*' 'x11-libs/*' 'app-emacs/*' 'sci-mathematics/*' 'games-puzzle/*' 'sys-boot/*' 'net-proxy/*' 'dev-lisp/*' 'net-nntp/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -537,34 +537,6 @@ x11-libs/fox-wrapper
 x11-libs/gtk+
   VulnerablePackage: version 1.2.10-r12: vulnerable via glsa(201412-08) ( ver < 2.18.7 ), keywords ('alpha', 'amd64', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc64', 'sh', 'sparc', 'x86', 'x86-fbsd')
   VulnerablePackage: version 1.2.10-r13: vulnerable via glsa(201412-08) ( ver < 2.18.7 ), keywords ('alpha', 'amd64', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc64', 'sh', 'sparc', 'x86', 'x86-fbsd')
-  NonsolvableDeps: version 2.24.25: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0): solutions: [ >=net-print/cups-1.7.1-r2 ]
-  NonsolvableDeps: version 2.24.25: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop): solutions: [ >=net-print/cups-1.7.1-r2 ]
-  NonsolvableDeps: version 2.24.25: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome): solutions: [ >=net-print/cups-1.7.1-r2 ]
-  NonsolvableDeps: version 2.24.25: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/developer): solutions: [ >=net-print/cups-1.7.1-r2 ]
-  NonsolvableDeps: version 2.24.25: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome/systemd): solutions: [ >=net-print/cups-1.7.1-r2 ]
-  NonsolvableDeps: version 2.24.25: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde): solutions: [ >=net-print/cups-1.7.1-r2 ]
-  NonsolvableDeps: version 2.24.25: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde/systemd): solutions: [ >=net-print/cups-1.7.1-r2 ]
-  NonsolvableDeps: version 2.24.25: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0): solutions: [ >=net-print/cups-1.7.1-r2 ]
-  NonsolvableDeps: version 2.24.25: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop): solutions: [ >=net-print/cups-1.7.1-r2 ]
-  NonsolvableDeps: version 2.24.25: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome): solutions: [ >=net-print/cups-1.7.1-r2 ]
-  NonsolvableDeps: version 2.24.25: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/developer): solutions: [ >=net-print/cups-1.7.1-r2 ]
-  NonsolvableDeps: version 2.24.25: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome/systemd): solutions: [ >=net-print/cups-1.7.1-r2 ]
-  NonsolvableDeps: version 2.24.25: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde): solutions: [ >=net-print/cups-1.7.1-r2 ]
-  NonsolvableDeps: version 2.24.25: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde/systemd): solutions: [ >=net-print/cups-1.7.1-r2 ]
-  NonsolvableDeps: version 3.12.2: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 3.12.2: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 3.12.2: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 3.12.2: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/developer): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 3.12.2: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome/systemd): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 3.12.2: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 3.12.2: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde/systemd): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 3.12.2: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 3.12.2: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 3.12.2: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 3.12.2: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/developer): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 3.12.2: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome/systemd): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 3.12.2: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 3.12.2: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde/systemd): solutions: [ >=net-print/cups-1.2 ]
   WhitespaceFound: version 3.16.4: ebuild has trailing whitespace on line 136
   DroppedKeywordWarning: version 3.12.2: keywords dropped: arm64
 
@@ -1058,185 +1030,63 @@ sys-boot/yaboot
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-net-print/adobeps
-  MissingChksum: version 1.0.6-r1: "winstDan.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstspa.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstfin.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstfre.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstita.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstjpn.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstkor.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstdut.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstnor.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstbrz.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstswe.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "Winstchs.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-proxy/3proxy
+  DeprecatedEAPI: version 0.5.3k: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 2
+  MissingChksum: version 0.5.3k: "3proxy-0.5.3k.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.6.1: "3proxy-0.6.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-print/apsfilter
-  DeprecatedEAPI: version 7.2.5: uses deprecated EAPI: 0
-  MissingChksum: version 7.2.5: "apsfilter-7.2.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-proxy/dante
+  DeprecatedEAPI: version 1.1.19-r4: uses deprecated EAPI: 0
 
-net-print/cups-filters
-  WhitespaceFound: version 1.0.66: ebuild has leading whitespace on line 66
-  WrongIndentFound: version 1.0.66: ebuild has whitespace in indentation on line 66
-  NonsolvableDeps: version 1.0.66: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0): solutions: [ >=net-print/cups-1.7.3 ]
-  NonsolvableDeps: version 1.0.66: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop): solutions: [ >=net-print/cups-1.7.3 ]
-  NonsolvableDeps: version 1.0.66: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome): solutions: [ >=net-print/cups-1.7.3 ]
-  NonsolvableDeps: version 1.0.66: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/developer): solutions: [ >=net-print/cups-1.7.3 ]
-  NonsolvableDeps: version 1.0.66: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome/systemd): solutions: [ >=net-print/cups-1.7.3 ]
-  NonsolvableDeps: version 1.0.66: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde): solutions: [ >=net-print/cups-1.7.3 ]
-  NonsolvableDeps: version 1.0.66: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde/systemd): solutions: [ >=net-print/cups-1.7.3 ]
-  NonsolvableDeps: version 1.0.66: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0): solutions: [ >=net-print/cups-1.7.3 ]
-  NonsolvableDeps: version 1.0.66: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop): solutions: [ >=net-print/cups-1.7.3 ]
-  NonsolvableDeps: version 1.0.66: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome): solutions: [ >=net-print/cups-1.7.3 ]
-  NonsolvableDeps: version 1.0.66: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/developer): solutions: [ >=net-print/cups-1.7.3 ]
-  NonsolvableDeps: version 1.0.66: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome/systemd): solutions: [ >=net-print/cups-1.7.3 ]
-  NonsolvableDeps: version 1.0.66: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde): solutions: [ >=net-print/cups-1.7.3 ]
-  NonsolvableDeps: version 1.0.66: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde/systemd): solutions: [ >=net-print/cups-1.7.3 ]
-  WhitespaceFound: version 1.0.68: ebuild has leading whitespace on line 66
-  WrongIndentFound: version 1.0.68: ebuild has whitespace in indentation on line 66
-  WhitespaceFound: version 1.0.70: ebuild has leading whitespace on line 66
-  WrongIndentFound: version 1.0.70: ebuild has whitespace in indentation on line 66
-  WhitespaceFound: version 1.0.71: ebuild has leading whitespace on line 66
-  WrongIndentFound: version 1.0.71: ebuild has whitespace in indentation on line 66
-  WhitespaceFound: version 9999: ebuild has leading whitespace on line 66
-  WrongIndentFound: version 9999: ebuild has whitespace in indentation on line 66
+net-proxy/haproxy
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-net-print/cups-pdf
-  MissingChksum: version 2.6.1: "cups-pdf_2.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-proxy/http-replicator
+  DeprecatedEclass: version 3.0-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  ExecutableFile: "files/http-replicator-3.0-callrepcacheman-0.1" has unnecessary executable bit
+  ExecutableFile: "files/http-replicator-3.0-repcacheman-0.44" has unnecessary executable bit
+  ExecutableFile: "files/http-replicator-3.0-repcacheman-0.44-r1" has unnecessary executable bit
+  ExecutableFile: "files/http-replicator-3.0-repcacheman-0.44-r2" has unnecessary executable bit
+  ExecutableFile: "files/http-replicator-3.0.init" has unnecessary executable bit
 
-net-print/cups-windows
-  NonsolvableDeps: version 6.0-r1: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 6.0-r1: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 6.0-r1: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 6.0-r1: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/developer): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 6.0-r1: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome/systemd): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 6.0-r1: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 6.0-r1: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde/systemd): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 6.0-r1: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 6.0-r1: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 6.0-r1: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 6.0-r1: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/developer): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 6.0-r1: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome/systemd): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 6.0-r1: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde): solutions: [ >=net-print/cups-1.2 ]
-  NonsolvableDeps: version 6.0-r1: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde/systemd): solutions: [ >=net-print/cups-1.2 ]
-  MissingChksum: version 6.0-r1: "cups-windows-6.0-source.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-proxy/httpush
+  DeprecatedEAPI: version 0.9_beta11-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.9_beta11-r1: "httpush-0.9b11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-print/foomatic-db-engine
-  NonsolvableDeps: version 4.0.11: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0): solutions: [ net-print/cups ]
-  NonsolvableDeps: version 4.0.11: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop): solutions: [ net-print/cups ]
-  NonsolvableDeps: version 4.0.11: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome): solutions: [ net-print/cups ]
-  NonsolvableDeps: version 4.0.11: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/developer): solutions: [ net-print/cups ]
-  NonsolvableDeps: version 4.0.11: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome/systemd): solutions: [ net-print/cups ]
-  NonsolvableDeps: version 4.0.11: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde): solutions: [ net-print/cups ]
-  NonsolvableDeps: version 4.0.11: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde/systemd): solutions: [ net-print/cups ]
+net-proxy/ntlmaps
+  MissingChksum: version 0.9.9-r2: "ntlmaps-0.9.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-print/foomatic-filters
-  NonsolvableDeps: version 4.0.17-r1: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0): solutions: [ >=net-print/cups-1.6.0 ]
-  NonsolvableDeps: version 4.0.17-r1: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop): solutions: [ >=net-print/cups-1.6.0 ]
-  NonsolvableDeps: version 4.0.17-r1: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome): solutions: [ >=net-print/cups-1.6.0 ]
-  NonsolvableDeps: version 4.0.17-r1: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/developer): solutions: [ >=net-print/cups-1.6.0 ]
-  NonsolvableDeps: version 4.0.17-r1: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome/systemd): solutions: [ >=net-print/cups-1.6.0 ]
-  NonsolvableDeps: version 4.0.17-r1: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde): solutions: [ >=net-print/cups-1.6.0 ]
-  NonsolvableDeps: version 4.0.17-r1: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde/systemd): solutions: [ >=net-print/cups-1.6.0 ]
-  NonsolvableDeps: version 4.0.17-r1: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0): solutions: [ >=net-print/cups-1.6.0 ]
-  NonsolvableDeps: version 4.0.17-r1: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop): solutions: [ >=net-print/cups-1.6.0 ]
-  NonsolvableDeps: version 4.0.17-r1: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome): solutions: [ >=net-print/cups-1.6.0 ]
-  NonsolvableDeps: version 4.0.17-r1: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/developer): solutions: [ >=net-print/cups-1.6.0 ]
-  NonsolvableDeps: version 4.0.17-r1: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome/systemd): solutions: [ >=net-print/cups-1.6.0 ]
-  NonsolvableDeps: version 4.0.17-r1: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde): solutions: [ >=net-print/cups-1.6.0 ]
-  NonsolvableDeps: version 4.0.17-r1: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde/systemd): solutions: [ >=net-print/cups-1.6.0 ]
+net-proxy/oops
+  DeprecatedEAPI: version 1.5.24_pre20050503-r4: uses deprecated EAPI: 2
 
-net-print/gmso2
-  MissingChksum: version 0.1-r1: "gmso2-0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-proxy/piper
+  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
+  MissingChksum: version 1.14: "piper-1.14.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-print/gutenprint
-  NonsolvableDeps: version 5.2.9: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0): solutions: [ >=net-print/cups-1.1.14 ]
-  NonsolvableDeps: version 5.2.9: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop): solutions: [ >=net-print/cups-1.1.14 ]
-  NonsolvableDeps: version 5.2.9: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome): solutions: [ >=net-print/cups-1.1.14 ]
-  NonsolvableDeps: version 5.2.9: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/developer): solutions: [ >=net-print/cups-1.1.14 ]
-  NonsolvableDeps: version 5.2.9: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome/systemd): solutions: [ >=net-print/cups-1.1.14 ]
-  NonsolvableDeps: version 5.2.9: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde): solutions: [ >=net-print/cups-1.1.14 ]
-  NonsolvableDeps: version 5.2.9: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde/systemd): solutions: [ >=net-print/cups-1.1.14 ]
-  NonsolvableDeps: version 5.2.9: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0): solutions: [ >=net-print/cups-1.1.14 ]
-  NonsolvableDeps: version 5.2.9: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop): solutions: [ >=net-print/cups-1.1.14 ]
-  NonsolvableDeps: version 5.2.9: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome): solutions: [ >=net-print/cups-1.1.14 ]
-  NonsolvableDeps: version 5.2.9: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/developer): solutions: [ >=net-print/cups-1.1.14 ]
-  NonsolvableDeps: version 5.2.9: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome/systemd): solutions: [ >=net-print/cups-1.1.14 ]
-  NonsolvableDeps: version 5.2.9: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde): solutions: [ >=net-print/cups-1.1.14 ]
-  NonsolvableDeps: version 5.2.9: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde/systemd): solutions: [ >=net-print/cups-1.1.14 ]
+net-proxy/ratproxy
+  DeprecatedEAPI: version 1.58: uses deprecated EAPI: 0
+  MissingChksum: version 1.58: "ratproxy-1.58.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-print/kyocera-mita-ppds
-  DeprecatedEAPI: version 8.4: uses deprecated EAPI: 0
-  MissingChksum: version 8.4: "Linux_PPDs_KSL8_4.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+net-proxy/squidguard
+  DeprecatedEAPI: version 1.4-r4: uses deprecated EAPI: 2
+  MissingChksum: version 1.4-r4: "squidGuard-1.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-print/libgnomecups
-  NonsolvableDeps: version 0.2.3-r3: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0): solutions: [ >=net-print/cups-1.3.8 ]
-  NonsolvableDeps: version 0.2.3-r3: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop): solutions: [ >=net-print/cups-1.3.8 ]
-  NonsolvableDeps: version 0.2.3-r3: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome): solutions: [ >=net-print/cups-1.3.8 ]
-  NonsolvableDeps: version 0.2.3-r3: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/developer): solutions: [ >=net-print/cups-1.3.8 ]
-  NonsolvableDeps: version 0.2.3-r3: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome/systemd): solutions: [ >=net-print/cups-1.3.8 ]
-  NonsolvableDeps: version 0.2.3-r3: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde): solutions: [ >=net-print/cups-1.3.8 ]
-  NonsolvableDeps: version 0.2.3-r3: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde/systemd): solutions: [ >=net-print/cups-1.3.8 ]
-  NonsolvableDeps: version 0.2.3-r3: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0): solutions: [ >=net-print/cups-1.3.8 ]
-  NonsolvableDeps: version 0.2.3-r3: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop): solutions: [ >=net-print/cups-1.3.8 ]
-  NonsolvableDeps: version 0.2.3-r3: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome): solutions: [ >=net-print/cups-1.3.8 ]
-  NonsolvableDeps: version 0.2.3-r3: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/developer): solutions: [ >=net-print/cups-1.3.8 ]
-  NonsolvableDeps: version 0.2.3-r3: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome/systemd): solutions: [ >=net-print/cups-1.3.8 ]
-  NonsolvableDeps: version 0.2.3-r3: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde): solutions: [ >=net-print/cups-1.3.8 ]
-  NonsolvableDeps: version 0.2.3-r3: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde/systemd): solutions: [ >=net-print/cups-1.3.8 ]
-  NonsolvableDeps: version 0.2.3-r5: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0): solutions: [ >=net-print/cups-1.7.1-r1 ]
-  NonsolvableDeps: version 0.2.3-r5: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop): solutions: [ >=net-print/cups-1.7.1-r1 ]
-  NonsolvableDeps: version 0.2.3-r5: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome): solutions: [ >=net-print/cups-1.7.1-r1 ]
-  NonsolvableDeps: version 0.2.3-r5: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/developer): solutions: [ >=net-print/cups-1.7.1-r1 ]
-  NonsolvableDeps: version 0.2.3-r5: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome/systemd): solutions: [ >=net-print/cups-1.7.1-r1 ]
-  NonsolvableDeps: version 0.2.3-r5: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde): solutions: [ >=net-print/cups-1.7.1-r1 ]
-  NonsolvableDeps: version 0.2.3-r5: nonsolvable depset(depends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde/systemd): solutions: [ >=net-print/cups-1.7.1-r1 ]
-  NonsolvableDeps: version 0.2.3-r5: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0): solutions: [ >=net-print/cups-1.7.1-r1 ]
-  NonsolvableDeps: version 0.2.3-r5: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop): solutions: [ >=net-print/cups-1.7.1-r1 ]
-  NonsolvableDeps: version 0.2.3-r5: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome): solutions: [ >=net-print/cups-1.7.1-r1 ]
-  NonsolvableDeps: version 0.2.3-r5: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/developer): solutions: [ >=net-print/cups-1.7.1-r1 ]
-  NonsolvableDeps: version 0.2.3-r5: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/gnome/systemd): solutions: [ >=net-print/cups-1.7.1-r1 ]
-  NonsolvableDeps: version 0.2.3-r5: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde): solutions: [ >=net-print/cups-1.7.1-r1 ]
-  NonsolvableDeps: version 0.2.3-r5: nonsolvable depset(rdepends) keyword(ia64) profile (default/linux/ia64/13.0/desktop/kde/systemd): solutions: [ >=net-print/cups-1.7.1-r1 ]
+net-proxy/tayga
+  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 3
+  MissingChksum: version 0.9.2: "tayga-0.9.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-print/libinklevel
-  DeprecatedEAPI: version 0.8.0-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.8.0-r1: "libinklevel-0.8.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-proxy/tsocks
+  MissingChksum: version 1.8_beta5-r5: "tsocks-1.8b5-tordns1-gentoo-r1.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-print/magicfilter
-  MissingChksum: version 2.3h: "magicfilter-2.3.h.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+net-proxy/ufdbguard
+  DeprecatedEAPI: version 1.24-r1: uses deprecated EAPI: 2
+  MissingChksum: version 1.24-r1: "ufdbGuard-1.24.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.24-r1: "ufdbguard-1.24-manual.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-print/mtink
-  MissingChksum: version 1.0.16-r1: "mtink-1.0.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-print/npadmin
-  DeprecatedEAPI: version 0.8.7: uses deprecated EAPI: 0
-  MissingChksum: version 0.8.7: "npadmin-0.8.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-print/pkpgcounter
-  DeprecatedEAPI: version 3.50-r1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 3.50-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-net-print/pnm2ppa
-  MissingChksum: version 1.13-r1: "pnm2ppa-1.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-print/poster
-  MissingChksum: version 20060221: "poster-20060221.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-print/pykota
-  DeprecatedEAPI: version 1.26: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.26: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-net-print/splix
-  MissingChksum: version 2.0.0_p20111206: "splix-2.0.0_p20111206.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-print/sshlpr
-  MissingChksum: version 1: "sshlpr-1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-print/xerox-drivers
-  DeprecatedEAPI: version 0_p20080123: uses deprecated EAPI: 2
-  MissingChksum: version 0_p20080123: "LinuxCupsPrinterPkg.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+net-proxy/webscarab
+  DeprecatedEAPI: version 20070504: uses deprecated EAPI: 0
+  MissingChksum: version 20070504: "webscarab-selfcontained-20070504-1631.jar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
