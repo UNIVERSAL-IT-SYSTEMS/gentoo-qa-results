@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 7 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-texlive/*' 'media-fonts/*' 'x11-themes/*' 'dev-embedded/*' 'app-eselect/*' 'sci-physics/*' 'net-nds/*' 'mail-mta/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-texlive/*' 'media-fonts/*' 'x11-themes/*' 'dev-embedded/*' 'app-eselect/*' 'games-strategy/*' 'net-nds/*' 'mail-mta/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -2111,50 +2111,39 @@ app-eselect/eselect-xvmc
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-sci-physics/cernlib
-  DeprecatedEAPI: version 2006-r3: uses deprecated EAPI: 3
-  MissingChksum: version 2006-r3: "cernlib_2006.dfsg.2.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 2006-r3: "cernlib_2006.dfsg.2-14.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-strategy/attal
+  DeprecatedEAPI: version 0.10.1: uses deprecated EAPI: 2
+  MissingChksum: version 0.10.1: "attal-src-0.10.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.10.1: "themes-0.10.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sci-physics/clhep
-  DeprecatedEAPI: version 2.0.4.6: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.1.0.1: uses deprecated EAPI: 2
-  MissingChksum: version 2.0.4.6: "clhep-2.0.4.6.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-strategy/coldwar
+  MissingChksum: version 1.0.1-r1: "coldwar-1.0-1.0.1-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sci-physics/geant
-  DeprecatedEAPI: version 3.21.14-r2: uses deprecated EAPI: 2
+games-strategy/darwinia-demo
+  MissingChksum: version 1.3.0: "darwinia-demo2-1.3.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sci-physics/hepmc
-  DeprecatedEAPI: version 2.06.03: uses deprecated EAPI: 2
-  MissingChksum: version 2.06.03: "HepMC-2.06.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-strategy/defcon-demo
+  ExecutableFile: "files/defcon" has unnecessary executable bit
 
-sci-physics/herwig
-  DeprecatedEAPI: version 6.5.10: uses deprecated EAPI: 2
-  MissingChksum: version 6.5.10: "herwig6510.f" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 6.5.10: "herwig6510.inc" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 6.5.21: "hw65_manual.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-strategy/heroes3
+  MissingChksum: version 1.3.1a-r2: "heroes3-1.3.1a-cdrom-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.3.1a-r2: "heroes3-1.3.1a-ppc.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sci-physics/lhapdf
-  DeprecatedEAPI: version 5.8.4: uses deprecated EAPI: 2
-  MissingChksum: version 5.8.4: "lhapdf-5.8.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 5.8.4: "wrapheragrid.f" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 5.8.4: "wrapheragrid-lite.f" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-strategy/knights-demo
+  MissingChksum: version 1.32-r1: "knights-demo-1.32.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sci-physics/meep
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 2
+games-strategy/openra
+  DeprecatedEclass: version 20120630: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
-sci-physics/paw
-  DeprecatedEAPI: version 2.14.04-r2: uses deprecated EAPI: 2
-  MissingChksum: version 2.14.04-r2: "paw_2.14.04.dfsg.2-6.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-strategy/revenge-of-the-titans
+  MissingChksum: version 1.80.12: "revenge-of-the-titans-1.80.12-amd64.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.80.12: "revenge-of-the-titans-1.80.12-i386.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sci-physics/root
-  DeprecatedEclass: version 5.32.03-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+games-strategy/xbattle
+  MissingChksum: version 5.4.1: "xbattle-5.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sci-physics/sassena
-  MissingChksum: version 1.4.1: "sassena-v1.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-sci-physics/xfoil
-  MissingChksum: version 6.97: "dataflow.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+games-strategy/xbattleai
+  MissingChksum: version 1.2.2-r1: "xbattleai-1.2.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
