@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 2 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'app-emulation/*' 'x11-plugins/*' 'sys-cluster/*' 'games-fps/*' 'net-irc/*' 'games-emulation/*' 'net-fs/*' 'app-mobilephone/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'app-emulation/*' 'x11-plugins/*' 'sys-cluster/*' 'games-fps/*' 'net-irc/*' 'games-emulation/*' 'net-fs/*' 'app-mobilephone/*' 'games-engines/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1557,9 +1557,4 @@ app-mobilephone/wammu
   DeprecatedEclass: version 0.35: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
-
-games-roguelike/slashem
-  DeprecatedEAPI: version 0.0.772: uses deprecated EAPI: 0
-  MissingChksum: version 0.0.772: "se007e7f2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.0.772: "conf12s.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 + [[ 0 == 0 ]]
