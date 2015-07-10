@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 1 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'net-analyzer/*' 'dev-db/*' 'app-arch/*' 'x11-wm/*' 'app-shells/*' 'games-action/*' 'x11-terms/*' 'app-mobilephone/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'net-analyzer/*' 'dev-db/*' 'app-arch/*' 'x11-wm/*' 'net-irc/*' 'games-action/*' 'x11-terms/*' 'app-mobilephone/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
@@ -655,85 +655,96 @@ x11-wm/windowmaker
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-app-shells/bash
-  VulnerablePackage: version 2.05b_p13: vulnerable via glsa(201210-05) ( ver < 4.2_p37 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  VulnerablePackage: version 2.05b_p13: vulnerable via glsa(201409-09) ( ver < 4.2_p48 && ver not = 3.1_p18 && ver not = 3.2_p52 && ver not = 4.0_p39 && ver not = 4.1_p12 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  VulnerablePackage: version 2.05b_p13: vulnerable via glsa(201409-10) ( ver-rev < 4.2_p48-r1 && not ( ver = 3.1_p18 && ver-rev >= 3.1_p18-r1 ) && not ( ver = 3.2_p52 && ver-rev >= 3.2_p52-r1 ) && not ( ver = 4.0_p39 && ver-rev >= 4.0_p39-r1 ) && not ( ver = 4.1_p12 && ver-rev >= 4.1_p12-r1 ) ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  VulnerablePackage: version 2.05b_p13: vulnerable via glsa(201410-01) ( ver < 4.2_p52 && ver not = 3.1_p22 && ver not = 3.2_p56 && ver not = 4.0_p43 && ver not = 4.1_p16 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  VulnerablePackage: version 3.0_p22: vulnerable via glsa(201210-05) ( ver < 4.2_p37 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  VulnerablePackage: version 3.0_p22: vulnerable via glsa(201409-09) ( ver < 4.2_p48 && ver not = 3.1_p18 && ver not = 3.2_p52 && ver not = 4.0_p39 && ver not = 4.1_p12 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  VulnerablePackage: version 3.0_p22: vulnerable via glsa(201409-10) ( ver-rev < 4.2_p48-r1 && not ( ver = 3.1_p18 && ver-rev >= 3.1_p18-r1 ) && not ( ver = 3.2_p52 && ver-rev >= 3.2_p52-r1 ) && not ( ver = 4.0_p39 && ver-rev >= 4.0_p39-r1 ) && not ( ver = 4.1_p12 && ver-rev >= 4.1_p12-r1 ) ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  VulnerablePackage: version 3.0_p22: vulnerable via glsa(201410-01) ( ver < 4.2_p52 && ver not = 3.1_p22 && ver not = 3.2_p56 && ver not = 4.0_p43 && ver not = 4.1_p16 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  VulnerablePackage: version 3.1_p23: vulnerable via glsa(201210-05) ( ver < 4.2_p37 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  VulnerablePackage: version 3.1_p23: vulnerable via glsa(201409-09) ( ver < 4.2_p48 && ver not = 3.1_p18 && ver not = 3.2_p52 && ver not = 4.0_p39 && ver not = 4.1_p12 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  VulnerablePackage: version 3.1_p23: vulnerable via glsa(201409-10) ( ver-rev < 4.2_p48-r1 && not ( ver = 3.1_p18 && ver-rev >= 3.1_p18-r1 ) && not ( ver = 3.2_p52 && ver-rev >= 3.2_p52-r1 ) && not ( ver = 4.0_p39 && ver-rev >= 4.0_p39-r1 ) && not ( ver = 4.1_p12 && ver-rev >= 4.1_p12-r1 ) ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  VulnerablePackage: version 3.1_p23: vulnerable via glsa(201410-01) ( ver < 4.2_p52 && ver not = 3.1_p22 && ver not = 3.2_p56 && ver not = 4.0_p43 && ver not = 4.1_p16 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  VulnerablePackage: version 3.2_p57: vulnerable via glsa(201210-05) ( ver < 4.2_p37 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  VulnerablePackage: version 3.2_p57: vulnerable via glsa(201409-09) ( ver < 4.2_p48 && ver not = 3.1_p18 && ver not = 3.2_p52 && ver not = 4.0_p39 && ver not = 4.1_p12 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  VulnerablePackage: version 3.2_p57: vulnerable via glsa(201409-10) ( ver-rev < 4.2_p48-r1 && not ( ver = 3.1_p18 && ver-rev >= 3.1_p18-r1 ) && not ( ver = 3.2_p52 && ver-rev >= 3.2_p52-r1 ) && not ( ver = 4.0_p39 && ver-rev >= 4.0_p39-r1 ) && not ( ver = 4.1_p12 && ver-rev >= 4.1_p12-r1 ) ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  VulnerablePackage: version 3.2_p57: vulnerable via glsa(201410-01) ( ver < 4.2_p52 && ver not = 3.1_p22 && ver not = 3.2_p56 && ver not = 4.0_p43 && ver not = 4.1_p16 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  VulnerablePackage: version 4.0_p44: vulnerable via glsa(201210-05) ( ver < 4.2_p37 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  VulnerablePackage: version 4.0_p44: vulnerable via glsa(201409-09) ( ver < 4.2_p48 && ver not = 3.1_p18 && ver not = 3.2_p52 && ver not = 4.0_p39 && ver not = 4.1_p12 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  VulnerablePackage: version 4.0_p44: vulnerable via glsa(201409-10) ( ver-rev < 4.2_p48-r1 && not ( ver = 3.1_p18 && ver-rev >= 3.1_p18-r1 ) && not ( ver = 3.2_p52 && ver-rev >= 3.2_p52-r1 ) && not ( ver = 4.0_p39 && ver-rev >= 4.0_p39-r1 ) && not ( ver = 4.1_p12 && ver-rev >= 4.1_p12-r1 ) ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  VulnerablePackage: version 4.0_p44: vulnerable via glsa(201410-01) ( ver < 4.2_p52 && ver not = 3.1_p22 && ver not = 3.2_p56 && ver not = 4.0_p43 && ver not = 4.1_p16 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  VulnerablePackage: version 4.1_p17: vulnerable via glsa(201210-05) ( ver < 4.2_p37 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  VulnerablePackage: version 4.1_p17: vulnerable via glsa(201409-09) ( ver < 4.2_p48 && ver not = 3.1_p18 && ver not = 3.2_p52 && ver not = 4.0_p39 && ver not = 4.1_p12 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  VulnerablePackage: version 4.1_p17: vulnerable via glsa(201409-10) ( ver-rev < 4.2_p48-r1 && not ( ver = 3.1_p18 && ver-rev >= 3.1_p18-r1 ) && not ( ver = 3.2_p52 && ver-rev >= 3.2_p52-r1 ) && not ( ver = 4.0_p39 && ver-rev >= 4.0_p39-r1 ) && not ( ver = 4.1_p12 && ver-rev >= 4.1_p12-r1 ) ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-  VulnerablePackage: version 4.1_p17: vulnerable via glsa(201410-01) ( ver < 4.2_p52 && ver not = 3.1_p22 && ver not = 3.2_p56 && ver not = 4.0_p43 && ver not = 4.1_p16 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
+net-irc/asuka
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
 
-app-shells/bash-completion
-  DeprecatedEAPI: version 1.3-r2: uses deprecated EAPI: 3
-  NonExistentDeps: version 1.3-r2: depset rdepends: nonexistent atoms [ <app-admin/eselect-1.3.7 ]
-  NonExistentDeps: version 2.1: depset rdepends: nonexistent atoms [ <app-admin/eselect-1.3.7 ]
-  NonExistentDeps: version 2.1-r2: depset rdepends: nonexistent atoms [ <app-admin/eselect-1.3.7 ]
+net-irc/atheme-services
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-shells/bashdb
-  DeprecatedEAPI: version 4.1.0.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.2.0.6: uses deprecated EAPI: 0
+net-irc/bip
+  DeprecatedEAPI: version 0.8.8-r1: uses deprecated EAPI: 2
 
-app-shells/dsh
-  DeprecatedEAPI: version 0.25.10: uses deprecated EAPI: 3
+net-irc/bnc
+  DeprecatedEAPI: version 2.9.4: uses deprecated EAPI: 0
 
-app-shells/heirloom-sh
-  DeprecatedEAPI: version 050706: uses deprecated EAPI: 0
+net-irc/charybdis
+  VulnerablePackage: version 3.3.0: vulnerable via glsa(201405-21) ( ver < 3.4.2 ), keywords ('amd64', 'x86')
 
-app-shells/localshell
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+net-irc/dccserver
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+
+net-irc/dircproxy
+  DeprecatedEAPI: version 1.2.0_rc1: uses deprecated EAPI: 0
+
+net-irc/hexchat
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+net-irc/iip
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 2
+
+net-irc/irc-client
+  DeprecatedEAPI: version 2.10.3_p7: uses deprecated EAPI: 0
+  MetadataError: version 2.10.3_p7: attr(rdepends): blocks itself
+
+net-irc/irc-server
+  DeprecatedEAPI: version 2.11.1_p1-r2: uses deprecated EAPI: 0
+
+net-irc/ircmap
+  DeprecatedEAPI: version 0.99: uses deprecated EAPI: 0
+
+net-irc/irker
+  DeprecatedEclass: version 1.19: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 1.20: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+net-irc/irssi-otr
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 2
+  NonExistentDeps: version 0.2: depset depends: nonexistent atoms [ net-irc/irssi-svn ]
+  NonExistentDeps: version 0.2: depset rdepends: nonexistent atoms [ net-irc/irssi-svn ]
+
+net-irc/irssistats
+  DeprecatedEAPI: version 0.75: uses deprecated EAPI: 0
+
+net-irc/jircii
+  DeprecatedEAPI: version 41: uses deprecated EAPI: 0
+
+net-irc/kvirc
+  DeprecatedEclass: version 4.4_pre6250: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+net-irc/miau
+  DeprecatedEAPI: version 0.6.6: uses deprecated EAPI: 0
+
+net-irc/muh
+  DeprecatedEAPI: version 2.2a: uses deprecated EAPI: 0
+
+net-irc/ninja
+  DeprecatedEAPI: version 1.5.9_pre14: uses deprecated EAPI: 0
+
+net-irc/onis
+  DeprecatedEAPI: version 0.8.2: uses deprecated EAPI: 0
+
+net-irc/psybnc
+  DeprecatedEAPI: version 2.3.2.9-r2: uses deprecated EAPI: 2
+
+net-irc/ptlink-opm
   DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
 
-app-shells/pdsh
-  DeprecatedEAPI: version 2.18-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.26: uses deprecated EAPI: 2
+net-irc/rhapsody
+  DeprecatedEAPI: version 0.28b: uses deprecated EAPI: 0
 
-app-shells/posh
-  DeprecatedEAPI: version 0.10.2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 3
+net-irc/smuxi
+  DeprecatedEclass: version 0.8.10.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
-app-shells/rc
-  DeprecatedEAPI: version 1.7.2: uses deprecated EAPI: 2
+net-irc/srvx
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
 
-app-shells/rrs
-  DeprecatedEAPI: version 1.70: uses deprecated EAPI: 0
+net-irc/xchat-otr
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 2
+  NonExistentDeps: version 0.3: depset depends: nonexistent atoms [ net-irc/xchat ]
+  NonExistentDeps: version 0.3: depset rdepends: nonexistent atoms [ net-irc/xchat ]
 
-app-shells/scsh
-  DeprecatedEAPI: version 0.6.7: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.6.7-r1: uses deprecated EAPI: 2
-
-app-shells/scsh-install-lib
-  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 0
-
-app-shells/soapbox
-  DeprecatedEAPI: version 0.3.1-r1: uses deprecated EAPI: 2
-
-app-shells/squirrelsh
-  DeprecatedEAPI: version 1.2.3-r1: uses deprecated EAPI: 2
-
-app-shells/tcsh
-  DeprecatedEAPI: version 6.17-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 6.17.06: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 6.18.01: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 6.18.01-r2: uses deprecated EAPI: 3
+net-irc/znc
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
