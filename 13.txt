@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 13 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'app-dicts/*' 'sys-kernel/*' 'gnome-extra/*' 'net-im/*' 'perl-core/*' 'dev-scheme/*' 'sys-freebsd/*' 'app-laptop/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'app-dicts/*' 'sys-kernel/*' 'gnome-extra/*' 'net-im/*' 'perl-core/*' 'dev-scheme/*' 'x11-base/*' 'app-laptop/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -946,87 +946,39 @@ dev-scheme/termite
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-sys-freebsd/boot0
-  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
+x11-base/nouveau-drm
+  DeprecatedEAPI: version 20100520: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 20100811: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 20101107: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 20110526: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 20110602: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 20110801: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 20110820: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 20111101: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 20120322: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 20120605: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 20120728: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 20121015: uses deprecated EAPI: 2
+  MissingChksum: version 20100520: "nouveau-drm-20100520.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20100811: "nouveau-drm-20100811.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20101107: "nouveau-drm-20101107.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20110526: "nouveau-drm-20110526.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20110602: "nouveau-drm-20110602.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20110801: "nouveau-drm-20110801.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20110820: "nouveau-drm-20110820.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20111101: "nouveau-drm-20111101.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20120322: "nouveau-drm-20120322.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20120605: "nouveau-drm-20120605.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sys-freebsd/freebsd-bin
-  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
+x11-base/xorg-drivers
+  DeprecatedEAPI: version 1.9: uses deprecated EAPI: 0
 
-sys-freebsd/freebsd-cddl
-  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
-  ExecutableFile: "files/zvol.initd" has unnecessary executable bit
-  ExecutableFile: "files/zvol.initd-9.0" has unnecessary executable bit
+x11-base/xorg-server
+  VulnerablePackage: version 1.12.4-r4: vulnerable via glsa(201405-07) ( ver-rev < 1.14.3-r2 ), keywords ('alpha', 'amd64', 'amd64-fbsd', 'arm', 'ia64', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'x86', 'x86-fbsd')
+  VulnerablePackage: version 1.12.4-r5: vulnerable via glsa(201405-07) ( ver-rev < 1.14.3-r2 ), keywords ('alpha', 'amd64', 'amd64-fbsd', 'arm', 'ia64', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'x86', 'x86-fbsd')
 
-sys-freebsd/freebsd-contrib
-  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
-
-sys-freebsd/freebsd-lib
-  WhitespaceFound: version 8.2-r1: ebuild has leading whitespace on lines 368, 369, 370, 371, 372
-  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
-  WhitespaceFound: version 9.1-r10: ebuild has leading whitespace on lines 413, 414, 415, 416, 417, 441, 442, 443, 446, 448, 450
-  WhitespaceFound: version 9.1-r11: ebuild has leading whitespace on lines 415, 416, 417, 418, 419, 443, 444, 445, 448, 450, 452
-  WhitespaceFound: version 10.1-r1: ebuild has leading whitespace on lines 425, 426, 427, 428, 429, 453, 454, 455, 458, 460, 462
-
-sys-freebsd/freebsd-libexec
-  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
-
-sys-freebsd/freebsd-mk-defs
-  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 3
-
-sys-freebsd/freebsd-pam-modules
-  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.1-r1: uses deprecated EAPI: 0
-
-sys-freebsd/freebsd-pf
-  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
-  ExecutableFile: "files/pf.initd" has unnecessary executable bit
-
-sys-freebsd/freebsd-rescue
-  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
-
-sys-freebsd/freebsd-sbin
-  BadInsIntoDir: version 8.2-r1: ebuild uses insinto /etc/cron.d on line 78
-  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
-  BadInsIntoDir: version 9.1: ebuild uses insinto /etc/cron.d on line 79
-  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 2
-  BadInsIntoDir: version 10.1: ebuild uses insinto /etc/cron.d on line 83
-  ExecutableFile: "files/idmapd.initd" has unnecessary executable bit
-
-sys-freebsd/freebsd-share
-  DeprecatedEAPI: version 8.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
-
-sys-freebsd/freebsd-sources
-  DeprecatedEAPI: version 8.2-r2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.1-r3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.1-r9: uses deprecated EAPI: 0
-
-sys-freebsd/freebsd-ubin
-  DeprecatedEAPI: version 8.2-r1: uses deprecated EAPI: 2
-
-sys-freebsd/freebsd-usbin
-  DeprecatedEAPI: version 8.2-r2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 9.1-r1: uses deprecated EAPI: 2
-  ExecutableFile: "files/iscsid.initd" has unnecessary executable bit
-  ExecutableFile: "files/nfs.initd" has unnecessary executable bit
-  ExecutableFile: "files/nfsmount.initd" has unnecessary executable bit
-  ExecutableFile: "files/nfsuserd.initd" has unnecessary executable bit
-  ExecutableFile: "files/powerd.initd" has unnecessary executable bit
-  ExecutableFile: "files/rpc.lockd.initd" has unnecessary executable bit
-  ExecutableFile: "files/rpc.statd.initd" has unnecessary executable bit
-  ExecutableFile: "files/rpcbind.initd" has unnecessary executable bit
-  ExecutableFile: "files/syscons.initd" has unnecessary executable bit
-  ExecutableFile: "files/syslogd.initd" has unnecessary executable bit
-
-sys-freebsd/virtio-kmod
-  MissingChksum: version 0.228301-r1: "virtio-0.228301.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-base/xorg-x11
+  DeprecatedEAPI: version 7.4-r2: uses deprecated EAPI: 2
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
