@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 2 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'net-analyzer/*' 'x11-plugins/*' 'sys-cluster/*' 'sys-auth/*' 'app-shells/*' 'games-emulation/*' 'net-fs/*' 'dev-games/*' 'games-engines/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'net-analyzer/*' 'x11-plugins/*' 'sys-cluster/*' 'sys-auth/*' 'app-shells/*' 'perl-core/*' 'net-fs/*' 'dev-games/*' 'games-engines/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1340,31 +1340,8 @@ app-shells/tcsh
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-games-emulation/desmume
-  DeprecatedEAPI: version 0.9.8: uses deprecated EAPI: 2
-  MissingChksum: version 0.9.8: "desmume-0.9.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-emulation/dolphin
-  WhitespaceFound: version 4.0-r2: ebuild has trailing whitespace on line 101
-  WhitespaceFound: version 4.0.2-r7: ebuild has trailing whitespace on line 102
-
-games-emulation/gnomeboyadvance
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
-  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MetadataError: version 0.1: attr(fetchables): error- Metadata Exception: pkg ebuild src: games-emulation/gnomeboyadvance-0.1, attr fetchables
-error: mirror://berlios/gnomeboyadvance/gnomeboyadvance-0.1.tar.bz2 is unparseable
-flagged token- uri mirror://berlios/gnomeboyadvance/gnomeboyadvance-0.1.tar.bz2 is has no known mirror tier
-
-games-emulation/mekanix
-  DeprecatedEAPI: version 070: uses deprecated EAPI: 0
-  MissingChksum: version 070: "mekanix070.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-games-emulation/mupen64plus
-  DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.5-r2: uses deprecated EAPI: 2
-
-games-emulation/nestopia
-  DroppedKeywordWarning: version 1.46.2: keywords dropped: ppc
+perl-core/DB_File
+  ExecutableFile: "files/config.in" has unnecessary executable bit
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
