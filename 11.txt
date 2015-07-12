@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 11 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'virtual/*' 'dev-ml/*' 'app-office/*' 'xfce-extra/*' 'media-tv/*' 'kde-frameworks/*' 'sys-infiniband/*' 'dev-ada/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'virtual/*' 'dev-ml/*' 'app-portage/*' 'xfce-extra/*' 'media-tv/*' 'kde-frameworks/*' 'sys-infiniband/*' 'dev-ada/*' 'games-mud/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1395,65 +1395,156 @@ dev-ml/react
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-app-office/eqe
-  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 0
+app-portage/demerge
+  DeprecatedEAPI: version 0.047-r1: uses deprecated EAPI: 0
 
-app-office/gtimelog
-  DeprecatedEclass: version 0.8.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+app-portage/distpatch
+  DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.1.1: depset depends: nonexistent atoms [ =dev-lang/python-3.1* ]
+  NonExistentDeps: version 0.1.1: depset rdepends: nonexistent atoms [ =dev-lang/python-3.1* ]
 
-app-office/lyx
-  DeprecatedEAPI: version 1.6.10: uses deprecated EAPI: 2
-  DeprecatedEclass: version 1.6.10: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 1.6.10: depset rdepends: nonexistent atoms [ <dev-vcs/subversion-1.7.0 ]
-  NonExistentDeps: version 2.0.8.1: depset rdepends: nonexistent atoms [ <dev-vcs/subversion-1.7.0 ]
+app-portage/eclass-manpages
+  ExecutableFile: "files/eclass-to-manpage.sh" has unnecessary executable bit
 
-app-office/ooextras
-  DeprecatedEAPI: version 20060909: uses deprecated EAPI: 0
+app-portage/elogv
+  DeprecatedEAPI: version 0.7.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.7.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.7.4-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.7.4-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-app-office/openerp
-  DeprecatedEAPI: version 6.1.1-r1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 6.1.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 7.0.20130219-r5: uses deprecated EAPI: 3
-  DeprecatedEclass: version 7.0.20130219-r5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DroppedKeywordWarning: version 8.0.20140125: keywords dropped: amd64, x86
-  ExecutableFile: "files/openerp" has unnecessary executable bit
-  ExecutableFile: "files/openerp-confd" has unnecessary executable bit
+app-portage/elogviewer
+  DroppedKeywordWarning: version 2.5: keywords dropped: sparc
 
-app-office/qchartdiary
-  DeprecatedEAPI: version 0.6.4.1-r2: uses deprecated EAPI: 2
+app-portage/emerge-delta-webrsync
+  DeprecatedEAPI: version 3.5.1-r3: uses deprecated EAPI: 0
 
-app-office/rubrica
-  MetadataError: version 2.1.6-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-office/rubrica-2.1.6-r1, attr fetchables
-error: mirror://berlios/rubrica/rubrica2-2.1.6.tar.bz2 mirror://gentoo/rubrica-2.1.6-hu.po.bz2 is unparseable
-flagged token- uri mirror://berlios/rubrica/rubrica2-2.1.6.tar.bz2 is has no known mirror tier
-  ExecutableFile: "files/rubrica2.desktop" has unnecessary executable bit
+app-portage/epm
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-office/scribus
-  DroppedKeywordWarning: version 1.5.0: keywords dropped: hppa, ppc, ppc64, sparc
+app-portage/esearch
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-office/skrooge
-  DroppedKeywordWarning: version 2.0.0: keywords dropped: x86
+app-portage/etc-proposals
+  DeprecatedEAPI: version 1.4.3-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.4.3-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 1.4.3-r2: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
+  NonExistentDeps: version 1.4.3-r2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
+  MetadataError: version 1.4.3-r2: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-portage/etc-proposals-1.4.3-r2, attr fetchables
+error: mirror://berlios/etc-proposals/etc-proposals-1.4.3.tar.gz is unparseable
+flagged token- uri mirror://berlios/etc-proposals/etc-proposals-1.4.3.tar.gz is has no known mirror tier
 
-app-office/taskcoach
-  DeprecatedEAPI: version 1.3.18: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.3.18: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.3.27: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.3.27: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.3.29: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.3.29: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.3.32: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.3.32: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+app-portage/euscan
+  DeprecatedEAPI: version 0.1.0: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.1.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-office/tedia2sql
-  DeprecatedEAPI: version 1.2.12: uses deprecated EAPI: 0
+app-portage/g-ctan
+  DeprecatedEAPI: version 2011.1: uses deprecated EAPI: 2
+  NonExistentDeps: version 2011.1: depset rdepends: nonexistent atoms [ ~app-text/texlive-2011 ]
 
-app-office/unoconv
+app-portage/g-octave
+  DeprecatedEAPI: version 0.4.1-r4: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.4.1-r4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-portage/g-sorcery
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 0.2: keywords dropped: alpha, arm, ia64, ppc, ppc64, sparc
+
+app-portage/genlop
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-portage/gentoolkit-dev
+  DeprecatedEAPI: version 0.2.6.14: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.2.6.14: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.2.6.14: depset depends: nonexistent atoms [ =dev-lang/python-3.1* ]
+  NonExistentDeps: version 0.2.6.14: depset rdepends: nonexistent atoms [ =dev-lang/python-3.1* ]
+  DeprecatedEAPI: version 0.2.7: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.2.7: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.2.8: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.2.8: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.2.8: depset depends: nonexistent atoms [ =dev-lang/python-3.1* ]
+  NonExistentDeps: version 0.2.8: depset rdepends: nonexistent atoms [ =dev-lang/python-3.1* ]
+  DeprecatedEclass: version 0.2.8.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.2.8.3: depset depends: nonexistent atoms [ =dev-lang/python-3.1* ]
+  NonExistentDeps: version 0.2.8.3: depset rdepends: nonexistent atoms [ =dev-lang/python-3.1* ]
+
+app-portage/getdelta
+  DeprecatedEAPI: version 0.7.8: uses deprecated EAPI: 0
+
+app-portage/gpytage
+  DeprecatedEAPI: version 0.3.0_rc1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.0_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-portage/grs
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-portage/gs-elpa
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-portage/gs-pypi
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+app-portage/layman
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 2.3.0: keywords dropped: alpha, arm64, ia64, m68k, sh, sparc
+
+app-portage/layman-dbtools
+  DeprecatedEAPI: version 0_p20100322: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0_p20100322: uses deprecated eclass(es): [ git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-portage/maintainer-helper
+  DeprecatedEAPI: version 0.1.2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.1.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-portage/mirrorselect
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 2.2.2: keywords dropped: m68k, s390, sh
+
+app-portage/perl-info
+  DeprecatedEAPI: version 0.16: uses deprecated EAPI: 0
+
+app-portage/pms-test-suite
+  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-portage/portage-utils
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 3
   DeprecatedEAPI: version 0.6: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.6.20131229: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.6.20131229: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 99999999: uses deprecated EAPI: 3
-  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.10: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.20: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.21: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.30: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.40: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.41: uses deprecated EAPI: 3
+  ExecutableFile: "files/post_sync" has unnecessary executable bit
+
+app-portage/porthole
+  DeprecatedEAPI: version 0.6.1-r1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.6.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6.1-r2: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.6.1-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6.1-r3: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.6.1-r3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+app-portage/prefix-chain-setup
+  DeprecatedEAPI: version 0.4-r5: uses deprecated EAPI: 0
+  ExecutableFile: "files/prefix-chain-setup.in" has unnecessary executable bit
+
+app-portage/repo-commit
+  NonExistentDeps: version 0.4: depset rdepends: nonexistent atoms [ <sys-apps/portage-2.2.0_alpha ]
+  NonExistentDeps: version 0.4.1: depset rdepends: nonexistent atoms [ <sys-apps/portage-2.2.0_alpha ]
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <sys-apps/portage-2.2.0_alpha ]
+
+app-portage/ufed
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
