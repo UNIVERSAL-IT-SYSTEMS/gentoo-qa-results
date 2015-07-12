@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 2 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'net-analyzer/*' 'x11-plugins/*' 'sys-cluster/*' 'sys-auth/*' 'app-shells/*' 'sci-visualization/*' 'app-pda/*' 'perl-core/*' 'games-engines/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'net-analyzer/*' 'x11-plugins/*' 'sys-cluster/*' 'sys-auth/*' 'app-shells/*' 'sci-physics/*' 'app-pda/*' 'perl-core/*' 'games-engines/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1340,45 +1340,50 @@ app-shells/tcsh
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-sci-visualization/gcalc
-  MissingChksum: version 3.1_rc1: "GCalc-3.1-rc1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sci-physics/cernlib
+  DeprecatedEAPI: version 2006-r3: uses deprecated EAPI: 3
+  MissingChksum: version 2006-r3: "cernlib_2006.dfsg.2.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2006-r3: "cernlib_2006.dfsg.2-14.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sci-visualization/ggobi
-  DeprecatedEAPI: version 2.1.8: uses deprecated EAPI: 2
-  MissingChksum: version 2.1.8: "ggobi-2.1.8.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-physics/clhep
+  DeprecatedEAPI: version 2.0.4.6: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.1.0.1: uses deprecated EAPI: 2
+  MissingChksum: version 2.0.4.6: "clhep-2.0.4.6.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sci-visualization/gle
-  MissingChksum: version 4.2.4b: "gle-manual-4.2.2.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 4.2.4b: "GLEusersguide.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-physics/geant
+  DeprecatedEAPI: version 3.21.14-r2: uses deprecated EAPI: 2
 
-sci-visualization/gri
-  DeprecatedEAPI: version 2.12.19: uses deprecated EAPI: 2
+sci-physics/hepmc
+  DeprecatedEAPI: version 2.06.03: uses deprecated EAPI: 2
+  MissingChksum: version 2.06.03: "HepMC-2.06.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sci-visualization/kst
-  NonExistentDeps: version 2.0.7: depset depends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
-  NonExistentDeps: version 2.0.7: depset rdepends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
+sci-physics/herwig
+  DeprecatedEAPI: version 6.5.10: uses deprecated EAPI: 2
+  MissingChksum: version 6.5.10: "herwig6510.f" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.5.10: "herwig6510.inc" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.5.21: "hw65_manual.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sci-visualization/nonolith-connect
-  ExecutableFile: "files/nonolith-connect.initd" has unnecessary executable bit
+sci-physics/lhapdf
+  DeprecatedEAPI: version 5.8.4: uses deprecated EAPI: 2
+  MissingChksum: version 5.8.4: "lhapdf-5.8.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 5.8.4: "wrapheragrid.f" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 5.8.4: "wrapheragrid-lite.f" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sci-visualization/pyxplot
-  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 2
-  DeprecatedEclass: version 0.7.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingChksum: version 0.7.1: "pyxplot_0.7.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-physics/meep
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 2
 
-sci-visualization/spyview
-  DroppedKeywordWarning: version 20130823: keywords dropped: amd64
+sci-physics/paw
+  DeprecatedEAPI: version 2.14.04-r2: uses deprecated EAPI: 2
+  MissingChksum: version 2.14.04-r2: "paw_2.14.04.dfsg.2-6.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sci-visualization/veusz
-  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.11: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingChksum: version 1.11: "veusz-1.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-physics/root
+  DeprecatedEclass: version 5.32.03-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-sci-visualization/xds-viewer
-  MissingChksum: version 0.6: "xds-viewer-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-physics/sassena
+  MissingChksum: version 1.4.1: "sassena-v1.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-sci-visualization/xgraph
-  DeprecatedEAPI: version 12.1-r2: uses deprecated EAPI: 3
+sci-physics/xfoil
+  MissingChksum: version 6.97: "dataflow.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
