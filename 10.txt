@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 10 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'sys-fs/*' 'app-emacs/*' 'net-wireless/*' 'www-apache/*' 'sys-boot/*' 'gnustep-apps/*' 'x11-proto/*' 'xfce-base/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'sys-fs/*' 'app-emacs/*' 'sci-mathematics/*' 'www-apache/*' 'sys-boot/*' 'gnustep-apps/*' 'x11-proto/*' 'xfce-base/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -904,140 +904,155 @@ app-emacs/yc
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-net-wireless/adm8211
-  DeprecatedEAPI: version 20060111: uses deprecated EAPI: 0
-  MissingChksum: version 20060111: "adm8211-20060111.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-mathematics/axiom
+  MissingChksum: version 200805: "axiom-may2008-src.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-wireless/airsnort
-  DeprecatedEAPI: version 0.2.7e: uses deprecated EAPI: 0
-  MissingChksum: version 0.2.7e: "airsnort-0.2.7e.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-mathematics/calc
+  DeprecatedEAPI: version 2.12.1.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.12.2.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.12.4.3: uses deprecated EAPI: 3
+  MissingChksum: version 2.12.1.5: "calc-2.12.1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.12.2.2: "calc-2.12.2.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.12.4.3: "calc-2.12.4.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/ap-utils
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
-  MissingChksum: version 1.4: "ap-utils-1.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-mathematics/coq
+  DeprecatedEAPI: version 8.3_p1: uses deprecated EAPI: 2
+  MissingChksum: version 8.3_p1: "coq-8.3pl1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/b43-fwcutter
-  DeprecatedEAPI: version 018: uses deprecated EAPI: 0
+sci-mathematics/diagrtb
+  MissingChksum: version 2.64: "diagrtb-2.64.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/bcm43xx-fwcutter
-  DeprecatedEAPI: version 005: uses deprecated EAPI: 0
-  MetadataError: version 005: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/bcm43xx-fwcutter-005, attr fetchables
-error: mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2 is unparseable: uri mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2 is has no known mirror tier
-flagged token- mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2
-  DeprecatedEAPI: version 006: uses deprecated EAPI: 0
-  MetadataError: version 006: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/bcm43xx-fwcutter-006, attr fetchables
-error: mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2 is unparseable: uri mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2 is has no known mirror tier
-flagged token- mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2
+sci-mathematics/drgeo
+  NonExistentDeps: version 1.1.0: depset depends: nonexistent atoms [ =dev-scheme/guile-1.6* ]
+  NonExistentDeps: version 1.1.0: depset rdepends: nonexistent atoms [ =dev-scheme/guile-1.6* ]
+  MissingChksum: version 1.1.0: "drgeo-1.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.1.0: "drgeo-doc-1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/blueman
-  DeprecatedEclass: version 1.23: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 1.23-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 1.23-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+sci-mathematics/ent
+  DeprecatedEAPI: version 101202: uses deprecated EAPI: 3
+  MissingChksum: version 101202: "random-101202.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-wireless/bluez
-  ExecutableFile: "files/bluez-plugdev.patch" has unnecessary executable bit
-  ExecutableFile: "files/rfcomm-init.d-r2" has unnecessary executable bit
+sci-mathematics/fann
+  DeprecatedEAPI: version 2.1.0_beta-r1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.1.0_beta-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 2.1.0_beta-r1: "fann-2.1.0beta.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.2.0: "FANN-2.2.0-Source.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/bss
-  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 2
-  MissingChksum: version 0.8: "bss-0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+sci-mathematics/gfan
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 3
+  MissingChksum: version 0.5: "gfan0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/chillispot
-  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 0
+sci-mathematics/ginac
+  DeprecatedEAPI: version 1.5.8: uses deprecated EAPI: 2
+  MissingChksum: version 1.5.8: "ginac-1.5.8.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.6.1: "ginac-1.6.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/cpyrit-cuda
-  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
-  NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
+sci-mathematics/glpk
+  DeprecatedEAPI: version 4.45: uses deprecated EAPI: 2
+  DroppedKeywordWarning: version 4.54: keywords dropped: alpha
 
-net-wireless/cpyrit-opencl
-  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
-  NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
+sci-mathematics/lybniz
+  DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 1.3.2: "lybniz-1.3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/crda
-  DeprecatedEclass: version 1.1.2-r3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 1.1.2-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 1.1.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+sci-mathematics/maxima
+  DeprecatedEAPI: version 5.18.1: uses deprecated EAPI: 2
+  MissingChksum: version 5.18.1: "maxima-5.18.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/gobi_loader
-  DeprecatedEAPI: version 0.7-r2: uses deprecated EAPI: 2
+sci-mathematics/minisat
+  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.2.0-r3: uses deprecated EAPI: 2
+  MissingChksum: version 2.1.0: "minisat2-070721.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.1.0: "MiniSat.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.2.0-r3: "minisat-2.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/gr-iqbal
-  DeprecatedEclass: version 0.36.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+sci-mathematics/nestedsums
+  DeprecatedEAPI: version 1.4.12-r1: uses deprecated EAPI: 3
+  MissingChksum: version 1.4.12-r1: "nestedsums-1.4.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-wireless/hackrf-tools
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-wireless/irda-utils
-  DeprecatedEAPI: version 0.9.18-r3: uses deprecated EAPI: 0
-
-net-wireless/kismet
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-wireless/madwifi-ng
-  DeprecatedEAPI: version 0.9.3.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4.4119.20100201: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4133.20100621: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4165.20110816: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4180.20120502: uses deprecated EAPI: 2
-  MissingChksum: version 0.9.3.3: "madwifi-0.9.3.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4: "madwifi-0.9.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4.4119.20100201: "madwifi-0.9.4-r4119-20100201.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4.4133.20100621: "madwifi-0.9.4-r4133-20100621.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4.4165.20110816: "madwifi-0.9.4-r4165-20110816.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4.4180.20120502: "madwifi-0.9.4-r4180-20120502.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-wireless/madwifi-ng-tools
-  DeprecatedEAPI: version 0.9.3.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4.4119.20100201: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4133.20100621: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4165.20110816: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.4.4180.20120502: uses deprecated EAPI: 2
-  MissingChksum: version 0.9.3.3: "madwifi-0.9.3.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4: "madwifi-0.9.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4.4119.20100201: "madwifi-0.9.4-r4119-20100201.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4.4133.20100621: "madwifi-0.9.4-r4133-20100621.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-wireless/openbsc
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-wireless/openggsn
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-net-wireless/orinoco-fwutils
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+sci-mathematics/num-utils
   DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
-  MissingChksum: version 0.1: "orinoco-fwutils-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.3: "num-utils-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.5-r1: "num-utils-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.5-r1: "num-utils_0.5-11.diff.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-wireless/orinoco-usb
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 0
+sci-mathematics/nusmv
+  DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.5.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.5.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.5.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.5.4: uses deprecated EAPI: 0
+  MissingChksum: version 2.5.0: "NuSMV-2.5.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.5.2: "NuSMV-2.5.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/osmobts
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sci-mathematics/octave
+  DroppedKeywordWarning: version 3.8.1: keywords dropped: arm
 
-net-wireless/osmocom-bb
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sci-mathematics/octave-epstk
+  DeprecatedEAPI: version 2.3: uses deprecated EAPI: 2
+  MissingChksum: version 2.3: "octave-epstk_2.3.orig.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 2.3: "octave-epstk_2.3-2.debian.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 2.4: "octave-epstk_2.4.orig.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 2.4: "octave-epstk_2.4-1.debian.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-wireless/python-wifi
-  DeprecatedEAPI: version 0.5.0-r1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.5.0-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MetadataError: version 0.5.0-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/python-wifi-0.5.0-r1, attr fetchables
-error: mirror://berlios/pythonwifi/python-wifi-0.5.0.tar.bz2 is unparseable
-flagged token- uri mirror://berlios/pythonwifi/python-wifi-0.5.0.tar.bz2 is has no known mirror tier
+sci-mathematics/otter
+  DeprecatedEAPI: version 3.3-r1: uses deprecated EAPI: 0
+  MissingChksum: version 3.3-r1: "otter-3.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/rfswitch
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+sci-mathematics/pari
+  DeprecatedEAPI: version 2.3.5: uses deprecated EAPI: 3
+  SizeViolation: "files/pari-2.5.4-polred.patch" exceeds 20k in size; 23409 bytes total
+  MissingChksum: version 2.5.0-r3: "pari-2.5.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-wireless/rtl8180
-  DeprecatedEAPI: version 0.22_pre20050528: uses deprecated EAPI: 0
-  MissingChksum: version 0.22_pre20050528: "rtl8180-0.22_pre20050528.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-mathematics/pymc
+  DeprecatedEclass: version 2.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-wireless/ubertooth
-  DeprecatedEclass: version 2014.04.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+sci-mathematics/qtoctave
+  NonExistentDeps: version 0.10.1-r1: depset depends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
+  NonExistentDeps: version 0.10.1-r1: depset rdepends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
+
+sci-mathematics/reduce
+  ExecutableFile: "files/csl" has unnecessary executable bit
+  ExecutableFile: "files/redcsl" has unnecessary executable bit
+  MissingChksum: version 20110414-r1: "reduce-src-20110414.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-mathematics/relational
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.11: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.11: "relational-0.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-mathematics/singular
+  DroppedKeywordWarning: version 4.0.2: keywords dropped: ppc
+
+sci-mathematics/snns
+  DeprecatedEAPI: version 4.2-r8: uses deprecated EAPI: 3
+  DeprecatedEclass: version 4.2-r8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MetadataError: version 4.2-r8: attr(fetchables): error- Metadata Exception: pkg ebuild src: sci-mathematics/snns-4.2-r8, attr fetchables
+error: http://www-ra.informatik.uni-tuebingen.de/downloads/SNNS/SNNSv4.2.tar.gz mirror://berlios/snns-dev/snns-4.2-20040227.patch.gz doc? ( http://www-ra.informatik.uni-tuebingen.de/downloads/SNNS/SNNSv4.2.Manual.pdf ) python? ( mirror://berlios/snns-dev/PySNNS-20040605.tar.gz mirror://berlios/snns-dev/PythonFunctionSupport-20050210.patch.gz ) is unparseable
+flagged token- uri mirror://berlios/snns-dev/snns-4.2-20040227.patch.gz is has no known mirror tier
+  DeprecatedEAPI: version 4.2-r9: uses deprecated EAPI: 3
+  DeprecatedEclass: version 4.2-r9: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 4.2-r9: "snns-4.2-patched.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 4.2-r9: "SNNSv4.2.Manual.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 4.2-r9: "python.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-mathematics/spin
+  MissingChksum: version 6.2.1: "spin621.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-mathematics/topcom
+  MissingChksum: version 0.17.4-r1: "TOPCOM-manual.html" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-mathematics/xmds
+  DeprecatedEAPI: version 1.6.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.6.6: uses deprecated EAPI: 0
+  MissingChksum: version 1.6.5: "xmds-1.6.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.6.5: "xmds_doc_20080226.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.6.6: "xmds-1.6.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-mathematics/yacas
+  MissingChksum: version 1.3.2: "yacas-1.3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
