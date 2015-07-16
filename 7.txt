@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 7 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-lang/*' 'media-fonts/*' 'x11-themes/*' 'dev-embedded/*' 'app-eselect/*' 'games-rpg/*' 'dev-lisp/*' 'kde-plasma/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-lang/*' 'media-fonts/*' 'x11-themes/*' 'dev-embedded/*' 'sci-electronics/*' 'sci-visualization/*' 'dev-lisp/*' 'kde-plasma/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -2126,194 +2126,130 @@ dev-embedded/zmac
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-app-eselect/eselect-audicle
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+sci-electronics/drawtiming
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 3
 
-app-eselect/eselect-blas
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+sci-electronics/electric
+  DeprecatedEAPI: version 8.09: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 8.10: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 8.11: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.00: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.02: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.03: uses deprecated EAPI: 0
+  MissingChksum: version 8.09: "electricBinary-8.09.jar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 8.10: "electricBinary-8.10.jar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 8.11: "electricBinary-8.11.jar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-eselect/eselect-cblas
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+sci-electronics/electronics-menu
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 3
 
-app-eselect/eselect-chuck
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+sci-electronics/freehdl
+  DeprecatedEAPI: version 0.0.7: uses deprecated EAPI: 0
+  MissingChksum: version 0.0.7: "freehdl-0.0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-eselect/eselect-esd
-  DeprecatedEAPI: version 20060719: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20091106: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20100127: uses deprecated EAPI: 0
+sci-electronics/geda-suite
+  DeprecatedEAPI: version 20110427: uses deprecated EAPI: 0
 
-app-eselect/eselect-fontconfig
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
+sci-electronics/geda-xgsch2pcb
+  DeprecatedEAPI: version 0.1.3-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.1.3-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-app-eselect/eselect-gnat
-  DeprecatedEAPI: version 1.3-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.4-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 0
+sci-electronics/ghdl
+  DeprecatedEAPI: version 0.29: uses deprecated EAPI: 3
 
-app-eselect/eselect-lapack
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+sci-electronics/gnucap
+  DeprecatedEAPI: version 0.35.20091207: uses deprecated EAPI: 2
 
-app-eselect/eselect-maven
-  DeprecatedEAPI: version 0.2-r1: uses deprecated EAPI: 3
+sci-electronics/gplcver
+  DeprecatedEAPI: version 2.11a: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.12a: uses deprecated EAPI: 0
+  MissingChksum: version 2.11a: "gplcver-2.11a.src.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-eselect/eselect-mesa
-  DeprecatedEAPI: version 0.0.9: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 0.0.10: uses deprecated EAPI: 3
+sci-electronics/gresistor
+  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.0.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.0.1: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
+  NonExistentDeps: version 0.0.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
+  DeprecatedEclass: version 0.0.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.0.1-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
+  NonExistentDeps: version 0.0.1-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
 
-app-eselect/eselect-metasploit
-  ExecutableFile: "files/msfloader-0.16" has unnecessary executable bit
+sci-electronics/gsmc
+  DeprecatedEAPI: version 1.1-r1: uses deprecated EAPI: 2
+  MissingChksum: version 1.1-r1: "gsmc-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-app-eselect/eselect-miniaudicle
-  DeprecatedEAPI: version 1.0.1-r1: uses deprecated EAPI: 3
+sci-electronics/gspiceui
+  DeprecatedEAPI: version 0.9.99: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.9.99-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 2
 
-app-eselect/eselect-mpost
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
+sci-electronics/ngspice
+  DeprecatedEAPI: version 26: uses deprecated EAPI: 3
 
-app-eselect/eselect-oodict
-  DeprecatedEAPI: version 20100228: uses deprecated EAPI: 0
+sci-electronics/osqoop
+  MissingChksum: version 1.1.1: "osqoop-1.1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-eselect/eselect-package-manager
-  DeprecatedEAPI: version 20110108: uses deprecated EAPI: 0
+sci-electronics/plcedit
+  DeprecatedEAPI: version 2.2.1: uses deprecated EAPI: 2
 
-app-eselect/eselect-pdftex
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
+sci-electronics/puff
+  DeprecatedEAPI: version 20100127: uses deprecated EAPI: 2
 
-app-eselect/eselect-php
-  DeprecatedEAPI: version 0.6.2: uses deprecated EAPI: 3
-  ExecutableFile: "files/php-fpm-r1.init" has unnecessary executable bit
-  ExecutableFile: "files/php-fpm.init" has unnecessary executable bit
+sci-electronics/pulseview
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-eselect/eselect-python
-  DeprecatedEAPI: version 20111108: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20131210: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20140115: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20140125: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 99999999: uses deprecated EAPI: 0
+sci-electronics/sigrok-cli
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-eselect/eselect-rails
-  DeprecatedEAPI: version 0.18: uses deprecated EAPI: 0
+sci-electronics/spice
+  DeprecatedEAPI: version 3.5.5-r1: uses deprecated EAPI: 0
+  MissingChksum: version 3.5.5-r1: "spice3f5sfix.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-eselect/eselect-ruby
-  DeprecatedEAPI: version 20131227: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20141227: uses deprecated EAPI: 0
-
-app-eselect/eselect-sndpeek
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
-
-app-eselect/eselect-timidity
-  DeprecatedEAPI: version 20061203: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20091106: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20110513: uses deprecated EAPI: 0
-
-app-eselect/eselect-unison
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
-
-app-eselect/eselect-vi
-  DeprecatedEAPI: version 1.1.7-r1: uses deprecated EAPI: 3
-
-app-eselect/eselect-wxwidgets
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
-  ExecutableFile: "files/wx-config-1.3" has unnecessary executable bit
-  ExecutableFile: "files/wx-config-1.4" has unnecessary executable bit
-  ExecutableFile: "files/wxrc-1.3" has unnecessary executable bit
-  ExecutableFile: "files/wxrc-1.4" has unnecessary executable bit
-  SizeViolation: "files/wxwin.m4-2.9" exceeds 20k in size; 40696 bytes total
-  SizeViolation: "files/wxwin.m4-3.0" exceeds 20k in size; 40561 bytes total
-
-app-eselect/eselect-xvmc
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
+sci-electronics/vbs
+  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 2
+  MissingChksum: version 1.4.0: "vbs-1.4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-games-rpg/arx-fatalis-data
-  MissingUri: version 1.21-r2: file setup_arx_fatalis.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set
+sci-visualization/gcalc
+  MissingChksum: version 3.1_rc1: "GCalc-3.1-rc1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-games-rpg/bass
-  ExecutableFile: "files/scummvmGetLang.sh" has unnecessary executable bit
+sci-visualization/ggobi
+  DeprecatedEAPI: version 2.1.8: uses deprecated EAPI: 2
+  MissingChksum: version 2.1.8: "ggobi-2.1.8.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-rpg/eternal-lands
-  DeprecatedEAPI: version 1.9.2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.9.2-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.9.3: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.9.3-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.9.2: "elc_1.9.2-20110618.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-visualization/gle
+  MissingChksum: version 4.2.4b: "gle-manual-4.2.2.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 4.2.4b: "GLEusersguide.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-rpg/eternal-lands-bloodsucker
-  DeprecatedEAPI: version 3.0: uses deprecated EAPI: 2
-  MissingChksum: version 3.0: "eternal-lands-bloodsucker-3.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-visualization/gri
+  DeprecatedEAPI: version 2.12.19: uses deprecated EAPI: 2
 
-games-rpg/eternal-lands-data
-  DeprecatedEAPI: version 1.9.2-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.3-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.9.2-r1: "el_linux_192.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-visualization/kst
+  NonExistentDeps: version 2.0.7: depset depends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
+  NonExistentDeps: version 2.0.7: depset rdepends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
 
-games-rpg/lure
-  MissingChksum: version 1.1: "lure-es-1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.1: "lure-fr-1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.1: "lure-de-1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-visualization/nonolith-connect
+  ExecutableFile: "files/nonolith-connect.initd" has unnecessary executable bit
 
-games-rpg/nwmovies
-  DeprecatedEAPI: version 20090223.080954: uses deprecated EAPI: 2
+sci-visualization/pyxplot
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.7.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.7.1: "pyxplot_0.7.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-rpg/nwn
-  ExecutableFile: "files/fixinstall" has unnecessary executable bit
-  MissingChksum: version 1.68-r5: "French_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "French_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "French_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "Italian_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "Italian_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "Italian_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "English_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "English_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "English_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "Spanish_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "Spanish_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "Spanish_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "German_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "German_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "German_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.69-r1: "English_linuxclient169_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.69-r1: "English_linuxclient169_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-visualization/spyview
+  DroppedKeywordWarning: version 20130823: keywords dropped: amd64
 
-games-rpg/nwn-cep
-  DeprecatedEAPI: version 1.68-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 2
+sci-visualization/veusz
+  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.11: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 1.11: "veusz-1.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-rpg/nwn-data
-  MissingChksum: version 1.29-r5: "nwresources129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.29-r5: "nwfrench129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.29-r5: "nwitalian129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.29-r5: "nwspanish129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.29-r5: "nwgerman129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sci-visualization/xds-viewer
+  MissingChksum: version 0.6: "xds-viewer-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-rpg/nwn-penultima
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1-r1: uses deprecated EAPI: 0
-
-games-rpg/nwn-penultimarerolled
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-  MissingChksum: version 1: "PR0_and_PR1_Penultima_ReRolled_Starter_Pack_v1.4.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1: "PR2_Below_the_R00t.v1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1: "PR3_Homeland_Security.v1.4.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1: "PR4_Pastor_of_Muppets.v1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1: "PR5_The_Saving_Throw.v1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-rpg/nwn-shadowlordsdreamcatcherdemon
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-
-games-rpg/sacred-gold
-  MissingChksum: version 1.0.01: "sacred-1.0-1.0.01-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-rpg/vendetta-online-bin
-  ExecutableFile: "files/vendetta" has unnecessary executable bit
+sci-visualization/xgraph
+  DeprecatedEAPI: version 12.1-r2: uses deprecated EAPI: 3
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
