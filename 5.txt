@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 5 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'media-video/*' 'sci-biology/*' 'app-editors/*' 'dev-qt/*' 'www-servers/*' 'games-strategy/*' 'net-ftp/*' 'lxde-base/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'media-video/*' 'sci-biology/*' 'app-editors/*' 'dev-qt/*' 'mail-client/*' 'games-strategy/*' 'net-ftp/*' 'lxde-base/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1584,57 +1584,104 @@ dev-qt/qtxmlpatterns
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-www-servers/fnord
-  DeprecatedEAPI: version 1.10-r2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
-  MissingChksum: version 1.10-r2: "fnord-1.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+mail-client/biabam
+  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 0
+  MissingChksum: version 0.9.7: "biabam-0.9.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-www-servers/gatling
-  MissingChksum: version 0.12-r2: "gatling-0.12.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+mail-client/claws-mail-acpi-notifier
+  DeprecatedEAPI: version 1.0.28: uses deprecated EAPI: 0
 
-www-servers/gunicorn
-  DeprecatedEclass: version 0.17.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+mail-client/claws-mail-address_keeper
+  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 0
 
-www-servers/lighttpd
-  SizeViolation: "files/lighttpd-1.4.29-mod_uploadprogress.patch" exceeds 20k in size; 22472 bytes total
+mail-client/claws-mail-archive
+  DeprecatedEAPI: version 0.6.13: uses deprecated EAPI: 0
 
-www-servers/pound
-  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 2
-  MissingChksum: version 2.6: "Pound-2.6.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+mail-client/claws-mail-att-remover
+  DeprecatedEAPI: version 1.0.15: uses deprecated EAPI: 0
 
-www-servers/resin
-  DeprecatedEAPI: version 4.0.22: uses deprecated EAPI: 2
-  MissingChksum: version 4.0.22: "resin-4.0.22-src.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 4.0.22: "resin-gentoo-patches-4.0.22-r1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 4.0.25: "resin-4.0.25-src.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 4.0.25: "resin-gentoo-patches-4.0.25-r1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 4.0.26: "resin-4.0.26-src.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 4.0.26: "resin-gentoo-patches-4.0.26.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+mail-client/claws-mail-attachwarner
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
 
-www-servers/servefile
-  DeprecatedEclass: version 0.4.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+mail-client/claws-mail-clamd
+  DeprecatedEAPI: version 3.5.5: uses deprecated EAPI: 0
 
-www-servers/skunkweb
-  DeprecatedEAPI: version 3.4.4: uses deprecated EAPI: 3
-  DeprecatedEclass: version 3.4.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  ExecutableFile: "files/skunkweb-cron-cache_cleaner" has unnecessary executable bit
-  ExecutableFile: "files/skunkweb-init" has unnecessary executable bit
-  MissingChksum: version 3.4.4: "skunkweb-3.4.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+mail-client/claws-mail-fancy
+  DeprecatedEAPI: version 0.9.17: uses deprecated EAPI: 3
 
-www-servers/thttpd
+mail-client/claws-mail-fetchinfo
+  DeprecatedEAPI: version 0.4.25: uses deprecated EAPI: 0
+
+mail-client/claws-mail-gtkhtml
+  DeprecatedEAPI: version 0.34: uses deprecated EAPI: 0
+
+mail-client/claws-mail-mailmbox
+  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
+
+mail-client/claws-mail-newmail
+  DeprecatedEAPI: version 0.0.16: uses deprecated EAPI: 0
+
+mail-client/claws-mail-perl
+  DeprecatedEAPI: version 0.9.20: uses deprecated EAPI: 0
+
+mail-client/clawsker
+  DeprecatedEAPI: version 0.7.8: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.7.10: uses deprecated EAPI: 0
+
+mail-client/drac
+  DeprecatedEAPI: version 1.12-r1: uses deprecated EAPI: 0
+  MissingChksum: version 1.12-r1: "drac.tar.Z" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+mail-client/etpan-ng
+  DeprecatedEAPI: version 0.7.1-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.7.1-r1: "etpan-ng-0.7.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+mail-client/evolution
+  DroppedKeywordWarning: version 3.16.3: keywords dropped: alpha, arm, ia64, ppc, ppc64, sparc
+
+mail-client/mail-notification
+  SizeViolation: "files/mail-notification-aarch64.patch" exceeds 20k in size; 49364 bytes total
+
+mail-client/mailx
+  DeprecatedEAPI: version 8.1.2.20050715-r6: uses deprecated EAPI: 0
+
+mail-client/mailx-support
+  DeprecatedEAPI: version 20060102-r1: uses deprecated EAPI: 0
+
+mail-client/mutt
+  MetadataError: version 1.5.23-r5: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.23-r5, attr fetchables
+error: mirror://sourceforge/mutt/mutt-1.5.23.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz ftp://ftp.mutt.org/mutt/devel/mutt-1.5.23.tar.gz mirror://gentoo/mutt-1.5.23-gentoo-patches-r5.tar.bz2 http://dev.gentoo.org/~grobian/distfiles/mutt-1.5.23-gentoo-patches-r5.tar.bz2 is unparseable
+flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz is has no known mirror tier
+  MetadataError: version 1.5.23-r6: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.23-r6, attr fetchables
+error: mirror://sourceforge/mutt/mutt-1.5.23.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz ftp://ftp.mutt.org/mutt/devel/mutt-1.5.23.tar.gz mirror://gentoo/mutt-1.5.23-gentoo-patches-r6.tar.bz2 http://dev.gentoo.org/~grobian/distfiles/mutt-1.5.23-gentoo-patches-r6.tar.bz2 is unparseable
+flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz is has no known mirror tier
+  MetadataError: version 1.5.23-r7: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.23-r7, attr fetchables
+error: mirror://sourceforge/mutt/mutt-1.5.23.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz ftp://ftp.mutt.org/mutt/devel/mutt-1.5.23.tar.gz mirror://gentoo/mutt-1.5.23-gentoo-patches-r7.tar.bz2 http://dev.gentoo.org/~grobian/distfiles/mutt-1.5.23-gentoo-patches-r7.tar.bz2 is unparseable
+flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz is has no known mirror tier
+
+mail-client/nail
+  DeprecatedEAPI: version 12.4: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 12.4-r2: uses deprecated EAPI: 3
+
+mail-client/nmh
+  DeprecatedEAPI: version 1.3-r3: uses deprecated EAPI: 2
+  MissingChksum: version 1.3-r3: "nmh-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+mail-client/pinepgp
+  DeprecatedEAPI: version 0.18.0-r1: uses deprecated EAPI: 0
+  NonExistentDeps: version 0.18.0-r1: depset depends: nonexistent atoms [ mail-client/pine ]
+  NonExistentDeps: version 0.18.0-r1: depset rdepends: nonexistent atoms [ mail-client/pine ]
+  MissingChksum: version 0.18.0-r1: "pinepgp-0.18.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+mail-client/squirrelmail
+  MissingChksum: version 1.4.23_pre20140426: "amavisnewsql-0.8.0-1.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+mail-client/thunderbird
+  VulnerablePackage: version 24.8.0: vulnerable via glsa(201504-01) ( ver < 31.5.0 ), keywords ('alpha', 'amd64', 'amd64-linux', 'arm', 'ppc', 'ppc64', 'x86', 'x86-fbsd', 'x86-linux')
+
+mail-client/trojita
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-www-servers/tomcat
-  VulnerablePackage: version 6.0.44: vulnerable via glsa(201412-29) ( ver < 7.0.56 && ver not = 6.0.41 ), keywords ('amd64', 'ppc', 'ppc64', 'x86', 'x86-fbsd')
-  DroppedKeywordWarning: version 8.0.23: keywords dropped: ppc, ppc64
-
-www-servers/tornado
-  DroppedKeywordWarning: version 4.1.0: keywords dropped: ppc
-
-www-servers/varnish
-  ExecutableFile: "files/varnishd.initd-r1" has unnecessary executable bit
-  ExecutableFile: "files/varnishd.initd-r2" has unnecessary executable bit
+  DroppedKeywordWarning: version 0.5: keywords dropped: ppc
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
