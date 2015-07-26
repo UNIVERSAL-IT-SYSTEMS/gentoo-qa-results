@@ -4,129 +4,149 @@
 + [[ ! -n 16 ]]
 + [[ 14 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'dev-texlive/*' 'sys-devel/*' 'kde-apps/*' 'gnome-extra/*' 'net-im/*' 'games-misc/*' 'app-forensics/*' 'games-util/*' 'www-misc/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'sys-devel/*' 'kde-apps/*' 'sys-block/*' 'net-im/*' 'games-misc/*' 'sys-power/*' 'games-util/*' 'gnustep-base/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-dev-texlive/texlive-basic
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/cloud-init
+  ExecutableFile: "files/growpart" has unnecessary executable bit
+  SizeViolation: "files/growpart" exceeds 20k in size; 21323 bytes total
 
-dev-texlive/texlive-bibtexextra
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/coldfire
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 2
 
-dev-texlive/texlive-context
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/crossover-office-bin
+  MissingChksum: version 6.0.0: "install-crossover-standard-6.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.0.1: "install-crossover-standard-6.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.1.0: "install-crossover-standard-6.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.2.0: "install-crossover-standard-6.2.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-texlive/texlive-fontsextra
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/crossover-office-pro-bin
+  MissingChksum: version 5.0.0: "install-crossover-pro-5.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 5.0.1: "install-crossover-pro-5.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 5.0.3: "install-crossover-pro-5.0.3.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.0.0: "install-crossover-pro-6.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.1.0: "install-crossover-pro-6.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.2.0: "install-crossover-pro-6.2.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 7.0.2: "install-crossover-pro-7.0.2.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 7.1.0: "install-crossover-pro-7.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 8.0.0: "install-crossover-pro-8.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 9.0.0: "install-crossover-pro-9.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 9.0.1: "install-crossover-pro-9.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 9.1.0: "install-crossover-pro-9.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 9.2.0: "install-crossover-pro-9.2.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-texlive/texlive-fontsrecommended
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/dlx
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.0-r1: uses deprecated EAPI: 0
 
-dev-texlive/texlive-fontutils
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/docker
+  ExecutableFile: "files/docker-r2.initd" has unnecessary executable bit
+  ExecutableFile: "files/docker-r3.initd" has unnecessary executable bit
+  ExecutableFile: "files/docker.initd" has unnecessary executable bit
 
-dev-texlive/texlive-formatsextra
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/domi
+  DeprecatedEAPI: version 20060816: uses deprecated EAPI: 0
 
-dev-texlive/texlive-games
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/dosemu
+  DeprecatedEAPI: version 1.4.1_pre20091009: uses deprecated EAPI: 0
 
-dev-texlive/texlive-genericextra
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/e-uae
+  DeprecatedEAPI: version 0.8.29_rc4-r2: uses deprecated EAPI: 3
 
-dev-texlive/texlive-genericrecommended
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/ganeti
+  BadInsIntoDir: version 2.10.5-r4: ebuild uses insinto /etc/cron.d on line 155
+  BadInsIntoDir: version 2.11.6-r2: ebuild uses insinto /etc/cron.d on line 192
+  BadInsIntoDir: version 2.12.1-r3: ebuild uses insinto /etc/cron.d on line 225
+  BadInsIntoDir: version 2.12.3-r2: ebuild uses insinto /etc/cron.d on line 233
+  BadInsIntoDir: version 2.13.0-r2: ebuild uses insinto /etc/cron.d on line 229
+  BadInsIntoDir: version 2.14.1: ebuild uses insinto /etc/cron.d on line 263
 
-dev-texlive/texlive-humanities
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/ganeti-htools
+  DeprecatedEAPI: version 0.2.8: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 2
 
-dev-texlive/texlive-langafrican
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/ganeti-instance-debian-etch
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
 
-dev-texlive/texlive-langarabic
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/ganeti-instance-debootstrap
+  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 2
 
-dev-texlive/texlive-langcjk
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/ganeti-instance-image
+  NonExistentDeps: version 0.6: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
 
-dev-texlive/texlive-langcyrillic
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/hercules
+  DeprecatedEAPI: version 3.06: uses deprecated EAPI: 0
 
-dev-texlive/texlive-langczechslovak
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/kvm-kmod
+  DeprecatedEAPI: version 3.3.6: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 3.4: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 3.6: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 3.8: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 3.10.1: uses deprecated EAPI: 2
 
-dev-texlive/texlive-langenglish
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/libspectrum
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 3
 
-dev-texlive/texlive-langfrench
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/lxc
+  DroppedKeywordWarning: version 1.1.0-r6: keywords dropped: arm64, ppc64, x86
 
-dev-texlive/texlive-langgerman
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/phpvirtualbox
+  DeprecatedEAPI: version 4.1.7-r2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 4.1.11: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 4.2.3b: uses deprecated EAPI: 2
 
-dev-texlive/texlive-langgreek
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/qemu
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-dev-texlive/texlive-langindic
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/simh
+  DeprecatedEAPI: version 3.3.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.8.1: uses deprecated EAPI: 0
 
-dev-texlive/texlive-langitalian
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/skyeye
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 2
 
-dev-texlive/texlive-langother
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/spectemu
+  DeprecatedEAPI: version 0.99.3: uses deprecated EAPI: 0
 
-dev-texlive/texlive-langpolish
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/spim
+  DeprecatedEAPI: version 8.0-r1: uses deprecated EAPI: 3
 
-dev-texlive/texlive-langportuguese
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/virt-manager
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-dev-texlive/texlive-langspanish
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/virtualbox
+  ExecutableFile: "files/virtualbox-ose-3-wrapper" has unnecessary executable bit
 
-dev-texlive/texlive-latex
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/virtualbox-bin
+  ExecutableFile: "files/virtualbox-bin-3-wrapper" has unnecessary executable bit
 
-dev-texlive/texlive-latexextra
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/virtualbox-modules
+  ExecutableFile: "files/create_vbox_modules_tarball.sh" has unnecessary executable bit
 
-dev-texlive/texlive-latexrecommended
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/vmips
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
 
-dev-texlive/texlive-luatex
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/vmips-cross-bin
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
 
-dev-texlive/texlive-mathextra
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/vmware-modules
+  SizeViolation: "files/271-3.10.0.patch" exceeds 20k in size; 23418 bytes total
 
-dev-texlive/texlive-metapost
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/vmware-tools
+  DeprecatedEAPI: version 9.2.3.1031769: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.6.1.1379776: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.6.2.1744117: uses deprecated EAPI: 0
 
-dev-texlive/texlive-music
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/vov
+  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 0
 
-dev-texlive/texlive-omega
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
-
-dev-texlive/texlive-pictures
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
-
-dev-texlive/texlive-plainextra
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
-
-dev-texlive/texlive-pstricks
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
-
-dev-texlive/texlive-publishers
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
-
-dev-texlive/texlive-science
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
-
-dev-texlive/texlive-xetex
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/xen-tools
+  ExecutableFile: "files/xenstored.initd" has unnecessary executable bit
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -135,17 +155,8 @@ sys-devel/autoconf
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 sys-devel/autoconf-wrapper
-  DeprecatedEAPI: version 8: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 10-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 11: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 12: uses deprecated EAPI: 0
   DeprecatedEAPI: version 13: uses deprecated EAPI: 0
-  ExecutableFile: "files/ac-wrapper-10.sh" has unnecessary executable bit
-  ExecutableFile: "files/ac-wrapper-12.sh" has unnecessary executable bit
   ExecutableFile: "files/ac-wrapper-13.sh" has unnecessary executable bit
-  ExecutableFile: "files/ac-wrapper-8.sh" has unnecessary executable bit
-  ExecutableFile: "files/ac-wrapper-9.sh" has unnecessary executable bit
 
 sys-devel/automake
   VulnerablePackage: version 1.4_p6-r2: vulnerable via glsa(201310-15) ( ver < 1.11.6 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
@@ -158,19 +169,7 @@ sys-devel/automake
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 sys-devel/automake-wrapper
-  DeprecatedEAPI: version 3-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 6: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 7: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 8: uses deprecated EAPI: 0
   DeprecatedEAPI: version 9: uses deprecated EAPI: 0
-  ExecutableFile: "files/am-wrapper-3.sh" has unnecessary executable bit
-  ExecutableFile: "files/am-wrapper-4.sh" has unnecessary executable bit
-  ExecutableFile: "files/am-wrapper-5.sh" has unnecessary executable bit
-  ExecutableFile: "files/am-wrapper-6.sh" has unnecessary executable bit
-  ExecutableFile: "files/am-wrapper-7.sh" has unnecessary executable bit
-  ExecutableFile: "files/am-wrapper-8.sh" has unnecessary executable bit
   ExecutableFile: "files/am-wrapper-9.sh" has unnecessary executable bit
 
 sys-devel/bc
@@ -222,22 +221,18 @@ sys-devel/bison
   SizeViolation: "files/bison-3.0.4-optional-perl.patch" exceeds 20k in size; 21963 bytes total
 
 sys-devel/bmake
-  DeprecatedEAPI: version 20120620: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 20121010: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 20130123: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 20130330: uses deprecated EAPI: 3
   DeprecatedEAPI: version 20140214: uses deprecated EAPI: 3
 
 sys-devel/byfl
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 sys-devel/clang
-  DeprecatedEAPI: version 2.8-r3: uses deprecated EAPI: 3
   DeprecatedEclass: version 2.8-r3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.9-r1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.8-r3: uses deprecated EAPI: 3
   DeprecatedEclass: version 2.9-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 3.0-r4: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.9-r1: uses deprecated EAPI: 3
   DeprecatedEclass: version 3.0-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.0-r4: uses deprecated EAPI: 3
   DeprecatedEclass: version 3.1-r5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 2.8-r3: "clang-2.8.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
@@ -295,9 +290,9 @@ sys-devel/gcc
   NonExistentDeps: version 4.9.3: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
   NonExistentDeps: version 5.1.0: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
   NonExistentDeps: version 5.2.0: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
-  DroppedKeywordWarning: version 5.1.0: keywords dropped: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
   ExecutableFile: "files/c89" has unnecessary executable bit
   ExecutableFile: "files/c99" has unnecessary executable bit
+  DroppedKeywordWarning: version 5.1.0: keywords dropped: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
 
 sys-devel/gcc-apple
   DeprecatedEAPI: version 4.0.1_p5493: uses deprecated EAPI: 3
@@ -364,8 +359,8 @@ sys-devel/gnuconfig
   DeprecatedEAPI: version 20140728: uses deprecated EAPI: 2
   DeprecatedEAPI: version 20150304: uses deprecated EAPI: 2
   DeprecatedEAPI: version 20150308: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 99999999: uses deprecated EAPI: 2
   DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 99999999: uses deprecated EAPI: 2
 
 sys-devel/kgcc64
   DroppedKeywordWarning: version 4.3.5: keywords dropped: ppc, s390
@@ -380,7 +375,6 @@ sys-devel/llvm
   DeprecatedEclass: version 3.1-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 sys-devel/m4
-  DeprecatedEAPI: version 1.4.15: uses deprecated EAPI: 3
   DeprecatedEAPI: version 1.4.16: uses deprecated EAPI: 3
 
 sys-devel/make
@@ -414,7 +408,6 @@ sys-devel/smatch
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 sys-devel/sparse
-  DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 2
   DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 2
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
@@ -424,39 +417,222 @@ WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
 kde-apps/kopete
-  DroppedKeywordWarning: version 4.14.3-r1: keywords dropped: ppc, ppc64
+  DroppedKeywordWarning: version 4.14.3-r1: keywords dropped: ppc64
 
 kde-apps/kwalletd
   SizeViolation: "files/kwalletd-4.14.3-CVE-2013-7252.patch" exceeds 20k in size; 21806 bytes total
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-gnome-extra/avant-window-navigator-extras
-  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingChksum: version 0.4.0: "awn-extras-0.4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+sys-block/afacli
+  DeprecatedEAPI: version 4.1: uses deprecated EAPI: 0
+  ExecutableFile: "files/afacli" has unnecessary executable bit
+  MissingChksum: version 4.1: "afa-apps-snmp.2807420-A04.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-gnome-extra/cameramonitor
-  DeprecatedEclass: version 0.3.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+sys-block/btrace
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.1-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 2
+  MissingChksum: version 1.0.0: "blktrace-1.0.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-gnome-extra/docky
-  DeprecatedEclass: version 2.2.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+sys-block/buffer
+  MissingChksum: version 1.19-r2: "buffer-1.19.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-gnome-extra/gdesklets-core
-  ExecutableFile: "files/gdesklets-control-getid" has unnecessary executable bit
+sys-block/dellmgr
+  DeprecatedEAPI: version 5.32-r1: uses deprecated EAPI: 0
+  ExecutableFile: "files/dellmgr-r2" has unnecessary executable bit
 
-gnome-extra/gnome-color-manager
-  DroppedKeywordWarning: version 3.14.2: keywords dropped: alpha, sparc
+sys-block/devio
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
 
-gnome-extra/gnome-dvb-daemon
-  DeprecatedEclass: version 0.2.10: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.2.10: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
-  NonExistentDeps: version 0.2.10: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
+sys-block/disktype
+  MissingChksum: version 9: "disktype-9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-gnome-extra/gnome-power-manager
-  DroppedKeywordWarning: version 3.16.1: keywords dropped: alpha
+sys-block/eject
+  DeprecatedEAPI: version 2.1.5-r2: uses deprecated EAPI: 3
+  MissingChksum: version 2.1.5-r2: "eject-2.1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-gnome-extra/nm-applet
-  DroppedKeywordWarning: version 0.9.10.0: keywords dropped: alpha, arm, ia64, ppc, ppc64, sparc
+sys-block/eject-bsd
+  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 0
+  MissingChksum: version 1.5: "eject-1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sys-block/endpoint
+  DeprecatedEAPI: version 0.1.0: uses deprecated EAPI: 0
+  MissingChksum: version 0.1.0: "endpoint-0.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-block/fio
+  DeprecatedEAPI: version 1.17.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.99.10: uses deprecated EAPI: 2
+
+sys-block/fwdl
+  MissingChksum: version 1.2.3: "fwdl-1.2.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sys-block/gpart
+  DeprecatedEAPI: version 0.1h-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.1h-r2: uses deprecated EAPI: 0
+  MissingChksum: version 0.1h-r1: "gpart-0.1h.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.1h-r1: "gpart-0.1h-reiserfs-3.6.patch.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sys-block/gparted
+  ExecutableFile: "files/gparted-pkexec" has unnecessary executable bit
+
+sys-block/iscsitarget
+  DeprecatedEAPI: version 0.4.17: uses deprecated EAPI: 0
+  VulnerablePackage: version 0.4.17: vulnerable via glsa(201201-06) ( ver < 1.4.19 ), keywords ('amd64', 'ppc', 'x86')
+  DeprecatedEAPI: version 1.4.19: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.4.20.2: uses deprecated EAPI: 0
+  MissingChksum: version 0.4.17: "iscsitarget-0.4.17.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.4.19: "iscsitarget-1.4.19.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-block/lio-utils
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sys-block/mbuffer
+  DeprecatedEAPI: version 20090113: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20110724: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20120505: uses deprecated EAPI: 0
+  MissingChksum: version 20110724: "mbuffer-20110724.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-block/megacli
+  ExecutableFile: "files/megacli-wrapper" has unnecessary executable bit
+  MissingChksum: version 8.02.21: "8.02.21_MegaCLI.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-block/megactl
+  DeprecatedEAPI: version 0.4.1-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.4.1-r2: uses deprecated EAPI: 2
+
+sys-block/megamgr
+  DeprecatedEAPI: version 5.20-r2: uses deprecated EAPI: 3
+  MissingChksum: version 5.20-r2: "ut_linux_mgr_5.20.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-block/megarc
+  DeprecatedEAPI: version 1.11-r1: uses deprecated EAPI: 3
+  MissingChksum: version 1.11-r1: "ut_linux_megarc_1.11.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-block/mtx
+  DeprecatedEAPI: version 1.2.18: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.3.12: uses deprecated EAPI: 0
+  MissingChksum: version 1.2.18: "mtx-1.2.18rel.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.3.12: "mtx-1.3.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-block/nbd
+  DeprecatedEAPI: version 2.9.20: uses deprecated EAPI: 2
+  VulnerablePackage: version 2.9.20: vulnerable via glsa(201206-35) ( ver < 2.9.22 ), keywords ('amd64', 'ppc', 'ppc64', 'x86')
+  DeprecatedEAPI: version 2.9.21a: uses deprecated EAPI: 2
+  VulnerablePackage: version 2.9.21a: vulnerable via glsa(201206-35) ( ver < 2.9.22 ), keywords ('amd64', 'ppc', 'ppc64', 'x86')
+  DeprecatedEAPI: version 2.9.22: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.9.23: uses deprecated EAPI: 2
+  MissingChksum: version 2.9.24: "nbd-2.9.24.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-block/noflushd
+  DeprecatedEAPI: version 2.7.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.7.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.7.5: uses deprecated EAPI: 0
+  ExecutableFile: "files/noflushd.rc6" has unnecessary executable bit
+  MissingChksum: version 2.7.3: "noflushd-2.7.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.7.4: "noflushd-2.7.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.7.5: "noflushd_2.7.5.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-block/nwutil
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.8: uses deprecated EAPI: 0
+  MissingChksum: version 1.4: "nwutil_1.4.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.4: "nwutil_1.4-3.diff.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.8: "nwutil-1.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sys-block/open-iscsi
+  DeprecatedEAPI: version 2.0.872-r2: uses deprecated EAPI: 2
+
+sys-block/partimage
+  DeprecatedEAPI: version 0.6.8: uses deprecated EAPI: 3
+  MissingChksum: version 0.6.8: "partimage-0.6.8.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-block/qla-fc-firmware
+  DeprecatedEAPI: version 20071207-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20080423: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20101015: uses deprecated EAPI: 0
+  MissingChksum: version 20071207-r1: "qla-fc-firmware-20071207.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 20080423: "qla-fc-firmware-20080423.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 20101015: "qla-fc-firmware-20101015.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sys-block/rtsadmin
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sys-block/scsiadd
+  DeprecatedEAPI: version 1.97: uses deprecated EAPI: 2
+  MissingChksum: version 1.97: "scsiadd-1.97.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-block/scsiping
+  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.0.1: "scsiping-0.0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sys-block/scsirastools
+  DeprecatedEAPI: version 1.5.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5.6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5.7: uses deprecated EAPI: 0
+  MissingChksum: version 1.5.4: "scsirastools-1.5.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.5.6: "scsirastools-1.5.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.5.7: "scsirastools-1.5.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-block/seekwatcher
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.12_p20091015: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.9: "seekwatcher-0.9.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-block/smp_utils
+  MissingChksum: version 0.97: "smp_utils-0.97.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-block/spindown
+  DeprecatedEAPI: version 0.4.0-r4: uses deprecated EAPI: 0
+
+sys-block/tapecat
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.0.0: "tapecat-1.0.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-block/targetcli
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sys-block/tgt
+  MissingChksum: version 1.0.19: "tgt-1.0.19.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.0.22: "tgt-1.0.22.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.0.24-r1: "tgt-1.0.24.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-block/thin-provisioning-tools
+  NonExistentDeps: version 0.2.8-r1: depset depends: nonexistent atoms [ dev-lang/ruby:1.8, dev-lang/ruby:2.3, dev-lang/ruby:2.6, dev-lang/ruby:2.7, dev-lang/ruby:2.4, dev-lang/ruby:2.5, dev-lang/ruby:2.8, dev-lang/ruby:2.9 ]
+  NonExistentDeps: version 0.3.2-r1: depset depends: nonexistent atoms [ dev-lang/ruby:1.8, dev-lang/ruby:2.3, dev-lang/ruby:2.6, dev-lang/ruby:2.7, dev-lang/ruby:2.4, dev-lang/ruby:2.5, dev-lang/ruby:2.8, dev-lang/ruby:2.9 ]
+  NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ dev-lang/ruby:1.8, dev-lang/ruby:2.3, dev-lang/ruby:2.6, dev-lang/ruby:2.7, dev-lang/ruby:2.4, dev-lang/ruby:2.5, dev-lang/ruby:2.8, dev-lang/ruby:2.9 ]
+  NonExistentDeps: version 0.4.1: depset depends: nonexistent atoms [ dev-lang/ruby:1.8, dev-lang/ruby:2.3, dev-lang/ruby:2.6, dev-lang/ruby:2.7, dev-lang/ruby:2.4, dev-lang/ruby:2.5, dev-lang/ruby:2.8, dev-lang/ruby:2.9 ]
+
+sys-block/tw_cli
+  DeprecatedEAPI: version 9.2.1.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.3.0.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.3.0.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.3.0.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.4.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.4.0.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.4.1.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.4.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.5.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.5.0.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.5.1.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.5.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.5.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 10.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 10.2: uses deprecated EAPI: 2
+
+sys-block/vblade
+  DeprecatedEAPI: version 19: uses deprecated EAPI: 0
+  MissingChksum: version 19: "vblade-19.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20: "vblade-20.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-block/viaideinfo
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+
+sys-block/whdd
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -558,42 +734,80 @@ games-misc/xcowsay
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-app-forensics/afflib
-  DeprecatedEclass: version 3.7.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+sys-power/acpi
+  MissingChksum: version 1.6: "acpi-1.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-forensics/aide
-  DeprecatedEAPI: version 0.13.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.13.1-r3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.13.1-r5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.14.2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 0.15.1: uses deprecated EAPI: 3
-  ExecutableFile: "files/aide.cron" has unnecessary executable bit
-  ExecutableFile: "files/aideinit" has unnecessary executable bit
-
-app-forensics/chkrootkit
-  DeprecatedEAPI: version 0.48-r1: uses deprecated EAPI: 0
-
-app-forensics/foremost
-  DeprecatedEAPI: version 0.69: uses deprecated EAPI: 0
-
-app-forensics/galleta
-  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
-
-app-forensics/libbfio
-  DroppedKeywordWarning: version 0.0.20130609_alpha: keywords dropped: hppa
-
-app-forensics/openscap
+sys-power/acpi_call
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-forensics/ovaldi
-  DeprecatedEAPI: version 5.9.1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 5.10.1.2: uses deprecated EAPI: 3
+sys-power/acpid
+  ExecutableFile: "files/acpid-1.0.6-default.sh" has unnecessary executable bit
 
-app-forensics/pasco
-  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
+sys-power/apcupsd
+  DeprecatedEAPI: version 3.14.8-r2: uses deprecated EAPI: 3
+  ExecutableFile: "files/apcupsd.init.4" has unnecessary executable bit
 
-app-forensics/rifiuti
-  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
+sys-power/athcool
+  DeprecatedEAPI: version 0.3.12: uses deprecated EAPI: 3
+  ExecutableFile: "files/athcool" has unnecessary executable bit
+  MissingChksum: version 0.3.12: "athcool-0.3.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-power/cpudyn
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+  MissingChksum: version 1.0.1: "cpudyn-1.0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-power/cpuspeedy
+  DeprecatedEclass: version 0.4.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 3
+  MissingChksum: version 0.4.1: "cpuspeedy-0.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-power/nut
+  ExecutableFile: "files/nut-2.2.2-init.d-upsd" has unnecessary executable bit
+  ExecutableFile: "files/nut-2.2.2-init.d-upsdrv" has unnecessary executable bit
+  ExecutableFile: "files/nut-2.2.2-init.d-upsmon" has unnecessary executable bit
+  ExecutableFile: "files/nut-2.6.5-init.d-upsd" has unnecessary executable bit
+  ExecutableFile: "files/nut-2.6.5-init.d-upsmon" has unnecessary executable bit
+
+sys-power/nvram-reboot
+  DeprecatedEAPI: version 2004.10.03: uses deprecated EAPI: 0
+
+sys-power/nvram-wakeup
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.0: "nvram-wakup-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-power/phc-intel
+  SizeViolation: "files/phc-intel-0.3.2-rev12-trailing-space-misc.patch" exceeds 20k in size; 33960 bytes total
+
+sys-power/phc-k8
+  MissingChksum: version 0.4.3: "phc-k8-0.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.4.4: "phc-k8-0.4.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-power/phctool
+  DeprecatedEclass: version 0.5.2.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.5.2.2-r1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.5.2.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.5.2.2-r1: "phctool-0.5.2.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sys-power/pm-quirks
+  DeprecatedEAPI: version 20100619: uses deprecated EAPI: 3
+  MissingChksum: version 20100619: "pm-quirks-20100619.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sys-power/pmtools
+  DeprecatedEAPI: version 20071116: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20110323: uses deprecated EAPI: 2
+  DroppedKeywordWarning: version 20110323: keywords dropped: ppc
+  MissingChksum: version 20071116: "pmtools-20071116.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-power/powertop
+  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-power/sispmctl
+  DeprecatedEAPI: version 2.7: uses deprecated EAPI: 2
+
+sys-power/yacpi
+  DeprecatedEAPI: version 3.0.1: uses deprecated EAPI: 3
+  MissingChksum: version 3.0.1: "yacpi-3.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -606,36 +820,12 @@ games-util/pyfa
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-www-misc/bookmarksync
-  DeprecatedEAPI: version 0.3.4-r2: uses deprecated EAPI: 2
+gnustep-base/gnustep-updater
+  MissingChksum: version 0.2: "gnustep-updater-0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-www-misc/fcgiwrap
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-www-misc/htdig
-  DeprecatedEAPI: version 3.2.0_beta6-r3: uses deprecated EAPI: 0
-
-www-misc/log-toolkit
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 0
-  MissingChksum: version 0.9.6: "log-toolkit-0.9.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-www-misc/reflector
-  DeprecatedEAPI: version 2011.05.13.1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 2011.05.13.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 2011.05.13.1: depset depends: nonexistent atoms [ =dev-lang/python-3.1* ]
-  NonExistentDeps: version 2011.05.13.1: depset rdepends: nonexistent atoms [ =dev-lang/python-3.1* ]
-  MissingChksum: version 2011.05.13.1: "reflector-2011.05.13.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-www-misc/visitors
-  DeprecatedEAPI: version 0.7-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.7-r1: "visitors-0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-www-misc/wsmake
-  DeprecatedEAPI: version 0.6.4: uses deprecated EAPI: 0
-  MissingChksum: version 0.6.4: "wsmake-0.6.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-www-misc/xxv
-  MissingChksum: version 1.6.1: "xxv-1.6.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+gnustep-base/mknfonts
+  DeprecatedEAPI: version 0.5-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.5-r1: "mknfonts.tool_0.5.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
