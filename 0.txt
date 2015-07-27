@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 0 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'media-gfx/*' 'dev-db/*' 'sys-kernel/*' 'www-client/*' 'mail-filter/*' 'games-action/*' 'app-accessibility/*' 'dev-games/*' 'sci-misc/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'media-gfx/*' 'x11-plugins/*' 'sys-kernel/*' 'www-client/*' 'mail-filter/*' 'games-action/*' 'app-accessibility/*' 'dev-games/*' 'sci-misc/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -12,9 +12,9 @@ dev-python/PyQtMobility
   DeprecatedEclass: version 1.0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/SchemaObject
-  DeprecatedEclass: version 0.5.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.5.3: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 0.5.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
+  DeprecatedEclass: version 0.5.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/autobahn
   DroppedKeywordWarning: version 0.10.4: keywords dropped: arm
@@ -26,22 +26,22 @@ dev-python/beaker
   DroppedKeywordWarning: version 1.7.0-r1: keywords dropped: alpha, ia64, sparc
 
 dev-python/beautifulsoup
-  DeprecatedEclass: version 4.1.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 4.1.3: depset depends: nonexistent atoms [ =dev-lang/python-3.1* ]
   NonExistentDeps: version 4.1.3: depset rdepends: nonexistent atoms [ =dev-lang/python-3.1* ]
+  DeprecatedEclass: version 4.1.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   SizeViolation: "files/beautifulsoup-3.1.0.1-python-3.patch" exceeds 20k in size; 42319 bytes total
   DroppedKeywordWarning: version 4.1.3: keywords dropped: arm64
 
 dev-python/bicyclerepair
-  DeprecatedEclass: version 0.9-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.9-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.9-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/bsddb3
   DroppedKeywordWarning: version 6.1.0: keywords dropped: hppa
 
 dev-python/cddb-py
-  DeprecatedEclass: version 1.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/cffi
   DroppedKeywordWarning: version 0.9.2: keywords dropped: alpha
@@ -53,18 +53,18 @@ dev-python/cryptography
   DroppedKeywordWarning: version 0.9.2: keywords dropped: alpha, arm64, ia64, m68k, mips, ppc, s390, sh
 
 dev-python/ctypesgen
-  DeprecatedEclass: version 0_p72: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0_p72: uses deprecated EAPI: 3
   NonExistentDeps: version 0_p72: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 0_p72: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
+  DeprecatedEclass: version 0_p72: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/cvxopt
   SizeViolation: "files/cvxopt-1.1.6-glpk.patch" exceeds 20k in size; 32201 bytes total
   SizeViolation: "files/cvxopt-1.1.6-glpk449.patch" exceeds 20k in size; 39362 bytes total
 
 dev-python/demjson
-  DeprecatedEclass: version 1.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.6: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/django
   VulnerablePackage: version 1.4.20: vulnerable via glsa(201406-26) ( ver < 1.6.5 && ver not = 1.5.8 && ver not = 1.4.13 && ver not = 1.5.10 && ver not = 1.4.15 ), keywords ('amd64', 'amd64-linux', 'ia64', 'ppc', 'ppc-macos', 'ppc64', 'sparc', 'x64-macos', 'x86', 'x86-fbsd', 'x86-linux', 'x86-macos')
@@ -73,8 +73,8 @@ dev-python/django
   VulnerablePackage: version 1.4.21: vulnerable via glsa(201412-22) ( ver < 1.6.7 && ver not = 1.5.10 && ver not = 1.4.15 ), keywords ('amd64', 'amd64-linux', 'ia64', 'ppc', 'ppc-macos', 'ppc64', 'sparc', 'x64-macos', 'x86', 'x86-fbsd', 'x86-linux', 'x86-macos')
 
 dev-python/editobj
-  DeprecatedEclass: version 0.5.7-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.5.7-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.5.7-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/enzyme
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -83,8 +83,8 @@ dev-python/flask
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 dev-python/formencode
-  DeprecatedEclass: version 1.2.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.2.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.2.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/gdata
   DeprecatedEclass: version 2.0.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -104,8 +104,8 @@ error: mirror://berlios/cjkpython/iconvcodec-1.1.2.tar.gz is unparseable
 flagged token- uri mirror://berlios/cjkpython/iconvcodec-1.1.2.tar.gz isn't a known mirror tier
 
 dev-python/id3-py
-  DeprecatedEclass: version 1.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/ipython
   WhitespaceFound: version 3.2.1: ebuild has trailing whitespace on line 110
@@ -114,16 +114,16 @@ dev-python/jsonrpclib
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 dev-python/kaa-display
-  DeprecatedEclass: version 0.1.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.1.0: uses deprecated EAPI: 3
   NonExistentDeps: version 0.1.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 0.1.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
+  DeprecatedEclass: version 0.1.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/kaa-imlib2
-  DeprecatedEclass: version 0.2.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.2.3-r1: uses deprecated EAPI: 3
   NonExistentDeps: version 0.2.3-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 0.2.3-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
+  DeprecatedEclass: version 0.2.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/kombu
   WhitespaceFound: version 3.0.26: ebuild has trailing whitespace on line 88
@@ -132,12 +132,12 @@ dev-python/lockfile
   DroppedKeywordWarning: version 0.10.2: keywords dropped: sparc
 
 dev-python/louie
-  DeprecatedEclass: version 1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/mechanize
-  DeprecatedEclass: version 0.2.5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.2.5: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.2.5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/mistune
   DroppedKeywordWarning: version 0.6: keywords dropped: arm
@@ -146,8 +146,8 @@ dev-python/mock
   DroppedKeywordWarning: version 1.2.0: keywords dropped: alpha, arm, ia64, ppc, ppc64, sparc, x86
 
 dev-python/morbid
-  DeprecatedEclass: version 0.8.7.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.8.7.3: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.8.7.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/mwlib
   BadInsIntoDir: version 0.15.15: ebuild uses insinto /etc/cron.d on line 118
@@ -162,8 +162,8 @@ dev-python/ndg-httpsclient
   DroppedKeywordWarning: version 0.4.0: keywords dropped: sparc
 
 dev-python/nltk
-  DeprecatedEclass: version 2.0_beta9: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.0_beta9: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.0_beta9: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/nose
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -172,8 +172,8 @@ dev-python/os-diskconfig-python-novaclient-ext
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 dev-python/paisley
-  DeprecatedEclass: version 0.3.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/paramiko
   DroppedKeywordWarning: version 1.12.2: keywords dropped: ppc, ppc64, s390
@@ -183,55 +183,55 @@ dev-python/paste
   SizeViolation: "files/paste-1.7.5.1-unbundle-tempita.patch" exceeds 20k in size; 59786 bytes total
 
 dev-python/pexpect
-  DeprecatedEclass: version 2.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.4: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/piddle
-  DeprecatedEclass: version 1.0.15: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.0.15: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.0.15: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pillow
   DroppedKeywordWarning: version 2.9.0: keywords dropped: alpha, ia64, sparc
 
 dev-python/polygon
-  DeprecatedEclass: version 2.0.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.0.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.0.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/py-smbpasswd
-  DeprecatedEclass: version 1.0.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.0.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 1.0.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/py-xmlrpc
-  DeprecatedEclass: version 0.8.8.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.8.8.3-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.8.8.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyGPG
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 dev-python/pyamazon
-  DeprecatedEclass: version 0.65: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.65: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.65: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyao
-  DeprecatedEclass: version 0.82-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.82-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.82-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pychm
-  DeprecatedEclass: version 0.8.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.8.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.8.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pycipher
-  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyclamav
-  DeprecatedEclass: version 0.4.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.4.1-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.4.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyclimate
-  DeprecatedEclass: version 1.2.2-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.2.2-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.2.2-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pycollada
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -240,8 +240,8 @@ dev-python/pydb
   DeprecatedEclass: version 1.26-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyfits
-  DeprecatedEclass: version 2.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.4.0: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyftpdlib
   DroppedKeywordWarning: version 1.4.0: keywords dropped: sparc
@@ -254,35 +254,35 @@ dev-python/pygsl
   DeprecatedEclass: version 0.9.5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pygtkhelpers
-  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyid3lib
-  DeprecatedEclass: version 0.5.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.5.1-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.5.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pylibacl
-  DeprecatedEclass: version 0.5.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.5.0: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.5.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pylibpcap
   DeprecatedEclass: version 0.6.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyltxml
-  DeprecatedEclass: version 1.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.3-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pymad
-  DeprecatedEclass: version 0.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.6: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyndex
-  DeprecatedEclass: version 0.3.2a: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.3.2a: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.2a: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pynut
-  DeprecatedEclass: version 1.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyopencl
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -291,16 +291,16 @@ dev-python/pyopenssl
   DroppedKeywordWarning: version 0.14: keywords dropped: sparc
 
 dev-python/pyosd
-  DeprecatedEclass: version 0.2.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.2.14: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.2.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyparsing
-  DeprecatedEclass: version 1.5.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.5.6: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.5.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pypgsql
-  DeprecatedEclass: version 2.5.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.5.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.5.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyquery
   DroppedKeywordWarning: version 1.2.9: keywords dropped: ia64, s390, sh, sparc
@@ -309,12 +309,12 @@ dev-python/pytest-cov
   DroppedKeywordWarning: version 1.8.1: keywords dropped: alpha
 
 dev-python/python-cdb
-  DeprecatedEclass: version 0.34: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.34: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.34: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/python-distutils-extra
-  DeprecatedEclass: version 2.33: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.33: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.33: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/python-docs
   DeprecatedEAPI: version 2.7.3: uses deprecated EAPI: 3
@@ -324,8 +324,8 @@ dev-python/python-docs
   DroppedKeywordWarning: version 3.2.5: keywords dropped: arm64
 
 dev-python/python-ldap
-  DeprecatedEclass: version 2.3.9: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.3.9: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.3.9: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 dev-python/python-linux-procfs
@@ -335,12 +335,12 @@ dev-python/python-sqlparse
   DroppedKeywordWarning: version 0.1.13: keywords dropped: ia64, sparc
 
 dev-python/python-xlib
-  DeprecatedEclass: version 0.15_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.15_rc1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.15_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyusb
-  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/pyxattr
   DroppedKeywordWarning: version 0.5.5: keywords dropped: alpha, ia64, ppc, sparc
@@ -349,8 +349,8 @@ dev-python/pyzmq
   DroppedKeywordWarning: version 14.7.0: keywords dropped: ppc
 
 dev-python/pyzor
-  DeprecatedEclass: version 0.5.0-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.5.0-r2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.5.0-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DroppedKeywordWarning: version 0.7.0: keywords dropped: ppc, ppc64
   DroppedKeywordWarning: version 1.0.0: keywords dropped: alpha, ia64, sparc
 
@@ -364,8 +364,8 @@ dev-python/remoteobjects
   DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 dev-python/rlcompleter2
-  DeprecatedEclass: version 0.98: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.98: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.98: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/routes
   WhitespaceFound: version 2.1-r1: ebuild has trailing whitespace on line 39
@@ -374,594 +374,16 @@ dev-python/rtslib
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 dev-python/sancho
-  DeprecatedEclass: version 2.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/scientificpython
-  DeprecatedEclass: version 2.9.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.9.1: uses deprecated EAPI: 3
-ERROR root: check <pkgcheck.deprecated.DeprecatedEclassReport object at
-          : 0x7f4204740890> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/deprecated.py", line
-          : 133, in feed
-ERROR root:     bad = set(self.blacklist.keys()).intersection(pkg.inherited)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 177, in get_inherited
-ERROR root:     return tuple(sorted(self.data.get('_eclasses_', {})))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : dev-python/scrapy-1.0.1, attr inherited
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : dev-python/scrapy-1.0.1, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR root: check <pkgcheck.metadata_checks.IUSEMetadataReport object at
-          : 0x7f4204740450> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/metadata_checks.py",
-          : line 118, in feed
-ERROR root:     iuse =
-          : pkg.iuse_stripped.difference(self.iuse_handler.allowed_iuse(pkg))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 235, in iuse_stripped
-ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 213, in <lambda>
-ERROR root:     s.data.pop("IUSE", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : dev-python/scrapy-1.0.1, attr iuse
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : dev-python/scrapy-1.0.1, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-
-dev-python/scrapy
-  MetadataError: version 1.0.1: attr(fetchables): error- Metadata Exception: pkg ebuild src: dev-python/scrapy-1.0.1, attr fetchables
-error: Metadata Exception: pkg ebuild src: dev-python/scrapy-1.0.1, attr data
-error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR root: check <pkgcheck.metadata_checks.DescriptionReport object at
-          : 0x7f4204740250> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/metadata_checks.py",
-          : line 360, in feed
-ERROR root:     s = pkg.description.lower()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 205, in <lambda>
-ERROR root:     _get_attr["description"] = lambda s:s.data.pop("DESCRIPTION",
-          : "").strip()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : dev-python/scrapy-1.0.1, attr description
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : dev-python/scrapy-1.0.1, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR root: check <pkgcheck.metadata_checks.KeywordsReport object at
-          : 0x7f42047401d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/metadata_checks.py",
-          : line 235, in feed
-ERROR root:     if "-*" in pkg.keywords and len(pkg.keywords) == 1:
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 207, in <lambda>
-ERROR root:     s.data.pop("KEYWORDS", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : dev-python/scrapy-1.0.1, attr keywords
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : dev-python/scrapy-1.0.1, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7f4204740810> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 214, in feed
-ERROR root:     for eclass in pkg.inherited:
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 177, in get_inherited
-ERROR root:     return tuple(sorted(self.data.get('_eclasses_', {})))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : dev-python/scrapy-1.0.1, attr inherited
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : dev-python/scrapy-1.0.1, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-  MetadataError: version 1.0.1: attr(depends): error- Metadata Exception: pkg ebuild src: dev-python/scrapy-1.0.1, attr depends
-error: Metadata Exception: pkg ebuild src: dev-python/scrapy-1.0.1, attr data
-error: bytes_ro_StringIO instance has no attribute '__len__'
-  MetadataError: version 1.0.1: attr(rdepends): error- Metadata Exception: pkg ebuild src: dev-python/scrapy-1.0.1, attr rdepends
-error: Metadata Exception: pkg ebuild src: dev-python/scrapy-1.0.1, attr data
-error: bytes_ro_StringIO instance has no attribute '__len__'
-  MetadataError: version 1.0.1: attr(post_rdepends): error- Metadata Exception: pkg ebuild src: dev-python/scrapy-1.0.1, attr post_rdepends
-error: Metadata Exception: pkg ebuild src: dev-python/scrapy-1.0.1, attr data
-error: bytes_ro_StringIO instance has no attribute '__len__'
-  MetadataError: version 1.0.1: attr(license): error- Metadata Exception: pkg ebuild src: dev-python/scrapy-1.0.1, attr license
-error: Metadata Exception: pkg ebuild src: dev-python/scrapy-1.0.1, attr data
-error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR root: check <pkgcheck.metadata_checks.RestrictsReport object at
-          : 0x7f4204baac10> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/metadata_checks.py",
-          : line 429, in feed
-ERROR root:     i = self.iuse_filter((basestring,), pkg, pkg.restrict,
-          : reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 209, in <lambda>
-ERROR root:     s.data.pop("RESTRICT", ''), str, operators={},
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : dev-python/scrapy-1.0.1, attr restrict
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : dev-python/scrapy-1.0.1, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR root: check <pkgcheck.metadata_checks.UnusedLocalFlagsReport object at
-          : 0x7f4204740f90> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/metadata_checks.py",
-          : line 166, in feed
-ERROR root:     unused.difference_update(pkg.iuse_stripped)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 235, in iuse_stripped
-ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 213, in <lambda>
-ERROR root:     s.data.pop("IUSE", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : dev-python/scrapy-1.0.1, attr iuse
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : dev-python/scrapy-1.0.1, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR root: check <pkgcheck.dropped_keywords.DroppedKeywordsReport object at
-          : 0x7f4203a69f90> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/dropped_keywords.py",
-          : line 45, in feed
-ERROR root:     state = set(x.lstrip("~") for x in lastpkg.keywords)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 207, in <lambda>
-ERROR root:     s.data.pop("KEYWORDS", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : dev-python/scrapy-1.0.1, attr keywords
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : dev-python/scrapy-1.0.1, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR root: check <pkgcheck.repo_metadata.RequiredChksums object at
-          : 0x7f4204baac50> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/repo_metadata.py",
-          : line 201, in feed
-ERROR root:     for f_inst in (iflatten_instance(pkg.fetchables,
-          : fetch.fetchable)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 92, in generate_fetchables
-ERROR root:     self.data.pop("SRC_URI", ""), fetchable, operators={},
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : dev-python/scrapy-1.0.1, attr fetchables
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : dev-python/scrapy-1.0.1, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+  DeprecatedEclass: version 2.9.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/simpleparse
-  DeprecatedEclass: version 2.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.1.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/soappy
   DroppedKeywordWarning: version 0.12.22: keywords dropped: ia64, ppc, s390, sh, sparc
@@ -985,8 +407,8 @@ dev-python/ssl-fetch
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 dev-python/subunit
-  DeprecatedEclass: version 0.0.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.0.6: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.0.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DroppedKeywordWarning: version 0.0.16: keywords dropped: s390, sh, sparc
 
 dev-python/tagpy
@@ -996,8 +418,8 @@ dev-python/testtools
   DroppedKeywordWarning: version 1.7.1: keywords dropped: arm64, ia64, mips, ppc, s390, sh, sparc, x86
 
 dev-python/translate-toolkit
-  DeprecatedEclass: version 1.10.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.10.0: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.10.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/twisted-conch
   DroppedKeywordWarning: version 15.1.0: keywords dropped: alpha, sparc
@@ -1041,19 +463,19 @@ dev-python/visual
   DeprecatedEclass: version 5.74: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/webpy
-  DeprecatedEclass: version 0.37: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.37: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.37: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/webtest
   DroppedKeywordWarning: version 2.0.16: keywords dropped: alpha, ia64, s390, sh, sparc
 
 dev-python/webut
-  DeprecatedEclass: version 0.1.0.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.1.0.2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.1.0.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/winpdb
-  DeprecatedEclass: version 1.4.8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.4.8: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.4.8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-python/ws4py
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -1062,8 +484,8 @@ dev-python/xlwt
   DroppedKeywordWarning: version 1.0.0: keywords dropped: ppc
 
 dev-python/xmpppy
-  DeprecatedEclass: version 0.5.0_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.5.0_rc1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.5.0_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1301,8 +723,8 @@ media-gfx/digikam
   NonExistentDeps: version 4.10.0: depset rdepends: nonexistent atoms [ >=kde-apps/libkface-14.12.0:4 ]
 
 media-gfx/dispcalgui
-  DeprecatedEclass: version 1.2.7.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.2.7.0: uses deprecated EAPI: 2
+  DeprecatedEclass: version 1.2.7.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 media-gfx/drqueue
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -1316,9 +738,9 @@ media-gfx/enblend
   DeprecatedEAPI: version 4.1.1: uses deprecated EAPI: 2
 
 media-gfx/exact-image
-  DeprecatedEclass: version 0.8.1-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.8.1-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 0.8.1-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
+  DeprecatedEclass: version 0.8.1-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 media-gfx/exiftags
   DeprecatedEAPI: version 1.01: uses deprecated EAPI: 0
@@ -1338,8 +760,8 @@ media-gfx/flam3
   DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
 
 media-gfx/fontforge
-  DeprecatedEclass: version 20110222-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 20110222-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 20110222-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 20120731: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 media-gfx/fontypython
@@ -1350,8 +772,8 @@ media-gfx/fotowall
   MissingChksum: version 0.9-r1: "Fotowall-0.9.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-gfx/fr0st
-  DeprecatedEclass: version 1.4-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.4-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.4-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 1.4-r1: "fr0st-1.4-src.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-gfx/freecad
@@ -1389,10 +811,10 @@ media-gfx/gliv
   DeprecatedEAPI: version 1.9.6: uses deprecated EAPI: 2
 
 media-gfx/gnofract4d
-  DeprecatedEclass: version 3.13: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 3.13: uses deprecated EAPI: 3
-  DeprecatedEclass: version 3.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 3.13: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 3.14: uses deprecated EAPI: 3
+  DeprecatedEclass: version 3.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 3.13: "gnofract4d-3.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-gfx/gnome-raw-thumbnailer
@@ -1405,8 +827,8 @@ media-gfx/graphite2
   DroppedKeywordWarning: version 1.2.4: keywords dropped: s390
 
 media-gfx/graphviz
-  DeprecatedEclass: version 2.26.3-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.26.3-r4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.26.3-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DroppedKeywordWarning: version 2.36.0: keywords dropped: mips
 
 media-gfx/grub-splashes
@@ -1476,16 +898,16 @@ media-gfx/metapixel
   MissingChksum: version 1.0.2: "metapixel-1.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-gfx/mirage
-  DeprecatedEclass: version 0.9.5.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MetadataError: version 0.9.5.1: attr(fetchables): error- Metadata Exception: pkg ebuild src: media-gfx/mirage-0.9.5.1, attr fetchables
 error: mirror://berlios/mirageiv/mirage-0.9.5.1.tar.bz2 is unparseable
 flagged token- uri mirror://berlios/mirageiv/mirage-0.9.5.1.tar.bz2 isn't a known mirror tier
   DeprecatedEAPI: version 0.9.5.1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.9.5.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.9.5.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MetadataError: version 0.9.5.2: attr(fetchables): error- Metadata Exception: pkg ebuild src: media-gfx/mirage-0.9.5.2, attr fetchables
 error: mirror://berlios/mirageiv/mirage-0.9.5.2.tar.bz2 is unparseable
 flagged token- uri mirror://berlios/mirageiv/mirage-0.9.5.2.tar.bz2 isn't a known mirror tier
   DeprecatedEAPI: version 0.9.5.2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.9.5.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MetadataError: version 0.9.5.2-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: media-gfx/mirage-0.9.5.2-r1, attr fetchables
 error: mirror://berlios/mirageiv/mirage-0.9.5.2.tar.bz2 is unparseable
 flagged token- uri mirror://berlios/mirageiv/mirage-0.9.5.2.tar.bz2 isn't a known mirror tier
@@ -1498,15 +920,15 @@ media-gfx/monica
   MissingChksum: version 3.7: "monica-3.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-gfx/mypaint
-  DeprecatedEclass: version 1.0.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 1.0.0-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 1.0.0-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
-  DeprecatedEclass: version 1.1.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 1.0.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 1.1.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 1.1.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
-  DeprecatedEclass: version 1.1.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 1.1.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 1.1.0-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 1.1.0-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
+  DeprecatedEclass: version 1.1.0-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 media-gfx/nip2
   DeprecatedEAPI: version 7.26.4: uses deprecated EAPI: 2
@@ -1529,8 +951,8 @@ media-gfx/optipng
   DeprecatedEAPI: version 0.7.3: uses deprecated EAPI: 2
 
 media-gfx/paint-mono
-  DeprecatedEclass: version 0.1.63: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 0.1.63: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.1.63: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   MissingChksum: version 0.1.63: "paintdotnet-0.1.63.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-gfx/pencil
@@ -1660,10 +1082,10 @@ media-gfx/scantailor
   MissingChksum: version 0.9.10: "scantailor-0.9.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-gfx/skencil
-  DeprecatedEclass: version 0.6.18_pre20080519: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.6.18_pre20080519: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.0_alpha784: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.6.18_pre20080519: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.0_alpha784: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.0_alpha784: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 media-gfx/smile
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 2
@@ -1740,143 +1162,645 @@ media-gfx/zgv
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-dev-db/4store
-  DeprecatedEAPI: version 1.1.5: uses deprecated EAPI: 2
+x11-plugins/allin1
+  DeprecatedEAPI: version 0.5.0: uses deprecated EAPI: 0
 
-dev-db/SchemaSync
-  DeprecatedEclass: version 0.9.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.9.2: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
-  NonExistentDeps: version 0.9.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
+x11-plugins/asclock
+  DeprecatedEAPI: version 2.0.12-r1: uses deprecated EAPI: 3
+  MissingChksum: version 2.0.12-r1: "asclock-2.0.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-db/cdb
-  DeprecatedEAPI: version 0.75-r3: uses deprecated EAPI: 3
+x11-plugins/ascpu
+  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 0
+  MissingChksum: version 1.11: "ascpu-1.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-db/ctdb
+x11-plugins/asmem
+  DeprecatedEAPI: version 1.12: uses deprecated EAPI: 0
+  MissingChksum: version 1.12: "asmem-1.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/asmon
+  DeprecatedEAPI: version 0.71: uses deprecated EAPI: 0
+  MissingChksum: version 0.71: "asmon-0.71.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/astime
+  DeprecatedEAPI: version 2.8-r1: uses deprecated EAPI: 0
+  MissingChksum: version 2.8-r1: "astime-2.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/bitlbee-steam
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-dev-db/db-je
-  DeprecatedEAPI: version 3.3.75: uses deprecated EAPI: 0
+x11-plugins/bubblemon
+  MissingChksum: version 1.46-r2: "bubblemon-dockapp-1.46.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-dev-db/dbmodel
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 2
+x11-plugins/compiz-plugins-main
+  MissingChksum: version 0.8.8: "compiz-plugins-main-0.8.8.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-db/drizzle
-  DeprecatedEclass: version 7.2.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 7.2.4: depset depends: nonexistent atoms [ dev-lang/v8 ]
-  NonExistentDeps: version 7.2.4: depset rdepends: nonexistent atoms [ dev-lang/v8 ]
+x11-plugins/cputnik
+  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 0
 
-dev-db/haildb
-  DeprecatedEAPI: version 2.3.2: uses deprecated EAPI: 2
+x11-plugins/desklet-Genesis
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.2: "Genesis-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-db/henplus
-  DeprecatedEAPI: version 0.9.8: uses deprecated EAPI: 2
-  ExecutableFile: "files/henplus.pre" has unnecessary executable bit
+x11-plugins/desklet-ImageSlideShow
+  DeprecatedEAPI: version 0.8-r1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.8-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-dev-db/hyperdex
-  ExecutableFile: "files/hyperdex.initd" has unnecessary executable bit
+x11-plugins/desklet-Mouse
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.1: "Mouse-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-db/m17n-db
-  DeprecatedEAPI: version 1.5.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.5.5: uses deprecated EAPI: 0
+x11-plugins/desklet-SlideShow
+  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.9: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.9: "SlideShow-0.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-db/mariadb
-  VulnerablePackage: version 5.5.43-r1: vulnerable via glsa(201504-05) ( ver < 10.0.16 ), keywords ('alpha', 'amd64', 'amd64-linux', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc-macos', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x64-macos', 'x64-solaris', 'x86', 'x86-fbsd', 'x86-freebsd', 'x86-linux', 'x86-macos', 'x86-solaris')
-  VulnerablePackage: version 5.5.44: vulnerable via glsa(201504-05) ( ver < 10.0.16 ), keywords ('alpha', 'amd64', 'amd64-linux', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc-macos', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x64-macos', 'x64-solaris', 'x86', 'x86-fbsd', 'x86-freebsd', 'x86-linux', 'x86-macos', 'x86-solaris')
+x11-plugins/desklet-WeeklyCalendar
+  DeprecatedEAPI: version 0.60: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.60: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.60: "WeeklyCalendar-0.60.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-db/mysql
-  VulnerablePackage: version 5.5.43: vulnerable via glsa(201504-05) ( ver < 5.6.22 ), keywords ('alpha', 'amd64', 'amd64-linux', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc-macos', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x64-macos', 'x64-solaris', 'x86', 'x86-fbsd', 'x86-freebsd', 'x86-linux', 'x86-macos', 'x86-solaris')
-  VulnerablePackage: version 5.5.44: vulnerable via glsa(201504-05) ( ver < 5.6.22 ), keywords ('alpha', 'amd64', 'amd64-linux', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc-macos', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x64-macos', 'x64-solaris', 'x86', 'x86-fbsd', 'x86-freebsd', 'x86-linux', 'x86-macos', 'x86-solaris')
-  VulnerablePackage: version 5.5.44: vulnerable via glsa(201507-19) ( ver < 5.6.24 && ver not = 5.5.43 ), keywords ('alpha', 'amd64', 'amd64-linux', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc-macos', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x64-macos', 'x64-solaris', 'x86', 'x86-fbsd', 'x86-freebsd', 'x86-linux', 'x86-macos', 'x86-solaris')
+x11-plugins/desklet-ftb
+  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.3.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.3.2: "FTB-0.3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-db/mysql-proxy
-  ExecutableFile: "files/mysql-proxy.initd" has unnecessary executable bit
+x11-plugins/desklet-iCalendarEvent
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.5: "iCalendarEvent-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-db/octopus
-  DeprecatedEAPI: version 3.0.1-r3: uses deprecated EAPI: 2
+x11-plugins/desklet-justanicon
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+  DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.2: "JustAnIcon-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-db/odbtp
-  DeprecatedEAPI: version 1.1.4: uses deprecated EAPI: 0
+x11-plugins/docker
+  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 0
 
-dev-db/opendbx
-  DroppedKeywordWarning: version 1.5.0-r1: keywords dropped: amd64, x86
+x11-plugins/epplets
+  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 0
 
-dev-db/oracle-instantclient-basic
-  DeprecatedEAPI: version 10.2.0.3-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 11.2.0.2: uses deprecated EAPI: 0
-  MissingChksum: version 10.2.0.3-r1: "instantclient-basic-linux-x86-64-10.2.0.3-20070103.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 10.2.0.3-r1: "instantclient-basic-linux32-10.2.0.3-20061115.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 10.2.0.3-r1: "instantclient-sdk-linux32-10.2.0.3-20061115.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.2: "instantclient-basic-linux32-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.2: "instantclient-sdk-linux32-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.2: "instantclient-basic-linux-x86-64-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.2: "instantclient-sdk-linux-x86-64-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-plugins/gkrellaclock
+  DeprecatedEAPI: version 0.3.4: uses deprecated EAPI: 0
+  MissingChksum: version 0.3.4: "gkrellaclock-0.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-db/oracle-instantclient-jdbc
-  DeprecatedEAPI: version 10.2.0.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 11.2.0.2: uses deprecated EAPI: 0
-  MissingChksum: version 10.2.0.3: "instantclient-jdbc-linux-x86-64-10.2.0.3-20070103.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 10.2.0.3: "instantclient-jdbc-linux32-10.2.0.3-20061115.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.2: "instantclient-jdbc-linux32-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.2: "instantclient-jdbc-linux-x86-64-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.3: "instantclient-jdbc-linux-11.2.0.3.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.3: "instantclient-jdbc-linux.x64-11.2.0.3.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-plugins/gkrellfire
+  DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 0
 
-dev-db/oracle-instantclient-odbc
-  DeprecatedEAPI: version 11.2.0.2-r1: uses deprecated EAPI: 0
-  MissingChksum: version 11.2.0.2-r1: "instantclient-odbc-linux32-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.2-r1: "instantclient-odbc-linux-x86-64-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.3: "instantclient-odbc-linux-11.2.0.3.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.3: "instantclient-odbc-linux.x64-11.2.0.3.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-plugins/gkrellm-bluez
+  DeprecatedEAPI: version 0.2-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.2-r1: "gkrellm-bluez-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-db/oracle-instantclient-sqlplus
-  DeprecatedEAPI: version 10.2.0.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 11.2.0.2: uses deprecated EAPI: 0
-  MissingChksum: version 10.2.0.3: "instantclient-sqlplus-linux32-10.2.0.3-20061115.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.2: "instantclient-sqlplus-linux32-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 11.2.0.2: "instantclient-sqlplus-linux-x86-64-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-plugins/gkrellm-countdown
+  DeprecatedEAPI: version 0.1.2: uses deprecated EAPI: 0
+  MissingChksum: version 0.1.2: "gkrellm-countdown-0.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-db/phpmyadmin
-  VulnerablePackage: version 4.0.10.10: vulnerable via glsa(201505-03) ( ver < 4.2.13 && ver not = 4.1.14.7 && ver not = 4.0.10.6 ), keywords ('alpha', 'amd64', 'hppa', 'ia64', 'ppc', 'ppc-macos', 'ppc64', 'sparc', 'x64-macos', 'x86', 'x86-fbsd', 'x86-macos')
+x11-plugins/gkrellm-imonc
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+  MissingChksum: version 0.2: "gkrellm-imonc-src-0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-db/phppgadmin
-  NonExistentDeps: version 5.1: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
-  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
+x11-plugins/gkrellm-leds
+  DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.8.2: uses deprecated EAPI: 3
+  MissingChksum: version 0.8.1: "gkleds-0.8.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.8.2: "gkleds-0.8.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-db/postgis
-  NonExistentDeps: version 2.0.3: depset depends: nonexistent atoms [ dev-db/postgresql:8.4 ]
-  NonExistentDeps: version 2.0.3: depset rdepends: nonexistent atoms [ dev-db/postgresql:8.4 ]
-  NonExistentDeps: version 2.0.6: depset depends: nonexistent atoms [ dev-db/postgresql:8.4 ]
-  NonExistentDeps: version 2.0.6: depset rdepends: nonexistent atoms [ dev-db/postgresql:8.4 ]
+x11-plugins/gkrellm-mailwatch
+  DeprecatedEAPI: version 2.4.3-r1: uses deprecated EAPI: 3
+  MissingChksum: version 2.4.3-r1: "gkrellm-mailwatch-2.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-db/postgresql
-  VulnerablePackage: version 9.0.22: vulnerable via glsa(201507-20) ( ver < 9.4.3 && ver not = 9.0.21 && ver not = 9.1.17 && ver not = 9.2.12 && ver not = 9.3.8 ), keywords ('alpha', 'amd64', 'amd64-fbsd', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc-macos', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd', 'x86-solaris')
-  VulnerablePackage: version 9.1.18: vulnerable via glsa(201507-20) ( ver < 9.4.3 && ver not = 9.0.21 && ver not = 9.1.17 && ver not = 9.2.12 && ver not = 9.3.8 ), keywords ('alpha', 'amd64', 'amd64-fbsd', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc-macos', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd', 'x86-solaris')
-  VulnerablePackage: version 9.2.13: vulnerable via glsa(201507-20) ( ver < 9.4.3 && ver not = 9.0.21 && ver not = 9.1.17 && ver not = 9.2.12 && ver not = 9.3.8 ), keywords ('alpha', 'amd64', 'amd64-fbsd', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc-macos', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd', 'x86-solaris')
-  VulnerablePackage: version 9.3.9: vulnerable via glsa(201507-20) ( ver < 9.4.3 && ver not = 9.0.21 && ver not = 9.1.17 && ver not = 9.2.12 && ver not = 9.3.8 ), keywords ('alpha', 'amd64', 'amd64-fbsd', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc-macos', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd', 'x86-solaris')
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DroppedKeywordWarning: version 9.5_alpha1: keywords dropped: alpha, amd64, arm, hppa, ia64, mips, ppc, ppc64, s390, sh, sparc, x86
-
-dev-db/slony1
-  ExecutableFile: "files/slony1.init" has unnecessary executable bit
-
-dev-db/sqldeveloper
-  DeprecatedEAPI: version 3.2.20.09.87: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 4.0.2.15.21: uses deprecated EAPI: 2
-
-dev-db/sqlite
-  DeprecatedEAPI: version 2.8.16-r5: uses deprecated EAPI: 0
-  VulnerablePackage: version 2.8.16-r5: vulnerable via glsa(201507-05) ( ver < 3.8.9 ), keywords ('alpha', 'amd64', 'amd64-fbsd', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
-
-dev-db/sqliteman
-  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 3
-
-dev-db/tokyocabinet
-  DeprecatedEAPI: version 1.4.48: uses deprecated EAPI: 2
-
-dev-db/vbisam
+x11-plugins/gkrellm-plugins
   DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
+
+x11-plugins/gkrellm-radio
+  DeprecatedEAPI: version 2.0.4: uses deprecated EAPI: 0
+  MissingChksum: version 2.0.4: "gkrellm-radio-2.0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellm-trayicons
+  DeprecatedEAPI: version 1.03: uses deprecated EAPI: 0
+  MissingChksum: version 1.03: "gkrellm-trayicons-1.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellm-vaiobright
+  DeprecatedEAPI: version 2.5-r1: uses deprecated EAPI: 0
+  MissingChksum: version 2.5-r1: "vaiobright-2.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellm-volume
+  DeprecatedEAPI: version 2.1.13: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.1.13-r2: uses deprecated EAPI: 3
+  MissingChksum: version 2.1.13: "gkrellm-volume-2.1.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellm-xkb
+  DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
+  MissingChksum: version 1.05: "gkrellm-xkb-1.05.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellmoon
+  DeprecatedEAPI: version 0.6-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.6-r1: "gkrellmoon-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellmss
+  MissingChksum: version 2.6: "gkrellmss-2.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellmwireless
+  DeprecatedEAPI: version 2.0.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.0.3-r1: uses deprecated EAPI: 2
+  MissingChksum: version 2.0.3: "gkrellmwireless-2.0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellshoot
+  MissingChksum: version 0.4.4: "gkrellshoot-0.4.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkrellsun
+  DeprecatedEAPI: version 1.0.0-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.0-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1.0.0-r3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.0-r1: "gkrellsun-1.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/gkwebmon
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+  MissingChksum: version 0.2: "gkwebmon-0.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/guifications
+  DeprecatedEAPI: version 2.16: uses deprecated EAPI: 2
+  MissingChksum: version 2.16: "pidgin-guifications-2.16.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/i8krellm
+  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.5-r1: uses deprecated EAPI: 3
+  MissingChksum: version 2.5: "i8krellm-2.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/matchbox-applet-input-manager
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 0
+  MissingChksum: version 0.6: "mb-applet-input-manager-0.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/matchbox-applet-startup-monitor
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.1: "mb-applet-startup-monitor-0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/matchbox-applet-volume
+  MissingChksum: version 0.1: "mb-applet-volume-0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/matchbox-desktop-image-browser
+  DeprecatedEAPI: version 0.2-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.2-r1: "mb-desktop-image-browser-0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/matchbox-desktop-xine
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+  MissingChksum: version 0.4: "mb-desktop-xine-0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/pidgin-bot-sentry
+  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 3
+  MissingChksum: version 1.3.0: "bot-sentry-1.3.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/pidgin-encryption
+  MissingChksum: version 3.1: "pidgin-encryption-3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/pidgin-extprefs
+  DeprecatedEAPI: version 0.7-r1: uses deprecated EAPI: 2
+
+x11-plugins/pidgin-hotkeys
+  DeprecatedEAPI: version 0.2.4: uses deprecated EAPI: 2
+  MissingChksum: version 0.2.4: "pidgin-hotkeys-0.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/pidgin-led-notification
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 3
+  MissingChksum: version 0.1: "led-notification-0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/pidgin-libnotify
+  DeprecatedEAPI: version 0.14-r1: uses deprecated EAPI: 2
+
+x11-plugins/pidgin-mbpurple
+  DeprecatedEAPI: version 0.3.0-r2: uses deprecated EAPI: 2
+  MissingChksum: version 0.3.0-r2: "mbpurple-0.3.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/pidgin-mpris
+  DeprecatedEAPI: version 0.2.6: uses deprecated EAPI: 2
+  MissingChksum: version 0.2.6: "pidgin-mpris-0.2.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/pidgin-musictracker
+  DeprecatedEAPI: version 0.4.22: uses deprecated EAPI: 2
+  MissingChksum: version 0.4.22: "pidgin-musictracker-0.4.22.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/pidgin-privacy-please
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 2
+
+x11-plugins/pidgin-rhythmbox
+  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 2
+  MissingChksum: version 2.0: "pidgin-rhythmbox-2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/pidgintex
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 2
+  MissingChksum: version 1.1.1: "pidginTeX-1.1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/qled
+  DeprecatedEAPI: version 0.6.2: uses deprecated EAPI: 3
+  NonExistentDeps: version 0.6.2: depset depends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
+  NonExistentDeps: version 0.6.2: depset rdepends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
+
+x11-plugins/thinkhdaps
+  DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.2.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 0.2.1: "thinkhdaps-0.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/tomboy-reminder
+  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 2
+  DeprecatedEclass: version 0.9.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  MissingChksum: version 0.9.2: "tomboy-reminder-0.9.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/vicious
+  DeprecatedEAPI: version 2.0.3: uses deprecated EAPI: 3
+
+x11-plugins/wmCalClock
+  DeprecatedEAPI: version 1.25-r2: uses deprecated EAPI: 0
+  MissingChksum: version 1.25-r2: "wmCalClock-1.25.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmDownload
+  DeprecatedEAPI: version 0.1.2a-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.1.2a-r1: "wmDownload-0.1.2a.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmMatrix
+  DeprecatedEAPI: version 0.2-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.2-r1: "wmMatrix-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmMoonClock
+  DeprecatedEAPI: version 1.27-r1: uses deprecated EAPI: 0
+  MissingChksum: version 1.27-r1: "wmMoonClock-1.27.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmSMPmon
+  DeprecatedEAPI: version 3.1-r1: uses deprecated EAPI: 0
+  MissingChksum: version 3.1-r1: "wmSMPmon-3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmSpaceWeather
+  DeprecatedEAPI: version 1.04_p19: uses deprecated EAPI: 0
+  MissingChksum: version 1.04_p19: "wmspaceweather_1.04.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.04_p19: "wmspaceweather_1.04-19.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmSun
+  DeprecatedEAPI: version 1.03-r1: uses deprecated EAPI: 0
+  MissingChksum: version 1.03-r1: "wmSun-1.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmXName
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.1: "wmXName-0.01.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmacpi
+  DeprecatedEAPI: version 1.34: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.2_rc1: uses deprecated EAPI: 0
+  MissingChksum: version 1.34: "wmacpi-1.34.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.2_rc1: "wmacpi-2.2rc1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmacpiload-ac
+  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.2.0-r1: uses deprecated EAPI: 2
+
+x11-plugins/wmacpimon
+  DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 2
+  MissingChksum: version 0.2.1: "wmacpimon-0.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmail
+  DeprecatedEAPI: version 2.0-r3: uses deprecated EAPI: 0
+  MissingChksum: version 2.0-r3: "wmail-2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmapm
+  DeprecatedEAPI: version 3.1-r1: uses deprecated EAPI: 0
+  MissingChksum: version 3.1-r1: "wmapm-3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmapmload
+  DeprecatedEAPI: version 0.3.4: uses deprecated EAPI: 3
+  MissingChksum: version 0.3.4: "wmapmload-0.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmappl
+  DeprecatedEAPI: version 0.71: uses deprecated EAPI: 0
+
+x11-plugins/wmbatteries
+  DeprecatedEAPI: version 0.1.3: uses deprecated EAPI: 0
+
+x11-plugins/wmbinclock
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+  MissingChksum: version 0.5: "wmbinclock-0.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmbio
+  DeprecatedEAPI: version 1.02: uses deprecated EAPI: 2
+  MissingChksum: version 1.02: "wmbio-1.02.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmblob
+  MissingChksum: version 1.0.3: "wmblob_1.0.3.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmbluecpu
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 0
+  MissingChksum: version 0.6: "wmbluecpu-0.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmbutton
+  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.6.1: "wmbutton-0.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmcalc
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+  MissingChksum: version 0.4: "wmcalc-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmcdplay
+  DeprecatedEAPI: version 1.0_beta1: uses deprecated EAPI: 0
+  MissingChksum: version 1.0_beta1: "wmcdplay-1.0-beta1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmcliphist
+  MissingChksum: version 0.6-r1: "wmcliphist-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmclock
+  DeprecatedEAPI: version 1.0.13: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.13: "wmclock-1.0.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmclockmon
+  MissingChksum: version 0.8.1: "wmclockmon_0.8.1-1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmcms
+  DeprecatedEAPI: version 0.3.5-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.3.5-r1: "wmcms-0.3.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmcoincoin
+  MissingChksum: version 2.5.1f: "wmcoincoin-2.5.1f.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmcp
+  DeprecatedEAPI: version 1.2.8: uses deprecated EAPI: 0
+  MissingChksum: version 1.2.8: "wmcp-1.2.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmcpu
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 3
+  MissingChksum: version 1.4: "wmcpu-1.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmcpuload
+  DeprecatedEAPI: version 1.1.0_pre5: uses deprecated EAPI: 0
+  MissingChksum: version 1.1.0_pre5: "wmcpuload-1.1.0pre5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmcube
+  DeprecatedEAPI: version 0.98: uses deprecated EAPI: 3
+  MissingChksum: version 0.98: "wmcube-0.98.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmdate
+  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
+  MissingChksum: version 0.7: "wmdate-0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmdf
+  DeprecatedEAPI: version 0.1.6-r1: uses deprecated EAPI: 0
+
+x11-plugins/wmdiskmon
+  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.0.1: "wmdiskmon-0.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmdl
+  DeprecatedEAPI: version 1.4.1: uses deprecated EAPI: 0
+  MissingChksum: version 1.4.1: "wmdl-1.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmdots
+  DeprecatedEAPI: version 0.2_beta: uses deprecated EAPI: 0
+  MissingChksum: version 0.2_beta: "wmdots-0.2beta.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmdrawer
+  MissingChksum: version 0.10.5-r2: "wmdrawer-0.10.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmfire
+  MissingChksum: version 1.2.4-r2: "wmfire-1.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmforkplop
+  MissingChksum: version 0.9.3: "wmforkplop-0.9.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmfortune
+  DeprecatedEAPI: version 0.241: uses deprecated EAPI: 0
+
+x11-plugins/wmfrog
+  DeprecatedEAPI: version 0.2.0-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 2
+  MissingChksum: version 0.2.0-r1: "wmfrog-0.2.0.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.3.1: "wmfrog-0.3.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmfsm
+  DeprecatedEAPI: version 0.34-r1: uses deprecated EAPI: 0
+
+x11-plugins/wmget
+  DeprecatedEAPI: version 0.6.0: uses deprecated EAPI: 0
+  MissingChksum: version 0.6.0: "wmget-0.6.0-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmgrabimage
+  DeprecatedEAPI: version 0.72-r1: uses deprecated EAPI: 0
+
+x11-plugins/wmgtemp
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.0: "wmgtemp-1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmhdplop
+  DeprecatedEAPI: version 0.9.9-r2: uses deprecated EAPI: 2
+  MissingChksum: version 0.9.9-r2: "wmhdplop-0.9.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmifinfo
+  DeprecatedEAPI: version 0.09: uses deprecated EAPI: 0
+  MissingChksum: version 0.09: "wmifinfo-0.09.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmifs
+  DeprecatedEAPI: version 1.3_beta1-r2: uses deprecated EAPI: 0
+  MissingChksum: version 1.3_beta1-r2: "wmifs-1.3b1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.3_beta1-r2: "wmifs_1.3b1-11.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wminet
+  DeprecatedEAPI: version 3.0.0: uses deprecated EAPI: 0
+  MissingChksum: version 3.0.0: "wminet-3.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmitime
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
+  MissingChksum: version 0.3: "wmitime-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmium
+  DeprecatedEAPI: version 1.0.9b-r1: uses deprecated EAPI: 2
+  MissingChksum: version 1.0.9b-r1: "wmium-1.0.9b.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmix
+  DeprecatedEAPI: version 3.1-r1: uses deprecated EAPI: 0
+  MissingChksum: version 3.1-r1: "wmix-3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmjsql
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 2
+  MissingChksum: version 0.5: "wmjsql-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmlaptop
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
+  MissingChksum: version 1.3: "wmlaptop-1.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.4: "wmlaptop-1.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmload
+  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 3
+
+x11-plugins/wmlongrun
+  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.3.0_pre1: uses deprecated EAPI: 0
+  MissingChksum: version 0.2.0: "wmlongrun-0.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.3.0_pre1: "wmlongrun-0.3.0pre1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmlpq
+  DeprecatedEAPI: version 0.2.1-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.2.1-r2: uses deprecated EAPI: 0
+  MissingChksum: version 0.2.1-r1: "wmlpq_0.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmmand
+  DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 0
+  MissingChksum: version 1.3.2: "wmMand-1.3.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmmemfree
+  DeprecatedEAPI: version 0.7-r2: uses deprecated EAPI: 3
+  MissingChksum: version 0.7-r2: "wmmemfree-0.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmmemload
+  DeprecatedEAPI: version 0.1.6: uses deprecated EAPI: 0
+  MissingChksum: version 0.1.6: "wmmemload-0.1.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmmemmon
+  DeprecatedEAPI: version 1.0.2_pre2: uses deprecated EAPI: 0
+  MissingChksum: version 1.0.2_pre2: "wmmemmon-1.0.2pre2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmmenu
+  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 0
+  MissingChksum: version 1.2-r1: "wmmenu-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmmisc
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
+  MissingChksum: version 1.1: "wmmisc_1.1.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmmon
+  DeprecatedEAPI: version 1.0_beta2-r3: uses deprecated EAPI: 0
+  MissingChksum: version 1.0_beta2-r3: "wmmon-1_0b2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.2_beta1: "wmmon-1.2b1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmmp
+  DeprecatedEAPI: version 0.10.0-r1: uses deprecated EAPI: 2
+  MissingChksum: version 0.10.0-r1: "WMmp-0.10.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmmp3
+  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 0
+
+x11-plugins/wmmsg
+  MissingChksum: version 1.0.1: "wmmsg-1.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmnet
+  DeprecatedEAPI: version 1.06-r1: uses deprecated EAPI: 0
+  MissingChksum: version 1.06-r1: "wmnet-1.06.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.06-r1: "wmnet-1.06-misc.patch.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmnetload
+  DeprecatedEAPI: version 1.3-r3: uses deprecated EAPI: 0
+
+x11-plugins/wmnetselect
+  DeprecatedEAPI: version 0.8-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.8-r1: "wmnetselect-0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmpager
+  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 2
+  MissingChksum: version 1.2-r1: "wmpager-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmpeople
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+
+x11-plugins/wmpiki
+  DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 2
+  MissingChksum: version 0.2.1: "wmpiki-0.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmpinboard
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingChksum: version 1.0: "wmpinboard-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmping
+  MissingChksum: version 0.2.1: "wmping-0.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmpop3
+  DeprecatedEAPI: version 0.5.6a: uses deprecated EAPI: 0
+  MissingChksum: version 0.5.6a: "WMPop3-0.5.6a.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmpop3lb
+  DeprecatedEAPI: version 2.4.2-r2: uses deprecated EAPI: 2
+  MissingChksum: version 2.4.2-r2: "wmpop3lb2.4.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmpower
+  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 0
+
+x11-plugins/wmppp
+  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 3
+  MissingChksum: version 1.3.0: "wmppp-1.3.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmrack
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+  MissingChksum: version 1.3: "wmrack-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmrecord
+  DeprecatedEAPI: version 1.0.5.3-r1: uses deprecated EAPI: 0
+  MissingChksum: version 1.0.5.3-r1: "wmrecord-1.0.5_20040218_0029.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmsmixer
+  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.5.1: "wmsmixer-0.5.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmsound
+  MissingChksum: version 0.9.5: "wmsound-0.9.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmstickynotes
+  MissingChksum: version 0.2: "wmstickynotes-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmsvencd
+  DeprecatedEAPI: version 0.5.0: uses deprecated EAPI: 0
+  MissingChksum: version 0.5.0: "wmsvencd-0.5.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmsysmon
+  DeprecatedEAPI: version 0.7.7: uses deprecated EAPI: 0
+  MissingChksum: version 0.7.7: "wmsysmon-0.7.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.7.7: "wmsysmon-0.7.7-s4t4n.patch.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmsystray
+  DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.1.1: "wmsystray-0.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmtime
+  DeprecatedEAPI: version 1.0_beta2_p9: uses deprecated EAPI: 0
+  MissingChksum: version 1.0_beta2_p9: "wmtime_1.0b2.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.0_beta2_p9: "wmtime_1.0b2-9.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.0_beta2_p10: "wmtime_1.0b2-10.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmtimer
+  MissingChksum: version 2.92: "wmtimer-2.92.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmtop
+  MissingChksum: version 0.9.0-r1: "wmtop-0.9.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmtz
+  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 3
+  MissingChksum: version 0.7: "wmtz-0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmudmount
+  MissingChksum: version 1.11: "wmudmount-1.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmupmon
+  DeprecatedEAPI: version 0.1.3-r1: uses deprecated EAPI: 0
+
+x11-plugins/wmwave
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 3
+  MissingChksum: version 0.4: "wmwave-0-4.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmweather
+  DeprecatedEAPI: version 2.4.4: uses deprecated EAPI: 0
+  MissingChksum: version 2.4.4: "wmweather_2.4.4.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmweather+
+  MissingChksum: version 2.13: "wmweather+-2.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmwifi
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 0
+  MissingChksum: version 0.6: "wmwifi-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmwork
+  DeprecatedEAPI: version 0.2.5: uses deprecated EAPI: 0
+  MissingChksum: version 0.2.5: "wmwork-0.2.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-plugins/wmxkb
+  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 2
+  MissingChksum: version 1.2.2: "wmxkb-1.2.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-plugins/wmxres
+  MissingChksum: version 1.2: "wmxres-1.1-0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1890,8 +1814,8 @@ sys-kernel/genkernel
   DeprecatedEAPI: version 3.4.51: uses deprecated EAPI: 3
   DeprecatedEAPI: version 3.4.51.1: uses deprecated EAPI: 3
   DeprecatedEAPI: version 3.4.51.2: uses deprecated EAPI: 3
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   DeprecatedEclass: version 9999-r1: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   DroppedKeywordWarning: version 3.4.50: keywords dropped: sh
 
@@ -2044,8 +1968,8 @@ mail-filter/disspam
   DeprecatedEAPI: version 0.14: uses deprecated EAPI: 0
 
 mail-filter/isbg
-  DeprecatedEclass: version 0.99-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.99-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.99-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 mail-filter/libmilter
   DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 2
@@ -2085,8 +2009,8 @@ mail-filter/procmail-lib
   DeprecatedEAPI: version 20091202: uses deprecated EAPI: 0
 
 mail-filter/pypolicyd-spf
-  DeprecatedEclass: version 1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 mail-filter/qmail-scanner
   DeprecatedEAPI: version 1.25-r1: uses deprecated EAPI: 0
@@ -2126,8 +2050,8 @@ mail-filter/sqlgrey
   DeprecatedEAPI: version 1.7.6-r1: uses deprecated EAPI: 0
 
 mail-filter/tmda
-  DeprecatedEclass: version 1.1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.1.12: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 1.1.12: "tmda-1.1.12.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
@@ -2191,8 +2115,8 @@ app-accessibility/sound-icons
 
 app-accessibility/speakup
   DeprecatedEAPI: version 3.1.6_p201011120508: uses deprecated EAPI: 2
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 app-accessibility/speechd-up
   DeprecatedEAPI: version 0.4-r3: uses deprecated EAPI: 0
@@ -2249,9 +2173,9 @@ sci-misc/repsnapper
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 sci-misc/vitables
-  DeprecatedEclass: version 2.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 2.1: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 2.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
+  DeprecatedEclass: version 2.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
