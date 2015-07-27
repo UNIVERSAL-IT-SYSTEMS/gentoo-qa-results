@@ -4,149 +4,296 @@
 + [[ ! -n 16 ]]
 + [[ 14 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'sys-devel/*' 'kde-apps/*' 'sys-block/*' 'net-im/*' 'games-misc/*' 'x11-terms/*' 'games-util/*' 'gnustep-base/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'sys-devel/*' 'kde-apps/*' 'sys-block/*' 'net-im/*' 'games-misc/*' 'x11-terms/*' 'games-util/*' 'gnustep-base/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-app-emulation/cloud-init
-  ExecutableFile: "files/growpart" has unnecessary executable bit
-  SizeViolation: "files/growpart" exceeds 20k in size; 21323 bytes total
+media-plugins/amb-plugins
+  DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 3
+  MissingChksum: version 0.8.1: "AMB-plugins-0.8.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-app-emulation/coldfire
-  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 2
+media-plugins/audacious-dumb
+  MissingChksum: version 0.65: "audacious-dumb-0.65.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.73: "audacious-dumb-0.73.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.74: "audacious-dumb-0.74.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.80: "audacious-dumb-0.80.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/crossover-office-bin
-  MissingChksum: version 6.0.0: "install-crossover-standard-6.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 6.0.1: "install-crossover-standard-6.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 6.1.0: "install-crossover-standard-6.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 6.2.0: "install-crossover-standard-6.2.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+media-plugins/audacious-plugins
+  DeprecatedEAPI: version 2.4.4-r1: uses deprecated EAPI: 3
+  VulnerablePackage: version 2.4.4-r1: vulnerable via glsa(201203-14) ( ver < 3.1 ), keywords ('alpha', 'amd64', 'amd64-linux', 'hppa', 'ppc', 'ppc64', 'sparc', 'x86', 'x86-fbsd', 'x86-freebsd', 'x86-interix', 'x86-linux')
+  VulnerablePackage: version 2.5.4: vulnerable via glsa(201203-14) ( ver < 3.1 ), keywords ('alpha', 'amd64', 'amd64-linux', 'hppa', 'ppc', 'ppc64', 'sparc', 'x86', 'x86-fbsd', 'x86-freebsd', 'x86-interix', 'x86-linux')
 
-app-emulation/crossover-office-pro-bin
-  MissingChksum: version 5.0.0: "install-crossover-pro-5.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 5.0.1: "install-crossover-pro-5.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 5.0.3: "install-crossover-pro-5.0.3.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 6.0.0: "install-crossover-pro-6.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 6.1.0: "install-crossover-pro-6.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 6.2.0: "install-crossover-pro-6.2.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 7.0.2: "install-crossover-pro-7.0.2.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 7.1.0: "install-crossover-pro-7.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 8.0.0: "install-crossover-pro-8.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 9.0.0: "install-crossover-pro-9.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 9.0.1: "install-crossover-pro-9.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 9.1.0: "install-crossover-pro-9.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 9.2.0: "install-crossover-pro-9.2.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+media-plugins/banshee-community-extensions
+  DeprecatedEclass: version 2.2.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 2.4.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 2.4.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
-app-emulation/dlx
-  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.0-r1: uses deprecated EAPI: 0
+media-plugins/fil-plugins
+  DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 0
+  MissingChksum: version 0.3.0: "FIL-plugins-0.3.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/docker
-  ExecutableFile: "files/docker-r2.initd" has unnecessary executable bit
-  ExecutableFile: "files/docker-r3.initd" has unnecessary executable bit
-  ExecutableFile: "files/docker.initd" has unnecessary executable bit
+media-plugins/gimp-resynthesizer
+  DeprecatedEAPI: version 0.16: uses deprecated EAPI: 2
+  MissingChksum: version 0.16: "resynthesizer-0.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/domi
-  DeprecatedEAPI: version 20060816: uses deprecated EAPI: 0
+media-plugins/gkrellmpc
+  DeprecatedEAPI: version 0.1_beta9-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.1_beta10: uses deprecated EAPI: 2
+  MissingChksum: version 0.1_beta9-r1: "gkrellmpc-0.1_beta9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/dosemu
-  DeprecatedEAPI: version 1.4.1_pre20091009: uses deprecated EAPI: 0
+media-plugins/gmpc-albumview
+  MissingChksum: version 11.8.16: "gmpc-albumview-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-app-emulation/e-uae
-  DeprecatedEAPI: version 0.8.29_rc4-r2: uses deprecated EAPI: 3
+media-plugins/gmpc-awn
+  MissingChksum: version 11.8.16: "gmpc-awn-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-app-emulation/ganeti
-  BadInsIntoDir: version 2.10.5-r4: ebuild uses insinto /etc/cron.d on line 155
-  BadInsIntoDir: version 2.11.6-r2: ebuild uses insinto /etc/cron.d on line 192
-  BadInsIntoDir: version 2.12.1-r3: ebuild uses insinto /etc/cron.d on line 225
-  BadInsIntoDir: version 2.12.3-r2: ebuild uses insinto /etc/cron.d on line 233
-  BadInsIntoDir: version 2.13.0-r2: ebuild uses insinto /etc/cron.d on line 229
-  BadInsIntoDir: version 2.14.1: ebuild uses insinto /etc/cron.d on line 263
+media-plugins/gmpc-discogs
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+  MissingChksum: version 0.20.0: "gmpc-discogs-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/ganeti-htools
-  DeprecatedEAPI: version 0.2.8: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 2
+media-plugins/gmpc-extraplaylist
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+  MissingChksum: version 0.20.0: "gmpc-extraplaylist-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/ganeti-instance-debian-etch
-  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+media-plugins/gmpc-jamendo
+  MissingChksum: version 11.8.16: "gmpc-jamendo-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/ganeti-instance-debootstrap
-  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 2
+media-plugins/gmpc-last-fm
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+  MissingChksum: version 0.20.0: "gmpc-last-fm-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/ganeti-instance-image
-  NonExistentDeps: version 0.6: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
+media-plugins/gmpc-lyricwiki
+  MissingChksum: version 11.8.16: "gmpc-lyricwiki-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/hercules
-  DeprecatedEAPI: version 3.06: uses deprecated EAPI: 0
+media-plugins/gmpc-mdcover
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+  MissingChksum: version 0.20.0: "gmpc-mdcover-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/kvm-kmod
-  DeprecatedEAPI: version 3.3.6: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 3.4: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 3.6: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 3.8: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 3.10.1: uses deprecated EAPI: 2
+media-plugins/gmpc-mserver
+  MissingChksum: version 0.20.0: "gmpc-mserver-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/libspectrum
-  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 3
+media-plugins/gmpc-playlistsort
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+  MissingChksum: version 0.20.0: "gmpc-playlistsort-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/lxc
-  DroppedKeywordWarning: version 1.1.0-r6: keywords dropped: arm64, ppc64, x86
+media-plugins/gmpc-shout
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+  MissingChksum: version 0.20.0: "gmpc-shout-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/phpvirtualbox
-  DeprecatedEAPI: version 4.1.7-r2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 4.1.11: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 4.2.3b: uses deprecated EAPI: 2
+media-plugins/gmpc-tagedit
+  MissingChksum: version 11.8.16: "gmpc-tagedit-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/qemu
+media-plugins/gmpc-wikipedia
+  MissingChksum: version 11.8.16: "gmpc-wikipedia-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/grilo-plugins
+  DroppedKeywordWarning: version 0.2.13: keywords dropped: alpha, arm, ia64, sparc
+
+media-plugins/gst-plugins-dts
+  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
+
+media-plugins/gst-plugins-dv
+  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
+
+media-plugins/gst-plugins-ffmpeg
+  WhitespaceFound: version 0.10.13_p201211-r4: ebuild has trailing whitespace on line 63
+
+media-plugins/gst-plugins-libvisual
+  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
+
+media-plugins/gst-plugins-meta
+  DroppedKeywordWarning: version 1.0-r3: keywords dropped: arm64
+
+media-plugins/gst-plugins-mplex
+  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
+
+media-plugins/gst-plugins-shout2
+  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: sh
+
+media-plugins/gst-plugins-wavpack
+  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
+
+media-plugins/ir_lv2
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 3
+
+media-plugins/ladspa-bs2b
+  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.9.1: "ladspa-bs2b-0.9.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/libvisual-projectm
+  MissingChksum: version 2.0.1: "projectM_libvisual-2.0.1-Source.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/live
+  DeprecatedEAPI: version 2012.01.07: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2012.09.13: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2013.02.11: uses deprecated EAPI: 3
+
+media-plugins/mcp-plugins
+  MissingChksum: version 0.4.0: "MCP-plugins-0.4.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/mythplugins
+  DeprecatedEclass: version 0.26.0_p20130922: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.27_p20140321: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.27.1_p20140713: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.27.1_p20140817: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.27.3_p20140907: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.27.3_p20141009: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.27.4_p20141018: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.27.4_p20150124: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.27.5_p20150627: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+media-plugins/npapi-vlc
+  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  MissingChksum: version 2.0.0: "npapi-vlc-2.0.0.tar.xz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/rev-plugins
+  DeprecatedEAPI: version 0.3.1-r1: uses deprecated EAPI: 2
+  MissingChksum: version 0.3.1-r1: "REV-plugins-0.3.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/swh-lv2
+  DeprecatedEAPI: version 1.0.15: uses deprecated EAPI: 2
+  MissingChksum: version 1.0.15: "swh-lv2-1.0.15.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/swh-plugins
+  SizeViolation: "files/swh-plugins-0.4.15-glibc-2.10.patch" exceeds 20k in size; 27458 bytes total
+
+media-plugins/vamp-aubio-plugins
+  DeprecatedEAPI: version 0.3.2c: uses deprecated EAPI: 0
+
+media-plugins/vamp-libxtract-plugins
+  DeprecatedEAPI: version 0.6.6.20121204: uses deprecated EAPI: 2
+
+media-plugins/vco-plugins
+  MissingChksum: version 0.3.0: "VCO-plugins-0.3.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-admin
+  MissingChksum: version 0.8.0: "vdr-admin-0.8.0.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-alcd
+  MissingChksum: version 1.5.1: "vdr-alcd-1.5.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-arghdirector
+  MissingChksum: version 0.2.6: "vdr-arghdirector-0.2.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-avards
+  MissingChksum: version 0.2.4: "vdr-avards-0.2.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-beep
+  MissingChksum: version 0.1.2: "vdr-beep-0.1.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-bgprocess
+  MissingChksum: version 0.1.0: "vdr-bgprocess-0.1.0.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-browse
+  MissingChksum: version 0.2.0: "vdr-browse-0.2.0.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-burn-templates
+  MissingChksum: version 0.0.2: "vdr-burn-templates-0.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-calc
+  MissingChksum: version 0.0.1_rc5: "vdr-calc-0[1].0.1-rc5.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-chanman
+  MissingChksum: version 0.0.9: "vdr-chanman-0.0.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-channelblocker
+  MissingChksum: version 0.0.6: "vdr-channelblocker-0.0.6.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-cinebars
+  MissingChksum: version 0.0.5: "vdr-cinebars-0.0.5.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-cpumon
+  MissingChksum: version 0.0.6_p1: "vdr-cpumon-0.0.6a.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-extb
+  MissingChksum: version 0.3.1: "vdr-extb-0.3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.3.1: "extb_firmware_1.08_lircd.conf.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.3.1: "extb.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-lcdproc
+  MissingChksum: version 0.0.10.9: "vdr-lcdproc-0.0.10.9.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-mailbox
+  MissingChksum: version 0.6.0: "vdr-mailbox-0.6.0.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-osdserver
+  MissingChksum: version 0.1.2: "vdr-osdserver-0.1.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-picselshow
+  MissingChksum: version 0.0.2: "vdr-picselshow-0.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-pin
+  MissingChksum: version 0.1.9: "vdr-pin-0.1.9.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-powermate
+  ExecutableFile: "files/rc-addon.sh" has unnecessary executable bit
+  MissingChksum: version 0.0.5: "vdr-powermate-0.0.5.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-proxy
+  MissingChksum: version 0.1.4-r1: "vdr-proxy-0.1.4.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-pvr350
+  MissingChksum: version 1.7.3: "vdr-pvr350-1.7.3.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.7.4: "vdr-pvr350-1.7.4.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-quicktimer
+  MissingChksum: version 0.1.1: "vdr-quicktimer-0.1.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-radio
+  MissingChksum: version 0.9.0: "vdr-radio-0.9.0.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-radiolist
+  MissingChksum: version 0.0.2: "vdr-radiolist-0.0.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-recstatus
+  MissingChksum: version 0.0.8: "vdr-recstatus-0.0.8.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-rotor
+  MissingChksum: version 0.1.5: "vdr-rotor-0.1.5.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-scheduler
+  MissingChksum: version 0.1.3: "vdr-scheduler-0.1.3.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-span
+  MissingChksum: version 0.0.7: "vdr-span-0.0.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-streamdev
+  BadInsIntoDir: version 0.6.1: ebuild uses insinto /etc/conf.d on line 60
+
+media-plugins/vdr-spider
+  MissingChksum: version 0.2.2: "vdr-spider-0.2.2.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-sudoku
+  MissingChksum: version 0.3.5: "vdr-sudoku-0.3.5.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-suspendoutput
+  MissingChksum: version 1.0.1: "vdr-suspendoutput-1.0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-systeminfo
+  MissingChksum: version 0.1.1: "vdr-systeminfo-0.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-vcd
+  ExecutableFile: "files/rc-addon.sh" has unnecessary executable bit
+
+media-plugins/vdr-videosystem
+  MissingChksum: version 0.0.1: "vdr-videosystem-0.0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-vompserver
+  MissingChksum: version 0.3.1-r1: "vdr-vompserver-0.3.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-xvdr
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-emulation/simh
-  DeprecatedEAPI: version 3.3.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.8.1: uses deprecated EAPI: 0
-
-app-emulation/skyeye
-  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 2
-
-app-emulation/spectemu
-  DeprecatedEAPI: version 0.99.3: uses deprecated EAPI: 0
-
-app-emulation/spim
-  DeprecatedEAPI: version 8.0-r1: uses deprecated EAPI: 3
-
-app-emulation/virt-manager
+media-plugins/xbmc-addon-xvdr
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-emulation/virtualbox
-  ExecutableFile: "files/virtualbox-ose-3-wrapper" has unnecessary executable bit
-
-app-emulation/virtualbox-bin
-  ExecutableFile: "files/virtualbox-bin-3-wrapper" has unnecessary executable bit
-
-app-emulation/virtualbox-modules
-  ExecutableFile: "files/create_vbox_modules_tarball.sh" has unnecessary executable bit
-
-app-emulation/vmips
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
-
-app-emulation/vmips-cross-bin
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-
-app-emulation/vmware-modules
-  SizeViolation: "files/271-3.10.0.patch" exceeds 20k in size; 23418 bytes total
-
-app-emulation/vmware-tools
-  DeprecatedEAPI: version 9.2.3.1031769: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.6.1.1379776: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.6.2.1744117: uses deprecated EAPI: 0
-
-app-emulation/vov
-  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 0
-
-app-emulation/xen-tools
-  ExecutableFile: "files/xenstored.initd" has unnecessary executable bit
+media-plugins/xsynth-dssi
+  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.9.4: uses deprecated EAPI: 0
+  MissingChksum: version 0.9.2: "xsynth-dssi-0.9.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.9.4: "xsynth-dssi-0.9.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
