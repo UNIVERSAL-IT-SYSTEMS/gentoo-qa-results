@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 8 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'app-admin/*' 'app-emacs/*' 'x11-themes/*' 'kde-frameworks/*' 'mail-client/*' 'net-print/*' 'app-benchmarks/*' 'sci-calculators/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'app-admin/*' 'app-emacs/*' 'x11-themes/*' 'kde-frameworks/*' 'mail-client/*' 'dev-tcltk/*' 'app-benchmarks/*' 'sci-calculators/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -273,23 +273,23 @@ net-misc/goog-sitemapgen
   DeprecatedEclass: version 1.5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 net-misc/googlecl
+  DeprecatedEclass: version 0.9.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.9.14: uses deprecated EAPI: 3
   NonExistentDeps: version 0.9.14: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 0.9.14: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
-  DeprecatedEclass: version 0.9.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 net-misc/gsasl
   WhitespaceFound: version 1.8.0-r1: ebuild has leading whitespace on line 29
 
 net-misc/gsutil
-  DeprecatedEAPI: version 3.7: uses deprecated EAPI: 3
   DeprecatedEclass: version 3.7: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 3.14: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.7: uses deprecated EAPI: 3
   DeprecatedEclass: version 3.14: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 3.18: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.14: uses deprecated EAPI: 3
   DeprecatedEclass: version 3.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 3.21: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.18: uses deprecated EAPI: 3
   DeprecatedEclass: version 3.21: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.21: uses deprecated EAPI: 3
 
 net-misc/gtkvncviewer
   DeprecatedEclass: version 0.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -409,8 +409,8 @@ net-misc/memcached
 
 net-misc/mico
   DeprecatedEAPI: version 2.3.13-r7: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ darcs (no replacement) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
 
 net-misc/mikutter
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -567,8 +567,8 @@ net-misc/openvpn
   ExecutableFile: "files/up.sh" has unnecessary executable bit
 
 net-misc/orbited
-  DeprecatedEAPI: version 0.7.10-r1: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.7.10-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.7.10-r1: uses deprecated EAPI: 3
 
 net-misc/pedro
   DeprecatedEAPI: version 1.6: uses deprecated EAPI: 2
@@ -588,8 +588,8 @@ net-misc/proxyper
   MissingChksum: version 341a: "proxyper341a-linux-x86-uclibc.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-misc/pymazon
-  DeprecatedEAPI: version 0.9-r1: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.9-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.9-r1: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.9.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0.9-r1: "Pymazon-0.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.9.1: "Pymazon-0.9.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -624,8 +624,8 @@ net-misc/rinetd
   MissingChksum: version 0.62-r1: "rinetd.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-misc/s3cmd
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.0.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 3
 
 net-misc/secpanel
   DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 2
@@ -735,8 +735,8 @@ net-misc/tlsdate
   ExecutableFile: "files/tlsdated.rc" has unnecessary executable bit
 
 net-misc/tn5250
-  DeprecatedEAPI: version 0.17.4: uses deprecated EAPI: 0
   DeprecatedEclass: version 0.17.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.17.4: uses deprecated EAPI: 0
   MissingChksum: version 0.17.4: "tn5250-0.17.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-misc/tokyotyrant
@@ -796,8 +796,8 @@ net-misc/yaydl
 
 net-misc/youtube-viewer
   NonExistentDeps: version 3.1.1: depset rdepends: nonexistent atoms [ media-video/mplayer2 ]
-  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ media-video/mplayer2 ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ media-video/mplayer2 ]
 
 net-misc/zssh
   WhitespaceFound: version 1.5c-r1: ebuild has leading whitespace on line 38
@@ -926,8 +926,8 @@ app-admin/packagekit
   DeprecatedEAPI: version 0.7.4: uses deprecated EAPI: 3
 
 app-admin/packagekit-base
-  DeprecatedEAPI: version 0.7.4: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.7.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.7.4: uses deprecated EAPI: 3
 
 app-admin/packagekit-gtk
   DeprecatedEAPI: version 0.7.4: uses deprecated EAPI: 3
@@ -1037,8 +1037,8 @@ app-emacs/prom-wl
   DeprecatedEAPI: version 2.7.0-r1: uses deprecated EAPI: 0
 
 app-emacs/pymacs
-  DeprecatedEAPI: version 0.23-r1: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.23-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.23-r1: uses deprecated EAPI: 3
 
 app-emacs/python-mode
   DeprecatedEAPI: version 5.2.0: uses deprecated EAPI: 3
@@ -1757,82 +1757,58 @@ mail-client/trojita
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-net-print/adobeps
-  MissingChksum: version 1.0.6-r1: "winstDan.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstspa.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstfin.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstfre.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstita.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstjpn.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstkor.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstdut.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstnor.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstbrz.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstswe.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "Winstchs.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+dev-tcltk/blt
+  DeprecatedEAPI: version 2.4z-r10: uses deprecated EAPI: 3
 
-net-print/apsfilter
-  DeprecatedEAPI: version 7.2.5: uses deprecated EAPI: 0
-  MissingChksum: version 7.2.5: "apsfilter-7.2.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+dev-tcltk/expect
+  DeprecatedEAPI: version 5.44.1.15: uses deprecated EAPI: 3
 
-net-print/cups-filters
-  WhitespaceFound: version 1.0.66: ebuild has leading whitespace on line 66
-  WrongIndentFound: version 1.0.66: ebuild has whitespace in indentation on line 66
-  WhitespaceFound: version 1.0.71: ebuild has leading whitespace on line 68
-  WrongIndentFound: version 1.0.71: ebuild has whitespace in indentation on line 68
-  WhitespaceFound: version 9999: ebuild has leading whitespace on line 66
-  WrongIndentFound: version 9999: ebuild has whitespace in indentation on line 66
+dev-tcltk/expect-lite
+  DeprecatedEAPI: version 4.0.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.1.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.1.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.2.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.2.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.2.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.4.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.4.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.5.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.6.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.6.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.6.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.7.2: uses deprecated EAPI: 0
 
-net-print/cups-pdf
-  MissingChksum: version 2.6.1: "cups-pdf_2.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+dev-tcltk/iwidgets
+  DeprecatedEAPI: version 4.0.1: uses deprecated EAPI: 0
 
-net-print/cups-windows
-  MissingChksum: version 6.0-r1: "cups-windows-6.0-source.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+dev-tcltk/scwoop
+  DeprecatedEAPI: version 4.1: uses deprecated EAPI: 0
 
-net-print/gmso2
-  MissingChksum: version 0.1-r1: "gmso2-0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+dev-tcltk/snack
+  DeprecatedEclass: version 2.2.10-r5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-net-print/kyocera-mita-ppds
-  DeprecatedEAPI: version 8.4: uses deprecated EAPI: 0
-  MissingChksum: version 8.4: "Linux_PPDs_KSL8_4.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+dev-tcltk/tcllib
+  SizeViolation: "files/tcllib-1.15-XSS-vuln.patch" exceeds 20k in size; 29465 bytes total
+  DroppedKeywordWarning: version 1.16: keywords dropped: alpha, ia64, mips, ppc64, s390, sparc
 
-net-print/libinklevel
-  DeprecatedEAPI: version 0.8.0-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.8.0-r1: "libinklevel-0.8.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+dev-tcltk/tkcon
+  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
 
-net-print/magicfilter
-  MissingChksum: version 2.3h: "magicfilter-2.3.h.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+dev-tcltk/tkpiechart
+  DeprecatedEAPI: version 6.5-r1: uses deprecated EAPI: 0
 
-net-print/mtink
-  MissingChksum: version 1.0.16-r1: "mtink-1.0.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+dev-tcltk/tktable
+  DeprecatedEAPI: version 2.10: uses deprecated EAPI: 2
 
-net-print/npadmin
-  DeprecatedEAPI: version 0.8.7: uses deprecated EAPI: 0
-  MissingChksum: version 0.8.7: "npadmin-0.8.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+dev-tcltk/tktreectrl
+  DeprecatedEAPI: version 2.2.9: uses deprecated EAPI: 3
 
-net-print/pkpgcounter
-  DeprecatedEAPI: version 3.50-r1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 3.50-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-net-print/pnm2ppa
-  MissingChksum: version 1.13-r1: "pnm2ppa-1.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-print/poster
-  MissingChksum: version 20060221: "poster-20060221.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-print/pykota
-  DeprecatedEAPI: version 1.26: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.26: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-net-print/splix
-  MissingChksum: version 2.0.0_p20111206: "splix-2.0.0_p20111206.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-print/sshlpr
-  MissingChksum: version 1: "sshlpr-1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-print/xerox-drivers
-  DeprecatedEAPI: version 0_p20080123: uses deprecated EAPI: 2
-  MissingChksum: version 0_p20080123: "LinuxCupsPrinterPkg.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+dev-tcltk/vtcl
+  DeprecatedEAPI: version 1.6.0-r1: uses deprecated EAPI: 0
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
