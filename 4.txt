@@ -31,6 +31,584 @@ dev-ruby/blankslate
 
 dev-ruby/capistrano
   DroppedKeywordWarning: version 3.3.5: keywords dropped: ppc, ppc64, x86
+ERROR root: check <pkgcheck.deprecated.DeprecatedEclassReport object at
+          : 0x7f3b56f46350> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
+          : 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/deprecated.py", line
+          : 133, in feed
+ERROR root:     bad = set(self.blacklist.keys()).intersection(pkg.inherited)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 177, in get_inherited
+ERROR root:     return tuple(sorted(self.data.get('_eclasses_', {})))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
+          : line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 274, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 365, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 373, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 835, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 768, in _run_depend_like_phase
+ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
+          : append_newline=False)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : dev-ruby/contracts-0.11.0, attr inherited
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : dev-ruby/contracts-0.11.0, attr data
+ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR root: check <pkgcheck.metadata_checks.IUSEMetadataReport object at
+          : 0x7f3b56f46550> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
+          : 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/metadata_checks.py",
+          : line 118, in feed
+ERROR root:     iuse =
+          : pkg.iuse_stripped.difference(self.iuse_handler.allowed_iuse(pkg))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 235, in iuse_stripped
+ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 213, in <lambda>
+ERROR root:     s.data.pop("IUSE", "").split()))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
+          : line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 274, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 365, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 373, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 835, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 768, in _run_depend_like_phase
+ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
+          : append_newline=False)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : dev-ruby/contracts-0.11.0, attr iuse
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : dev-ruby/contracts-0.11.0, attr data
+ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+
+dev-ruby/contracts
+  MetadataError: version 0.11.0: attr(fetchables): error- Metadata Exception: pkg ebuild src: dev-ruby/contracts-0.11.0, attr fetchables
+error: Metadata Exception: pkg ebuild src: dev-ruby/contracts-0.11.0, attr data
+error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR root: check <pkgcheck.metadata_checks.DescriptionReport object at
+          : 0x7f3b56f461d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
+          : 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/metadata_checks.py",
+          : line 360, in feed
+ERROR root:     s = pkg.description.lower()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 205, in <lambda>
+ERROR root:     _get_attr["description"] = lambda s:s.data.pop("DESCRIPTION",
+          : "").strip()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
+          : line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 274, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 365, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 373, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 835, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 768, in _run_depend_like_phase
+ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
+          : append_newline=False)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : dev-ruby/contracts-0.11.0, attr description
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : dev-ruby/contracts-0.11.0, attr data
+ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR root: check <pkgcheck.metadata_checks.KeywordsReport object at
+          : 0x7f3b56f46150> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
+          : 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/metadata_checks.py",
+          : line 235, in feed
+ERROR root:     if "-*" in pkg.keywords and len(pkg.keywords) == 1:
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 207, in <lambda>
+ERROR root:     s.data.pop("KEYWORDS", "").split()))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
+          : line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 274, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 365, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 373, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 835, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 768, in _run_depend_like_phase
+ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
+          : append_newline=False)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : dev-ruby/contracts-0.11.0, attr keywords
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : dev-ruby/contracts-0.11.0, attr data
+ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR root: check <pkgcheck.visibility.VisibilityReport object at
+          : 0x7f3b56f462d0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
+          : 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 214, in feed
+ERROR root:     for eclass in pkg.inherited:
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 177, in get_inherited
+ERROR root:     return tuple(sorted(self.data.get('_eclasses_', {})))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
+          : line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 274, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 365, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 373, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 835, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 768, in _run_depend_like_phase
+ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
+          : append_newline=False)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : dev-ruby/contracts-0.11.0, attr inherited
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : dev-ruby/contracts-0.11.0, attr data
+ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+  MetadataError: version 0.11.0: attr(depends): error- Metadata Exception: pkg ebuild src: dev-ruby/contracts-0.11.0, attr depends
+error: Metadata Exception: pkg ebuild src: dev-ruby/contracts-0.11.0, attr data
+error: bytes_ro_StringIO instance has no attribute '__len__'
+  MetadataError: version 0.11.0: attr(rdepends): error- Metadata Exception: pkg ebuild src: dev-ruby/contracts-0.11.0, attr rdepends
+error: Metadata Exception: pkg ebuild src: dev-ruby/contracts-0.11.0, attr data
+error: bytes_ro_StringIO instance has no attribute '__len__'
+  MetadataError: version 0.11.0: attr(post_rdepends): error- Metadata Exception: pkg ebuild src: dev-ruby/contracts-0.11.0, attr post_rdepends
+error: Metadata Exception: pkg ebuild src: dev-ruby/contracts-0.11.0, attr data
+error: bytes_ro_StringIO instance has no attribute '__len__'
+  MetadataError: version 0.11.0: attr(license): error- Metadata Exception: pkg ebuild src: dev-ruby/contracts-0.11.0, attr license
+error: Metadata Exception: pkg ebuild src: dev-ruby/contracts-0.11.0, attr data
+error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR root: check <pkgcheck.metadata_checks.RestrictsReport object at
+          : 0x7f3b5734fb10> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
+          : 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/metadata_checks.py",
+          : line 429, in feed
+ERROR root:     i = self.iuse_filter((basestring,), pkg, pkg.restrict,
+          : reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 209, in <lambda>
+ERROR root:     s.data.pop("RESTRICT", ''), str, operators={},
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
+          : line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 274, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 365, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 373, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 835, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 768, in _run_depend_like_phase
+ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
+          : append_newline=False)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : dev-ruby/contracts-0.11.0, attr restrict
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : dev-ruby/contracts-0.11.0, attr data
+ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR root: check <pkgcheck.metadata_checks.UnusedLocalFlagsReport object at
+          : 0x7f3b56f24e90> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
+          : 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/metadata_checks.py",
+          : line 166, in feed
+ERROR root:     unused.difference_update(pkg.iuse_stripped)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 235, in iuse_stripped
+ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 213, in <lambda>
+ERROR root:     s.data.pop("IUSE", "").split()))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
+          : line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 274, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 365, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 373, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 835, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 768, in _run_depend_like_phase
+ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
+          : append_newline=False)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : dev-ruby/contracts-0.11.0, attr iuse
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : dev-ruby/contracts-0.11.0, attr data
+ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR root: check <pkgcheck.dropped_keywords.DroppedKeywordsReport object at
+          : 0x7f3b56f24dd0> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
+          : 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/dropped_keywords.py",
+          : line 45, in feed
+ERROR root:     state = set(x.lstrip("~") for x in lastpkg.keywords)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 207, in <lambda>
+ERROR root:     s.data.pop("KEYWORDS", "").split()))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
+          : line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 274, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 365, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 373, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 835, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 768, in _run_depend_like_phase
+ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
+          : append_newline=False)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : dev-ruby/contracts-0.11.0, attr keywords
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : dev-ruby/contracts-0.11.0, attr data
+ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR root: check <pkgcheck.repo_metadata.RequiredChksums object at
+          : 0x7f3b5734fb50> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
+          : 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/repo_metadata.py",
+          : line 201, in feed
+ERROR root:     for f_inst in (iflatten_instance(pkg.fetchables,
+          : fetch.fetchable)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 92, in generate_fetchables
+ERROR root:     self.data.pop("SRC_URI", ""), fetchable, operators={},
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
+          : line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 274, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 365, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 373, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 835, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 768, in _run_depend_like_phase
+ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
+          : append_newline=False)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : dev-ruby/contracts-0.11.0, attr fetchables
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : dev-ruby/contracts-0.11.0, attr data
+ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
 
 dev-ruby/dalli
   DroppedKeywordWarning: version 2.7.4-r1: keywords dropped: alpha, ppc
