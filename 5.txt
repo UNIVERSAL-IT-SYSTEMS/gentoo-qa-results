@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 5 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'media-video/*' 'app-leechcraft/*' 'net-mail/*' 'app-portage/*' 'sci-geosciences/*' 'games-strategy/*' 'sys-firmware/*' 'kde-plasma/*' 'dev-go/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'media-video/*' 'app-leechcraft/*' 'net-mail/*' 'app-portage/*' 'sci-geosciences/*' 'games-strategy/*' 'sys-firmware/*' 'kde-plasma/*' 'games-simulation/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1832,7 +1832,6 @@ kde-plasma/plasma-workspace
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-dev-go/go-spew
-  DoubleEmptyLine: version 0_pre20150619: ebuild has unneeded empty line 10
-  DoubleEmptyLine: version 9999: ebuild has unneeded empty line 10
+games-simulation/openttd
+  ExecutableFile: "files/openttd.initd" has unnecessary executable bit
 + [[ 0 == 0 ]]
