@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 7 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-lang/*' 'dev-ml/*' 'net-wireless/*' 'net-dns/*' 'net-firewall/*' 'dev-tcltk/*' 'lxqt-base/*' 'xfce-base/*' 'dev-go/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'media-libs/*' 'dev-lang/*' 'dev-ml/*' 'net-wireless/*' 'kde-frameworks/*' 'net-firewall/*' 'dev-tcltk/*' 'lxqt-base/*' 'xfce-base/*' 'dev-go/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -375,8 +375,8 @@ media-libs/mash
 
 media-libs/mesa
   DeprecatedEAPI: version 7.10.3: uses deprecated EAPI: 3
-  DeprecatedEclass: version 7.10.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   VulnerablePackage: version 7.10.3: vulnerable via glsa(201404-06) ( ver < 9.1.4 ), keywords ('alpha', 'amd64', 'amd64-linux', 'arm', 'ia64', 'ia64-linux', 'mips', 'ppc', 'ppc64', 'sh', 'sparc', 'sparc-solaris', 'x64-solaris', 'x86', 'x86-fbsd', 'x86-freebsd', 'x86-linux', 'x86-solaris')
+  DeprecatedEclass: version 7.10.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   SizeViolation: "files/mesa-10.3.7-format_utils.c.patch" exceeds 20k in size; 34839 bytes total
 
 media-libs/ming
@@ -940,87 +940,6 @@ net-wireless/ubertooth
   DeprecatedEclass: version 2014.04.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
-
-net-dns/avahi
-  DroppedKeywordWarning: version 0.6.31-r7: keywords dropped: m68k
-
-net-dns/bind
-  DeprecatedEclass: version 9.9.5-r3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  VulnerablePackage: version 9.9.5-r3: vulnerable via glsa(201502-03) ( ver < 9.10.1_p1 ), keywords ('alpha', 'amd64', 'amd64-linux', 'arm', 'hppa', 'ia64', 'mips', 'ppc', 'ppc-macos', 'ppc64', 's390', 'sh', 'sparc', 'sparc-solaris', 'sparc64-solaris', 'x64-macos', 'x64-solaris', 'x86', 'x86-fbsd', 'x86-linux', 'x86-macos', 'x86-solaris')
-  ExecutableFile: "files/generate-rndc-key.sh" has unnecessary executable bit
-
-net-dns/bind-dns-keygen
-  DeprecatedEAPI: version 9.3.2.39-r1: uses deprecated EAPI: 0
-
-net-dns/c-ares
-  DeprecatedEAPI: version 1.7.4: uses deprecated EAPI: 2
-  DroppedKeywordWarning: version 1.10.0: keywords dropped: arm64
-
-net-dns/cagibi
-  MissingChksum: version 0.2.0: "cagibi-0.2.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dns/dnrd
-  DeprecatedEAPI: version 2.20.3-r1: uses deprecated EAPI: 0
-  MissingChksum: version 2.20.3-r1: "dnrd-2.20.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dns/dnssec-check
-  DroppedKeywordWarning: version 2.1: keywords dropped: amd64, x86
-
-net-dns/dnssec-root
-  DeprecatedEAPI: version 20100715: uses deprecated EAPI: 0
-  WhitespaceFound: version 20150403: ebuild has trailing whitespace on line 13
-
-net-dns/hesinfo
-  DeprecatedEAPI: version 3.1.0: uses deprecated EAPI: 2
-  MissingChksum: version 3.1.0: "hesinfo-3.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-dns/hesiod
-  DeprecatedEAPI: version 3.1.0: uses deprecated EAPI: 2
-  MissingChksum: version 3.1.0: "hesiod-3.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.1.0: "hesiod-3.1.0-patches.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dns/host
-  DeprecatedEAPI: version 20070128-r1: uses deprecated EAPI: 2
-
-net-dns/knot
-  DroppedKeywordWarning: version 2.0.0_beta: keywords dropped: amd64, x86
-
-net-dns/ldns-utils
-  DeprecatedEAPI: version 1.6.12: uses deprecated EAPI: 3
-
-net-dns/ndu
-  DeprecatedEAPI: version 0.4-r4: uses deprecated EAPI: 0
-  MissingChksum: version 0.4-r4: "ndu-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-dns/odsclient
-  DeprecatedEAPI: version 1.03-r1: uses deprecated EAPI: 2
-
-net-dns/pdns-recursor
-  VulnerablePackage: version 3.5.3-r1: vulnerable via glsa(201412-33) ( ver-rev < 3.6.1-r1 ), keywords ('amd64', 'x86')
-  VulnerablePackage: version 3.6.1: vulnerable via glsa(201412-33) ( ver-rev < 3.6.1-r1 ), keywords ('amd64', 'x86')
-
-net-dns/rbldnsd
-  DeprecatedEAPI: version 0.996b: uses deprecated EAPI: 0
-
-net-dns/tinystats
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
-  MissingChksum: version 1.1: "tinystats-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dns/totd
-  ExecutableFile: "files/totd" has unnecessary executable bit
-  MissingChksum: version 1.5.1: "totd-1.5.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dns/unbound
-  DroppedKeywordWarning: version 1.5.1-r2: keywords dropped: ia64, m68k, mips, s390, sh, sparc
-  DroppedKeywordWarning: version 1.5.2: keywords dropped: alpha
-
-net-dns/updatedd
-  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 0
-  MissingChksum: version 2.6: "updatedd_2.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-dns/valtz
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
-  MissingChksum: version 0.7: "valtz.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 

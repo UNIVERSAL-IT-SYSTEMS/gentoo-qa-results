@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 8 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'app-admin/*' 'app-emacs/*' 'x11-themes/*' 'kde-frameworks/*' 'mail-client/*' 'sci-visualization/*' 'app-benchmarks/*' 'sci-calculators/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'app-admin/*' 'app-emacs/*' 'x11-themes/*' 'net-dns/*' 'mail-client/*' 'sci-visualization/*' 'app-benchmarks/*' 'sci-calculators/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -273,23 +273,23 @@ net-misc/goog-sitemapgen
   DeprecatedEclass: version 1.5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 net-misc/googlecl
+  DeprecatedEclass: version 0.9.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.9.14: uses deprecated EAPI: 3
   NonExistentDeps: version 0.9.14: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
   NonExistentDeps: version 0.9.14: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
-  DeprecatedEclass: version 0.9.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 net-misc/gsasl
   WhitespaceFound: version 1.8.0-r1: ebuild has leading whitespace on line 29
 
 net-misc/gsutil
-  DeprecatedEAPI: version 3.7: uses deprecated EAPI: 3
   DeprecatedEclass: version 3.7: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 3.14: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.7: uses deprecated EAPI: 3
   DeprecatedEclass: version 3.14: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 3.18: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.14: uses deprecated EAPI: 3
   DeprecatedEclass: version 3.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 3.21: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.18: uses deprecated EAPI: 3
   DeprecatedEclass: version 3.21: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.21: uses deprecated EAPI: 3
 
 net-misc/gtkvncviewer
   DeprecatedEclass: version 0.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -409,8 +409,8 @@ net-misc/memcached
 
 net-misc/mico
   DeprecatedEAPI: version 2.3.13-r7: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ darcs (no replacement) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
 
 net-misc/mikutter
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -567,8 +567,8 @@ net-misc/openvpn
   ExecutableFile: "files/up.sh" has unnecessary executable bit
 
 net-misc/orbited
-  DeprecatedEAPI: version 0.7.10-r1: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.7.10-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.7.10-r1: uses deprecated EAPI: 3
 
 net-misc/pedro
   DeprecatedEAPI: version 1.6: uses deprecated EAPI: 2
@@ -588,8 +588,8 @@ net-misc/proxyper
   MissingChksum: version 341a: "proxyper341a-linux-x86-uclibc.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-misc/pymazon
-  DeprecatedEAPI: version 0.9-r1: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.9-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.9-r1: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.9.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0.9-r1: "Pymazon-0.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.9.1: "Pymazon-0.9.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -624,8 +624,8 @@ net-misc/rinetd
   MissingChksum: version 0.62-r1: "rinetd.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-misc/s3cmd
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.0.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 3
 
 net-misc/secpanel
   DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 2
@@ -735,8 +735,8 @@ net-misc/tlsdate
   ExecutableFile: "files/tlsdated.rc" has unnecessary executable bit
 
 net-misc/tn5250
-  DeprecatedEAPI: version 0.17.4: uses deprecated EAPI: 0
   DeprecatedEclass: version 0.17.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.17.4: uses deprecated EAPI: 0
   MissingChksum: version 0.17.4: "tn5250-0.17.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-misc/tokyotyrant
@@ -796,8 +796,8 @@ net-misc/yaydl
 
 net-misc/youtube-viewer
   NonExistentDeps: version 3.1.1: depset rdepends: nonexistent atoms [ media-video/mplayer2 ]
-  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ media-video/mplayer2 ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ media-video/mplayer2 ]
 
 net-misc/zssh
   WhitespaceFound: version 1.5c-r1: ebuild has leading whitespace on line 38
@@ -926,8 +926,8 @@ app-admin/packagekit
   DeprecatedEAPI: version 0.7.4: uses deprecated EAPI: 3
 
 app-admin/packagekit-base
-  DeprecatedEAPI: version 0.7.4: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.7.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.7.4: uses deprecated EAPI: 3
 
 app-admin/packagekit-gtk
   DeprecatedEAPI: version 0.7.4: uses deprecated EAPI: 3
@@ -1037,8 +1037,8 @@ app-emacs/prom-wl
   DeprecatedEAPI: version 2.7.0-r1: uses deprecated EAPI: 0
 
 app-emacs/pymacs
-  DeprecatedEAPI: version 0.23-r1: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.23-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.23-r1: uses deprecated EAPI: 3
 
 app-emacs/python-mode
   DeprecatedEAPI: version 5.2.0: uses deprecated EAPI: 3
@@ -1653,6 +1653,86 @@ x11-themes/yasis-icon-theme
   MissingChksum: version 0.4.2: "yasis-0.4.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
+
+net-dns/avahi
+  DroppedKeywordWarning: version 0.6.31-r7: keywords dropped: m68k
+
+net-dns/bind
+  UnusedLocalFlags: metadata.xml unused local use flags: [ rrl, sdb-ldap ]
+  ExecutableFile: "files/generate-rndc-key.sh" has unnecessary executable bit
+
+net-dns/bind-dns-keygen
+  DeprecatedEAPI: version 9.3.2.39-r1: uses deprecated EAPI: 0
+
+net-dns/c-ares
+  DeprecatedEAPI: version 1.7.4: uses deprecated EAPI: 2
+  DroppedKeywordWarning: version 1.10.0: keywords dropped: arm64
+
+net-dns/cagibi
+  MissingChksum: version 0.2.0: "cagibi-0.2.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dns/dnrd
+  DeprecatedEAPI: version 2.20.3-r1: uses deprecated EAPI: 0
+  MissingChksum: version 2.20.3-r1: "dnrd-2.20.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dns/dnssec-check
+  DroppedKeywordWarning: version 2.1: keywords dropped: amd64, x86
+
+net-dns/dnssec-root
+  DeprecatedEAPI: version 20100715: uses deprecated EAPI: 0
+  WhitespaceFound: version 20150403: ebuild has trailing whitespace on line 13
+
+net-dns/hesinfo
+  DeprecatedEAPI: version 3.1.0: uses deprecated EAPI: 2
+  MissingChksum: version 3.1.0: "hesinfo-3.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-dns/hesiod
+  DeprecatedEAPI: version 3.1.0: uses deprecated EAPI: 2
+  MissingChksum: version 3.1.0: "hesiod-3.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 3.1.0: "hesiod-3.1.0-patches.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dns/host
+  DeprecatedEAPI: version 20070128-r1: uses deprecated EAPI: 2
+
+net-dns/knot
+  DroppedKeywordWarning: version 2.0.0_beta: keywords dropped: amd64, x86
+
+net-dns/ldns-utils
+  DeprecatedEAPI: version 1.6.12: uses deprecated EAPI: 3
+
+net-dns/ndu
+  DeprecatedEAPI: version 0.4-r4: uses deprecated EAPI: 0
+  MissingChksum: version 0.4-r4: "ndu-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-dns/odsclient
+  DeprecatedEAPI: version 1.03-r1: uses deprecated EAPI: 2
+
+net-dns/pdns-recursor
+  VulnerablePackage: version 3.5.3-r1: vulnerable via glsa(201412-33) ( ver-rev < 3.6.1-r1 ), keywords ('amd64', 'x86')
+  VulnerablePackage: version 3.6.1: vulnerable via glsa(201412-33) ( ver-rev < 3.6.1-r1 ), keywords ('amd64', 'x86')
+
+net-dns/rbldnsd
+  DeprecatedEAPI: version 0.996b: uses deprecated EAPI: 0
+
+net-dns/tinystats
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
+  MissingChksum: version 1.1: "tinystats-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dns/totd
+  ExecutableFile: "files/totd" has unnecessary executable bit
+  MissingChksum: version 1.5.1: "totd-1.5.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dns/unbound
+  DroppedKeywordWarning: version 1.5.1-r2: keywords dropped: ia64, m68k, mips, s390, sh, sparc
+  DroppedKeywordWarning: version 1.5.2: keywords dropped: alpha
+
+net-dns/updatedd
+  DeprecatedEAPI: version 2.6: uses deprecated EAPI: 0
+  MissingChksum: version 2.6: "updatedd_2.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dns/valtz
+  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
+  MissingChksum: version 0.7: "valtz.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -1779,16 +1859,16 @@ sci-visualization/nonolith-connect
   ExecutableFile: "files/nonolith-connect.initd" has unnecessary executable bit
 
 sci-visualization/pyxplot
-  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 2
   DeprecatedEclass: version 0.7.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 2
   MissingChksum: version 0.7.1: "pyxplot_0.7.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-visualization/spyview
   DroppedKeywordWarning: version 20130823: keywords dropped: amd64
 
 sci-visualization/veusz
-  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.11: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
   MissingChksum: version 1.11: "veusz-1.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-visualization/xds-viewer
