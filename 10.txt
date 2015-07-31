@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 10 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'sys-fs/*' 'www-apps/*' 'x11-drivers/*' 'games-puzzle/*' 'sys-process/*' 'net-proxy/*' 'x11-proto/*' 'x11-base/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'sys-fs/*' 'www-apps/*' 'x11-drivers/*' 'games-puzzle/*' 'sys-process/*' 'gnustep-apps/*' 'x11-proto/*' 'x11-base/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -48,8 +48,8 @@ media-sound/ams
   MissingChksum: version 2.0.1: "ams-2.0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/apetag
-  DeprecatedEclass: version 1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.12: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 1.12: "apetag.1.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/ardour
@@ -145,8 +145,8 @@ media-sound/combine_wave
   MissingChksum: version 0.3.1-r1: "combine_wave-0.3.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/cplay
-  DeprecatedEclass: version 1.49: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.49: uses deprecated EAPI: 2
+  DeprecatedEclass: version 1.49: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 1.49: "cplay-1.49.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/cvoicecontrol
@@ -182,10 +182,10 @@ media-sound/easytag
   DroppedKeywordWarning: version 2.2.2: keywords dropped: ppc, sparc
 
 media-sound/ecasound
-  DeprecatedEclass: version 2.6.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.6.0: uses deprecated EAPI: 3
-  DeprecatedEclass: version 2.8.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 2.6.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.8.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.8.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 2.9.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 2.9.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 2.6.0: "ecasound-2.6.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -199,10 +199,10 @@ media-sound/erec
   MissingChksum: version 2.2.0.1: "erec-2.2.0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/exaile
-  DeprecatedEclass: version 0.3.2.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.3.2.0: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.3.2.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.3.2.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.3.2.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.2.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingChksum: version 0.3.2.0: "exaile-0.3.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.3.2.1: "exaile-0.3.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
@@ -227,84 +227,4 @@ media-sound/fluid-soundfont
   MissingChksum: version 3.1: "timidity.cfg.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/freebirth
-  DeprecatedEAPI: version 0.3.2-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.3.2-r1: "freebirth-0.3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-media-sound/freewheeling
-  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 2
-
-media-sound/gbsplay
-  MetadataError: version 0.0.91-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: media-sound/gbsplay-0.0.91-r1, attr fetchables
-error: mirror://berlios/gbsplay/gbsplay-0.0.91.tar.gz is unparseable
-flagged token- uri mirror://berlios/gbsplay/gbsplay-0.0.91.tar.gz isn't a known mirror tier
-
-media-sound/gigedit
-  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 3
-  MissingChksum: version 0.2.0: "gigedit-0.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-sound/glmix
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 2
-  MissingChksum: version 0.3: "glmix-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-sound/glurp
-  MissingChksum: version 0.12.3: "glurp-0.12.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-sound/gmorgan
-  DeprecatedEAPI: version 0.25-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 2
-  MissingChksum: version 0.25-r1: "gmorgan-0.25.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.39: "gmorgan_0.39.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-sound/gmpc
-  ExecutableFile: "files/gmpc-11.8.16-icons.patch" has unnecessary executable bit
-
-media-sound/gmusicbrowser
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-
-media-sound/gnump3d
-  DeprecatedEAPI: version 3.0-r1: uses deprecated EAPI: 0
-
-media-sound/gom
-  DeprecatedEAPI: version 0.29.103-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.29.103-r1: "gom-0.29.103.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-media-sound/gqmpeg
-  MissingChksum: version 0.91.1: "gqmpeg-0.91.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-sound/gramofile
-  DeprecatedEAPI: version 1.6-r1: uses deprecated EAPI: 2
-
-media-sound/grip
-  DeprecatedEAPI: version 3.3.1-r3: uses deprecated EAPI: 2
-  MissingChksum: version 3.3.1-r3: "grip-3.3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-sound/gstreamripper
-  MissingChksum: version 0.2: "GStreamripperX-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-sound/gtick
-  MissingChksum: version 0.5.0: "gtick-0.5.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-sound/gtkguitune
-  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 2
-  MissingChksum: version 0.8: "gtkguitune-gtk2-0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-media-sound/guimup
-  MissingChksum: version 0.3.2: "guimup_0.3.2_src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-sound/hearnet
-  DeprecatedEAPI: version 0.0.9: uses deprecated EAPI: 0
-  MissingChksum: version 0.0.9: "hearnet-0.0.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-sound/herrie
-  DeprecatedEAPI: version 2.2: uses deprecated EAPI: 2
-  MissingChksum: version 2.2: "herrie-2.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-sound/horgand
-  MetadataError: version 1.14: attr(fetchables): error- Metadata Exception: pkg ebuild src: media-sound/horgand-1.14, attr fetchables
-error: mirror://berlios/horgand/horgand-1.14.tar.gz is unparseable
-flagged token- uri mirror://berlios/horgand/horgand-1.14.tar.gz isn't a known mirror tier
-  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 2
-
-media-sound/icecream
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
-  MissingChksum: version 1.3: "icecream-1.3.tar.gz" missing required chksums: sha512, whirlp
+  Deprecat
