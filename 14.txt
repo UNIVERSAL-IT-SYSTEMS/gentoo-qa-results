@@ -5,3 +5,1144 @@
 + [[ 14 == global ]]
 + set +x
 + pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'sys-devel/*' 'kde-apps/*' 'x11-wm/*' 'net-im/*' 'games-misc/*' 'x11-terms/*' 'games-util/*' 'gnustep-base/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
+               : error range rlt version 5.5.34 is a guaranteed empty set
+
+media-plugins/amb-plugins
+  DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 3
+  MissingChksum: version 0.8.1: "AMB-plugins-0.8.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/audacious-dumb
+  MissingChksum: version 0.65: "audacious-dumb-0.65.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.73: "audacious-dumb-0.73.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.74: "audacious-dumb-0.74.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.80: "audacious-dumb-0.80.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/audacious-plugins
+  DeprecatedEAPI: version 2.4.4-r1: uses deprecated EAPI: 3
+  VulnerablePackage: version 2.4.4-r1: vulnerable via glsa(201203-14) ( ver < 3.1 ), keywords ('alpha', 'amd64', 'amd64-linux', 'hppa', 'ppc', 'ppc64', 'sparc', 'x86', 'x86-fbsd', 'x86-freebsd', 'x86-interix', 'x86-linux')
+  VulnerablePackage: version 2.5.4: vulnerable via glsa(201203-14) ( ver < 3.1 ), keywords ('alpha', 'amd64', 'amd64-linux', 'hppa', 'ppc', 'ppc64', 'sparc', 'x86', 'x86-fbsd', 'x86-freebsd', 'x86-interix', 'x86-linux')
+
+media-plugins/banshee-community-extensions
+  DeprecatedEclass: version 2.2.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 2.4.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 2.4.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
+             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
+             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
+ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
+             : sys-devel/gettext-0.19.4, attr data
+ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR pkgcore: None
+ERROR root: check <pkgcheck.visibility.VisibilityReport object at
+          : 0x7f197d8f0190> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
+          : 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 264, in feed
+ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in process_depset
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in <genexpr>
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
+          : ", line 247, in match
+ERROR root:     if not rest.match(vals):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 207, in <lambda>
+ERROR root:     s.data.pop("KEYWORDS", "").split()))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
+          : line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 274, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 365, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 373, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 835, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 768, in _run_depend_like_phase
+ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
+          : append_newline=False)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr keywords
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr data
+ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+
+media-plugins/fil-plugins
+  DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 0
+  MissingChksum: version 0.3.0: "FIL-plugins-0.3.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/gimp-resynthesizer
+  DeprecatedEAPI: version 0.16: uses deprecated EAPI: 2
+  MissingChksum: version 0.16: "resynthesizer-0.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/gkrellmpc
+  DeprecatedEAPI: version 0.1_beta9-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.1_beta10: uses deprecated EAPI: 2
+  MissingChksum: version 0.1_beta9-r1: "gkrellmpc-0.1_beta9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
+             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
+             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
+ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
+             : sys-devel/gettext-0.19.4, attr data
+ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR pkgcore: None
+ERROR root: check <pkgcheck.visibility.VisibilityReport object at
+          : 0x7f197d8f0190> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
+          : 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 264, in feed
+ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in process_depset
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in <genexpr>
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
+          : ", line 247, in match
+ERROR root:     if not rest.match(vals):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 207, in <lambda>
+ERROR root:     s.data.pop("KEYWORDS", "").split()))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
+          : line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 274, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 365, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 373, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 835, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 768, in _run_depend_like_phase
+ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
+          : append_newline=False)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr keywords
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr data
+ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
+             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
+             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
+ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
+             : sys-devel/gettext-0.19.4, attr data
+ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR pkgcore: None
+ERROR root: check <pkgcheck.visibility.VisibilityReport object at
+          : 0x7f197d8f0190> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
+          : 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 264, in feed
+ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in process_depset
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in <genexpr>
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
+          : ", line 247, in match
+ERROR root:     if not rest.match(vals):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 207, in <lambda>
+ERROR root:     s.data.pop("KEYWORDS", "").split()))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
+          : line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 274, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 365, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 373, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 835, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 768, in _run_depend_like_phase
+ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
+          : append_newline=False)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr keywords
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr data
+ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+
+media-plugins/gmpc-albumview
+  MissingChksum: version 11.8.16: "gmpc-albumview-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
+             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
+             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
+ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
+             : sys-devel/gettext-0.19.4, attr data
+ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR pkgcore: None
+ERROR root: check <pkgcheck.visibility.VisibilityReport object at
+          : 0x7f197d8f0190> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
+          : 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 264, in feed
+ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in process_depset
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in <genexpr>
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
+          : ", line 247, in match
+ERROR root:     if not rest.match(vals):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 207, in <lambda>
+ERROR root:     s.data.pop("KEYWORDS", "").split()))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
+          : line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 274, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 365, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 373, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 835, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 768, in _run_depend_like_phase
+ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
+          : append_newline=False)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr keywords
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr data
+ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
+             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
+             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
+ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
+             : sys-devel/gettext-0.19.4, attr data
+ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR pkgcore: None
+ERROR root: check <pkgcheck.visibility.VisibilityReport object at
+          : 0x7f197d8f0190> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
+          : 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 264, in feed
+ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in process_depset
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in <genexpr>
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
+          : ", line 247, in match
+ERROR root:     if not rest.match(vals):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 207, in <lambda>
+ERROR root:     s.data.pop("KEYWORDS", "").split()))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
+          : line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 274, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 365, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 373, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 835, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 768, in _run_depend_like_phase
+ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
+          : append_newline=False)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr keywords
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr data
+ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+
+media-plugins/gmpc-awn
+  MissingChksum: version 11.8.16: "gmpc-awn-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/gmpc-discogs
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+  MissingChksum: version 0.20.0: "gmpc-discogs-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/gmpc-extraplaylist
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+  MissingChksum: version 0.20.0: "gmpc-extraplaylist-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
+             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
+             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
+ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
+             : sys-devel/gettext-0.19.4, attr data
+ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR pkgcore: None
+ERROR root: check <pkgcheck.visibility.VisibilityReport object at
+          : 0x7f197d8f0190> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
+          : 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 264, in feed
+ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in process_depset
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in <genexpr>
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
+          : ", line 247, in match
+ERROR root:     if not rest.match(vals):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 207, in <lambda>
+ERROR root:     s.data.pop("KEYWORDS", "").split()))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
+          : line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 274, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 365, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 373, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 835, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 768, in _run_depend_like_phase
+ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
+          : append_newline=False)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr keywords
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr data
+ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+
+media-plugins/gmpc-jamendo
+  MissingChksum: version 11.8.16: "gmpc-jamendo-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/gmpc-last-fm
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+  MissingChksum: version 0.20.0: "gmpc-last-fm-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
+             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
+             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
+ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
+             : sys-devel/gettext-0.19.4, attr data
+ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR pkgcore: None
+ERROR root: check <pkgcheck.visibility.VisibilityReport object at
+          : 0x7f197d8f0190> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
+          : 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 264, in feed
+ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in process_depset
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in <genexpr>
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
+          : ", line 247, in match
+ERROR root:     if not rest.match(vals):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 207, in <lambda>
+ERROR root:     s.data.pop("KEYWORDS", "").split()))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
+          : line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 274, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 365, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 373, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 835, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 768, in _run_depend_like_phase
+ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
+          : append_newline=False)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr keywords
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr data
+ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
+             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
+             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
+ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
+             : sys-devel/gettext-0.19.4, attr data
+ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR pkgcore: None
+ERROR root: check <pkgcheck.visibility.VisibilityReport object at
+          : 0x7f197d8f0190> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
+          : 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 264, in feed
+ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in process_depset
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in <genexpr>
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
+          : ", line 247, in match
+ERROR root:     if not rest.match(vals):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 207, in <lambda>
+ERROR root:     s.data.pop("KEYWORDS", "").split()))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
+          : line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 274, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 365, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 373, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 835, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 768, in _run_depend_like_phase
+ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
+          : append_newline=False)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr keywords
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr data
+ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
+             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
+             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
+ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
+             : sys-devel/gettext-0.19.4, attr data
+ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR pkgcore: None
+ERROR root: check <pkgcheck.visibility.VisibilityReport object at
+          : 0x7f197d8f0190> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
+          : 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 264, in feed
+ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in process_depset
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in <genexpr>
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
+          : ", line 247, in match
+ERROR root:     if not rest.match(vals):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 207, in <lambda>
+ERROR root:     s.data.pop("KEYWORDS", "").split()))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
+          : line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 274, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 365, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 373, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 835, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 768, in _run_depend_like_phase
+ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
+          : append_newline=False)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr keywords
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr data
+ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+
+media-plugins/gmpc-lyricwiki
+  MissingChksum: version 11.8.16: "gmpc-lyricwiki-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
+             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
+             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
+ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
+             : sys-devel/gettext-0.19.4, attr data
+ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR pkgcore: None
+ERROR root: check <pkgcheck.visibility.VisibilityReport object at
+          : 0x7f197d8f0190> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
+          : 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 264, in feed
+ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in process_depset
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in <genexpr>
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
+          : ", line 247, in match
+ERROR root:     if not rest.match(vals):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 207, in <lambda>
+ERROR root:     s.data.pop("KEYWORDS", "").split()))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
+          : line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 274, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 365, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 373, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 835, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 768, in _run_depend_like_phase
+ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
+          : append_newline=False)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr keywords
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr data
+ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+
+media-plugins/gmpc-mdcover
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
+             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
+             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
+ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
+             : sys-devel/gettext-0.19.4, attr data
+ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR pkgcore: None
+ERROR root: check <pkgcheck.visibility.VisibilityReport object at
+          : 0x7f197d8f0190> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
+          : 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 264, in feed
+ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in process_depset
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in <genexpr>
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
+          : ", line 247, in match
+ERROR root:     if not rest.match(vals):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 207, in <lambda>
+ERROR root:     s.data.pop("KEYWORDS", "").split()))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
+          : line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 274, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 365, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 373, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 835, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 768, in _run_depend_like_phase
+ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
+          : append_newline=False)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr keywords
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr data
+ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+  MissingChksum: version 0.20.0: "gmpc-mdcover-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/gmpc-mserver
+  MissingChksum: version 0.20.0: "gmpc-mserver-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/gmpc-playlistsort
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+  MissingChksum: version 0.20.0: "gmpc-playlistsort-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/gmpc-shout
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
+             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
+             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
+ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
+             : sys-devel/gettext-0.19.4, attr data
+ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR pkgcore: None
+ERROR root: check <pkgcheck.visibility.VisibilityReport object at
+          : 0x7f197d8f0190> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
+          : 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 264, in feed
+ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in process_depset
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in <genexpr>
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
+          : ", line 247, in match
+ERROR root:     if not rest.match(vals):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 207, in <lambda>
+ERROR root:     s.data.pop("KEYWORDS", "").split()))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
+          : line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 274, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 365, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 373, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 835, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 768, in _run_depend_like_phase
+ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
+          : append_newline=False)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr keywords
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr data
+ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+  MissingChksum: version 0.20.0: "gmpc-shout-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
+             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
+             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
+ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
+             : sys-devel/gettext-0.19.4, attr data
+ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR pkgcore: None
+ERROR root: check <pkgcheck.visibility.VisibilityReport object at
+          : 0x7f197d8f0190> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
+          : 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 264, in feed
+ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in process_depset
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in <genexpr>
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
+          : ", line 247, in match
+ERROR root:     if not rest.match(vals):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 101, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 207, in <lambda>
+ERROR root:     s.data.pop("KEYWORDS", "").split()))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 103, in dynamic_getattr_dict
+ERROR root:     raise_from(MetadataException(self, attr, str(e)))
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
+          : 93, in dynamic_getattr_dict
+ERROR root:     val = functor(self)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
+          : line 59, in _get_data
+ERROR root:     return self._fetch_metadata()
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 274, in _fetch_metadata
+ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
+          : force_regen=force_regen)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 365, in _get_metadata
+ERROR root:     return self._update_metadata(pkg, ebp=ebp)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
+          : line 373, in _update_metadata
+ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 835, in get_keys
+ERROR root:     {"key": receive_key})
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
+          : line 768, in _run_depend_like_phase
+ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
+          : append_newline=False)
+ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr keywords
+ERROR root: error: Metadata Exception: pkg ebuild src:
+          : sys-devel/gettext-0.19.4, attr data
+ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+
+media-plugins/gmpc-tagedit
+  MissingChksum: version 11.8.16: "gmpc-tagedit-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
+             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
+             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
+ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
+             : sys-devel/gettext-0.19.4, attr data
+ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
+ERROR pkgcore: None
+ERROR root: check <pkgcheck.visibility.VisibilityReport object at
+          : 0x7f197d8f0190> raised
+ERROR root: Traceback (most recent call last):
+ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
+          : 337, in feed
+ERROR root:     check.feed(item, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 264, in feed
+ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+          : 315, in process_depset
+ERROR root:     if any(True for pkg in src if visible(pkg)):
+ERROR root:   File
+          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
+ 
