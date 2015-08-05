@@ -4,2436 +4,1229 @@
 + [[ ! -n 16 ]]
 + [[ 13 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'app-dicts/*' 'sci-chemistry/*' 'x11-apps/*' 'xfce-extra/*' 'app-cdr/*' 'dev-scheme/*' 'media-radio/*' 'www-misc/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'sys-devel/*' 'sci-chemistry/*' 'x11-apps/*' 'sci-geosciences/*' 'net-irc/*' 'sys-kernel/*' 'games-util/*' 'www-plugins/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-app-emulation/cloud-init
-  ExecutableFile: "files/growpart" has unnecessary executable bit
-  SizeViolation: "files/growpart" exceeds 20k in size; 21323 bytes total
+media-plugins/amb-plugins
+  DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 3
+  MissingChksum: version 0.8.1: "AMB-plugins-0.8.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-app-emulation/coldfire
-  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 2
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 314, in <genexpr>
-ERROR root:     FakeConfigurable(pkg, profile)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 28, in __init__
-ERROR root:     self, 'iuse', frozenset(pkg.iuse_stripped |
-          : profile.iuse_effective))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 235, in iuse_stripped
-ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 213, in <lambda>
-ERROR root:     s.data.pop("IUSE", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr iuse
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 314, in <genexpr>
-ERROR root:     FakeConfigurable(pkg, profile)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 28, in __init__
-ERROR root:     self, 'iuse', frozenset(pkg.iuse_stripped |
-          : profile.iuse_effective))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 235, in iuse_stripped
-ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 213, in <lambda>
-ERROR root:     s.data.pop("IUSE", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr iuse
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 314, in <genexpr>
-ERROR root:     FakeConfigurable(pkg, profile)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 28, in __init__
-ERROR root:     self, 'iuse', frozenset(pkg.iuse_stripped |
-          : profile.iuse_effective))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 235, in iuse_stripped
-ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 213, in <lambda>
-ERROR root:     s.data.pop("IUSE", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr iuse
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 314, in <genexpr>
-ERROR root:     FakeConfigurable(pkg, profile)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 28, in __init__
-ERROR root:     self, 'iuse', frozenset(pkg.iuse_stripped |
-          : profile.iuse_effective))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 235, in iuse_stripped
-ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 213, in <lambda>
-ERROR root:     s.data.pop("IUSE", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr iuse
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 314, in <genexpr>
-ERROR root:     FakeConfigurable(pkg, profile)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 28, in __init__
-ERROR root:     self, 'iuse', frozenset(pkg.iuse_stripped |
-          : profile.iuse_effective))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 235, in iuse_stripped
-ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 213, in <lambda>
-ERROR root:     s.data.pop("IUSE", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr iuse
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 314, in <genexpr>
-ERROR root:     FakeConfigurable(pkg, profile)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 28, in __init__
-ERROR root:     self, 'iuse', frozenset(pkg.iuse_stripped |
-          : profile.iuse_effective))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 235, in iuse_stripped
-ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 213, in <lambda>
-ERROR root:     s.data.pop("IUSE", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr iuse
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 314, in <genexpr>
-ERROR root:     FakeConfigurable(pkg, profile)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 28, in __init__
-ERROR root:     self, 'iuse', frozenset(pkg.iuse_stripped |
-          : profile.iuse_effective))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 235, in iuse_stripped
-ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 213, in <lambda>
-ERROR root:     s.data.pop("IUSE", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr iuse
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 314, in <genexpr>
-ERROR root:     FakeConfigurable(pkg, profile)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 28, in __init__
-ERROR root:     self, 'iuse', frozenset(pkg.iuse_stripped |
-          : profile.iuse_effective))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 235, in iuse_stripped
-ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 213, in <lambda>
-ERROR root:     s.data.pop("IUSE", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr iuse
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 314, in <genexpr>
-ERROR root:     FakeConfigurable(pkg, profile)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 28, in __init__
-ERROR root:     self, 'iuse', frozenset(pkg.iuse_stripped |
-          : profile.iuse_effective))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 235, in iuse_stripped
-ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 213, in <lambda>
-ERROR root:     s.data.pop("IUSE", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr iuse
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 314, in <genexpr>
-ERROR root:     FakeConfigurable(pkg, profile)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 28, in __init__
-ERROR root:     self, 'iuse', frozenset(pkg.iuse_stripped |
-          : profile.iuse_effective))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 235, in iuse_stripped
-ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 213, in <lambda>
-ERROR root:     s.data.pop("IUSE", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr iuse
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+media-plugins/audacious-dumb
+  MissingChksum: version 0.65: "audacious-dumb-0.65.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.73: "audacious-dumb-0.73.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.74: "audacious-dumb-0.74.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.80: "audacious-dumb-0.80.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/crossover-office-bin
-  MissingChksum: version 6.0.0: "install-crossover-standard-6.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 6.0.1: "install-crossover-standard-6.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 6.1.0: "install-crossover-standard-6.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 6.2.0: "install-crossover-standard-6.2.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+media-plugins/audacious-plugins
+  DeprecatedEAPI: version 2.4.4-r1: uses deprecated EAPI: 3
+  VulnerablePackage: version 2.4.4-r1: vulnerable via glsa(201203-14) ( ver < 3.1 ), keywords ('alpha', 'amd64', 'amd64-linux', 'hppa', 'ppc', 'ppc64', 'sparc', 'x86', 'x86-fbsd', 'x86-freebsd', 'x86-interix', 'x86-linux')
+  VulnerablePackage: version 2.5.4: vulnerable via glsa(201203-14) ( ver < 3.1 ), keywords ('alpha', 'amd64', 'amd64-linux', 'hppa', 'ppc', 'ppc64', 'sparc', 'x86', 'x86-fbsd', 'x86-freebsd', 'x86-interix', 'x86-linux')
+  DroppedKeywordWarning: version 3.6.2: keywords dropped: alpha, ppc, sparc
 
-app-emulation/crossover-office-pro-bin
-  MissingChksum: version 5.0.0: "install-crossover-pro-5.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 5.0.1: "install-crossover-pro-5.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 5.0.3: "install-crossover-pro-5.0.3.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 6.0.0: "install-crossover-pro-6.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 6.1.0: "install-crossover-pro-6.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 6.2.0: "install-crossover-pro-6.2.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 7.0.2: "install-crossover-pro-7.0.2.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 7.1.0: "install-crossover-pro-7.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 8.0.0: "install-crossover-pro-8.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 9.0.0: "install-crossover-pro-9.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 9.0.1: "install-crossover-pro-9.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 9.1.0: "install-crossover-pro-9.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 9.2.0: "install-crossover-pro-9.2.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+media-plugins/banshee-community-extensions
+  DeprecatedEclass: version 2.2.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 2.4.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 2.4.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
-app-emulation/dlx
-  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.0.0-r1: uses deprecated EAPI: 0
+media-plugins/fil-plugins
+  DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 0
+  MissingChksum: version 0.3.0: "FIL-plugins-0.3.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/docker
-  ExecutableFile: "files/docker-r2.initd" has unnecessary executable bit
-  ExecutableFile: "files/docker-r3.initd" has unnecessary executable bit
-  ExecutableFile: "files/docker.initd" has unnecessary executable bit
+media-plugins/gimp-resynthesizer
+  DeprecatedEAPI: version 0.16: uses deprecated EAPI: 2
+  MissingChksum: version 0.16: "resynthesizer-0.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/domi
-  DeprecatedEAPI: version 20060816: uses deprecated EAPI: 0
+media-plugins/gkrellmpc
+  DeprecatedEAPI: version 0.1_beta9-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.1_beta10: uses deprecated EAPI: 2
+  MissingChksum: version 0.1_beta9-r1: "gkrellmpc-0.1_beta9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/dosemu
-  DeprecatedEAPI: version 1.4.1_pre20091009: uses deprecated EAPI: 0
+media-plugins/gmpc-albumview
+  MissingChksum: version 11.8.16: "gmpc-albumview-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-app-emulation/e-uae
-  DeprecatedEAPI: version 0.8.29_rc4-r2: uses deprecated EAPI: 3
+media-plugins/gmpc-awn
+  MissingChksum: version 11.8.16: "gmpc-awn-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-app-emulation/ganeti
-  BadInsIntoDir: version 2.10.5-r4: ebuild uses insinto /etc/cron.d on line 155
-  BadInsIntoDir: version 2.11.6-r2: ebuild uses insinto /etc/cron.d on line 192
-  BadInsIntoDir: version 2.12.1-r3: ebuild uses insinto /etc/cron.d on line 225
-  BadInsIntoDir: version 2.12.3-r2: ebuild uses insinto /etc/cron.d on line 233
-  BadInsIntoDir: version 2.13.0-r2: ebuild uses insinto /etc/cron.d on line 229
-  BadInsIntoDir: version 2.14.1-r1: ebuild uses insinto /etc/cron.d on line 263
+media-plugins/gmpc-discogs
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+  MissingChksum: version 0.20.0: "gmpc-discogs-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/ganeti-htools
-  DeprecatedEAPI: version 0.2.8: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 2
+media-plugins/gmpc-extraplaylist
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+  MissingChksum: version 0.20.0: "gmpc-extraplaylist-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/ganeti-instance-debian-etch
-  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+media-plugins/gmpc-jamendo
+  MissingChksum: version 11.8.16: "gmpc-jamendo-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/ganeti-instance-debootstrap
-  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 2
+media-plugins/gmpc-last-fm
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+  MissingChksum: version 0.20.0: "gmpc-last-fm-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/ganeti-instance-image
-  NonExistentDeps: version 0.6: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
+media-plugins/gmpc-lyricwiki
+  MissingChksum: version 11.8.16: "gmpc-lyricwiki-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/hercules
-  DeprecatedEAPI: version 3.06: uses deprecated EAPI: 0
+media-plugins/gmpc-mdcover
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+  MissingChksum: version 0.20.0: "gmpc-mdcover-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/kvm-kmod
-  DeprecatedEAPI: version 3.3.6: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 3.4: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 3.6: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 3.8: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 3.10.1: uses deprecated EAPI: 2
-ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
-             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
-             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
-ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
-             : sys-devel/gettext-0.19.4, attr data
-ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: None
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
-          : ", line 247, in match
-ERROR root:     if not rest.match(vals):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 207, in <lambda>
-ERROR root:     s.data.pop("KEYWORDS", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr keywords
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
-             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
-             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
-ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
-             : sys-devel/gettext-0.19.4, attr data
-ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: None
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
-          : ", line 247, in match
-ERROR root:     if not rest.match(vals):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 207, in <lambda>
-ERROR root:     s.data.pop("KEYWORDS", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr keywords
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
-             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
-             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
-ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
-             : sys-devel/gettext-0.19.4, attr data
-ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: None
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
-          : ", line 247, in match
-ERROR root:     if not rest.match(vals):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 207, in <lambda>
-ERROR root:     s.data.pop("KEYWORDS", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr keywords
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
-             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
-             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
-ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
-             : sys-devel/gettext-0.19.4, attr data
-ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: None
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
-          : ", line 247, in match
-ERROR root:     if not rest.match(vals):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 207, in <lambda>
-ERROR root:     s.data.pop("KEYWORDS", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr keywords
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+media-plugins/gmpc-mserver
+  MissingChksum: version 0.20.0: "gmpc-mserver-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/libspectrum
-  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 3
-ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
-             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
-             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
-ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
-             : sys-devel/gettext-0.19.4, attr data
-ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: None
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
-          : ", line 247, in match
-ERROR root:     if not rest.match(vals):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 207, in <lambda>
-ERROR root:     s.data.pop("KEYWORDS", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr keywords
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
-             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
-             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
-ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
-             : sys-devel/gettext-0.19.4, attr data
-ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: None
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
-          : ", line 247, in match
-ERROR root:     if not rest.match(vals):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 207, in <lambda>
-ERROR root:     s.data.pop("KEYWORDS", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr keywords
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+media-plugins/gmpc-playlistsort
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+  MissingChksum: version 0.20.0: "gmpc-playlistsort-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/lxc
-  DroppedKeywordWarning: version 1.1.0-r6: keywords dropped: arm64, ppc64, x86
-ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
-             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
-             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
-ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
-             : sys-devel/gettext-0.19.4, attr data
-ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: None
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
-          : ", line 247, in match
-ERROR root:     if not rest.match(vals):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 207, in <lambda>
-ERROR root:     s.data.pop("KEYWORDS", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr keywords
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+media-plugins/gmpc-shout
+  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+  MissingChksum: version 0.20.0: "gmpc-shout-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/phpvirtualbox
-  DeprecatedEAPI: version 4.1.7-r2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 4.1.11: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 4.2.3b: uses deprecated EAPI: 2
-ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
-             : dev-libs/cyrus-sasl-2.1.26-r9, exception Metadata Exception:
-             : pkg ebuild src: dev-libs/cyrus-sasl-2.1.26-r9, attr keywords
-ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
-             : dev-libs/cyrus-sasl-2.1.26-r9, attr data
-ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: None
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
-          : ", line 247, in match
-ERROR root:     if not rest.match(vals):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 207, in <lambda>
-ERROR root:     s.data.pop("KEYWORDS", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : dev-libs/cyrus-sasl-2.1.26-r9, attr keywords
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : dev-libs/cyrus-sasl-2.1.26-r9, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
-             : dev-libs/cyrus-sasl-2.1.26-r9, exception Metadata Exception:
-             : pkg ebuild src: dev-libs/cyrus-sasl-2.1.26-r9, attr keywords
-ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
-             : dev-libs/cyrus-sasl-2.1.26-r9, attr data
-ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: None
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
-          : ", line 247, in match
-ERROR root:     if not rest.match(vals):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 207, in <lambda>
-ERROR root:     s.data.pop("KEYWORDS", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : dev-libs/cyrus-sasl-2.1.26-r9, attr keywords
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : dev-libs/cyrus-sasl-2.1.26-r9, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
-             : dev-libs/cyrus-sasl-2.1.26-r9, exception Metadata Exception:
-             : pkg ebuild src: dev-libs/cyrus-sasl-2.1.26-r9, attr keywords
-ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
-             : dev-libs/cyrus-sasl-2.1.26-r9, attr data
-ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: None
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
-          : ", line 247, in match
-ERROR root:     if not rest.match(vals):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 207, in <lambda>
-ERROR root:     s.data.pop("KEYWORDS", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : dev-libs/cyrus-sasl-2.1.26-r9, attr keywords
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : dev-libs/cyrus-sasl-2.1.26-r9, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
-             : dev-libs/cyrus-sasl-2.1.26-r9, exception Metadata Exception:
-             : pkg ebuild src: dev-libs/cyrus-sasl-2.1.26-r9, attr keywords
-ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
-             : dev-libs/cyrus-sasl-2.1.26-r9, attr data
-ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: None
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
-          : ", line 247, in match
-ERROR root:     if not rest.match(vals):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 207, in <lambda>
-ERROR root:     s.data.pop("KEYWORDS", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : dev-libs/cyrus-sasl-2.1.26-r9, attr keywords
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : dev-libs/cyrus-sasl-2.1.26-r9, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
-             : dev-libs/cyrus-sasl-2.1.26-r9, exception Metadata Exception:
-             : pkg ebuild src: dev-libs/cyrus-sasl-2.1.26-r9, attr keywords
-ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
-             : dev-libs/cyrus-sasl-2.1.26-r9, attr data
-ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: None
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
-          : ", line 247, in match
-ERROR root:     if not rest.match(vals):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 207, in <lambda>
-ERROR root:     s.data.pop("KEYWORDS", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : dev-libs/cyrus-sasl-2.1.26-r9, attr keywords
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : dev-libs/cyrus-sasl-2.1.26-r9, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
+media-plugins/gmpc-tagedit
+  MissingChksum: version 11.8.16: "gmpc-tagedit-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emulation/qemu
+media-plugins/gmpc-wikipedia
+  MissingChksum: version 11.8.16: "gmpc-wikipedia-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/grilo-plugins
+  DroppedKeywordWarning: version 0.2.13: keywords dropped: alpha, arm, ia64, sparc
+
+media-plugins/gst-plugins-dts
+  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
+
+media-plugins/gst-plugins-dv
+  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
+
+media-plugins/gst-plugins-ffmpeg
+  WhitespaceFound: version 0.10.13_p201211-r4: ebuild has trailing whitespace on line 63
+
+media-plugins/gst-plugins-libvisual
+  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
+
+media-plugins/gst-plugins-meta
+  DroppedKeywordWarning: version 1.0-r3: keywords dropped: arm64
+
+media-plugins/gst-plugins-mplex
+  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
+
+media-plugins/gst-plugins-shout2
+  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: sh
+
+media-plugins/gst-plugins-wavpack
+  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
+
+media-plugins/ir_lv2
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 3
+
+media-plugins/ladspa-bs2b
+  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 0
+  MissingChksum: version 0.9.1: "ladspa-bs2b-0.9.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/libvisual-projectm
+  MissingChksum: version 2.0.1: "projectM_libvisual-2.0.1-Source.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/live
+  DeprecatedEAPI: version 2012.01.07: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2012.09.13: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2013.02.11: uses deprecated EAPI: 3
+
+media-plugins/mcp-plugins
+  MissingChksum: version 0.4.0: "MCP-plugins-0.4.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/mythplugins
+  DeprecatedEclass: version 0.26.0_p20130922: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.27_p20140321: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.27.1_p20140713: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.27.1_p20140817: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.27.3_p20140907: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.27.3_p20141009: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.27.4_p20141018: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.27.4_p20150124: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.27.5_p20150627: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+media-plugins/npapi-vlc
+  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  MissingChksum: version 2.0.0: "npapi-vlc-2.0.0.tar.xz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/rev-plugins
+  DeprecatedEAPI: version 0.3.1-r1: uses deprecated EAPI: 2
+  MissingChksum: version 0.3.1-r1: "REV-plugins-0.3.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/swh-lv2
+  DeprecatedEAPI: version 1.0.15: uses deprecated EAPI: 2
+  MissingChksum: version 1.0.15: "swh-lv2-1.0.15.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/swh-plugins
+  SizeViolation: "files/swh-plugins-0.4.15-glibc-2.10.patch" exceeds 20k in size; 27458 bytes total
+
+media-plugins/vamp-aubio-plugins
+  DeprecatedEAPI: version 0.3.2c: uses deprecated EAPI: 0
+
+media-plugins/vamp-libxtract-plugins
+  DeprecatedEAPI: version 0.6.6.20121204: uses deprecated EAPI: 2
+
+media-plugins/vco-plugins
+  MissingChksum: version 0.3.0: "VCO-plugins-0.3.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-admin
+  MissingChksum: version 0.8.0: "vdr-admin-0.8.0.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-alcd
+  MissingChksum: version 1.5.1: "vdr-alcd-1.5.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-arghdirector
+  MissingChksum: version 0.2.6: "vdr-arghdirector-0.2.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-avards
+  MissingChksum: version 0.2.4: "vdr-avards-0.2.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-beep
+  MissingChksum: version 0.1.2: "vdr-beep-0.1.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-bgprocess
+  MissingChksum: version 0.1.0: "vdr-bgprocess-0.1.0.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-browse
+  MissingChksum: version 0.2.0: "vdr-browse-0.2.0.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-burn-templates
+  MissingChksum: version 0.0.2: "vdr-burn-templates-0.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-calc
+  MissingChksum: version 0.0.1_rc5: "vdr-calc-0[1].0.1-rc5.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-chanman
+  MissingChksum: version 0.0.9: "vdr-chanman-0.0.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-channelblocker
+  MissingChksum: version 0.0.6: "vdr-channelblocker-0.0.6.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-cinebars
+  MissingChksum: version 0.0.5: "vdr-cinebars-0.0.5.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-cpumon
+  MissingChksum: version 0.0.6_p1: "vdr-cpumon-0.0.6a.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-extb
+  MissingChksum: version 0.3.1: "vdr-extb-0.3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.3.1: "extb_firmware_1.08_lircd.conf.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.3.1: "extb.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-lcdproc
+  MissingChksum: version 0.0.10.9: "vdr-lcdproc-0.0.10.9.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-mailbox
+  MissingChksum: version 0.6.0: "vdr-mailbox-0.6.0.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-osdserver
+  MissingChksum: version 0.1.2: "vdr-osdserver-0.1.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-picselshow
+  MissingChksum: version 0.0.2: "vdr-picselshow-0.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-pin
+  MissingChksum: version 0.1.9: "vdr-pin-0.1.9.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-powermate
+  ExecutableFile: "files/rc-addon.sh" has unnecessary executable bit
+  MissingChksum: version 0.0.5: "vdr-powermate-0.0.5.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-proxy
+  MissingChksum: version 0.1.4-r1: "vdr-proxy-0.1.4.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-pvr350
+  MissingChksum: version 1.7.3: "vdr-pvr350-1.7.3.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.7.4: "vdr-pvr350-1.7.4.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-quicktimer
+  MissingChksum: version 0.1.1: "vdr-quicktimer-0.1.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-radio
+  MissingChksum: version 0.9.0: "vdr-radio-0.9.0.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-radiolist
+  MissingChksum: version 0.0.2: "vdr-radiolist-0.0.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-recstatus
+  MissingChksum: version 0.0.8: "vdr-recstatus-0.0.8.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-rotor
+  MissingChksum: version 0.1.5: "vdr-rotor-0.1.5.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-scheduler
+  MissingChksum: version 0.1.3: "vdr-scheduler-0.1.3.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-span
+  MissingChksum: version 0.0.7: "vdr-span-0.0.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-streamdev
+  BadInsIntoDir: version 0.6.1: ebuild uses insinto /etc/conf.d on line 60
+
+media-plugins/vdr-spider
+  MissingChksum: version 0.2.2: "vdr-spider-0.2.2.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-sudoku
+  MissingChksum: version 0.3.5: "vdr-sudoku-0.3.5.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-suspendoutput
+  MissingChksum: version 1.0.1: "vdr-suspendoutput-1.0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-systeminfo
+  MissingChksum: version 0.1.1: "vdr-systeminfo-0.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-vcd
+  ExecutableFile: "files/rc-addon.sh" has unnecessary executable bit
+
+media-plugins/vdr-videosystem
+  MissingChksum: version 0.0.1: "vdr-videosystem-0.0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/vdr-vompserver
+  MissingChksum: version 0.3.1-r1: "vdr-vompserver-0.3.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-xvdr
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-emulation/simh
-  DeprecatedEAPI: version 3.3.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.8.1: uses deprecated EAPI: 0
-
-app-emulation/skyeye
-  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 2
-
-app-emulation/spectemu
-  DeprecatedEAPI: version 0.99.3: uses deprecated EAPI: 0
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 314, in <genexpr>
-ERROR root:     FakeConfigurable(pkg, profile)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 28, in __init__
-ERROR root:     self, 'iuse', frozenset(pkg.iuse_stripped |
-          : profile.iuse_effective))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 235, in iuse_stripped
-ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 213, in <lambda>
-ERROR root:     s.data.pop("IUSE", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : dev-libs/cyrus-sasl-2.1.26-r9, attr iuse
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : dev-libs/cyrus-sasl-2.1.26-r9, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-
-app-emulation/spim
-  DeprecatedEAPI: version 8.0-r1: uses deprecated EAPI: 3
-ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
-             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
-             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
-ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
-             : sys-devel/gettext-0.19.4, attr data
-ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: None
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
-          : ", line 247, in match
-ERROR root:     if not rest.match(vals):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 207, in <lambda>
-ERROR root:     s.data.pop("KEYWORDS", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr keywords
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
-             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
-             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
-ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
-             : sys-devel/gettext-0.19.4, attr data
-ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: None
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
-          : ", line 247, in match
-ERROR root:     if not rest.match(vals):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 207, in <lambda>
-ERROR root:     s.data.pop("KEYWORDS", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr keywords
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
-             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
-             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
-ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
-             : sys-devel/gettext-0.19.4, attr data
-ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: None
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
-          : ", line 247, in match
-ERROR root:     if not rest.match(vals):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 207, in <lambda>
-ERROR root:     s.data.pop("KEYWORDS", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr keywords
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-
-app-emulation/virt-manager
+media-plugins/xbmc-addon-xvdr
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-emulation/virtualbox
-  ExecutableFile: "files/virtualbox-ose-3-wrapper" has unnecessary executable bit
+media-plugins/xsynth-dssi
+  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.9.4: uses deprecated EAPI: 0
+  MissingChksum: version 0.9.2: "xsynth-dssi-0.9.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.9.4: "xsynth-dssi-0.9.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
+               : error range rlt version 5.5.34 is a guaranteed empty set
 
-app-emulation/virtualbox-bin
-  ExecutableFile: "files/virtualbox-bin-3-wrapper" has unnecessary executable bit
+sys-devel/autoconf
+  DeprecatedEAPI: version 2.69: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-emulation/virtualbox-modules
-  ExecutableFile: "files/create_vbox_modules_tarball.sh" has unnecessary executable bit
+sys-devel/autoconf-wrapper
+  DeprecatedEAPI: version 13: uses deprecated EAPI: 0
+  ExecutableFile: "files/ac-wrapper-13.sh" has unnecessary executable bit
 
-app-emulation/vmips
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+sys-devel/automake
+  VulnerablePackage: version 1.4_p6-r2: vulnerable via glsa(201310-15) ( ver < 1.11.6 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
+  VulnerablePackage: version 1.5-r2: vulnerable via glsa(201310-15) ( ver < 1.11.6 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
+  VulnerablePackage: version 1.6.3-r2: vulnerable via glsa(201310-15) ( ver < 1.11.6 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
+  VulnerablePackage: version 1.7.9-r3: vulnerable via glsa(201310-15) ( ver < 1.11.6 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
+  VulnerablePackage: version 1.8.5-r5: vulnerable via glsa(201310-15) ( ver < 1.11.6 ), keywords ('alpha', 'amd64', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
+  VulnerablePackage: version 1.9.6-r4: vulnerable via glsa(201310-15) ( ver < 1.11.6 ), keywords ('alpha', 'amd64', 'amd64-fbsd', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
+  VulnerablePackage: version 1.10.3-r1: vulnerable via glsa(201310-15) ( ver < 1.11.6 ), keywords ('alpha', 'amd64', 'amd64-fbsd', 'arm', 'arm64', 'hppa', 'ia64', 'm68k', 'mips', 'ppc', 'ppc64', 's390', 'sh', 'sparc', 'sparc-fbsd', 'x86', 'x86-fbsd')
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-devel/automake-wrapper
+  DeprecatedEAPI: version 9: uses deprecated EAPI: 0
+  ExecutableFile: "files/am-wrapper-9.sh" has unnecessary executable bit
+
+sys-devel/bc
+  DeprecatedEAPI: version 1.06.95: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.06.95-r1: uses deprecated EAPI: 2
+
+sys-devel/binutils
+  DeprecatedEAPI: version 2.24-r3: uses deprecated EAPI: 0
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-devel/binutils-apple
+  BadInsIntoDir: version 3.1.2: ebuild uses insinto /etc/env.d on line 203
+  DeprecatedEAPI: version 3.1.2: uses deprecated EAPI: 3
+  BadInsIntoDir: version 3.2: ebuild uses insinto /etc/env.d on line 223
+  DeprecatedEAPI: version 3.2: uses deprecated EAPI: 3
+  BadInsIntoDir: version 3.2.6: ebuild uses insinto /etc/env.d on line 243
+  DeprecatedEAPI: version 3.2.6: uses deprecated EAPI: 3
+  BadInsIntoDir: version 4.2: ebuild uses insinto /etc/env.d on line 301
+  DeprecatedEAPI: version 4.2: uses deprecated EAPI: 3
+  BadInsIntoDir: version 4.2-r1: ebuild uses insinto /etc/env.d on line 317
+  DeprecatedEAPI: version 4.2-r1: uses deprecated EAPI: 3
+  BadInsIntoDir: version 4.3: ebuild uses insinto /etc/env.d on line 298
+  DeprecatedEAPI: version 4.3: uses deprecated EAPI: 3
+  BadInsIntoDir: version 4.3-r1: ebuild uses insinto /etc/env.d on line 305
+  DeprecatedEAPI: version 4.3-r1: uses deprecated EAPI: 3
+  BadInsIntoDir: version 5.1: ebuild uses insinto /etc/env.d on line 345
+  DeprecatedEAPI: version 5.1: uses deprecated EAPI: 3
+  BadInsIntoDir: version 6.1: ebuild uses insinto /etc/env.d on line 344
+  DeprecatedEAPI: version 6.1: uses deprecated EAPI: 3
+  SizeViolation: "files/ld64-236.3-gcc.patch" exceeds 20k in size; 41867 bytes total
+  SizeViolation: "files/ld64-236.3-noarm.patch" exceeds 20k in size; 37310 bytes total
+  SizeViolation: "files/ld64-236.3-nosnapshots.patch" exceeds 20k in size; 23030 bytes total
+  SizeViolation: "files/ld64-241.9-gcc.patch" exceeds 20k in size; 40446 bytes total
+  SizeViolation: "files/ld64-241.9-noarm.patch" exceeds 20k in size; 39659 bytes total
+  SizeViolation: "files/ld64-241.9-nosnapshots.patch" exceeds 20k in size; 23156 bytes total
+
+sys-devel/binutils-config
+  DeprecatedEAPI: version 1.9-r4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3-r3: uses deprecated EAPI: 0
+  ExecutableFile: "files/binutils-config-1.9" has unnecessary executable bit
+  ExecutableFile: "files/binutils-config-2" has unnecessary executable bit
+  ExecutableFile: "files/binutils-config-3" has unnecessary executable bit
+  ExecutableFile: "files/binutils-config-4" has unnecessary executable bit
+
+sys-devel/bison
+  DeprecatedEAPI: version 1.875d: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.4.3: uses deprecated EAPI: 2
+  SizeViolation: "files/bison-3.0.4-optional-perl.patch" exceeds 20k in size; 21963 bytes total
+
+sys-devel/bmake
+  DeprecatedEAPI: version 20140214: uses deprecated EAPI: 3
+
+sys-devel/byfl
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-devel/clang
+  DeprecatedEclass: version 2.8-r3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.8-r3: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.9-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.9-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 3.0-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.0-r4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 3.1-r5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 2.8-r3: "clang-2.8.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-devel/cons
+  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 0
+  MissingChksum: version 2.2.0: "cons-2.2.0.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sys-devel/crossdev
+  DeprecatedEAPI: version 20100814: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20101011: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20110310: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20110705: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20110819: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20111011: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20111018: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20111118: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20111221: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 20120214: uses deprecated EAPI: 3
+  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-devel/distcc
+  ExecutableFile: "files/3.1/init" has unnecessary executable bit
+  ExecutableFile: "files/3.0/init" has unnecessary executable bit
+
+sys-devel/flex
+  DeprecatedEAPI: version 2.5.35: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.5.35_p10: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.5.37: uses deprecated EAPI: 3
+
+sys-devel/gcc
+  NonExistentDeps: version 3.3.6-r1: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 3.4.6-r2: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 4.0.4: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 4.1.2: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 4.2.4-r1: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 4.3.6-r1: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 4.4.7: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 4.5.4: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 4.6.4: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 4.7.0: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 4.7.1: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 4.7.2-r1: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 4.7.3-r1: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  DeprecatedEAPI: version 4.7.3-r1: uses deprecated EAPI: 2
+  NonExistentDeps: version 4.7.4: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 4.8.0: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 4.8.1-r1: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 4.8.2: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 4.8.3: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 4.8.4: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 4.8.5: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 4.9.0: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 4.9.1: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 4.9.2: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 4.9.3: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 5.1.0: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  NonExistentDeps: version 5.2.0: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
+  ExecutableFile: "files/c89" has unnecessary executable bit
+  ExecutableFile: "files/c99" has unnecessary executable bit
+  DroppedKeywordWarning: version 5.1.0: keywords dropped: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
+
+sys-devel/gcc-apple
+  DeprecatedEAPI: version 4.0.1_p5493: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 4.2.1_p5664: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 4.2.1_p5666-r1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 4.2.1_p5666-r2: uses deprecated EAPI: 3
+  SizeViolation: "files/gcc-apple-4.2.1_p5646-gfortran.patch" exceeds 20k in size; 38284 bytes total
+
+sys-devel/gcc-config
+  DeprecatedEAPI: version 1.4.1-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5.1-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.7: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.7.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.7.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.7.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.8: uses deprecated EAPI: 0
+  SizeViolation: "files/gcc-config-1.4.1" exceeds 20k in size; 21715 bytes total
+  ExecutableFile: "files/gcc-config-1.5" has unnecessary executable bit
+  ExecutableFile: "files/gcc-config-1.5.1" has unnecessary executable bit
+  SizeViolation: "files/gcc-config-1.5.1" exceeds 20k in size; 21018 bytes total
+
+sys-devel/gdb
+  DeprecatedEAPI: version 7.5: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 7.5.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 7.6: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 7.6.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 7.6.2: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-devel/gdb-apple
+  DeprecatedEAPI: version 563: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 768-r1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 960: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 962: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 966: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1344: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1346: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1461: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1518: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1705: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1708: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 1752: uses deprecated EAPI: 3
+  MissingChksum: version 563: "gdb-563.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 768-r1: "gdb-768.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 960: "gdb-960.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 962: "gdb-962.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 966: "gdb-966.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1344: "gdb-1344.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1346: "gdb-1346.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1461: "gdb-1461.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1518: "gdb-1518.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1705: "gdb-1705.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1708: "gdb-1708.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1752: "gdb-1752.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-devel/gnuconfig
+  DeprecatedEAPI: version 20130516: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 20131128: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 20140212: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 20140728: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 20150304: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 20150308: uses deprecated EAPI: 2
+  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-devel/kgcc64
+  DroppedKeywordWarning: version 4.3.5: keywords dropped: ppc, s390
+  DroppedKeywordWarning: version 4.8.1: keywords dropped: mips
+  DroppedKeywordWarning: version 4.9.1: keywords dropped: sparc
+
+sys-devel/libtool
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-devel/llvm
+  DeprecatedEclass: version 3.0-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 3.1-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sys-devel/m4
+  DeprecatedEAPI: version 1.4.16: uses deprecated EAPI: 3
+
+sys-devel/make
+  DeprecatedEAPI: version 3.80-r4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.81-r2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.82-r4: uses deprecated EAPI: 2
+  MissingChksum: version 3.80-r4: "make-3.80.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-devel/native-cctools
+  BadInsIntoDir: version 1: ebuild uses insinto /etc/env.d on line 96
+  DeprecatedEAPI: version 1: uses deprecated EAPI: 3
+  BadInsIntoDir: version 2: ebuild uses insinto /etc/env.d on line 96
+  DeprecatedEAPI: version 2: uses deprecated EAPI: 3
+  BadInsIntoDir: version 4: ebuild uses insinto /etc/env.d on line 99
+  DeprecatedEAPI: version 4: uses deprecated EAPI: 3
+
+sys-devel/parity
+  MissingChksum: version 1.2.4: "parity-1.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-devel/qconf
+  DeprecatedEAPI: version 1.5_pre717-r1: uses deprecated EAPI: 2
+  MissingChksum: version 1.5_pre717-r1: "qconf-1.5_pre717.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-devel/remake
+  DeprecatedEAPI: version 3.81.0.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.81.0.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.82.0.4: uses deprecated EAPI: 0
+  MissingChksum: version 3.81.0.2: "remake-3.81+dbg-0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-devel/smatch
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-devel/sparse
+  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 2
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-devel/ucpp
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
+               : error range rlt version 5.5.34 is a guaranteed empty set
+
+sci-chemistry/PyMca
+  DeprecatedEclass: version 4.6.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sci-chemistry/acpype
+  DeprecatedEclass: version 366: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 366: uses deprecated EAPI: 3
+  NonExistentDeps: version 374: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
+  NonExistentDeps: version 374: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
+  DeprecatedEclass: version 374: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingChksum: version 366: "acpype-366.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/ambertools
+  MissingChksum: version 1.5-r1: "AmberTools-1.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.5-r1: "ambertools-1.5-bugfix_1-10.patch.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/aqua
+  MissingChksum: version 3.2-r2: "aqua3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 3.2-r2: "aqua-3.2-nmr_manual.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/avogadro
+  DroppedKeywordWarning: version 1.1.0: keywords dropped: ppc
+
+sci-chemistry/azara
+  DeprecatedEclass: version 2.8-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.8-r4: uses deprecated EAPI: 3
+
+sci-chemistry/balbes
+  DeprecatedEclass: version 1.0.0_p100317-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.0.0_p100317-r2: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.0_p100317-r2: "balbes-1.0.0_p100317.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.0.0_p100317-r2: "ccp4-6.1.3-core-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/ccp4-apps
+  SizeViolation: "files/6.1.3-lapack.patch" exceeds 20k in size; 21642 bytes total
+
+sci-chemistry/chemical-mime-data
+  DeprecatedEAPI: version 0.1.94: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.1.94-r1: uses deprecated EAPI: 2
+
+sci-chemistry/coot
+  DeprecatedEclass: version 0.7: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sci-chemistry/elem
+  DeprecatedEAPI: version 1.0.3-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.3-r2: uses deprecated EAPI: 0
+  MissingChksum: version 1.0.3-r1: "elem-src-1.0.3-Linux.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/gamess
+  MissingChksum: version 20110811.1: "gamess-20110811.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 20110811.1: "tinker.tar.Z" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/gamessq
+  MissingChksum: version 1.2: "gamessq-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/ghemical
+  DeprecatedEAPI: version 2.99.2-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.0.0: uses deprecated EAPI: 3
+  MissingChksum: version 2.99.2-r2: "ghemical-2.99.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/gopenmol
+  DeprecatedEclass: version 3.00-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sci-chemistry/icm-browser
+  MissingChksum: version 3.6.1i: "icm-browser-3.6-1i.i386.rpm" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/massxpert
+  DeprecatedEAPI: version 2.0.5: uses deprecated EAPI: 2
+
+sci-chemistry/mead
+  DeprecatedEAPI: version 2.2.7: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.2.7-r1: uses deprecated EAPI: 0
+  MissingChksum: version 2.2.7: "mead-2.2.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-chemistry/mm-align
+  MissingChksum: version 20120321: "MM-align-20120321.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/moldy
+  MissingChksum: version 2.16e-r2: "moldy-2.16e.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-chemistry/molmol
+  SizeViolation: "files/wild.patch" exceeds 20k in size; 50572 bytes total
+
+sci-chemistry/molrep
+  MissingChksum: version 11.0.02: "molrep-11.0.02.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/mpqc
+  DeprecatedEAPI: version 2.3.1-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.3.1-r2: uses deprecated EAPI: 2
+
+sci-chemistry/mrbump
+  DeprecatedEclass: version 0.4.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.4.4: uses deprecated EAPI: 3
+  MissingChksum: version 0.4.4: "mrbump-0.4.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-chemistry/msms-bin
+  MissingChksum: version 2.6.1-r1: "msms_i86_64Linux2_2.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 2.6.1-r1: "msms_i86Linux2_2.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-chemistry/mustang
+  MissingChksum: version 3.2.1: "mustang_v3.2.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-chemistry/ortep3
+  MissingChksum: version 1.0.3-r1: "ortep.f" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/p3d
+  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  MissingChksum: version 0.4.3: "p3d-0.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-chemistry/pdb-extract
+  DeprecatedEAPI: version 3.004-r2: uses deprecated EAPI: 3
+  MissingChksum: version 3.004-r2: "pdb-extract-v3.004-prod-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 3.11: "pdb-extract-v3.11-prod-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-chemistry/pdb2pqr
+  NonExistentDeps: version 1.5.0-r2: depset depends: nonexistent atoms [ =dev-lang/python-2.5* ]
+  NonExistentDeps: version 1.5.0-r2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5* ]
+  DeprecatedEclass: version 1.5.0-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.5.0-r2: uses deprecated EAPI: 3
+  MissingChksum: version 1.5.0-r2: "pdb2pqr-1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/pdbcns
+  MissingChksum: version 2.0.010504: "pdbcns.2.0.010504.perl.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-chemistry/phaser
+  MissingChksum: version 2.1.4: "ccp4-6.1.13-phaser-cctbx-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/platon
+  MissingChksum: version 20110126: "platon-20110126.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/pointless
+  DeprecatedEclass: version 1.6.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 1.6.14: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.6.14: uses deprecated EAPI: 3
+  MissingChksum: version 1.6.2: "pointless-1.6.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/prekin
+  DeprecatedEAPI: version 6.51.081122-r1: uses deprecated EAPI: 2
+  MissingChksum: version 6.51.081122-r1: "prekin.6.51.081122.src.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/procheck
+  MissingChksum: version 3.5.4-r1: "procheck-3.5.4-manual.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/pymol-apbs-plugin
+  DeprecatedEclass: version 0_p15: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0_p15: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0_p18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0_p18: uses deprecated EAPI: 3
+  DeprecatedEclass: version 2.1_p24: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.1_p24: uses deprecated EAPI: 3
+  MissingChksum: version 0_p15: "pymol-apbs-plugin-0_p15.py" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0_p18: "pymol-apbs-plugin-0_p18.py" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/pymol-plugins-bni-tools
+  DeprecatedEclass: version 0.25.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.25.1: uses deprecated EAPI: 3
+
+sci-chemistry/pymol-plugins-dssp
+  DeprecatedEclass: version 110430: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 110430: uses deprecated EAPI: 3
+
+sci-chemistry/pymol-plugins-emovie
+  DeprecatedEclass: version 1.0.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.4: "eMovie_package.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-chemistry/pymol-plugins-msms
+  DeprecatedEclass: version 100415: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 100415: uses deprecated EAPI: 3
+
+sci-chemistry/reduce
+  DeprecatedEAPI: version 3.13.080428-r1: uses deprecated EAPI: 3
+  MissingChksum: version 3.13.080428-r1: "reduce.3.13.080428.src.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/solve-resolve-bin
+  MissingChksum: version 2.13: "solve-2.13-linux.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/suitename
+  MissingChksum: version 0.3.070628: "suitename.0.3.070628.src.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/surf
+  MissingChksum: version 1.0: "surf-1.0.tar.Z" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/threeV
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 3
+  MissingChksum: version 1.2: "3v-1.2.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-chemistry/viewmol
+  DeprecatedEclass: version 2.4.1-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.4.1-r2: uses deprecated EAPI: 3
+  MissingChksum: version 2.4.1-r2: "viewmol-2.4.1.src.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/votca-csg
+  NonExistentDeps: version 1.2.2: depset depends: nonexistent atoms [ <app-doc/doxygen-1.7.6.1 ]
+  NonExistentDeps: version 1.2.4-r1: depset depends: nonexistent atoms [ <app-doc/doxygen-1.7.6.1 ]
+  MissingChksum: version 1.2.2: "votca-csg-1.2.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.2.2: "votca-csg-manual-1.2.2.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.2.2: "votca-csg-tutorials-1.2.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/votca-csgapps
+  MissingChksum: version 1.2.2: "votca-csgapps-1.2.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/wxmacmolplt
+  MissingChksum: version 7.4.2: "wxmacmolplt-7.4.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/xdsi
+  MissingChksum: version 0.92-r1: "xdsi_0.92.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/xia2
+  DeprecatedEclass: version 0.3.1.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.3.1.0: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.1.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.3.1.6: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.1.7: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.3.1.7: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.3.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.3.3.1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.3.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.3.3.3: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.3.4.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.3.4.0: uses deprecated EAPI: 3
+  MissingChksum: version 0.3.1.0: "xia2-0.3.1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.3.1.6: "xia2-0.3.1.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.3.1.7: "xia2-0.3.1.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.3.3.1: "xia2-0.3.3.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.3.3.3: "xia2-0.3.3.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.3.4.0: "xia2-0.3.4.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-chemistry/xyza2pipe
+  DeprecatedEAPI: version 20101129: uses deprecated EAPI: 3
+WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
+               : error range rlt version 5.5.34 is a guaranteed empty set
+
+x11-apps/bdftopcf
+  DroppedKeywordWarning: version 1.0.5: keywords dropped: arm64
+
+x11-apps/fonttosfnt
+  MissingChksum: version 1.0.4-r1: "fonttosfnt-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-apps/fusion-icon
+  DeprecatedEclass: version 0.1-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.1-r3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+x11-apps/iceauth
+  DroppedKeywordWarning: version 1.0.7: keywords dropped: arm64
+
+x11-apps/listres
+  MissingChksum: version 1.0.3: "listres-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-apps/oclock
+  MissingChksum: version 1.0.3: "oclock-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-apps/python-whiteboard
+  DeprecatedEclass: version 20101012: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 20101012: uses deprecated EAPI: 3
+  MissingChksum: version 20101012: "python-whiteboard-20101012.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-apps/scripts
+  DeprecatedEAPI: version 1.0.1-r1: uses deprecated EAPI: 3
+
+x11-apps/smproxy
+  MissingChksum: version 1.0.5: "smproxy-1.0.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-apps/spotlighter
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 3
+  MissingChksum: version 0.1: "spotlighter-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-apps/transset
+  MissingChksum: version 1.0.0: "transset-1.0.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-apps/x11perf
+  MissingChksum: version 1.5.4: "x11perf-1.5.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-apps/xauth
+  DroppedKeywordWarning: version 1.0.9-r2: keywords dropped: arm64
+
+x11-apps/xbacklight
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 3
+
+x11-apps/xbiff
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "xbiff-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-apps/xcmsdb
+  MissingChksum: version 1.0.4: "xcmsdb-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-apps/xdbedizzy
+  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 3
+  MissingChksum: version 1.1.0: "xdbedizzy-1.1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-apps/xdriinfo
+  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.4: "xdriinfo-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-apps/xeyes
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 3
+  MissingChksum: version 1.1.1: "xeyes-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-apps/xf86dga
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "xf86dga-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-apps/xgamma
+  MissingChksum: version 1.0.5: "xgamma-1.0.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-apps/xinit
+  DroppedKeywordWarning: version 1.3.4: keywords dropped: arm64
+
+x11-apps/xkbevd
+  MissingChksum: version 1.1.3: "xkbevd-1.1.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-apps/xkbprint
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.3: "xkbprint-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-apps/xlogo
+  MissingChksum: version 1.0.4: "xlogo-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-apps/xlsatoms
+  MissingChksum: version 1.1.1: "xlsatoms-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-apps/xlsfonts
+  MissingChksum: version 1.0.4: "xlsfonts-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-apps/xmore
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 3
+  MissingChksum: version 1.0.2: "xmore-1.0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-apps/xpr
+  MissingChksum: version 1.0.4: "xpr-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-apps/xtrap
+  MissingChksum: version 1.0.2-r1: "xtrap-1.0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-apps/xwud
+  MissingChksum: version 1.0.4: "xwud-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
+               : error range rlt version 5.5.34 is a guaranteed empty set
+
+sci-geosciences/bt747
+  MissingChksum: version 2.0.3: "BT747_2.0.3_full.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-geosciences/foxtrotgps
+  MissingChksum: version 1.1.0: "foxtrotgps-1.1.0.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-geosciences/gdal-grass
+  MissingChksum: version 1.4.3-r1: "gdal-grass-1.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-geosciences/gmt
+  MissingChksum: version 4.5.6: "GSHHS2.1.1_high.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-geosciences/gpsbabel
+  MissingChksum: version 1.4.3: "gpsbabel.org-style3.css" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-geosciences/gpscorrelate
+  MissingChksum: version 1.6.1: "gpscorrelate-1.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-geosciences/gpsd
+  MetadataError: version 2.95-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: sci-geosciences/gpsd-2.95-r1, attr fetchables
+error: mirror://berlios/gpsd/gpsd-2.95.tar.gz is unparseable
+flagged token- uri mirror://berlios/gpsd/gpsd-2.95.tar.gz isn't a known mirror tier
+  DeprecatedEclass: version 2.95-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.95-r1: uses deprecated EAPI: 3
+  MetadataError: version 2.96-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: sci-geosciences/gpsd-2.96-r1, attr fetchables
+error: mirror://berlios/gpsd/gpsd-2.96bis.tar.gz is unparseable
+flagged token- uri mirror://berlios/gpsd/gpsd-2.96bis.tar.gz isn't a known mirror tier
+  DeprecatedEclass: version 2.96-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.96-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 3.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 3.7: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 3.8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 3.9: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 3.9-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  ExecutableFile: "files/gpsd.init-2" has unnecessary executable bit
+
+sci-geosciences/grass
+  DeprecatedEclass: version 6.4.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sci-geosciences/josm-plugins
+  DeprecatedEAPI: version 20101206: uses deprecated EAPI: 3
+  MissingChksum: version 20101206: "josm-plugins-20101206.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-geosciences/mapnik
+  DeprecatedEclass: version 2.0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 2.0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 2.1.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sci-geosciences/mapnik-world-boundaries
+  DeprecatedEAPI: version 20090514: uses deprecated EAPI: 2
+
+sci-geosciences/mapserver
+  DeprecatedEclass: version 6.0.1-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+sci-geosciences/mc2bsbh
+  MissingChksum: version 0.0.9: "mc2bsbh-beta09.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-geosciences/mkgmap
+  MissingChksum: version 1995: "mkgmap-r1995-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-geosciences/mtkbabel
+  MissingChksum: version 0.8.2: "mtkbabel-0.8.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-geosciences/osm-gps-map
+  ExecutableFile: "files/osm-gps-map-0.7.3-disable-compiler-warnings.patch" has unnecessary executable bit
+  ExecutableFile: "files/osm-gps-map-0.7.3-fix-docs-location.patch" has unnecessary executable bit
+
+sci-geosciences/osm2mp
+  MissingChksum: version 0.80: "osm2mp_v080.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-geosciences/osm2pgsql
+  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sci-geosciences/osmosis
+  MissingChksum: version 0.35.1: "osmosis-0.35.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-geosciences/qgis
+  DeprecatedEclass: version 1.7.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.7.0: uses deprecated EAPI: 3
+
+sci-geosciences/qlandkartegt-garmindev
+  MissingChksum: version 0.3.4: "garmindev-0.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-geosciences/readosm
+  MissingChksum: version 1.0.0: "readosm-1.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
+               : error range rlt version 5.5.34 is a guaranteed empty set
+
+net-irc/asuka
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
+
+net-irc/atheme-services
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+net-irc/bip
+  DeprecatedEAPI: version 0.8.8-r1: uses deprecated EAPI: 2
+
+net-irc/bnc
+  DeprecatedEAPI: version 2.9.4: uses deprecated EAPI: 0
+
+net-irc/charybdis
+  VulnerablePackage: version 3.3.0: vulnerable via glsa(201405-21) ( ver < 3.4.2 ), keywords ('amd64', 'x86')
+
+net-irc/dccserver
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+
+net-irc/dircproxy
+  DeprecatedEAPI: version 1.2.0_rc1: uses deprecated EAPI: 0
+
+net-irc/hexchat
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+net-irc/iip
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 2
+
+net-irc/irc-client
+  DeprecatedEAPI: version 2.10.3_p7: uses deprecated EAPI: 0
+  MetadataError: version 2.10.3_p7: attr(rdepends): blocks itself
+
+net-irc/irc-server
+  DeprecatedEAPI: version 2.11.1_p1-r2: uses deprecated EAPI: 0
+
+net-irc/ircmap
+  DeprecatedEAPI: version 0.99: uses deprecated EAPI: 0
+
+net-irc/irker
+  DeprecatedEclass: version 1.19: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 1.20: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+net-irc/irssi-otr
+  NonExistentDeps: version 0.2: depset depends: nonexistent atoms [ net-irc/irssi-svn ]
+  NonExistentDeps: version 0.2: depset rdepends: nonexistent atoms [ net-irc/irssi-svn ]
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 2
+
+net-irc/irssistats
+  DeprecatedEAPI: version 0.75: uses deprecated EAPI: 0
+
+net-irc/jircii
+  DeprecatedEAPI: version 41: uses deprecated EAPI: 0
+
+net-irc/kvirc
+  DeprecatedEclass: version 4.4_pre6250: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+
+net-irc/miau
+  DeprecatedEAPI: version 0.6.6: uses deprecated EAPI: 0
+
+net-irc/muh
+  DeprecatedEAPI: version 2.2a: uses deprecated EAPI: 0
+
+net-irc/ninja
+  DeprecatedEAPI: version 1.5.9_pre14: uses deprecated EAPI: 0
+
+net-irc/onis
+  DeprecatedEAPI: version 0.8.2: uses deprecated EAPI: 0
+
+net-irc/psybnc
+  DeprecatedEAPI: version 2.3.2.9-r2: uses deprecated EAPI: 2
+
+net-irc/ptlink-opm
   DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
 
-app-emulation/vmips-cross-bin
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+net-irc/rhapsody
+  DeprecatedEAPI: version 0.28b: uses deprecated EAPI: 0
 
-app-emulation/vmware-modules
-  SizeViolation: "files/271-3.10.0.patch" exceeds 20k in size; 23418 bytes total
+net-irc/smuxi
+  DeprecatedEclass: version 0.8.10.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
 
-app-emulation/vmware-tools
-  DeprecatedEAPI: version 9.2.3.1031769: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.6.1.1379776: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.6.2.1744117: uses deprecated EAPI: 0
+net-irc/srvx
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
 
-app-emulation/vov
-  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 0
-ERROR pkgcore: caught unexpected exception accessing keywords from ebuild src:
-             : sys-devel/gettext-0.19.4, exception Metadata Exception: pkg
-             : ebuild src: sys-devel/gettext-0.19.4, attr keywords
-ERROR pkgcore: error: Metadata Exception: pkg ebuild src:
-             : sys-devel/gettext-0.19.4, attr data
-ERROR pkgcore: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR pkgcore: None
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/restrictions/boolean.py
-          : ", line 247, in match
-ERROR root:     if not rest.match(vals):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 207, in <lambda>
-ERROR root:     s.data.pop("KEYWORDS", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr keywords
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 314, in <genexpr>
-ERROR root:     FakeConfigurable(pkg, profile)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 28, in __init__
-ERROR root:     self, 'iuse', frozenset(pkg.iuse_stripped |
-          : profile.iuse_effective))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 235, in iuse_stripped
-ERROR root:     return frozenset(x.lstrip('-+') for x in self.iuse)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 101, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 213, in <lambda>
-ERROR root:     s.data.pop("IUSE", "").split()))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 103, in dynamic_getattr_dict
-ERROR root:     raise_from(MetadataException(self, attr, str(e)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/base.py", line
-          : 93, in dynamic_getattr_dict
-ERROR root:     val = functor(self)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/package/metadata.py",
-          : line 59, in _get_data
-ERROR root:     return self._fetch_metadata()
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 274, in _fetch_metadata
-ERROR root:     return self._parent._get_metadata(self, ebp=ebp,
-          : force_regen=force_regen)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 365, in _get_metadata
-ERROR root:     return self._update_metadata(pkg, ebp=ebp)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebuild_src.py",
-          : line 373, in _update_metadata
-ERROR root:     mydata = my_proc.get_keys(pkg, self._ecache)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 835, in get_keys
-ERROR root:     {"key": receive_key})
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/processor.py",
-          : line 768, in _run_depend_like_phase
-ERROR root:     self.write("%s %i\n%s" % (command, len(data), data),
-          : append_newline=False)
-ERROR root: MetadataException: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr iuse
-ERROR root: error: Metadata Exception: pkg ebuild src:
-          : sys-devel/gettext-0.19.4, attr data
-ERROR root: error: bytes_ro_StringIO instance has no attribute '__len__'
-ERROR root: check <pkgcheck.visibility.VisibilityReport object at
-          : 0x7ff27368f7d0> raised
-ERROR root: Traceback (most recent call last):
-ERROR root:   File "/usr/lib64/python2.7/site-packages/pkgcheck/base.py", line
-          : 337, in feed
-ERROR root:     check.feed(item, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 264, in feed
-ERROR root:     self.process_depset(pkg, attr, edepset, profiles, reporter)
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in process_depset
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 315, in <genexpr>
-ERROR root:     if any(True for pkg in src if visible(pkg)):
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 314, in <genexpr>
-ERROR root:     FakeConfigurable(pkg, profile)))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcheck/visibility.py", line
-          : 28, in __init__
-ERROR root:     self, 'iuse', frozenset(pkg.iuse_stripped |
-          : profile.iuse_effective))
-ERROR root:   File
-          : "/usr/lib64/python2.7/site-packages/pkgcore/ebuild/ebui
+net-irc/xchat-otr
+  NonExistentDeps: version 0.3: depset depends: nonexistent atoms [ net-irc/xchat ]
+  NonExistentDeps: version 0.3: depset rdepends: nonexistent atoms [ net-irc/xchat ]
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 2
+
+net-irc/znc
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
+               : error range rlt version 5.5.34 is a guaranteed empty set
+
+sys-kernel/genkernel
+  DeprecatedEAPI: version 3.4.45.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.48: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.49: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.49.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.49.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.50: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.51: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.51.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.51.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.51.4: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999-r1: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 3.4.50: keywords dropped: sh
+
+sys-kernel/genkernel-next
+  DroppedKeywordWarning: version 60: keywords dropped: ppc, ppc64
+  DroppedKeywordWarning: version 55: keywords dropped: alpha
+
+sys-kernel/kccmp
+  MissingChksum: version 0.3: "kccmp-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sys-kernel/linux-firmware
+  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-kernel/linux-headers
+  DeprecatedEAPI: version 3.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.2-r1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.3: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4-r1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.5: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.6: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.7: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.8: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.9: uses deprecated EAPI: 3
+
+sys-kernel/raspberrypi-image
+  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-kernel/raspberrypi-sources
+  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.12.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.14.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.18.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.19.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-kernel/spl
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+
+sys-kernel/vserver-sources
+  VulnerablePackage: version 2.3.0.36.32: vulnerable via glsa(200407-02) ( ( ver < 2.0 || ver >= 2.4 || ver-rev < 2.4.26.1.3.9-r2 ) ), keywords ('amd64', 'hppa', 'x86')
+  VulnerablePackage: version 2.3.0.36.32: vulnerable via glsa(200407-16) ( ( ver-rev < 2.4.26.1.28-r1 || ver >= 2.4 || ver < 2.0 ) ), keywords ('amd64', 'hppa', 'x86')
+  VulnerablePackage: version 2.3.0.36.32: vulnerable via glsa(200408-24) ( ( ver-rev < 2.4.26.1.28-r4 || ver < 2.0 || ver >= 2.4 ) ), keywords ('amd64', 'hppa', 'x86')
+  VulnerablePackage: version 2.3.6.5: vulnerable via glsa(200407-02) ( ( ver < 2.0 || ver >= 2.4 || ver-rev < 2.4.26.1.3.9-r2 ) ), keywords ('amd64', 'hppa', 'x86')
+  VulnerablePackage: version 2.3.6.5: vulnerable via glsa(200407-16) ( ( ver-rev < 2.4.26.1.28-r1 || ver >= 2.4 || ver < 2.0 ) ), keywords ('amd64', 'hppa', 'x86')
+  VulnerablePackage: version 2.3.6.5: vulnerable via glsa(200408-24) ( ( ver-rev < 2.4.26.1.28-r4 || ver < 2.0 || ver >= 2.4 ) ), keywords ('amd64', 'hppa', 'x86')
+  VulnerablePackage: version 2.3.6.8: vulnerable via glsa(200407-02) ( ( ver < 2.0 || ver >= 2.4 || ver-rev < 2.4.26.1.3.9-r2 ) ), keywords ('amd64', 'hppa', 'x86')
+  VulnerablePackage: version 2.3.6.8: vulnerable via glsa(200407-16) ( ( ver-rev < 2.4.26.1.28-r1 || ver >= 2.4 || ver < 2.0 ) ), keywords ('amd64', 'hppa', 'x86')
+  VulnerablePackage: version 2.3.6.8: vulnerable via glsa(200408-24) ( ( ver-rev < 2.4.26.1.28-r4 || ver < 2.0 || ver >= 2.4 ) ), keywords ('amd64', 'hppa', 'x86')
+  VulnerablePackage: version 2.3.6.11: vulnerable via glsa(200407-02) ( ( ver < 2.0 || ver >= 2.4 || ver-rev < 2.4.26.1.3.9-r2 ) ), keywords ('amd64', 'hppa', 'x86')
+  VulnerablePackage: version 2.3.6.11: vulnerable via glsa(200407-16) ( ( ver-rev < 2.4.26.1.28-r1 || ver >= 2.4 || ver < 2.0 ) ), keywords ('amd64', 'hppa', 'x86')
+  VulnerablePackage: version 2.3.6.11: vulnerable via glsa(200408-24) ( ( ver-rev < 2.4.26.1.28-r4 || ver < 2.0 || ver >= 2.4 ) ), keywords ('amd64', 'hppa', 'x86')
+  VulnerablePackage: version 2.3.6.14: vulnerable via glsa(200407-02) ( ( ver < 2.0 || ver >= 2.4 || ver-rev < 2.4.26.1.3.9-r2 ) ), keywords ('amd64', 'hppa', 'x86')
+  VulnerablePackage: version 2.3.6.14: vulnerable via glsa(200407-16) ( ( ver-rev < 2.4.26.1.28-r1 || ver >= 2.4 || ver < 2.0 ) ), keywords ('amd64', 'hppa', 'x86')
+  VulnerablePackage: version 2.3.6.14: vulnerable via glsa(200408-24) ( ( ver-rev < 2.4.26.1.28-r4 || ver < 2.0 || ver >= 2.4 ) ), keywords ('amd64', 'hppa', 'x86')
+  VulnerablePackage: version 2.3.7.3: vulnerable via glsa(200407-02) ( ( ver < 2.0 || ver >= 2.4 || ver-rev < 2.4.26.1.3.9-r2 ) ), keywords ('amd64', 'hppa', 'x86')
+  VulnerablePackage: version 2.3.7.3: vulnerable via glsa(200407-16) ( ( ver-rev < 2.4.26.1.28-r1 || ver >= 2.4 || ver < 2.0 ) ), keywords ('amd64', 'hppa', 'x86')
+  VulnerablePackage: version 2.3.7.3: vulnerable via glsa(200408-24) ( ( ver-rev < 2.4.26.1.28-r4 || ver < 2.0 || ver >= 2.4 ) ), keywords ('amd64', 'hppa', 'x86')
+  VulnerablePackage: version 2.3.7.4: vulnerable via glsa(200407-02) ( ( ver < 2.0 || ver >= 2.4 || ver-rev < 2.4.26.1.3.9-r2 ) ), keywords ('amd64', 'hppa', 'x86')
+  VulnerablePackage: version 2.3.7.4: vulnerable via glsa(200407-16) ( ( ver-rev < 2.4.26.1.28-r1 || ver >= 2.4 || ver < 2.0 ) ), keywords ('amd64', 'hppa', 'x86')
+  VulnerablePackage: version 2.3.7.4: vulnerable via glsa(200408-24) ( ( ver-rev < 2.4.26.1.28-r4 || ver < 2.0 || ver >= 2.4 ) ), keywords ('amd64', 'hppa', 'x86')
+
+sys-kernel/zen-sources
+  DeprecatedEclass: version 3.8.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.9.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.11.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.12.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.13.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
+               : error range rlt version 5.5.34 is a guaranteed empty set
+
+games-util/dzip
+  DeprecatedEAPI: version 2.9-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.9-r2: uses deprecated EAPI: 2
+
+games-util/pyfa
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
+               : error range rlt version 5.5.34 is a guaranteed empty set
+
+www-plugins/kaffeine-mozilla-plugin
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+
+www-plugins/pipelight
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
+               : error range rlt version 5.5.34 is a guaranteed empty set
+
+app-officeext/barcode
+  NonExistentDeps: version 1.3.5.0-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
+  NonExistentDeps: version 1.3.5.0-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+
+app-officeext/ct2n
+  NonExistentDeps: version 1.4.0-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
+  NonExistentDeps: version 1.4.0-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+
+app-officeext/dmaths
+  NonExistentDeps: version 3.4.9.0-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
+  NonExistentDeps: version 3.4.9.0-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+
+app-officeext/languagetool
+  NonExistentDeps: version 2.5: depset depends: nonexistent atoms [ app-office/openoffice ]
+  NonExistentDeps: version 2.5: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+  NonExistentDeps: version 2.7: depset depends: nonexistent atoms [ app-office/openoffice ]
+  NonExistentDeps: version 2.7: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+  NonExistentDeps: version 2.9: depset depends: nonexistent atoms [ app-office/openoffice ]
+  NonExistentDeps: version 2.9: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+
+app-officeext/ooo2gd
+  NonExistentDeps: version 3.0.0-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
+  NonExistentDeps: version 3.0.0-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+
+app-officeext/ooofbtools
+  NonExistentDeps: version 2.34: depset depends: nonexistent atoms [ app-office/openoffice ]
+  NonExistentDeps: version 2.34: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+  NonExistentDeps: version 2.35: depset depends: nonexistent atoms [ app-office/openoffice ]
+  NonExistentDeps: version 2.35: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+  NonExistentDeps: version 2.36: depset depends: nonexistent atoms [ app-office/openoffice ]
+  NonExistentDeps: version 2.36: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+
+app-officeext/sun-templates
+  NonExistentDeps: version 1.0.0-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
+  NonExistentDeps: version 1.0.0-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+
+app-officeext/texmaths
+  NonExistentDeps: version 0.37-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
+  NonExistentDeps: version 0.37-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+  NonExistentDeps: version 0.41: depset depends: nonexistent atoms [ app-office/openoffice ]
+  NonExistentDeps: version 0.41: depset rdepends: nonexistent atoms [ app-office/openoffice ]
++ [[ 0 == 0 ]]
