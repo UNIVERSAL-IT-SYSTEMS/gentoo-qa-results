@@ -19,8 +19,8 @@ media-plugins/audacious-dumb
   MissingChksum: version 0.80: "audacious-dumb-0.80.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-plugins/audacious-plugins
-  VulnerablePackage: version 2.4.4-r1: vulnerable via glsa(201203-14) ( ver < 3.1 ), keywords ('alpha', 'amd64', 'amd64-linux', 'hppa', 'ppc', 'ppc64', 'sparc', 'x86', 'x86-fbsd', 'x86-freebsd', 'x86-interix', 'x86-linux')
   DeprecatedEAPI: version 2.4.4-r1: uses deprecated EAPI: 3
+  VulnerablePackage: version 2.4.4-r1: vulnerable via glsa(201203-14) ( ver < 3.1 ), keywords ('alpha', 'amd64', 'amd64-linux', 'hppa', 'ppc', 'ppc64', 'sparc', 'x86', 'x86-fbsd', 'x86-freebsd', 'x86-interix', 'x86-linux')
   VulnerablePackage: version 2.5.4: vulnerable via glsa(201203-14) ( ver < 3.1 ), keywords ('alpha', 'amd64', 'amd64-linux', 'hppa', 'ppc', 'ppc64', 'sparc', 'x86', 'x86-fbsd', 'x86-freebsd', 'x86-interix', 'x86-linux')
   DroppedKeywordWarning: version 3.6.2: keywords dropped: alpha, ppc, sparc
 
@@ -28,6 +28,10 @@ media-plugins/banshee-community-extensions
   DeprecatedEclass: version 2.2.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEclass: version 2.4.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEclass: version 2.4.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+media-plugins/evas_generic_loaders
+  NonsolvableDeps: version 1.15.0: nonsolvable depset(depends) keyword(~hppa) profile (default/linux/hppa/13.0): solutions: [ media-libs/libraw, app-text/libspectre ]
+  NonsolvableDeps: version 1.15.0: nonsolvable depset(rdepends) keyword(~hppa) profile (default/linux/hppa/13.0): solutions: [ media-libs/libraw, app-text/libspectre ]
 
 media-plugins/fil-plugins
   DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 0
@@ -229,8 +233,8 @@ media-plugins/vdr-pin
   MissingChksum: version 0.1.9: "vdr-pin-0.1.9.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-plugins/vdr-powermate
-  MissingChksum: version 0.0.5: "vdr-powermate-0.0.5.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   ExecutableFile: "files/rc-addon.sh" has unnecessary executable bit
+  MissingChksum: version 0.0.5: "vdr-powermate-0.0.5.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-plugins/vdr-proxy
   MissingChksum: version 0.1.4-r1: "vdr-proxy-0.1.4.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -745,8 +749,8 @@ WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
 
 sys-block/afacli
   DeprecatedEAPI: version 4.1: uses deprecated EAPI: 0
-  MissingChksum: version 4.1: "afa-apps-snmp.2807420-A04.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   ExecutableFile: "files/afacli" has unnecessary executable bit
+  MissingChksum: version 4.1: "afa-apps-snmp.2807420-A04.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-block/btrace
   DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
@@ -797,8 +801,8 @@ sys-block/gparted
   ExecutableFile: "files/gparted-pkexec" has unnecessary executable bit
 
 sys-block/iscsitarget
-  VulnerablePackage: version 0.4.17: vulnerable via glsa(201201-06) ( ver < 1.4.19 ), keywords ('amd64', 'ppc', 'x86')
   DeprecatedEAPI: version 0.4.17: uses deprecated EAPI: 0
+  VulnerablePackage: version 0.4.17: vulnerable via glsa(201201-06) ( ver < 1.4.19 ), keywords ('amd64', 'ppc', 'x86')
   DeprecatedEAPI: version 1.4.19: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.4.20.2: uses deprecated EAPI: 0
   MissingChksum: version 0.4.17: "iscsitarget-0.4.17.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -813,8 +817,8 @@ sys-block/mbuffer
   MissingChksum: version 20110724: "mbuffer-20110724.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-block/megacli
-  MissingChksum: version 8.02.21: "8.02.21_MegaCLI.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   ExecutableFile: "files/megacli-wrapper" has unnecessary executable bit
+  MissingChksum: version 8.02.21: "8.02.21_MegaCLI.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-block/megactl
   DeprecatedEAPI: version 0.4.1-r1: uses deprecated EAPI: 2
@@ -835,10 +839,10 @@ sys-block/mtx
   MissingChksum: version 1.3.12: "mtx-1.3.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-block/nbd
-  VulnerablePackage: version 2.9.20: vulnerable via glsa(201206-35) ( ver < 2.9.22 ), keywords ('amd64', 'ppc', 'ppc64', 'x86')
   DeprecatedEAPI: version 2.9.20: uses deprecated EAPI: 2
-  VulnerablePackage: version 2.9.21a: vulnerable via glsa(201206-35) ( ver < 2.9.22 ), keywords ('amd64', 'ppc', 'ppc64', 'x86')
+  VulnerablePackage: version 2.9.20: vulnerable via glsa(201206-35) ( ver < 2.9.22 ), keywords ('amd64', 'ppc', 'ppc64', 'x86')
   DeprecatedEAPI: version 2.9.21a: uses deprecated EAPI: 2
+  VulnerablePackage: version 2.9.21a: vulnerable via glsa(201206-35) ( ver < 2.9.22 ), keywords ('amd64', 'ppc', 'ppc64', 'x86')
   DeprecatedEAPI: version 2.9.22: uses deprecated EAPI: 2
   DeprecatedEAPI: version 2.9.23: uses deprecated EAPI: 2
   MissingChksum: version 2.9.24: "nbd-2.9.24.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -847,10 +851,10 @@ sys-block/noflushd
   DeprecatedEAPI: version 2.7.3: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.7.4: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.7.5: uses deprecated EAPI: 0
+  ExecutableFile: "files/noflushd.rc6" has unnecessary executable bit
   MissingChksum: version 2.7.3: "noflushd-2.7.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.7.4: "noflushd-2.7.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.7.5: "noflushd_2.7.5.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  ExecutableFile: "files/noflushd.rc6" has unnecessary executable bit
 
 sys-block/nwutil
   DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
@@ -1005,8 +1009,8 @@ net-im/simpserver-bin
 
 net-im/skypetab-ng
   NonExistentDeps: version 0.5.2: depset rdepends: nonexistent atoms [ <net-im/skype-4.1 ]
-  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <net-im/skype-4.1 ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <net-im/skype-4.1 ]
 
 net-im/tkabber
   MissingChksum: version 0.11.1-r1: "tkabber-plugins-0.11.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
