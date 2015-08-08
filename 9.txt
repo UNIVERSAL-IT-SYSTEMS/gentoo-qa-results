@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 9 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'dev-util/*' 'x11-libs/*' 'dev-vcs/*' 'app-office/*' 'games-puzzle/*' 'sys-process/*' 'gnustep-apps/*' 'net-ftp/*' 'net-nntp/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ pkgcheck -r gentoo --reporter FancyReporter 'dev-util/*' 'x11-libs/*' 'dev-vcs/*' 'app-office/*' 'games-puzzle/*' 'sys-process/*' 'gnustep-apps/*' 'x11-proto/*' 'net-nntp/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
@@ -849,9 +849,9 @@ app-office/openerp
   DeprecatedEAPI: version 6.1.1-r1: uses deprecated EAPI: 3
   DeprecatedEclass: version 7.0.20130219-r5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 7.0.20130219-r5: uses deprecated EAPI: 3
+  DroppedKeywordWarning: version 8.0.20140125: keywords dropped: amd64, x86
   ExecutableFile: "files/openerp" has unnecessary executable bit
   ExecutableFile: "files/openerp-confd" has unnecessary executable bit
-  DroppedKeywordWarning: version 8.0.20140125: keywords dropped: amd64, x86
 
 app-office/qchartdiary
   DeprecatedEAPI: version 0.6.4.1-r2: uses deprecated EAPI: 2
@@ -1150,40 +1150,19 @@ gnustep-apps/zipper
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
-net-ftp/atftp
-  ExecutableFile: "files/atftp.init" has unnecessary executable bit
+x11-proto/dmxproto
+  DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 3
+  MissingChksum: version 2.3.1: "dmxproto-2.3.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-ftp/bareftp
-  DeprecatedEclass: version 0.3.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEclass: version 0.3.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  MissingChksum: version 0.3.9: "bareftp-0.3.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-proto/evieext
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 3
+  MissingChksum: version 1.1.1: "evieext-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-ftp/ftp
-  DeprecatedEAPI: version 0.17-r7: uses deprecated EAPI: 0
+x11-proto/fontcacheproto
+  MissingChksum: version 0.1.3: "fontcacheproto-0.1.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-ftp/ftpbase
-  DeprecatedEAPI: version 0.01-r2: uses deprecated EAPI: 0
-
-net-ftp/netkit-ftpd
-  DeprecatedEAPI: version 0.17-r8: uses deprecated EAPI: 0
-
-net-ftp/oftpd
-  DeprecatedEAPI: version 0.3.7-r7: uses deprecated EAPI: 2
-
-net-ftp/oneclickftp
-  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 2
-  MissingChksum: version 0.5.1: "oneclickftp-0.5.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-ftp/scythia
-  DeprecatedEAPI: version 0.9.3_p2: uses deprecated EAPI: 3
-  MissingChksum: version 0.9.3_p2: "scythia_0.9.3-2-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-ftp/tlswrap
-  DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
-  MissingChksum: version 1.04: "tlswrap-1.04.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-ftp/tnftp
-  DeprecatedEAPI: version 20100108: uses deprecated EAPI: 2
+x11-proto/inputproto
+  DroppedKeywordWarning: version 2.3.1: keywords dropped: arm64, m68k
 WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
                : error range rlt version 5.5.34 is a guaranteed empty set
 
