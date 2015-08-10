@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 8 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'app-admin/*' 'dev-vcs/*' 'sci-mathematics/*' 'net-dns/*' 'mail-client/*' 'net-print/*' 'app-benchmarks/*' 'sci-calculators/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'app-admin/*' 'dev-vcs/*' 'sci-mathematics/*' 'net-dns/*' 'mail-client/*' 'net-print/*' 'app-benchmarks/*' 'sci-calculators/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /usr/lib64/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -17,9 +17,9 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 net-misc/6tunnel
   DeprecatedEAPI: version 0.10: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.11_rc1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.10: "6tunnel-0.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.11_rc1: "6tunnel-0.11rc1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/adjtimex
   DeprecatedEAPI: version 1.29-r1: uses deprecated EAPI: 2
@@ -27,18 +27,18 @@ net-misc/adjtimex
 
 net-misc/aget
   DeprecatedEAPI: version 0.4.1-r1: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4.1-r1: "aget-0.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/aggregate
   DeprecatedEAPI: version 1.6: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.6: "aggregate-1.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/aggregate-flim
   DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0.2: "aggregate-1.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/aiccu
   MissingFile: required file ChangeLog doesn't exist
@@ -57,8 +57,8 @@ net-misc/arm
 
 net-misc/arpd
   DeprecatedEAPI: version 0.2-r1: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2-r1: "arpd-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/arpsponge
   MissingFile: required file ChangeLog doesn't exist
@@ -67,7 +67,6 @@ net-misc/asterisk
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/asterisk-core-sounds
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.4.21-r1: "asterisk-core-sounds-en-alaw-1.4.21.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.4.21-r1: "asterisk-core-sounds-en-g722-1.4.21.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.4.21-r1: "asterisk-core-sounds-en-g729-1.4.21.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -140,10 +139,10 @@ net-misc/asterisk-core-sounds
   MissingChksum: version 1.4.22: "asterisk-core-sounds-ru-sln16-1.4.22.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.4.22: "asterisk-core-sounds-ru-ulaw-1.4.22.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.4.22: "asterisk-core-sounds-ru-wav-1.4.22.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/asterisk-extra-sounds
   DeprecatedEAPI: version 1.4.11: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.4.11: "asterisk-extra-sounds-en-alaw-1.4.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.4.11: "asterisk-extra-sounds-en-g722-1.4.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.4.11: "asterisk-extra-sounds-en-g729-1.4.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -162,13 +161,13 @@ net-misc/asterisk-extra-sounds
   MissingChksum: version 1.4.11: "asterisk-extra-sounds-fr-sln16-1.4.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.4.11: "asterisk-extra-sounds-fr-ulaw-1.4.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.4.11: "asterisk-extra-sounds-fr-wav-1.4.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/asterisk-g729
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/asterisk-moh-opsound
   DeprecatedEAPI: version 2.03: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.03: "asterisk-moh-opsound-alaw-2.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.03: "asterisk-moh-opsound-g722-2.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.03: "asterisk-moh-opsound-g729-2.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -178,23 +177,24 @@ net-misc/asterisk-moh-opsound
   MissingChksum: version 2.03: "asterisk-moh-opsound-sln16-2.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.03: "asterisk-moh-opsound-ulaw-2.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.03: "asterisk-moh-opsound-wav-2.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/asterisk-rate_engine
   DeprecatedEAPI: version 0.5.4: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.5.4: "rate-engine-0.5.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/asterisk-spandsp_codec_g726
   DeprecatedEAPI: version 0.0.2_pre26: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.0.2_pre26: "spandsp-0.0.2pre26_codec_g726.c.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/astmanproxy
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/autossh
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.4c: "autossh-1.4c.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/autoupnp
   MissingFile: required file ChangeLog doesn't exist
@@ -203,8 +203,8 @@ net-misc/axel
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.3-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.4-r1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.3-r1: "axel-2.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/badvpn
   MissingFile: required file ChangeLog doesn't exist
@@ -239,8 +239,8 @@ net-misc/blinkperl
 
 net-misc/bopm
   DeprecatedEAPI: version 3.1.3: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.1.3: "bopm-3.1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/bridge-utils
   MissingFile: required file ChangeLog doesn't exist
@@ -256,16 +256,16 @@ net-misc/bwwhois
 
 net-misc/cadaver
   DeprecatedEAPI: version 0.23.3: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.23.3: "cadaver-0.23.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/capi4hylafax
   DeprecatedEAPI: version 01.03.00.99.300.3-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 01.03.00.99.300.9: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 01.03.00.99.300.3-r1: "capi4hylafax_01.03.00.99.svn.300.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 01.03.00.99.300.3-r1: "capi4hylafax_01.03.00.99.svn.300-3.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 01.03.00.99.300.9: "capi4hylafax_01.03.00.99.svn.300-9.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/capiisdnmon
   MissingFile: required file ChangeLog doesn't exist
@@ -278,9 +278,9 @@ net-misc/cbugzilla
 
 net-misc/cfengine
   DeprecatedEAPI: version 2.2.10-r4: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 3.3.9: keywords dropped: ppc64
   DroppedKeywordWarning: version 3.6.2: keywords dropped: arm, ppc, s390, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/cgminer
   WhitespaceFound: version 4.9.2: ebuild has trailing whitespace on line 34
@@ -288,12 +288,12 @@ net-misc/cgminer
 
 net-misc/cgterm
   DeprecatedEAPI: version 1.6: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.6: "cgterm-1.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/charm
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.9.1: "charm-1.9.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/chrome-remote-desktop
   MissingFile: required file ChangeLog doesn't exist
@@ -303,9 +303,9 @@ net-misc/chrony
 
 net-misc/clamz
   DeprecatedEAPI: version 0.4: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4: "clamz-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.5: "clamz-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/clipgrab
   MissingFile: required file ChangeLog doesn't exist
@@ -315,8 +315,8 @@ net-misc/clockspeed
 
 net-misc/clockspeed-conf
   DeprecatedEAPI: version 0.4.5-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4.5-r1: "clockspeed-conf-0.4.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/clusterssh
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -337,8 +337,8 @@ net-misc/connman
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/corkscrew
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.0: "corkscrew-2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/csync
   MissingFile: required file ChangeLog doesn't exist
@@ -354,13 +354,13 @@ net-misc/dahdi-tools
 
 net-misc/datapipe
   DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0-r1: "datapipe-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/dcetest
   DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.0: "dcetest.tar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/dhcdrop
   MissingFile: required file ChangeLog doesn't exist
@@ -433,12 +433,12 @@ net-misc/flexget
 
 net-misc/fmirror
   DeprecatedEAPI: version 0.8.4-r2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.8.4-r2: "fmirror-0.8.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/freerdp
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.2.0_beta1_pre20141115: keywords dropped: alpha, arm
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/gcap
   MissingFile: required file ChangeLog doesn't exist
@@ -460,8 +460,8 @@ net-misc/gnome-online-miners
 
 net-misc/gnome-rdp
   DeprecatedEclass: version 0.3.0.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3.0.9: "gnome-rdp-0.3.0.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/gns3-converter
   MissingFile: required file ChangeLog doesn't exist
@@ -474,8 +474,8 @@ net-misc/gns3-server
 
 net-misc/gofish
   DeprecatedEAPI: version 1.2: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.2: "gofish-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/gogoc
   MissingFile: required file ChangeLog doesn't exist
@@ -486,9 +486,9 @@ net-misc/goog-sitemapgen
 
 net-misc/googlecl
   DeprecatedEclass: version 0.9.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.9.14: uses deprecated EAPI: 3
   NonExistentDeps: version 0.9.14: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.9.14: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 0.9.14: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/grdesktop
@@ -516,8 +516,8 @@ net-misc/gsutil
 
 net-misc/gtkvncviewer
   DeprecatedEclass: version 0.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4: "gtkvncviewer-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/guacamole-server
   MissingFile: required file ChangeLog doesn't exist
@@ -540,13 +540,13 @@ net-misc/gwhois
 
 net-misc/hashcash
   DeprecatedEAPI: version 1.22-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.22-r1: "hashcash-1.22.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/hlfl
   DeprecatedEAPI: version 0.60.1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.60.1: "hlfl-0.60.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/hotot
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -554,8 +554,8 @@ net-misc/hotot
 
 net-misc/hsc
   DeprecatedEAPI: version 1.0b: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0b: "hsc-1.0b.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/htbinit
   MissingFile: required file ChangeLog doesn't exist
@@ -567,8 +567,8 @@ net-misc/httpie
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/httptunnel
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.3-r2: "httptunnel-3.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/httptype
   MissingFile: required file ChangeLog doesn't exist
@@ -585,8 +585,8 @@ net-misc/i2pd
 
 net-misc/iaxmodem
   DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.2.0: "iaxmodem-1.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/icaclient
   MissingFile: required file ChangeLog doesn't exist
@@ -596,13 +596,13 @@ net-misc/icecast
 
 net-misc/ices
   DeprecatedEAPI: version 2.0.1-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.0.1-r1: "ices-2.0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/identicurse
   DeprecatedEclass: version 0.9: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.9: "identicurse-0.9.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/ifenslave
   MissingFile: required file ChangeLog doesn't exist
@@ -624,18 +624,18 @@ net-misc/iperf
 
 net-misc/ipsc
   DeprecatedEAPI: version 0.4.3.2-r2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4.3.2-r2: "ipsc-0.4.3.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/ipsorcery
   DeprecatedEAPI: version 2.0.9-r1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.0.9-r1: "ipsorc-2.0.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/ipsvd
   DeprecatedEAPI: version 1.0.0-r1: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0.0-r1: "ipsvd-1.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/iputils
   DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -655,10 +655,10 @@ net-misc/italc
 
 net-misc/ixp4xx
   DeprecatedEAPI: version 2.1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.1: "IPL_ixp400AccessLibrary-2_1.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 2.1: "IPL_ixp400NpeLibrary-2_1.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 2.1: "GPL_ixp400LinuxEthernetDriverPatch-1_5.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/java-wakeonlan
   MissingFile: required file ChangeLog doesn't exist
@@ -672,8 +672,8 @@ net-misc/jlj
 
 net-misc/jrdesktop
   DeprecatedEAPI: version 0.3.1.0: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3.1.0: "jrdesktop-source-0.3.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/jumpgate
   MissingFile: required file ChangeLog doesn't exist
@@ -681,8 +681,8 @@ net-misc/jumpgate
 net-misc/jwhois
   DeprecatedEAPI: version 3.2.3-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 4.0: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.2.3-r1: "jwhois-3.2.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/keychain
   MissingFile: required file ChangeLog doesn't exist
@@ -701,15 +701,15 @@ net-misc/ksshaskpass
 
 net-misc/kumofs
   DeprecatedEAPI: version 0.4.13: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4.13: "kumofs-0.4.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/kvpnc
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/l7-filter-userspace
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.11: "l7-filter-userspace-0.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/l7-protocols
   DeprecatedEAPI: version 2009.05.28: uses deprecated EAPI: 0
@@ -717,8 +717,8 @@ net-misc/l7-protocols
 
 net-misc/lambdamoo
   DeprecatedEAPI: version 1.8.1-r2: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.8.1-r2: "LambdaMOO-1.8.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/lanmap
   MissingFile: required file ChangeLog doesn't exist
@@ -767,13 +767,13 @@ net-misc/logmein-hamachi
 
 net-misc/mdidentd
   DeprecatedEAPI: version 1.04c: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.04c: "ezbounce-1.04c.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/mediatomb
+  DroppedKeywordWarning: version 0.12.2_pre20150118: keywords dropped: ppc
   MissingFile: required file ChangeLog doesn't exist
   SizeViolation: "files/mediatomb-0.12.1-libextractor.patch" exceeds 20k in size; 21074 bytes total
-  DroppedKeywordWarning: version 0.12.2_pre20150118: keywords dropped: ppc
 
 net-misc/megatools
   MissingFile: required file ChangeLog doesn't exist
@@ -799,8 +799,8 @@ net-misc/mikutter
 
 net-misc/mindterm
   DeprecatedEAPI: version 3.4: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.4: "mindterm_3.4-src.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/minidlna
   MissingFile: required file ChangeLog doesn't exist
@@ -816,28 +816,28 @@ net-misc/miredo
 
 net-misc/mknbi
   DeprecatedEAPI: version 1.4.4: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.4.4: "mknbi-1.4.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/mobile-broadband-provider-info
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/modemmanager
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.4.2: keywords dropped: arm64
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/monmotha
   DeprecatedEAPI: version 2.3.8: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.3.8: "rc.firewall-2.3.8" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/mosh
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/mrouted
   DeprecatedEAPI: version 3.9.5: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.9.5: "mrouted-3.9.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/mulk
   MissingFile: required file ChangeLog doesn't exist
@@ -847,16 +847,16 @@ net-misc/nat-traverse
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/ncp
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.2.4: "ncp-1.2.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/ndisc6
   DeprecatedEAPI: version 0.9.9: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.9.9-r2: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.9.9: "ndisc6-0.9.9.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.0.2: "ndisc6-1.0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/ndppd
   MissingFile: required file ChangeLog doesn't exist
@@ -866,8 +866,8 @@ net-misc/nemesis
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/netcf
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1.9: "netcf-0.1.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/netctl
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -875,13 +875,13 @@ net-misc/netctl
 
 net-misc/netdate
   DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.2: "netdate-1.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/netfleet
   DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2.1: "netfleet_0.2.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/netifrc
   MissingFile: required file ChangeLog doesn't exist
@@ -889,13 +889,13 @@ net-misc/netifrc
 net-misc/netkit-bootparamd
   DeprecatedEAPI: version 0.17-r2: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.17-r3: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.17-r2: "netkit-bootparamd_0.17.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/netkit-bootpd
   DeprecatedEAPI: version 2.4-r1: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.4-r1: "bootpd-2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/netkit-fingerd
   MissingFile: required file ChangeLog doesn't exist
@@ -904,19 +904,19 @@ net-misc/netkit-routed
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/netkit-rsh
-  NonExistentDeps: version 0.17-r9: depset depends: nonexistent atoms [ app-arch/lzma-utils ]
   DeprecatedEAPI: version 0.17-r9: uses deprecated EAPI: 0
+  NonExistentDeps: version 0.17-r9: depset depends: nonexistent atoms [ app-arch/lzma-utils ]
   NonExistentDeps: version 0.17-r10: depset depends: nonexistent atoms [ app-arch/lzma-utils ]
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/netkit-rusers
   DeprecatedEAPI: version 0.17-r1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.17-r1: "netkit-rusers-0.17.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/netkit-rwall
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.17-r1: "netkit-rwall-0.17.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/netkit-rwho
   MissingFile: required file ChangeLog doesn't exist
@@ -930,35 +930,35 @@ net-misc/netkit-telnetd
 
 net-misc/netkit-timed
   DeprecatedEAPI: version 0.17-r9: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.17-r9: "netkit-timed-0.17.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/netpipe
   DeprecatedEAPI: version 1.0.0_beta2: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.0.0_beta2-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0.0_beta2: "netpipe.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/netpipes
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/netprofiles-ims
   DeprecatedEAPI: version 0.1.0134: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1.0134: "netprofiles-ims-0.1.0134.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/netsed
   DeprecatedEAPI: version 0.01b: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.01b: "netsed.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.01b: "netsed_0.01c-2.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/netstat-nat
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/networkmanager
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.9.10.1_pre20141101: keywords dropped: alpha, ia64, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/networkmanager-openconnect
   MissingFile: required file ChangeLog doesn't exist
@@ -973,33 +973,33 @@ net-misc/networkmanager-openswan
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/networkmanager-openvpn
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.9.10.0: keywords dropped: arm
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/networkmanager-pptp
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.9.10.0: keywords dropped: arm
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/networkmanager-sstp
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/networkmanager-vpnc
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.9.10.0: keywords dropped: arm
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/ng-utils
   DeprecatedEAPI: version 0.6: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.6: "ng-utils-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/npapi-sdk
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/nstx
   DeprecatedEAPI: version 1.1_beta6-r3: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.1_beta6-r3: "nstx-1.1-beta6.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.1_beta6-r3: "nstx_1.1-beta6-5.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/ntp
   MissingFile: required file ChangeLog doesn't exist
@@ -1010,8 +1010,8 @@ net-misc/ntpclient
 
 net-misc/nut-monitor
   DeprecatedEclass: version 1.3-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.3-r2: "nut-monitor-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/nx
   MissingFile: required file ChangeLog doesn't exist
@@ -1042,21 +1042,21 @@ net-misc/openntpd
 
 net-misc/openr2
   DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.3.0: "openr2-1.3.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/openrdate
   DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.2: "openrdate-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/openssh
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/openssh-blacklist
   DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4.1: "openssh-blacklist_0.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/openvpn
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -1087,9 +1087,9 @@ net-misc/pcapfix
 
 net-misc/pedro
   DeprecatedEAPI: version 1.6: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.6: "pedro-1.6.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.6: "pedro-manual-1.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/pen
   MissingFile: required file ChangeLog doesn't exist
@@ -1099,8 +1099,8 @@ net-misc/pimpd
 
 net-misc/pipes
   DeprecatedEAPI: version 1.16: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.16: "pipes-1.16.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/plowshare
   MissingFile: required file ChangeLog doesn't exist
@@ -1119,16 +1119,16 @@ net-misc/portspoof
 
 net-misc/pps-tools
   DeprecatedEAPI: version 0.0.20110710: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.0.20110710: "pps-tools-git-0.0.20110710.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/proxychains
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/proxyper
   DeprecatedEAPI: version 341a: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 341a: "proxyper341a-linux-x86-uclibc.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/proxytunnel
   MissingFile: required file ChangeLog doesn't exist
@@ -1164,9 +1164,9 @@ net-misc/pymazon
   DeprecatedEclass: version 0.9-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.9-r1: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.9.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.9-r1: "Pymazon-0.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.9.1: "Pymazon-0.9.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/python-x2go
   MissingFile: required file ChangeLog doesn't exist
@@ -1182,8 +1182,8 @@ net-misc/quagga
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/quickshare
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0: "quickshare-1.0-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/r8168
   MissingFile: required file ChangeLog doesn't exist
@@ -1213,8 +1213,8 @@ net-misc/rdesktop
 
 net-misc/redir
   DeprecatedEAPI: version 2.2.1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.2.1: "redir-2.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/remmina
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -1222,8 +1222,8 @@ net-misc/remmina
 
 net-misc/rinetd
   DeprecatedEAPI: version 0.62-r1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.62-r1: "rinetd.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/ris-linux
   MissingFile: required file ChangeLog doesn't exist
@@ -1253,8 +1253,8 @@ net-misc/scponly
 
 net-misc/secpanel
   DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.6.1: "secpanel-0.6.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/selfdhcp
   MissingFile: required file ChangeLog doesn't exist
@@ -1266,8 +1266,8 @@ net-misc/ser
   WrongIndentFound: version 0.9.7-r1: ebuild has whitespace in indentation on line 22
 
 net-misc/sendfile
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.1b-r1: "sendfile-2.1b.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/ser
   MissingFile: required file ChangeLog doesn't exist
@@ -1284,13 +1284,13 @@ net-misc/shigofumi
 
 net-misc/shmux
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0: "shmux-1.0.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/shout
   DeprecatedEAPI: version 0.8.0-r2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.8.0-r2: "shout-0.8.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/sipcalc
   MissingFile: required file ChangeLog doesn't exist
@@ -1316,8 +1316,8 @@ net-misc/sitecopy
 
 net-misc/sjphone
   DeprecatedEAPI: version 1.60.2235: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.60.2235: "SJphoneLnx-1.60.2235.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/sks
   MissingFile: required file ChangeLog doesn't exist
@@ -1334,20 +1334,20 @@ net-misc/smbc
 
 net-misc/snarf
   DeprecatedEAPI: version 7.0-r3: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 7.0-r3: "snarf-7.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/sobby
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/socat
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 2.0.0_beta8: keywords dropped: alpha, amd64, arm, hppa, ia64, mips, ppc, sparc, x86
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/sock
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.1: "sock-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/socket
   MissingFile: required file ChangeLog doesn't exist
@@ -1356,8 +1356,8 @@ net-misc/sparkleshare
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/spice-gtk
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.25-r1: keywords dropped: ia64
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/spiped
   MissingFile: required file ChangeLog doesn't exist
@@ -1386,8 +1386,8 @@ net-misc/sstp-client
 net-misc/ssvnc
   DeprecatedEAPI: version 1.0.28: uses deprecated EAPI: 3
   DeprecatedEAPI: version 1.0.29: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0.28: "ssvnc-1.0.28.src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/stargazer
   MissingFile: required file ChangeLog doesn't exist
@@ -1417,16 +1417,16 @@ net-misc/suite3270
   DeprecatedEAPI: version 3.3.9_p12: uses deprecated EAPI: 0
   DeprecatedEAPI: version 3.3.10_p3: uses deprecated EAPI: 0
   DeprecatedEAPI: version 3.3.10_p3-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.3.9_p12: "suite3270-3.3.9ga12.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/switzerland
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/taptap
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0: "taptap-1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/taylor-uucp
   MissingFile: required file ChangeLog doesn't exist
@@ -1449,8 +1449,8 @@ net-misc/termtter
 
 net-misc/throttle
   DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.2: "throttle-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/tiers
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
@@ -1474,8 +1474,8 @@ net-misc/tlsdate
 net-misc/tn5250
   DeprecatedEclass: version 0.17.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.17.4: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.17.4: "tn5250-0.17.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/tokyotyrant
   DeprecatedEAPI: version 1.1.41-r1: uses deprecated EAPI: 2
@@ -1502,9 +1502,9 @@ net-misc/uftp
 net-misc/unison
   DeprecatedEAPI: version 2.27.157: uses deprecated EAPI: 2
   DeprecatedEAPI: version 2.32.52: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.32.52: "unison-2.32.52-manual.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.32.52: "unison-2.32.52-manual.html" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/unix2tcp
   DeprecatedEAPI: version 0.8.2: uses deprecated EAPI: 0
@@ -1518,18 +1518,18 @@ net-misc/usbip
 
 net-misc/utelnetd
   DeprecatedEAPI: version 0.1.9-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1.9-r1: "utelnetd-0.1.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/valve
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0: "valve-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/vconfig
   DeprecatedEAPI: version 1.9: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.9: "vlan.1.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/vde
   DeprecatedEAPI: version 2.2.2: uses deprecated EAPI: 0
@@ -1544,20 +1544,20 @@ net-misc/vino
 
 net-misc/vmnet
   DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4: "vmnet-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 0.4: "vmnet_0.4-1.diff.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/vmpsd
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/vncrec
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2-r1: "vncrec-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/vncsnapshot
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.2a: "vncsnapshot-1.2a-src.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/vpnc
   MissingFile: required file ChangeLog doesn't exist
@@ -1578,23 +1578,23 @@ net-misc/wget
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/whatmask
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.2-r1: "whatmask-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/whois
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/wicd
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.7.2.4-r3: "wicd-mac4lin-icons.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/wol
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/wput
   DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.6.1: "wput-0.6.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/x11-ssh-askpass
   DeprecatedEAPI: version 1.2.4.1-r1: uses deprecated EAPI: 0
@@ -1619,8 +1619,8 @@ net-misc/yandex-disk
   MissingFile: required file ChangeLog doesn't exist
 
 net-misc/yaydl
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.5.2: "yaydl-1.5.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-misc/youtube-dl
   MissingFile: required file ChangeLog doesn't exist
@@ -2086,8 +2086,8 @@ app-admin/psmon
   MissingFile: required file ChangeLog doesn't exist
 
 app-admin/puppet
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 4.2.1: keywords dropped: sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 app-admin/puppet-agent
   MissingFile: required file ChangeLog doesn't exist
@@ -2122,8 +2122,8 @@ app-admin/quickswitch
   MissingFile: required file ChangeLog doesn't exist
 
 app-admin/r10k
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.5.1: keywords dropped: x86
+  MissingFile: required file ChangeLog doesn't exist
 
 app-admin/radmind
   MissingFile: required file ChangeLog doesn't exist
@@ -2219,12 +2219,12 @@ app-admin/syslogread
 
 app-admin/sysrqd
   DeprecatedEAPI: version 14: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 14: "sysrqd-14.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 app-admin/sysstat
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 11.1.5-r1: keywords dropped: alpha, amd64, arm, arm64, hppa, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
+  MissingFile: required file ChangeLog doesn't exist
 
 app-admin/system-config-printer
   MissingFile: required file ChangeLog doesn't exist
@@ -2308,9 +2308,9 @@ dev-vcs/bfg
 
 dev-vcs/bzr
   DeprecatedEclass: version 2.4.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 3
   NonExistentDeps: version 2.4.2: depset depends: nonexistent atoms [ dev-lang/python:2.6, =dev-lang/python-2.6* ]
   NonExistentDeps: version 2.4.2: depset rdepends: nonexistent atoms [ dev-lang/python:2.6, =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 3
   DeprecatedEclass: version 2.5.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 2.5.1: depset depends: nonexistent atoms [ dev-lang/python:2.6, =dev-lang/python-2.6* ]
   NonExistentDeps: version 2.5.1: depset rdepends: nonexistent atoms [ dev-lang/python:2.6, =dev-lang/python-2.6* ]
@@ -2423,12 +2423,12 @@ dev-vcs/cvsspam
 
 dev-vcs/cvsutils
   DeprecatedEAPI: version 0.2.5: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2.5: "cvsutils-0.2.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-vcs/darcs
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 2.10.0-r1: keywords dropped: alpha, ia64, ppc, ppc64, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-vcs/easygit
   DeprecatedEAPI: version 1.6.5.5: uses deprecated EAPI: 2
@@ -2445,8 +2445,8 @@ dev-vcs/git
   DeprecatedEclass: version 9999-r1: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   DeprecatedEclass: version 9999-r2: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   DeprecatedEclass: version 9999-r3: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.9.5: keywords dropped: arm64
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-vcs/git-annex
   MissingFile: required file ChangeLog doesn't exist
@@ -2700,8 +2700,8 @@ sci-mathematics/agda-stdlib
   MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/axiom
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 200805: "axiom-may2008-src.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/bertini
   MissingFile: required file ChangeLog doesn't exist
@@ -2713,18 +2713,18 @@ sci-mathematics/calc
   DeprecatedEAPI: version 2.12.1.5: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.12.2.2: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.12.4.3: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.12.1.5: "calc-2.12.1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.12.2.2: "calc-2.12.2.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.12.4.3: "calc-2.12.4.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/cgal
   MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/coq
   DeprecatedEAPI: version 8.3_p1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 8.3_p1: "coq-8.3pl1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/cvc3
   MissingFile: required file ChangeLog doesn't exist
@@ -2733,23 +2733,23 @@ sci-mathematics/dataplot
   MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/diagrtb
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.64: "diagrtb-2.64.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/drgeo
   NonExistentDeps: version 1.1.0: depset depends: nonexistent atoms [ =dev-scheme/guile-1.6* ]
   NonExistentDeps: version 1.1.0: depset rdepends: nonexistent atoms [ =dev-scheme/guile-1.6* ]
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.1.0: "drgeo-1.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.1.0: "drgeo-doc-1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/e
   MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/ent
   DeprecatedEAPI: version 101202: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 101202: "random-101202.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/euler
   MissingFile: required file ChangeLog doesn't exist
@@ -2761,9 +2761,9 @@ sci-mathematics/factmsieve
 sci-mathematics/fann
   DeprecatedEclass: version 2.1.0_beta-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.1.0_beta-r1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.1.0_beta-r1: "fann-2.1.0beta.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.2.0: "FANN-2.2.0-Source.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/flint
   MissingFile: required file ChangeLog doesn't exist
@@ -2791,8 +2791,8 @@ sci-mathematics/geomview
 
 sci-mathematics/gfan
   DeprecatedEAPI: version 0.5: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.5: "gfan0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/ggnfs
   MissingFile: required file ChangeLog doesn't exist
@@ -2802,14 +2802,14 @@ sci-mathematics/gimps
 
 sci-mathematics/ginac
   DeprecatedEAPI: version 1.5.8: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.5.8: "ginac-1.5.8.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.6.1: "ginac-1.6.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/glpk
   DeprecatedEAPI: version 4.45: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 4.54: keywords dropped: alpha
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/gmm
   MissingFile: required file ChangeLog doesn't exist
@@ -2844,24 +2844,24 @@ sci-mathematics/lpsolve
 sci-mathematics/lybniz
   DeprecatedEclass: version 1.3.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.3.2: "lybniz-1.3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/mathomatic
   MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/maxima
   DeprecatedEAPI: version 5.18.1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 5.18.1: "maxima-5.18.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/minisat
   DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 2
   DeprecatedEAPI: version 2.2.0-r3: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.1.0: "minisat2-070721.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.1.0: "MiniSat.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.2.0-r3: "minisat-2.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/mlpy
   MissingFile: required file ChangeLog doesn't exist
@@ -2874,18 +2874,18 @@ sci-mathematics/nauty
 
 sci-mathematics/nestedsums
   DeprecatedEAPI: version 1.4.12-r1: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.4.12-r1: "nestedsums-1.4.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/normaliz
   MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/num-utils
   DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3: "num-utils-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 0.5-r1: "num-utils-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 0.5-r1: "num-utils_0.5-11.diff.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/nusmv
   DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 0
@@ -2893,35 +2893,35 @@ sci-mathematics/nusmv
   DeprecatedEAPI: version 2.5.2: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.5.3: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.5.4: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.5.0: "NuSMV-2.5.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.5.2: "NuSMV-2.5.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/octave
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 3.8.1: keywords dropped: arm
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/octave-epstk
   DeprecatedEAPI: version 2.3: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.3: "octave-epstk_2.3.orig.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 2.3: "octave-epstk_2.3-2.debian.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 2.4: "octave-epstk_2.4.orig.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 2.4: "octave-epstk_2.4-1.debian.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/otter
   DeprecatedEAPI: version 3.3-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.3-r1: "otter-3.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/p9m4
   MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/pari
   DeprecatedEAPI: version 2.3.5: uses deprecated EAPI: 3
+  MissingChksum: version 2.5.0-r3: "pari-2.5.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
   SizeViolation: "files/pari-2.5.4-polred.patch" exceeds 20k in size; 23409 bytes total
-  MissingChksum: version 2.5.0-r3: "pari-2.5.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-mathematics/pari-data
   MissingFile: required file ChangeLog doesn't exist
@@ -2949,14 +2949,14 @@ sci-mathematics/qtoctave
   MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/reduce
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 20110414-r1: "reduce-src-20110414.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/relational
   DeprecatedEclass: version 0.11: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.11: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.11: "relational-0.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/rkward
   MissingFile: required file ChangeLog doesn't exist
@@ -2974,8 +2974,8 @@ sci-mathematics/sha1-polyml
   MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/singular
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 4.0.2: keywords dropped: ppc
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/snns
   DeprecatedEclass: version 4.2-r8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -2985,21 +2985,21 @@ flagged token- uri mirror://berlios/snns-dev/snns-4.2-20040227.patch.gz isn't a 
   DeprecatedEAPI: version 4.2-r8: uses deprecated EAPI: 3
   DeprecatedEclass: version 4.2-r9: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 4.2-r9: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 4.2-r9: "snns-4.2-patched.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 4.2-r9: "SNNSv4.2.Manual.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 4.2-r9: "python.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/spass
   MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/spin
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 6.2.1: "spin621.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/topcom
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.17.4-r1: "TOPCOM-manual.html" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/twelf
   MissingFile: required file ChangeLog doesn't exist
@@ -3013,14 +3013,14 @@ sci-mathematics/wxmaxima
 sci-mathematics/xmds
   DeprecatedEAPI: version 1.6.5: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.6.6: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.6.5: "xmds-1.6.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.6.5: "xmds_doc_20080226.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.6.6: "xmds-1.6.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/yacas
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.3.2: "yacas-1.3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-mathematics/yafu
   MissingFile: required file ChangeLog doesn't exist
@@ -3032,8 +3032,8 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : refetch
 
 net-dns/avahi
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.6.31-r7: keywords dropped: m68k
+  MissingFile: required file ChangeLog doesn't exist
 
 net-dns/bind
   MissingFile: required file ChangeLog doesn't exist
@@ -3047,12 +3047,12 @@ net-dns/bind-tools
 
 net-dns/c-ares
   DeprecatedEAPI: version 1.7.4: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.10.0: keywords dropped: arm64
+  MissingFile: required file ChangeLog doesn't exist
 
 net-dns/cagibi
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2.0: "cagibi-0.2.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-dns/ddclient
   MissingFile: required file ChangeLog doesn't exist
@@ -3062,8 +3062,8 @@ net-dns/djbdns
 
 net-dns/dnrd
   DeprecatedEAPI: version 2.20.3-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.20.3-r1: "dnrd-2.20.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-dns/dnscap
   MissingFile: required file ChangeLog doesn't exist
@@ -3081,8 +3081,8 @@ net-dns/dnsmasq
   MissingFile: required file ChangeLog doesn't exist
 
 net-dns/dnssec-check
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 2.1: keywords dropped: amd64, x86
+  MissingFile: required file ChangeLog doesn't exist
 
 net-dns/dnssec-lookup
   MissingFile: required file ChangeLog doesn't exist
@@ -3121,14 +3121,14 @@ net-dns/hash-slinger
 
 net-dns/hesinfo
   DeprecatedEAPI: version 3.1.0: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.1.0: "hesinfo-3.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-dns/hesiod
   DeprecatedEAPI: version 3.1.0: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.1.0: "hesiod-3.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.1.0: "hesiod-3.1.0-patches.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-dns/host
   DeprecatedEAPI: version 20070128-r1: uses deprecated EAPI: 2
@@ -3138,8 +3138,8 @@ net-dns/idnkit
   MissingFile: required file ChangeLog doesn't exist
 
 net-dns/knot
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 2.0.0_beta: keywords dropped: amd64, x86
+  MissingFile: required file ChangeLog doesn't exist
 
 net-dns/ldns-utils
   DeprecatedEAPI: version 1.6.12: uses deprecated EAPI: 3
@@ -3165,8 +3165,8 @@ net-dns/namecoind
 
 net-dns/ndu
   DeprecatedEAPI: version 0.4-r4: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4-r4: "ndu-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-dns/noip-updater
   MissingFile: required file ChangeLog doesn't exist
@@ -3208,30 +3208,30 @@ net-dns/sheerdns
 
 net-dns/tinystats
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.1: "tinystats-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-dns/totd
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.5.1: "totd-1.5.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-dns/unbound
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.5.1-r2: keywords dropped: ia64, m68k, mips, s390, sh, sparc
   DroppedKeywordWarning: version 1.5.4: keywords dropped: alpha
+  MissingFile: required file ChangeLog doesn't exist
 
 net-dns/updatedd
   DeprecatedEAPI: version 2.6: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.6: "updatedd_2.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-dns/validns
   MissingFile: required file ChangeLog doesn't exist
 
 net-dns/valtz
   DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.7: "valtz.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -3250,8 +3250,8 @@ mail-client/balsa
 
 mail-client/biabam
   DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.9.7: "biabam-0.9.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-client/claws-mail
   MissingFile: required file ChangeLog doesn't exist
@@ -3338,17 +3338,17 @@ mail-client/cone
 
 mail-client/drac
   DeprecatedEAPI: version 1.12-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.12-r1: "drac.tar.Z" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-client/etpan-ng
   DeprecatedEAPI: version 0.7.1-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.7.1-r1: "etpan-ng-0.7.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-client/evolution
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 3.16.3: keywords dropped: alpha, arm, ia64, ppc, ppc64, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-client/geary
   MissingFile: required file ChangeLog doesn't exist
@@ -3387,25 +3387,25 @@ mail-client/nail
 
 mail-client/nmh
   DeprecatedEAPI: version 1.3-r3: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.3-r3: "nmh-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-client/novell-groupwise-client
   MissingFile: required file ChangeLog doesn't exist
 
 mail-client/pinepgp
+  DeprecatedEAPI: version 0.18.0-r1: uses deprecated EAPI: 0
   NonExistentDeps: version 0.18.0-r1: depset depends: nonexistent atoms [ mail-client/pine ]
   NonExistentDeps: version 0.18.0-r1: depset rdepends: nonexistent atoms [ mail-client/pine ]
-  DeprecatedEAPI: version 0.18.0-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.18.0-r1: "pinepgp-0.18.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-client/roundcube
   MissingFile: required file ChangeLog doesn't exist
 
 mail-client/squirrelmail
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.4.23_pre20140426: "amavisnewsql-0.8.0-1.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-client/sylpheed
   MissingFile: required file ChangeLog doesn't exist
@@ -3418,8 +3418,8 @@ mail-client/thunderbird-bin
 
 mail-client/trojita
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.5: keywords dropped: ppc
+  MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -3428,7 +3428,6 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : refetch
 
 net-print/adobeps
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0.6-r1: "winstDan.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.0.6-r1: "winstspa.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.0.6-r1: "winstfin.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -3441,11 +3440,12 @@ net-print/adobeps
   MissingChksum: version 1.0.6-r1: "winstbrz.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.0.6-r1: "winstswe.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.0.6-r1: "Winstchs.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-print/apsfilter
   DeprecatedEAPI: version 7.2.5: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 7.2.5: "apsfilter-7.2.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-print/c2esp
   MissingFile: required file ChangeLog doesn't exist
@@ -3474,15 +3474,15 @@ net-print/cups-filters
   MissingFile: required file ChangeLog doesn't exist
 
 net-print/cups-pdf
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.6.1: "cups-pdf_2.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-print/cups-pk-helper
   MissingFile: required file ChangeLog doesn't exist
 
 net-print/cups-windows
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 6.0-r1: "cups-windows-6.0-source.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-print/dymo-cups-drivers
   MissingFile: required file ChangeLog doesn't exist
@@ -3512,8 +3512,8 @@ net-print/foomatic-gui
   MissingFile: required file ChangeLog doesn't exist
 
 net-print/gmso2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1-r1: "gmso2-0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-print/gtklp
   MissingFile: required file ChangeLog doesn't exist
@@ -3529,16 +3529,16 @@ net-print/ink
 
 net-print/kyocera-mita-ppds
   DeprecatedEAPI: version 8.4: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 8.4: "Linux_PPDs_KSL8_4.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-print/libgnomecups
   MissingFile: required file ChangeLog doesn't exist
 
 net-print/libinklevel
   DeprecatedEAPI: version 0.8.0-r1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.8.0-r1: "libinklevel-0.8.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-print/lm1100
   MissingFile: required file ChangeLog doesn't exist
@@ -3547,17 +3547,17 @@ net-print/lprng
   MissingFile: required file ChangeLog doesn't exist
 
 net-print/magicfilter
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.3h: "magicfilter-2.3.h.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-print/mtink
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0.16-r1: "mtink-1.0.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-print/npadmin
   DeprecatedEAPI: version 0.8.7: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.8.7: "npadmin-0.8.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-print/pkpgcounter
   DeprecatedEclass: version 3.50-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -3565,12 +3565,12 @@ net-print/pkpgcounter
   MissingFile: required file ChangeLog doesn't exist
 
 net-print/pnm2ppa
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.13-r1: "pnm2ppa-1.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-print/poster
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 20060221: "poster-20060221.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-print/pykota
   DeprecatedEclass: version 1.26: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -3578,17 +3578,17 @@ net-print/pykota
   MissingFile: required file ChangeLog doesn't exist
 
 net-print/splix
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.0.0_p20111206: "splix-2.0.0_p20111206.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-print/sshlpr
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1: "sshlpr-1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 net-print/xerox-drivers
   DeprecatedEAPI: version 0_p20080123: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0_p20080123: "LinuxCupsPrinterPkg.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -3738,12 +3738,12 @@ sci-calculators/gonvert
   MissingFile: required file ChangeLog doesn't exist
 
 sci-calculators/grpn
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.3.4: "grpn_1.3.4-1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-calculators/hcalc
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0-r1: "hcalc.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-calculators/hexcalc
   MissingFile: required file ChangeLog doesn't exist
@@ -3758,9 +3758,9 @@ sci-calculators/orpie
 sci-calculators/pcalc
   DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.2: "pcalc-1.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.3: "pcalc-1.3.tar.lzma" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-calculators/qalculate-bases
   MissingFile: required file ChangeLog doesn't exist
@@ -3775,8 +3775,8 @@ sci-calculators/qalculate-units
   MissingFile: required file ChangeLog doesn't exist
 
 sci-calculators/qalculator
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4b: "101326-qalculator-0.4b-src.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-calculators/speedcrunch
   MissingFile: required file ChangeLog doesn't exist
@@ -3794,9 +3794,9 @@ sci-calculators/units
   MissingFile: required file ChangeLog doesn't exist
 
 sci-calculators/wcalc
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.2.1: "Wcalc-2.2.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.4: "wcalc-2.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -3839,4 +3839,3 @@ net-voip/vidyodesktop
 
 net-voip/yate
   MissingFile: required file ChangeLog doesn't exist
-+ [[ 0 == 0 ]]

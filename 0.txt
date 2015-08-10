@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 0 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'app-emulation/*' 'dev-db/*' 'app-crypt/*' 'www-client/*' 'mail-filter/*' 'gnome-base/*' 'app-accessibility/*' 'dev-games/*' 'dev-ada/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'app-emulation/*' 'dev-db/*' 'app-crypt/*' 'www-client/*' 'mail-filter/*' 'gnome-base/*' 'app-accessibility/*' 'dev-games/*' 'dev-ada/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /usr/lib64/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -809,14 +809,13 @@ app-emulation/crossover-bin
   MissingFile: required file ChangeLog doesn't exist
 
 app-emulation/crossover-office-bin
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 6.0.0: "install-crossover-standard-6.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 6.0.1: "install-crossover-standard-6.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 6.1.0: "install-crossover-standard-6.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 6.2.0: "install-crossover-standard-6.2.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 app-emulation/crossover-office-pro-bin
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 5.0.0: "install-crossover-pro-5.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 5.0.1: "install-crossover-pro-5.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 5.0.3: "install-crossover-pro-5.0.3.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -830,6 +829,7 @@ app-emulation/crossover-office-pro-bin
   MissingChksum: version 9.0.1: "install-crossover-pro-9.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 9.1.0: "install-crossover-pro-9.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 9.2.0: "install-crossover-pro-9.2.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 app-emulation/dinero
   MissingFile: required file ChangeLog doesn't exist
@@ -939,8 +939,8 @@ app-emulation/libvirt-snmp
   MissingFile: required file ChangeLog doesn't exist
 
 app-emulation/lxc
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.1.0-r6: keywords dropped: arm64, ppc64, x86
+  MissingFile: required file ChangeLog doesn't exist
 
 app-emulation/lxd
   MissingFile: required file ChangeLog doesn't exist
@@ -1363,13 +1363,12 @@ dev-db/odbtp
   MissingFile: required file ChangeLog doesn't exist
 
 dev-db/opendbx
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.5.0-r1: keywords dropped: amd64, x86
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-db/oracle-instantclient-basic
   DeprecatedEAPI: version 10.2.0.3-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 11.2.0.2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 10.2.0.3-r1: "instantclient-basic-linux-x86-64-10.2.0.3-20070103.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 10.2.0.3-r1: "instantclient-basic-linux32-10.2.0.3-20061115.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 10.2.0.3-r1: "instantclient-sdk-linux32-10.2.0.3-20061115.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -1377,33 +1376,34 @@ dev-db/oracle-instantclient-basic
   MissingChksum: version 11.2.0.2: "instantclient-sdk-linux32-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 11.2.0.2: "instantclient-basic-linux-x86-64-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 11.2.0.2: "instantclient-sdk-linux-x86-64-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-db/oracle-instantclient-jdbc
   DeprecatedEAPI: version 10.2.0.3: uses deprecated EAPI: 0
   DeprecatedEAPI: version 11.2.0.2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 10.2.0.3: "instantclient-jdbc-linux-x86-64-10.2.0.3-20070103.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 10.2.0.3: "instantclient-jdbc-linux32-10.2.0.3-20061115.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 11.2.0.2: "instantclient-jdbc-linux32-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 11.2.0.2: "instantclient-jdbc-linux-x86-64-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 11.2.0.3: "instantclient-jdbc-linux-11.2.0.3.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 11.2.0.3: "instantclient-jdbc-linux.x64-11.2.0.3.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-db/oracle-instantclient-odbc
   DeprecatedEAPI: version 11.2.0.2-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 11.2.0.2-r1: "instantclient-odbc-linux32-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 11.2.0.2-r1: "instantclient-odbc-linux-x86-64-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 11.2.0.3: "instantclient-odbc-linux-11.2.0.3.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 11.2.0.3: "instantclient-odbc-linux.x64-11.2.0.3.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-db/oracle-instantclient-sqlplus
   DeprecatedEAPI: version 10.2.0.3: uses deprecated EAPI: 0
   DeprecatedEAPI: version 11.2.0.2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 10.2.0.3: "instantclient-sqlplus-linux32-10.2.0.3-20061115.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 11.2.0.2: "instantclient-sqlplus-linux32-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 11.2.0.2: "instantclient-sqlplus-linux-x86-64-11.2.0.2.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-db/percona-server
   MissingFile: required file ChangeLog doesn't exist
@@ -1450,8 +1450,8 @@ dev-db/phpmyadmin
 dev-db/phppgadmin
   NonExistentDeps: version 5.1: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
   DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
   MissingFile: required file ChangeLog doesn't exist
 
 dev-db/postgis
@@ -1463,8 +1463,8 @@ dev-db/postgis
 
 dev-db/postgresql
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 9.5_alpha1: keywords dropped: alpha, amd64, arm, hppa, ia64, mips, ppc, ppc64, s390, sh, sparc, x86
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-db/psqlodbc
   MissingFile: required file ChangeLog doesn't exist
@@ -1612,8 +1612,8 @@ app-crypt/bsign
   MissingFile: required file ChangeLog doesn't exist
 
 app-crypt/cardpeek
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.8.2: keywords dropped: amd64
+  MissingFile: required file ChangeLog doesn't exist
 
 app-crypt/ccid
   MissingFile: required file ChangeLog doesn't exist
@@ -1694,8 +1694,8 @@ app-crypt/gkeys-gen
   MissingFile: required file ChangeLog doesn't exist
 
 app-crypt/gnupg
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 2.1.6: keywords dropped: arm64, ia64, s390, sh, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 app-crypt/gnupg-pkcs11-scd
   MissingFile: required file ChangeLog doesn't exist
@@ -1947,8 +1947,8 @@ app-crypt/sign
   MissingFile: required file ChangeLog doesn't exist
 
 app-crypt/signing-party
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.1.11-r1: keywords dropped: ppc
+  MissingFile: required file ChangeLog doesn't exist
 
 app-crypt/simple-tpm-pk11
   MissingFile: required file ChangeLog doesn't exist
@@ -1980,8 +1980,8 @@ app-crypt/trousers
   MissingFile: required file ChangeLog doesn't exist
 
 app-crypt/truecrypt
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 7.2: keywords dropped: amd64, ppc, x86
+  MissingFile: required file ChangeLog doesn't exist
 
 app-crypt/xca
   MissingFile: required file ChangeLog doesn't exist
@@ -2004,8 +2004,8 @@ www-client/chromium
 
 www-client/ck4up
   DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.2: "ck4up-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 www-client/conkeror
   MissingFile: required file ChangeLog doesn't exist
@@ -2071,8 +2071,8 @@ www-client/netsurf
   MissingFile: required file ChangeLog doesn't exist
 
 www-client/opera
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 30.0.1835.125: keywords dropped: x86
+  MissingFile: required file ChangeLog doesn't exist
 
 www-client/opera-beta
   MissingFile: required file ChangeLog doesn't exist
@@ -2146,8 +2146,8 @@ www-client/w3mmee
 www-client/weboob
   DeprecatedEclass: version 9998: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 9998: keywords dropped: amd64, x86
+  MissingFile: required file ChangeLog doesn't exist
 
 www-client/xombrero
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -2167,8 +2167,8 @@ mail-filter/amavisd-milter
   MissingFile: required file ChangeLog doesn't exist
 
 mail-filter/amavisd-new
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 2.10.1-r1: keywords dropped: ppc
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-filter/anomy-sanitizer
   MissingFile: required file ChangeLog doesn't exist
@@ -2179,9 +2179,9 @@ mail-filter/anubis
 mail-filter/ask
   DeprecatedEAPI: version 2.4.1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.5.3: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.4.1: "ask-2.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.5.3: "ask-2.5.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-filter/assp
   DeprecatedEAPI: version 1.8.5.9: uses deprecated EAPI: 0
@@ -2189,30 +2189,30 @@ mail-filter/assp
   DeprecatedEAPI: version 1.9.4.8: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.9.4.9: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.9.8.13030: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.8.5.9: "ASSP_1.8.5.9-Install.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-filter/bmf
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.9.4-r2: "bmf-0.9.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-filter/bogofilter
   MissingFile: required file ChangeLog doesn't exist
 
 mail-filter/clamassassin
   DeprecatedEAPI: version 1.2.4: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.2.4: "clamassassin-1.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-filter/clamsmtp
   DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.10: "clamsmtp-1.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-filter/couriersrs
   DeprecatedEAPI: version 0.1.2: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1.2: "couriersrs-0.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-filter/dcc
   DeprecatedEAPI: version 1.3.140-r1: uses deprecated EAPI: 2
@@ -2260,8 +2260,8 @@ mail-filter/libmilter
 
 mail-filter/libsieve
   DeprecatedEAPI: version 2.2.7: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.2.7: "libsieve-2.2.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-filter/libspf2
   MissingFile: required file ChangeLog doesn't exist
@@ -2271,8 +2271,8 @@ mail-filter/libsrs2
 
 mail-filter/libsrs_alt
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0: "libsrs_alt-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-filter/maildrop
   MissingFile: required file ChangeLog doesn't exist
@@ -2292,15 +2292,15 @@ mail-filter/mimedefang
 
 mail-filter/normalizemime
   DeprecatedEAPI: version 1.19: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.19: "normalizemime-1.19.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-filter/opendkim
   MissingFile: required file ChangeLog doesn't exist
 
 mail-filter/opendmarc
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.3.0: keywords dropped: ppc, ppc64, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-filter/opensmtpd-extras
   MissingFile: required file ChangeLog doesn't exist
@@ -2308,13 +2308,13 @@ mail-filter/opensmtpd-extras
 mail-filter/p3scan
   DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.3.2-r1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.3.1: "p3scan-2.3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-filter/policyd
   DeprecatedEAPI: version 1.82-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.82-r1: "policyd-1.82.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-filter/policyd-weight
   MissingFile: required file ChangeLog doesn't exist
@@ -2347,7 +2347,6 @@ mail-filter/qmail-scanner
   DeprecatedEAPI: version 2.05: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.06: uses deprecated EAPI: 2
   DeprecatedEAPI: version 2.08: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.25-r1: "qmail-scanner-1.25.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.25-r1: "q-s-1.25st-20050406.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.05: "qmail-scanner-2.05.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -2356,6 +2355,7 @@ mail-filter/qmail-scanner
   MissingChksum: version 2.06: "q-s-2.06st-20090419.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.08: "qmail-scanner-2.08.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.08: "q-s-2.08st-20091012.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-filter/razor
   MissingFile: required file ChangeLog doesn't exist
@@ -2365,8 +2365,8 @@ mail-filter/rblcheck
   MissingFile: required file ChangeLog doesn't exist
 
 mail-filter/scmail
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.3: "scmail-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-filter/sid-milter
   MissingFile: required file ChangeLog doesn't exist
@@ -2388,8 +2388,8 @@ mail-filter/spambayes
 
 mail-filter/spamdyke
   DeprecatedEAPI: version 4.3.0: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 4.3.0: "spamdyke-4.3.0.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-filter/spampd
   DeprecatedEAPI: version 2.30: uses deprecated EAPI: 0
@@ -2406,8 +2406,8 @@ mail-filter/sqlgrey
 mail-filter/tmda
   DeprecatedEclass: version 1.1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.1.12: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.1.12: "tmda-1.1.12.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-filter/zdkimfilter
   MissingFile: required file ChangeLog doesn't exist
@@ -2527,8 +2527,8 @@ gnome-base/libgtop
   MissingFile: required file ChangeLog doesn't exist
 
 gnome-base/librsvg
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 2.40.8: keywords dropped: arm64
+  MissingFile: required file ChangeLog doesn't exist
 
 gnome-base/nautilus
   MissingFile: required file ChangeLog doesn't exist
@@ -2543,8 +2543,8 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : refetch
 
 app-accessibility/SphinxTrain
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.0.8: keywords dropped: ppc
+  MissingFile: required file ChangeLog doesn't exist
 
 app-accessibility/accerciser
   MissingFile: required file ChangeLog doesn't exist
@@ -2693,8 +2693,8 @@ dev-games/KXL
 
 dev-games/aseprite
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.0.6: keywords dropped: amd64, x86
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-games/cardpics
   MissingFile: required file ChangeLog doesn't exist
@@ -2889,4 +2889,3 @@ app-antivirus/clamav
 
 app-antivirus/clamav-unofficial-sigs
   MissingFile: required file ChangeLog doesn't exist
-+ [[ 0 == 0 ]]

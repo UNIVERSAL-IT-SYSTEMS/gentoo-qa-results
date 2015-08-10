@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 1 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'app-misc/*' 'x11-plugins/*' 'app-arch/*' 'sys-auth/*' 'net-irc/*' 'games-emulation/*' 'net-fs/*' 'perl-core/*' 'sci-misc/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-python/*' 'app-misc/*' 'x11-plugins/*' 'app-arch/*' 'sys-auth/*' 'net-irc/*' 'games-emulation/*' 'net-fs/*' 'perl-core/*' 'sci-misc/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /usr/lib64/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -218,8 +218,8 @@ dev-python/authres
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/autobahn
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.10.4: keywords dropped: arm
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/autopep8
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -259,8 +259,8 @@ dev-python/bcrypt
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/beaker
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.7.0-r1: keywords dropped: alpha, ia64, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/beanstalkc
   MissingFile: required file ChangeLog doesn't exist
@@ -269,9 +269,9 @@ dev-python/beautifulsoup
   DeprecatedEclass: version 4.1.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 4.1.3: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
   NonExistentDeps: version 4.1.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
+  DroppedKeywordWarning: version 4.1.3: keywords dropped: arm64
   MissingFile: required file ChangeLog doesn't exist
   SizeViolation: "files/beautifulsoup-3.1.0.1-python-3.patch" exceeds 20k in size; 42319 bytes total
-  DroppedKeywordWarning: version 4.1.3: keywords dropped: arm64
 
 dev-python/behave
   MissingFile: required file ChangeLog doesn't exist
@@ -342,8 +342,8 @@ dev-python/bpython
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/bsddb3
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 6.1.0: keywords dropped: hppa
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/buildutils
   MissingFile: required file ChangeLog doesn't exist
@@ -390,8 +390,8 @@ dev-python/certifi
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/cffi
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.9.2: keywords dropped: alpha, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/cfgio
   MissingFile: required file ChangeLog doesn't exist
@@ -508,8 +508,8 @@ dev-python/couchdb-python
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/cov-core
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.15.0: keywords dropped: alpha, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/coverage
   MissingFile: required file ChangeLog doesn't exist
@@ -521,13 +521,13 @@ dev-python/crumbs
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/cryptography
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.7.1-r1: keywords dropped: sparc
   DroppedKeywordWarning: version 0.9.2: keywords dropped: alpha, arm64, ia64, m68k, mips, ppc, s390, sh
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/cryptography-vectors
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.7: keywords dropped: sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/cssselect
   MissingFile: required file ChangeLog doesn't exist
@@ -537,9 +537,9 @@ dev-python/cssutils
 
 dev-python/ctypesgen
   DeprecatedEclass: version 0_p72: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0_p72: uses deprecated EAPI: 3
   NonExistentDeps: version 0_p72: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 0_p72: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 0_p72: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/curtsies
@@ -989,8 +989,8 @@ dev-python/fonttools
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/foolscap
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.8.0: keywords dropped: sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/formencode
   DeprecatedEclass: version 1.2.4: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -1153,8 +1153,8 @@ dev-python/hachoir-regex
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/hacking
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.9.6: keywords dropped: alpha
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/happydoc
   MissingFile: required file ChangeLog doesn't exist
@@ -1175,8 +1175,8 @@ dev-python/hgtools
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/hiredis
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.2.0: keywords dropped: arm
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/hp3parclient
   MissingFile: required file ChangeLog doesn't exist
@@ -1364,16 +1364,16 @@ dev-python/kaa-base
 
 dev-python/kaa-display
   DeprecatedEclass: version 0.1.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.1.0: uses deprecated EAPI: 3
   NonExistentDeps: version 0.1.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.1.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 0.1.0: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/kaa-imlib2
   DeprecatedEclass: version 0.2.3-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.2.3-r1: uses deprecated EAPI: 3
   NonExistentDeps: version 0.2.3-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.2.3-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 0.2.3-r1: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/kaa-metadata
@@ -1480,8 +1480,8 @@ dev-python/llvmpy
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/lockfile
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.10.2: keywords dropped: sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/locustio
   MissingFile: required file ChangeLog doesn't exist
@@ -1599,8 +1599,8 @@ dev-python/misaka
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/mistune
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.6-r1: keywords dropped: arm
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/mkdocs
   MissingFile: required file ChangeLog doesn't exist
@@ -1609,8 +1609,8 @@ dev-python/mkpythonproj
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/mock
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.2.0: keywords dropped: alpha, arm, ia64, ppc, ppc64, sparc, x86
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/mocker
   MissingFile: required file ChangeLog doesn't exist
@@ -1693,16 +1693,16 @@ dev-python/natgrid
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/natsort
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 4.0.3: keywords dropped: ia64
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/nautilus-python
   DeprecatedEclass: version 1.1-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/ndg-httpsclient
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.4.0: keywords dropped: sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/neovim-python-client
   MissingFile: required file ChangeLog doesn't exist
@@ -1857,8 +1857,8 @@ dev-python/oslo-serialization
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/oslo-sphinx
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 2.5.0: keywords dropped: alpha
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/oslo-utils
   MissingFile: required file ChangeLog doesn't exist
@@ -1884,8 +1884,8 @@ dev-python/pandas
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/paramiko
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.12.2: keywords dropped: ppc, ppc64, s390
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/paramunittest
   MissingFile: required file ChangeLog doesn't exist
@@ -1938,8 +1938,8 @@ dev-python/pbkdf2
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/pbr
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.4.0: keywords dropped: alpha, amd64, arm, hppa, ia64, ppc, ppc64, x86
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/pdfrw
   MissingFile: required file ChangeLog doesn't exist
@@ -1979,8 +1979,8 @@ dev-python/pika
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/pillow
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 2.9.0: keywords dropped: alpha, ia64, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/pip
   MissingFile: required file ChangeLog doesn't exist
@@ -2004,8 +2004,8 @@ dev-python/platinfo
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/ply
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 3.6-r1: keywords dropped: sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/plyr
   MissingFile: required file ChangeLog doesn't exist
@@ -2230,8 +2230,8 @@ dev-python/pycountry
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/pycparser
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 2.12: keywords dropped: sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/pycrypto
   MissingFile: required file ChangeLog doesn't exist
@@ -2379,9 +2379,9 @@ dev-python/pygtkglext
 
 dev-python/pygtkhelpers
   DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 3
   NonExistentDeps: version 0.4.3: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.4.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/pygtksourceview
@@ -2529,8 +2529,8 @@ dev-python/pyopengl
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/pyopenssl
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.15.1: keywords dropped: sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/pyorbit
   MissingFile: required file ChangeLog doesn't exist
@@ -2599,9 +2599,9 @@ dev-python/pyqtgraph
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/pyquery
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.2.9-r1: keywords dropped: sparc
   DroppedKeywordWarning: version 1.2.9: keywords dropped: ia64, s390, sh
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/pyqwt
   MissingFile: required file ChangeLog doesn't exist
@@ -2709,8 +2709,8 @@ dev-python/pytest-capturelog
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/pytest-cov
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.8.1: keywords dropped: alpha, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/pytest-localserver
   MissingFile: required file ChangeLog doesn't exist
@@ -2787,8 +2787,8 @@ dev-python/python-docs
   DeprecatedEAPI: version 3.2.5: uses deprecated EAPI: 3
   DeprecatedEAPI: version 3.3.2: uses deprecated EAPI: 3
   DeprecatedEAPI: version 3.3.3: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 3.2.5: keywords dropped: arm64
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/python-dsv
   MissingFile: required file ChangeLog doesn't exist
@@ -2925,9 +2925,9 @@ dev-python/python-social-auth
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/python-sqlparse
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.1.14: keywords dropped: sparc
   DroppedKeywordWarning: version 0.1.13: keywords dropped: ia64
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/python-stdnum
   MissingFile: required file ChangeLog doesn't exist
@@ -3027,8 +3027,8 @@ dev-python/pyx
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/pyxattr
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.5.5: keywords dropped: alpha, ia64, ppc, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/pyxdg
   MissingFile: required file ChangeLog doesn't exist
@@ -3043,15 +3043,15 @@ dev-python/pyyaml
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/pyzmq
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 14.7.0: keywords dropped: ppc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/pyzor
   DeprecatedEclass: version 0.5.0-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.5.0-r2: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.7.0: keywords dropped: ppc, ppc64
   DroppedKeywordWarning: version 1.0.0: keywords dropped: ia64, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/qpid-python
   MissingFile: required file ChangeLog doesn't exist
@@ -3103,8 +3103,8 @@ dev-python/rax-scheduled-images-python-novaclient-ext
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/rdflib
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 4.1.2: keywords dropped: ia64, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/readme
   MissingFile: required file ChangeLog doesn't exist
@@ -3391,8 +3391,8 @@ dev-python/snowballstemmer
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/soappy
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.12.22: keywords dropped: ia64, ppc, s390, sh, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/socketio-client
   MissingFile: required file ChangeLog doesn't exist
@@ -3410,16 +3410,16 @@ dev-python/soya
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/sparql-wrapper
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.6.1: keywords dropped: ia64, sparc
   DroppedKeywordWarning: version 1.6.2: keywords dropped: alpha
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/speaklater
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/sphinx
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.3.1: keywords dropped: alpha, arm64, ia64, mips, ppc, s390, sh, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/sphinx-better-theme
   MissingFile: required file ChangeLog doesn't exist
@@ -3469,9 +3469,9 @@ dev-python/sqlalchemy
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/sqlalchemy-migrate
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.9.1: keywords dropped: s390, sh, sparc
   DroppedKeywordWarning: version 0.9.6: keywords dropped: alpha, hppa, ia64, ppc, ppc64
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/sqlite3dbm
   MissingFile: required file ChangeLog doesn't exist
@@ -3522,8 +3522,8 @@ dev-python/stsci-sphinxext
 dev-python/subunit
   DeprecatedEclass: version 0.0.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.0.6: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.0.16: keywords dropped: s390, sh, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/subvertpy
   MissingFile: required file ChangeLog doesn't exist
@@ -3587,8 +3587,8 @@ dev-python/testscenarios
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/testtools
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.7.1: keywords dropped: arm64, ia64, mips, ppc, s390, sh, sparc, x86
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/texttable
   MissingFile: required file ChangeLog doesn't exist
@@ -3684,43 +3684,43 @@ dev-python/twill
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/twisted-conch
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 15.1.0: keywords dropped: alpha, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/twisted-core
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 14.0.1: keywords dropped: mips, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/twisted-lore
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 15.1.0: keywords dropped: alpha, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/twisted-mail
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 15.1.0: keywords dropped: alpha, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/twisted-names
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 15.1.0: keywords dropped: alpha, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/twisted-news
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 15.1.0: keywords dropped: alpha, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/twisted-pair
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/twisted-runner
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 15.1.0: keywords dropped: alpha, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/twisted-web
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 15.1.0: keywords dropped: alpha, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/twisted-words
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 15.1.0: keywords dropped: alpha, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/twistedsnmp
   MissingFile: required file ChangeLog doesn't exist
@@ -3753,8 +3753,8 @@ dev-python/unidecode
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/unittest2
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.0.1-r1: keywords dropped: arm64, ia64, mips, ppc, s390, sh, sparc, x86
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/uritemplate
   MissingFile: required file ChangeLog doesn't exist
@@ -3763,12 +3763,12 @@ dev-python/urlgrabber
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/urllib3
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.10: keywords dropped: alpha
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/urwid
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.3.0: keywords dropped: arm64
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/utidylib
   MetadataError: version 0.2-r2: attr(fetchables): error- Metadata Exception: pkg ebuild src: dev-python/utidylib-0.2-r2, attr fetchables
@@ -3864,9 +3864,9 @@ dev-python/websockify
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/webtest
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 2.0.16: keywords dropped: ia64, s390, sh, sparc
   DroppedKeywordWarning: version 2.0.17: keywords dropped: alpha
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/webut
   DeprecatedEclass: version 0.1.0.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -3916,8 +3916,8 @@ dev-python/wsgilog
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/wsgiproxy2
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.4.2: keywords dropped: alpha
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/wstools
   MissingFile: required file ChangeLog doesn't exist
@@ -3947,8 +3947,8 @@ dev-python/xlutils
   MissingFile: required file ChangeLog doesn't exist
 
 dev-python/xlwt
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.0.0: keywords dropped: ppc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-python/xmltodict
   MissingFile: required file ChangeLog doesn't exist
@@ -4100,21 +4100,21 @@ app-misc/byobu
   MissingFile: required file ChangeLog doesn't exist
 
 app-misc/ca-certificates
+  DeprecatedEAPI: version 20090709: uses deprecated EAPI: 0
   NonExistentDeps: version 20090709: depset depends: nonexistent atoms [ sys-apps/mktemp ]
   NonExistentDeps: version 20090709: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
-  DeprecatedEAPI: version 20090709: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20110421: uses deprecated EAPI: 0
   NonExistentDeps: version 20110421: depset depends: nonexistent atoms [ sys-apps/mktemp ]
   NonExistentDeps: version 20110421: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
-  DeprecatedEAPI: version 20110421: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20110502: uses deprecated EAPI: 0
   NonExistentDeps: version 20110502: depset depends: nonexistent atoms [ sys-apps/mktemp ]
   NonExistentDeps: version 20110502: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
-  DeprecatedEAPI: version 20110502: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20110502-r1: uses deprecated EAPI: 0
   NonExistentDeps: version 20110502-r1: depset depends: nonexistent atoms [ sys-apps/mktemp ]
   NonExistentDeps: version 20110502-r1: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
-  DeprecatedEAPI: version 20110502-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20110502-r2: uses deprecated EAPI: 3
   NonExistentDeps: version 20110502-r2: depset depends: nonexistent atoms [ sys-apps/mktemp ]
   NonExistentDeps: version 20110502-r2: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
-  DeprecatedEAPI: version 20110502-r2: uses deprecated EAPI: 3
   DeprecatedEAPI: version 20110502-r3: uses deprecated EAPI: 3
   DeprecatedEAPI: version 20110502-r4: uses deprecated EAPI: 3
   DeprecatedEAPI: version 20111025: uses deprecated EAPI: 3
@@ -4251,10 +4251,10 @@ app-misc/dnetc
   DeprecatedEAPI: version 2.9109.518: uses deprecated EAPI: 2
   DeprecatedEAPI: version 2.9110.519: uses deprecated EAPI: 2
   DeprecatedEAPI: version 2.9110.519b: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 2.9110.519b: keywords dropped: x86
   DroppedKeywordWarning: version 2.9110.519: keywords dropped: amd64, ppc
   DroppedKeywordWarning: version 2.9108.517: keywords dropped: sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 app-misc/dtach
   MissingFile: required file ChangeLog doesn't exist
@@ -4346,8 +4346,8 @@ app-misc/g15daemon
   DeprecatedEclass: version 1.9.5.3-r11: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 1.9.5.3-r12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.9.5.3-r12: keywords dropped: amd64, ppc, ppc64, x86
+  MissingFile: required file ChangeLog doesn't exist
 
 app-misc/g15macro
   MissingFile: required file ChangeLog doesn't exist
@@ -4425,8 +4425,8 @@ app-misc/grabcartoons
   MissingFile: required file ChangeLog doesn't exist
 
 app-misc/gramps
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 3.4.9: keywords dropped: ppc
+  MissingFile: required file ChangeLog doesn't exist
 
 app-misc/granule
   DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 2
@@ -4731,13 +4731,13 @@ app-misc/pwsafe
 
 app-misc/pysmssend
   DeprecatedEclass: version 1.48: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.48: uses deprecated EAPI: 3
   NonExistentDeps: version 1.48: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 1.48: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 1.48: uses deprecated EAPI: 3
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
   NonExistentDeps: version 9999: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
 app-misc/pystopwatch
@@ -4874,9 +4874,9 @@ app-misc/symlinks
   MissingFile: required file ChangeLog doesn't exist
 
 app-misc/tablix
+  DeprecatedEAPI: version 0.3.5-r1: uses deprecated EAPI: 2
   NonExistentDeps: version 0.3.5-r1: depset depends: nonexistent atoms [ sys-cluster/pvm ]
   NonExistentDeps: version 0.3.5-r1: depset rdepends: nonexistent atoms [ sys-cluster/pvm ]
-  DeprecatedEAPI: version 0.3.5-r1: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
 app-misc/task
@@ -5054,28 +5054,28 @@ x11-plugins/asapm
 
 x11-plugins/asclock
   DeprecatedEAPI: version 2.0.12-r1: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.0.12-r1: "asclock-2.0.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/ascpu
   DeprecatedEAPI: version 1.11: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.11: "ascpu-1.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/asmem
   DeprecatedEAPI: version 1.12: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.12: "asmem-1.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/asmon
   DeprecatedEAPI: version 0.71: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.71: "asmon-0.71.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/astime
   DeprecatedEAPI: version 2.8-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.8-r1: "astime-2.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/bfm
   MissingFile: required file ChangeLog doesn't exist
@@ -5085,15 +5085,15 @@ x11-plugins/bitlbee-steam
   MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/bubblemon
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.46-r2: "bubblemon-dockapp-1.46.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/compiz-plugins-extra
   MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/compiz-plugins-main
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.8.8: "compiz-plugins-main-0.8.8.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/compiz-plugins-unsupported
   MissingFile: required file ChangeLog doesn't exist
@@ -5105,8 +5105,8 @@ x11-plugins/cputnik
 x11-plugins/desklet-Genesis
   DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2: "Genesis-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/desklet-ImageSlideShow
   DeprecatedEclass: version 0.8-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -5116,38 +5116,38 @@ x11-plugins/desklet-ImageSlideShow
 x11-plugins/desklet-Mouse
   DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1: "Mouse-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/desklet-SlideShow
   DeprecatedEclass: version 0.9: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.9: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.9: "SlideShow-0.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/desklet-WeeklyCalendar
   DeprecatedEclass: version 0.60: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.60: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.60: "WeeklyCalendar-0.60.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/desklet-ftb
   DeprecatedEclass: version 0.3.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3.2: "FTB-0.3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/desklet-iCalendarEvent
   DeprecatedEclass: version 0.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.5: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.5: "iCalendarEvent-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/desklet-justanicon
   DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2: "JustAnIcon-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/docker
   DeprecatedEAPI: version 1.5: uses deprecated EAPI: 0
@@ -5165,8 +5165,8 @@ x11-plugins/fsviewer
 
 x11-plugins/gkrellaclock
   DeprecatedEAPI: version 0.3.4: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3.4: "gkrellaclock-0.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/gkrellfire
   DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 0
@@ -5183,30 +5183,30 @@ x11-plugins/gkrellm-bgchanger
 
 x11-plugins/gkrellm-bluez
   DeprecatedEAPI: version 0.2-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2-r1: "gkrellm-bluez-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/gkrellm-countdown
   DeprecatedEAPI: version 0.1.2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1.2: "gkrellm-countdown-0.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/gkrellm-imonc
   DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2: "gkrellm-imonc-src-0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/gkrellm-leds
   DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.8.2: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.8.1: "gkleds-0.8.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.8.2: "gkleds-0.8.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/gkrellm-mailwatch
   DeprecatedEAPI: version 2.4.3-r1: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.4.3-r1: "gkrellm-mailwatch-2.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/gkrellm-plugins
   DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
@@ -5214,51 +5214,51 @@ x11-plugins/gkrellm-plugins
 
 x11-plugins/gkrellm-radio
   DeprecatedEAPI: version 2.0.4: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.0.4: "gkrellm-radio-2.0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/gkrellm-trayicons
   DeprecatedEAPI: version 1.03: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.03: "gkrellm-trayicons-1.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/gkrellm-vaiobright
   DeprecatedEAPI: version 2.5-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.5-r1: "vaiobright-2.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/gkrellm-volume
   DeprecatedEAPI: version 2.1.13: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.1.13-r2: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.1.13: "gkrellm-volume-2.1.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/gkrellm-xkb
   DeprecatedEAPI: version 1.05: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.05: "gkrellm-xkb-1.05.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/gkrellmlaunch
   MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/gkrellmoon
   DeprecatedEAPI: version 0.6-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.6-r1: "gkrellmoon-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/gkrellmss
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.6: "gkrellmss-2.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/gkrellmwireless
   DeprecatedEAPI: version 2.0.3: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.0.3-r1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.0.3: "gkrellmwireless-2.0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/gkrellshoot
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4.4: "gkrellshoot-0.4.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/gkrellstock
   MissingFile: required file ChangeLog doesn't exist
@@ -5267,8 +5267,8 @@ x11-plugins/gkrellsun
   DeprecatedEAPI: version 1.0.0-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.0.0-r2: uses deprecated EAPI: 3
   DeprecatedEAPI: version 1.0.0-r3: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0.0-r1: "gkrellsun-1.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/gkrelltop
   MissingFile: required file ChangeLog doesn't exist
@@ -5278,13 +5278,13 @@ x11-plugins/gkrellweather
 
 x11-plugins/gkwebmon
   DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2: "gkwebmon-0.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/guifications
   DeprecatedEAPI: version 2.16: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.16: "pidgin-guifications-2.16.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/hexchat-javascript
   MissingFile: required file ChangeLog doesn't exist
@@ -5292,32 +5292,32 @@ x11-plugins/hexchat-javascript
 x11-plugins/i8krellm
   DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.5-r1: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.5: "i8krellm-2.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/matchbox-applet-input-manager
   DeprecatedEAPI: version 0.6: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.6: "mb-applet-input-manager-0.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/matchbox-applet-startup-monitor
   DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1: "mb-applet-startup-monitor-0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/matchbox-applet-volume
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1: "mb-applet-volume-0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/matchbox-desktop-image-browser
   DeprecatedEAPI: version 0.2-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2-r1: "mb-desktop-image-browser-0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/matchbox-desktop-xine
   DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4: "mb-desktop-xine-0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/monto
   MissingFile: required file ChangeLog doesn't exist
@@ -5327,12 +5327,12 @@ x11-plugins/pidgin-birthday-reminder
 
 x11-plugins/pidgin-bot-sentry
   DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.3.0: "bot-sentry-1.3.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/pidgin-encryption
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.1: "pidgin-encryption-3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/pidgin-extprefs
   DeprecatedEAPI: version 0.7-r1: uses deprecated EAPI: 2
@@ -5343,8 +5343,8 @@ x11-plugins/pidgin-gpg
 
 x11-plugins/pidgin-hotkeys
   DeprecatedEAPI: version 0.2.4: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2.4: "pidgin-hotkeys-0.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/pidgin-indicator
   MissingFile: required file ChangeLog doesn't exist
@@ -5354,8 +5354,8 @@ x11-plugins/pidgin-latex
 
 x11-plugins/pidgin-led-notification
   DeprecatedEAPI: version 0.1: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1: "led-notification-0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/pidgin-libnotify
   DeprecatedEAPI: version 0.14-r1: uses deprecated EAPI: 2
@@ -5363,18 +5363,18 @@ x11-plugins/pidgin-libnotify
 
 x11-plugins/pidgin-mbpurple
   DeprecatedEAPI: version 0.3.0-r2: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3.0-r2: "mbpurple-0.3.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/pidgin-mpris
   DeprecatedEAPI: version 0.2.6: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2.6: "pidgin-mpris-0.2.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/pidgin-musictracker
   DeprecatedEAPI: version 0.4.22: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4.22: "pidgin-musictracker-0.4.22.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/pidgin-opensteamworks
   MissingFile: required file ChangeLog doesn't exist
@@ -5388,8 +5388,8 @@ x11-plugins/pidgin-privacy-please
 
 x11-plugins/pidgin-rhythmbox
   DeprecatedEAPI: version 2.0: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.0: "pidgin-rhythmbox-2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/pidgin-sipe
   MissingFile: required file ChangeLog doesn't exist
@@ -5399,8 +5399,8 @@ x11-plugins/pidgin-xmpp-receipts
 
 x11-plugins/pidgintex
   DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.1.1: "pidginTeX-1.1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/prpltwtr
   MissingFile: required file ChangeLog doesn't exist
@@ -5415,9 +5415,9 @@ x11-plugins/purple-plugin_pack
   MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/qled
+  DeprecatedEAPI: version 0.6.2: uses deprecated EAPI: 3
   NonExistentDeps: version 0.6.2: depset depends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
   NonExistentDeps: version 0.6.2: depset rdepends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
-  DeprecatedEAPI: version 0.6.2: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/screenlets
@@ -5426,14 +5426,14 @@ x11-plugins/screenlets
 x11-plugins/thinkhdaps
   DeprecatedEclass: version 0.2.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2.1: "thinkhdaps-0.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/tomboy-reminder
   DeprecatedEclass: version 0.9.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.9.2: "tomboy-reminder-0.9.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/vicious
   DeprecatedEAPI: version 2.0.3: uses deprecated EAPI: 3
@@ -5441,51 +5441,51 @@ x11-plugins/vicious
 
 x11-plugins/wmCalClock
   DeprecatedEAPI: version 1.25-r2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.25-r2: "wmCalClock-1.25.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmDownload
   DeprecatedEAPI: version 0.1.2a-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1.2a-r1: "wmDownload-0.1.2a.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmMatrix
   DeprecatedEAPI: version 0.2-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2-r1: "wmMatrix-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmMoonClock
   DeprecatedEAPI: version 1.27-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.27-r1: "wmMoonClock-1.27.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmSMPmon
   DeprecatedEAPI: version 3.1-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.1-r1: "wmSMPmon-3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmSpaceWeather
   DeprecatedEAPI: version 1.04_p19: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.04_p19: "wmspaceweather_1.04.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.04_p19: "wmspaceweather_1.04-19.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmSun
   DeprecatedEAPI: version 1.03-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.03-r1: "wmSun-1.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmXName
   DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1: "wmXName-0.01.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmacpi
   DeprecatedEAPI: version 1.34: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.2_rc1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.34: "wmacpi-1.34.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.2_rc1: "wmacpi-2.2rc1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmacpiload-ac
   DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 0
@@ -5494,23 +5494,23 @@ x11-plugins/wmacpiload-ac
 
 x11-plugins/wmacpimon
   DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2.1: "wmacpimon-0.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmail
   DeprecatedEAPI: version 2.0-r3: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.0-r3: "wmail-2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmapm
   DeprecatedEAPI: version 3.1-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.1-r1: "wmapm-3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmapmload
   DeprecatedEAPI: version 0.3.4: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3.4: "wmapmload-0.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmappl
   DeprecatedEAPI: version 0.71: uses deprecated EAPI: 0
@@ -5528,87 +5528,87 @@ x11-plugins/wmbiff
 
 x11-plugins/wmbinclock
   DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.5: "wmbinclock-0.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmbio
   DeprecatedEAPI: version 1.02: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.02: "wmbio-1.02.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmblob
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0.3: "wmblob_1.0.3.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmbluecpu
   DeprecatedEAPI: version 0.6: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.6: "wmbluecpu-0.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmbutton
   DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.6.1: "wmbutton-0.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmcalc
   DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4: "wmcalc-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmcalendar
   MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmcdplay
   DeprecatedEAPI: version 1.0_beta1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0_beta1: "wmcdplay-1.0-beta1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmcliphist
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.6-r1: "wmcliphist-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmclock
   DeprecatedEAPI: version 1.0.13: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0.13: "wmclock-1.0.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmclockmon
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.8.1: "wmclockmon_0.8.1-1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmcms
   DeprecatedEAPI: version 0.3.5-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3.5-r1: "wmcms-0.3.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmcoincoin
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.5.1f: "wmcoincoin-2.5.1f.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmcp
   DeprecatedEAPI: version 1.2.8: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.2.8: "wmcp-1.2.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmcpu
   DeprecatedEAPI: version 1.4: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.4: "wmcpu-1.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmcpuload
   DeprecatedEAPI: version 1.1.0_pre5: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.1.0_pre5: "wmcpuload-1.1.0pre5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmcube
   DeprecatedEAPI: version 0.98: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.98: "wmcube-0.98.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmdate
   DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.7: "wmdate-0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmdf
   DeprecatedEAPI: version 0.1.6-r1: uses deprecated EAPI: 0
@@ -5616,33 +5616,33 @@ x11-plugins/wmdf
 
 x11-plugins/wmdiskmon
   DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.0.1: "wmdiskmon-0.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmdl
   DeprecatedEAPI: version 1.4.1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.4.1: "wmdl-1.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmdots
   DeprecatedEAPI: version 0.2_beta: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2_beta: "wmdots-0.2beta.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmdrawer
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.10.5-r2: "wmdrawer-0.10.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmfire
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.2.4-r2: "wmfire-1.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmfishtime
   MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmforkplop
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.9.3: "wmforkplop-0.9.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmfortune
   DeprecatedEAPI: version 0.241: uses deprecated EAPI: 0
@@ -5651,9 +5651,9 @@ x11-plugins/wmfortune
 x11-plugins/wmfrog
   DeprecatedEAPI: version 0.2.0-r1: uses deprecated EAPI: 2
   DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2.0-r1: "wmfrog-0.2.0.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.3.1: "wmfrog-0.3.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmfsm
   DeprecatedEAPI: version 0.34-r1: uses deprecated EAPI: 0
@@ -5661,8 +5661,8 @@ x11-plugins/wmfsm
 
 x11-plugins/wmget
   DeprecatedEAPI: version 0.6.0: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.6.0: "wmget-0.6.0-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmgrabimage
   DeprecatedEAPI: version 0.72-r1: uses deprecated EAPI: 0
@@ -5670,56 +5670,56 @@ x11-plugins/wmgrabimage
 
 x11-plugins/wmgtemp
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0: "wmgtemp-1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmhdplop
   DeprecatedEAPI: version 0.9.9-r2: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.9.9-r2: "wmhdplop-0.9.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmifinfo
   DeprecatedEAPI: version 0.09: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.09: "wmifinfo-0.09.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmifs
   DeprecatedEAPI: version 1.3_beta1-r2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.3_beta1-r2: "wmifs-1.3b1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.3_beta1-r2: "wmifs_1.3b1-11.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wminet
   DeprecatedEAPI: version 3.0.0: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.0.0: "wminet-3.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmitime
   DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3: "wmitime-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmium
   DeprecatedEAPI: version 1.0.9b-r1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0.9b-r1: "wmium-1.0.9b.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmix
   DeprecatedEAPI: version 3.1-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.1-r1: "wmix-3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmjsql
   DeprecatedEAPI: version 0.5: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.5: "wmjsql-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmlaptop
   DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.3: "wmlaptop-1.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.4: "wmlaptop-1.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmlife
   MissingFile: required file ChangeLog doesn't exist
@@ -5731,48 +5731,48 @@ x11-plugins/wmload
 x11-plugins/wmlongrun
   DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.3.0_pre1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2.0: "wmlongrun-0.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 0.3.0_pre1: "wmlongrun-0.3.0pre1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmlpq
   DeprecatedEAPI: version 0.2.1-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.2.1-r2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2.1-r1: "wmlpq_0.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmmaiload
   MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmmand
   DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.3.2: "wmMand-1.3.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmmemfree
   DeprecatedEAPI: version 0.7-r2: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.7-r2: "wmmemfree-0.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmmemload
   DeprecatedEAPI: version 0.1.6: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1.6: "wmmemload-0.1.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmmemmon
   DeprecatedEAPI: version 1.0.2_pre2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0.2_pre2: "wmmemmon-1.0.2pre2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmmenu
   DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.2-r1: "wmmenu-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmmisc
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.1: "wmmisc_1.1.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmmixer
   MissingFile: required file ChangeLog doesn't exist
@@ -5782,34 +5782,34 @@ x11-plugins/wmmldonkey
 
 x11-plugins/wmmon
   DeprecatedEAPI: version 1.0_beta2-r3: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0_beta2-r3: "wmmon-1_0b2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.2_beta1: "wmmon-1.2b1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmmon+smp
   MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmmp
   DeprecatedEAPI: version 0.10.0-r1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.10.0-r1: "WMmp-0.10.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmmp3
   DeprecatedEAPI: version 0.12: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmmsg
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0.1: "wmmsg-1.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmnd
   MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmnet
   DeprecatedEAPI: version 1.06-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.06-r1: "wmnet-1.06.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.06-r1: "wmnet-1.06-misc.patch.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmnetload
   DeprecatedEAPI: version 1.3-r3: uses deprecated EAPI: 0
@@ -5817,13 +5817,13 @@ x11-plugins/wmnetload
 
 x11-plugins/wmnetselect
   DeprecatedEAPI: version 0.8-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.8-r1: "wmnetselect-0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmpager
   DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.2-r1: "wmpager-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmpasman
   MissingFile: required file ChangeLog doesn't exist
@@ -5834,26 +5834,26 @@ x11-plugins/wmpeople
 
 x11-plugins/wmpiki
   DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2.1: "wmpiki-0.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmpinboard
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0: "wmpinboard-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmping
   MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmpop3
   DeprecatedEAPI: version 0.5.6a: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.5.6a: "WMPop3-0.5.6a.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmpop3lb
   DeprecatedEAPI: version 2.4.2-r2: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.4.2-r2: "wmpop3lb2.4.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmpower
   DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 0
@@ -5861,77 +5861,77 @@ x11-plugins/wmpower
 
 x11-plugins/wmppp
   DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.3.0: "wmppp-1.3.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmrack
   DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.3: "wmrack-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmrecord
   DeprecatedEAPI: version 1.0.5.3-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0.5.3-r1: "wmrecord-1.0.5_20040218_0029.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmsmixer
   DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.5.1: "wmsmixer-0.5.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmsound
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.9.5: "wmsound-0.9.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmstickynotes
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2: "wmstickynotes-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmsvencd
   DeprecatedEAPI: version 0.5.0: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.5.0: "wmsvencd-0.5.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmswallow
   MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmsysmon
   DeprecatedEAPI: version 0.7.7: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.7.7: "wmsysmon-0.7.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.7.7: "wmsysmon-0.7.7-s4t4n.patch.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmsystemtray
   MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmsystray
   DeprecatedEAPI: version 0.1.1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1.1: "wmsystray-0.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmtime
   DeprecatedEAPI: version 1.0_beta2_p9: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0_beta2_p9: "wmtime_1.0b2.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.0_beta2_p9: "wmtime_1.0b2-9.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.0_beta2_p10: "wmtime_1.0b2-10.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmtimer
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.92: "wmtimer-2.92.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmtop
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.9.0-r1: "wmtop-0.9.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmtz
   DeprecatedEAPI: version 0.7: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.7: "wmtz-0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmudmount
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.11: "wmudmount-1.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmupmon
   DeprecatedEAPI: version 0.1.3-r1: uses deprecated EAPI: 0
@@ -5939,36 +5939,36 @@ x11-plugins/wmupmon
 
 x11-plugins/wmwave
   DeprecatedEAPI: version 0.4: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4: "wmwave-0-4.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmweather
   DeprecatedEAPI: version 2.4.4: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.4.4: "wmweather_2.4.4.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmweather+
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.13: "wmweather+-2.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmwifi
   DeprecatedEAPI: version 0.6: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.6: "wmwifi-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmwork
   DeprecatedEAPI: version 0.2.5: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2.5: "wmwork-0.2.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmxkb
   DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.2.2: "wmxkb-1.2.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-plugins/wmxres
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.2: "wmxres-1.1-0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -6291,8 +6291,8 @@ app-arch/unzip
   DeprecatedEAPI: version 6.0-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 6.0-r2: uses deprecated EAPI: 2
   DeprecatedEAPI: version 6.0-r3: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 6.0-r1: keywords dropped: mips
+  MissingFile: required file ChangeLog doesn't exist
 
 app-arch/upx-bin
   MissingFile: required file ChangeLog doesn't exist
@@ -6351,8 +6351,8 @@ sys-auth/bioapi
   MissingFile: required file ChangeLog doesn't exist
 
 sys-auth/consolekit
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.9.4: keywords dropped: arm64
+  MissingFile: required file ChangeLog doesn't exist
 
 sys-auth/fingerprint-gui
   WhitespaceFound: version 1.05-r1: ebuild has leading whitespace on line 80
@@ -6362,31 +6362,31 @@ sys-auth/fingerprint-gui
 
 sys-auth/fprint_demo
   DeprecatedEAPI: version 0.4: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4: "fprint_demo-0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sys-auth/fprintd
   MissingFile: required file ChangeLog doesn't exist
 
 sys-auth/icmpdn
   DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4: "icmpdn-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sys-auth/keystone
   DeprecatedEclass: version 2015.1.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   MissingFile: required file ChangeLog doesn't exist
 
 sys-auth/libfprint
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.5.0-r1: keywords dropped: arm, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 sys-auth/libnss-cache
   DeprecatedEAPI: version 0.1-r1: uses deprecated EAPI: 2
   DeprecatedEAPI: version 0.10.1: uses deprecated EAPI: 3
   DeprecatedEAPI: version 0.10.2: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1-r1: "libnss-cache-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sys-auth/libnss-mysql
   DeprecatedEAPI: version 1.5_p20060915-r2: uses deprecated EAPI: 2
@@ -6395,9 +6395,9 @@ sys-auth/libnss-mysql
 sys-auth/libnss-pgsql
   DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.5.0_beta: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.4.0: "libnss-pgsql-1.4.0.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.5.0_beta: "libnss-pgsql-1.5.0-beta.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sys-auth/libyubikey
   MissingFile: required file ChangeLog doesn't exist
@@ -6412,8 +6412,8 @@ sys-auth/nss-myhostname
   MissingFile: required file ChangeLog doesn't exist
 
 sys-auth/nss-pam-ldapd
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.9.6: keywords dropped: amd64, x86
+  MissingFile: required file ChangeLog doesn't exist
 
 sys-auth/nss_ldap
   DeprecatedEAPI: version 258: uses deprecated EAPI: 0
@@ -6424,10 +6424,10 @@ sys-auth/nss_ldap
   DeprecatedEAPI: version 264-r1: uses deprecated EAPI: 2
   DeprecatedEAPI: version 265: uses deprecated EAPI: 2
   DeprecatedEAPI: version 265-r1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 259: "nss_ldap-259.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 261: "nss_ldap-261.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 262: "nss_ldap-262.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sys-auth/oath-toolkit
   MissingFile: required file ChangeLog doesn't exist
@@ -6442,10 +6442,10 @@ sys-auth/pam-afs-session
   DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.5: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.6: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.3: "pam-afs-session-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.5: "pam-afs-session-1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.6: "pam-afs-session-1.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sys-auth/pam-csync
   MissingFile: required file ChangeLog doesn't exist
@@ -6453,9 +6453,9 @@ sys-auth/pam-csync
 sys-auth/pam-pgsql
   DeprecatedEAPI: version 0.7.3: uses deprecated EAPI: 2
   DeprecatedEAPI: version 0.7.3.1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.7.3: "pam-pgsql-0.7.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.7.3.1: "pam-pgsql-0.7.3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sys-auth/pam-script
   MissingFile: required file ChangeLog doesn't exist
@@ -6475,8 +6475,8 @@ sys-auth/pam_blue
 
 sys-auth/pam_chroot
   DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.9.2: "pam_chroot-0.9.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sys-auth/pam_dotfile
   DeprecatedEAPI: version 0.7-r1: uses deprecated EAPI: 0
@@ -6488,8 +6488,8 @@ sys-auth/pam_fprint
 
 sys-auth/pam_keystore
   DeprecatedEAPI: version 0.1.3: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1.3: "pam_keystore-0.1.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sys-auth/pam_krb5
   MissingFile: required file ChangeLog doesn't exist
@@ -6498,8 +6498,8 @@ sys-auth/pam_ldap
   DeprecatedEAPI: version 183: uses deprecated EAPI: 0
   DeprecatedEAPI: version 184: uses deprecated EAPI: 0
   DeprecatedEAPI: version 186: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 184: "pam_ldap-184.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sys-auth/pam_mktemp
   MissingFile: required file ChangeLog doesn't exist
@@ -6518,8 +6518,8 @@ sys-auth/pam_p11
 sys-auth/pam_passwdqc
   DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0.4: "pam_passwdqc-1.0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sys-auth/pam_pkcs11
   MissingFile: required file ChangeLog doesn't exist
@@ -6529,16 +6529,16 @@ sys-auth/pam_radius
 
 sys-auth/pam_require
   DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.7: "pam_require-0.7.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sys-auth/pam_skey
   MissingFile: required file ChangeLog doesn't exist
 
 sys-auth/pam_smb
   DeprecatedEAPI: version 2.0.0_rc6-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.0.0_rc6-r1: "pam_smb-2.0.0-rc6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sys-auth/pam_ssh
   DeprecatedEAPI: version 1.97-r1: uses deprecated EAPI: 2
@@ -6595,8 +6595,8 @@ sys-auth/tfm-fingerprint
   MissingFile: required file ChangeLog doesn't exist
 
 sys-auth/thinkfinger
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3-r3: "thinkfinger-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sys-auth/ykclient
   MissingFile: required file ChangeLog doesn't exist
@@ -6715,9 +6715,9 @@ net-irc/irssi
   MissingFile: required file ChangeLog doesn't exist
 
 net-irc/irssi-otr
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 2
   NonExistentDeps: version 0.2: depset depends: nonexistent atoms [ net-irc/irssi-svn ]
   NonExistentDeps: version 0.2: depset rdepends: nonexistent atoms [ net-irc/irssi-svn ]
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
 net-irc/irssi-xmpp
@@ -6833,9 +6833,9 @@ net-irc/xaric
   MissingFile: required file ChangeLog doesn't exist
 
 net-irc/xchat-otr
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 2
   NonExistentDeps: version 0.3: depset depends: nonexistent atoms [ net-irc/xchat ]
   NonExistentDeps: version 0.3: depset rdepends: nonexistent atoms [ net-irc/xchat ]
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
 net-irc/znc
@@ -6871,8 +6871,8 @@ games-emulation/dboxfe
 
 games-emulation/desmume
   DeprecatedEAPI: version 0.9.8: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.9.8: "desmume-0.9.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 games-emulation/dolphin
   WhitespaceFound: version 4.0-r2: ebuild has trailing whitespace on line 101
@@ -6966,8 +6966,8 @@ games-emulation/mednafen
 
 games-emulation/mekanix
   DeprecatedEAPI: version 070: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 070: "mekanix070.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 games-emulation/mupen64plus
   DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 2
@@ -6996,8 +6996,8 @@ games-emulation/mupen64plus-video-rice
   MissingFile: required file ChangeLog doesn't exist
 
 games-emulation/nestopia
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.46.2: keywords dropped: ppc
+  MissingFile: required file ChangeLog doesn't exist
 
 games-emulation/nestra
   MissingFile: required file ChangeLog doesn't exist
@@ -7074,8 +7074,8 @@ net-fs/davfs2
 
 net-fs/libnfs
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.9.7: keywords dropped: alpha
+  MissingFile: required file ChangeLog doesn't exist
 
 net-fs/ncpfs
   MissingFile: required file ChangeLog doesn't exist
@@ -7102,10 +7102,10 @@ net-fs/openafs-legacy
   MissingFile: required file ChangeLog doesn't exist
 
 net-fs/samba
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 4.0.26: keywords dropped: alpha, arm, ia64, mips, ppc, ppc64, sparc
   DroppedKeywordWarning: version 4.2.3: keywords dropped: arm64
   DroppedKeywordWarning: version 3.6.25: keywords dropped: s390, sh
+  MissingFile: required file ChangeLog doesn't exist
 
 net-fs/smbnetfs
   MissingFile: required file ChangeLog doesn't exist
@@ -7272,8 +7272,8 @@ sci-misc/fitsverify
 
 sci-misc/flashdot
   DeprecatedEAPI: version 1.1.4: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.1.4: "flashdot-1.1.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-misc/gato
   DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -7287,25 +7287,25 @@ sci-misc/h5utils
   MissingFile: required file ChangeLog doesn't exist
 
 sci-misc/lttoolbox
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.1.0: "lttoolbox-3.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.2.0: "lttoolbox-3.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-misc/mendeleydesktop
   MissingFile: required file ChangeLog doesn't exist
 
 sci-misc/nco
   DeprecatedEAPI: version 3.9.9: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.9.9: "nco-3.9.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-misc/ncview
   MissingFile: required file ChangeLog doesn't exist
 
 sci-misc/netlogo-bin
   DeprecatedEAPI: version 3.0.2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.0.2: "netlogo-3.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingFile: required file ChangeLog doesn't exist
 
 sci-misc/oww
   MissingFile: required file ChangeLog doesn't exist
@@ -7322,4 +7322,3 @@ sci-misc/vitables
   NonExistentDeps: version 2.1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 2.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   MissingFile: required file ChangeLog doesn't exist
-+ [[ 0 == 0 ]]
