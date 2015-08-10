@@ -4,15 +4,32 @@
 + [[ ! -n 16 ]]
 + [[ 13 == global ]]
 + set +x
-+ pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'app-dicts/*' 'sys-kernel/*' 'kde-misc/*' 'net-im/*' 'games-misc/*' 'x11-terms/*' 'media-radio/*' 'www-plugins/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
-WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
-               : error range rlt version 5.5.34 is a guaranteed empty set
++ pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'app-dicts/*' 'kde-apps/*' 'kde-misc/*' 'app-backup/*' 'games-misc/*' 'x11-terms/*' 'media-radio/*' 'www-plugins/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
+/usr/lib64/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
+  "disabling GLSA checks due to no glsa source "
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+media-plugins/alsa-plugins
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/alsaequal
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/amb-plugins
   DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.8.1: "AMB-plugins-0.8.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
+media-plugins/ams-lv2
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/audacious-dumb
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.65: "audacious-dumb-0.65.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.73: "audacious-dumb-0.73.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.74: "audacious-dumb-0.74.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -20,14 +37,20 @@ media-plugins/audacious-dumb
 
 media-plugins/audacious-plugins
   DeprecatedEAPI: version 2.4.4-r1: uses deprecated EAPI: 3
-  VulnerablePackage: version 2.4.4-r1: vulnerable via glsa(201203-14) ( ver < 3.1 ), keywords ('alpha', 'amd64', 'amd64-linux', 'hppa', 'ppc', 'ppc64', 'sparc', 'x86', 'x86-fbsd', 'x86-freebsd', 'x86-interix', 'x86-linux')
-  VulnerablePackage: version 2.5.4: vulnerable via glsa(201203-14) ( ver < 3.1 ), keywords ('alpha', 'amd64', 'amd64-linux', 'hppa', 'ppc', 'ppc64', 'sparc', 'x86', 'x86-fbsd', 'x86-freebsd', 'x86-interix', 'x86-linux')
+  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 3.6.2: keywords dropped: alpha, ppc, sparc
 
 media-plugins/banshee-community-extensions
   DeprecatedEclass: version 2.2.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEclass: version 2.4.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEclass: version 2.4.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/calf
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/caps-plugins
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/emotion_generic_players
   NonsolvableDeps: version 1.15.0: nonsolvable depset(depends) keyword(~alpha) profile (default/linux/alpha/13.0): solutions: [ media-video/vlc ]
@@ -45,963 +68,3785 @@ media-plugins/emotion_generic_players
   NonsolvableDeps: version 1.15.0: nonsolvable depset(rdepends) keyword(~alpha) profile (default/linux/alpha/13.0/desktop/kde): solutions: [ media-video/vlc ]
   NonsolvableDeps: version 1.15.0: nonsolvable depset(rdepends) keyword(~alpha) profile (default/linux/alpha/13.0/desktop/kde/systemd): solutions: [ media-video/vlc ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/evas_generic_loaders
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/fil-plugins
   DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3.0: "FIL-plugins-0.3.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/frei0r-plugins
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gimp-gmic
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gimp-lensfun
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gimp-lqr
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/gimp-resynthesizer
   DeprecatedEAPI: version 0.16: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.16: "resynthesizer-0.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-plugins/gkrellmpc
   DeprecatedEAPI: version 0.1_beta9-r1: uses deprecated EAPI: 2
   DeprecatedEAPI: version 0.1_beta10: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1_beta9-r1: "gkrellmpc-0.1_beta9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+media-plugins/gmpc-alarm
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/gmpc-albumview
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 11.8.16: "gmpc-albumview-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
+media-plugins/gmpc-avahi
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/gmpc-awn
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 11.8.16: "gmpc-awn-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-plugins/gmpc-discogs
   DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.20.0: "gmpc-discogs-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-plugins/gmpc-extraplaylist
   DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.20.0: "gmpc-extraplaylist-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-plugins/gmpc-jamendo
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 11.8.16: "gmpc-jamendo-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-plugins/gmpc-last-fm
   DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.20.0: "gmpc-last-fm-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+media-plugins/gmpc-libnotify
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gmpc-lyrics
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/gmpc-lyricwiki
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 11.8.16: "gmpc-lyricwiki-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/gmpc-magnatune
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/gmpc-mdcover
   DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.20.0: "gmpc-mdcover-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+media-plugins/gmpc-mmkeys
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/gmpc-mserver
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.20.0: "gmpc-mserver-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-plugins/gmpc-playlistsort
   DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.20.0: "gmpc-playlistsort-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-plugins/gmpc-shout
   DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.20.0: "gmpc-shout-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-plugins/gmpc-tagedit
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 11.8.16: "gmpc-tagedit-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-plugins/gmpc-wikipedia
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 11.8.16: "gmpc-wikipedia-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-plugins/grilo-plugins
+  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.2.14: keywords dropped: alpha
   DroppedKeywordWarning: version 0.2.13: keywords dropped: arm, ia64, sparc
 
+media-plugins/gst-plugins-a52dec
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-alsa
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-amr
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-annodex
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-assrender
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-cdio
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-cdparanoia
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-dash
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/gst-plugins-dts
+  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
 
 media-plugins/gst-plugins-dv
+  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
+
+media-plugins/gst-plugins-dvb
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-dvdread
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-faac
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-faad
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/gst-plugins-ffmpeg
   WhitespaceFound: version 0.10.13_p201211-r4: ebuild has trailing whitespace on line 63
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-flac
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-gconf
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-gdkpixbuf
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-gio
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-gl
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-gnomevfs
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-gsm
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-hls
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-ivorbis
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-jack
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-jpeg
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-ladspa
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-lame
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-libav
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-libmms
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-libnice
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-libpng
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/gst-plugins-libvisual
+  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
+
+media-plugins/gst-plugins-mad
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/gst-plugins-meta
+  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.0-r3: keywords dropped: arm64
 
+media-plugins/gst-plugins-mimic
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-modplug
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-mpeg2dec
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-mpeg2enc
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/gst-plugins-mplex
+  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
+
+media-plugins/gst-plugins-musepack
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-neon
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-ofa
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-ogg
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-opus
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-oss
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-pango
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-pulse
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-raw1394
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-resindvd
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-rtmp
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-schroedinger
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/gst-plugins-shout2
+  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: sh
 
+media-plugins/gst-plugins-sidplay
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-smoothstreaming
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-soundtouch
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-soup
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-speex
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-taglib
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-theora
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-twolame
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-v4l2
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-vaapi
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-voaacenc
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-voamrwbenc
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-vorbis
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-vp8
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-vpx
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/gst-plugins-wavpack
+  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
+
+media-plugins/gst-plugins-x
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-x264
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-ximagesrc
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-xvid
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/gst-plugins-xvideo
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/hexter
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/imlib2_loaders
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/ir_lv2
   DeprecatedEAPI: version 1.3: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/kipi-plugins
   NonExistentDeps: version 4.12.0: depset depends: nonexistent atoms [ >=kde-apps/libkgeomap-14.12.0:4 ]
   NonExistentDeps: version 4.12.0: depset rdepends: nonexistent atoms [ >=kde-apps/libkgeomap-14.12.0:4 ]
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/ladspa-bs2b
   DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.9.1: "ladspa-bs2b-0.9.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+media-plugins/libvisual-plugins
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/libvisual-projectm
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.0.1: "projectM_libvisual-2.0.1-Source.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-plugins/live
   DeprecatedEAPI: version 2012.01.07: uses deprecated EAPI: 3
   DeprecatedEAPI: version 2012.09.13: uses deprecated EAPI: 3
   DeprecatedEAPI: version 2013.02.11: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/mcp-plugins
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4.0: "MCP-plugins-0.4.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/mda-lv2
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/mediastreamer-amr
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/mediastreamer-bcg729
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/mediastreamer-ilbc
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/mediastreamer-silk
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/mediastreamer-x264
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/mythplugins
   DeprecatedEclass: version 0.26.0_p20130922: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.26.0_p20130922: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.26.0_p20130922: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
   DeprecatedEclass: version 0.27_p20140321: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.27_p20140321: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.27_p20140321: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
   DeprecatedEclass: version 0.27.1_p20140713: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.27.1_p20140713: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.27.1_p20140713: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
   DeprecatedEclass: version 0.27.1_p20140817: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.27.1_p20140817: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.27.1_p20140817: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
   DeprecatedEclass: version 0.27.3_p20140907: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.27.3_p20140907: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.27.3_p20140907: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
   DeprecatedEclass: version 0.27.3_p20141009: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.27.3_p20141009: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.27.3_p20141009: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
   DeprecatedEclass: version 0.27.4_p20141018: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.27.4_p20141018: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.27.4_p20141018: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
   DeprecatedEclass: version 0.27.4_p20150124: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 0.27.5_p20150627: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/npapi-vlc
   DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 3
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.0.0: "npapi-vlc-2.0.0.tar.xz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+media-plugins/qmmp-plugin-pack
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/quodlibet-plugins
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/rev-plugins
   DeprecatedEAPI: version 0.3.1-r1: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3.1-r1: "REV-plugins-0.3.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-plugins/swh-lv2
   DeprecatedEAPI: version 1.0.15: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0.15: "swh-lv2-1.0.15.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-plugins/swh-plugins
+  MissingFile: required file ChangeLog doesn't exist
   SizeViolation: "files/swh-plugins-0.4.15-glibc-2.10.patch" exceeds 20k in size; 27458 bytes total
+
+media-plugins/tap-plugins
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/vamp-aubio-plugins
   DeprecatedEAPI: version 0.3.2c: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/vamp-libxtract-plugins
   DeprecatedEAPI: version 0.6.6.20121204: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/vco-plugins
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3.0: "VCO-plugins-0.3.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
+media-plugins/vdr-actuator
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/vdr-admin
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.8.0: "vdr-admin-0.8.0.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-plugins/vdr-alcd
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.5.1: "vdr-alcd-1.5.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-plugins/vdr-arghdirector
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2.6: "vdr-arghdirector-0.2.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
+media-plugins/vdr-atscepg
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-audiorecorder
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-autosort
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/vdr-avards
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2.4: "vdr-avards-0.2.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-plugins/vdr-beep
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1.2: "vdr-beep-0.1.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-plugins/vdr-bgprocess
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1.0: "vdr-bgprocess-0.1.0.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-plugins/vdr-browse
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2.0: "vdr-browse-0.2.0.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
+media-plugins/vdr-burn
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/vdr-burn-templates
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.0.2: "vdr-burn-templates-0.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-plugins/vdr-calc
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.0.1_rc5: "vdr-calc-0[1].0.1-rc5.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+media-plugins/vdr-cdplayer
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/vdr-chanman
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.0.9: "vdr-chanman-0.0.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-plugins/vdr-channelblocker
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.0.6: "vdr-channelblocker-0.0.6.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-plugins/vdr-cinebars
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.0.5: "vdr-cinebars-0.0.5.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
+media-plugins/vdr-clock
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-console
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-coverviewer
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/vdr-cpumon
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.0.6_p1: "vdr-cpumon-0.0.6a.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+media-plugins/vdr-decruft
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-devstatus
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-dummydevice
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-duplicates
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-dvbapi
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-dvbhddevice
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-dvbsddevice
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-dvd
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-dvdswitch
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-epgsearch
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-epgsync
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-exec
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/vdr-extb
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3.1: "vdr-extb-0.3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.3.1: "extb_firmware_1.08_lircd.conf.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.3.1: "extb.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+media-plugins/vdr-extrecmenu
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-femon
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-fepg
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-ffnetdev
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-filebrowser
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-freecell
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-fritzbox
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-graphlcd
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-graphtft
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-image
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-imonlcd
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-infosatepg
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-iptv
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-joystick
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-kvdrmon
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-launcher
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/vdr-lcdproc
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.0.10.9: "vdr-lcdproc-0.0.10.9.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+media-plugins/vdr-lcr
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-live
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-loadepg
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/vdr-mailbox
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.6.0: "vdr-mailbox-0.6.0.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+media-plugins/vdr-markad
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-menuorg
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-mlist
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-mount
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-mp3ng
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-mplayer
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-music
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-newsticker
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-noepg
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-nordlichtsepg
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-osdpip
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/vdr-osdserver
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1.2: "vdr-osdserver-0.1.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+media-plugins/vdr-osdteletext
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-peer
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-permashift
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/vdr-picselshow
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.0.2: "vdr-picselshow-0.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+media-plugins/vdr-pilot
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-pilotskin
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/vdr-pin
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1.9: "vdr-pin-0.1.9.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-plugins/vdr-powermate
-  ExecutableFile: "files/rc-addon.sh" has unnecessary executable bit
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.0.5: "vdr-powermate-0.0.5.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+media-plugins/vdr-prefermenu
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/vdr-proxy
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1.4-r1: "vdr-proxy-0.1.4.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-plugins/vdr-pvr350
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.7.3: "vdr-pvr350-1.7.3.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.7.4: "vdr-pvr350-1.7.4.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+media-plugins/vdr-pvrinput
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/vdr-quicktimer
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1.1: "vdr-quicktimer-0.1.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-plugins/vdr-radio
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.9.0: "vdr-radio-0.9.0.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-plugins/vdr-radiolist
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.0.2: "vdr-radiolist-0.0.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+media-plugins/vdr-rcu
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-recsearch
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/vdr-recstatus
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.0.8: "vdr-recstatus-0.0.8.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+media-plugins/vdr-remote
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-remoteosd
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-remotetimers
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/vdr-rotor
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1.5: "vdr-rotor-0.1.5.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
+media-plugins/vdr-rpihddevice
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-rssreader
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-satip
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/vdr-scheduler
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1.3: "vdr-scheduler-0.1.3.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
+media-plugins/vdr-screenshot
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-serial
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-skincurses
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-skinelchi
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-skinenigmang
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-skinnopacity
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-skinsoppalusikka
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-sleeptimer
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-sndctl
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-solitaire
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/vdr-span
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.0.7: "vdr-span-0.0.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-plugins/vdr-streamdev
   BadInsIntoDir: version 0.6.1: ebuild uses insinto /etc/conf.d on line 60
 
 media-plugins/vdr-spider
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2.2: "vdr-spider-0.2.2.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
+media-plugins/vdr-streamdev
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/vdr-sudoku
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3.5: "vdr-sudoku-0.3.5.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-plugins/vdr-suspendoutput
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0.1: "vdr-suspendoutput-1.0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
+media-plugins/vdr-svdrposd
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-svdrpservice
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/vdr-systeminfo
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1.1: "vdr-systeminfo-0.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+media-plugins/vdr-text2skin
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-ttxtsubs
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-tvguide
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-undelete
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/vdr-vcd
-  ExecutableFile: "files/rc-addon.sh" has unnecessary executable bit
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-vdrmanager
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/vdr-videosystem
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.0.1: "vdr-videosystem-0.0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
+media-plugins/vdr-vodcatcher
+  MissingFile: required file ChangeLog doesn't exist
+
 media-plugins/vdr-vompserver
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3.1-r1: "vdr-vompserver-0.3.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-plugins/vdr-wapd
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-weatherng
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-wirbelscan
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-xine
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-xineliboutput
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/vdr-xvdr
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-zaphistory
+  MissingFile: required file ChangeLog doesn't exist
+
+media-plugins/vdr-zappilot
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/xbmc-addon-xvdr
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  MissingFile: required file ChangeLog doesn't exist
 
 media-plugins/xsynth-dssi
   DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.9.4: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.9.2: "xsynth-dssi-0.9.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.9.4: "xsynth-dssi-0.9.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
-               : error range rlt version 5.5.34 is a guaranteed empty set
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
 
 app-dicts/aspell-af
   DeprecatedEAPI: version 0.50.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-be
   DeprecatedEAPI: version 0.01-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-bg
   DeprecatedEAPI: version 4.1.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-br
   DeprecatedEAPI: version 0.50.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-ca
   DeprecatedEAPI: version 2.1.5.1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-cs
   DeprecatedEAPI: version 0.60.20040614: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-cy
   DeprecatedEAPI: version 0.50.3: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-da
   DeprecatedEAPI: version 1.7.42: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-de
   DeprecatedEAPI: version 0.60_pre20030222: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-de-alt
   DeprecatedEAPI: version 2.1.1-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-el
   DeprecatedEAPI: version 0.50.3: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-en
   DeprecatedEAPI: version 7.1.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-eo
   DeprecatedEAPI: version 2.1.20000225.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-es
   DeprecatedEAPI: version 1.9a: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-et
   DeprecatedEAPI: version 0.1.21.1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-fi
   DeprecatedEAPI: version 0.7.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-fo
   DeprecatedEAPI: version 0.51.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-fr
   DeprecatedEAPI: version 0.60: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-ga
   DeprecatedEAPI: version 0.50.4: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-gl
   DeprecatedEAPI: version 0.5.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-he
   DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-hr
   DeprecatedEAPI: version 0.51.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-hu
   DeprecatedEAPI: version 0.99.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-hy
   DeprecatedEAPI: version 0.10.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-is
   DeprecatedEAPI: version 0.51.1.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-it
   DeprecatedEAPI: version 2.4.20070901: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-la
   DeprecatedEAPI: version 6.0.20020503.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-lt
   DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-nl
   DeprecatedEAPI: version 0.50.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-no
   DeprecatedEAPI: version 0.50.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-pl
   DeprecatedEAPI: version 6.0.20120418.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-pt
   DeprecatedEAPI: version 0.50.2-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-pt-br
   DeprecatedEAPI: version 6.0.20090702: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-ro
   DeprecatedEAPI: version 3.3.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-ru
   DeprecatedEAPI: version 0.99.1-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-sk
   DeprecatedEAPI: version 2.01.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-sl
   DeprecatedEAPI: version 0.50.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-sr
   DeprecatedEAPI: version 0.60: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-sv
   DeprecatedEAPI: version 0.51.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-uk
   DeprecatedEAPI: version 1.4.0.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/aspell-vi
   DeprecatedEAPI: version 0.01.1.1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/bookview
   DeprecatedEAPI: version 3.2.1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/canna-2ch
   DeprecatedEAPI: version 20030827: uses deprecated EAPI: 0
   DeprecatedEAPI: version 20040519: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/canna-cannadic
   DeprecatedEAPI: version 0.95c: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/dictd-devils
   DeprecatedEAPI: version 0-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/dictd-dicts
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/dictd-elements
   DeprecatedEAPI: version 2000.22.07-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/dictd-foldoc
   DeprecatedEAPI: version 2001.03.13-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/dictd-gazetteer
   DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/dictd-jargon
   DeprecatedEAPI: version 4.2.3-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/dictd-misc
   DeprecatedEAPI: version 1.5b-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/dictd-vera
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/dictd-web1913
   DeprecatedEAPI: version 1.4-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/dictd-wn
   DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/dikt
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/duali-data
   DeprecatedEAPI: version 0.1b: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/eblook
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/edictionary
   DeprecatedEAPI: version 2.6: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/freedict-deu-eng
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/freedict-eng-fra
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/freedict-eng-ita
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/freedict-eng-swe
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/freedict-fra-eng
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/freedict-ita-eng
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/gjiten
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/gnome-dictionary
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/gwaei
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/ipadic
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/kasumi
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/libydpdict
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/mecab-ipadic
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/mecab-naist-jdic
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/migemo-dict
   DeprecatedEAPI: version 200812: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-af
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-bg
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-ca
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-cs
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/myspell-cy
   DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-da
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-de
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-de-alt
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-el
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/myspell-en
   DeprecatedEAPI: version 20081002: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-eo
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-es
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-et
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-fo
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-fr
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/myspell-ga
   DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/myspell-gl
   DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-he
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/myspell-hr
   DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-hu
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/myspell-ia
   DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-id
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-is
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-it
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-km
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-ku
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-lt
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-lv
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/myspell-mi
   DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/myspell-mk
   DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/myspell-ms
   DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-nb
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-nl
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-nn
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-pl
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-pt
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-pt-br
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-ro
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/myspell-ru
   DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-sk
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-sl
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-sq
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-sv
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/myspell-sw
   DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/myspell-tn
   DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/myspell-uk
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/myspell-zu
   DeprecatedEAPI: version 20060316: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/opendict
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/prime-dict
   DeprecatedEAPI: version 1.0.0-r1: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/qvortaro
   MetadataError: version 0.4.1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-dicts/qvortaro-0.4.1, attr fetchables
 error: mirror://berlios/qvortaro/qvortaro-0.4.1.tar.gz is unparseable
 flagged token- uri mirror://berlios/qvortaro/qvortaro-0.4.1.tar.gz isn't a known mirror tier
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-cdict-en-zh-big5
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-cdict-en-zh-gb
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-cedict-zh-en-big5
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-cedict-zh-en-gb
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-dictd-devils
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-freedict-eng-deu
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-freedict-eng-fra
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-freedict-eng-ita
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-freedict-eng-lat
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-freedict-eng-rus
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-freedict-eng-spa
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-freedict-eng-swe
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-freedict-eng-tur
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-freedict-tur-deu
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-freedict-tur-eng
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-hnd-de-vi
   DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-hnd-en-vi
   DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-hnd-fr-vi
   DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-hnd-ru-vi
   DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-hnd-vi-de
   DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-hnd-vi-en
   DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-hnd-vi-fr
   DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-hnd-vi-vi
   DeprecatedEAPI: version 20050917: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-jmdict-en-ja
   DeprecatedEAPI: version 2.4.2-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-jmdict-ja-en
   DeprecatedEAPI: version 2.4.2-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-langdao-en-zh-gb
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-langdao-zh-en-gb
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-mova-smiley
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-oxford-en-zh-gb
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-quick-eng-fra
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-quick-eng-jpn
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-quick-jpn-eng
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-quick-ru-en
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-xdict-en-zh-big5
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-xdict-en-zh-gb
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-xdict-zh-en-big5
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/stardict-xdict-zh-en-gb
   DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/sword-ab
   DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/sword-abbott
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-abs_essay_goodsam_swb
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-acv
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-afr1953
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-akjv
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-alb
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-aleppo
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-amtract
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-arasvd
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-armeastern
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-armwestern
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-asv
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-barnes
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-bashautin
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-bbe
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-br_en
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-bulcarigradnt
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-bulveren
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-burjudson
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-bwe
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-byz
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-cbc
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-chamorro
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-chincvs
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-chincvt
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-chiun
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-chiuns
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-clarke
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-common
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-cro
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-czebkr
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-czecep
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-czekms
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-czenkb
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-daily
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-dan
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-darby
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-dbd
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-diaglott
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-drc
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-dtn
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-dutkant
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-dutsvv
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-easton
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-emtv
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-esperanto
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-est
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-family
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-farsiopv
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-finbiblia
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-finney
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-finpr
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-finpr92
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-frebbb
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-frecrampon
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-frecrl
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-frelsg
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-fremartin
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-fresegond
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-geneva
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-geneva1599
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-gerelb1871
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-gerelb1905
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-gerlut1545
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-gersch
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-greekhebrew
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-hebmodern
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-hebrewgreek
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-heretics
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-hitchcock
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-hnv
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-hunkar
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-hunuj
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-icelandic
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-institutes
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-isbe
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-isv
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-itadio
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-itarive
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-jfb
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-josephus
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-jps
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-jst
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-jubilee2000
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-kekchi
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-kjv
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-kjvd
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-klv
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-klven_iklingon
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/sword-klviklingon_en
   DeprecatedEAPI: version 2.1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-korean
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-la_en
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-latvian
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-lightfoot
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-litv
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-luther
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-mak
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-manxgaelic
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-maori
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-mhc
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-mhcc
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-mkjv
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-montgomery
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-murdock
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-nave
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-norsk
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-orthodoxy
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-packard
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-personal
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-peshitta
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-pilgrim
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-pnt
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-practice
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-rkjnt
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-rnkjv
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-robinson
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-romcor
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-rotherham
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-rst
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-rusmakarij
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-rwebster
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-rwp
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-saoa
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-scofield
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-scotsgaelic
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-sme
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-smith
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-sparv
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-sparvg2004
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-spasev
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-spavnt
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-spurious
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-strongsgreek
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-strongshebrew
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-swahili
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-tagalog
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-tcr
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-tdavid
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-tfg
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-tisch
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-torrey
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-tr
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-tsk
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-twenty
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-tyndale
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-ukjv
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-ukrainian
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-uma
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-umgreek
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-vulgate
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-vulgate_hebps
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-web
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-webster
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-webstersdict
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-wesley
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-weymouth
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-whnu
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-wlc
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-wulfila
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-wycliffe
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-xhosa
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/sword-ylt
+  MissingFile: required file ChangeLog doesn't exist
+
+app-dicts/verbiste
+  MissingFile: required file ChangeLog doesn't exist
 
 app-dicts/wnn-ldic
   DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
-WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
-               : error range rlt version 5.5.34 is a guaranteed empty set
+  MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/genkernel
-  DeprecatedEAPI: version 3.4.45.1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.48: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.49: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.49.1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.49.2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.50: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.51: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.51.1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.51.2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.51.4: uses deprecated EAPI: 3
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
-  DeprecatedEclass: version 9999-r1: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DroppedKeywordWarning: version 3.4.50: keywords dropped: sh
+app-dicts/wordnet
+  MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/genkernel-next
-  DroppedKeywordWarning: version 60: keywords dropped: ppc, ppc64
-  DroppedKeywordWarning: version 55: keywords dropped: alpha
+app-dicts/ydpdict
+  MissingFile: required file ChangeLog doesn't exist
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
 
-sys-kernel/kccmp
-  MissingChksum: version 0.3: "kccmp-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+kde-apps/amor
+  MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/linux-firmware
-  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+kde-apps/analitza
+  MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/linux-headers
-  DeprecatedEAPI: version 3.1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.2-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.3: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4-r2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.5: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.6: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.7: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.8: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.9: uses deprecated EAPI: 3
+kde-apps/ark
+  MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/raspberrypi-image
-  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+kde-apps/artikulate
+  MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/raspberrypi-sources
-  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.12.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.14.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.18.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.19.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+kde-apps/attica
+  MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/spl
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+kde-apps/audiocd-kio
+  MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/vserver-sources
-  VulnerablePackage: version 2.3.0.36.32: vulnerable via glsa(200407-02) ( ( ver < 2.0 || ver >= 2.4 || ver-rev < 2.4.26.1.3.9-r2 ) ), keywords ('amd64', 'hppa', 'x86')
-  VulnerablePackage: version 2.3.0.36.32: vulnerable via glsa(200407-16) ( ( ver-rev < 2.4.26.1.28-r1 || ver >= 2.4 || ver < 2.0 ) ), keywords ('amd64', 'hppa', 'x86')
-  VulnerablePackage: version 2.3.0.36.32: vulnerable via glsa(200408-24) ( ( ver-rev < 2.4.26.1.28-r4 || ver < 2.0 || ver >= 2.4 ) ), keywords ('amd64', 'hppa', 'x86')
-  VulnerablePackage: version 2.3.6.5: vulnerable via glsa(200407-02) ( ( ver < 2.0 || ver >= 2.4 || ver-rev < 2.4.26.1.3.9-r2 ) ), keywords ('amd64', 'hppa', 'x86')
-  VulnerablePackage: version 2.3.6.5: vulnerable via glsa(200407-16) ( ( ver-rev < 2.4.26.1.28-r1 || ver >= 2.4 || ver < 2.0 ) ), keywords ('amd64', 'hppa', 'x86')
-  VulnerablePackage: version 2.3.6.5: vulnerable via glsa(200408-24) ( ( ver-rev < 2.4.26.1.28-r4 || ver < 2.0 || ver >= 2.4 ) ), keywords ('amd64', 'hppa', 'x86')
-  VulnerablePackage: version 2.3.6.8: vulnerable via glsa(200407-02) ( ( ver < 2.0 || ver >= 2.4 || ver-rev < 2.4.26.1.3.9-r2 ) ), keywords ('amd64', 'hppa', 'x86')
-  VulnerablePackage: version 2.3.6.8: vulnerable via glsa(200407-16) ( ( ver-rev < 2.4.26.1.28-r1 || ver >= 2.4 || ver < 2.0 ) ), keywords ('amd64', 'hppa', 'x86')
-  VulnerablePackage: version 2.3.6.8: vulnerable via glsa(200408-24) ( ( ver-rev < 2.4.26.1.28-r4 || ver < 2.0 || ver >= 2.4 ) ), keywords ('amd64', 'hppa', 'x86')
-  VulnerablePackage: version 2.3.6.11: vulnerable via glsa(200407-02) ( ( ver < 2.0 || ver >= 2.4 || ver-rev < 2.4.26.1.3.9-r2 ) ), keywords ('amd64', 'hppa', 'x86')
-  VulnerablePackage: version 2.3.6.11: vulnerable via glsa(200407-16) ( ( ver-rev < 2.4.26.1.28-r1 || ver >= 2.4 || ver < 2.0 ) ), keywords ('amd64', 'hppa', 'x86')
-  VulnerablePackage: version 2.3.6.11: vulnerable via glsa(200408-24) ( ( ver-rev < 2.4.26.1.28-r4 || ver < 2.0 || ver >= 2.4 ) ), keywords ('amd64', 'hppa', 'x86')
-  VulnerablePackage: version 2.3.6.14: vulnerable via glsa(200407-02) ( ( ver < 2.0 || ver >= 2.4 || ver-rev < 2.4.26.1.3.9-r2 ) ), keywords ('amd64', 'hppa', 'x86')
-  VulnerablePackage: version 2.3.6.14: vulnerable via glsa(200407-16) ( ( ver-rev < 2.4.26.1.28-r1 || ver >= 2.4 || ver < 2.0 ) ), keywords ('amd64', 'hppa', 'x86')
-  VulnerablePackage: version 2.3.6.14: vulnerable via glsa(200408-24) ( ( ver-rev < 2.4.26.1.28-r4 || ver < 2.0 || ver >= 2.4 ) ), keywords ('amd64', 'hppa', 'x86')
-  VulnerablePackage: version 2.3.7.3: vulnerable via glsa(200407-02) ( ( ver < 2.0 || ver >= 2.4 || ver-rev < 2.4.26.1.3.9-r2 ) ), keywords ('amd64', 'hppa', 'x86')
-  VulnerablePackage: version 2.3.7.3: vulnerable via glsa(200407-16) ( ( ver-rev < 2.4.26.1.28-r1 || ver >= 2.4 || ver < 2.0 ) ), keywords ('amd64', 'hppa', 'x86')
-  VulnerablePackage: version 2.3.7.3: vulnerable via glsa(200408-24) ( ( ver-rev < 2.4.26.1.28-r4 || ver < 2.0 || ver >= 2.4 ) ), keywords ('amd64', 'hppa', 'x86')
-  VulnerablePackage: version 2.3.7.4: vulnerable via glsa(200407-02) ( ( ver < 2.0 || ver >= 2.4 || ver-rev < 2.4.26.1.3.9-r2 ) ), keywords ('amd64', 'hppa', 'x86')
-  VulnerablePackage: version 2.3.7.4: vulnerable via glsa(200407-16) ( ( ver-rev < 2.4.26.1.28-r1 || ver >= 2.4 || ver < 2.0 ) ), keywords ('amd64', 'hppa', 'x86')
-  VulnerablePackage: version 2.3.7.4: vulnerable via glsa(200408-24) ( ( ver-rev < 2.4.26.1.28-r4 || ver < 2.0 || ver >= 2.4 ) ), keywords ('amd64', 'hppa', 'x86')
+kde-apps/blinken
+  MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/zen-sources
-  DeprecatedEclass: version 3.8.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.9.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.11.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.12.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.13.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
-               : error range rlt version 5.5.34 is a guaranteed empty set
+kde-apps/bomber
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/bovo
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/cantor
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/cervisia
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/dolphin
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/dolphin-plugins
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/dragon
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/drkonqi
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ffmpegthumbs
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/filelight
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/granatier
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/gwenview
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/jovie
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/juk
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kaccessible
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kajongg
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kalgebra
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kalzium
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kamera
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kanagram
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kapman
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kapptemplate
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kate
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/katomic
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kblackbox
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kblocks
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kbounce
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kbreakout
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kbruch
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kcachegrind
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kcalc
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kcharselect
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kcmshell
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kcolorchooser
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kcontrol
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kcron
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kde-base-artwork
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kde-dev-scripts
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kde-dev-utils
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kde-wallpapers
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kde4-l10n
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeaccessibility-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeadmin-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeartwork-colorschemes
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeartwork-desktopthemes
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeartwork-emoticons
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeartwork-iconthemes
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeartwork-kscreensaver
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeartwork-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeartwork-styles
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeartwork-wallpapers
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeartwork-weatherwallpapers
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdebase-data
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdebase-desktoptheme
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdebase-kioslaves
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdebase-menu
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdebase-menu-icons
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdebase-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdebase-runtime-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdebugdialog
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeedu-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdegames-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdegraphics-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdegraphics-mobipocket
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdemultimedia-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdenetwork-filesharing
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdenetwork-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdepasswd
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdesdk-kioslaves
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdesdk-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdesdk-strigi-analyzer
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdesu
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdetoys-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeutils-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdewebdev-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdf
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdialog
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdiamond
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdontchangethehostname
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/keditbookmarks
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/keditfiletype
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kfile
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kfilereplace
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kfind
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kfloppy
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kfmclient
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kfourinline
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kgamma
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kgeography
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kget
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kglobalaccel
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kgoldrunner
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kgpg
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/khangman
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kiconfinder
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kig
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kigo
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/killbots
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kimagemapeditor
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kimgio
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kioclient
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kiriki
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kiten
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kjumpingcube
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/klettres
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/klickety
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/klines
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/klinkstatus
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kmag
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kmahjongg
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kmimetypefinder
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kmines
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kmix
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kmousetool
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kmouth
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kmplot
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/knavalbattle
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/knetattach
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/knetwalk
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/knewstuff
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/knotify
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kolf
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kollision
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kolourpaint
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kommander
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kompare
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/konq-plugins
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/konqueror
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/konquest
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/konsole
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kopete
+  MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 4.14.3-r1: keywords dropped: ppc64
+
+kde-apps/kpasswdserver
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kpat
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kppp
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kqtquickcharts
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kquitapp
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/krdc
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kreadconfig
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kremotecontrol
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kreversi
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/krfb
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kruler
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ksaneplugin
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kscd
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kshisen
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ksirk
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ksnakeduel
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ksnapshot
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kspaceduel
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ksquares
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kstars
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kstart
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ksudoku
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ksystemlog
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kteatime
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ktimer
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ktimezoned
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ktouch
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ktraderclient
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ktuberling
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kturtle
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ktux
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kubrick
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kuiserver
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kurifilter-plugins
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kuser
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kwalletd
+  MissingFile: required file ChangeLog doesn't exist
+  SizeViolation: "files/kwalletd-4.14.3-CVE-2013-7252.patch" exceeds 20k in size; 21806 bytes total
+
+kde-apps/kwalletmanager
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kwordquiz
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kwrite
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/libkcddb
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/libkcompactdisc
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/libkdcraw
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/libkdeedu
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/libkdegames
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/libkexiv2
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/libkipi
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/libkmahjongg
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/libkomparediff2
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/libkonq
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/libksane
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/lokalize
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/lskat
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/marble
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/mplayerthumbs
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/nepomuk
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/nsplugins
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/okteta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/okular
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/oxygen-icons
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/pairs
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/palapeli
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/parley
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/phonon-kde
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/picmi
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/plasma-apps
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/plasma-runtime
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/poxml
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/print-manager
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/renamedlg-plugins
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/rocs
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/solid-runtime
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/step
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/superkaramba
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/svgpart
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/sweeper
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/thumbnailers
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/umbrello
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/zeroconf-ioslave
+  MissingFile: required file ChangeLog doesn't exist
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+kde-misc/about-distro
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/adjustableclock
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/akonadi-facebook
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/akonadi-git-resource
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/akonadi-google
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/akonadi-social-utils
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/baloo-kcmadv
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/basket
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/bkodama
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/chromi
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/colibri
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/colord-kde
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/commandwatch
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/cpuload
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/customizable-weather
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/drop2ftp
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/emerging-plasmoid
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/eventlist
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/eyesaver
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/fancytasks
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/fsrunner
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/geekclock
+  MissingFile: required file ChangeLog doesn't exist
 
 kde-misc/gx-mail-notify
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4.4: "99617-gx_mail_notify-0.4.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 kde-misc/hdaps_monitor
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3-r1: "103481-hdaps_monitor-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+kde-misc/homerun
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/kanyremote
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/katelatexplugin
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/kbiff
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/kbstateapplet
+  MissingFile: required file ChangeLog doesn't exist
+
 kde-misc/kcaldav
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.2.0: "kcaldav-1.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+kde-misc/kcm-grub2
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/kcm-touchpad
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/kcm-ufw
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/kcollectd
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/kcometen4
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/kde-gtk-config
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/kdeconnect
+  MissingFile: required file ChangeLog doesn't exist
+
 kde-misc/kdesudo
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.4.2.4-r1: "kdesudo-3.4.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+kde-misc/kdiff3
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/kdirstat
+  MissingFile: required file ChangeLog doesn't exist
+
 kde-misc/kdmthemegenerator
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.8: "102760-KdmThemeGenerator.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+kde-misc/kepas
+  MissingFile: required file ChangeLog doesn't exist
+
 kde-misc/kfilebox
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4.9: "kfilebox_0.4.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 kde-misc/kgrubeditor
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.8.5: "KGRUBEditor-0.8.5-src.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+kde-misc/kgtk
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/kim4
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/kimtoy
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/kio-ftps
+  MissingFile: required file ChangeLog doesn't exist
+
 kde-misc/kio-locate
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.5.3: "120965-kio-locate-0.5.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+kde-misc/kio-mtp
+  MissingFile: required file ChangeLog doesn't exist
+
 kde-misc/kio-slp
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0_p20120621: "kio-slp-0_p20120621.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 kde-misc/kio_gopher
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1.4: "kio-gopher-0.1.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+kde-misc/kolor-manager
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/konstruktor
+  MissingFile: required file ChangeLog doesn't exist
+
 kde-misc/kookie
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1.1: "kookie-0.1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 kde-misc/kopete-antispam
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.5: "kopete-antispam-kde4-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 kde-misc/kopete-thinklight
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.50: "100537-kopete-thinklight-0.50.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+kde-misc/kosd
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/kover
+  MissingFile: required file ChangeLog doesn't exist
+
 kde-misc/kprayertime
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 4.01: "kprayertime4.01.src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+kde-misc/kraidmonitor
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/krcstat
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/krecipes
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/krename
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/krunner-googletranslate
+  MissingFile: required file ChangeLog doesn't exist
+
 kde-misc/krunner-kopete-contacts
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4: "105263-krunner-kopete-contacts-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+kde-misc/krusader
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/kscreen
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/kshutdown
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/ksoprano
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/ksplasher
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/kte-collaborative
+  MissingFile: required file ChangeLog doesn't exist
+
 kde-misc/ktrafficanalyzer
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.5.4.1: "KTrafficAnalyzer-0.5.4.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 kde-misc/kvkbd
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.6-r1: "94374-kvkbd-0.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+kde-misc/kwebkitpart
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/magneto-kde
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/milou
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/miniplayer
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/nepomukshell
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/networkmanagement
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/nightmode
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/nvdevmon
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/openofficeorg-thumbnail
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/pgame
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/plasma-applet-daisy
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/plasma-emergelog
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/plasma-lionmail
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/plasma-mpd-nowplaying
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/plasma-network-status
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/plasma-nm
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/plasma-photooftheday
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/plasma-widget-menubar
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/plasma-widget-message-indicator
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/plasma-wifi
+  MissingFile: required file ChangeLog doesn't exist
+
 kde-misc/plasmatvgr
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.47: "75728-plasmatvgr047.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+kde-misc/plasmoid-workflow
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/pyrad
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/quadkonsole
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/quickaccess
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/redshift-plasmoid
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/rsibreak
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/semantik
+  MissingFile: required file ChangeLog doesn't exist
+
 kde-misc/serverstatuswidget
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.5.1: "101336-serverstatuswidget-1.5.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+kde-misc/skanlite
+  MissingFile: required file ChangeLog doesn't exist
+
 kde-misc/smooth-tasks
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0_p20120130: "smooth-tasks-0_p20120130.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+kde-misc/socket-sentry
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/stdin-plasmoid
+  MissingFile: required file ChangeLog doesn't exist
+
 kde-misc/steamcompanion
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.5.4-r1: "steamcompanion-0.5.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+kde-misc/stock-quote
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/synaptiks
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-misc/systemd-kcm
+  MissingFile: required file ChangeLog doesn't exist
+
 kde-misc/takeoff
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0: "takeoff-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
-               : error range rlt version 5.5.34 is a guaranteed empty set
 
-net-im/ayttm
-  MissingChksum: version 0.6.3: "ayttm-0.6.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+kde-misc/tellico
+  MissingFile: required file ChangeLog doesn't exist
 
-net-im/centerim
-  DeprecatedEAPI: version 4.22.10: uses deprecated EAPI: 2
+kde-misc/wacomtablet
+  MissingFile: required file ChangeLog doesn't exist
 
-net-im/coccinella
-  MissingChksum: version 0.96.20: "Coccinella-0.96.20Src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+kde-misc/wicd-client-kde
+  MissingFile: required file ChangeLog doesn't exist
 
-net-im/gg-transport
-  DeprecatedEAPI: version 2.2.4: uses deprecated EAPI: 0
-  MissingChksum: version 2.2.4: "jggtrans-2.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+kde-misc/yakuake
+  MissingFile: required file ChangeLog doesn't exist
 
-net-im/jabber-base
-  DeprecatedEAPI: version 0.01: uses deprecated EAPI: 0
+kde-misc/yawp
+  MissingFile: required file ChangeLog doesn't exist
 
-net-im/kadu
-  DroppedKeywordWarning: version 2.1: keywords dropped: ppc
+kde-misc/zanshin
+  MissingFile: required file ChangeLog doesn't exist
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
 
-net-im/librvp
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 2
-  MissingChksum: version 0.9.6: "librvp-0.9.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.7: "librvp-0.9.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/amanda
+  BadInsIntoDir: version 3.3.3: ebuild uses insinto /etc/cron.daily on line 332
+  BadInsIntoDir: version 3.3.3-r1: ebuild uses insinto /etc/cron.daily on line 338
+  BadInsIntoDir: version 3.3.5: ebuild uses insinto /etc/cron.daily on line 338
+  BadInsIntoDir: version 3.3.7: ebuild uses insinto /etc/cron.daily on line 335
+  MissingFile: required file ChangeLog doesn't exist
 
-net-im/mu-conference
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
+app-backup/backintime
+  MissingFile: required file ChangeLog doesn't exist
 
-net-im/psi
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-backup/backup-manager
+  DeprecatedEAPI: version 0.7.5: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
 
-net-im/psimedia
-  MissingChksum: version 1.0.3-r3: "psimedia-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/backupninja
+  MissingFile: required file ChangeLog doesn't exist
 
-net-im/qwit
-  DeprecatedEAPI: version 1.1_pre2: uses deprecated EAPI: 2
+app-backup/backuppc
+  MissingFile: required file ChangeLog doesn't exist
+  SizeViolation: "files/02-fix-config.pl-formatting.patch" exceeds 20k in size; 23353 bytes total
 
-net-im/reaim
-  MissingChksum: version 0.8-r1: "reaim-0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/bacula
+  MissingFile: required file ChangeLog doesn't exist
 
-net-im/silc-toolkit
-  MissingChksum: version 1.1.10: "silc-toolkit-1.1.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/bareos
+  MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 14.2.1: keywords dropped: amd64, x86
 
-net-im/simpserver-bin
-  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 0
-  MissingChksum: version 2.1.0: "simpserver-2.1.0-linux-x86.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/boxbackup
+  DeprecatedEAPI: version 0.11.1: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
 
-net-im/skypetab-ng
-  NonExistentDeps: version 0.5.2: depset rdepends: nonexistent atoms [ <net-im/skype-4.1 ]
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <net-im/skype-4.1 ]
+app-backup/burp
+  MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 1.4.26: keywords dropped: x86
 
-net-im/tkabber
-  MissingChksum: version 0.11.1-r1: "tkabber-plugins-0.11.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/ccollect
+  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
 
-net-im/ysm
-  MissingChksum: version 2.9.9.1: "ysmv7_2_9_9_1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
-               : error range rlt version 5.5.34 is a guaranteed empty set
+app-backup/cdbackup
+  DeprecatedEAPI: version 0.7.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/cdbkup
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/cpdup
+  DeprecatedEAPI: version 1.18: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/dar
+  DeprecatedEAPI: version 2.3.8: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.4.9: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/deja-dup
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/dirvish
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/duplicity
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/duply
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/flexbackup
+  DeprecatedEAPI: version 1.2.1-r12: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/fsarchiver
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/furball
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/hdup
+  DeprecatedEAPI: version 2.0.14: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/holland
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/holland-backup-example
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/holland-backup-mysql-lvm
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/holland-backup-mysql-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/holland-backup-mysqldump
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/holland-backup-mysqlhotcopy
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/holland-backup-pgdump
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/holland-backup-random
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/holland-backup-sqlite
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/holland-lib-common
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/holland-lib-lvm
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/holland-lib-mysql
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/kbackup
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/luckybackup
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/mirdir
+  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/mylvmbackup
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.13: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.14: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/obnam
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/pdumpfs
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/qt4-fsarchiver
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/rdiff-backup
+  DeprecatedEclass: version 1.2.8-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.2.8-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.3: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/rdumpfs
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/reoback
+  BadInsIntoDir: version 1.0_p3-r1: ebuild uses insinto /etc/cron.daily on line 36
+
+app-backup/rear
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/reoback
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/rsnapshot
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/sarab
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/simplebackup
+  DeprecatedEAPI: version 1.8.1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/snapback2
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/snapper
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/spideroak-bin
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/tarsnap
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/tob
+  MissingFile: required file ChangeLog doesn't exist
+
+app-backup/tsm
+  MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 6.3.0.5-r2: keywords dropped: x86
+
+app-backup/vzdump
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+games-misc/OilWar
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/asr-manpages
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/bsd-games
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/bsd-games-non-free
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/bsod
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/c++robots
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/cowsay
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/doge
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/dont-starve
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/exult-sound
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-all
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-at-linux
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-bofh-excuses
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-calvin
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-chucknorris
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-cs
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-debilneho
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-discworld
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-dubya
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-dune
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-familyguy
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-firefly
+  MissingFile: required file ChangeLog doesn't exist
 
 games-misc/fortune-mod-flashrider
   DeprecatedEAPI: version 0.25: uses deprecated EAPI: 2
   DeprecatedEAPI: version 0.80: uses deprecated EAPI: 3
   DeprecatedEAPI: version 0.90: uses deprecated EAPI: 3
   DeprecatedEAPI: version 1.00: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.25: "fortunes-prolinux-0.25.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.80: "fortunes-flashrider-0.80.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.90: "fortunes-flashrider-0.90-BB-Styles-Edition.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+games-misc/fortune-mod-futurama
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-fvl
+  MissingFile: required file ChangeLog doesn't exist
+
 games-misc/fortune-mod-gentoo-dev
   DeprecatedEAPI: version 20061115: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 20061115: "gentoo-dev-20061115.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+games-misc/fortune-mod-gentoo-forums
+  MissingFile: required file ChangeLog doesn't exist
+
 games-misc/fortune-mod-gentoo-ru
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.25: "gentoo-ru-0.25.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.26: "gentoo-ru-0.26.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+games-misc/fortune-mod-hitchhiker
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-homer
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-humorixfortunes
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-it
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-kernelcookies
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-mormon
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-norbert-tretkowski
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-osfortune
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-powerpuff
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-pqf
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-rss
+  MissingFile: required file ChangeLog doesn't exist
+
 games-misc/fortune-mod-scriptures
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.1.0: "fortune-mod-scriptures-1.1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+games-misc/fortune-mod-simpsons-chalkboard
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-slackware
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-smac
+  MissingFile: required file ChangeLog doesn't exist
+
 games-misc/fortune-mod-sp-fortunes
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2: "SP-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
+games-misc/fortune-mod-starwars
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-strangelove
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-tao
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-taow
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-thomas-ogrisegg
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-woody-allen-it
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/fortune-mod-zx-error
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/funny-manpages
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/gBhed
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/games-envd
+  MissingFile: required file ChangeLog doesn't exist
+
 games-misc/ggencoder
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.91a: "ggencoder-0.91a.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-misc/gtklife
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/katawa-shoujo
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/little-inferno
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/lolcat
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/lucidlife
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/nyancat
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/opengfx
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/openmsx
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/opensfx
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/papers-please
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/qlife
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/rfksay
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/robotfindskitten
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/sdljoytest
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/sex
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/sound-of-sorting
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/typespeed
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/wtf
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/wumpus
+  MissingFile: required file ChangeLog doesn't exist
 
 games-misc/xcowsay
   DeprecatedEAPI: version 1.3: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.3: "xcowsay-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
-               : error range rlt version 5.5.34 is a guaranteed empty set
+
+games-misc/xcruiser
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/xpenguins
+  MissingFile: required file ChangeLog doesn't exist
+
+games-misc/yadex
+  MissingFile: required file ChangeLog doesn't exist
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
 
 x11-terms/aterm
   DeprecatedEAPI: version 1.0.1-r2: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-terms/eterm
   DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 2
   DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 3
   DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+
+x11-terms/evilvte
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-terms/gnome-terminal
   NonExistentDeps: version 3.14.2-r2: depset depends: nonexistent atoms [ <=x11-libs/gtk+-2.24.10:2 ]
+  MissingFile: required file ChangeLog doesn't exist
   SizeViolation: "files/gnome-terminal-3.16.2-restore-transparency.patch" exceeds 20k in size; 54792 bytes total
+
+x11-terms/guake
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-terms/hanterm
   DeprecatedEAPI: version 3.1.6-r2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+x11-terms/kterm
+  MissingFile: required file ChangeLog doesn't exist
+
+x11-terms/lilyterm
+  MissingFile: required file ChangeLog doesn't exist
+
+x11-terms/mate-terminal
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-terms/mlterm
   DeprecatedEAPI: version 3.0.11-r1: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+
+x11-terms/mrxvt
+  MissingFile: required file ChangeLog doesn't exist
+
+x11-terms/multi-aterm
+  MissingFile: required file ChangeLog doesn't exist
+
+x11-terms/pangoterm
+  MissingFile: required file ChangeLog doesn't exist
+
+x11-terms/qterminal
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-terms/root-tail
   DeprecatedEAPI: version 1.2-r3: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.2-r3: "root-tail-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-terms/roxterm
   DeprecatedEclass: version 2.6.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 2.6.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 2.9.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 2.9.3: keywords dropped: ppc
+
+x11-terms/rxvt
+  MissingFile: required file ChangeLog doesn't exist
+
+x11-terms/rxvt-unicode
+  MissingFile: required file ChangeLog doesn't exist
+
+x11-terms/sakura
+  MissingFile: required file ChangeLog doesn't exist
+
+x11-terms/st
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-terms/terminator
   DeprecatedEclass: version 0.96-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-terms/terminology
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  MissingFile: required file ChangeLog doesn't exist
+
+x11-terms/terra
+  MissingFile: required file ChangeLog doesn't exist
+
+x11-terms/tilda
+  MissingFile: required file ChangeLog doesn't exist
+
+x11-terms/valaterm
+  MissingFile: required file ChangeLog doesn't exist
+
+x11-terms/xfce4-terminal
+  MissingFile: required file ChangeLog doesn't exist
+
+x11-terms/xterm
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-terms/xvt
   DeprecatedEAPI: version 2.1-r3: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
 
 x11-terms/yeahconsole
   DeprecatedEAPI: version 0.3.4-r1: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3.4-r1: "yeahconsole-0.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
-               : error range rlt version 5.5.34 is a guaranteed empty set
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
 
 media-radio/KochMorse
   DeprecatedEclass: version 0.99.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.99.6: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+
+media-radio/adifmerg
+  MissingFile: required file ChangeLog doesn't exist
+
+media-radio/ax25-apps
+  MissingFile: required file ChangeLog doesn't exist
+
+media-radio/ax25-tools
+  MissingFile: required file ChangeLog doesn't exist
+
+media-radio/cwdaemon
+  MissingFile: required file ChangeLog doesn't exist
+
+media-radio/dxcc
+  MissingFile: required file ChangeLog doesn't exist
+
+media-radio/fldigi
+  MissingFile: required file ChangeLog doesn't exist
+
+media-radio/flrig
+  MissingFile: required file ChangeLog doesn't exist
+
+media-radio/gpredict
+  MissingFile: required file ChangeLog doesn't exist
 
 media-radio/grig
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.8.0: "grig-0.8.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
-               : error range rlt version 5.5.34 is a guaranteed empty set
+
+media-radio/ibp
+  MissingFile: required file ChangeLog doesn't exist
+
+media-radio/qrq
+  MissingFile: required file ChangeLog doesn't exist
+
+media-radio/qsstv
+  MissingFile: required file ChangeLog doesn't exist
+
+media-radio/radiotray
+  MissingFile: required file ChangeLog doesn't exist
+
+media-radio/svxlink
+  MissingFile: required file ChangeLog doesn't exist
+
+media-radio/tlf
+  MissingFile: required file ChangeLog doesn't exist
+
+media-radio/tucnak2
+  MissingFile: required file ChangeLog doesn't exist
+
+media-radio/unixcw
+  MissingFile: required file ChangeLog doesn't exist
+
+media-radio/wspr
+  MissingFile: required file ChangeLog doesn't exist
+
+media-radio/xastir
+  MissingFile: required file ChangeLog doesn't exist
+
+media-radio/xdx
+  MissingFile: required file ChangeLog doesn't exist
+
+media-radio/xlog
+  MissingFile: required file ChangeLog doesn't exist
+
+media-radio/xwxapt
+  MissingFile: required file ChangeLog doesn't exist
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+www-plugins/adobe-flash
+  MissingFile: required file ChangeLog doesn't exist
+
+www-plugins/chrome-binary-plugins
+  MissingFile: required file ChangeLog doesn't exist
+
+www-plugins/freshplayerplugin
+  MissingFile: required file ChangeLog doesn't exist
+
+www-plugins/gecko-mediaplayer
+  MissingFile: required file ChangeLog doesn't exist
+
+www-plugins/gnash
+  MissingFile: required file ChangeLog doesn't exist
+
+www-plugins/google-talkplugin
+  MissingFile: required file ChangeLog doesn't exist
 
 www-plugins/kaffeine-mozilla-plugin
   DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+www-plugins/kpartsplugin
+  MissingFile: required file ChangeLog doesn't exist
+
+www-plugins/lightspark
+  MissingFile: required file ChangeLog doesn't exist
+
+www-plugins/mozplugger
+  MissingFile: required file ChangeLog doesn't exist
+
+www-plugins/nspluginwrapper
+  MissingFile: required file ChangeLog doesn't exist
 
 www-plugins/pipelight
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-WARNING pkgcore: invalid glsa- glsa-201206-24.xml, package www-servers/tomcat:
-               : error range rlt version 5.5.34 is a guaranteed empty set
+  MissingFile: required file ChangeLog doesn't exist
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
 
 app-officeext/barcode
   NonExistentDeps: version 1.3.5.0-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
   NonExistentDeps: version 1.3.5.0-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+  MissingFile: required file ChangeLog doesn't exist
 
 app-officeext/ct2n
   NonExistentDeps: version 1.4.0-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
   NonExistentDeps: version 1.4.0-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+  MissingFile: required file ChangeLog doesn't exist
 
 app-officeext/dmaths
   NonExistentDeps: version 3.4.9.0-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
   NonExistentDeps: version 3.4.9.0-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+  MissingFile: required file ChangeLog doesn't exist
 
 app-officeext/languagetool
   NonExistentDeps: version 2.5: depset depends: nonexistent atoms [ app-office/openoffice ]
@@ -1010,10 +3855,12 @@ app-officeext/languagetool
   NonExistentDeps: version 2.7: depset rdepends: nonexistent atoms [ app-office/openoffice ]
   NonExistentDeps: version 2.9: depset depends: nonexistent atoms [ app-office/openoffice ]
   NonExistentDeps: version 2.9: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+  MissingFile: required file ChangeLog doesn't exist
 
 app-officeext/ooo2gd
   NonExistentDeps: version 3.0.0-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
   NonExistentDeps: version 3.0.0-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+  MissingFile: required file ChangeLog doesn't exist
 
 app-officeext/ooofbtools
   NonExistentDeps: version 2.34: depset depends: nonexistent atoms [ app-office/openoffice ]
@@ -1022,14 +3869,17 @@ app-officeext/ooofbtools
   NonExistentDeps: version 2.35: depset rdepends: nonexistent atoms [ app-office/openoffice ]
   NonExistentDeps: version 2.36: depset depends: nonexistent atoms [ app-office/openoffice ]
   NonExistentDeps: version 2.36: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+  MissingFile: required file ChangeLog doesn't exist
 
 app-officeext/sun-templates
   NonExistentDeps: version 1.0.0-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
   NonExistentDeps: version 1.0.0-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+  MissingFile: required file ChangeLog doesn't exist
 
 app-officeext/texmaths
   NonExistentDeps: version 0.37-r1: depset depends: nonexistent atoms [ app-office/openoffice ]
   NonExistentDeps: version 0.37-r1: depset rdepends: nonexistent atoms [ app-office/openoffice ]
   NonExistentDeps: version 0.41: depset depends: nonexistent atoms [ app-office/openoffice ]
   NonExistentDeps: version 0.41: depset rdepends: nonexistent atoms [ app-office/openoffice ]
+  MissingFile: required file ChangeLog doesn't exist
 + [[ 0 == 0 ]]
