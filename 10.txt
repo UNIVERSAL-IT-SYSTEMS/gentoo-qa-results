@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 10 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'sys-fs/*' 'www-apps/*' 'x11-drivers/*' 'net-p2p/*' 'sys-boot/*' 'sys-power/*' 'net-ftp/*' 'app-laptop/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'sys-fs/*' 'www-apps/*' 'x11-drivers/*' 'net-p2p/*' 'mail-client/*' 'dev-scheme/*' 'net-ftp/*' 'dev-go/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /usr/lib64/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -16,8 +16,8 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 
 media-sound/SmarTagger
   DeprecatedEAPI: version 0.1-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.1-r1: "SmarTagger-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.1-r1: "SmarTagger-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/a2jmidid
   DeprecatedEclass: version 8: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -27,13 +27,13 @@ media-sound/aacgain
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/aacplusenc
-  MissingChksum: version 0.17.5: "aacplusenc_0.17.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.17.5: "aacplusenc_0.17.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/abcde
+  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 2.6: keywords dropped: ppc
   DroppedKeywordWarning: version 2.7: keywords dropped: ppc64
-  MissingFile: required file ChangeLog doesn't exist
 
 media-sound/abcm2ps
   MissingFile: required file ChangeLog doesn't exist
@@ -42,22 +42,22 @@ media-sound/abcmidi
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/adplay
-  MissingChksum: version 1.7: "adplay-1.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.7: "adplay-1.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/aeolus
   DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.8.4: uses deprecated EAPI: 0
-  MissingChksum: version 0.8.1: "aeolus-0.8.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  DroppedKeywordWarning: version 0.9.0: keywords dropped: x86
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 0.9.0: keywords dropped: x86
+  MissingChksum: version 0.8.1: "aeolus-0.8.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/alac_decoder
   DeprecatedEAPI: version 0.1.3: uses deprecated EAPI: 2
   DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1.3: "alac_decoder-0.1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.2.0: "alac_decoder-0.2.0.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-sound/alsa-tools
   MissingFile: required file ChangeLog doesn't exist
@@ -67,22 +67,22 @@ media-sound/alsa-utils
 
 media-sound/alsamixer-app
   DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-  MissingChksum: version 0.1: "AlsaMixer.app-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.1: "AlsaMixer.app-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/alsamixergui
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/alsaplayer
-  MissingChksum: version 0.99.81: "alsaplayer-0.99.81.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.99.81: "alsaplayer-0.99.81.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/amarok
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/ams
-  MissingChksum: version 2.0.1: "ams-2.0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.0.1: "ams-2.0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/amsynth
   MissingFile: required file ChangeLog doesn't exist
@@ -90,8 +90,8 @@ media-sound/amsynth
 media-sound/apetag
   DeprecatedEclass: version 1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.12: uses deprecated EAPI: 3
-  MissingChksum: version 1.12: "apetag.1.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.12: "apetag.1.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/apulse
   MissingFile: required file ChangeLog doesn't exist
@@ -109,20 +109,20 @@ media-sound/ario
 
 media-sound/aseqview
   DeprecatedEAPI: version 0.2.8: uses deprecated EAPI: 2
-  MissingChksum: version 0.2.8: "aseqview-0.2.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.2.8: "aseqview-0.2.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/asunder
-  DroppedKeywordWarning: version 2.5: keywords dropped: ppc
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 2.5: keywords dropped: ppc
 
 media-sound/aucdtect
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/audacious
   DeprecatedEAPI: version 2.4.4: uses deprecated EAPI: 1
-  DroppedKeywordWarning: version 3.6.2: keywords dropped: alpha, ppc, sparc
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 3.6.2: keywords dropped: alpha, ppc, sparc
 
 media-sound/audacity
   MissingFile: required file ChangeLog doesn't exist
@@ -135,22 +135,22 @@ media-sound/audicle
 
 media-sound/audiocompress
   DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
-  MissingChksum: version 2.0: "AudioCompress-2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.0: "AudioCompress-2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/audiotag
   DeprecatedEAPI: version 0.19: uses deprecated EAPI: 0
-  MissingChksum: version 0.19: "audiotag-0.19.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.19: "audiotag-0.19.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/aumix
   DeprecatedEAPI: version 2.9.1: uses deprecated EAPI: 2
-  MissingChksum: version 2.9.1: "aumix-2.9.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.9.1: "aumix-2.9.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/awesfx
-  MissingChksum: version 0.5.1d: "awesfx-0.5.1d.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.5.1d: "awesfx-0.5.1d.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/aylet
   MissingFile: required file ChangeLog doesn't exist
@@ -161,10 +161,10 @@ media-sound/banshee
 
 media-sound/baudline
   DeprecatedEAPI: version 1.08-r1: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.08-r1: "baudline_1.08_linux_ppc.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.08-r1: "baudline_1.08_linux_s390.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.08-r1: "baudline_1.08_linux_i686.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-sound/beets
   MissingFile: required file ChangeLog doesn't exist
@@ -174,31 +174,31 @@ media-sound/bempc
 
 media-sound/bitmeter
   DeprecatedEAPI: version 1.2: uses deprecated EAPI: 2
-  MissingChksum: version 1.2: "bitmeter-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2: "bitmeter-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/bladeenc
   DeprecatedEAPI: version 0.94.2-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.94.2-r1: "bladeenc-0.94.2-src-stable.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.94.2-r1: "bladeenc-0.94.2-src-stable.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/bplay
   DeprecatedEAPI: version 0.991: uses deprecated EAPI: 0
-  MissingChksum: version 0.991: "bplay-0.991.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.991: "bplay-0.991.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/bpmdetect
   DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 2
-  MissingChksum: version 0.6.1: "bpmdetect-0.6.1-src.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.6.1: "bpmdetect-0.6.1-src.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/bristol
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/brutefir
   DeprecatedEAPI: version 1.0k-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.0k-r1: "brutefir-1.0k.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0k-r1: "brutefir-1.0k.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/cantata
   MissingFile: required file ChangeLog doesn't exist
@@ -214,8 +214,8 @@ media-sound/cdparanoia
 
 media-sound/cdplay
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-  MissingChksum: version 1.0: "cdplay-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0: "cdplay-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/cdstatus
   MissingFile: required file ChangeLog doesn't exist
@@ -224,19 +224,19 @@ media-sound/cdtool
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/chordii
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 4.3: "chordii-4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 4.3: "chordii-4.3-user_guide.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-sound/christine
   DeprecatedEclass: version 0.7.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingChksum: version 0.7.0: "christine-0.7.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.7.0: "christine-0.7.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/chuck
   DeprecatedEAPI: version 1.2.1.2: uses deprecated EAPI: 0
-  MissingChksum: version 1.2.1.2: "chuck-1.2.1.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2.1.2: "chuck-1.2.1.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/clementine
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -244,8 +244,8 @@ media-sound/clementine
 
 media-sound/cmix
   DeprecatedEAPI: version 1.6: uses deprecated EAPI: 0
-  MissingChksum: version 1.6: "cmix-1.6.tbz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.6: "cmix-1.6.tbz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/cmus
   MissingFile: required file ChangeLog doesn't exist
@@ -255,13 +255,13 @@ media-sound/cmusfm
 
 media-sound/codecgraph
   DeprecatedEclass: version 20120114: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingChksum: version 20120114: "codecgraph-20120114.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 20120114: "codecgraph-20120114.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/combine_wave
   DeprecatedEAPI: version 0.3.1-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.3.1-r1: "combine_wave-0.3.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3.1-r1: "combine_wave-0.3.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/coquillo
   MissingFile: required file ChangeLog doesn't exist
@@ -269,8 +269,8 @@ media-sound/coquillo
 media-sound/cplay
   DeprecatedEclass: version 1.49: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.49: uses deprecated EAPI: 2
-  MissingChksum: version 1.49: "cplay-1.49.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.49: "cplay-1.49.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/csound
   MissingFile: required file ChangeLog doesn't exist
@@ -278,13 +278,13 @@ media-sound/csound
 media-sound/cvoicecontrol
   DeprecatedEAPI: version 0.9_alpha: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.9_alpha-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.9_alpha: "cvoicecontrol-0.9alpha.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.9_alpha: "cvoicecontrol-0.9alpha.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/dagrab
   DeprecatedEAPI: version 0.513: uses deprecated EAPI: 0
-  MissingChksum: version 0.513: "dagrab-S0.513.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.513: "dagrab-S0.513.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/darkice
   MissingFile: required file ChangeLog doesn't exist
@@ -294,8 +294,8 @@ media-sound/darksnow
 
 media-sound/daudio
   DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
-  MissingChksum: version 0.3: "daudio-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3: "daudio-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/dbmeasure
   MissingFile: required file ChangeLog doesn't exist
@@ -305,13 +305,13 @@ media-sound/dcaenc
 
 media-sound/dcd
   DeprecatedEAPI: version 0.95: uses deprecated EAPI: 0
-  MissingChksum: version 0.95: "dcd-0.95.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.95: "dcd-0.95.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/declick
   DeprecatedEAPI: version 0.6.5: uses deprecated EAPI: 2
-  MissingChksum: version 0.6.5: "declick-0.6.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.6.5: "declick-0.6.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/denemo
   MissingFile: required file ChangeLog doesn't exist
@@ -322,8 +322,8 @@ media-sound/din
 media-sound/dir2ogg
   DeprecatedEAPI: version 0.11.6: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.11.8-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.11.6: "dir2ogg-0.11.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.11.6: "dir2ogg-0.11.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/drumstick
   MissingFile: required file ChangeLog doesn't exist
@@ -333,29 +333,29 @@ media-sound/dvda-author
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/easytag
-  DroppedKeywordWarning: version 2.2.2: keywords dropped: ppc, sparc
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 2.2.2: keywords dropped: ppc, sparc
 
 media-sound/ecasound
   DeprecatedEclass: version 2.6.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.6.0: uses deprecated EAPI: 3
   DeprecatedEclass: version 2.9.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 2.9.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingChksum: version 2.6.0: "ecasound-2.6.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.6.0: "ecasound-2.6.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/edna
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/entagged-tageditor
   DeprecatedEAPI: version 0.35: uses deprecated EAPI: 0
-  MissingChksum: version 0.35: "entagged-tageditor-0.35.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.35: "entagged-tageditor-0.35.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/erec
   DeprecatedEAPI: version 2.2.0.1: uses deprecated EAPI: 0
-  MissingChksum: version 2.2.0.1: "erec-2.2.0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.2.0.1: "erec-2.2.0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/exaile
   DeprecatedEclass: version 0.3.2.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -366,13 +366,13 @@ media-sound/exaile
   DeprecatedEAPI: version 0.3.2.1: uses deprecated EAPI: 3
   NonExistentDeps: version 0.3.2.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.3.2.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3.2.0: "exaile-0.3.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.3.2.1: "exaile-0.3.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-sound/ezstream
-  MissingChksum: version 0.5.6: "ezstream-0.5.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.5.6: "ezstream-0.5.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/fapg
   DeprecatedEAPI: version 0.41: uses deprecated EAPI: 0
@@ -386,8 +386,8 @@ media-sound/flac123
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/flack
-  MissingChksum: version 2.0.6: "flack-2.0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.0.6: "flack-2.0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/flacon
   DeprecatedEclass: version 0.7.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -398,9 +398,9 @@ media-sound/flake
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/fluid-soundfont
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.1: "fluid-soundfont_3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.1: "timidity.cfg.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-sound/fluidsynth
   MissingFile: required file ChangeLog doesn't exist
@@ -416,8 +416,8 @@ media-sound/forked-daapd
 
 media-sound/freebirth
   DeprecatedEAPI: version 0.3.2-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.3.2-r1: "freebirth-0.3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3.2-r1: "freebirth-0.3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/freewheeling
   DeprecatedEAPI: version 0.6: uses deprecated EAPI: 2
@@ -443,25 +443,25 @@ media-sound/giada
 
 media-sound/gigedit
   DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 3
-  MissingChksum: version 0.2.0: "gigedit-0.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.2.0: "gigedit-0.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/gimmix
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/glmix
   DeprecatedEAPI: version 0.3: uses deprecated EAPI: 2
-  MissingChksum: version 0.3: "glmix-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3: "glmix-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/glurp
-  MissingChksum: version 0.12.3: "glurp-0.12.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.12.3: "glurp-0.12.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/gmorgan
   DeprecatedEAPI: version 0.39: uses deprecated EAPI: 2
-  MissingChksum: version 0.39: "gmorgan_0.39.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.39: "gmorgan_0.39.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/gmpc
   MissingFile: required file ChangeLog doesn't exist
@@ -497,8 +497,8 @@ media-sound/gnump3d
 
 media-sound/gom
   DeprecatedEAPI: version 0.29.103-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.29.103-r1: "gom-0.29.103.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.29.103-r1: "gom-0.29.103.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/google-musicmanager
   MissingFile: required file ChangeLog doesn't exist
@@ -507,8 +507,8 @@ media-sound/gpodder
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/gqmpeg
-  MissingChksum: version 0.91.1: "gqmpeg-0.91.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.91.1: "gqmpeg-0.91.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/gqradio
   MissingFile: required file ChangeLog doesn't exist
@@ -519,8 +519,8 @@ media-sound/gramofile
 
 media-sound/grip
   DeprecatedEAPI: version 3.3.1-r3: uses deprecated EAPI: 2
-  MissingChksum: version 3.3.1-r3: "grip-3.3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.3.1-r3: "grip-3.3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/gsm
   MissingFile: required file ChangeLog doesn't exist
@@ -529,34 +529,34 @@ media-sound/gst123
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/gstreamripper
-  MissingChksum: version 0.2: "GStreamripperX-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.2: "GStreamripperX-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/gtick
-  MissingChksum: version 0.5.0: "gtick-0.5.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.5.0: "gtick-0.5.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/gtkguitune
   DeprecatedEAPI: version 0.8: uses deprecated EAPI: 2
-  MissingChksum: version 0.8: "gtkguitune-gtk2-0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.8: "gtkguitune-gtk2-0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/guayadeque
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/guimup
-  MissingChksum: version 0.3.2: "guimup_0.3.2_src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3.2: "guimup_0.3.2_src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/hearnet
   DeprecatedEAPI: version 0.0.9: uses deprecated EAPI: 0
-  MissingChksum: version 0.0.9: "hearnet-0.0.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.0.9: "hearnet-0.0.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/herrie
   DeprecatedEAPI: version 2.2: uses deprecated EAPI: 2
-  MissingChksum: version 2.2: "herrie-2.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.2: "herrie-2.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/horgand
   MetadataError: version 1.14: attr(fetchables): error- Metadata Exception: pkg ebuild src: media-sound/horgand-1.14, attr fetchables
@@ -570,37 +570,37 @@ media-sound/hydrogen
 
 media-sound/icecream
   DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
-  MissingChksum: version 1.3: "icecream-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.3: "icecream-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/id3
   DeprecatedEAPI: version 0.15: uses deprecated EAPI: 0
-  MissingChksum: version 0.15: "id3_0.15.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.15: "id3_0.15.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/id3ed
   DeprecatedEAPI: version 1.10.4: uses deprecated EAPI: 2
-  MissingChksum: version 1.10.4: "id3ed-1.10.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.10.4: "id3ed-1.10.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/id3ted
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/id3tool
   DeprecatedEAPI: version 1.2a: uses deprecated EAPI: 0
-  MissingChksum: version 1.2a: "id3tool-1.2a.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2a: "id3tool-1.2a.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/id3v2
   DeprecatedEAPI: version 0.1.12: uses deprecated EAPI: 2
-  MissingChksum: version 0.1.12: "id3v2-0.1.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.1.12: "id3v2-0.1.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/ifp-gnome
   DeprecatedEclass: version 0.7: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.7: uses deprecated EAPI: 2
-  MissingChksum: version 0.7: "ifp-gnome-0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.7: "ifp-gnome-0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/imp3sh
   DeprecatedEAPI: version 0.2.4: uses deprecated EAPI: 0
@@ -608,9 +608,9 @@ media-sound/imp3sh
 
 media-sound/jaaa
   DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 2
-  MissingChksum: version 0.4.2: "jaaa-0.4.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  DroppedKeywordWarning: version 0.8.4: keywords dropped: ppc, sparc, x86
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 0.8.4: keywords dropped: ppc, sparc, x86
+  MissingChksum: version 0.4.2: "jaaa-0.4.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/jack
   DeprecatedEclass: version 3.1.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -624,13 +624,13 @@ media-sound/jack-keyboard
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/jack-rack
-  MissingChksum: version 1.4.7-r1: "jack-rack-1.4.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.4.7-r1: "jack-rack-1.4.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/jack-smf-utils
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-  MissingChksum: version 1.0: "jack-smf-utils-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0: "jack-smf-utils-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/jackbeat
   MissingFile: required file ChangeLog doesn't exist
@@ -640,8 +640,8 @@ media-sound/jalv
 
 media-sound/jamin
   DeprecatedEAPI: version 0.95.0-r2: uses deprecated EAPI: 2
-  MissingChksum: version 0.95.0-r2: "jamin-0.95.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.95.0-r2: "jamin-0.95.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/jokosher
   MissingFile: required file ChangeLog doesn't exist
@@ -652,12 +652,12 @@ media-sound/jtagger
 media-sound/justeport
   DeprecatedEclass: version 0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
-  MissingChksum: version 0.2: "JustePort-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.2: "JustePort-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/k4guitune
-  MissingChksum: version 1.1.1: "117669-k4guitune-1.1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1.1: "117669-k4guitune-1.1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/karlyriceditor
   MissingFile: required file ChangeLog doesn't exist
@@ -666,8 +666,8 @@ media-sound/kaudiocreator
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/kenvy24
-  MissingChksum: version 1.2: "kenvy24-1.2-src.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2: "kenvy24-1.2-src.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/kid3
   MissingFile: required file ChangeLog doesn't exist
@@ -682,8 +682,8 @@ media-sound/kmidimon
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/konvertible
-  MissingChksum: version 1.0.1: "116892-konvertible-1.0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.1: "116892-konvertible-1.0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/kradio
   MissingFile: required file ChangeLog doesn't exist
@@ -712,29 +712,29 @@ media-sound/lastfmplayer
 media-sound/lilycomp
   DeprecatedEclass: version 1.0.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.0.2-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.0.2-r1: "lilycomp.1.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.2-r1: "lilycomp.1.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/lilypond
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/lingot
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.9.0: "lingot-0.9.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 0.9.1: "lingot-0.9.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-sound/linuxsampler
   DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 0
-  MissingChksum: version 0.5.1: "linuxsampler-0.5.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.5.1: "linuxsampler-0.5.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/listen
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/litestream
   DeprecatedEAPI: version 1.3_rc3: uses deprecated EAPI: 0
-  MissingChksum: version 1.3_rc3: "litestream-1.3RC3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.3_rc3: "litestream-1.3RC3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/lltag
   MissingFile: required file ChangeLog doesn't exist
@@ -743,8 +743,8 @@ media-sound/lmms
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/lxmusic
-  MissingChksum: version 0.4.5: "lxmusic-0.4.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.4.5: "lxmusic-0.4.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/lyvi
   MissingFile: required file ChangeLog doesn't exist
@@ -753,8 +753,8 @@ media-sound/mac
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/madplay
-  MissingChksum: version 0.15.2b-r1: "madplay-0.15.2b.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.15.2b-r1: "madplay-0.15.2b.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/mangler
   MissingFile: required file ChangeLog doesn't exist
@@ -764,14 +764,14 @@ media-sound/marrie
 
 media-sound/mcdp
   DeprecatedEAPI: version 0.4a: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4a: "mcdp-0.4a.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 0.4b: "mcdp-0.4b.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-sound/meterbridge
   DeprecatedEAPI: version 0.9.3: uses deprecated EAPI: 2
-  MissingChksum: version 0.9.3: "meterbridge-0.9.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.9.3: "meterbridge-0.9.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/mhwaveedit
   DeprecatedEAPI: version 1.4.21: uses deprecated EAPI: 2
@@ -785,8 +785,8 @@ media-sound/milkytracker
 
 media-sound/mimd
   DeprecatedEAPI: version 0.30.1: uses deprecated EAPI: 2
-  MissingChksum: version 0.30.1: "mimd-0.30.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.30.1: "mimd-0.30.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/miniaudicle
   MissingFile: required file ChangeLog doesn't exist
@@ -795,8 +795,8 @@ media-sound/mixxx
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/mmix
-  MissingChksum: version 0.3: "mmix-0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3: "mmix-0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/moc
   MissingFile: required file ChangeLog doesn't exist
@@ -804,47 +804,47 @@ media-sound/moc
 media-sound/modplugtools
   DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 2
   DeprecatedEAPI: version 0.5.3: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.5.1: "modplugtools-0.5.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.5.3: "modplugtools-0.5.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-sound/moodbar
   DeprecatedEAPI: version 0.1.2: uses deprecated EAPI: 2
-  MissingChksum: version 0.1.2: "moodbar-0.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.1.2: "moodbar-0.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/moosic
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/mp32ogg
   DeprecatedEAPI: version 0.11-r6: uses deprecated EAPI: 2
-  MissingChksum: version 0.11-r6: "mp32ogg" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.11-r6: "mp32ogg" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/mp3_check
   DeprecatedEAPI: version 1.98: uses deprecated EAPI: 0
-  MissingChksum: version 1.98: "mp3_check-1.98.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.98: "mp3_check-1.98.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/mp3asm
   DeprecatedEAPI: version 0.1.3-r2: uses deprecated EAPI: 0
-  MissingChksum: version 0.1.3-r2: "mp3asm-0.1.3-1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.1.3-r2: "mp3asm-0.1.3-1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/mp3blaster
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/mp3c
   DeprecatedEAPI: version 0.31-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.31-r1: "mp3c-0.31.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.31-r1: "mp3c-0.31.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/mp3cat
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/mp3check
-  MissingChksum: version 0.8.4: "mp3check-0.8.4.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.8.4: "mp3check-0.8.4.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/mp3diags
   MissingFile: required file ChangeLog doesn't exist
@@ -852,16 +852,16 @@ media-sound/mp3diags
 media-sound/mp3gain
   DeprecatedEAPI: version 1.4.6-r3: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.5.2: uses deprecated EAPI: 2
-  MissingChksum: version 1.4.6-r3: "mp3gain-1_4_6-src.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.4.6-r3: "mp3gain-1_4_6-src.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/mp3info
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/mp3report
   DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
-  MissingChksum: version 1.0.2: "mp3report-1.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.2: "mp3report-1.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/mp3splt
   MissingFile: required file ChangeLog doesn't exist
@@ -871,91 +871,91 @@ media-sound/mp3splt-gtk
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/mp3unicode
-  MissingChksum: version 1.2.1: "mp3unicode-1.2.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2.1: "mp3unicode-1.2.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/mp3wrap
   DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
-  MissingChksum: version 0.5: "mp3wrap-0.5-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.5: "mp3wrap-0.5-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/mpc
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/mpck
   DeprecatedEAPI: version 0.15: uses deprecated EAPI: 0
-  MissingChksum: version 0.15: "checkmate-0.15.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.15: "checkmate-0.15.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/mpd
-  DroppedKeywordWarning: version 0.18.16: keywords dropped: ppc64
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 0.18.16: keywords dropped: ppc64
 
 media-sound/mpdas
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/mpdscribble
-  MissingChksum: version 0.22: "mpdscribble-0.22.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.22: "mpdscribble-0.22.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/mpfc
   DeprecatedEAPI: version 1.3.7-r1: uses deprecated EAPI: 2
   DeprecatedEAPI: version 1.3.8.1: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.3.7-r1: "mpfc-1.3.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.3.8.1: "mpfc-1.3.8.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-sound/mpg123
-  DroppedKeywordWarning: version 1.22.0: keywords dropped: arm64
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 1.22.0: keywords dropped: arm64
 
 media-sound/mpg321
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/mplay
   DeprecatedEAPI: version 0.80: uses deprecated EAPI: 0
-  MissingChksum: version 0.80: "mplay-0.80.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.80: "mplay-0.80.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/mserv
   DeprecatedEAPI: version 0.35-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.35-r1: "mserv-0.35.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.35-r1: "mserv-0.35.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/mt-daapd
   DeprecatedEAPI: version 0.2.4.2: uses deprecated EAPI: 2
-  MissingChksum: version 0.2.4.2: "mt-daapd-0.2.4.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.2.4.2: "mt-daapd-0.2.4.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/muine
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/multimux
   DeprecatedEAPI: version 0.2.5.2: uses deprecated EAPI: 0
-  MissingChksum: version 0.2.5.2: "multimux-0.2.5.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.2.5.2: "multimux-0.2.5.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/mumble
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/mup
-  MissingChksum: version 5.7: "mup57src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 5.7: "mup57src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/murmur
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/muse
   DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 2
-  MissingChksum: version 0.9.2: "MuSE-0.9.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.9.2: "MuSE-0.9.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/musepack-tools
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/musescore
-  MissingChksum: version 1.1: "mscore-1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1: "mscore-1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/music-file-organizer
   MissingFile: required file ChangeLog doesn't exist
@@ -970,34 +970,34 @@ media-sound/ncmpcpp
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/neroaac
-  MissingChksum: version 1.5.1: "NeroAACCodec-1.5.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.5.1: "NeroAACCodec-1.5.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/neutrino
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/normalize
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.7.7-r1: "normalize-0.7.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 0.7.7-r1: "normalize-0.7.7-m4.patch.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-sound/nted
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/ogg2mp3
   DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 2
-  MissingChksum: version 0.6.1: "ogg2mp3-0.6.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.6.1: "ogg2mp3-0.6.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/oggtst
   DeprecatedEAPI: version 0.0: uses deprecated EAPI: 0
-  MissingChksum: version 0.0: "oggtst.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.0: "oggtst.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/ogmtools
   DeprecatedEAPI: version 1.5-r2: uses deprecated EAPI: 2
-  MissingChksum: version 1.5-r2: "ogmtools-1.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.5-r2: "ogmtools-1.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/opus-tools
   MissingFile: required file ChangeLog doesn't exist
@@ -1006,8 +1006,8 @@ media-sound/orpheus
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/paprefs
-  MissingChksum: version 0.9.10: "paprefs-0.9.10.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.9.10: "paprefs-0.9.10.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/pasystray
   MissingFile: required file ChangeLog doesn't exist
@@ -1020,18 +1020,18 @@ media-sound/pavucontrol
 
 media-sound/pavumeter
   DeprecatedEAPI: version 0.9.3-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.9.3-r1: "pavumeter-0.9.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.9.3-r1: "pavumeter-0.9.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/peercast
   DeprecatedEAPI: version 0.1218-r2: uses deprecated EAPI: 2
-  MissingChksum: version 0.1218-r2: "peercast-0.1218-src.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.1218-r2: "peercast-0.1218-src.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/phasex
   DeprecatedEAPI: version 0.12.0_beta3: uses deprecated EAPI: 2
-  MissingChksum: version 0.12.0_beta3: "phasex-0.12.0beta3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.12.0_beta3: "phasex-0.12.0beta3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/pianobar
   MissingFile: required file ChangeLog doesn't exist
@@ -1048,13 +1048,13 @@ media-sound/picard
 
 media-sound/picoxine
   DeprecatedEAPI: version 0.0.7: uses deprecated EAPI: 0
-  MissingChksum: version 0.0.7: "39596-picoxine-0.0.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.0.7: "39596-picoxine-0.0.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/pitchtune
   DeprecatedEAPI: version 0.0.4: uses deprecated EAPI: 2
-  MissingChksum: version 0.0.4: "pitchtune-0.0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.0.4: "pitchtune-0.0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/pithos
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -1062,8 +1062,8 @@ media-sound/pithos
 
 media-sound/playmidi
   DeprecatedEAPI: version 2.5-r2: uses deprecated EAPI: 0
-  MissingChksum: version 2.5-r2: "playmidi-2.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.5-r2: "playmidi-2.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/pms
   DeprecatedEAPI: version 0.42: uses deprecated EAPI: 2
@@ -1077,8 +1077,8 @@ media-sound/pnmixer
 
 media-sound/poc
   DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 0
-  MissingChksum: version 0.4.1: "poc-0.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.4.1: "poc-0.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/podcatcher
   NonExistentDeps: version 3.1.6: depset depends: nonexistent atoms [ dev-ruby/rubytorrent ]
@@ -1086,8 +1086,8 @@ media-sound/podcatcher
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/podget
-  MissingChksum: version 0.6: "podget-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.6: "podget-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/podracer
   DeprecatedEAPI: version 1.4: uses deprecated EAPI: 3
@@ -1096,8 +1096,8 @@ media-sound/podracer
 media-sound/positron
   DeprecatedEclass: version 1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 3
-  MissingChksum: version 1.1: "positron-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1: "positron-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/potamus
   MissingFile: required file ChangeLog doesn't exist
@@ -1113,34 +1113,34 @@ media-sound/projectm-pulseaudio
 
 media-sound/protux
   DeprecatedEAPI: version 0.50.100: uses deprecated EAPI: 0
-  MissingChksum: version 0.50.100: "protux-0.50.100.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.50.100: "protux-0.50.100.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/ptabtools
   DeprecatedEAPI: version 0.4.3: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4.3: "ptabtools-0.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 0.5.0: "ptabtools-0.5.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-sound/puddletag
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/pulseaudio
-  DroppedKeywordWarning: version 6.0: keywords dropped: alpha, ia64
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 6.0: keywords dropped: ia64
 
 media-sound/pwavecat
   DeprecatedEAPI: version 0.4.5: uses deprecated EAPI: 2
-  MissingChksum: version 0.4.5: "pwavecat-0.4.5.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.4.5: "pwavecat-0.4.5.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/pympd
   DeprecatedEclass: version 0.08.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.08.1: uses deprecated EAPI: 3
   NonExistentDeps: version 0.08.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.08.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  MissingChksum: version 0.08.1: "pympd-0.08.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.08.1: "pympd-0.08.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/qarecord
   DeprecatedEAPI: version 0.5.0: uses deprecated EAPI: 2
@@ -1153,13 +1153,13 @@ media-sound/qjackctl
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/qmidiarp
-  MissingChksum: version 0.3.9: "qmidiarp-0.3.9.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3.9: "qmidiarp-0.3.9.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/qmidiroute
   DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 2
-  MissingChksum: version 0.3.0: "qmidiroute-0.3.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3.0: "qmidiroute-0.3.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/qmmp
   NonExistentDeps: version 0.8.3: depset depends: nonexistent atoms [ media-video/mplayer2 ]
@@ -1180,8 +1180,8 @@ media-sound/qpitch
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/qsampler
-  MissingChksum: version 0.2.2_p2345: "qsampler-0.2.2.2345.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.2.2_p2345: "qsampler-0.2.2.2345.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/qsynth
   MissingFile: required file ChangeLog doesn't exist
@@ -1194,24 +1194,24 @@ media-sound/qtagger
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/qtgain
-  MissingChksum: version 0.9.5: "qtgain-0.9.5.tar.lzma" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.9.5: "qtgain-0.9.5.tar.lzma" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/qtmpc
-  MissingChksum: version 0.6.1: "QtMPC-0.6.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.6.1: "QtMPC-0.6.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/qtractor
   DeprecatedEAPI: version 0.6.7: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/qtscrobbler
-  MissingChksum: version 0.10: "qtscrob-0.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.10: "qtscrob-0.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/quark
-  MissingChksum: version 3.21: "quark-3.21.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.21: "quark-3.21.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/quimup
   MissingFile: required file ChangeLog doesn't exist
@@ -1221,13 +1221,13 @@ media-sound/quodlibet
 
 media-sound/rawrec
   DeprecatedEAPI: version 0.9.991: uses deprecated EAPI: 0
-  MissingChksum: version 0.9.991: "rawrec-0.9.991.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.9.991: "rawrec-0.9.991.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/rcenter
   DeprecatedEAPI: version 0.6.2: uses deprecated EAPI: 0
-  MissingChksum: version 0.6.2: "rcenter-0.6.2.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.6.2: "rcenter-0.6.2.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/redoflacs
   MissingFile: required file ChangeLog doesn't exist
@@ -1237,8 +1237,8 @@ media-sound/retrovol
 
 media-sound/rexima
   DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
-  MissingChksum: version 1.4: "rexima-1.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.4: "rexima-1.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/rezound
   MissingFile: required file ChangeLog doesn't exist
@@ -1252,8 +1252,8 @@ media-sound/rhythmbox
 media-sound/rip
   DeprecatedEAPI: version 1.07: uses deprecated EAPI: 0
   NonExistentDeps: version 1.07: depset rdepends: nonexistent atoms [ media-sound/gogo ]
-  MissingChksum: version 1.07: "rip-1.07.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.07: "rip-1.07.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/ripperx
   MissingFile: required file ChangeLog doesn't exist
@@ -1263,81 +1263,81 @@ media-sound/rosegarden
 
 media-sound/rplay
   DeprecatedEAPI: version 3.3.2-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.3.2-r1: "rplay-3.3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.3.2-r1: "rplay_3.3.2-12.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-sound/saydate
   DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 0
-  MissingChksum: version 0.3.0: "saydate-0.3.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3.0: "saydate-0.3.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/schismtracker
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 20110101: "schismtracker-20110101.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 20120105: "schismtracker-20120105.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-sound/scmpc
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/seq24
-  MissingChksum: version 0.9.2-r1: "seq24-0.9.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.9.2-r1: "seq24-0.9.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/setmixer
   DeprecatedEAPI: version 19941227_p1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 19941227_p1: "setmixer_27DEC94ds1.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 19941227_p1: "setmixer_27DEC94ds1-1.diff.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-sound/sexypsf
   DeprecatedEAPI: version 0.4.7: uses deprecated EAPI: 0
-  MissingChksum: version 0.4.7: "sexypsf-0.4.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.4.7: "sexypsf-0.4.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/sfc
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/shell-fm
-  MissingChksum: version 0.8-r1: "shell-fm-0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.8-r1: "shell-fm-0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/shnflacverify
-  MissingChksum: version 0.3: "shnflacverify-0.3.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3: "shnflacverify-0.3.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/shntool
-  MissingChksum: version 3.0.10-r1: "shntool-3.0.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.0.10-r1: "shntool-3.0.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/shorten
   DeprecatedEAPI: version 3.6.1: uses deprecated EAPI: 0
-  MissingChksum: version 3.6.1: "shorten-3.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.6.1: "shorten-3.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/shoutcast-search
   DeprecatedEclass: version 0.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.3: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.3.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3: "shoutcast-search-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 0.3.1: "shoutcast-search-0.3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-sound/shoutcast-server-bin
   DeprecatedEAPI: version 1.9.8-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.9.8-r1: "sc_serv_1.9.8_Linux.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.9.8-r1: "sc_serv_1.9.8_Linux.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/shoutcast-trans-bin
   DeprecatedEAPI: version 0.4.0-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.4.0-r1: "sc_trans_posix_040.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.4.0-r1: "sc_trans_posix_040.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/sidplay
   DeprecatedEAPI: version 2.0.9: uses deprecated EAPI: 2
-  MissingChksum: version 2.0.9: "sidplay-2.0.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.0.9: "sidplay-2.0.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/sidplayfp
   MissingFile: required file ChangeLog doesn't exist
@@ -1346,21 +1346,21 @@ media-sound/skype-call-recorder
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/smixer
-  MissingChksum: version 1.0.4: "smixer1.0.4.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.4: "smixer1.0.4.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/snd
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/sndfile-tools
   DeprecatedEAPI: version 1.03: uses deprecated EAPI: 2
-  MissingChksum: version 1.03: "sndfile-tools-1.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.03: "sndfile-tools-1.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/sndpeek
   DeprecatedEAPI: version 1.3-r2: uses deprecated EAPI: 2
-  MissingChksum: version 1.3-r2: "sndpeek-1.3.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.3-r2: "sndpeek-1.3.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/solfege
   MissingFile: required file ChangeLog doesn't exist
@@ -1372,14 +1372,14 @@ media-sound/sonic-visualiser
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/sooperlooper
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.6.17: "sooperlooper-1.6.17.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.6.17: "sooperlooper-1.6.5-m4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.6.18: "sooperlooper-1.6.18.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-sound/sound-juicer
-  DroppedKeywordWarning: version 3.16.1: keywords dropped: alpha
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 3.16.1: keywords dropped: alpha
 
 media-sound/soundconverter
   MissingFile: required file ChangeLog doesn't exist
@@ -1398,13 +1398,13 @@ media-sound/spek
 
 media-sound/splay
   DeprecatedEAPI: version 0.9.5.2: uses deprecated EAPI: 0
-  MissingChksum: version 0.9.5.2: "splay-0.9.5.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.9.5.2: "splay-0.9.5.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/split2flac
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  MissingChksum: version 0.1_pre20111110-r2: "split2flac-20111110-r1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.1_pre20111110-r2: "split2flac-20111110-r1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/spotify
   MissingFile: required file ChangeLog doesn't exist
@@ -1425,37 +1425,37 @@ media-sound/subsonic-bin
 
 media-sound/substract_wave
   DeprecatedEAPI: version 0.3-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.3-r1: "substract_wave-0.3.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3-r1: "substract_wave-0.3.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/sweep
-  MissingChksum: version 0.9.3-r1: "sweep-0.9.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.9.3-r1: "sweep-0.9.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/synaesthesia
   DeprecatedEAPI: version 2.4: uses deprecated EAPI: 2
-  MissingChksum: version 2.4: "synaesthesia-2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.4: "synaesthesia-2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/taginfo
   DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.2-r1: "taginfo-1.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2-r1: "taginfo-1.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/tagtool
   DeprecatedEAPI: version 0.12.3: uses deprecated EAPI: 2
-  MissingChksum: version 0.12.3: "tagtool-0.12.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.12.3: "tagtool-0.12.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/takcd
   DeprecatedEAPI: version 0.10: uses deprecated EAPI: 0
-  MissingChksum: version 0.10: "takcd-0.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.10: "takcd-0.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/tap-reverbed
   DeprecatedEAPI: version 0: uses deprecated EAPI: 2
-  MissingChksum: version 0: "tap-reverbed-r0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0: "tap-reverbed-r0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/tapestrea
   MissingFile: required file ChangeLog doesn't exist
@@ -1472,8 +1472,8 @@ media-sound/teamspeak-server-bin
 
 media-sound/tempest_for_eliza
   DeprecatedEAPI: version 1.0.5-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.0.5-r1: "tempest_for_eliza-1.0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.5-r1: "tempest_for_eliza-1.0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/terminatorx
   MissingFile: required file ChangeLog doesn't exist
@@ -1481,9 +1481,9 @@ media-sound/terminatorx
 media-sound/timemachine
   DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 2
   DeprecatedEAPI: version 0.3.3: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3.1: "timemachine-0.3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.3.3: "timemachine-0.3.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-sound/timidity++
   DeprecatedEAPI: version 2.13.2-r13: uses deprecated EAPI: 2
@@ -1491,36 +1491,36 @@ media-sound/timidity++
 
 media-sound/timidity-eawpatches
   DeprecatedEAPI: version 12-r5: uses deprecated EAPI: 0
-  MissingChksum: version 12-r5: "eawpats12_full.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 12-r5: "eawpats12_full.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/timidity-freepats
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/tk707
   DeprecatedEAPI: version 0.8-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.8-r1: "tk707-0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 0.8-r1: "tk707-0.8-updated_tcl2c.patch.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-sound/tomahawk
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/toolame
-  MissingChksum: version 02l-r3: "toolame-02l.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 02l-r3: "toolame-02l.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/traverso
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/trommler
   DeprecatedEAPI: version 3.8: uses deprecated EAPI: 2
-  MissingChksum: version 3.8: "trommler.3.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.8: "trommler.3.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/ttaenc
-  MissingChksum: version 3.4.1-r1: "ttaenc-3.4.1-src.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.4.1-r1: "ttaenc-3.4.1-src.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/tudor-volumed
   MissingFile: required file ChangeLog doesn't exist
@@ -1528,62 +1528,62 @@ media-sound/tudor-volumed
 media-sound/tunapie
   DeprecatedEclass: version 2.1.17: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.1.17: uses deprecated EAPI: 3
-  MissingChksum: version 2.1.17: "tunapie-2.1.17.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.1.17: "tunapie-2.1.17.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/twolame
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/umix
   DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
-  MissingChksum: version 1.0.2: "umix-1.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.2: "umix-1.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/umurmur
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/vb2rip
   DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
-  MissingChksum: version 1.4: "vb2rip14.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.4: "vb2rip14.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/vbrfixc
   DeprecatedEAPI: version 0.24: uses deprecated EAPI: 2
-  MissingChksum: version 0.24: "vbrfixc-0.24.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.24: "vbrfixc-0.24.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/vdramgw
-  MissingChksum: version 0.0.2: "vdr-amarok-0.0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.0.2: "vdr-amarok-0.0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/ventrilo-server-bin
   DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 3.0.3: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.3.1: "ventrilo_srv-2.3.1-Linux-i386.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.0.3: "ventrilo_srv-3.0.3-Linux-i386.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-sound/vimpc
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/vitunes
   NonExistentDeps: version 2.3: depset rdepends: nonexistent atoms [ media-video/mplayer2 ]
-  MissingChksum: version 2.3: "vitunes-2.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.3: "vitunes-2.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/vkeybd
   DeprecatedEAPI: version 0.1.18d: uses deprecated EAPI: 2
-  MissingChksum: version 0.1.18d: "vkeybd-0.1.18d.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.1.18d: "vkeybd-0.1.18d.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/vlevel
-  MissingChksum: version 0.5-r1: "vlevel-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.5-r1: "vlevel-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/vlorb
   DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
-  MissingChksum: version 1.2: "vlorb-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2: "vlorb-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/vmpk
   MissingFile: required file ChangeLog doesn't exist
@@ -1594,8 +1594,8 @@ media-sound/volti
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/volumeicon
-  MissingChksum: version 0.4.6: "volumeicon-0.4.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.4.6: "volumeicon-0.4.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/volwheel
   MissingFile: required file ChangeLog doesn't exist
@@ -1605,16 +1605,16 @@ media-sound/vorbis-tools
 
 media-sound/vorbisgain
   DeprecatedEAPI: version 0.37-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.37-r1: "vorbisgain-0.37.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.37-r1: "vorbisgain-0.37.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/vsound
-  MissingChksum: version 0.6-r1: "vsound-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.6-r1: "vsound-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-sound/waheela
-  MissingChksum: version 0.3: "waheela_0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3: "waheela_0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/wavbreaker
   MissingFile: required file ChangeLog doesn't exist
@@ -1626,32 +1626,32 @@ media-sound/wavpack
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/wavplay
-  MissingChksum: version 2.0: "wavplay-2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.0: "wavplay-2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/wavsplit
   DeprecatedEAPI: version 1.2.1-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.2.1-r1: "wavsplit-1.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2.1-r1: "wavsplit-1.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/wildmidi
-  DroppedKeywordWarning: version 0.3.6: keywords dropped: alpha
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 0.3.6: keywords dropped: alpha
 
 media-sound/wmsound-data
   DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0.0: "worms2sounds.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.0.0: "wmsdefault.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-sound/xfmpc
-  MissingChksum: version 0.2.2: "xfmpc-0.2.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.2.2: "xfmpc-0.2.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/xineadump
   DeprecatedEAPI: version 0.1-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.1-r1: "xineadump-0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.1-r1: "xineadump-0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/xmms2
   DeprecatedEclass: version 0.8-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -1662,8 +1662,8 @@ media-sound/xmms2-scrobbler
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/xmp
-  MissingChksum: version 3.5.0: "xmp-3.5.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.5.0: "xmp-3.5.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/xnoise
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -1676,8 +1676,8 @@ media-sound/yoshimi
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/zynaddsubfx
-  MissingChksum: version 2.4.1: "ZynAddSubFX-2.4.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.4.1: "ZynAddSubFX-2.4.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1691,14 +1691,14 @@ sys-fs/archivemount
 sys-fs/arm-fdisk
   DeprecatedEAPI: version 3.0.6: uses deprecated EAPI: 0
   DeprecatedEAPI: version 3.0.6-r1: uses deprecated EAPI: 0
-  MissingChksum: version 3.0.6: "acorn-fdisk_3.0.6-6.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.0.6: "acorn-fdisk_3.0.6-6.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-fs/atari-fdisk
   DeprecatedEAPI: version 0.7.1.5.1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.7.1.5.4: uses deprecated EAPI: 0
-  MissingChksum: version 0.7.1.5.4: "atari-fdisk_0.7.1-5.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.7.1.5.4: "atari-fdisk_0.7.1-5.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-fs/aufs-headers
   MissingFile: required file ChangeLog doesn't exist
@@ -1714,8 +1714,8 @@ sys-fs/aufs4
 
 sys-fs/autorun
   DeprecatedEAPI: version 3.17: uses deprecated EAPI: 2
-  MissingChksum: version 3.17: "autorun-3.17.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.17: "autorun-3.17.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-fs/avfs
   MissingFile: required file ChangeLog doesn't exist
@@ -1740,8 +1740,8 @@ sys-fs/cachefilesd
 
 sys-fs/clamfs
   DeprecatedEAPI: version 1.0.1-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.0.1-r1: "clamfs-1.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.1-r1: "clamfs-1.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-fs/cloudfuse
   MissingFile: required file ChangeLog doesn't exist
@@ -1752,8 +1752,8 @@ sys-fs/copyfs
 
 sys-fs/cramfs
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
-  MissingChksum: version 1.1: "cramfs-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1: "cramfs-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-fs/cryptsetup
   MissingFile: required file ChangeLog doesn't exist
@@ -1776,23 +1776,23 @@ sys-fs/dfc
 sys-fs/diskdev_cmds
   DeprecatedEAPI: version 332.14: uses deprecated EAPI: 0
   DeprecatedEAPI: version 332.14_p1: uses deprecated EAPI: 0
-  MissingChksum: version 332.14: "diskdev_cmds-332.14.patch.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 332.14: "diskdev_cmds-332.14.patch.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-fs/dmg2img
   DeprecatedEAPI: version 1.6: uses deprecated EAPI: 2
   DeprecatedEAPI: version 1.6.1: uses deprecated EAPI: 2
   DeprecatedEAPI: version 1.6.2: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.6: "dmg2img-1.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.6.1: "dmg2img-1.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.6.2: "dmg2img-1.6.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 sys-fs/dmraid
   DeprecatedEAPI: version 1.0.0_rc14: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.0.0_rc15: uses deprecated EAPI: 0
-  MissingChksum: version 1.0.0_rc15: "dmraid-1.0.0.rc15.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.0_rc15: "dmraid-1.0.0.rc15.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-fs/dosfstools
   MissingFile: required file ChangeLog doesn't exist
@@ -1805,8 +1805,8 @@ sys-fs/e2fsprogs
   MissingFile: required file ChangeLog doesn't exist
 
 sys-fs/e2tools
-  MissingChksum: version 0.0.16: "e2tools-0.0.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.0.16: "e2tools-0.0.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 sys-fs/e4rat
   MissingFile: required file ChangeLog doesn't exist
@@ -1826,8 +1826,8 @@ sys-fs/etcd-fs
 
 sys-fs/eudev
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DroppedKeywordWarning: version 3.1.2-r10: keywords dropped: alpha, ia64
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 3.1.2-r10: keywords dropped: alpha, ia64
 
 sys-fs/exfat-utils
   MissingFile: required file ChangeLog doesn't exist
@@ -1848,15 +1848,15 @@ sys-fs/fatsort
   MissingFile: required file ChangeLog doesn't exist
 
 sys-fs/fur
-  MissingChksum: version 0.5: "fur-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.5: "fur-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-fs/fuse
   MissingFile: required file ChangeLog doesn't exist
 
 sys-fs/fuse-convmvfs
-  MissingChksum: version 0.2.6: "fuse-convmvfs-0.2.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.2.6: "fuse-convmvfs-0.2.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-fs/fuse-exfat
   MissingFile: required file ChangeLog doesn't exist
@@ -1864,16 +1864,16 @@ sys-fs/fuse-exfat
 sys-fs/fuse-zip
   DeprecatedEAPI: version 0.2.12: uses deprecated EAPI: 2
   DeprecatedEAPI: version 0.2.13: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2.12: "fuse-zip-0.2.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.2.13: "fuse-zip-0.2.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 sys-fs/fuse4bsd
   DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 0
   NonExistentDeps: version 0.3.9_pre1: depset depends: nonexistent atoms [ app-text/deplate ]
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3.0: "fuse4bsd-0.3.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.3.0: "freebsd-sbin-6.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 sys-fs/fuseiso
   MissingFile: required file ChangeLog doesn't exist
@@ -1882,27 +1882,27 @@ sys-fs/genext2fs
   DeprecatedEAPI: version 1.3-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.4.1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.3-r1: "genext2fs_1.3.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.3-r1: "genext2fs-1.3-uclibc-updates.patch.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.4: "genext2fs-1.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 sys-fs/gfs2-utils
-  MissingChksum: version 3.1.2: "gfs2-utils-3.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.1.2: "gfs2-utils-3.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-fs/go-mtpfs
   MissingFile: required file ChangeLog doesn't exist
 
 sys-fs/gt5
   DeprecatedEAPI: version 1.4.0-r2: uses deprecated EAPI: 0
-  MissingChksum: version 1.4.0-r2: "gt5-1.4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.4.0-r2: "gt5-1.4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-fs/hfsplusutils
   DeprecatedEAPI: version 1.0.4-r1: uses deprecated EAPI: 0
-  MissingChksum: version 1.0.4-r1: "hfsplus_1.0.4.src.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.4-r1: "hfsplus_1.0.4.src.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 sys-fs/hfsutils
   MissingFile: required file ChangeLog doesn't exist
@@ -1925,13 +1925,13 @@ sys-fs/jmtpfs
   MissingFile: required file ChangeLog doesn't exist
 
 sys-fs/ldapfuse
-  MissingChksum: version 1.0: "ldapfuse-1.0.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0: "ldapfuse-1.0.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-fs/lde
   DeprecatedEAPI: version 2.6.1: uses deprecated EAPI: 0
-  MissingChksum: version 2.6.1: "lde-2.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.6.1: "lde-2.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-fs/lessfs
   MissingFile: required file ChangeLog doesn't exist
@@ -1940,8 +1940,8 @@ sys-fs/libeatmydata
   MissingFile: required file ChangeLog doesn't exist
 
 sys-fs/libfat
-  MissingChksum: version 0.3a: "libfat-0.3a.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3a: "libfat-0.3a.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-fs/loop-aes
   MissingFile: required file ChangeLog doesn't exist
@@ -1953,14 +1953,14 @@ sys-fs/lsscsi
 sys-fs/lufis
   DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2: "lufis-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.3: "lufis-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 sys-fs/lufs
   DeprecatedEAPI: version 0.9.7-r3: uses deprecated EAPI: 0
-  MissingChksum: version 0.9.7-r3: "lufs-0.9.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.9.7-r3: "lufs-0.9.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-fs/lvm2
   MissingFile: required file ChangeLog doesn't exist
@@ -2014,8 +2014,8 @@ sys-fs/ntfs3g
 
 sys-fs/obexfs
   DeprecatedEAPI: version 0.11: uses deprecated EAPI: 0
-  MissingChksum: version 0.11: "obexfs-0.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.11: "obexfs-0.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-fs/ocfs2-tools
   DeprecatedEclass: version 1.8.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -2039,9 +2039,9 @@ sys-fs/pytagsfs
   DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 2
   NonExistentDeps: version 0.9.2: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.9.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.9.2_rc2: "pytagsfs-0.9.2rc2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.9.2: "pytagsfs-0.9.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 sys-fs/quota
   DeprecatedEAPI: version 3.17-r1: uses deprecated EAPI: 0
@@ -2050,10 +2050,10 @@ sys-fs/quota
 sys-fs/quotatool
   DeprecatedEAPI: version 1.4.6: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.4.11: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.4.6: "quotatool-1.4.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.4.11: "quotatool-1.4.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.4.12: "quotatool-1.4.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 sys-fs/rar2fs
   MissingFile: required file ChangeLog doesn't exist
@@ -2065,8 +2065,8 @@ sys-fs/rarfs
 sys-fs/redirfs
   DeprecatedEAPI: version 0.8: uses deprecated EAPI: 0
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  MissingChksum: version 0.8: "redirfs-0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.8: "redirfs-0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-fs/reiser4progs
   DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 0
@@ -2100,8 +2100,8 @@ sys-fs/shake
 sys-fs/siefs
   DeprecatedEAPI: version 0.5-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.5-r2: uses deprecated EAPI: 0
-  MissingChksum: version 0.5-r1: "siefs-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.5-r1: "siefs-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-fs/simple-mtpfs
   MissingFile: required file ChangeLog doesn't exist
@@ -2133,14 +2133,14 @@ sys-fs/traydevice
   DeprecatedEclass: version 1.6.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 1.6.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 1.6.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.5: "traydevice-1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.5.2: "traydevice-1.5.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 sys-fs/treesize
   DeprecatedEAPI: version 0.54.1: uses deprecated EAPI: 2
-  MissingChksum: version 0.54.1: "treesize-0.54.1-src.tbz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.54.1: "treesize-0.54.1-src.tbz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-fs/udev
   MissingFile: required file ChangeLog doesn't exist
@@ -2171,8 +2171,8 @@ sys-fs/unionfs-fuse
   DeprecatedEAPI: version 0.24: uses deprecated EAPI: 2
   DeprecatedEAPI: version 0.25: uses deprecated EAPI: 2
   DeprecatedEAPI: version 0.26: uses deprecated EAPI: 3
-  MissingChksum: version 0.25: "unionfs-fuse-0.25.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.25: "unionfs-fuse-0.25.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-fs/vhba
   MissingFile: required file ChangeLog doesn't exist
@@ -2182,8 +2182,8 @@ sys-fs/vzquota
 
 sys-fs/wpflash
   DeprecatedEAPI: version 0: uses deprecated EAPI: 0
-  MissingChksum: version 0: "wpflash.c" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0: "wpflash.c" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 sys-fs/xfsdump
   DeprecatedEAPI: version 3.0.6: uses deprecated EAPI: 2
@@ -2205,8 +2205,8 @@ sys-fs/yaffs2utils
   MissingFile: required file ChangeLog doesn't exist
 
 sys-fs/zerofree
-  MissingChksum: version 1.0.1: "zerofree-1.0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.1: "zerofree-1.0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-fs/zfs
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -2226,8 +2226,8 @@ www-apps/389-dsgw
   MissingFile: required file ChangeLog doesn't exist
 
 www-apps/Apache-Gallery
-  MissingChksum: version 1.0_rc3: "Apache-Gallery-1.0RC3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0_rc3: "Apache-Gallery-1.0RC3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 www-apps/agendav
   MissingFile: required file ChangeLog doesn't exist
@@ -2238,10 +2238,10 @@ www-apps/ampache
   NonExistentDeps: version 3.5.3-r1: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
   DeprecatedEAPI: version 3.5.4: uses deprecated EAPI: 2
   NonExistentDeps: version 3.5.4: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.4.3: "ampache-3.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.5.3-r1: "ampache-3.5.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.5.4: "ampache-3.5.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 www-apps/b2evolution
   MissingFile: required file ChangeLog doesn't exist
@@ -2254,9 +2254,9 @@ www-apps/bitten
   MissingFile: required file ChangeLog doesn't exist
 
 www-apps/blazeblogger
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.2.0: "blazeblogger-1.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.2.0: "blazeblogger-doc-1.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 www-apps/blohg
   MissingFile: required file ChangeLog doesn't exist
@@ -2266,8 +2266,8 @@ www-apps/blohg-tumblelog
 
 www-apps/browser-config
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
-  MissingChksum: version 1.1: "browser-config-1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1: "browser-config-1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 www-apps/bugzilla
   MissingFile: required file ChangeLog doesn't exist
@@ -2294,9 +2294,9 @@ www-apps/cvsweb
   DeprecatedEAPI: version 1.112: uses deprecated EAPI: 0
   DeprecatedEAPI: version 3.0.5: uses deprecated EAPI: 0
   DeprecatedEAPI: version 3.0.6: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.112: "cvsweb-1.112.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.0.5: "cvsweb-3.0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 www-apps/davical
   MissingFile: required file ChangeLog doesn't exist
@@ -2308,36 +2308,36 @@ www-apps/dotproject
   MissingFile: required file ChangeLog doesn't exist
 
 www-apps/dragonflycms
-  MissingChksum: version 9.3.3.1: "Dragonfly9.3.3.1.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 9.3.3.1: "Dragonfly9.3.3.1.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 www-apps/drraw
   DeprecatedEAPI: version 2.0.1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.1.3: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.0.1: "drraw-2.0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.1.3: "drraw-2.1.3.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 www-apps/drupal
   MissingFile: required file ChangeLog doesn't exist
 
 www-apps/dspam-web
-  MissingChksum: version 3.10.1: "dspam-3.10.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.10.1: "dspam-3.10.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 www-apps/egroupware
   MissingFile: required file ChangeLog doesn't exist
 
 www-apps/eyeos
-  MissingChksum: version 2.5: "eyeos-2.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.5: "eyeos-2.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 www-apps/freeradius-dialupadmin
   DeprecatedEAPI: version 1.70.3: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.80: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.70.3: "freeradius-1.1.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.80: "freeradius-server-2.1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 www-apps/gitit
   WhitespaceFound: version 0.10.3.1-r3: ebuild has leading whitespace on line 73
@@ -2349,8 +2349,8 @@ www-apps/gitit
   MissingFile: required file ChangeLog doesn't exist
 
 www-apps/gnopaste
-  MissingChksum: version 0.5.5: "gnopaste-0.5.5.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.5.5: "gnopaste-0.5.5.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 www-apps/groupoffice
   MissingFile: required file ChangeLog doesn't exist
@@ -2364,42 +2364,42 @@ www-apps/hiawatha-monitor
 www-apps/horde
   DeprecatedEAPI: version 3.3.9: uses deprecated EAPI: 0
   DeprecatedEAPI: version 3.3.11: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.3.9: "horde-3.3.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 3.3.11: "horde-3.3.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 www-apps/horde-chora
   DeprecatedEAPI: version 2.0.2: uses deprecated EAPI: 0
   NonExistentDeps: version 2.0.2: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1, >=www-apps/horde-webmail-1 ]
-  MissingChksum: version 2.0.2: "chora-h3-2.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.0.2: "chora-h3-2.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 www-apps/horde-dimp
   DeprecatedEAPI: version 1.1.5: uses deprecated EAPI: 0
   NonExistentDeps: version 1.1.5: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1 ]
-  MissingChksum: version 1.1.5: "dimp-h3-1.1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1.5: "dimp-h3-1.1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 www-apps/horde-gollem
   DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
   NonExistentDeps: version 1.1.2: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1, >=www-apps/horde-webmail-1 ]
-  MissingChksum: version 1.1.2: "gollem-h3-1.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1.2: "gollem-h3-1.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 www-apps/horde-hermes
   DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
   NonExistentDeps: version 1.0.1: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1 ]
-  MissingChksum: version 1.0.1: "hermes-h3-1.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.1: "hermes-h3-1.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 www-apps/horde-imp
   DeprecatedEAPI: version 4.3.8: uses deprecated EAPI: 0
   NonExistentDeps: version 4.3.8: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1 ]
   DeprecatedEAPI: version 4.3.9: uses deprecated EAPI: 0
   NonExistentDeps: version 4.3.9: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1 ]
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 4.3.8: "imp-h3-4.3.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 4.3.9: "imp-h3-4.3.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 www-apps/horde-ingo
   DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
@@ -2407,25 +2407,25 @@ www-apps/horde-ingo
   NonExistentDeps: version 1.2.3: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1 ]
   DeprecatedEAPI: version 1.2.5: uses deprecated EAPI: 0
   NonExistentDeps: version 1.2.5: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1 ]
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.1.2: "ingo-h3-1.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.2.3: "ingo-h3-1.2.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.2.5: "ingo-h3-1.2.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 www-apps/horde-jeta
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
   NonExistentDeps: version 1.0: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1, >=www-apps/horde-webmail-1 ]
-  MissingChksum: version 1.0: "jeta-h3-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0: "jeta-h3-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 www-apps/horde-kronolith
   DeprecatedEAPI: version 2.1.8: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.3.4: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.3.5: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.1.8: "kronolith-h3-2.1.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 2.3.4: "kronolith-h3-2.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 2.3.5: "kronolith-h3-2.3.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 www-apps/horde-mimp
   DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
@@ -2433,30 +2433,30 @@ www-apps/horde-mimp
   NonExistentDeps: version 1.1.2: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1, >=www-apps/horde-webmail-1 ]
   DeprecatedEAPI: version 1.1.3: uses deprecated EAPI: 0
   NonExistentDeps: version 1.1.3: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1, >=www-apps/horde-webmail-1 ]
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0.1: "mimp-h3-1.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.1.2: "mimp-h3-1.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.1.3: "mimp-h3-1.1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 www-apps/horde-mnemo
   DeprecatedEAPI: version 2.2.3: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.2.4: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.2.3: "mnemo-h3-2.2.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 2.2.4: "mnemo-h3-2.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 www-apps/horde-nag
   DeprecatedEAPI: version 2.3.4: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.3.6: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.3.4: "nag-h3-2.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 2.3.6: "nag-h3-2.3.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 www-apps/horde-passwd
   DeprecatedEAPI: version 3.1.3: uses deprecated EAPI: 0
   NonExistentDeps: version 3.1.3: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1, >=www-apps/horde-webmail-1 ]
-  MissingChksum: version 3.1.3: "passwd-h3-3.1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.1.3: "passwd-h3-3.1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 www-apps/horde-pear
   DeprecatedEAPI: version 1.3-r3: uses deprecated EAPI: 0
@@ -2465,9 +2465,9 @@ www-apps/horde-pear
 www-apps/horde-turba
   DeprecatedEAPI: version 2.3.4: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.3.5: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.3.4: "turba-h3-2.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.3.5: "turba-h3-2.3.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 www-apps/horizon
   DeprecatedEclass: version 2014.1.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -2475,8 +2475,8 @@ www-apps/horizon
   MissingFile: required file ChangeLog doesn't exist
 
 www-apps/ikiwiki
-  DroppedKeywordWarning: version 3.20150107: keywords dropped: x86
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 3.20150107: keywords dropped: x86
 
 www-apps/jekyll
   MissingFile: required file ChangeLog doesn't exist
@@ -2523,20 +2523,20 @@ www-apps/mediawiki
 www-apps/metadot
   DeprecatedEAPI: version 6.1.6: uses deprecated EAPI: 0
   DeprecatedEAPI: version 6.4.5.4: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 6.1.6: "metadot6.1.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 6.4.5.4: "Metadot6.4.5.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 www-apps/mirmon
   DeprecatedEAPI: version 1.38-r4: uses deprecated EAPI: 0
-  MissingChksum: version 1.38-r4: "mirmon-1.38.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.38-r4: "mirmon-1.38.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 www-apps/mod_survey
   DeprecatedEAPI: version 3.2.5: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.2.5: "modsurvey-3.2.5.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.2.5: "modsurvey-docs-3.2.5.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 www-apps/moinmoin
   MissingFile: required file ChangeLog doesn't exist
@@ -2547,8 +2547,8 @@ www-apps/moodle
 www-apps/mypictures
   DeprecatedEAPI: version 20040202: uses deprecated EAPI: 0
   DeprecatedEAPI: version 20040202-r1: uses deprecated EAPI: 0
-  MissingChksum: version 20040202: "mypictures.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 20040202: "mypictures.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 www-apps/mythweb
   MissingFile: required file ChangeLog doesn't exist
@@ -2556,14 +2556,14 @@ www-apps/mythweb
 www-apps/nanoblogger
   DeprecatedEAPI: version 3.2.3: uses deprecated EAPI: 0
   DeprecatedEAPI: version 3.3: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.2.3: "nanoblogger-3.2.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.3: "nanoblogger-3.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.5_rc1: "nanoblogger-3.5-rc1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 www-apps/nanoc
-  DroppedKeywordWarning: version 3.7.5-r1: keywords dropped: x86
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 3.7.5-r1: keywords dropped: x86
 
 www-apps/nikola
   MissingFile: required file ChangeLog doesn't exist
@@ -2579,8 +2579,8 @@ www-apps/otrs
   WrongIndentFound: version 3.2.7: ebuild has whitespace in indentation on line 129
 
 www-apps/openwebstats
-  MissingChksum: version 1.1: "openwebstats-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1: "openwebstats-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 www-apps/otrs
   DeprecatedEAPI: version 3.2.7: uses deprecated EAPI: 2
@@ -2602,20 +2602,20 @@ www-apps/ownpaste
 
 www-apps/pcgi
   DeprecatedEAPI: version 2.0_alpha5: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.0_alpha5: "Zope-2.6.1-src.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 2.0_alpha5: "PCGI-HOWTO-1998-08-13.html.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 www-apps/phpBB
-  MissingChksum: version 3.0.10: "phpBB-3.0.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.0.10: "phpBB-3.0.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 www-apps/phpmp
   DeprecatedEAPI: version 0.11.0: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.11.0-r1: uses deprecated EAPI: 2
   NonExistentDeps: version 0.11.0-r1: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
-  MissingChksum: version 0.11.0: "phpMp-0.11.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.11.0: "phpMp-0.11.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 www-apps/phprojekt
   MissingFile: required file ChangeLog doesn't exist
@@ -2625,13 +2625,13 @@ www-apps/phpsysinfo
 
 www-apps/phpwebsite
   DeprecatedEAPI: version 0.10.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.10.2: "phpwebsite-0.10.2-full.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.10.2: "phpws_patch_20060419.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 www-apps/polarblog
-  MissingChksum: version 1.11.1: "pb_v1111.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.11.1: "pb_v1111.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 www-apps/postfixadmin
   MissingFile: required file ChangeLog doesn't exist
@@ -2639,8 +2639,8 @@ www-apps/postfixadmin
 www-apps/pyblosxom
   DeprecatedEclass: version 1.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.4.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.4.3: "pyblosxom-1.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.4.3: "pyblosxom-1.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 www-apps/redmine
   MissingFile: required file ChangeLog doesn't exist
@@ -2656,24 +2656,24 @@ www-apps/rt
   MissingFile: required file ChangeLog doesn't exist
 
 www-apps/rutorrent
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.4-r1: "rutorrent-3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.4-r1: "plugins-3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 www-apps/scgi
   DeprecatedEclass: version 1.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.14: uses deprecated EAPI: 3
-  MissingChksum: version 1.14: "scgi-1.14.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.14: "scgi-1.14.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 www-apps/sitebar
   DeprecatedEAPI: version 3.3.9-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.3.9-r2: "SiteBarPluginIMAP_3.3.7_1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.3.9-r2: "SiteBarPluginLDAP_3.3.7_1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.3.9-r2: "SiteBarPluginMailGate_3.3.7_1.0.4.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.3.9-r2: "SiteBarPluginMessenger_3.3.7_1.2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.3.9-r2: "SiteBarPluginXBELSync_3.3.7_1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 www-apps/sugarcrm
   DeprecatedEAPI: version 6.5.9: uses deprecated EAPI: 2
@@ -2689,30 +2689,30 @@ www-apps/trac-accountmanager
   DeprecatedEclass: version 0.4_p10645: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.4_p10645: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.4.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3_p9766: "trac-accountmanager-0.3_p9766.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.4_p10645: "trac-accountmanager-0.4_p10645.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 www-apps/trac-downloads
   DeprecatedEclass: version 0.3_p9282: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.3_p9282: uses deprecated EAPI: 3
   NonExistentDeps: version 0.3_p9282: depset rdepends: nonexistent atoms [ =www-apps/trac-0.12* ]
-  MissingChksum: version 0.3_p9282: "trac-downloads-0.3_p9282.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3_p9282: "trac-downloads-0.3_p9282.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 www-apps/trac-mercurial
   DeprecatedEclass: version 0.12.0.29_pre10899: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.12.0.29_pre10899: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.0.0.3_pre20130206: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingChksum: version 0.12.0.29_pre10899: "TracMercurial-0.12.0.29dev-r10899.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  DroppedKeywordWarning: version 1.0.0.3_pre20130206: keywords dropped: amd64, x86
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 1.0.0.3_pre20130206: keywords dropped: amd64, x86
+  MissingChksum: version 0.12.0.29_pre10899: "TracMercurial-0.12.0.29dev-r10899.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 www-apps/trac-tags
   DeprecatedEclass: version 0.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.6: uses deprecated EAPI: 3
-  MissingChksum: version 0.6: "trac-tags-0.6.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.6: "trac-tags-0.6.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 www-apps/tt-rss
   MissingFile: required file ChangeLog doesn't exist
@@ -2722,8 +2722,8 @@ www-apps/venus
   DeprecatedEAPI: version 20100911: uses deprecated EAPI: 3
   NonExistentDeps: version 20100911: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 20100911: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  MissingChksum: version 20100911: "venus-20100911.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 20100911: "venus-20100911.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 www-apps/viewvc
   DeprecatedEclass: version 1.1.20: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -2738,13 +2738,13 @@ www-apps/webmcp
 www-apps/websvn
   DeprecatedEAPI: version 2.3.2: uses deprecated EAPI: 2
   DeprecatedEAPI: version 2.3.3: uses deprecated EAPI: 2
-  MissingChksum: version 2.3.2: "websvn-2.3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.3.2: "websvn-2.3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 www-apps/wiliki
   DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 3
-  MissingChksum: version 0.6.1: "WiLiKi-0.6.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.6.1: "WiLiKi-0.6.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 www-apps/wordpress
   MissingFile: required file ChangeLog doesn't exist
@@ -2757,8 +2757,8 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 
 x11-drivers/afb-ucode
   DeprecatedEAPI: version 1.3.11: uses deprecated EAPI: 0
-  MissingChksum: version 1.3.11: "afb-ucode.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.3.11: "afb-ucode.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-drivers/ati-drivers
   MissingFile: required file ChangeLog doesn't exist
@@ -2770,12 +2770,12 @@ x11-drivers/radeon-ucode
   MissingFile: required file ChangeLog doesn't exist
 
 x11-drivers/xf86-input-acecad
-  MissingChksum: version 1.5.0: "xf86-input-acecad-1.5.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.5.0: "xf86-input-acecad-1.5.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-drivers/xf86-input-aiptek
-  MissingChksum: version 1.4.1: "xf86-input-aiptek-1.4.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.4.1: "xf86-input-aiptek-1.4.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-drivers/xf86-input-elographics
   MissingFile: required file ChangeLog doesn't exist
@@ -2784,12 +2784,12 @@ x11-drivers/xf86-input-evdev
   MissingFile: required file ChangeLog doesn't exist
 
 x11-drivers/xf86-input-fpit
-  MissingChksum: version 1.4.0: "xf86-input-fpit-1.4.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.4.0: "xf86-input-fpit-1.4.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-drivers/xf86-input-hyperpen
-  MissingChksum: version 1.4.1: "xf86-input-hyperpen-1.4.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.4.1: "xf86-input-hyperpen-1.4.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-drivers/xf86-input-joystick
   MissingFile: required file ChangeLog doesn't exist
@@ -2798,8 +2798,8 @@ x11-drivers/xf86-input-keyboard
   MissingFile: required file ChangeLog doesn't exist
 
 x11-drivers/xf86-input-libinput
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: alpha
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: alpha
 
 x11-drivers/xf86-input-mouse
   MissingFile: required file ChangeLog doesn't exist
@@ -2808,12 +2808,12 @@ x11-drivers/xf86-input-mtrack
   MissingFile: required file ChangeLog doesn't exist
 
 x11-drivers/xf86-input-mutouch
-  MissingChksum: version 1.3.0: "xf86-input-mutouch-1.3.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.3.0: "xf86-input-mutouch-1.3.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-drivers/xf86-input-penmount
-  MissingChksum: version 1.5.0: "xf86-input-penmount-1.5.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.5.0: "xf86-input-penmount-1.5.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-drivers/xf86-input-synaptics
   MissingFile: required file ChangeLog doesn't exist
@@ -2864,8 +2864,8 @@ x11-drivers/xf86-video-glint
   MissingFile: required file ChangeLog doesn't exist
 
 x11-drivers/xf86-video-i128
-  MissingChksum: version 1.3.5: "xf86-video-i128-1.3.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.3.5: "xf86-video-i128-1.3.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-drivers/xf86-video-i740
   MissingFile: required file ChangeLog doesn't exist
@@ -2891,9 +2891,9 @@ x11-drivers/xf86-video-neomagic
   MissingFile: required file ChangeLog doesn't exist
 
 x11-drivers/xf86-video-newport
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2.3: "xf86-video-newport-0.2.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 0.2.4: "xf86-video-newport-0.2.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 x11-drivers/xf86-video-nouveau
   MissingFile: required file ChangeLog doesn't exist
@@ -2945,46 +2945,46 @@ x11-drivers/xf86-video-suncg14
   DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
   DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
   DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
-  MissingChksum: version 1.1.1: "xf86-video-suncg14-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1.1: "xf86-video-suncg14-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-drivers/xf86-video-suncg3
   DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
   DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
   DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
   DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
-  MissingChksum: version 1.1.1: "xf86-video-suncg3-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1.1: "xf86-video-suncg3-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-drivers/xf86-video-suncg6
   DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
   DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
   DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
   DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
-  MissingChksum: version 1.1.1: "xf86-video-suncg6-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1.1: "xf86-video-suncg6-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-drivers/xf86-video-sunffb
   DeprecatedEclass: version 1.2.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
   DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
-  MissingChksum: version 1.2.1: "xf86-video-sunffb-1.2.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2.1: "xf86-video-sunffb-1.2.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-drivers/xf86-video-sunleo
   DeprecatedEclass: version 1.2.0: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
   DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 0
   DeprecatedEclass: version 1.2.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
   DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
-  MissingChksum: version 1.2.0: "xf86-video-sunleo-1.2.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2.0: "xf86-video-sunleo-1.2.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-drivers/xf86-video-suntcx
   DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
   DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
   DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
   DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
-  MissingChksum: version 1.1.1: "xf86-video-suntcx-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1.1: "xf86-video-suntcx-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 x11-drivers/xf86-video-tdfx
   MissingFile: required file ChangeLog doesn't exist
@@ -3001,8 +3001,8 @@ x11-drivers/xf86-video-tseng
 x11-drivers/xf86-video-v4l
   DeprecatedEclass: version 0.2.0: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
   DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 0
-  MissingChksum: version 0.2.0: "xf86-video-v4l-0.2.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.2.0: "xf86-video-v4l-0.2.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 x11-drivers/xf86-video-vesa
   MissingFile: required file ChangeLog doesn't exist
@@ -3024,8 +3024,8 @@ WARNING pkgcore: metadata.dtd cannot be opened from
 
 net-p2p/amule
   DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 2
-  MissingChksum: version 2.3.1: "aMule-2.3.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.3.1: "aMule-2.3.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-p2p/bitcoin-cli
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -3056,8 +3056,8 @@ net-p2p/bittorrent
 
 net-p2p/btpd
   DeprecatedEAPI: version 0.15: uses deprecated EAPI: 0
-  MissingChksum: version 0.15: "btpd-0.15.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.15: "btpd-0.15.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-p2p/classified-ads
   MissingFile: required file ChangeLog doesn't exist
@@ -3068,8 +3068,8 @@ net-p2p/createtorrent
 
 net-p2p/ctcs
   DeprecatedEAPI: version 1.4.1: uses deprecated EAPI: 0
-  MissingChksum: version 1.4.1: "ctcs-1.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.4.1: "ctcs-1.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-p2p/ctorrent
   MissingFile: required file ChangeLog doesn't exist
@@ -3080,13 +3080,13 @@ net-p2p/datacoin-hp
 
 net-p2p/dbhub
   DeprecatedEAPI: version 0.451-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.451-r1: "dbhub-0.451.tbz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.451-r1: "dbhub-0.451.tbz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-p2p/dclib
   DeprecatedEAPI: version 0.3.23: uses deprecated EAPI: 2
-  MissingChksum: version 0.3.23: "dclib-0.3.23.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3.23: "dclib-0.3.23.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-p2p/deluge
   DeprecatedEclass: version 1.3.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -3113,8 +3113,8 @@ net-p2p/freenet
 
 net-p2p/gift
   DeprecatedEAPI: version 0.11.8.1-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.11.8.1-r1: "gift-0.11.8.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.11.8.1-r1: "gift-0.11.8.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-p2p/gift-ares
   MetadataError: version 0.3.0-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-p2p/gift-ares-0.3.0-r1, attr fetchables
@@ -3132,24 +3132,24 @@ flagged token- mirror://berlios/gift-fasttrack/giFT-FastTrack-0.8.9.tar.gz
 
 net-p2p/gift-gnutella
   DeprecatedEAPI: version 0.0.11: uses deprecated EAPI: 0
-  MissingChksum: version 0.0.11: "gift-gnutella-0.0.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.0.11: "gift-gnutella-0.0.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-p2p/gift-openft
   DeprecatedEAPI: version 0.2.1.6: uses deprecated EAPI: 0
-  MissingChksum: version 0.2.1.6: "gift-openft-0.2.1.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.2.1.6: "gift-openft-0.2.1.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-p2p/giftcurs
   DeprecatedEAPI: version 0.6.2: uses deprecated EAPI: 0
-  MissingChksum: version 0.6.2: "giFTcurs-0.6.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.6.2: "giFTcurs-0.6.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-p2p/gnut
   DeprecatedEAPI: version 0.4.28-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4.28-r1: "gnut-0.4.28.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.4.28-r1: "gnut-0.4.28-patches.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 net-p2p/gtk-gnutella
   MissingFile: required file ChangeLog doesn't exist
@@ -3159,8 +3159,8 @@ net-p2p/gtorrentviewer
 
 net-p2p/hx
   DeprecatedEAPI: version 0.4.11: uses deprecated EAPI: 0
-  MissingChksum: version 0.4.11: "mhxd-0.4.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.4.11: "mhxd-0.4.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-p2p/i2p
   MissingFile: required file ChangeLog doesn't exist
@@ -3187,22 +3187,22 @@ net-p2p/litecoind
 
 net-p2p/microdc
   DeprecatedEAPI: version 0.11.0: uses deprecated EAPI: 0
-  MissingChksum: version 0.11.0: "microdc-0.11.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.11.0: "microdc-0.11.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-p2p/microdc2
   DeprecatedEAPI: version 0.15.6-r2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.15.6-r2: "microdc2-0.15.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.15.6-r2: "microdc2_0.15.6-1.debian.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 net-p2p/mktorrent
   MissingFile: required file ChangeLog doesn't exist
 
 net-p2p/mktorrent-borg
   DeprecatedEAPI: version 0.9.9: uses deprecated EAPI: 0
-  MissingChksum: version 0.9.9: "mktorrent-0.9.9.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.9.9: "mktorrent-0.9.9.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-p2p/mldonkey
   DeprecatedEAPI: version 3.1.3: uses deprecated EAPI: 2
@@ -3213,8 +3213,8 @@ net-p2p/multibit
 
 net-p2p/myster
   DeprecatedEAPI: version 8.0-r1: uses deprecated EAPI: 0
-  MissingChksum: version 8.0-r1: "Myster_PR8_Generic.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 8.0-r1: "Myster_PR8_Generic.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-p2p/nap
   DeprecatedEAPI: version 1.5.4-r1: uses deprecated EAPI: 0
@@ -3230,18 +3230,18 @@ net-p2p/nicotine+
   MissingFile: required file ChangeLog doesn't exist
 
 net-p2p/opendchub
-  MissingChksum: version 0.8.2: "opendchub-0.8.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.8.2: "opendchub-0.8.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-p2p/phex
   DeprecatedEAPI: version 3.2.0.102-r1: uses deprecated EAPI: 2
-  MissingChksum: version 3.2.0.102-r1: "phex_3.2.0.102_src.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.2.0.102-r1: "phex_3.2.0.102_src.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-p2p/phxd
   DeprecatedEAPI: version 0.1.0_pre23092005: uses deprecated EAPI: 0
-  MissingChksum: version 0.1.0_pre23092005: "phxd-0.1.0_pre23092005.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.1.0_pre23092005: "phxd-0.1.0_pre23092005.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-p2p/ppcoin-qt
   MissingFile: required file ChangeLog doesn't exist
@@ -3279,16 +3279,16 @@ net-p2p/saku
 
 net-p2p/smet2html
   DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-  MissingChksum: version 0.1: "smet2html-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.1: "smet2html-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-p2p/soulseek-qt
   MissingFile: required file ChangeLog doesn't exist
 
 net-p2p/syrep
   DeprecatedEAPI: version 0.9: uses deprecated EAPI: 2
-  MissingChksum: version 0.9: "syrep-0.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.9: "syrep-0.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-p2p/torrentinfo
   MissingFile: required file ChangeLog doesn't exist
@@ -3300,8 +3300,8 @@ net-p2p/transmission-remote-cli
   MissingFile: required file ChangeLog doesn't exist
 
 net-p2p/transmission-remote-gtk
-  MissingChksum: version 1.0: "transmission-remote-gtk-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0: "transmission-remote-gtk-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-p2p/tribler
   DeprecatedEclass: version 6.0.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -3309,13 +3309,13 @@ net-p2p/tribler
 
 net-p2p/tvrss
   DeprecatedEAPI: version 1.8_beta: uses deprecated EAPI: 2
-  MissingChksum: version 1.8_beta: "tvrss-1.8beta.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.8_beta: "tvrss-1.8beta.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-p2p/valknut
   DeprecatedEAPI: version 0.4.9: uses deprecated EAPI: 2
-  MissingChksum: version 0.4.9: "valknut-0.4.9-oxygen-icons.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.4.9: "valknut-0.4.9-oxygen-icons.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-p2p/vuze
   MissingFile: required file ChangeLog doesn't exist
@@ -3325,18 +3325,18 @@ net-p2p/vuze-coreplugins
 
 net-p2p/wire
   DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
-  MissingChksum: version 1.0.2: "wire-1.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.2: "wire-1.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-p2p/xnap
   DeprecatedEAPI: version 2.5-r3: uses deprecated EAPI: 0
-  MissingChksum: version 2.5-r3: "xnap-2.5r3.jar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.5-r3: "xnap-2.5r3.jar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-p2p/yaggui
   DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.9.2: "Yaggui-src-0.9.2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -3344,334 +3344,358 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sys-boot/aboot
-  DeprecatedEAPI: version 1.0_pre20040408-r3: uses deprecated EAPI: 0
-  MissingChksum: version 1.0_pre20040408-r3: "aboot-1.0_pre20040408.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.0_pre20040408-r3: "gentoo-headers-base-2.6.22.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1.0_pre20040408-r3: "aboot_gentoo.diff.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+mail-client/alot
   MissingFile: required file ChangeLog doesn't exist
 
-sys-boot/arcload
-  MissingChksum: version 0.50-r1: "arcload-0.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+mail-client/alpine
   MissingFile: required file ChangeLog doesn't exist
 
-sys-boot/bootcreator
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
-  MissingChksum: version 1.1: "bootcreator-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+mail-client/balsa
   MissingFile: required file ChangeLog doesn't exist
 
-sys-boot/colo
-  DeprecatedEAPI: version 1.22: uses deprecated EAPI: 0
-  MissingChksum: version 1.22: "colo-1.22.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+mail-client/biabam
+  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.9.7: "biabam-0.9.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+mail-client/claws-mail
   MissingFile: required file ChangeLog doesn't exist
 
-sys-boot/cromwell
-  MissingChksum: version 2.40-r3: "cromwell-2.40.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 2.40-r3: "cromwell-2.40-r3-cvs-fixes.patch.lzma" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+mail-client/claws-mail-acpi-notifier
+  DeprecatedEAPI: version 1.0.28: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-sys-boot/cromwell-bin
-  DeprecatedEAPI: version 2.31: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.40: uses deprecated EAPI: 0
-  MissingChksum: version 2.31: "cromwell-2.31.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 2.40: "cromwell-2.40.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+mail-client/claws-mail-address_keeper
+  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-sys-boot/dvhtool
-  MissingChksum: version 1.0.1-r2: "dvhtool_1.0.1.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+mail-client/claws-mail-archive
+  DeprecatedEAPI: version 0.6.13: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-sys-boot/efibootmgr
-  DeprecatedEAPI: version 0.5.4: uses deprecated EAPI: 0
+mail-client/claws-mail-att-remover
+  DeprecatedEAPI: version 1.0.15: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-sys-boot/elilo
-  DeprecatedEAPI: version 3.6_p20060314: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.12: uses deprecated EAPI: 0
-  MissingChksum: version 3.6_p20060314: "elilo-nightly_2006-03-14.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.6_p20060314: "elilo_3.6-1.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.10: "elilo-3.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.10: "elilo_3.10-1.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.12: "elilo-3.12-source.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.12: "elilo_3.12-1.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/getdvhoff
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/gnu-efi
-  DeprecatedEAPI: version 3.0a-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.0g: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.0i: uses deprecated EAPI: 0
-  MissingChksum: version 3.0a-r1: "gnu-efi-3.0a.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.0g: "gnu-efi_3.0g.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/grub
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/grub-static
-  DeprecatedEAPI: version 0.96-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.97: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.97-r6: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.97-r9: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.97-r10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.97-r12: uses deprecated EAPI: 0
-  MissingChksum: version 0.96-r1: "grub-static-0.96.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.97: "grub-static-0.97.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.97-r6: "grub-static-0.97-r6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/gummiboot
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/lilo
-  DeprecatedEAPI: version 22.8-r2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 23.2-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 23.2-r2: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/makebootfat
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/mbr
-  DeprecatedEAPI: version 1.1.11: uses deprecated EAPI: 0
-  MissingChksum: version 1.1.11: "mbr-1.1.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/mbr-gpt
-  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 0
-  MissingChksum: version 0.0.1: "mbr-gpt_0.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/milo
-  DeprecatedEAPI: version 2.4.18: uses deprecated EAPI: 0
-  MissingChksum: version 2.4.18: "milo-2.2-18.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 2.4.18: "linux-2.2.25.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 2.4.18: "ldmilo-patched-20010430" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 2.4.18: "linux-2.2.20-reiserfs-3.5.35.diff.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 2.4.18: "linload.exe" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 2.4.18: "MILO-HOWTO" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/netboot
-  DeprecatedEAPI: version 0.10.2: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/nettrom
-  DeprecatedEAPI: version 2.3.3: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/os-prober
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/palo
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/plymouth
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/plymouth-openrc-plugin
-  MissingChksum: version 0.1.2: "plymouth-openrc-plugin-0.1.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/psoload
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
-  MissingChksum: version 2.0: "PSOloadV2.0_Linux.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/quik
-  DeprecatedEAPI: version 2.1.6: uses deprecated EAPI: 0
-  MissingChksum: version 2.1.6: "quik-2.1-6.ydl4.src.rpm" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/raincoat
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 0
-  MissingChksum: version 0.5: "raincoat-0.5+.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.11: "raincoat-0.11.tbz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/raspberrypi-firmware
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/raspberrypi-mkimage
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/sgibootcd
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/shlilo-lantank
-  DeprecatedEAPI: version 20040408: uses deprecated EAPI: 0
-  MissingChksum: version 20040408: "sh-lilo-sel-20040408.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/silo
-  DeprecatedEAPI: version 1.4.14_p20100228: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.4.14_p20120226: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.4.14_p20120819: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/syslinux
-  DeprecatedEAPI: version 3.86: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 4.07: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/tboot
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/unetbootin
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/vboot-utils
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/winusb
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/yaboot
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-boot/yaboot-static
-  MissingFile: required file ChangeLog doesn't exist
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-
-sys-power/acpi
-  MissingChksum: version 1.6: "acpi-1.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-power/acpi_call
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-power/acpid
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-power/acpitool
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-power/apcupsd
-  DeprecatedEAPI: version 3.14.8-r2: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-power/athcool
-  DeprecatedEAPI: version 0.3.12: uses deprecated EAPI: 3
-  MissingChksum: version 0.3.12: "athcool-0.3.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-power/bbswitch
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-power/cpudyn
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
-  MissingChksum: version 1.0.1: "cpudyn-1.0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-power/cpupower
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-power/cpuspeedy
-  DeprecatedEclass: version 0.4.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 3
-  MissingChksum: version 0.4.1: "cpuspeedy-0.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-power/hibernate-script
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-power/iasl
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-power/ncpufreqd
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-power/nut
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-power/nvclock
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-power/nvram-reboot
-  DeprecatedEAPI: version 2004.10.03: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-
-sys-power/nvram-wakeup
+mail-client/claws-mail-attachwarner
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-  MissingChksum: version 1.0: "nvram-wakup-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
 
-sys-power/phc-intel
-  MissingFile: required file ChangeLog doesn't exist
-  SizeViolation: "files/phc-intel-0.3.2-rev12-trailing-space-misc.patch" exceeds 20k in size; 33960 bytes total
-
-sys-power/phc-k8
-  MissingChksum: version 0.4.3: "phc-k8-0.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.4.4: "phc-k8-0.4.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+mail-client/claws-mail-clamd
+  DeprecatedEAPI: version 3.5.5: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-sys-power/phctool
-  DeprecatedEclass: version 0.5.2.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.5.2.2-r1: uses deprecated EAPI: 2
-  DeprecatedEclass: version 0.5.2.2-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingChksum: version 0.5.2.2-r1: "phctool-0.5.2.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+mail-client/claws-mail-fancy
+  DeprecatedEAPI: version 0.9.17: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
-sys-power/pm-quirks
-  DeprecatedEAPI: version 20100619: uses deprecated EAPI: 3
-  MissingChksum: version 20100619: "pm-quirks-20100619.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+mail-client/claws-mail-fetchinfo
+  DeprecatedEAPI: version 0.4.25: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-sys-power/pm-utils
+mail-client/claws-mail-gdata
   MissingFile: required file ChangeLog doesn't exist
 
-sys-power/pmtools
-  DeprecatedEAPI: version 20071116: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20110323: uses deprecated EAPI: 2
-  MissingChksum: version 20071116: "pmtools-20071116.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  DroppedKeywordWarning: version 20110323: keywords dropped: ppc
+mail-client/claws-mail-gtkhtml
+  DeprecatedEAPI: version 0.34: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-sys-power/powerman
+mail-client/claws-mail-mailmbox
+  DeprecatedEAPI: version 1.15: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-sys-power/powermgmt-base
+mail-client/claws-mail-newmail
+  DeprecatedEAPI: version 0.0.16: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-sys-power/powernowd
+mail-client/claws-mail-notification
   MissingFile: required file ChangeLog doesn't exist
 
-sys-power/powertop
-  DeprecatedEAPI: version 1.13: uses deprecated EAPI: 3
+mail-client/claws-mail-pdf-viewer
+  MissingFile: required file ChangeLog doesn't exist
+
+mail-client/claws-mail-perl
+  DeprecatedEAPI: version 0.9.20: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+mail-client/claws-mail-python
+  MissingFile: required file ChangeLog doesn't exist
+
+mail-client/claws-mail-rssyl
+  MissingFile: required file ChangeLog doesn't exist
+
+mail-client/claws-mail-spam-report
+  MissingFile: required file ChangeLog doesn't exist
+
+mail-client/claws-mail-tnef-parse
+  MissingFile: required file ChangeLog doesn't exist
+
+mail-client/claws-mail-vcalendar
+  MissingFile: required file ChangeLog doesn't exist
+
+mail-client/clawsker
+  DeprecatedEAPI: version 0.7.8: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.7.10: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+mail-client/cone
+  MissingFile: required file ChangeLog doesn't exist
+
+mail-client/drac
+  DeprecatedEAPI: version 1.12-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.12-r1: "drac.tar.Z" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+mail-client/etpan-ng
+  DeprecatedEAPI: version 0.7.1-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.7.1-r1: "etpan-ng-0.7.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+mail-client/evolution
+  MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 3.16.3: keywords dropped: alpha, arm, ia64, ppc, ppc64, sparc
+
+mail-client/geary
+  MissingFile: required file ChangeLog doesn't exist
+
+mail-client/hap
+  MissingFile: required file ChangeLog doesn't exist
+
+mail-client/mail-notification
+  MissingFile: required file ChangeLog doesn't exist
+  SizeViolation: "files/mail-notification-aarch64.patch" exceeds 20k in size; 49364 bytes total
+
+mail-client/mailx
+  DeprecatedEAPI: version 8.1.2.20050715-r6: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+mail-client/mailx-support
+  DeprecatedEAPI: version 20060102-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+mail-client/mutt
+  MetadataError: version 1.5.23-r5: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.23-r5, attr fetchables
+error: mirror://sourceforge/mutt/mutt-1.5.23.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz ftp://ftp.mutt.org/mutt/devel/mutt-1.5.23.tar.gz mirror://gentoo/mutt-1.5.23-gentoo-patches-r5.tar.bz2 http://dev.gentoo.org/~grobian/distfiles/mutt-1.5.23-gentoo-patches-r5.tar.bz2 is unparseable
+flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz isn't a known mirror tier
+  MetadataError: version 1.5.23-r6: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.23-r6, attr fetchables
+error: mirror://sourceforge/mutt/mutt-1.5.23.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz ftp://ftp.mutt.org/mutt/devel/mutt-1.5.23.tar.gz mirror://gentoo/mutt-1.5.23-gentoo-patches-r6.tar.bz2 http://dev.gentoo.org/~grobian/distfiles/mutt-1.5.23-gentoo-patches-r6.tar.bz2 is unparseable
+flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz isn't a known mirror tier
+  MetadataError: version 1.5.23-r7: attr(fetchables): error- Metadata Exception: pkg ebuild src: mail-client/mutt-1.5.23-r7, attr fetchables
+error: mirror://sourceforge/mutt/mutt-1.5.23.tar.gz mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz ftp://ftp.mutt.org/mutt/devel/mutt-1.5.23.tar.gz mirror://gentoo/mutt-1.5.23-gentoo-patches-r7.tar.bz2 http://dev.gentoo.org/~grobian/distfiles/mutt-1.5.23-gentoo-patches-r7.tar.bz2 is unparseable
+flagged token- uri mirror://bitbucket/mutt/mutt/downloads/mutt-1.5.23.tar.gz isn't a known mirror tier
+  MissingFile: required file ChangeLog doesn't exist
+
+mail-client/nail
+  DeprecatedEAPI: version 12.4: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 12.4-r2: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+
+mail-client/nmh
+  DeprecatedEAPI: version 1.3-r3: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.3-r3: "nmh-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+mail-client/novell-groupwise-client
+  MissingFile: required file ChangeLog doesn't exist
+
+mail-client/pinepgp
+  DeprecatedEAPI: version 0.18.0-r1: uses deprecated EAPI: 0
+  NonExistentDeps: version 0.18.0-r1: depset depends: nonexistent atoms [ mail-client/pine ]
+  NonExistentDeps: version 0.18.0-r1: depset rdepends: nonexistent atoms [ mail-client/pine ]
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.18.0-r1: "pinepgp-0.18.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+mail-client/roundcube
+  MissingFile: required file ChangeLog doesn't exist
+
+mail-client/squirrelmail
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.4.23_pre20140426: "amavisnewsql-0.8.0-1.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+mail-client/sylpheed
+  MissingFile: required file ChangeLog doesn't exist
+
+mail-client/thunderbird
+  MissingFile: required file ChangeLog doesn't exist
+
+mail-client/thunderbird-bin
+  MissingFile: required file ChangeLog doesn't exist
+
+mail-client/trojita
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 0.5: keywords dropped: ppc
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
 
-sys-power/sispmctl
-  DeprecatedEAPI: version 2.7: uses deprecated EAPI: 2
+dev-scheme/bigloo
+  DeprecatedEAPI: version 3.0c_p4: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 3.4a_p3: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.0c_p4: "bigloo3.0c-4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 3.4a_p3: "bigloo-3.4a-patchset-1.tbz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 3.4a_p3: "bigloo3.4a-3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 3.6a: "bigloo3.6a.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+dev-scheme/c-wrapper
   MissingFile: required file ChangeLog doesn't exist
 
-sys-power/suspend
+dev-scheme/chicken
+  DeprecatedEAPI: version 4.8.0.3-r1: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
-sys-power/thermald
+dev-scheme/elk
   MissingFile: required file ChangeLog doesn't exist
 
-sys-power/upower
+dev-scheme/escm
   MissingFile: required file ChangeLog doesn't exist
 
-sys-power/upower-pm-utils
+dev-scheme/gambit
   MissingFile: required file ChangeLog doesn't exist
 
-sys-power/yacpi
-  DeprecatedEAPI: version 3.0.1: uses deprecated EAPI: 3
-  MissingChksum: version 3.0.1: "yacpi-3.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+dev-scheme/gauche
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.9.3.3: "Gauche-0.9.3.3.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+dev-scheme/gauche-cdb
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-scheme/gauche-gl
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-scheme/gauche-gtk
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.6_pre1: "Gauche-gtk-0.6_pre1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+dev-scheme/gauche-kakasi
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.1: "Gauche-kakasi-0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+dev-scheme/gauche-qdbm
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-scheme/goosh
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.3: "goosh-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+dev-scheme/greg
+  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-scheme/guile
+  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 2.0.0: keywords dropped: alpha, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
+
+dev-scheme/guile-cairo
+  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-scheme/guile-gnome-platform
+  DeprecatedEAPI: version 2.16.1: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-scheme/guile-gui
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.2: "guile-gui-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+dev-scheme/guile-lib
+  DeprecatedEAPI: version 0.1.9: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-scheme/guile-www
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-scheme/hop
+  DeprecatedEAPI: version 2.0.1: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.0.1: "hop-2.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+dev-scheme/ikarus
+  DeprecatedEAPI: version 0.0.3_p1870: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.0.3_p1870: "ikarus-scheme-r1870.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+dev-scheme/jscheme
+  DeprecatedEAPI: version 7.2: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-scheme/kawa
+  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.10: "XQTS_1_0_2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+dev-scheme/net-http
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3.1: "net-http-0.3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+dev-scheme/racket
+  MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 6.0.1: keywords dropped: ppc, ppc64
+  MissingChksum: version 5.1.2: "racket-5.1.2-src-unix.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+dev-scheme/scheme48
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-scheme/schemik
+  DeprecatedEAPI: version 1.2.40.0: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2.40.0: "schemik-1.2.40.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+dev-scheme/schoca
+  DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3.0: "schoca-0.3.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+dev-scheme/scm
+  DeprecatedEAPI: version 5.5.6: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 5.5.6-r1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 5.5.6-r2: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-scheme/scmxlate
+  DeprecatedEAPI: version 20090410: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-scheme/sigscheme
+  DeprecatedEAPI: version 0.8.5: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.8.5: "sigscheme-0.8.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+dev-scheme/slib
+  DeprecatedEAPI: version 3.1.5-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.2.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.2.2: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.1.5-r1: "slib3a5.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 3.2.1: "slib-3b1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 3.2.2: "slib-3b2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+dev-scheme/stalin
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-scheme/stklos
+  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.10: "stklos-1.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+dev-scheme/termite
+  DeprecatedEAPI: version 0.15: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.15: "termite-0.15.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+dev-scheme/tinyscheme
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-scheme/ypsilon
   MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -3689,8 +3713,8 @@ net-ftp/axyftp
 net-ftp/bareftp
   DeprecatedEclass: version 0.3.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEclass: version 0.3.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  MissingChksum: version 0.3.9: "bareftp-0.3.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3.9: "bareftp-0.3.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-ftp/cmdftp
   MissingFile: required file ChangeLog doesn't exist
@@ -3734,8 +3758,8 @@ net-ftp/oftpd
 
 net-ftp/oneclickftp
   DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 2
-  MissingChksum: version 0.5.1: "oneclickftp-0.5.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.5.1: "oneclickftp-0.5.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-ftp/proftpd
   MissingFile: required file ChangeLog doesn't exist
@@ -3757,16 +3781,16 @@ net-ftp/qshare
 
 net-ftp/scythia
   DeprecatedEAPI: version 0.9.3_p2: uses deprecated EAPI: 3
-  MissingChksum: version 0.9.3_p2: "scythia_0.9.3-2-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.9.3_p2: "scythia_0.9.3-2-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-ftp/tftp-hpa
   MissingFile: required file ChangeLog doesn't exist
 
 net-ftp/tlswrap
   DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
-  MissingChksum: version 1.04: "tlswrap-1.04.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.04: "tlswrap-1.04.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-ftp/tnftp
   DeprecatedEAPI: version 20100108: uses deprecated EAPI: 2
@@ -3787,82 +3811,43 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-laptop/batti
-  DeprecatedEclass: version 0.3.8-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+dev-go/go-crypto
   MissingFile: required file ChangeLog doesn't exist
 
-app-laptop/configure-trackpoint
+dev-go/go-eapache-queue
   MissingFile: required file ChangeLog doesn't exist
 
-app-laptop/dispad
+dev-go/go-net
   MissingFile: required file ChangeLog doesn't exist
 
-app-laptop/easy-slow-down-manager
+dev-go/go-oauth2
   MissingFile: required file ChangeLog doesn't exist
 
-app-laptop/hdaps-gl
+dev-go/go-protobuf
   MissingFile: required file ChangeLog doesn't exist
 
-app-laptop/hdapsd
-  WhitespaceFound: version 20141203: ebuild has leading whitespace on lines 66, 70
+dev-go/go-resiliency
   MissingFile: required file ChangeLog doesn't exist
 
-app-laptop/i8kutils
+dev-go/go-snappy
   MissingFile: required file ChangeLog doesn't exist
 
-app-laptop/ibam
+dev-go/go-spew
   MissingFile: required file ChangeLog doesn't exist
 
-app-laptop/laptop-mode-tools
+dev-go/go-sys
   MissingFile: required file ChangeLog doesn't exist
 
-app-laptop/lphdisk
-  DeprecatedEAPI: version 0.9.1-r2: uses deprecated EAPI: 2
+dev-go/go-text
   MissingFile: required file ChangeLog doesn't exist
 
-app-laptop/nvidiabl
+dev-go/go-tools
   MissingFile: required file ChangeLog doesn't exist
 
-app-laptop/pbbuttonsd
-  DeprecatedEAPI: version 0.8.1-r3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.8.1-r4: uses deprecated EAPI: 0
+dev-go/godep
   MissingFile: required file ChangeLog doesn't exist
 
-app-laptop/pommed
-  MissingFile: required file ChangeLog doesn't exist
-
-app-laptop/powerprefs
-  DeprecatedEAPI: version 0.8.0: uses deprecated EAPI: 2
-
-app-laptop/prey
-  BadInsIntoDir: version 0.5.4-r1: ebuild uses insinto /etc/cron.d on line 136
-
-app-laptop/powerprefs
-  MissingFile: required file ChangeLog doesn't exist
-
-app-laptop/prey
-  MissingFile: required file ChangeLog doesn't exist
-
-app-laptop/radeontool
-  MissingFile: required file ChangeLog doesn't exist
-
-app-laptop/samsung-tools
-  MissingFile: required file ChangeLog doesn't exist
-
-app-laptop/spicctrl
-  MissingFile: required file ChangeLog doesn't exist
-
-app-laptop/thinkfan
-  MissingFile: required file ChangeLog doesn't exist
-
-app-laptop/tp_smapi
-  MissingFile: required file ChangeLog doesn't exist
-
-app-laptop/tpacpi-bat
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  MissingFile: required file ChangeLog doesn't exist
-
-app-laptop/tpb
+dev-go/sarama
   MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -3893,8 +3878,8 @@ games-sports/ski
   MissingFile: required file ChangeLog doesn't exist
 
 games-sports/speed-dreams
-  MissingChksum: version 1.4.0: "speed-dreams-1.4.0-r2307-src.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.4.0: "speed-dreams-1.4.0-r2307-src.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 games-sports/stormbaancoureur
   MissingFile: required file ChangeLog doesn't exist

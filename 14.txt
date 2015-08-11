@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 14 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-texlive/*' 'sys-devel/*' 'sys-kernel/*' 'x11-apps/*' 'net-im/*' 'games-board/*' 'net-proxy/*' 'games-util/*' 'www-misc/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'sys-devel/*' 'kde-apps/*' 'x11-wm/*' 'app-backup/*' 'games-board/*' 'app-forensics/*' 'games-util/*' 'gnustep-base/*' 'games-server/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /usr/lib64/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -14,302 +14,339 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-texlive/texlive-basic
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/aqemu
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-bibtexextra
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/aranym
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-context
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/armv8-fast-model
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-documentation-arabic
+app-emulation/bochs
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-documentation-base
+app-emulation/cloud-init
   MissingFile: required file ChangeLog doesn't exist
+  SizeViolation: "files/growpart" exceeds 20k in size; 21323 bytes total
 
-dev-texlive/texlive-documentation-bulgarian
+app-emulation/coldfire
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-documentation-chinese
+app-emulation/crossover-bin
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-documentation-czechslovak
+app-emulation/crossover-office-bin
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 6.0.0: "install-crossover-standard-6.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.0.1: "install-crossover-standard-6.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.1.0: "install-crossover-standard-6.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.2.0: "install-crossover-standard-6.2.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-texlive/texlive-documentation-dutch
+app-emulation/crossover-office-pro-bin
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 5.0.0: "install-crossover-pro-5.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 5.0.1: "install-crossover-pro-5.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 5.0.3: "install-crossover-pro-5.0.3.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.0.0: "install-crossover-pro-6.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.1.0: "install-crossover-pro-6.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.2.0: "install-crossover-pro-6.2.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 7.0.2: "install-crossover-pro-7.0.2.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 7.1.0: "install-crossover-pro-7.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 8.0.0: "install-crossover-pro-8.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 9.0.0: "install-crossover-pro-9.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 9.0.1: "install-crossover-pro-9.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 9.1.0: "install-crossover-pro-9.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 9.2.0: "install-crossover-pro-9.2.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-texlive/texlive-documentation-english
+app-emulation/dinero
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-documentation-finnish
+app-emulation/dlx
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.0-r1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-documentation-french
+app-emulation/docker
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-documentation-german
+app-emulation/docker-compose
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-documentation-italian
+app-emulation/domi
+  DeprecatedEAPI: version 20060816: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-documentation-japanese
+app-emulation/dosemu
+  DeprecatedEAPI: version 1.4.1_pre20091009: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-documentation-korean
+app-emulation/dynamips
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-documentation-mongolian
+app-emulation/e-uae
+  DeprecatedEAPI: version 0.8.29_rc4-r2: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-documentation-polish
+app-emulation/edumips64
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-documentation-portuguese
+app-emulation/free42
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-documentation-russian
+app-emulation/fuse
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-documentation-serbian
+app-emulation/fuse-utils
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-documentation-slovenian
+app-emulation/ganeti
+  BadInsIntoDir: version 2.10.5-r4: ebuild uses insinto /etc/cron.d on line 154
+  BadInsIntoDir: version 2.11.6-r2: ebuild uses insinto /etc/cron.d on line 191
+  BadInsIntoDir: version 2.12.1-r3: ebuild uses insinto /etc/cron.d on line 224
+  BadInsIntoDir: version 2.12.3-r2: ebuild uses insinto /etc/cron.d on line 232
+  BadInsIntoDir: version 2.13.0-r2: ebuild uses insinto /etc/cron.d on line 228
+  BadInsIntoDir: version 2.14.1-r1: ebuild uses insinto /etc/cron.d on line 262
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-documentation-spanish
+app-emulation/ganeti-htools
+  DeprecatedEAPI: version 0.2.8: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-documentation-thai
+app-emulation/ganeti-instance-debian-etch
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-documentation-turkish
+app-emulation/ganeti-instance-debootstrap
+  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-documentation-ukrainian
+app-emulation/ganeti-instance-image
+  NonExistentDeps: version 0.6: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-documentation-vietnamese
+app-emulation/gxemul
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-fontsextra
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/hercules
+  DeprecatedEAPI: version 3.06: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-fontsrecommended
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/kvm-kmod
+  DeprecatedEAPI: version 3.3.6: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 3.4: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 3.6: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 3.8: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 3.10.1: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-fontutils
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/libcacard
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-formatsextra
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/libguestfs
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-games
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/libguestfs-appliance
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-genericextra
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/libspectrum
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-genericrecommended
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/libvirt
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-htmlxml
+app-emulation/libvirt-glib
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-humanities
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/libvirt-snmp
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langafrican
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/lxc
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 1.1.0-r6: keywords dropped: arm64, ppc64, x86
 
-dev-texlive/texlive-langarabic
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/lxd
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langarmenian
+app-emulation/open-vm-tools
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langchinese
+app-emulation/open-vm-tools-kmod
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langcjk
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/openstack-guest-agents-unix
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langcroatian
+app-emulation/phpvirtualbox
+  DeprecatedEAPI: version 4.1.7-r2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 4.1.11: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 4.2.3b: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langcyrillic
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/playonlinux
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langczechslovak
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/q4wine
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langdanish
+app-emulation/qemu
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langdutch
+app-emulation/qemu-guest-agent
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langenglish
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/qtemu
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langeuropean
+app-emulation/rex-client
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langfinnish
+app-emulation/runc
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langfrench
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/simh
+  DeprecatedEAPI: version 3.3.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.8.1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langgerman
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/ski
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langgreek
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/skyeye
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langhebrew
+app-emulation/softgun
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langhungarian
+app-emulation/spectemu
+  DeprecatedEAPI: version 0.99.3: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langindic
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/spice
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langitalian
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/spice-protocol
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langjapanese
+app-emulation/spice-vdagent
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langkorean
+app-emulation/spim
+  DeprecatedEAPI: version 8.0-r1: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langlatin
+app-emulation/uade
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langlatvian
+app-emulation/uae
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langlithuanian
+app-emulation/vagrant
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langmongolian
+app-emulation/vboxgtk
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langnorwegian
+app-emulation/vice
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langother
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/virt-manager
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langpolish
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/virt-viewer
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langportuguese
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/virt-what
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langspanish
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/virtualbox
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langswedish
+app-emulation/virtualbox-additions
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langtibetan
+app-emulation/virtualbox-bin
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langturkmen
+app-emulation/virtualbox-extpack-oracle
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-langvietnamese
+app-emulation/virtualbox-guest-additions
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-latex
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/virtualbox-modules
   MissingFile: required file ChangeLog doesn't exist
+  ExecutableFile: "files/create_vbox_modules_tarball.sh" has unnecessary executable bit
 
-dev-texlive/texlive-latexextra
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/vmips
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-latexrecommended
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/vmips-cross-bin
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-luatex
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/vmware-modules
   MissingFile: required file ChangeLog doesn't exist
+  SizeViolation: "files/271-3.10.0.patch" exceeds 20k in size; 23418 bytes total
 
-dev-texlive/texlive-mathextra
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/vmware-player
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-metapost
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/vmware-tools
+  DeprecatedEAPI: version 9.2.3.1031769: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.6.1.1379776: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.6.2.1744117: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-music
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/vmware-view-open-client
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-omega
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/vmware-vix
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-pictures
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/vmware-workstation
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-plainextra
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/vov
+  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-pstricks
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/vpcs
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-publishers
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/wine
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-science
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/winetricks
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-texinfo
+app-emulation/x48
   MissingFile: required file ChangeLog doesn't exist
 
-dev-texlive/texlive-xetex
-  DroppedKeywordWarning: version 2014: keywords dropped: ia64, sparc
+app-emulation/xe-guest-utilities
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/xen
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/xen-pvgrub
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/xen-tools
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/xtrs
   MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -377,6 +414,7 @@ sys-devel/binutils-apple
   DeprecatedEAPI: version 5.1: uses deprecated EAPI: 3
   BadInsIntoDir: version 6.1: ebuild uses insinto /etc/env.d on line 344
   DeprecatedEAPI: version 6.1: uses deprecated EAPI: 3
+  BadInsIntoDir: version 6.3: ebuild uses insinto /etc/env.d on line 336
   MissingFile: required file ChangeLog doesn't exist
   SizeViolation: "files/ld64-236.3-gcc.patch" exceeds 20k in size; 41867 bytes total
   SizeViolation: "files/ld64-236.3-noarm.patch" exceeds 20k in size; 37310 bytes total
@@ -384,6 +422,8 @@ sys-devel/binutils-apple
   SizeViolation: "files/ld64-241.9-gcc.patch" exceeds 20k in size; 40446 bytes total
   SizeViolation: "files/ld64-241.9-noarm.patch" exceeds 20k in size; 39659 bytes total
   SizeViolation: "files/ld64-241.9-nosnapshots.patch" exceeds 20k in size; 23156 bytes total
+  SizeViolation: "files/ld64-242-gcc.patch" exceeds 20k in size; 40987 bytes total
+  SizeViolation: "files/ld64-242-noarm.patch" exceeds 20k in size; 37257 bytes total
 
 sys-devel/binutils-config
   DeprecatedEAPI: version 1.9-r4: uses deprecated EAPI: 0
@@ -419,13 +459,13 @@ sys-devel/clang
   DeprecatedEclass: version 3.0-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 3.0-r4: uses deprecated EAPI: 3
   DeprecatedEclass: version 3.1-r5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingChksum: version 2.8-r3: "clang-2.8.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.8-r3: "clang-2.8.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-devel/cons
   DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 0
-  MissingChksum: version 2.2.0: "cons-2.2.0.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.2.0: "cons-2.2.0.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 sys-devel/crossdev
   DeprecatedEAPI: version 20100814: uses deprecated EAPI: 3
@@ -485,8 +525,8 @@ sys-devel/gcc
   NonExistentDeps: version 4.9.3: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
   NonExistentDeps: version 5.1.0: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
   NonExistentDeps: version 5.2.0: depset depends: nonexistent atoms [ app-emulation/emul-linux-x86-gtklibs, app-emulation/emul-linux-x86-xlibs ]
-  DroppedKeywordWarning: version 5.1.0: keywords dropped: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 5.1.0: keywords dropped: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
 
 sys-devel/gcc-apple
   DeprecatedEAPI: version 4.0.1_p5493: uses deprecated EAPI: 3
@@ -534,6 +574,7 @@ sys-devel/gdb-apple
   DeprecatedEAPI: version 1705: uses deprecated EAPI: 3
   DeprecatedEAPI: version 1708: uses deprecated EAPI: 3
   DeprecatedEAPI: version 1752: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 563: "gdb-563.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 768-r1: "gdb-768.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 960: "gdb-960.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -546,7 +587,6 @@ sys-devel/gdb-apple
   MissingChksum: version 1705: "gdb-1705.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1708: "gdb-1708.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1752: "gdb-1752.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 sys-devel/gettext
   MissingFile: required file ChangeLog doesn't exist
@@ -568,10 +608,10 @@ sys-devel/icecream
   MissingFile: required file ChangeLog doesn't exist
 
 sys-devel/kgcc64
+  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 4.3.5: keywords dropped: ppc, s390
   DroppedKeywordWarning: version 4.8.1: keywords dropped: mips
   DroppedKeywordWarning: version 4.9.1: keywords dropped: sparc
-  MissingFile: required file ChangeLog doesn't exist
 
 sys-devel/libtool
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -590,8 +630,8 @@ sys-devel/make
   DeprecatedEAPI: version 3.80-r4: uses deprecated EAPI: 0
   DeprecatedEAPI: version 3.81-r2: uses deprecated EAPI: 0
   DeprecatedEAPI: version 3.82-r4: uses deprecated EAPI: 2
-  MissingChksum: version 3.80-r4: "make-3.80.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.80-r4: "make-3.80.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-devel/native-cctools
   BadInsIntoDir: version 1: ebuild uses insinto /etc/env.d on line 96
@@ -608,8 +648,8 @@ sys-devel/native-cctools
   MissingFile: required file ChangeLog doesn't exist
 
 sys-devel/parity
-  MissingChksum: version 1.2.4: "parity-1.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2.4: "parity-1.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-devel/patch
   MissingFile: required file ChangeLog doesn't exist
@@ -622,15 +662,15 @@ sys-devel/prelink
 
 sys-devel/qconf
   DeprecatedEAPI: version 1.5_pre717-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.5_pre717-r1: "qconf-1.5_pre717.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.5_pre717-r1: "qconf-1.5_pre717.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-devel/remake
   DeprecatedEAPI: version 3.81.0.2: uses deprecated EAPI: 0
   DeprecatedEAPI: version 3.81.0.3: uses deprecated EAPI: 0
   DeprecatedEAPI: version 3.82.0.4: uses deprecated EAPI: 0
-  MissingChksum: version 3.81.0.2: "remake-3.81+dbg-0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.81.0.2: "remake-3.81+dbg-0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-devel/smatch
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -654,127 +694,654 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sys-kernel/aufs-sources
+kde-apps/amor
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/ck-sources
+kde-apps/analitza
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/cryptodev
+kde-apps/ark
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/dracut
+kde-apps/artikulate
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/genkernel
-  DeprecatedEAPI: version 3.4.45.1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.48: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.49: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.49.1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.49.2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.50: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.51: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.51.1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.51.2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4.51.4: uses deprecated EAPI: 3
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
-  DeprecatedEclass: version 9999-r1: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DroppedKeywordWarning: version 3.4.50: keywords dropped: sh
+kde-apps/attica
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/genkernel-next
-  DroppedKeywordWarning: version 60: keywords dropped: ppc, ppc64
-  DroppedKeywordWarning: version 55: keywords dropped: alpha
+kde-apps/audiocd-kio
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/gentoo-sources
+kde-apps/blinken
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/git-sources
+kde-apps/bomber
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/hardened-sources
+kde-apps/bovo
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/kccmp
-  MissingChksum: version 0.3: "kccmp-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+kde-apps/cantor
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/kergen
+kde-apps/cervisia
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/linux-docs
+kde-apps/dolphin
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/linux-firmware
-  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+kde-apps/dolphin-plugins
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/linux-headers
-  DeprecatedEAPI: version 3.1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.2-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.3: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.4-r2: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.5: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.6: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.7: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.8: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 3.9: uses deprecated EAPI: 3
+kde-apps/dragon
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/mips-sources
+kde-apps/drkonqi
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/openvz-sources
+kde-apps/ffmpegthumbs
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/pf-sources
+kde-apps/filelight
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/raspberrypi-image
-  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+kde-apps/granatier
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/raspberrypi-sources
-  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.12.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.14.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.18.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.19.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+kde-apps/gwenview
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/rsbac-sources
+kde-apps/jovie
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/rt-sources
+kde-apps/juk
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/spl
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+kde-apps/kaccessible
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/tuxonice-sources
+kde-apps/kajongg
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/vanilla-sources
+kde-apps/kalgebra
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/vserver-sources
+kde-apps/kalzium
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/xbox-sources
+kde-apps/kamera
   MissingFile: required file ChangeLog doesn't exist
 
-sys-kernel/zen-sources
-  DeprecatedEclass: version 3.8.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.9.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.11.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.12.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEclass: version 3.13.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+kde-apps/kanagram
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kapman
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kapptemplate
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kate
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/katomic
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kblackbox
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kblocks
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kbounce
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kbreakout
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kbruch
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kcachegrind
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kcalc
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kcharselect
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kcmshell
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kcolorchooser
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kcontrol
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kcron
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kde-base-artwork
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kde-dev-scripts
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kde-dev-utils
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kde-wallpapers
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kde4-l10n
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeaccessibility-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeadmin-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeartwork-colorschemes
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeartwork-desktopthemes
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeartwork-emoticons
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeartwork-iconthemes
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeartwork-kscreensaver
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeartwork-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeartwork-styles
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeartwork-wallpapers
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeartwork-weatherwallpapers
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdebase-data
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdebase-desktoptheme
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdebase-kioslaves
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdebase-menu
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdebase-menu-icons
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdebase-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdebase-runtime-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdebugdialog
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeedu-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdegames-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdegraphics-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdegraphics-mobipocket
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdemultimedia-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdenetwork-filesharing
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdenetwork-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdepasswd
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdesdk-kioslaves
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdesdk-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdesdk-strigi-analyzer
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdesu
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdetoys-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdeutils-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdewebdev-meta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdf
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdialog
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdiamond
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kdontchangethehostname
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/keditbookmarks
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/keditfiletype
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kfile
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kfilereplace
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kfind
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kfloppy
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kfmclient
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kfourinline
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kgamma
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kgeography
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kget
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kglobalaccel
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kgoldrunner
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kgpg
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/khangman
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kiconfinder
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kig
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kigo
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/killbots
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kimagemapeditor
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kimgio
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kioclient
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kiriki
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kiten
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kjumpingcube
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/klettres
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/klickety
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/klines
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/klinkstatus
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kmag
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kmahjongg
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kmimetypefinder
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kmines
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kmix
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kmousetool
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kmouth
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kmplot
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/knavalbattle
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/knetattach
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/knetwalk
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/knewstuff
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/knotify
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kolf
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kollision
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kolourpaint
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kommander
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kompare
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/konq-plugins
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/konqueror
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/konquest
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/konsole
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kopete
+  MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 4.14.3-r1: keywords dropped: ppc64
+
+kde-apps/kpasswdserver
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kpat
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kppp
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kqtquickcharts
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kquitapp
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/krdc
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kreadconfig
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kremotecontrol
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kreversi
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/krfb
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kruler
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ksaneplugin
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kscd
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kshisen
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ksirk
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ksnakeduel
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ksnapshot
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kspaceduel
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ksquares
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kstars
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kstart
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ksudoku
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ksystemlog
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kteatime
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ktimer
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ktimezoned
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ktouch
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ktraderclient
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ktuberling
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kturtle
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/ktux
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kubrick
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kuiserver
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kurifilter-plugins
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kuser
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kwalletd
+  MissingFile: required file ChangeLog doesn't exist
+  SizeViolation: "files/kwalletd-4.14.3-CVE-2013-7252.patch" exceeds 20k in size; 21806 bytes total
+
+kde-apps/kwalletmanager
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kwordquiz
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/kwrite
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/libkcddb
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/libkcompactdisc
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/libkdcraw
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/libkdeedu
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/libkdegames
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/libkexiv2
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/libkipi
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/libkmahjongg
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/libkomparediff2
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/libkonq
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/libksane
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/lokalize
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/lskat
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/marble
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/mplayerthumbs
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/nepomuk
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/nsplugins
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/okteta
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/okular
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/oxygen-icons
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/pairs
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/palapeli
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/parley
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/phonon-kde
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/picmi
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/plasma-apps
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/plasma-runtime
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/poxml
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/print-manager
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/renamedlg-plugins
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/rocs
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/solid-runtime
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/step
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/superkaramba
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/svgpart
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/sweeper
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/thumbnailers
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/umbrello
+  MissingFile: required file ChangeLog doesn't exist
+
+kde-apps/zeroconf-ioslave
   MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -783,331 +1350,260 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-x11-apps/amlc
+x11-wm/aewm
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/appres
+x11-wm/aewm++
+  DeprecatedEAPI: version 1.1.5-r1: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1.5-r1: "aewm++-1.1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-wm/afterstep
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.2.9: "AfterStep-2.2.9.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-wm/amiwm
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.21_p2: "amiwm0.21pl2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-wm/awesome
+  DeprecatedEAPI: version 3.4.15: uses deprecated EAPI: 3
+  NonExistentDeps: version 3.4.15: depset depends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
+  NonExistentDeps: version 3.4.15: depset rdepends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
+  NonExistentDeps: version 3.5.2: depset depends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
+  NonExistentDeps: version 3.5.2: depset rdepends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
+  NonExistentDeps: version 3.5.2-r1: depset depends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
+  NonExistentDeps: version 3.5.2-r1: depset rdepends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
+  NonExistentDeps: version 3.5.3: depset depends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
+  NonExistentDeps: version 3.5.3: depset rdepends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
+  NonExistentDeps: version 3.5.4: depset depends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
+  NonExistentDeps: version 3.5.4: depset rdepends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
+  NonExistentDeps: version 3.5.5: depset depends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
+  NonExistentDeps: version 3.5.5: depset rdepends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
+  NonExistentDeps: version 3.5.5-r1: depset depends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
+  NonExistentDeps: version 3.5.5-r1: depset rdepends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
+  NonExistentDeps: version 3.5.6: depset depends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
+  NonExistentDeps: version 3.5.6: depset rdepends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/ardesia
+x11-wm/blackbox
+  DeprecatedEAPI: version 0.70.1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/bdftopcf
-  DroppedKeywordWarning: version 1.0.5: keywords dropped: arm64
+x11-wm/bspwm
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/beforelight
+x11-wm/compiz
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/bitmap
+x11-wm/compiz-fusion
+  DeprecatedEAPI: version 0.8.8: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/ccsm
+x11-wm/ctwm
+  DeprecatedEAPI: version 3.7: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.8a-r1: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.7: "ctwm-3.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 3.8a-r1: "ctwm-3.8a.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-wm/cwm
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/editres
+x11-wm/dwm
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/fonttosfnt
-  MissingChksum: version 1.0.4-r1: "fonttosfnt-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-wm/echinus
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.4.9: "echinus-0.4.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-wm/emerald
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/fslsfonts
+x11-wm/enlightenment
+  DeprecatedEclass: version 0.17.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.0.6: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.0.7: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.0.8: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.0.9: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/fstobdf
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/fusion-icon
-  DeprecatedEclass: version 0.1-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.1-r3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/iceauth
-  DroppedKeywordWarning: version 1.0.7: keywords dropped: arm64
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/ico
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/intel-gpu-tools
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/listres
-  MissingChksum: version 1.0.3: "listres-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/luit
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/mesa-progs
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/mkfontdir
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/mkfontscale
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/oclock
-  MissingChksum: version 1.0.3: "oclock-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/python-whiteboard
-  DeprecatedEclass: version 20101012: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 20101012: uses deprecated EAPI: 3
-  MissingChksum: version 20101012: "python-whiteboard-20101012.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/radeontop
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/rgb
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/rstart
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/scripts
-  DeprecatedEAPI: version 1.0.1-r1: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/sessreg
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/setxkbmap
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/showfont
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/simple-ccsm
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/smproxy
-  MissingChksum: version 1.0.5: "smproxy-1.0.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/spotlighter
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 3
-  MissingChksum: version 0.1: "spotlighter-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/transset
-  MissingChksum: version 1.0.0: "transset-1.0.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/viewres
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/whyteboard
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/x11perf
-  MissingChksum: version 1.5.4: "x11perf-1.5.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xauth
-  DroppedKeywordWarning: version 1.0.9-r2: keywords dropped: arm64
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xbacklight
-  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xbiff
-  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "xbiff-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xcalc
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xclipboard
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xclock
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xcmsdb
-  MissingChksum: version 1.0.4: "xcmsdb-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xconsole
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xcursorgen
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xdbedizzy
+x11-wm/evilwm
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 3
   DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 3
-  MissingChksum: version 1.1.0: "xdbedizzy-1.1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 1.1.0: keywords dropped: alpha, amd64, ppc, sparc, x86
+  MissingChksum: version 1.0.1: "evilwm-1.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.1.0: "evilwm-1.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-wm/fluxbox
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xditview
+x11-wm/fvwm
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xdm
+x11-wm/goomwwm
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xdpyinfo
+x11-wm/herbstluftwm
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xdriinfo
-  DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.4: "xdriinfo-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-wm/i3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xedit
+x11-wm/icewm
+  MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 1.3.9: keywords dropped: alpha, ppc64, sparc
+
+x11-wm/jwm
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.1.0: "jwm-2.1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-wm/larswm
+  DeprecatedEAPI: version 7.5.3-r1: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 7.5.3-r1: "larswm-7.5.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-wm/lwm
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2.1: "lwm-1.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-wm/marco
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xev
+x11-wm/matchbox
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xeyes
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 3
-  MissingChksum: version 1.1.1: "xeyes-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+x11-wm/matchbox-common
+  DeprecatedEAPI: version 0.9.1-r2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.9.1-r2: "matchbox-common-0.9.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-wm/matchbox-desktop
+  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xf86dga
-  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "xf86dga-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+x11-wm/matchbox-panel
+  DeprecatedEAPI: version 0.9.3-r1: uses deprecated EAPI: 0
+
+x11-wm/matchbox-window-manager
+  WrongIndentFound: version 1.2-r1: ebuild has whitespace in indentation on line 39
+
+x11-wm/matchbox-panel
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xfd
+x11-wm/matchbox-window-manager
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xfontsel
+x11-wm/matwm2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.1.1: "matwm2-0.1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-wm/muffin
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xgamma
-  MissingChksum: version 1.0.5: "xgamma-1.0.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-wm/musca
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xgc
+x11-wm/mutter
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xhost
+x11-wm/notion
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xinit
-  DroppedKeywordWarning: version 1.3.4: keywords dropped: arm64
+x11-wm/openbox
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xinput
+x11-wm/oroborus
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.0.20: "oroborus_2.0.20.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-wm/pekwm
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xinput_calibrator
+x11-wm/plwm
+  DeprecatedEclass: version 2.5-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.5-r1: uses deprecated EAPI: 0
+  DeprecatedEclass: version 2.7_rc1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.7_rc1: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.5-r1: "plwm-2.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-wm/qtile
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xkbcomp
+x11-wm/ratpoison
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xkbevd
-  MissingChksum: version 1.1.3: "xkbevd-1.1.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-wm/sawfish
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xkbprint
-  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "xkbprint-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-wm/selectwm
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xkbset
+x11-wm/sithwm
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xkbutils
+x11-wm/spectrwm
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xkill
+x11-wm/stumpwm
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xload
+x11-wm/subtle
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xlogo
-  MissingChksum: version 1.0.4: "xlogo-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-wm/treewm
+  DeprecatedEAPI: version 0.4.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.4.5-r1: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.4.5: "treewm-0.4.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-wm/twm
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xlsatoms
-  MissingChksum: version 1.1.1: "xlsatoms-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-wm/vtwm
+  DeprecatedEAPI: version 5.4.6a: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 5.4.7-r1: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 5.4.6a: "vtwm-5.4.6a.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 5.4.7-r1: "vtwm-5.4.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-wm/windowlab
+  DeprecatedEAPI: version 1.34: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.40: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.34: "windowlab-1.34.tar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.40: "windowlab-1.40.tar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-wm/windowmaker
+  DeprecatedEAPI: version 0.92.0-r11: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xlsclients
+x11-wm/wm2
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xlsfonts
-  MissingChksum: version 1.0.4: "xlsfonts-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-wm/wmfs
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xmag
+x11-wm/wmii
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xman
+x11-wm/xmonad
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xmessage
+x11-wm/xmonad-contrib
   MissingFile: required file ChangeLog doesn't exist
 
-x11-apps/xmodmap
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xmore
-  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.2: "xmore-1.0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xpr
-  MissingChksum: version 1.0.4: "xpr-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xprop
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xrandr
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xrdb
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xrefresh
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xset
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xsetroot
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xsm
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xstdcmap
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xtitle
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xtrap
-  MissingChksum: version 1.0.2-r1: "xtrap-1.0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xvidtune
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xvinfo
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xwarppointer
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xwd
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xwininfo
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-apps/xwud
-  MissingChksum: version 1.0.4: "xwud-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+x11-wm/xpra
   MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -1116,223 +1612,208 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-im/ayttm
-  MissingChksum: version 0.6.3: "ayttm-0.6.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/amanda
+  BadInsIntoDir: version 3.3.3: ebuild uses insinto /etc/cron.daily on line 332
+  BadInsIntoDir: version 3.3.3-r1: ebuild uses insinto /etc/cron.daily on line 338
+  BadInsIntoDir: version 3.3.5: ebuild uses insinto /etc/cron.daily on line 338
+  BadInsIntoDir: version 3.3.7: ebuild uses insinto /etc/cron.daily on line 335
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/birdie
+app-backup/backintime
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/bitlbee
+app-backup/backup-manager
+  DeprecatedEAPI: version 0.7.5: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/centerim
-  DeprecatedEAPI: version 4.22.10: uses deprecated EAPI: 2
+app-backup/backupninja
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/choqok
+app-backup/backuppc
   MissingFile: required file ChangeLog doesn't exist
+  SizeViolation: "files/02-fix-config.pl-formatting.patch" exceeds 20k in size; 23353 bytes total
 
-net-im/climm
+app-backup/bacula
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/coccinella
-  MissingChksum: version 0.96.20: "Coccinella-0.96.20Src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/bareos
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 14.2.1: keywords dropped: amd64, x86
 
-net-im/corebird
+app-backup/boxbackup
+  DeprecatedEAPI: version 0.11.1: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/cpop
+app-backup/burp
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 1.4.26: keywords dropped: x86
 
-net-im/dianara
+app-backup/ccollect
+  DeprecatedEAPI: version 0.5.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.8: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ejabberd
+app-backup/cdbackup
+  DeprecatedEAPI: version 0.7.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ekg2
+app-backup/cdbkup
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/empathy
+app-backup/cpdup
+  DeprecatedEAPI: version 1.18: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/err
+app-backup/dar
+  DeprecatedEAPI: version 2.3.8: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2.4.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 2.4.9: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/gajim
+app-backup/deja-dup
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/gg-transport
-  DeprecatedEAPI: version 2.2.4: uses deprecated EAPI: 0
-  MissingChksum: version 2.2.4: "jggtrans-2.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/dirvish
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/indicator-messages
+app-backup/duplicity
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/jabber-base
-  DeprecatedEAPI: version 0.01: uses deprecated EAPI: 0
+app-backup/duply
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/jabberd2
+app-backup/flexbackup
+  DeprecatedEAPI: version 1.2.1-r12: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/kadu
-  DroppedKeywordWarning: version 2.1: keywords dropped: ppc
+app-backup/fsarchiver
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/kde-telepathy-meta
+app-backup/furball
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/kouchat
+app-backup/hdup
+  DeprecatedEAPI: version 2.0.14: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-accounts-kcm
+app-backup/holland
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-approver
+app-backup/holland-backup-example
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-auth-handler
+app-backup/holland-backup-mysql-lvm
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-call-ui
+app-backup/holland-backup-mysql-meta
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-common-internals
+app-backup/holland-backup-mysqldump
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-contact-list
+app-backup/holland-backup-mysqlhotcopy
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-contact-runner
+app-backup/holland-backup-pgdump
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-desktop-applets
+app-backup/holland-backup-random
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-filetransfer-handler
+app-backup/holland-backup-sqlite
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-kded-module
+app-backup/holland-lib-common
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-send-file
+app-backup/holland-lib-lvm
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-text-ui
+app-backup/holland-lib-mysql
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/librvp
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 2
-  MissingChksum: version 0.9.6: "librvp-0.9.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.7: "librvp-0.9.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/kbackup
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/licq
+app-backup/luckybackup
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/mcabber
+app-backup/mirdir
+  DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/minbif
+app-backup/mylvmbackup
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.13: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.14: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/mu-conference
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
+app-backup/obnam
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/openfire
+app-backup/pdumpfs
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/pidgin
+app-backup/qt4-fsarchiver
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/pork
+app-backup/rdiff-backup
+  DeprecatedEclass: version 1.2.8-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.2.8-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.3: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/prosody
+app-backup/rdumpfs
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/psi
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  MissingFile: required file ChangeLog doesn't exist
-
-net-im/psimedia
-  MissingChksum: version 1.0.3-r3: "psimedia-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-net-im/purple-events
-  MissingFile: required file ChangeLog doesn't exist
-
-net-im/pyaim-t
-  MissingFile: required file ChangeLog doesn't exist
-
-net-im/pyicq-t
-  MissingFile: required file ChangeLog doesn't exist
-
-net-im/qtwitter
-  MissingFile: required file ChangeLog doesn't exist
-
-net-im/qutim
-  MissingFile: required file ChangeLog doesn't exist
-
-net-im/qwit
-  DeprecatedEAPI: version 1.1_pre2: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-
-net-im/reaim
-  MissingChksum: version 0.8-r1: "reaim-0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-net-im/sendxmpp
-  MissingFile: required file ChangeLog doesn't exist
+app-backup/reoback
+  BadInsIntoDir: version 1.0_p3-r1: ebuild uses insinto /etc/cron.daily on line 36
 
-net-im/silc-server
+app-backup/rear
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/silc-toolkit
-  MissingChksum: version 1.1.10: "silc-toolkit-1.1.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/reoback
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/simpserver-bin
-  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 0
-  MissingChksum: version 2.1.0: "simpserver-2.1.0-linux-x86.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/rsnapshot
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/skype
+app-backup/sarab
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/skypetab-ng
-  NonExistentDeps: version 0.5.2: depset rdepends: nonexistent atoms [ <net-im/skype-4.1 ]
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <net-im/skype-4.1 ]
+app-backup/simplebackup
+  DeprecatedEAPI: version 1.8.1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/telepathy-connection-managers
+app-backup/snapback2
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/telepathy-logger
+app-backup/snapper
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/telepathy-mission-control
+app-backup/spideroak-bin
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/tkabber
-  MissingChksum: version 0.11.1-r1: "tkabber-plugins-0.11.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/tarsnap
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/turses
+app-backup/tob
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/vacuum
+app-backup/tsm
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 6.3.0.5-r2: keywords dropped: x86
 
-net-im/ysm
-  MissingChksum: version 2.9.9.1: "ysmv7_2_9_9_1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-backup/vzdump
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -1575,152 +2056,103 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-proxy/3proxy
-  DeprecatedEAPI: version 0.5.3k: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 2
-  MissingChksum: version 0.5.3k: "3proxy-0.5.3k.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.6.1: "3proxy-0.6.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-forensics/afflib
+  DeprecatedEclass: version 3.7.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingFile: required file ChangeLog doesn't exist
 
-net-proxy/adzapper
+app-forensics/afl
   MissingFile: required file ChangeLog doesn't exist
 
-net-proxy/bfilter
+app-forensics/aide
+  DeprecatedEAPI: version 0.13.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.13.1-r3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.13.1-r5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.14.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.15.1: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
-net-proxy/c-icap
+app-forensics/air
   MissingFile: required file ChangeLog doesn't exist
 
-net-proxy/c-icap-modules
+app-forensics/autopsy
   MissingFile: required file ChangeLog doesn't exist
 
-net-proxy/cntlm
+app-forensics/chkrootkit
+  DeprecatedEAPI: version 0.48-r1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-proxy/dansguardian
+app-forensics/cmospwd
   MissingFile: required file ChangeLog doesn't exist
 
-net-proxy/dante
-  DeprecatedEAPI: version 1.1.19-r4: uses deprecated EAPI: 0
+app-forensics/examiner
   MissingFile: required file ChangeLog doesn't exist
 
-net-proxy/dnsproxy
+app-forensics/foremost
+  DeprecatedEAPI: version 0.69: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-proxy/haproxy
+app-forensics/galleta
+  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-forensics/libbfio
+  MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 0.0.20130609_alpha: keywords dropped: hppa
+
+app-forensics/libewf
+  MissingFile: required file ChangeLog doesn't exist
+
+app-forensics/lynis
+  MissingFile: required file ChangeLog doesn't exist
+
+app-forensics/mac-robber
+  MissingFile: required file ChangeLog doesn't exist
+
+app-forensics/magicrescue
+  MissingFile: required file ChangeLog doesn't exist
+
+app-forensics/memdump
+  MissingFile: required file ChangeLog doesn't exist
+
+app-forensics/openscap
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   MissingFile: required file ChangeLog doesn't exist
 
-net-proxy/hatop
+app-forensics/ovaldi
+  DeprecatedEAPI: version 5.9.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 5.10.1.2: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
-net-proxy/havp
+app-forensics/pasco
+  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-proxy/http-replicator
-  DeprecatedEclass: version 3.0-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+app-forensics/rdd
   MissingFile: required file ChangeLog doesn't exist
 
-net-proxy/httpush
-  DeprecatedEAPI: version 0.9_beta11-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.9_beta11-r1: "httpush-0.9b11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-forensics/rifiuti
+  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-proxy/mitmproxy
+app-forensics/rkhunter
   MissingFile: required file ChangeLog doesn't exist
 
-net-proxy/ntlmaps
-  MissingChksum: version 0.9.9-r2: "ntlmaps-0.9.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-forensics/scalpel
   MissingFile: required file ChangeLog doesn't exist
 
-net-proxy/nutcracker
+app-forensics/sleuthkit
   MissingFile: required file ChangeLog doesn't exist
 
-net-proxy/nylon
+app-forensics/unhide
   MissingFile: required file ChangeLog doesn't exist
 
-net-proxy/obfsproxy
+app-forensics/volatility
   MissingFile: required file ChangeLog doesn't exist
 
-net-proxy/oops
-  DeprecatedEAPI: version 1.5.24_pre20050503-r4: uses deprecated EAPI: 2
+app-forensics/yasat
   MissingFile: required file ChangeLog doesn't exist
 
-net-proxy/pingtunnel
-  MissingFile: required file ChangeLog doesn't exist
-
-net-proxy/piper
-  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
-  MissingChksum: version 1.14: "piper-1.14.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-net-proxy/polipo
-  MissingFile: required file ChangeLog doesn't exist
-
-net-proxy/privoxy
-  MissingFile: required file ChangeLog doesn't exist
-
-net-proxy/ratproxy
-  DeprecatedEAPI: version 1.58: uses deprecated EAPI: 0
-  MissingChksum: version 1.58: "ratproxy-1.58.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-net-proxy/rejik
-  MissingFile: required file ChangeLog doesn't exist
-
-net-proxy/shadowsocks-libev
-  MissingFile: required file ChangeLog doesn't exist
-
-net-proxy/squid
-  MissingFile: required file ChangeLog doesn't exist
-
-net-proxy/squidclamav
-  MissingFile: required file ChangeLog doesn't exist
-
-net-proxy/squidguard
-  DeprecatedEAPI: version 1.4-r4: uses deprecated EAPI: 2
-  MissingChksum: version 1.4-r4: "squidGuard-1.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-net-proxy/squirm
-  MissingFile: required file ChangeLog doesn't exist
-
-net-proxy/sshproxy
-  MissingFile: required file ChangeLog doesn't exist
-
-net-proxy/sshuttle
-  MissingFile: required file ChangeLog doesn't exist
-
-net-proxy/tayga
-  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 3
-  MissingChksum: version 0.9.2: "tayga-0.9.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-net-proxy/tinyproxy
-  MissingFile: required file ChangeLog doesn't exist
-
-net-proxy/torsocks
-  MissingFile: required file ChangeLog doesn't exist
-
-net-proxy/tsocks
-  MissingChksum: version 1.8_beta5-r5: "tsocks-1.8b5-tordns1-gentoo-r1.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-net-proxy/ufdbguard
-  DeprecatedEAPI: version 1.24-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.24-r1: "ufdbGuard-1.24.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.24-r1: "ufdbguard-1.24-manual.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-net-proxy/webscarab
-  DeprecatedEAPI: version 20070504: uses deprecated EAPI: 0
-  MissingChksum: version 20070504: "webscarab-selfcontained-20070504-1631.jar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-net-proxy/wwwoffle
-  MissingFile: required file ChangeLog doesn't exist
-
-net-proxy/ziproxy
+app-forensics/zzuf
   MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -1858,80 +2290,35 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-www-misc/awstats
+gnustep-base/gnustep-back-art
   MissingFile: required file ChangeLog doesn't exist
 
-www-misc/bookmarksync
-  DeprecatedEAPI: version 0.3.4-r2: uses deprecated EAPI: 2
+gnustep-base/gnustep-back-cairo
   MissingFile: required file ChangeLog doesn't exist
 
-www-misc/fcgiwrap
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+gnustep-base/gnustep-back-xlib
   MissingFile: required file ChangeLog doesn't exist
 
-www-misc/gurlchecker
+gnustep-base/gnustep-base
   MissingFile: required file ChangeLog doesn't exist
 
-www-misc/htdig
-  DeprecatedEAPI: version 3.2.0_beta6-r3: uses deprecated EAPI: 0
+gnustep-base/gnustep-gui
   MissingFile: required file ChangeLog doesn't exist
 
-www-misc/litmus
+gnustep-base/gnustep-make
   MissingFile: required file ChangeLog doesn't exist
 
-www-misc/log-toolkit
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 0
-  MissingChksum: version 0.9.6: "log-toolkit-0.9.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+gnustep-base/gnustep-updater
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.2: "gnustep-updater-0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-base/libobjc2
   MissingFile: required file ChangeLog doesn't exist
 
-www-misc/mergelog
+gnustep-base/mknfonts
+  DeprecatedEAPI: version 0.5-r1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
-
-www-misc/monitorix
-  MissingFile: required file ChangeLog doesn't exist
-
-www-misc/multisort
-  MissingFile: required file ChangeLog doesn't exist
-
-www-misc/nx_util
-  MissingFile: required file ChangeLog doesn't exist
-
-www-misc/profile-sync-daemon
-  MissingFile: required file ChangeLog doesn't exist
-
-www-misc/reflector
-  DeprecatedEclass: version 2011.05.13.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2011.05.13.1: uses deprecated EAPI: 3
-  NonExistentDeps: version 2011.05.13.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
-  NonExistentDeps: version 2011.05.13.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
-  MissingChksum: version 2011.05.13.1: "reflector-2011.05.13.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-www-misc/surl
-  MissingFile: required file ChangeLog doesn't exist
-
-www-misc/urlwatch
-  MissingFile: required file ChangeLog doesn't exist
-
-www-misc/vdradmin-am
-  MissingFile: required file ChangeLog doesn't exist
-
-www-misc/visitors
-  DeprecatedEAPI: version 0.7-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.7-r1: "visitors-0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-www-misc/wsmake
-  DeprecatedEAPI: version 0.6.4: uses deprecated EAPI: 0
-  MissingChksum: version 0.6.4: "wsmake-0.6.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-www-misc/xxv
-  MissingChksum: version 1.6.1: "xxv-1.6.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
-
-www-misc/zoneminder
-  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.5-r1: "mknfonts.tool_0.5.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1967,5 +2354,5 @@ games-server/ut2003-ded
   MissingFile: required file ChangeLog doesn't exist
 
 games-server/ut2004-ded
-  MissingChksum: version 3369.3-r1: "dedicatedserver3339-bonuspack.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3369.3-r1: "dedicatedserver3339-bonuspack.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size

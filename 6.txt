@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 6 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'media-video/*' 'media-fonts/*' 'net-mail/*' 'dev-embedded/*' 'app-eselect/*' 'dev-tcltk/*' 'dev-lisp/*' 'mail-mta/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-java/*' 'media-video/*' 'media-fonts/*' 'net-mail/*' 'dev-embedded/*' 'net-firewall/*' 'dev-tcltk/*' 'dev-lisp/*' 'mail-mta/*' 'java-virtuals/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /usr/lib64/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -807,9 +807,9 @@ dev-java/hoteqn
 
 dev-java/hp-jdk-bin
   DeprecatedEAPI: version 1.6.0.05: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.6.0.05: "jdk6_16005_pa.depot" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.6.0.05: "jdk6_16005_ia.depot" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 dev-java/htmlparser
   MissingFile: required file ChangeLog doesn't exist
@@ -829,6 +829,7 @@ dev-java/httpunit
 dev-java/ibm-jdk-bin
   DeprecatedEAPI: version 1.6.0.9_p1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.6.0.9_p2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.6.0.9_p1: "ibm-java-sdk-6.0-9.1-linux-i386.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.6.0.9_p1: "ibm-java-sdk-6.0-9.1-linux-x86_64.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.6.0.9_p1: "ibm-java-sdk-6.0-9.1-linux-ppc64.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -840,11 +841,11 @@ dev-java/ibm-jdk-bin
   MissingChksum: version 1.6.0.9_p2: "ibm-java-sdk-6.0-9.2-linux-x86_64.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.6.0.9_p2: "ibm-java-sdk-6.0-9.2-linux-ppc.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.6.0.9_p2: "ibm-java-sdk-6.0-9.2-linux-ppc64.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 dev-java/ibm-jre-bin
   DeprecatedEAPI: version 1.6.0.9_p1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.6.0.9_p2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.6.0.9_p1: "ibm-java-jre-6.0-9.1-linux-i386.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.6.0.9_p1: "ibm-java-jre-6.0-9.1-linux-x86_64.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.6.0.9_p1: "ibm-java-jre-6.0-9.1-linux-ppc64.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -852,7 +853,6 @@ dev-java/ibm-jre-bin
   MissingChksum: version 1.6.0.9_p2: "ibm-java-jre-6.0-9.2-linux-x86_64.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.6.0.9_p2: "ibm-java-jre-6.0-9.2-linux-ppc.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.6.0.9_p2: "ibm-java-jre-6.0-9.2-linux-ppc64.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 dev-java/ical4j
   MissingFile: required file ChangeLog doesn't exist
@@ -903,9 +903,6 @@ dev-java/istack-commons-soimp
   MissingFile: required file ChangeLog doesn't exist
 
 dev-java/istack-commons-tools
-  DeprecatedEAPI: version 20070122-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20090620: uses deprecated EAPI: 2
-  DroppedKeywordWarning: version 20070122-r1: keywords dropped: ppc64
   MissingFile: required file ChangeLog doesn't exist
 
 dev-java/itext
@@ -1171,8 +1168,8 @@ dev-java/jcs
 
 dev-java/jdbc-informix
   DeprecatedEAPI: version 3.00.3: uses deprecated EAPI: 0
-  MissingChksum: version 3.00.3: "JDBC.3.00.JC3.tar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.00.3: "JDBC.3.00.JC3.tar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 dev-java/jdbc-jaybird
   DeprecatedEAPI: version 2.1.5-r1: uses deprecated EAPI: 0
@@ -1194,6 +1191,7 @@ dev-java/jdbc-oracle-bin
   DeprecatedEAPI: version 10.1.0.5: uses deprecated EAPI: 0
   DeprecatedEAPI: version 10.2.0.3: uses deprecated EAPI: 0
   DeprecatedEAPI: version 10.2.0.4: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 9.2.0.8: "jdbc-oracle-bin-9.2.0.8-ojdbc14.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 9.2.0.8: "jdbc-oracle-bin-9.2.0.8-ojdbc14_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 9.2.0.8: "jdbc-oracle-bin-9.2.0.8-ocrs12.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
@@ -1220,7 +1218,6 @@ dev-java/jdbc-oracle-bin
   MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-ojdbc14dms_g.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-demo.tar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 10.2.0.4: "jdbc-oracle-bin-10.2.0.4-orai18n.jar" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 dev-java/jdbc-postgresql
   DeprecatedEAPI: version 8.3_p603: uses deprecated EAPI: 2
@@ -1388,8 +1385,8 @@ dev-java/jmdns
 
 dev-java/jmf-bin
   DeprecatedEAPI: version 2.1.1e-r2: uses deprecated EAPI: 0
-  MissingChksum: version 2.1.1e-r2: "jmf-2_1_1e-alljava.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.1.1e-r2: "jmf-2_1_1e-alljava.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 dev-java/jmi-interface
   DeprecatedEAPI: version 1.0-r3: uses deprecated EAPI: 0
@@ -1507,8 +1504,8 @@ dev-java/jsr181
 
 dev-java/jsr223
   DeprecatedEAPI: version 1.0-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.0-r1: "jsr223-openjdk-6-src-b19.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0-r1: "jsr223-openjdk-6-src-b19.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 dev-java/jsr250
   MissingFile: required file ChangeLog doesn't exist
@@ -1539,8 +1536,8 @@ dev-java/jstun
 
 dev-java/jta
   DeprecatedEAPI: version 1.0.1-r1: uses deprecated EAPI: 0
-  MissingChksum: version 1.0.1-r1: "jta-1_0_1B-classes.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.1-r1: "jta-1_0_1B-classes.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 dev-java/jtds
   MissingFile: required file ChangeLog doesn't exist
@@ -1596,8 +1593,8 @@ dev-java/jutils
 
 dev-java/jvmstat
   DeprecatedEAPI: version 3.0: uses deprecated EAPI: 0
-  MissingChksum: version 3.0: "jvmstat-3_0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.0: "jvmstat-3_0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 dev-java/jvyaml
   DeprecatedEAPI: version 0.2.1-r1: uses deprecated EAPI: 0
@@ -2102,7 +2099,6 @@ dev-java/skinlf
   MissingFile: required file ChangeLog doesn't exist
 
 dev-java/slf4j-api
-  DeprecatedEAPI: version 1.5.11: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
 dev-java/slf4j-ext
@@ -2113,6 +2109,194 @@ dev-java/slf4j-log4j12
 
 dev-java/slf4j-nop
   DeprecatedEAPI: version 1.5.11: uses deprecated EAPI: 2
+  NonExistentDeps: version 1.5.11: depset depends: nonexistent atoms [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonExistentDeps: version 1.5.11: depset rdepends: nonexistent atoms [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/developer): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/developer): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/desktop): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/desktop/gnome): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/developer): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/desktop/gnome/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/desktop/kde): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/desktop/kde/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/developer): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/developer): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/desktop): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/desktop/gnome): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/developer): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/desktop/gnome/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/desktop/kde): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/desktop/kde/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonsolvableDeps: version 1.5.11: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ ~dev-java/slf4j-api-1.5.11:0 ]
+  NonExistentDeps: version 1.6.6: depset depends: nonexistent atoms [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonExistentDeps: version 1.6.6: depset rdepends: nonexistent atoms [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/developer): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/developer): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~ppc) profile (default/linux/powerpc/ppc32/13.0): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~ppc) profile (default/linux/powerpc/ppc32/13.0/desktop): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~ppc) profile (default/linux/powerpc/ppc32/13.0/developer): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/developer): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/desktop): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/desktop/gnome): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/developer): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/desktop/gnome/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/desktop/kde): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(depends) keyword(~ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/desktop/kde/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/developer): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/developer): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~ppc) profile (default/linux/powerpc/ppc32/13.0): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~ppc) profile (default/linux/powerpc/ppc32/13.0/desktop): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~ppc) profile (default/linux/powerpc/ppc32/13.0/developer): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/developer): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/desktop): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/desktop/gnome): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/developer): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/desktop/gnome/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/desktop/kde): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
+  NonsolvableDeps: version 1.6.6: nonsolvable depset(rdepends) keyword(~ppc64) profile (default/linux/powerpc/ppc64/13.0/64bit-userland/desktop/kde/systemd): solutions: [ ~dev-java/slf4j-api-1.6.6:0 ]
   MissingFile: required file ChangeLog doesn't exist
 
 dev-java/slf4j-simple
@@ -2206,9 +2390,9 @@ dev-java/sun-httpserver-bin
 
 dev-java/sun-j2ee-deployment-bin
   DeprecatedEAPI: version 1.1-r2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.1-r2: "j2ee_deployment-1_1-fr-class.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.1-r2: "j2ee_deployment-1_1-fr-doc.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 dev-java/sun-jacc-api
   DeprecatedEAPI: version 20070102: uses deprecated EAPI: 0
@@ -2227,10 +2411,10 @@ dev-java/sun-jai-bin
 dev-java/sun-java3d-bin
   DeprecatedEAPI: version 1.3.2-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.4.0_pre5-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.3.2-r1: "java3d-1_3_2-linux-amd64.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.3.2-r1: "java3d-1_3_2-linux-i586.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.4.0_pre5-r1: "java3d-1_4_0-build5-linux-i586.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 dev-java/sun-javamail
   DeprecatedEAPI: version 1.4.3: uses deprecated EAPI: 2
@@ -2238,8 +2422,8 @@ dev-java/sun-javamail
 
 dev-java/sun-jce-bin
   DeprecatedEAPI: version 1.6.0: uses deprecated EAPI: 0
-  MissingChksum: version 1.6.0: "jce_policy-6.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.6.0: "jce_policy-6.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 dev-java/sun-jdk
   MissingFile: required file ChangeLog doesn't exist
@@ -2249,12 +2433,12 @@ dev-java/sun-jimi
 
 dev-java/sun-jms
   DeprecatedEAPI: version 1.1-r2: uses deprecated EAPI: 0
-  MissingChksum: version 1.1-r2: "jms-1_1-fr-apidocs.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1-r2: "jms-1_1-fr-apidocs.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 dev-java/sun-jmx
-  MissingChksum: version 1.2.1-r3: "jmx-1_2_1-ri.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2.1-r3: "jmx-1_2_1-ri.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 dev-java/sun-jre-bin
   MissingFile: required file ChangeLog doesn't exist
@@ -2517,20 +2701,20 @@ media-video/aacskeys
   MissingFile: required file ChangeLog doesn't exist
 
 media-video/abby
-  MissingChksum: version 0.4.8: "abby-0.4.8.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.4.8: "abby-0.4.8.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/acidrip
   MissingFile: required file ChangeLog doesn't exist
 
 media-video/aegisub
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  MissingChksum: version 2.1.9: "aegisub-2.1.9.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.1.9: "aegisub-2.1.9.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/alevt
-  MissingChksum: version 1.6.2: "alevt-1.6.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.6.2: "alevt-1.6.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/aravis
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -2543,8 +2727,8 @@ media-video/arista
   MissingFile: required file ChangeLog doesn't exist
 
 media-video/asfrecorder
-  MissingChksum: version 1.1: "ASFRecorder.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1: "ASFRecorder.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/atomicparsley
   MissingFile: required file ChangeLog doesn't exist
@@ -2561,10 +2745,10 @@ media-video/avidemux
 
 media-video/avinfo
   DeprecatedEAPI: version 1.0_alpha15: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0_alpha15: "avinfo-1.0a15.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.0_alpha15_p1: "avinfo-1.0.a15unix.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.0_alpha15_p1: "avinfo-1.0.a15unix-patch1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-video/baka-mplayer
   MissingFile: required file ChangeLog doesn't exist
@@ -2576,14 +2760,14 @@ media-video/bashnapi
   MissingFile: required file ChangeLog doesn't exist
 
 media-video/bbtools
-  MissingChksum: version 1.9: "bbtool19_src.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.9: "bbtool19_src.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/bdsup2sub
   DeprecatedEAPI: version 4.0.0-r1: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 4.0.0-r1: "bdsup2sub-4.0.0.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 4.0.0-r1: "xdg-20100731.java.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-video/binkplayer
   MissingFile: required file ChangeLog doesn't exist
@@ -2594,18 +2778,18 @@ media-video/bino
 
 media-video/blinkensim
   DeprecatedEAPI: version 2.7: uses deprecated EAPI: 0
-  MissingChksum: version 2.7: "blinkensim-2.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.7: "blinkensim-2.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/blinkenthemes
   DeprecatedEAPI: version 0.10: uses deprecated EAPI: 0
-  MissingChksum: version 0.10: "blinkenthemes-0.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.10: "blinkenthemes-0.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/blinkentools
   DeprecatedEAPI: version 2.9: uses deprecated EAPI: 0
-  MissingChksum: version 2.9: "blinkentools-2.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.9: "blinkentools-2.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/bombono-dvd
   MissingFile: required file ChangeLog doesn't exist
@@ -2615,15 +2799,15 @@ media-video/camorama
   MissingFile: required file ChangeLog doesn't exist
 
 media-video/ccextractor
-  MissingChksum: version 0.59: "ccextractor-0.59-src.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.59: "ccextractor-0.59-src.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/cclive
   MissingFile: required file ChangeLog doesn't exist
 
 media-video/chaplin
-  MissingChksum: version 1.10-r1: "chaplin-1.10.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.10-r1: "chaplin-1.10.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/cheese
   DroppedKeywordWarning: version 3.14.2: keywords dropped: alpha, sparc
@@ -2647,18 +2831,18 @@ media-video/coriander
 
 media-video/cpdvd
   DeprecatedEAPI: version 1.10-r1: uses deprecated EAPI: 2
-  MissingChksum: version 1.10-r1: "cpdvd-1.10.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.10-r1: "cpdvd-1.10.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/cpvts
   DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
-  MissingChksum: version 1.2: "cpvts-1.2.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2: "cpvts-1.2.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/cxfe
   DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 0
-  MissingChksum: version 0.9.2: "cxfe-0.9.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.9.2: "cxfe-0.9.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/devede
   DeprecatedEclass: version 3.16.9: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -2667,9 +2851,9 @@ media-video/devede
   DeprecatedEclass: version 3.22.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 3.23.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 3.23.0: depset rdepends: nonexistent atoms [ media-video/mplayer2 ]
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.16.9: "devede-3.16.9.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.21.0: "devede-3.21.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-video/dfbsee
   MissingFile: required file ChangeLog doesn't exist
@@ -2679,27 +2863,27 @@ media-video/dirac
 
 media-video/dv2sub
   DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
-  MissingChksum: version 0.3: "dv2sub-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3: "dv2sub-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/dvbackup
   DeprecatedEAPI: version 0.0.4-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.0.4-r1: "dvbackup-0.0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.0.4-r1: "dvbackup-0.0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/dvbsnoop
   MissingFile: required file ChangeLog doesn't exist
 
 media-video/dvd-slideshow
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.8.4.2: "dvd-slideshow-0.8.4-2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.8.4.2: "dvd-slideshow-examples-0.8.4-1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.8.4.2: "dvd-slideshow-themes-0.8.4-1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-video/dvd9to5
   DeprecatedEAPI: version 0.1.7: uses deprecated EAPI: 0
-  MissingChksum: version 0.1.7: "dvd9to5-0.1.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.1.7: "dvd9to5-0.1.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/dvdauthor
   MissingFile: required file ChangeLog doesn't exist
@@ -2709,8 +2893,8 @@ media-video/dvdbackup
 
 media-video/dvdimagecmp
   DeprecatedEAPI: version 0.3-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.3-r1: "dvdimagecmp-0.3.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3-r1: "dvdimagecmp-0.3.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/dvdstyler
   WrongIndentFound: version 2.7.2: ebuild has whitespace in indentation on line 58
@@ -2724,8 +2908,8 @@ media-video/dvdstyler
 
 media-video/dvgrab
   DeprecatedEAPI: version 3.5: uses deprecated EAPI: 0
-  MissingChksum: version 3.5: "dvgrab-3.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.5: "dvgrab-3.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/emovix
   DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 0
@@ -2733,8 +2917,8 @@ media-video/emovix
 
 media-video/episoder
   DeprecatedEAPI: version 0.4.7: uses deprecated EAPI: 0
-  MissingChksum: version 0.4.7: "episoder-0.4.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.4.7: "episoder-0.4.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/ffdiaporama
   MissingFile: required file ChangeLog doesn't exist
@@ -2761,13 +2945,13 @@ media-video/flumotion
 
 media-video/flvstreamer
   DeprecatedEAPI: version 2.1c: uses deprecated EAPI: 2
-  MissingChksum: version 2.1c: "flvstreamer-2.1c.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.1c: "flvstreamer-2.1c.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/frameworks
   DeprecatedEAPI: version 0.3.7: uses deprecated EAPI: 2
-  MissingChksum: version 0.3.7: "frameworks-0.3.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3.7: "frameworks-0.3.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/gaupol
   MissingFile: required file ChangeLog doesn't exist
@@ -2809,17 +2993,17 @@ media-video/gxine
   MissingFile: required file ChangeLog doesn't exist
 
 media-video/h264enc
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 9.4.0: "h264enc-9.4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 9.4.1: "h264enc-9.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-video/handbrake
   MissingFile: required file ChangeLog doesn't exist
 
 media-video/hasciicam
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.1.1: "hasciicam_1.1.1.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.1.2: "hasciicam_1.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-video/hwdecode-demos
   DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 2
@@ -2876,42 +3060,42 @@ media-video/libav
 
 media-video/lives
   NonExistentDeps: version 1.4.6: depset rdepends: nonexistent atoms [ dev-lang/python:2.6 ]
-  MissingChksum: version 1.4.6: "LiVES-1.4.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.4.6: "LiVES-1.4.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/loopy
-  MissingChksum: version 0.5.3: "120880-loopy_0.5.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.5.3: "120880-loopy_0.5.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/lsdvd
   MissingFile: required file ChangeLog doesn't exist
 
 media-video/luvcview
   DeprecatedEAPI: version 0.2.6: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2.6: "luvcview_0.2.6.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 0.2.6: "luvcview_0.2.6-4.diff.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-video/lxdvdrip
   MissingFile: required file ChangeLog doesn't exist
 
 media-video/m2vrequantizer
   DeprecatedEAPI: version 0.0.2_pre20060306: uses deprecated EAPI: 2
-  MissingChksum: version 0.0.2_pre20060306: "M2VRequantizer-20060306.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.0.2_pre20060306: "M2VRequantizer-20060306.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/makemkv
   MissingFile: required file ChangeLog doesn't exist
 
 media-video/matroxset
   DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
-  MissingChksum: version 0.4: "matroxset-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.4: "matroxset-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/maven-poke
   DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 0
-  MissingChksum: version 0.0.1: "maven-poke-0.0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.0.1: "maven-poke-0.0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/mediainfo
   MissingFile: required file ChangeLog doesn't exist
@@ -2926,24 +3110,25 @@ media-video/miro
   DeprecatedEAPI: version 5.0.4: uses deprecated EAPI: 3
   DeprecatedEclass: version 6.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 6.0: uses deprecated EAPI: 3
-  MissingChksum: version 4.0.6: "miro-4.0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 4.0.6: "miro-4.0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/mjpegtools
   MissingFile: required file ChangeLog doesn't exist
 
 media-video/mjpg-streamer
-  MissingChksum: version 0_pre20120421: "mjpg-streamer-0_pre20120421.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  DoubleEmptyLine: version 0_pre20120621-r1: ebuild has unneeded empty line 36
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0_pre20120421: "mjpg-streamer-0_pre20120421.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/mkclean
-  MissingChksum: version 0.8.6-r1: "mkclean-0.8.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.8.6-r1: "mkclean-0.8.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/mkvalidator
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3.7-r1: "mkvalidator-0.3.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.4.0: "mkvalidator-0.4.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-video/mkvtoolnix
   MissingFile: required file ChangeLog doesn't exist
@@ -2953,8 +3138,8 @@ media-video/motion
 
 media-video/motiontrack
   DeprecatedEAPI: version 0.1.3: uses deprecated EAPI: 0
-  MissingChksum: version 0.1.3: "motiontrack-0.1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.1.3: "motiontrack-0.1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/movit
   MissingFile: required file ChangeLog doesn't exist
@@ -2967,16 +3152,16 @@ media-video/mpeg2vidcodec
 
 media-video/mpglen
   DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-  MissingChksum: version 0.1: "mpglen.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.1: "mpglen.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/mpgtx
   MissingFile: required file ChangeLog doesn't exist
 
 media-video/mplay-sh
   DeprecatedEAPI: version 0.5.3-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.5.3-r1: "mplay-0.5.3.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.5.3-r1: "mplay-0.5.3.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/mplayer
   NonExistentDeps: version 1.1.1-r1: depset depends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
@@ -2989,13 +3174,13 @@ media-video/mplayer
 media-video/mplayer-resume
   DeprecatedEAPI: version 2.0: uses deprecated EAPI: 2
   NonExistentDeps: version 2.0: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
-  MissingChksum: version 2.0: "mplayer-resume-2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.0: "mplayer-resume-2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/mplayer-sh
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.8.6-r2: "mplayer.sh-0.8.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.8.7: "mplayer.sh-0.8.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-video/mpv
   MissingFile: required file ChangeLog doesn't exist
@@ -3028,8 +3213,8 @@ media-video/photofilmstrip
   WhitespaceFound: version 1.9.91-r1: ebuild has leading whitespace on lines 37, 38, 42, 43
 
 media-video/pgmfindclip
-  MissingChksum: version 1.13: "pgmfindclip-1.13.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.13: "pgmfindclip-1.13.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/photofilmstrip
   MissingFile: required file ChangeLog doesn't exist
@@ -3057,46 +3242,46 @@ media-video/qt-recordmydesktop
   DeprecatedEclass: version 0.3.8-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.3.8-r2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.3.8-r2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  MissingChksum: version 0.3.8-r2: "qt-recordmydesktop-0.3.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3.8-r2: "qt-recordmydesktop-0.3.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/qx11grab
   MissingFile: required file ChangeLog doesn't exist
 
 media-video/recmpeg
   DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 0
-  MissingChksum: version 1.0.5: "recmpeg-1.0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.5: "recmpeg-1.0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/recordmydesktop
   DeprecatedEAPI: version 0.3.8.1-r4: uses deprecated EAPI: 2
-  MissingChksum: version 0.3.8.1-r4: "recordmydesktop-0.3.8.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3.8.1-r4: "recordmydesktop-0.3.8.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/replex
   DeprecatedEAPI: version 0.1.4: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.1.6.8: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1.4: "replex-0.1.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 0.1.6.8: "replex-0.1.6.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-video/rovclock
   DeprecatedEAPI: version 0.6e: uses deprecated EAPI: 3
-  MissingChksum: version 0.6e: "rovclock-0.6e.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.6e: "rovclock-0.6e.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/rtmpdump
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   MissingFile: required file ChangeLog doesn't exist
 
 media-video/setpwc
-  MissingChksum: version 1.3: "setpwc-1.3.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.3: "setpwc-1.3.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/shrip
   DeprecatedEAPI: version 0.6.0: uses deprecated EAPI: 2
-  MissingChksum: version 0.6.0: "shrip-0.6.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.6.0: "shrip-0.6.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/smplayer
   DroppedKeywordWarning: version 14.9.0.6690-r3: keywords dropped: alpha, ppc
@@ -3107,8 +3292,8 @@ media-video/snappy
 
 media-video/sonic-snap
   DeprecatedEAPI: version 1.7: uses deprecated EAPI: 3
-  MissingChksum: version 1.7: "sonic-snap-1.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.7: "sonic-snap-1.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/sswf
   MissingFile: required file ChangeLog doesn't exist
@@ -3119,18 +3304,18 @@ media-video/stk11xx
 
 media-video/streamdvd
   DeprecatedEAPI: version 0.4-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.4-r1: "streamdvd-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.4-r1: "streamdvd-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/sub2srt
   DeprecatedEAPI: version 0.5.3: uses deprecated EAPI: 0
-  MissingChksum: version 0.5.3: "sub2srt-0.5.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.5.3: "sub2srt-0.5.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/subcheck
   DeprecatedEAPI: version 0.78.2: uses deprecated EAPI: 2
-  MissingChksum: version 0.78.2: "subcheck-0.78.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.78.2: "subcheck-0.78.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/subdl
   MissingFile: required file ChangeLog doesn't exist
@@ -3144,16 +3329,16 @@ media-video/subliminal
 
 media-video/submux-dvd
   DeprecatedEAPI: version 0.5.2: uses deprecated EAPI: 0
-  MissingChksum: version 0.5.2: "submux-dvd-0.5.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.5.2: "submux-dvd-0.5.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/subotage
   MissingFile: required file ChangeLog doesn't exist
 
 media-video/subsync
   DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 2
-  MissingChksum: version 0.0.1: "subsync-0.0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.0.1: "subsync-0.0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/subtitlecomposer
   MissingFile: required file ChangeLog doesn't exist
@@ -3170,18 +3355,18 @@ media-video/subtitleripper
 
 media-video/super_demux
   DeprecatedEAPI: version 0.3: uses deprecated EAPI: 2
-  MissingChksum: version 0.3: "super_demux-0.3.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3: "super_demux-0.3.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/tcmplex-panteltje
   DeprecatedEAPI: version 0.4.7: uses deprecated EAPI: 3
-  MissingChksum: version 0.4.7: "tcmplex-panteltje-0.4.7.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.4.7: "tcmplex-panteltje-0.4.7.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/tivodecode
   DeprecatedEAPI: version 0.2_pre4: uses deprecated EAPI: 0
-  MissingChksum: version 0.2_pre4: "tivodecode-0.2pre4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.2_pre4: "tivodecode-0.2pre4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/totem
   MissingFile: required file ChangeLog doesn't exist
@@ -3209,15 +3394,15 @@ media-video/ushare
   MissingFile: required file ChangeLog doesn't exist
 
 media-video/v4l2loopback
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.4.0: "v4l2loopback-0.4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.4.1: "v4l2loopback-0.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-video/vamps
   DeprecatedEAPI: version 0.99.2: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.99.2-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.99.2: "vamps-0.99.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.99.2: "vamps-0.99.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/vcdgear
   DeprecatedEAPI: version 1.76-r2: uses deprecated EAPI: 2
@@ -3234,21 +3419,21 @@ media-video/vdr2jpeg
 
 media-video/vdrsync
   DeprecatedEAPI: version 0.1.3_pre050322-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.1.3_pre050322-r1: "vdrsync-050322.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.1.3_pre050322-r1: "vdrsync-050322.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/vdrtools-genindex
-  MissingChksum: version 0.1.3-r1: "genindex-0.1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.1.3-r1: "genindex-0.1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/videocut
   DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 2
-  MissingChksum: version 0.2.0: "videocut_0.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.2.0: "videocut_0.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/videotrans
-  MissingChksum: version 1.6.1: "videotrans-1.6.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.6.1: "videotrans-1.6.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/vlc
   DroppedKeywordWarning: version 2.2.0: keywords dropped: ppc, ppc64
@@ -3259,13 +3444,13 @@ media-video/vmaid
 
 media-video/vobcopy
   DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 2
-  MissingChksum: version 1.2.0: "vobcopy-1.2.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2.0: "vobcopy-1.2.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-video/vstrip
   DeprecatedEAPI: version 0.8f: uses deprecated EAPI: 0
-  MissingChksum: version 0.8f: "vStrip_08f.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.8f: "vStrip_08f.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/winki
   DeprecatedEclass: version 0.4.5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -3278,6 +3463,7 @@ media-video/x264-encoder
 
 media-video/xanim
   DeprecatedEAPI: version 2.80.1-r4: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.80.1-r4: "xanim2801.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.80.1-r4: "xa2.0_cvid_sparcELF.o.Z" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.80.1-r4: "xa1.0_cyuv_sparcELF.o.Z" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -3291,14 +3477,13 @@ media-video/xanim
   MissingChksum: version 2.80.1-r4: "xa2.0_cvid_linuxELFg21.o.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.80.1-r4: "xa1.0_cyuv_linuxELFg21.o.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.80.1-r4: "xa2.1_iv32_linuxELFg21.o.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-video/xanim-export
   DeprecatedEAPI: version 2.80.1-r5: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.80.1-r5: "xa1.0_cyuv_sparcELF.o.Z" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.80.1-r5: "xa2.0_cvid_sparcELF.o.Z" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.80.1-r5: "xa2.0_iv32_sparcELF.o.Z" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-video/xine-ui
   MissingFile: required file ChangeLog doesn't exist
@@ -3308,8 +3493,8 @@ media-video/xvattr
 
 media-video/xvid4conf
   DeprecatedEAPI: version 1.12: uses deprecated EAPI: 2
-  MissingChksum: version 1.12: "xvid4conf-1.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.12: "xvid4conf-1.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-video/xvideoservicethief
   DeprecatedEAPI: version 2.4.1-r2: uses deprecated EAPI: 2
@@ -3325,12 +3510,12 @@ media-fonts/Humor-Sans
   MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/acroread-asianfonts
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 9.1: "FontPack910_xtd_i486-linux.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 9.1: "FontPack910_jpn_i486-linux.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 9.1: "FontPack910_kor_i486-linux.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 9.1: "FontPack910_chs_i486-linux.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 9.1: "FontPack910_cht_i486-linux.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/ahem
   MissingFile: required file ChangeLog doesn't exist
@@ -3350,22 +3535,22 @@ media-fonts/anonymous-pro
 
 media-fonts/aquafont
   DeprecatedEAPI: version 2.7-r4: uses deprecated EAPI: 0
-  MissingChksum: version 2.7-r4: "aqua2_7.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.7-r4: "aqua2_7.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/aquapfont
   DeprecatedEAPI: version 2.6-r2: uses deprecated EAPI: 0
-  MissingChksum: version 2.6-r2: "aquap2_6.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.6-r2: "aquap2_6.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/arabeyes-fonts
   DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
-  MissingChksum: version 2.0: "ae_fonts_2.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.0: "ae_fonts_2.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/arkpandora
-  MissingChksum: version 2.04: "ttf-arkpandora-2.04.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.04: "ttf-arkpandora-2.04.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/arphicfonts
   MissingFile: required file ChangeLog doesn't exist
@@ -3376,15 +3561,15 @@ media-fonts/artwiz-aleczapka-en
 
 media-fonts/artwiz-latin1
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
-  MissingChksum: version 1.1: "artwiz-latin1-1.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1: "artwiz-latin1-1.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/baekmuk-fonts
   DeprecatedEAPI: version 2.2-r2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.2-r2: "baekmuk-ttf-2.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.2-r2: "baekmuk-bdf-2.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.2-r2: "20020418.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/bitstream-cyberbit
   DeprecatedEAPI: version 2.0: uses deprecated EAPI: 2
@@ -3395,11 +3580,12 @@ media-fonts/cantarell
 
 media-fonts/cardo
   DeprecatedEAPI: version 1.04: uses deprecated EAPI: 0
-  MissingChksum: version 1.04: "cardo104.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.04: "cardo104.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/cheapskatefonts
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0: "Domestic_Manners.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.0: "PenguinAttack.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.0: "Dustismo.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
@@ -3412,12 +3598,11 @@ media-fonts/cheapskatefonts
   MissingChksum: version 1.0: "Swift.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.0: "Wargames.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.0: "Winks.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/cm-unicode
   DeprecatedEAPI: version 0.7.0: uses deprecated EAPI: 3
-  MissingChksum: version 0.7.0: "cm-unicode-0.7.0-ttf.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.7.0: "cm-unicode-0.7.0-ttf.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/comic-neue
   MissingFile: required file ChangeLog doesn't exist
@@ -3459,11 +3644,12 @@ media-fonts/eb-garamond
 
 media-fonts/efont-unicode
   DeprecatedEAPI: version 0.4.2-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.4.2-r1: "efont-unicode-bdf-0.4.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.4.2-r1: "efont-unicode-bdf-0.4.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/ekushey-bangla-fonts
   DeprecatedEAPI: version 20070420: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 20070420: "Lohit_14-04-2007.ttf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 20070420: "Mohua_07-09-05.ttf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 20070420: "Godhuli_03-09-2005.ttf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -3475,7 +3661,6 @@ media-fonts/ekushey-bangla-fonts
   MissingChksum: version 20070420: "Punarbhaba_27-02-2006.ttf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 20070420: "SolaimanLipi_20-04-07.ttf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 20070420: "Rupali_01-02-2007.ttf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/encodings
   DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
@@ -3486,12 +3671,12 @@ media-fonts/essays1743
 
 media-fonts/exljbris-free
   DeprecatedEAPI: version 20100320: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 20100320: "delicious-123.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 20100320: "Diavlo_II_37b2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 20100320: "fontin2_pc.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 20100320: "FontinSans_49.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 20100320: "tallys_15b2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/exo
   MissingFile: required file ChangeLog doesn't exist
@@ -3501,8 +3686,8 @@ media-fonts/fantasque-sans-mono
 
 media-fonts/farsi-fonts
   DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
-  MissingChksum: version 0.4: "farsifonts-0.4.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.4: "farsifonts-0.4.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/fgdc-emergency
   DeprecatedEAPI: version 2.20: uses deprecated EAPI: 0
@@ -3519,28 +3704,28 @@ media-fonts/fira-sans
 
 media-fonts/font-adobe-100dpi
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "font-adobe-100dpi-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.3: "font-adobe-100dpi-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-adobe-75dpi
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "font-adobe-75dpi-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.3: "font-adobe-75dpi-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-adobe-utopia-100dpi
   DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.4: "font-adobe-utopia-100dpi-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.4: "font-adobe-utopia-100dpi-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-adobe-utopia-75dpi
   DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.4: "font-adobe-utopia-75dpi-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.4: "font-adobe-utopia-75dpi-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-adobe-utopia-type1
   DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.4: "font-adobe-utopia-type1-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.4: "font-adobe-utopia-type1-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-alias
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
@@ -3549,8 +3734,8 @@ media-fonts/font-alias
 
 media-fonts/font-arabic-misc
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "font-arabic-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.3: "font-arabic-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-bh-100dpi
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
@@ -3570,38 +3755,38 @@ media-fonts/font-bh-lucidatypewriter-75dpi
 
 media-fonts/font-bh-ttf
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "font-bh-ttf-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.3: "font-bh-ttf-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/font-bh-type1
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "font-bh-type1-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.3: "font-bh-type1-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/font-bitstream-100dpi
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "font-bitstream-100dpi-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.3: "font-bitstream-100dpi-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-bitstream-75dpi
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "font-bitstream-75dpi-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.3: "font-bitstream-75dpi-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-bitstream-speedo
   DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.2: "font-bitstream-speedo-1.0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.2: "font-bitstream-speedo-1.0.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-bitstream-type1
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "font-bitstream-type1-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.3: "font-bitstream-type1-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-cronyx-cyrillic
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "font-cronyx-cyrillic-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.3: "font-cronyx-cyrillic-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-cursor-misc
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
@@ -3609,48 +3794,48 @@ media-fonts/font-cursor-misc
 
 media-fonts/font-daewoo-misc
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "font-daewoo-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.3: "font-daewoo-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-dec-misc
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "font-dec-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.3: "font-dec-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-ibm-type1
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "font-ibm-type1-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.3: "font-ibm-type1-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-isas-misc
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "font-isas-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.3: "font-isas-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-jis-misc
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "font-jis-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.3: "font-jis-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-micro-misc
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "font-micro-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.3: "font-micro-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-misc-cyrillic
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "font-misc-cyrillic-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.3: "font-misc-cyrillic-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-misc-ethiopic
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "font-misc-ethiopic-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.3: "font-misc-ethiopic-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-misc-meltho
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "font-misc-meltho-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.3: "font-misc-meltho-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-misc-misc
   DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 3
@@ -3658,57 +3843,57 @@ media-fonts/font-misc-misc
 
 media-fonts/font-mutt-misc
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "font-mutt-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.3: "font-mutt-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-schumacher-misc
   DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 3
-  MissingChksum: version 1.1.2: "font-schumacher-misc-1.1.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1.2: "font-schumacher-misc-1.1.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-screen-cyrillic
   DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.4: "font-screen-cyrillic-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.4: "font-screen-cyrillic-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-sony-misc
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "font-sony-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.3: "font-sony-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-sun-misc
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "font-sun-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.3: "font-sun-misc-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-util
   MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/font-winitzki-cyrillic
   DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.3: "font-winitzki-cyrillic-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.3: "font-winitzki-cyrillic-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/font-xfree86-type1
   DeprecatedEAPI: version 1.0.4: uses deprecated EAPI: 3
-  MissingChksum: version 1.0.4: "font-xfree86-type1-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.4: "font-xfree86-type1-1.0.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/free-bangla-font
   DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2: "Akaash-0.8.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 0.2: "Ani.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 0.2: "Likhan-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 0.2: "MuktiNarrow-0.94.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/freefont
   MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/freefonts
   DeprecatedEAPI: version 0.10-r3: uses deprecated EAPI: 0
-  MissingChksum: version 0.10-r3: "freefonts-0.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.10-r3: "freefonts-0.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/fs-fonts
   DeprecatedEAPI: version 0.1_alpha3: uses deprecated EAPI: 0
@@ -3722,10 +3907,10 @@ media-fonts/hermit
 
 media-fonts/heuristica
   DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.2.1: "heuristica-ttf-0.2.1.tar.xz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 0.2.1: "heuristica-otf-0.2.1.tar.xz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 0.2.1: "heuristica-pfb-0.2.1.tar.xz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/hkscs-ming
   DeprecatedEAPI: version 1.0_pre20030919-r2: uses deprecated EAPI: 0
@@ -3737,8 +3922,8 @@ media-fonts/hunkyfonts
 
 media-fonts/inconsolata
   DeprecatedEAPI: version 20090222: uses deprecated EAPI: 0
-  MissingChksum: version 20090222: "inconsolata-20090222.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 20090222: "inconsolata-20090222.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/inconsolata-hellenic
   MissingFile: required file ChangeLog doesn't exist
@@ -3748,23 +3933,24 @@ media-fonts/infinality-ultimate-meta
 
 media-fonts/intlfonts
   DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
-  MissingChksum: version 1.2.1: "intlfonts-1.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2.1: "intlfonts-1.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/ipaex
   MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/ipamonafont
   DeprecatedEAPI: version 1.0.8: uses deprecated EAPI: 0
-  MissingChksum: version 1.0.8: "opfc-ModuleHP-1.1.1_withIPAMonaFonts-1.0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.8: "opfc-ModuleHP-1.1.1_withIPAMonaFonts-1.0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/ja-ipafonts
-  MissingChksum: version 003.03: "IPAfont00303.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 003.03: "IPAfont00303.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/jisx0213-fonts
   DeprecatedEAPI: version 20040425-r2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 20040425-r2: "jiskan16-2004-1.bdf.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 20040425-r2: "jiskan16-2000-1.bdf.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 20040425-r2: "jiskan16-2000-2.bdf.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
@@ -3777,7 +3963,6 @@ media-fonts/jisx0213-fonts
   MissingChksum: version 20040425-r2: "A12.bdf.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 20040425-r2: "jiskan24-2000-1.bdf.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 20040425-r2: "jiskan24-2000-2.bdf.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/jomolhari
   MissingFile: required file ChangeLog doesn't exist
@@ -3788,20 +3973,20 @@ media-fonts/jsmath
 
 media-fonts/jsmath-extra-dark
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-  MissingChksum: version 1.0: "jsmath-extra-dark-1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0: "jsmath-extra-dark-1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/jsmath-extra-light
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-  MissingChksum: version 1.0: "jsmath-extra-light-1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0: "jsmath-extra-light-1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/kacst-fonts
   DeprecatedEAPI: version 1.6.2: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.6.2: "kacst_fonts_1.6.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.0: "kacst_fonts_2.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/kanjistrokeorders
   DeprecatedEAPI: version 2.012: uses deprecated EAPI: 0
@@ -3809,40 +3994,40 @@ media-fonts/kanjistrokeorders
   DeprecatedEAPI: version 2.014: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.015: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.016: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.012: "KanjiStrokeOrders_v2.012.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 2.013: "KanjiStrokeOrders_v2.013.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 2.014: "KanjiStrokeOrders_v2.014.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 2.015: "KanjiStrokeOrders_v2.015.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 2.016: "KanjiStrokeOrders_v2.016.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/khmer
   DeprecatedEAPI: version 5.0-r1: uses deprecated EAPI: 0
-  MissingChksum: version 5.0-r1: "All_KhmerOS_5.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 5.0-r1: "All_KhmerOS_5.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/kochi-substitute
   DeprecatedEAPI: version 20030809-r3: uses deprecated EAPI: 0
-  MissingChksum: version 20030809-r3: "kochi-substitute-20030809.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 20030809-r3: "kochi-substitute-20030809.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/konfont
   DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-  MissingChksum: version 0.1: "konfont_0.1.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.1: "konfont_0.1.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/koruri
   MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/lfpfonts-fix
   DeprecatedEAPI: version 0.83-r2: uses deprecated EAPI: 0
-  MissingChksum: version 0.83-r2: "lfpfonts-fix-src-0.83.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.83-r2: "lfpfonts-fix-src-0.83.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/lfpfonts-var
   DeprecatedEAPI: version 0.84: uses deprecated EAPI: 0
-  MissingChksum: version 0.84: "lfpfonts-var-src-0.84.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.84: "lfpfonts-var-src-0.84.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/liberation-fonts
   DroppedKeywordWarning: version 2.00.1-r1: keywords dropped: alpha, ppc64, sparc
@@ -3901,33 +4086,34 @@ media-fonts/lohit-telugu
 
 media-fonts/mathematica-fonts
   DeprecatedEAPI: version 7.0: uses deprecated EAPI: 0
-  MissingChksum: version 7.0: "MathematicaV7FontsLinux.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 7.0: "MathematicaV7FontsLinux.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/mgopen
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
-  MissingChksum: version 1.1: "mgopen-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1: "mgopen-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/mikachan-font-otf
   DeprecatedEAPI: version 9.1-r1: uses deprecated EAPI: 0
-  MissingChksum: version 9.1-r1: "mikachan-font-otf-9.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 9.1-r1: "mikachan-font-otf-9.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/mikachan-font-ttc
   DeprecatedEAPI: version 9.1: uses deprecated EAPI: 0
-  MissingChksum: version 9.1: "mikachan-font-9.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 9.1: "mikachan-font-9.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/mikachan-font-ttf
   DeprecatedEAPI: version 8.9-r2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 8.9-r2: "mikachanfont-8.9.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 8.9-r2: "mikachanfontP-8.9.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 8.9-r2: "mikachanfontPB-8.9.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 8.9-r2: "mikachanfontPS-8.9.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/mix-mplus-ipa
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 20110825: "MigMix-1M-20110825.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 20110825: "MigMix-1P-20110825.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 20110825: "MigMix-2M-20110825.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -3953,23 +4139,25 @@ media-fonts/mix-mplus-ipa
   MissingChksum: version 20120411_p2: "migu-1c-20120411-2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 20120411_p2: "migu-1m-20120411-2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 20120411_p2: "migu-2m-20120411-2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/monafont
   DeprecatedEAPI: version 2.90-r2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.90-r2: "monafont-2.90.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.90-r2: "monafont-ttf-2.90.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-fonts/monoid
   MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/montecarlo
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0: "MonteCarlo-PCF.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0: "MonteCarlo-BDF.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/mplus-fonts
   DeprecatedEAPI: version 2.2.4: uses deprecated EAPI: 0
-  MissingChksum: version 2.2.4: "mplus_bitmap_fonts-2.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.2.4: "mplus_bitmap_fonts-2.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/mplus-outline-fonts
   MissingFile: required file ChangeLog doesn't exist
@@ -3977,13 +4165,13 @@ media-fonts/mplus-outline-fonts
 media-fonts/nanumfont
   DeprecatedEAPI: version 2.0: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.0-r1: uses deprecated EAPI: 2
-  MissingChksum: version 2.0: "NanumGothicCoding-2.0.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.0: "NanumGothicCoding-2.0.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/nepali-fonts
   DeprecatedEAPI: version 1-r1: uses deprecated EAPI: 0
-  MissingChksum: version 1-r1: "nepali-fonts-1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1-r1: "nepali-fonts-1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/noto
   MissingFile: required file ChangeLog doesn't exist
@@ -3999,17 +4187,17 @@ media-fonts/ohsnap
 
 media-fonts/oldstandard
   DeprecatedEAPI: version 2.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.2: "oldstandard-2.2.otf.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.2: "oldstandard-2.2.ttf.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/open-sans
   MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/opendesktop-fonts
   DeprecatedEAPI: version 1.4.2: uses deprecated EAPI: 0
-  MissingChksum: version 1.4.2: "opendesktop-fonts-1.4.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.4.2: "opendesktop-fonts-1.4.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/oto
   DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
@@ -4020,26 +4208,26 @@ media-fonts/paratype
 
 media-fonts/pcf2bdf
   DeprecatedEAPI: version 1.04-r1: uses deprecated EAPI: 0
-  MissingChksum: version 1.04-r1: "pcf2bdf-1.04.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.04-r1: "pcf2bdf-1.04.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/pigiarniq
   DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-  MissingChksum: version 1: "pigiarniq.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1: "pigiarniq.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/pothana2k
   DeprecatedEAPI: version 2006-r1: uses deprecated EAPI: 0
-  MissingChksum: version 2006-r1: "pothana2k-2006.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2006-r1: "pothana2k-2006.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/powerline-symbols
   MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/proggy-fonts
   DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-  MissingChksum: version 1: "proggy-fonts-1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1: "proggy-fonts-1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/qomolangma
   MissingFile: required file ChangeLog doesn't exist
@@ -4048,8 +4236,8 @@ media-fonts/quivira
   MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/ricty
-  MissingChksum: version 3.2.0: "Ricty-3.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.2.0: "Ricty-3.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/roboto
   DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
@@ -4057,60 +4245,60 @@ media-fonts/roboto
 
 media-fonts/sazanami
   DeprecatedEAPI: version 20040629: uses deprecated EAPI: 0
-  MissingChksum: version 20040629: "sazanami-20040629.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 20040629: "sazanami-20040629.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/sgi-fonts
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-  MissingChksum: version 1.0: "sgi-fonts-1.0-705.noarch.rpm" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0: "sgi-fonts-1.0-705.noarch.rpm" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/shinonome
   DeprecatedEAPI: version 0.9.11: uses deprecated EAPI: 0
-  MissingChksum: version 0.9.11: "shinonome-0.9.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.9.11: "shinonome-0.9.11.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/signika
   MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/sil-abyssinica
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0: "ttf-sil-abyssinica-1.0.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.200: "AbyssinicaSIL1.200.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/sil-arabicfonts
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.005: "ScheherazadeRegOT-1.005.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.005: "LateefRegOT_1.001.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/sil-charis
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 4.110: "CharisSIL-4.110.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 4.110: "CharisSILCompact-4.110.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/sil-doulos
   DeprecatedEAPI: version 4.106: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 4.106: "DoulosSIL4.106.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 4.110: "DoulosSIL-4.110.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/sil-ezra
   DeprecatedEAPI: version 2.51: uses deprecated EAPI: 0
-  MissingChksum: version 2.51: "EzraSIL251.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.51: "EzraSIL251.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/sil-galatia
   DeprecatedEAPI: version 2.1: uses deprecated EAPI: 0
-  MissingChksum: version 2.1: "GalSIL21.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.1: "GalSIL21.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/sil-gentium
   MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/sil-padauk
-  MissingChksum: version 2.8: "padauk-2.8.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.8: "padauk-2.8.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/sophia-nubian
   MissingFile: required file ChangeLog doesn't exist
@@ -4134,12 +4322,12 @@ media-fonts/takao-fonts
 
 media-fonts/tengwar-fonts
   DeprecatedEAPI: version 1.9d: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.9d: "tengq19d.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.9d: "tengs19d.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.9d: "tengn19d.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.9d: "parmaite12b.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.9d: "tcurs100.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/terminus-font
   DeprecatedEAPI: version 4.36: uses deprecated EAPI: 3
@@ -4153,38 +4341,38 @@ media-fonts/tex-gyre
 
 media-fonts/texcm-ttf
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-  MissingChksum: version 1.0: "texcm-ttf.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0: "texcm-ttf.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/thaifonts-scalable
   MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/tibetan-machine-font
   DeprecatedEAPI: version 1.901: uses deprecated EAPI: 0
-  MissingChksum: version 1.901: "TibetanMachineUnicodeFont-1.901.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.901: "TibetanMachineUnicodeFont-1.901.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/ttf-bitstream-vera
   DeprecatedEAPI: version 1.10-r3: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/ubuntu-font-family
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.71.2: "ubuntu-font-family-0.71.2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.80: "ubuntu-font-family-0.80.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/umeplus-fonts
   MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/unfonts
   DeprecatedEAPI: version 1.0.2_pre080608-r1: uses deprecated EAPI: 0
-  MissingChksum: version 1.0.2_pre080608-r1: "un-fonts-core-1.0.2-080608-r1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.2_pre080608-r1: "un-fonts-core-1.0.2-080608-r1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/unfonts-extra
   DeprecatedEAPI: version 1.0.2_pre080608-r1: uses deprecated EAPI: 0
-  MissingChksum: version 1.0.2_pre080608-r1: "un-fonts-extra-1.0.2-080608-r1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.2_pre080608-r1: "un-fonts-extra-1.0.2-080608-r1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/unifont
   DeprecatedEAPI: version 5.1.20080914: uses deprecated EAPI: 0
@@ -4196,19 +4384,19 @@ media-fonts/urw-fonts
   MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/urwvn-fonts
-  MissingChksum: version 3.05: "urwvn-3.05-ttf.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.05: "urwvn-3.05-ttf.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/vc-fonts
   DeprecatedEAPI: version 20020207-r2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 20020207-r2: "vc-fonts-20020207.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 20020207-r2: "bleed3.bdf.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/vdrsymbols-ttf
   DeprecatedEAPI: version 20100612: uses deprecated EAPI: 0
-  MissingChksum: version 20100612: "vdrsymbols-ttf-20100612.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 20100612: "vdrsymbols-ttf-20100612.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/viga
   MissingFile: required file ChangeLog doesn't exist
@@ -4216,8 +4404,8 @@ media-fonts/viga
 media-fonts/vlgothic
   DeprecatedEAPI: version 20110722: uses deprecated EAPI: 0
   DeprecatedEAPI: version 20141206: uses deprecated EAPI: 0
-  MissingChksum: version 20110722: "VLGothic-20110722.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 20110722: "VLGothic-20110722.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/vollkorn
   DeprecatedEAPI: version 2.1: uses deprecated EAPI: 0
@@ -4225,8 +4413,8 @@ media-fonts/vollkorn
 
 media-fonts/webby-fonts
   DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-  MissingChksum: version 1: "webby-fonts-1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1: "webby-fonts-1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 media-fonts/wqy-bitmapfont
   DeprecatedEAPI: version 1.0.0_rc1: uses deprecated EAPI: 0
@@ -4239,22 +4427,22 @@ media-fonts/wqy-microhei
 
 media-fonts/wqy-unibit
   DeprecatedEAPI: version 1.1.0_p1: uses deprecated EAPI: 0
-  MissingChksum: version 1.1.0_p1: "wqy-unibit-bdf-1.1.0-1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1.0_p1: "wqy-unibit-bdf-1.1.0-1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/wqy-zenhei
   MissingFile: required file ChangeLog doesn't exist
 
 media-fonts/x11fonts-jmk
   DeprecatedEAPI: version 3.0-r1: uses deprecated EAPI: 0
-  MissingChksum: version 3.0-r1: "jmk-x11-fonts-3.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.0-r1: "jmk-x11-fonts-3.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-fonts/zh-kcfonts
   DeprecatedEAPI: version 1.05-r3: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.05-r3: "kcfonts-1.05.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.05-r3: "kcfonts-1.05-freebsd-aa_ad.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -4271,9 +4459,9 @@ net-mail/altermime
   DeprecatedEAPI: version 0.3.7: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.3.10: uses deprecated EAPI: 2
   DeprecatedEAPI: version 0.3.10-r1: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3.7: "altermime-0.3.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.3.10: "altermime-0.3.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 net-mail/amavis-logwatch
   MissingFile: required file ChangeLog doesn't exist
@@ -4285,8 +4473,8 @@ net-mail/archivemail
 
 net-mail/asmail
   DeprecatedEAPI: version 2.1: uses deprecated EAPI: 0
-  MissingChksum: version 2.1: "asmail-2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.1: "asmail-2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/automx
   MissingFile: required file ChangeLog doesn't exist
@@ -4294,15 +4482,15 @@ net-mail/automx
 net-mail/autorespond
   DeprecatedEAPI: version 2.0.4: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.0.5: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.0.4: "autorespond-2.0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.0.4: "autorespond_2.0.4-1.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.0.5: "autorespond-2.0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 net-mail/bincimap
   DeprecatedEAPI: version 1.2.13: uses deprecated EAPI: 0
-  MissingChksum: version 1.2.13: "bincimap-1.2.13final.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2.13: "bincimap-1.2.13final.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/checkpassword
   DeprecatedEAPI: version 0.90-r2: uses deprecated EAPI: 0
@@ -4311,18 +4499,18 @@ net-mail/checkpassword
 
 net-mail/checkpassword-pam
   DeprecatedEAPI: version 0.99: uses deprecated EAPI: 0
-  MissingChksum: version 0.99: "checkpassword-pam-0.99.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.99: "checkpassword-pam-0.99.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/checkpw
   DeprecatedEAPI: version 1.02: uses deprecated EAPI: 0
-  MissingChksum: version 1.02: "checkpw-1.02.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.02: "checkpw-1.02.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/cmd5checkpw
   DeprecatedEAPI: version 0.30-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.30-r1: "cmd5checkpw-030_tgz.bin" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.30-r1: "cmd5checkpw-030_tgz.bin" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/courier-imap
   DroppedKeywordWarning: version 4.16.0: keywords dropped: alpha, arm, ia64, mips, ppc, s390, sh, sparc
@@ -4330,8 +4518,8 @@ net-mail/courier-imap
 
 net-mail/courierpassd
   DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
-  MissingChksum: version 1.1.2: "courierpassd-1.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1.2: "courierpassd-1.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/cyrus-imap-admin
   MissingFile: required file ChangeLog doesn't exist
@@ -4345,8 +4533,8 @@ net-mail/dbmail
 net-mail/dot-forward
   DeprecatedEAPI: version 0.71-r2: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.71-r3: uses deprecated EAPI: 0
-  MissingChksum: version 0.71-r2: "dot-forward-0.71.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.71-r2: "dot-forward-0.71.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/dovecot
   DroppedKeywordWarning: version 2.2.16-r1: keywords dropped: mips, s390, sh, sparc
@@ -4356,30 +4544,30 @@ net-mail/email
   DeprecatedEAPI: version 2.5.0: uses deprecated EAPI: 0
   DeprecatedEAPI: version 3.0.5: uses deprecated EAPI: 0
   DeprecatedEAPI: version 3.1.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.5.0: "email-2.5.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.0.5: "email-3.0.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.1.2: "email-3.1.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.1.3: "email-3.1.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 net-mail/eps
   DeprecatedEAPI: version 1.7: uses deprecated EAPI: 3
-  MissingChksum: version 1.7: "eps-1.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.7: "eps-1.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 net-mail/ezmlm-idx
   DeprecatedEAPI: version 6.0.0: uses deprecated EAPI: 0
   DeprecatedEAPI: version 7.0.0: uses deprecated EAPI: 0
   DeprecatedEAPI: version 7.0.0-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 7.0.0-r2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 6.0.0: "ezmlm-idx-6.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 7.0.0: "ezmlm-idx-7.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 net-mail/fastforward
   DeprecatedEAPI: version 0.51-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.51-r1: "fastforward-0.51.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.51-r1: "fastforward-0.51.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/fdm
   MissingFile: required file ChangeLog doesn't exist
@@ -4389,8 +4577,8 @@ net-mail/fetchmail
 
 net-mail/gensig
   DeprecatedEAPI: version 2.3: uses deprecated EAPI: 0
-  MissingChksum: version 2.3: "gensig-2.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.3: "gensig-2.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 net-mail/getmail
   MissingFile: required file ChangeLog doesn't exist
@@ -4403,8 +4591,8 @@ net-mail/grepmail
 
 net-mail/hotwayd
   DeprecatedEAPI: version 0.8.4: uses deprecated EAPI: 0
-  MissingChksum: version 0.8.4: "hotwayd-0.8.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.8.4: "hotwayd-0.8.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/imapsync
   MissingFile: required file ChangeLog doesn't exist
@@ -4413,8 +4601,8 @@ net-mail/isync
   MissingFile: required file ChangeLog doesn't exist
 
 net-mail/kuvert
-  MissingChksum: version 2.0.4: "kuvert_2.0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.0.4: "kuvert_2.0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/lbdb
   MissingFile: required file ChangeLog doesn't exist
@@ -4438,19 +4626,19 @@ net-mail/mailbase
   MissingFile: required file ChangeLog doesn't exist
 
 net-mail/maildirtree
-  MissingChksum: version 0.6-r1: "maildirtree-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.6-r1: "maildirtree-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/mailfront
   DeprecatedEAPI: version 0.88: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.98: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.12: uses deprecated EAPI: 2
   DeprecatedEAPI: version 1.16: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.88: "mailfront-0.88.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 0.98: "mailfront-0.98.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.12: "mailfront-1.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.16: "mailfront-1.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 net-mail/mailgraph
   MissingFile: required file ChangeLog doesn't exist
@@ -4461,24 +4649,24 @@ net-mail/mailman
 
 net-mail/mailsync
   DeprecatedEAPI: version 5.2.1: uses deprecated EAPI: 0
-  MissingChksum: version 5.2.1: "mailsync_5.2.1.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 5.2.1: "mailsync_5.2.1.orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/mailutils
   DeprecatedEclass: version 2.99.98: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingFile: required file ChangeLog doesn't exist
 
 net-mail/mairix
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.23: "mairix-0.23.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.23: "mairix-0.23-gnus-marks-propagation.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 net-mail/mboxgrep
   MissingFile: required file ChangeLog doesn't exist
 
 net-mail/mess822
-  MissingChksum: version 0.58-r2: "mess822-0.58.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.58-r2: "mess822-0.58.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/metamail
   MissingFile: required file ChangeLog doesn't exist
@@ -4487,8 +4675,8 @@ net-mail/mhonarc
   MissingFile: required file ChangeLog doesn't exist
 
 net-mail/mhonarc-gentoo
-  MissingChksum: version 2.6.18-r1: "MHonArc-2.6.18.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.6.18-r1: "MHonArc-2.6.18.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/mlmmj
   DeprecatedEAPI: version 1.2.17.1: uses deprecated EAPI: 0
@@ -4509,8 +4697,8 @@ net-mail/mu
 
 net-mail/nmzmail
   DeprecatedEAPI: version 1.1: uses deprecated EAPI: 2
-  MissingChksum: version 1.1: "nmzmail-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1: "nmzmail-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 net-mail/notmuch
   MissingFile: required file ChangeLog doesn't exist
@@ -4519,12 +4707,12 @@ net-mail/offlineimap
   MissingFile: required file ChangeLog doesn't exist
 
 net-mail/peephole
-  MissingChksum: version 1.5: "peephole-1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.5: "peephole-1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/perdition
-  MissingChksum: version 1.18: "perdition-1.18.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.18: "perdition-1.18.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/pflogsumm
   DeprecatedEAPI: version 1.1.5: uses deprecated EAPI: 0
@@ -4534,8 +4722,8 @@ net-mail/pfqueue
   MissingFile: required file ChangeLog doesn't exist
 
 net-mail/pop-before-smtp
-  MissingChksum: version 1.42: "pop-before-smtp-1.42.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.42: "pop-before-smtp-1.42.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/pop2imap
   MissingFile: required file ChangeLog doesn't exist
@@ -4550,22 +4738,22 @@ net-mail/popick
 net-mail/poppassd_ceti
   DeprecatedEAPI: version 1.8.5-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.8.5-r2: uses deprecated EAPI: 0
-  MissingChksum: version 1.8.5-r1: "poppassd-1.8.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.8.5-r1: "poppassd-1.8.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 net-mail/postfix-logwatch
   MissingFile: required file ChangeLog doesn't exist
 
 net-mail/qlogtools
   DeprecatedEAPI: version 3.1: uses deprecated EAPI: 0
-  MissingChksum: version 3.1: "qlogtools-3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.1: "qlogtools-3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 net-mail/qmail-autoresponder
   DeprecatedEAPI: version 0.97-r1: uses deprecated EAPI: 2
   DeprecatedEAPI: version 0.97-r2: uses deprecated EAPI: 2
-  MissingChksum: version 0.97-r1: "qmail-autoresponder-0.97.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.97-r1: "qmail-autoresponder-0.97.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/qmail-lint
   DeprecatedEAPI: version 0.55: uses deprecated EAPI: 0
@@ -4573,14 +4761,14 @@ net-mail/qmail-lint
 
 net-mail/qmail-notify
   DeprecatedEAPI: version 0.93-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.93-r1: "qmail-notify-0.93.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.93-r1: "qmail-notify-0.93.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/qmail-qfilter
   DeprecatedEAPI: version 2.1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.1-r1: uses deprecated EAPI: 2
-  MissingChksum: version 2.1: "qmail-qfilter-2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.1: "qmail-qfilter-2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 net-mail/qmail-qsanity
   DeprecatedEAPI: version 0.52: uses deprecated EAPI: 0
@@ -4597,22 +4785,22 @@ net-mail/qmailadmin
 
 net-mail/qmailanalog
   DeprecatedEAPI: version 0.70-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.70-r1: "qmailanalog-0.70.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.70-r1: "qmailanalog-0.70.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/qmhandle
   DeprecatedEAPI: version 1.2.0-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.3.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.2.0-r1: "qmhandle-1.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.3.2: "qmhandle-1.3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 net-mail/qmrtg
   MissingFile: required file ChangeLog doesn't exist
 
 net-mail/qpopper
-  MissingChksum: version 4.1.0: "qpopper4.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 4.1.0: "qpopper4.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/qprint
   DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
@@ -4628,18 +4816,18 @@ net-mail/queue-fix
 
 net-mail/queue-repair
   DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 0
-  MissingChksum: version 0.9.0: "queue-repair-0.9.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.9.0: "queue-repair-0.9.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 net-mail/randomsig
   DeprecatedEAPI: version 1.10.0: uses deprecated EAPI: 0
-  MissingChksum: version 1.10.0: "randomsig-v1.10.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.10.0: "randomsig-v1.10.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 net-mail/relay-ctrl
   DeprecatedEAPI: version 3.1.1-r2: uses deprecated EAPI: 0
-  MissingChksum: version 3.1.1-r2: "relay-ctrl-3.1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.1.1-r2: "relay-ctrl-3.1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/renattach
   MissingFile: required file ChangeLog doesn't exist
@@ -4653,27 +4841,27 @@ net-mail/ripole
 net-mail/rss2email
   DeprecatedEclass: version 2.71: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.71: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.71: "rss2email-2.71.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.71: "rss2email_2.65-1.diff.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 net-mail/safecat
   DeprecatedEAPI: version 1.13: uses deprecated EAPI: 3
-  MissingChksum: version 1.13: "safecat-1.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.13: "safecat-1.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 net-mail/sendEmail
   MissingFile: required file ChangeLog doesn't exist
 
 net-mail/serialmail
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.75-r4: "serialmail-0.75.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.75-r4: "serialmail-0.75-patch.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 net-mail/signify
   DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
-  MissingChksum: version 1.14: "signify_1.14-1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.14: "signify_1.14-1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 net-mail/smtptools
   MissingFile: required file ChangeLog doesn't exist
@@ -4682,8 +4870,8 @@ net-mail/spamcup
   DeprecatedEAPI: version 1.09: uses deprecated EAPI: 0
   NonExistentDeps: version 1.09: depset depends: nonexistent atoms [ <dev-perl/libwww-perl-6 ]
   NonExistentDeps: version 1.09: depset rdepends: nonexistent atoms [ <dev-perl/libwww-perl-6 ]
-  MissingChksum: version 1.09: "spamcup-1.09.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.09: "spamcup-1.09.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/swaks
   DeprecatedEAPI: version 20130209.0: uses deprecated EAPI: 0
@@ -4699,8 +4887,8 @@ net-mail/topal
   MissingFile: required file ChangeLog doesn't exist
 
 net-mail/tpop3d
-  MissingChksum: version 1.5.5: "tpop3d-1.5.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.5.5: "tpop3d-1.5.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/up-imapproxy
   MissingFile: required file ChangeLog doesn't exist
@@ -4709,13 +4897,13 @@ net-mail/uw-imap
   MissingFile: required file ChangeLog doesn't exist
 
 net-mail/uw-mailutils
-  MissingChksum: version 2007f: "imap-2007f.tar.Z" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2007f: "imap-2007f.tar.Z" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 net-mail/vacation
   DeprecatedEAPI: version 1.2.7.0: uses deprecated EAPI: 0
-  MissingChksum: version 1.2.7.0: "vacation-1.2.7.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2.7.0: "vacation-1.2.7.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-mail/vchkuser
   DeprecatedEAPI: version 0.3.3: uses deprecated EAPI: 2
@@ -4725,9 +4913,9 @@ net-mail/vpopmail
   BadInsIntoDir: version 5.4.16: ebuild uses insinto /etc/cron.hourly on line 167
 
 net-mail/vchkuser
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3.3: "vchkuser-0.3.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.4: "vchkuser-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 net-mail/vpopmail
   DeprecatedEAPI: version 5.4.16: uses deprecated EAPI: 0
@@ -4738,18 +4926,18 @@ net-mail/vpopmail
 net-mail/vqadmin
   DeprecatedEAPI: version 2.3.6: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.3.7: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.3.6: "vqadmin-2.3.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 2.3.7: "vqadmin-2.3.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 net-mail/yosucker
   DeprecatedEAPI: version 73: uses deprecated EAPI: 0
   DeprecatedEAPI: version 75: uses deprecated EAPI: 0
   DeprecatedEAPI: version 77: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 73: "YoSucker-pr73.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 75: "YoSucker-pr75.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 77: "YoSucker-pr77.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -5039,204 +5227,150 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-eselect/eselect-audicle
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+net-firewall/arno-iptables-firewall
+  NonExistentDeps: version 2.0.1d-r2: depset rdepends: nonexistent atoms [ <sys-apps/coreutils-8.20 ]
+  NonExistentDeps: version 2.0.1e: depset rdepends: nonexistent atoms [ <sys-apps/coreutils-8.20 ]
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-awk
+net-firewall/arptables
+  DeprecatedEAPI: version 0.0.3.4-r2: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.0.3.4-r2: "arptables-v0.0.3-4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-firewall/conntrack-tools
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-bashcomp
+net-firewall/dshieldpy
+  DeprecatedEclass: version 3.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.2-r1: "dshieldpy-3.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-firewall/ebtables
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-blas
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+net-firewall/ferm
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-cblas
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+net-firewall/firehol
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-cdparanoia
+net-firewall/firewalld
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-chuck
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
+net-firewall/fwanalog
+  DeprecatedEAPI: version 0.6.4: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-ctags
+net-firewall/fwbuilder
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 5.0.1.3592-r1: "fwbuilder-5.0.1.3592.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 5.1.0.3599: "fwbuilder-5.1.0.3599.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-firewall/fwipsec
+  DeprecatedEAPI: version 0.4.2-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.4.2-r1: "fwipsec-0.4.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-firewall/fwknop
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-emacs
+net-firewall/gshield
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-esd
-  DeprecatedEAPI: version 20060719: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20091106: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20100127: uses deprecated EAPI: 0
+net-firewall/ipkungfu
+  DeprecatedEAPI: version 0.5.2-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.5.2-r1: "ipkungfu-0.5.2.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.6.1: "ipkungfu-0.6.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-firewall/ipsec-tools
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-fontconfig
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
+net-firewall/ipset
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-gnat
-  DeprecatedEAPI: version 1.3-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.4-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 0
+net-firewall/ipt_netflow
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-gnome-shell-extensions
+net-firewall/iptables
+  DeprecatedEAPI: version 1.4.6: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.4.10: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 1.4.10-r1: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-infinality
+net-firewall/itval
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-java
-  DroppedKeywordWarning: version 0.1.0-r1: keywords dropped: ia64
+net-firewall/lutelwall
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-lapack
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+net-firewall/nfacct
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-lcdfilter
+net-firewall/nftables
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-lib-bin-symlink
+net-firewall/nufw
+  NonExistentDeps: version 2.2.22-r1: depset depends: nonexistent atoms [ dev-libs/libprelude ]
+  NonExistentDeps: version 2.2.22-r1: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-lua
+net-firewall/pftop
+  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.5: "pftop-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-firewall/pglinux
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-maven
-  DeprecatedEAPI: version 0.2-r1: uses deprecated EAPI: 3
+net-firewall/psad
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-mesa
-  DeprecatedEAPI: version 0.0.9: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 0.0.10: uses deprecated EAPI: 3
+net-firewall/quicktables
+  DeprecatedEAPI: version 2.3: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.3: "quicktables-2.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-firewall/rtsp-conntrack
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-metasploit
+net-firewall/sanewall
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-miniaudicle
-  DeprecatedEAPI: version 1.0.1-r1: uses deprecated EAPI: 3
+net-firewall/shapecfg
+  DeprecatedEAPI: version 36: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 36: "shaper.36.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-firewall/shorewall
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-mpg123
+net-firewall/shorewall-core
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-mpost
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
+net-firewall/shorewall-init
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-notify-send
+net-firewall/shorewall-lite
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-oodict
-  DeprecatedEAPI: version 20100228: uses deprecated EAPI: 0
+net-firewall/shorewall6
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-opencascade
+net-firewall/shorewall6-lite
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-opencl
+net-firewall/ufw
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-opengl
+net-firewall/ufw-frontends
   MissingFile: required file ChangeLog doesn't exist
 
-app-eselect/eselect-package-manager
-  DeprecatedEAPI: version 20110108: uses deprecated EAPI: 0
+net-firewall/xtables-addons
   MissingFile: required file ChangeLog doesn't exist
-
-app-eselect/eselect-pdftex
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-
-app-eselect/eselect-php
-  DeprecatedEAPI: version 0.6.2: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-
-app-eselect/eselect-pinentry
-  MissingFile: required file ChangeLog doesn't exist
-
-app-eselect/eselect-postgresql
-  MissingFile: required file ChangeLog doesn't exist
-
-app-eselect/eselect-python
-  DeprecatedEAPI: version 20111108: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20131210: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20140115: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20140125: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 99999999: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-
-app-eselect/eselect-qtgraphicssystem
-  MissingFile: required file ChangeLog doesn't exist
-
-app-eselect/eselect-rails
-  DeprecatedEAPI: version 0.18: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-
-app-eselect/eselect-renpy
-  MissingFile: required file ChangeLog doesn't exist
-
-app-eselect/eselect-ruby
-  DeprecatedEAPI: version 20131227: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20141227: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-
-app-eselect/eselect-rust
-  MissingFile: required file ChangeLog doesn't exist
-
-app-eselect/eselect-scala
-  MissingFile: required file ChangeLog doesn't exist
-
-app-eselect/eselect-sh
-  MissingFile: required file ChangeLog doesn't exist
-
-app-eselect/eselect-sndpeek
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-
-app-eselect/eselect-timezone
-  MissingFile: required file ChangeLog doesn't exist
-
-app-eselect/eselect-timidity
-  DeprecatedEAPI: version 20061203: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20091106: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20110513: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-
-app-eselect/eselect-unison
-  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-
-app-eselect/eselect-vdr
-  MissingFile: required file ChangeLog doesn't exist
-
-app-eselect/eselect-vi
-  DeprecatedEAPI: version 1.1.7-r1: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-
-app-eselect/eselect-wxwidgets
-  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  SizeViolation: "files/wxwin.m4-2.9" exceeds 20k in size; 40647 bytes total
-  SizeViolation: "files/wxwin.m4-3.0" exceeds 20k in size; 40561 bytes total
-
-app-eselect/eselect-xvmc
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.37: "xtables-addons-1.37.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -5321,7 +5455,7 @@ dev-tcltk/tcl3d
   MissingFile: required file ChangeLog doesn't exist
 
 dev-tcltk/tcllib
-  DroppedKeywordWarning: version 1.16: keywords dropped: ia64, mips, ppc64, s390, sparc
+  DroppedKeywordWarning: version 1.16: keywords dropped: ia64, ppc64, s390, sparc
   MissingFile: required file ChangeLog doesn't exist
   SizeViolation: "files/tcllib-1.15-XSS-vuln.patch" exceeds 20k in size; 29465 bytes total
 
@@ -5480,8 +5614,8 @@ dev-lisp/sbcl
   WhitespaceFound: version 1.0.55-r1: ebuild has leading whitespace on lines 50, 62
 
 dev-lisp/hyperspec
-  MissingChksum: version 7.0-r1: "HyperSpec-7-0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 7.0-r1: "HyperSpec-7-0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 dev-lisp/sbcl
   DeprecatedEAPI: version 1.0.55-r1: uses deprecated EAPI: 3
@@ -5509,8 +5643,8 @@ mail-mta/courier
 
 mail-mta/esmtp
   DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
-  MissingChksum: version 1.2: "esmtp-1.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2: "esmtp-1.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 mail-mta/exim
   MissingFile: required file ChangeLog doesn't exist
@@ -5542,6 +5676,7 @@ mail-mta/postfix
 
 mail-mta/qmail-ldap
   DeprecatedEAPI: version 1.03-r8: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.03-r8: "qmail-1.03.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.03-r8: "genqmail-20080406.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.03-r8: "qmail-ldap-1.03-20060201.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -5549,7 +5684,6 @@ mail-mta/qmail-ldap
   MissingChksum: version 1.03-r8: "qmail-ldap-1.03-queue-custom-error.patch" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.03-r8: "qmail-spp-0.42.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.03-r8: "qmail-ldap-1.03-spp-0.42.patch" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingFile: required file ChangeLog doesn't exist
 
 mail-mta/qpsmtpd
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
