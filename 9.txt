@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 9 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-util/*' 'x11-libs/*' 'app-emacs/*' 'app-office/*' 'net-dns/*' 'sys-process/*' 'net-print/*' 'x11-proto/*' 'net-nntp/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-util/*' 'x11-libs/*' 'app-emacs/*' 'x11-drivers/*' 'net-dns/*' 'sys-process/*' 'net-print/*' 'x11-proto/*' 'net-nntp/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /usr/lib64/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -531,9 +531,9 @@ dev-util/gengetopt
 
 dev-util/ghh
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
   NonExistentDeps: version 9999: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
 dev-util/glade
@@ -649,31 +649,6 @@ dev-util/jarwizard
 
 dev-util/jay
   DeprecatedEclass: version 1.1.1-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 1.1.1-r2: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >dev-lang/mono-2.4 ]
   MissingFile: required file ChangeLog doesn't exist
 
 dev-util/jconfig
@@ -829,110 +804,62 @@ dev-util/monkeystudio
 
 dev-util/mono-debugger
   DeprecatedEclass: version 2.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=dev-lang/mono-2.10 ]
-  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=dev-lang/mono-2.10 ]
   MissingFile: required file ChangeLog doesn't exist
 
 dev-util/monodevelop
   DeprecatedEclass: version 3.0.2-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86): solutions: [ >=dev-lang/mono-2.10.9 ]
-  NonsolvableDeps: version 3.0.2-r1: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=dev-lang/mono-2.10.9 ]
+  NonExistentDeps: version 5.9.5.5: depset depends: nonexistent atoms [ dev-util/mono-docbrowser ]
+  NonExistentDeps: version 5.9.5.5: depset rdepends: nonexistent atoms [ dev-util/mono-docbrowser ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/developer): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/developer): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
+  NonsolvableDeps: version 5.9.5.5: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ >=dev-dotnet/gtk-sharp-2.12.21:2, dev-util/mono-docbrowser, >=dev-dotnet/gnome-sharp-2.24.2-r1 ]
   MissingFile: required file ChangeLog doesn't exist
 
 dev-util/monodevelop-database
@@ -941,56 +868,6 @@ dev-util/monodevelop-database
 
 dev-util/monodevelop-debugger-gdb
   DeprecatedEclass: version 3.0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86): solutions: [ >=dev-lang/mono-2.4 ]
-  NonsolvableDeps: version 3.0.2: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=dev-lang/mono-2.4 ]
   MissingFile: required file ChangeLog doesn't exist
 
 dev-util/mpatch
@@ -1259,9 +1136,9 @@ dev-util/setconf
   MissingFile: required file ChangeLog doesn't exist
 
 dev-util/sgb
-  DeprecatedEAPI: version 20030623: uses deprecated EAPI: 0
   NonExistentDeps: version 20030623: depset depends: nonexistent atoms [ >=dev-util/cweb-3.00 ]
   NonExistentDeps: version 20030623: depset rdepends: nonexistent atoms [ >=dev-util/cweb-3.00 ]
+  DeprecatedEAPI: version 20030623: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
 dev-util/shc
@@ -1439,9 +1316,9 @@ dev-util/wiggle
 
 dev-util/wxglade
   DeprecatedEclass: version 0.6.3-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.6.3-r1: uses deprecated EAPI: 2
   NonExistentDeps: version 0.6.3-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.6.3-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.6.3-r1: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
 dev-util/xdelta
@@ -1480,9 +1357,9 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : refetch
 
 x11-libs/agg
-  DeprecatedEAPI: version 2.5-r2: uses deprecated EAPI: 2
   NonExistentDeps: version 2.5-r2: depset depends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
   NonExistentDeps: version 2.5-r2: depset rdepends: nonexistent atoms [ <x11-libs/libX11-1.3.99.901 ]
+  DeprecatedEAPI: version 2.5-r2: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
 x11-libs/amd-adl-sdk
@@ -2586,221 +2463,265 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-office/QtBitcoinTrader
+x11-drivers/afb-ucode
+  DeprecatedEAPI: version 1.3.11: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.3.11: "afb-ucode.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-drivers/ati-drivers
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/abiword
+x11-drivers/nvidia-drivers
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/abiword-docs
+x11-drivers/radeon-ucode
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/akonadi-server
+x11-drivers/xf86-input-acecad
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.5.0: "xf86-input-acecad-1.5.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-drivers/xf86-input-aiptek
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.4.1: "xf86-input-aiptek-1.4.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-drivers/xf86-input-elographics
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/borg
+x11-drivers/xf86-input-evdev
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/calcurse
+x11-drivers/xf86-input-fpit
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.4.0: "xf86-input-fpit-1.4.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-drivers/xf86-input-hyperpen
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.4.1: "xf86-input-hyperpen-1.4.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-drivers/xf86-input-joystick
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/calligra
+x11-drivers/xf86-input-keyboard
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/calligra-l10n
+x11-drivers/xf86-input-libinput
+  MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: alpha
+
+x11-drivers/xf86-input-mouse
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/dia
+x11-drivers/xf86-input-mtrack
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/dia2code
+x11-drivers/xf86-input-mutouch
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.3.0: "xf86-input-mutouch-1.3.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-drivers/xf86-input-penmount
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.5.0: "xf86-input-penmount-1.5.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-drivers/xf86-input-synaptics
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/eqe
-  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 0
+x11-drivers/xf86-input-tslib
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/geierlein
+x11-drivers/xf86-input-vmmouse
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/glabels
+x11-drivers/xf86-input-void
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/gnucash
+x11-drivers/xf86-input-wacom
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/gnumeric
+x11-drivers/xf86-video-apm
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/grisbi
+x11-drivers/xf86-video-ark
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/gtg
+x11-drivers/xf86-video-ast
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/gtimelog
-  DeprecatedEclass: version 0.8.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+x11-drivers/xf86-video-ati
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/hamster-time-tracker
+x11-drivers/xf86-video-chips
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/homebank
+x11-drivers/xf86-video-cirrus
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/hourglass
+x11-drivers/xf86-video-dummy
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/ical
+x11-drivers/xf86-video-fbdev
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/impressive
+x11-drivers/xf86-video-freedreno
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/kmymoney
+x11-drivers/xf86-video-geode
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/kraft
+x11-drivers/xf86-video-glint
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/ledger
+x11-drivers/xf86-video-i128
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.3.5: "xf86-video-i128-1.3.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-drivers/xf86-video-i740
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/libalkimia
+x11-drivers/xf86-video-intel
+  DeprecatedEclass: version 2.9.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 2.9.1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/libreoffice
-  MissingFile: required file ChangeLog doesn't exist
-  DroppedKeywordWarning: version 5.0.0.5: keywords dropped: amd64, arm, x86
-
-app-office/libreoffice-bin
+x11-drivers/xf86-video-ivtv
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/libreoffice-bin-debug
+x11-drivers/xf86-video-mach64
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/libreoffice-l10n
+x11-drivers/xf86-video-mga
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/lotus-notes
+x11-drivers/xf86-video-modesetting
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/lyx
-  DeprecatedEclass: version 1.6.10: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.6.10: uses deprecated EAPI: 2
-  NonExistentDeps: version 1.6.10: depset rdepends: nonexistent atoms [ <dev-vcs/subversion-1.7.0 ]
-  NonExistentDeps: version 2.0.8.1: depset rdepends: nonexistent atoms [ <dev-vcs/subversion-1.7.0 ]
+x11-drivers/xf86-video-neomagic
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/magicpoint
+x11-drivers/xf86-video-newport
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.2.3: "xf86-video-newport-0.2.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.2.4: "xf86-video-newport-0.2.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-drivers/xf86-video-nouveau
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/mdbtools
+x11-drivers/xf86-video-nv
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/multitalk
+x11-drivers/xf86-video-omap
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/odeskteam
+x11-drivers/xf86-video-omapfb
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/ooextras
-  DeprecatedEAPI: version 20060909: uses deprecated EAPI: 0
+x11-drivers/xf86-video-openchrome
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/openerp
-  DeprecatedEclass: version 6.1.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 6.1.1-r1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 7.0.20130219-r5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 7.0.20130219-r5: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-  DroppedKeywordWarning: version 8.0.20140125: keywords dropped: amd64, x86
-
-app-office/openoffice-bin
+x11-drivers/xf86-video-opentegra
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/openproj-bin
+x11-drivers/xf86-video-qxl
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/orage
+x11-drivers/xf86-video-r128
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/passepartout
+x11-drivers/xf86-video-rendition
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/pinpoint
+x11-drivers/xf86-video-s3
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/plan
+x11-drivers/xf86-video-s3virge
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/planner
+x11-drivers/xf86-video-savage
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/pybliographer
+x11-drivers/xf86-video-siliconmotion
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/qcharselect
+x11-drivers/xf86-video-sis
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/qchartdiary
-  DeprecatedEAPI: version 0.6.4.1-r2: uses deprecated EAPI: 2
+x11-drivers/xf86-video-sisusb
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/rubrica
-  MetadataError: version 2.1.6-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-office/rubrica-2.1.6-r1, attr fetchables
-error: mirror://berlios/rubrica/rubrica2-2.1.6.tar.bz2 mirror://gentoo/rubrica-2.1.6-hu.po.bz2 is unparseable
-flagged token- uri mirror://berlios/rubrica/rubrica2-2.1.6.tar.bz2 isn't a known mirror tier
+x11-drivers/xf86-video-suncg14
+  DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
+  DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1.1: "xf86-video-suncg14-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-drivers/xf86-video-suncg3
+  DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
+  DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1.1: "xf86-video-suncg3-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-drivers/xf86-video-suncg6
+  DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
+  DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1.1: "xf86-video-suncg6-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-drivers/xf86-video-sunffb
+  DeprecatedEclass: version 1.2.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2.1: "xf86-video-sunffb-1.2.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-drivers/xf86-video-sunleo
+  DeprecatedEclass: version 1.2.0: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 0
+  DeprecatedEclass: version 1.2.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2.0: "xf86-video-sunleo-1.2.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-drivers/xf86-video-suntcx
+  DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
+  DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1.1: "xf86-video-suntcx-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+x11-drivers/xf86-video-tdfx
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/sc
+x11-drivers/xf86-video-tga
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/scribus
-  MissingFile: required file ChangeLog doesn't exist
-  DroppedKeywordWarning: version 1.5.0-r1: keywords dropped: hppa, ppc, ppc64, sparc
-
-app-office/skrooge
-  MissingFile: required file ChangeLog doesn't exist
-  DroppedKeywordWarning: version 2.0.0: keywords dropped: x86
-
-app-office/taskcoach
-  DeprecatedEclass: version 1.3.18: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.3.18: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.3.27: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.3.27: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.3.29: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.3.29: uses deprecated EAPI: 3
-  DeprecatedEclass: version 1.3.32: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.3.32: uses deprecated EAPI: 3
+x11-drivers/xf86-video-trident
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/tedia2sql
-  DeprecatedEAPI: version 1.2.12: uses deprecated EAPI: 0
+x11-drivers/xf86-video-tseng
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/texmacs
+x11-drivers/xf86-video-v4l
+  DeprecatedEclass: version 0.2.0: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.2.0: "xf86-video-v4l-0.2.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+x11-drivers/xf86-video-vesa
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/texmaker
+x11-drivers/xf86-video-virtualbox
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/texstudio
+x11-drivers/xf86-video-vmware
   MissingFile: required file ChangeLog doesn't exist
 
-app-office/unoconv
-  DeprecatedEclass: version 0.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.6.20131229: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.6.20131229: uses deprecated EAPI: 3
-  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 99999999: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-
-app-office/upwork
-  MissingFile: required file ChangeLog doesn't exist
-
-app-office/wps-office
+x11-drivers/xf86-video-voodoo
   MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -2810,134 +2731,6 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : refetch
 
 net-dns/avahi
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/developer): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/developer): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/developer): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/developer): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r6: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 0.6.31-r8: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ dev-lang/mono ]
   MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.6.31-r7: keywords dropped: m68k
 
@@ -3052,84 +2845,6 @@ net-dns/ldns-utils
   MissingFile: required file ChangeLog doesn't exist
 
 net-dns/libidn
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/developer): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/developer): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde/systemd): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/developer): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/developer): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde/systemd): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86): solutions: [ >=dev-lang/mono-0.95 ]
-  NonsolvableDeps: version 1.30: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=dev-lang/mono-0.95 ]
   MissingFile: required file ChangeLog doesn't exist
 
 net-dns/libidn2
@@ -3243,13 +2958,13 @@ sys-process/audit
   DeprecatedEclass: version 1.7.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 1.7.18: uses deprecated EAPI: 3
   DeprecatedEclass: version 2.0.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.0.5: uses deprecated EAPI: 3
   NonExistentDeps: version 2.0.5: depset depends: nonexistent atoms [ dev-libs/libprelude ]
   NonExistentDeps: version 2.0.5: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
+  DeprecatedEAPI: version 2.0.5: uses deprecated EAPI: 3
   DeprecatedEclass: version 2.1.3-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.1.3-r1: uses deprecated EAPI: 3
   NonExistentDeps: version 2.1.3-r1: depset depends: nonexistent atoms [ dev-libs/libprelude ]
   NonExistentDeps: version 2.1.3-r1: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
+  DeprecatedEAPI: version 2.1.3-r1: uses deprecated EAPI: 3
   NonExistentDeps: version 2.2.2-r2: depset depends: nonexistent atoms [ dev-libs/libprelude ]
   NonExistentDeps: version 2.2.2-r2: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
   NonExistentDeps: version 2.2.2-r3: depset depends: nonexistent atoms [ dev-libs/libprelude ]

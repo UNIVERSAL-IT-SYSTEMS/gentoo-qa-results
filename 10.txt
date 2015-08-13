@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 10 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'sys-fs/*' 'www-apps/*' 'x11-drivers/*' 'games-puzzle/*' 'sys-boot/*' 'gnustep-apps/*' 'net-ftp/*' 'www-plugins/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'sys-fs/*' 'www-apps/*' 'app-office/*' 'games-puzzle/*' 'sys-boot/*' 'gnustep-apps/*' 'net-ftp/*' 'www-plugins/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /usr/lib64/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -49,8 +49,8 @@ media-sound/aeolus
   DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 0.8.4: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
-  DroppedKeywordWarning: version 0.9.0: keywords dropped: x86
   MissingChksum: version 0.8.1: "aeolus-0.8.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  DroppedKeywordWarning: version 0.9.0: keywords dropped: x86
 
 media-sound/alac_decoder
   DeprecatedEAPI: version 0.1.3: uses deprecated EAPI: 2
@@ -157,56 +157,6 @@ media-sound/aylet
 
 media-sound/banshee
   DeprecatedEclass: version 2.6.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86): solutions: [ >=dev-lang/mono-2.4.3 ]
-  NonsolvableDeps: version 2.6.1: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=dev-lang/mono-2.4.3 ]
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/baudline
@@ -409,13 +359,13 @@ media-sound/erec
 
 media-sound/exaile
   DeprecatedEclass: version 0.3.2.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.3.2.0: uses deprecated EAPI: 3
   NonExistentDeps: version 0.3.2.0: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.3.2.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.3.2.0: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.3.2.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.3.2.1: uses deprecated EAPI: 3
   NonExistentDeps: version 0.3.2.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.3.2.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.3.2.1: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3.2.0: "exaile-0.3.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.3.2.1: "exaile-0.3.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -659,8 +609,8 @@ media-sound/imp3sh
 media-sound/jaaa
   DeprecatedEAPI: version 0.4.2: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
-  DroppedKeywordWarning: version 0.8.4: keywords dropped: ppc, sparc, x86
   MissingChksum: version 0.4.2: "jaaa-0.4.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  DroppedKeywordWarning: version 0.8.4: keywords dropped: ppc, sparc, x86
 
 media-sound/jack
   DeprecatedEclass: version 3.1.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -957,7 +907,6 @@ media-sound/mpfc
 
 media-sound/mpg123
   MissingFile: required file ChangeLog doesn't exist
-  DroppedKeywordWarning: version 1.22.0: keywords dropped: arm64
 
 media-sound/mpg321
   MissingFile: required file ChangeLog doesn't exist
@@ -978,84 +927,6 @@ media-sound/mt-daapd
   MissingChksum: version 0.2.4.2: "mt-daapd-0.2.4.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-sound/muine
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/developer): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/developer): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/developer): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/developer): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86): solutions: [ >=dev-lang/mono-2 ]
-  NonsolvableDeps: version 0.8.11-r3: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=dev-lang/mono-2 ]
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/multimux
@@ -1264,9 +1135,9 @@ media-sound/pwavecat
 
 media-sound/pympd
   DeprecatedEclass: version 0.08.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.08.1: uses deprecated EAPI: 3
   NonExistentDeps: version 0.08.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.08.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.08.1: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.08.1: "pympd-0.08.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
@@ -1377,8 +1248,8 @@ media-sound/rhythmbox
   MissingFile: required file ChangeLog doesn't exist
 
 media-sound/rip
-  DeprecatedEAPI: version 1.07: uses deprecated EAPI: 0
   NonExistentDeps: version 1.07: depset rdepends: nonexistent atoms [ media-sound/gogo ]
+  DeprecatedEAPI: version 1.07: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.07: "rip-1.07.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
@@ -2159,13 +2030,13 @@ sys-fs/pysize
 
 sys-fs/pytagsfs
   DeprecatedEclass: version 0.9.2_rc2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.9.2_rc2: uses deprecated EAPI: 2
   NonExistentDeps: version 0.9.2_rc2: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.9.2_rc2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.9.2_rc2: uses deprecated EAPI: 2
   DeprecatedEclass: version 0.9.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 2
   NonExistentDeps: version 0.9.2: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.9.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.9.2_rc2: "pytagsfs-0.9.2rc2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 0.9.2: "pytagsfs-0.9.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -2361,10 +2232,10 @@ www-apps/agendav
 
 www-apps/ampache
   DeprecatedEAPI: version 3.4.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.5.3-r1: uses deprecated EAPI: 2
   NonExistentDeps: version 3.5.3-r1: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
-  DeprecatedEAPI: version 3.5.4: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 3.5.3-r1: uses deprecated EAPI: 2
   NonExistentDeps: version 3.5.4: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
+  DeprecatedEAPI: version 3.5.4: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.4.3: "ampache-3.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 3.5.3-r1: "ampache-3.5.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
@@ -2496,52 +2367,52 @@ www-apps/horde
   MissingChksum: version 3.3.11: "horde-3.3.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 www-apps/horde-chora
-  DeprecatedEAPI: version 2.0.2: uses deprecated EAPI: 0
   NonExistentDeps: version 2.0.2: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1, >=www-apps/horde-webmail-1 ]
+  DeprecatedEAPI: version 2.0.2: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.0.2: "chora-h3-2.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 www-apps/horde-dimp
-  DeprecatedEAPI: version 1.1.5: uses deprecated EAPI: 0
   NonExistentDeps: version 1.1.5: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1 ]
+  DeprecatedEAPI: version 1.1.5: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.1.5: "dimp-h3-1.1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 www-apps/horde-gollem
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
   NonExistentDeps: version 1.1.2: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1, >=www-apps/horde-webmail-1 ]
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.1.2: "gollem-h3-1.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 www-apps/horde-hermes
-  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
   NonExistentDeps: version 1.0.1: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1 ]
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0.1: "hermes-h3-1.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 www-apps/horde-imp
-  DeprecatedEAPI: version 4.3.8: uses deprecated EAPI: 0
   NonExistentDeps: version 4.3.8: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1 ]
-  DeprecatedEAPI: version 4.3.9: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.8: uses deprecated EAPI: 0
   NonExistentDeps: version 4.3.9: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1 ]
+  DeprecatedEAPI: version 4.3.9: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 4.3.8: "imp-h3-4.3.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 4.3.9: "imp-h3-4.3.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 www-apps/horde-ingo
   DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.2.3: uses deprecated EAPI: 0
   NonExistentDeps: version 1.2.3: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1 ]
-  DeprecatedEAPI: version 1.2.5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.2.3: uses deprecated EAPI: 0
   NonExistentDeps: version 1.2.5: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1 ]
+  DeprecatedEAPI: version 1.2.5: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.1.2: "ingo-h3-1.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.2.3: "ingo-h3-1.2.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.2.5: "ingo-h3-1.2.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 www-apps/horde-jeta
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
   NonExistentDeps: version 1.0: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1, >=www-apps/horde-webmail-1 ]
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0: "jeta-h3-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
@@ -2556,10 +2427,10 @@ www-apps/horde-kronolith
 
 www-apps/horde-mimp
   DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
   NonExistentDeps: version 1.1.2: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1, >=www-apps/horde-webmail-1 ]
-  DeprecatedEAPI: version 1.1.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
   NonExistentDeps: version 1.1.3: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1, >=www-apps/horde-webmail-1 ]
+  DeprecatedEAPI: version 1.1.3: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.0.1: "mimp-h3-1.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
   MissingChksum: version 1.1.2: "mimp-h3-1.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
@@ -2580,8 +2451,8 @@ www-apps/horde-nag
   MissingChksum: version 2.3.6: "nag-h3-2.3.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 www-apps/horde-passwd
-  DeprecatedEAPI: version 3.1.3: uses deprecated EAPI: 0
   NonExistentDeps: version 3.1.3: depset rdepends: nonexistent atoms [ >=www-apps/horde-groupware-1, >=www-apps/horde-webmail-1 ]
+  DeprecatedEAPI: version 3.1.3: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 3.1.3: "passwd-h3-3.1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
@@ -2739,8 +2610,8 @@ www-apps/phpBB
 
 www-apps/phpmp
   DeprecatedEAPI: version 0.11.0: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.11.0-r1: uses deprecated EAPI: 2
   NonExistentDeps: version 0.11.0-r1: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
+  DeprecatedEAPI: version 0.11.0-r1: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.11.0: "phpMp-0.11.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
@@ -2822,8 +2693,8 @@ www-apps/trac-accountmanager
 
 www-apps/trac-downloads
   DeprecatedEclass: version 0.3_p9282: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.3_p9282: uses deprecated EAPI: 3
   NonExistentDeps: version 0.3_p9282: depset rdepends: nonexistent atoms [ =www-apps/trac-0.12* ]
+  DeprecatedEAPI: version 0.3_p9282: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3_p9282: "trac-downloads-0.3_p9282.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
@@ -2832,8 +2703,8 @@ www-apps/trac-mercurial
   DeprecatedEAPI: version 0.12.0.29_pre10899: uses deprecated EAPI: 3
   DeprecatedEclass: version 1.0.0.3_pre20130206: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingFile: required file ChangeLog doesn't exist
-  DroppedKeywordWarning: version 1.0.0.3_pre20130206: keywords dropped: amd64, x86
   MissingChksum: version 0.12.0.29_pre10899: "TracMercurial-0.12.0.29dev-r10899.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  DroppedKeywordWarning: version 1.0.0.3_pre20130206: keywords dropped: amd64, x86
 
 www-apps/trac-tags
   DeprecatedEclass: version 0.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -2846,9 +2717,9 @@ www-apps/tt-rss
 
 www-apps/venus
   DeprecatedEclass: version 20100911: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 20100911: uses deprecated EAPI: 3
   NonExistentDeps: version 20100911: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 20100911: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 20100911: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 20100911: "venus-20100911.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
@@ -2882,265 +2753,221 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-x11-drivers/afb-ucode
-  DeprecatedEAPI: version 1.3.11: uses deprecated EAPI: 0
+app-office/QtBitcoinTrader
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.3.11: "afb-ucode.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-x11-drivers/ati-drivers
+app-office/abiword
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/nvidia-drivers
+app-office/abiword-docs
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/radeon-ucode
+app-office/akonadi-server
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-input-acecad
+app-office/borg
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.5.0: "xf86-input-acecad-1.5.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-x11-drivers/xf86-input-aiptek
+app-office/calcurse
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.4.1: "xf86-input-aiptek-1.4.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-x11-drivers/xf86-input-elographics
+app-office/calligra
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-input-evdev
+app-office/calligra-l10n
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-input-fpit
+app-office/dia
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.4.0: "xf86-input-fpit-1.4.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-x11-drivers/xf86-input-hyperpen
+app-office/dia2code
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.4.1: "xf86-input-hyperpen-1.4.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-x11-drivers/xf86-input-joystick
+app-office/eqe
+  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-input-keyboard
+app-office/geierlein
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-input-libinput
+app-office/glabels
   MissingFile: required file ChangeLog doesn't exist
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: alpha
 
-x11-drivers/xf86-input-mouse
+app-office/gnucash
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-input-mtrack
+app-office/gnumeric
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-input-mutouch
+app-office/grisbi
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.3.0: "xf86-input-mutouch-1.3.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-x11-drivers/xf86-input-penmount
+app-office/gtg
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.5.0: "xf86-input-penmount-1.5.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-x11-drivers/xf86-input-synaptics
+app-office/gtimelog
+  DeprecatedEclass: version 0.8.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-input-tslib
+app-office/hamster-time-tracker
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-input-vmmouse
+app-office/homebank
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-input-void
+app-office/hourglass
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-input-wacom
+app-office/ical
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-apm
+app-office/impressive
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-ark
+app-office/kmymoney
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-ast
+app-office/kraft
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-ati
+app-office/ledger
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-chips
+app-office/libalkimia
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-cirrus
+app-office/libreoffice
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 5.0.0.5: keywords dropped: amd64, arm, x86
 
-x11-drivers/xf86-video-dummy
+app-office/libreoffice-bin
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-fbdev
+app-office/libreoffice-bin-debug
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-freedreno
+app-office/libreoffice-l10n
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-geode
+app-office/lotus-notes
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-glint
+app-office/lyx
+  DeprecatedEclass: version 1.6.10: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 1.6.10: depset rdepends: nonexistent atoms [ <dev-vcs/subversion-1.7.0 ]
+  DeprecatedEAPI: version 1.6.10: uses deprecated EAPI: 2
+  NonExistentDeps: version 2.0.8.1: depset rdepends: nonexistent atoms [ <dev-vcs/subversion-1.7.0 ]
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-i128
+app-office/magicpoint
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.3.5: "xf86-video-i128-1.3.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-x11-drivers/xf86-video-i740
+app-office/mdbtools
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-intel
-  DeprecatedEclass: version 2.9.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  DeprecatedEAPI: version 2.9.1: uses deprecated EAPI: 0
+app-office/multitalk
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-ivtv
+app-office/odeskteam
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-mach64
+app-office/ooextras
+  DeprecatedEAPI: version 20060909: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-mga
+app-office/openerp
+  DeprecatedEclass: version 6.1.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 6.1.1-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 7.0.20130219-r5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 7.0.20130219-r5: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 8.0.20140125: keywords dropped: amd64, x86
 
-x11-drivers/xf86-video-modesetting
+app-office/openoffice-bin
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-neomagic
+app-office/openproj-bin
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-newport
+app-office/orage
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.2.3: "xf86-video-newport-0.2.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 0.2.4: "xf86-video-newport-0.2.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-x11-drivers/xf86-video-nouveau
+app-office/passepartout
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-nv
+app-office/pinpoint
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-omap
+app-office/plan
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-omapfb
+app-office/planner
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-openchrome
+app-office/pybliographer
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-opentegra
+app-office/qcharselect
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-qxl
+app-office/qchartdiary
+  DeprecatedEAPI: version 0.6.4.1-r2: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-r128
+app-office/rubrica
+  MetadataError: version 2.1.6-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-office/rubrica-2.1.6-r1, attr fetchables
+error: mirror://berlios/rubrica/rubrica2-2.1.6.tar.bz2 mirror://gentoo/rubrica-2.1.6-hu.po.bz2 is unparseable
+flagged token- uri mirror://berlios/rubrica/rubrica2-2.1.6.tar.bz2 isn't a known mirror tier
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-rendition
+app-office/sc
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-s3
+app-office/scribus
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 1.5.0-r1: keywords dropped: hppa, ppc, ppc64, sparc
 
-x11-drivers/xf86-video-s3virge
+app-office/skrooge
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 2.0.0: keywords dropped: x86
 
-x11-drivers/xf86-video-savage
+app-office/taskcoach
+  DeprecatedEclass: version 1.3.18: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.18: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3.27: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.27: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3.29: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.29: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3.32: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.32: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-siliconmotion
+app-office/tedia2sql
+  DeprecatedEAPI: version 1.2.12: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-sis
+app-office/texmacs
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-sisusb
+app-office/texmaker
   MissingFile: required file ChangeLog doesn't exist
 
-x11-drivers/xf86-video-suncg14
-  DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
-  DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
+app-office/texstudio
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.1.1: "xf86-video-suncg14-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-x11-drivers/xf86-video-suncg3
-  DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
-  DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
+app-office/unoconv
+  DeprecatedEclass: version 0.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.6.20131229: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6.20131229: uses deprecated EAPI: 3
+  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 99999999: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.1.1: "xf86-video-suncg3-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-x11-drivers/xf86-video-suncg6
-  DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
-  DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
+app-office/upwork
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.1.1: "xf86-video-suncg6-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-x11-drivers/xf86-video-sunffb
-  DeprecatedEclass: version 1.2.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.2.1: "xf86-video-sunffb-1.2.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-x11-drivers/xf86-video-sunleo
-  DeprecatedEclass: version 1.2.0: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 0
-  DeprecatedEclass: version 1.2.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.2.0: "xf86-video-sunleo-1.2.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-x11-drivers/xf86-video-suntcx
-  DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
-  DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.1.1: "xf86-video-suntcx-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-x11-drivers/xf86-video-tdfx
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-drivers/xf86-video-tga
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-drivers/xf86-video-trident
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-drivers/xf86-video-tseng
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-drivers/xf86-video-v4l
-  DeprecatedEclass: version 0.2.0: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.2.0: "xf86-video-v4l-0.2.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-x11-drivers/xf86-video-vesa
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-drivers/xf86-video-virtualbox
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-drivers/xf86-video-vmware
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-drivers/xf86-video-voodoo
+app-office/wps-office
   MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -3869,56 +3696,6 @@ net-ftp/axyftp
 
 net-ftp/bareftp
   DeprecatedEclass: version 0.3.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.3.9: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=dev-lang/mono-2.0 ]
   DeprecatedEclass: version 0.3.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.3.9: "bareftp-0.3.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size

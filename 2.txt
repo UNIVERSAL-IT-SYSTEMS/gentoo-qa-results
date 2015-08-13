@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 2 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'x11-misc/*' 'sys-libs/*' 'app-xemacs/*' 'games-fps/*' 'net-irc/*' 'games-emulation/*' 'app-pda/*' 'sci-astronomy/*' 'games-engines/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-perl/*' 'x11-misc/*' 'sys-libs/*' 'app-xemacs/*' 'games-fps/*' 'net-irc/*' 'games-emulation/*' 'dev-dotnet/*' 'sci-astronomy/*' 'games-roguelike/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /usr/lib64/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -450,8 +450,8 @@ dev-perl/Class-Inspector
   MissingFile: required file ChangeLog doesn't exist
 
 dev-perl/Class-Load
-  DroppedKeywordWarning: version 0.230.0: keywords dropped: arm64, m68k, s390, sh, sparc
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 0.230.0: keywords dropped: arm64, m68k, s390, sh, sparc
 
 dev-perl/Class-Load-XS
   MissingFile: required file ChangeLog doesn't exist
@@ -1096,8 +1096,8 @@ dev-perl/Error
   MissingFile: required file ChangeLog doesn't exist
 
 dev-perl/Eval-Closure
-  DroppedKeywordWarning: version 0.130.0: keywords dropped: arm, hppa, ppc64
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 0.130.0: keywords dropped: arm, hppa, ppc64
 
 dev-perl/Eval-LineNumbers
   MissingFile: required file ChangeLog doesn't exist
@@ -1577,8 +1577,8 @@ dev-perl/HTTP-Date
   MissingFile: required file ChangeLog doesn't exist
 
 dev-perl/HTTP-Message
-  DroppedKeywordWarning: version 6.40.0-r1: keywords dropped: mips, ppc, ppc64
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 6.40.0-r1: keywords dropped: mips, ppc, ppc64
 
 dev-perl/HTTP-Negotiate
   MissingFile: required file ChangeLog doesn't exist
@@ -1749,8 +1749,8 @@ dev-perl/JSON-MaybeXS
   MissingFile: required file ChangeLog doesn't exist
 
 dev-perl/JSON-RPC
-  DroppedKeywordWarning: version 1.30.0-r1: keywords dropped: alpha, ia64, ppc, ppc64, sparc
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 1.30.0-r1: keywords dropped: alpha, ia64, ppc, ppc64, sparc
 
 dev-perl/JSON-XS
   MissingFile: required file ChangeLog doesn't exist
@@ -1861,8 +1861,8 @@ dev-perl/List-AllUtils
   MissingFile: required file ChangeLog doesn't exist
 
 dev-perl/List-MoreUtils
-  DroppedKeywordWarning: version 0.408.0: keywords dropped: m68k, ppc, sparc
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 0.408.0: keywords dropped: m68k, ppc, sparc
 
 dev-perl/List-UtilsBy
   MissingFile: required file ChangeLog doesn't exist
@@ -2156,8 +2156,8 @@ dev-perl/MooX-late
   MissingFile: required file ChangeLog doesn't exist
 
 dev-perl/Moose
-  DroppedKeywordWarning: version 2.140.500: keywords dropped: hppa, ppc, ppc64
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 2.140.500: keywords dropped: hppa, ppc, ppc64
 
 dev-perl/MooseX-Aliases
   MissingFile: required file ChangeLog doesn't exist
@@ -3231,8 +3231,8 @@ dev-perl/Test-Tester
   MissingFile: required file ChangeLog doesn't exist
 
 dev-perl/Test-Trap
-  DroppedKeywordWarning: version 0.3.0: keywords dropped: ppc
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 0.3.0: keywords dropped: ppc
 
 dev-perl/Test-Unit-Lite
   MissingFile: required file ChangeLog doesn't exist
@@ -4209,9 +4209,9 @@ x11-misc/dclock
 
 x11-misc/denu
   DeprecatedEclass: version 2.3.2-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 2.3.2-r1: uses deprecated EAPI: 3
   NonExistentDeps: version 2.3.2-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 2.3.2-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 2.3.2-r1: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 2.3.2-r1: "denu-2.3.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
@@ -4281,9 +4281,9 @@ x11-misc/etm
 
 x11-misc/evolvotron
   DeprecatedEclass: version 0.6.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 2
   NonExistentDeps: version 0.6.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.6.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 2
   DeprecatedEclass: version 0.6.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.6.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.6.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
@@ -4361,9 +4361,9 @@ x11-misc/gmrun
 
 x11-misc/googsystray
   DeprecatedEclass: version 1.3.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 3
   NonExistentDeps: version 1.3.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 1.3.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.3.1: "googsystray-1.3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
@@ -4478,8 +4478,8 @@ x11-misc/light-locker
   MissingFile: required file ChangeLog doesn't exist
 
 x11-misc/lightdm
-  DroppedKeywordWarning: version 1.13.2: keywords dropped: arm64
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 1.13.2: keywords dropped: arm64
 
 x11-misc/lightdm-gtk-greeter
   MissingFile: required file ChangeLog doesn't exist
@@ -4638,8 +4638,8 @@ x11-misc/pcmanfm
   MissingFile: required file ChangeLog doesn't exist
 
 x11-misc/pcmanfm-qt
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 0.8.0: keywords dropped: arm
 
 x11-misc/peksystray
   DeprecatedEAPI: version 0.2.1: uses deprecated EAPI: 0
@@ -4692,8 +4692,8 @@ x11-misc/qxkb
   MissingFile: required file ChangeLog doesn't exist
 
 x11-misc/read-edid
-  DroppedKeywordWarning: version 3.0.1: keywords dropped: alpha, ppc, sparc
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 3.0.1: keywords dropped: alpha, ppc, sparc
 
 x11-misc/rednotebook
   DeprecatedEclass: version 1.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -4702,9 +4702,9 @@ x11-misc/rednotebook
 
 x11-misc/redshift
   DeprecatedEclass: version 1.7: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.7: uses deprecated EAPI: 3
   NonExistentDeps: version 1.7: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 1.7: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEAPI: version 1.7: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
 x11-misc/rendercheck
@@ -4845,8 +4845,8 @@ x11-misc/trayer-srg
   MissingFile: required file ChangeLog doesn't exist
 
 x11-misc/treeline
-  DroppedKeywordWarning: version 1.9.4: keywords dropped: amd64, ppc, x86
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 1.9.4: keywords dropped: amd64, ppc, x86
 
 x11-misc/unclutter
   DeprecatedEAPI: version 8-r2: uses deprecated EAPI: 2
@@ -5234,9 +5234,9 @@ sys-libs/db
   DeprecatedEAPI: version 4.5.20_p2-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 4.6.21_p4: uses deprecated EAPI: 0
   DeprecatedEAPI: version 4.7.25_p4: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 4.4.20_p4-r1: keywords dropped: alpha, hppa
   DroppedKeywordWarning: version 5.1.29-r1: keywords dropped: mips
-  MissingFile: required file ChangeLog doesn't exist
 
 sys-libs/e2fsprogs-libs
   DeprecatedEAPI: version 1.41.7: uses deprecated EAPI: 2
@@ -5271,8 +5271,8 @@ sys-libs/glibc
   DeprecatedEAPI: version 2.19: uses deprecated EAPI: 0
   DeprecatedEAPI: version 2.19-r1: uses deprecated EAPI: 0
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DroppedKeywordWarning: version 2.22: keywords dropped: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 2.22: keywords dropped: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
 
 sys-libs/gpm
   DeprecatedEAPI: version 1.20.6: uses deprecated EAPI: 2
@@ -5288,8 +5288,8 @@ sys-libs/itx-bind
 sys-libs/ldb
   DeprecatedEclass: version 1.1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEclass: version 1.1.15: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DroppedKeywordWarning: version 1.1.17-r1: keywords dropped: sparc
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 1.1.17-r1: keywords dropped: sparc
 
 sys-libs/lib-compat
   MissingFile: required file ChangeLog doesn't exist
@@ -5493,8 +5493,8 @@ sys-libs/ncurses
 sys-libs/newlib
   DeprecatedEAPI: version 1.18.0: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.19.0: uses deprecated EAPI: 0
-  DroppedKeywordWarning: version 2.2.0.20150423: keywords dropped: arm, hppa, m68k, mips, ppc, ppc64, sh, sparc, x86
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 2.2.0.20150423: keywords dropped: arm, hppa, m68k, mips, ppc, ppc64, sh, sparc, x86
 
 sys-libs/nss-db
   DeprecatedEAPI: version 2.2.3_pre1-r2: uses deprecated EAPI: 0
@@ -5527,13 +5527,13 @@ sys-libs/openipmi
   DeprecatedEAPI: version 2.0.16-r1: uses deprecated EAPI: 0
   DeprecatedEclass: version 2.0.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 2.0.18: uses deprecated EAPI: 0
-  DroppedKeywordWarning: version 1.4.12: keywords dropped: amd64
   MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.3.18: "OpenIPMI-1.3.18.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.4.12: "OpenIPMI-1.4.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.4.14: "OpenIPMI-1.4.14.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.4.28: "OpenIPMI-1.4.28.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 2.0.11: "OpenIPMI-2.0.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  DroppedKeywordWarning: version 1.4.12: keywords dropped: amd64
 
 sys-libs/pam
   MissingFile: required file ChangeLog doesn't exist
@@ -5545,8 +5545,8 @@ sys-libs/pwdb
 sys-libs/readline
   DeprecatedEAPI: version 4.3_p5: uses deprecated EAPI: 0
   DeprecatedEAPI: version 5.2_p14: uses deprecated EAPI: 0
-  DroppedKeywordWarning: version 7.0_alpha: keywords dropped: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 7.0_alpha: keywords dropped: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
 
 sys-libs/rvm
   DeprecatedEAPI: version 1.12: uses deprecated EAPI: 0
@@ -6368,10 +6368,10 @@ games-fps/legends
 games-fps/lsdldoom
   DeprecatedEAPI: version 1.4.4.4-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.5: uses deprecated EAPI: 2
-  DroppedKeywordWarning: version 1.5: keywords dropped: sparc
   MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 1.4.4.4-r1: "lsdldoom-1.4.4.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
   MissingChksum: version 1.5: "lsdldoom-1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  DroppedKeywordWarning: version 1.5: keywords dropped: sparc
 
 games-fps/nexuiz
   MissingFile: required file ChangeLog doesn't exist
@@ -6819,56 +6819,6 @@ net-irc/epic5
   MissingFile: required file ChangeLog doesn't exist
 
 net-irc/hexchat
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86): solutions: [ dev-lang/mono ]
-  NonsolvableDeps: version 2.10.2: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ dev-lang/mono ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   MissingFile: required file ChangeLog doesn't exist
 
@@ -6883,8 +6833,8 @@ net-irc/inspircd
   MissingFile: required file ChangeLog doesn't exist
 
 net-irc/irc-client
-  DeprecatedEAPI: version 2.10.3_p7: uses deprecated EAPI: 0
   MetadataError: version 2.10.3_p7: attr(rdepends): blocks itself
+  DeprecatedEAPI: version 2.10.3_p7: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
 net-irc/irc-server
@@ -6916,9 +6866,9 @@ net-irc/irssi
   MissingFile: required file ChangeLog doesn't exist
 
 net-irc/irssi-otr
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 2
   NonExistentDeps: version 0.2: depset depends: nonexistent atoms [ net-irc/irssi-svn ]
   NonExistentDeps: version 0.2: depset rdepends: nonexistent atoms [ net-irc/irssi-svn ]
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
 net-irc/irssi-xmpp
@@ -7012,56 +6962,6 @@ net-irc/sic
 
 net-irc/smuxi
   DeprecatedEclass: version 0.8.10.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86): solutions: [ >=dev-lang/mono-2.0 ]
-  NonsolvableDeps: version 0.8.10.1: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=dev-lang/mono-2.0 ]
   MissingFile: required file ChangeLog doesn't exist
 
 net-irc/srvx
@@ -7084,9 +6984,9 @@ net-irc/xaric
   MissingFile: required file ChangeLog doesn't exist
 
 net-irc/xchat-otr
-  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 2
   NonExistentDeps: version 0.3: depset depends: nonexistent atoms [ net-irc/xchat ]
   NonExistentDeps: version 0.3: depset rdepends: nonexistent atoms [ net-irc/xchat ]
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
 net-irc/znc
@@ -7172,10 +7072,10 @@ games-emulation/gngeo
   MissingFile: required file ChangeLog doesn't exist
 
 games-emulation/gnomeboyadvance
+  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MetadataError: version 0.1: attr(fetchables): error- Metadata Exception: pkg ebuild src: games-emulation/gnomeboyadvance-0.1, attr fetchables
 error: mirror://berlios/gnomeboyadvance/gnomeboyadvance-0.1.tar.bz2 is unparseable
 flagged token- uri mirror://berlios/gnomeboyadvance/gnomeboyadvance-0.1.tar.bz2 isn't a known mirror tier
-  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
@@ -7247,14 +7147,18 @@ games-emulation/mupen64plus-video-rice
   MissingFile: required file ChangeLog doesn't exist
 
 games-emulation/nestopia
-  DroppedKeywordWarning: version 1.46.2: keywords dropped: ppc
   MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 1.46.2: keywords dropped: ppc
 
 games-emulation/nestra
   MissingFile: required file ChangeLog doesn't exist
 
 games-emulation/openmsx
   MissingFile: required file ChangeLog doesn't exist
+
+games-emulation/pcsx2
+  MissingFile: required file ChangeLog doesn't exist
+  SizeViolation: "files/pcsx2-1.3.1-cflags.patch" exceeds 20k in size; 20865 bytes total
 
 games-emulation/pcsxr
   MissingFile: required file ChangeLog doesn't exist
@@ -7307,170 +7211,295 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-pda/barry
+dev-dotnet/art-sharp
+  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/coldsync
+dev-dotnet/atk-sharp
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/dynamite
+dev-dotnet/dbus-sharp
+  DeprecatedEclass: version 0.7.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/fusepod
+dev-dotnet/dbus-sharp-glib
+  DeprecatedEclass: version 0.5.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/gnupod
+dev-dotnet/flickrnet-bin
+  DeprecatedEclass: version 2.2-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.2-r1: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/gtkpod
+dev-dotnet/gconf-sharp
+  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/ideviceinstaller
+dev-dotnet/gdk-sharp
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/ifuse
+dev-dotnet/gio-sharp
+  DeprecatedEclass: version 0.3: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/iripdb
-  DeprecatedEAPI: version 0.1.3b: uses deprecated EAPI: 0
+dev-dotnet/gkeyfile-sharp
+  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/jpilot
-  DeprecatedEAPI: version 1.8.0: uses deprecated EAPI: 2
+dev-dotnet/glade-sharp
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/jpilot-backup
-  DeprecatedEAPI: version 0.60: uses deprecated EAPI: 2
+dev-dotnet/glib-sharp
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/jpilot-mail
-  DeprecatedEAPI: version 0.1.7: uses deprecated EAPI: 2
+dev-dotnet/gnome-desktop-sharp
+  DeprecatedEclass: version 2.26.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.26.0-r1: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/jpilot-plucker
-  DeprecatedEAPI: version 0.02: uses deprecated EAPI: 2
+dev-dotnet/gnome-keyring-sharp
+  DeprecatedEclass: version 1.0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/jpilot-syncmal
-  DeprecatedEAPI: version 0.81: uses deprecated EAPI: 2
+dev-dotnet/gnome-sharp
+  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/libimobiledevice
+dev-dotnet/gnomevfs-sharp
+  DeprecatedEclass: version 2.24.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.2: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/libopensync
-  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
-  DeprecatedEclass: version 0.22-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.22-r1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.36-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.36-r2: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.39-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.39-r1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+dev-dotnet/google-gdata-sharp
+  DeprecatedEclass: version 1.4.0.2-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 1.4.0.2-r2: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/libopensync-plugin-file
-  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+dev-dotnet/gsf-sharp
+  DeprecatedEclass: version 0.8.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/libopensync-plugin-gnokii
-  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+dev-dotnet/gtk-dotnet-sharp
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/libopensync-plugin-gpe
-  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.36: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+dev-dotnet/gtk-sharp
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/libopensync-plugin-irmc
+dev-dotnet/gtk-sharp-beans
+  DeprecatedEclass: version 2.14.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.14.0: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/libopensync-plugin-moto
-  DeprecatedEclass: version 0.22: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
-  NonExistentDeps: version 0.22: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.22: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+dev-dotnet/gtk-sharp-docs
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/libopensync-plugin-palm
-  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+dev-dotnet/gtk-sharp-gapi
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/libopensync-plugin-python
-  DeprecatedEclass: version 0.22: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
-  NonExistentDeps: version 0.22: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.22: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
-  NonExistentDeps: version 9999: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+dev-dotnet/gtksourceview-sharp
+  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/libopensync-plugin-sunbird
-  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+dev-dotnet/gudev-sharp
+  DeprecatedEclass: version 0.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/libopensync-plugin-synce-rra
+dev-dotnet/ikvm
+  DeprecatedEclass: version 0.46.0.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 0.46.0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 7.1.4532.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 7.1.4532.2: keywords dropped: ppc
+
+dev-dotnet/ikvm-bin
+  DeprecatedEclass: version 0.46.0.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 7.1.4532.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/libopensync-plugin-syncml
+dev-dotnet/libgdiplus
+  DeprecatedEclass: version 2.10.9: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.10.9: uses deprecated EAPI: 2
+  DeprecatedEclass: version 2.10.9-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 2.10.9-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/libopensync-plugin-vformat
-  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+dev-dotnet/log4net
+  DeprecatedEclass: version 1.2.11: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/libplist
+dev-dotnet/mono-addins
+  DeprecatedEclass: version 0.6.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/libsyncml
+dev-dotnet/mono-nat
+  DeprecatedEclass: version 1.1.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/libusbmuxd
+dev-dotnet/mono-zeroconf
+  DeprecatedEclass: version 0.9.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.9.0: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/msynctool
-  DeprecatedEAPI: version 0.22: uses deprecated EAPI: 3
+dev-dotnet/monocalendar
+  DeprecatedEclass: version 0.7.2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.7.2: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/multisync-gui
+dev-dotnet/monotorrent
+  DeprecatedEclass: version 0.80: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.80: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/orange
+dev-dotnet/nant
+  DeprecatedEclass: version 0.92: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/osynctool
-  DeprecatedEAPI: version 0.39: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+dev-dotnet/ndesk-dbus
+  DeprecatedEclass: version 0.6.1a: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.6.1a: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/p3nfs
-  DeprecatedEAPI: version 5.19-r2: uses deprecated EAPI: 2
+dev-dotnet/ndesk-dbus-glib
+  DeprecatedEclass: version 0.4.1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 0.4.1: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/pilot-link
-  MissingFile: required file ChangeLog doesn't exist
-  SizeViolation: "files/pilot-link-0.12.5-perl514.patch" exceeds 20k in size; 22730 bytes total
-
-app-pda/synce-core
-  DeprecatedEclass: version 0.16-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+dev-dotnet/nini
+  DeprecatedEclass: version 1.1.0-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 1.1.0-r2: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/synce-sync-engine
-  DeprecatedEclass: version 0.15.1-r3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+dev-dotnet/notify-sharp
+  DeprecatedEclass: version 0.4.0_pre20090305: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+
+dev-dotnet/nuget
+  WhitespaceFound: version 2.8.3: ebuild has trailing whitespace on line 29
+
+dev-dotnet/notify-sharp
   MissingFile: required file ChangeLog doesn't exist
 
-app-pda/usbmuxd
+dev-dotnet/nuget
+  NonExistentDeps: version 2.8.3: depset depends: nonexistent atoms [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonExistentDeps: version 2.8.3: depset rdepends: nonexistent atoms [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/developer): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/developer): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/developer): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/developer): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  NonsolvableDeps: version 2.8.3: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ <=dev-dotnet/xdt-for-monodevelop-2.8.2 ]
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-dotnet/pango-sharp
+  DeprecatedEclass: version 2.12.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.12.10: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-dotnet/pe-format
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-dotnet/rsvg-sharp
+  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-dotnet/smartirc4net
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-dotnet/taglib-sharp
+  DeprecatedEclass: version 2.0.4.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEclass: version 2.1.0.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-dotnet/vte-sharp
+  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-dotnet/webkit-sharp
+  DeprecatedEclass: version 0.3-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-dotnet/wnck-sharp
+  DeprecatedEclass: version 2.24.0-r10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  DeprecatedEAPI: version 2.24.0-r10: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-dotnet/xdt-for-monodevelop
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-dotnet/xsp
+  DeprecatedEclass: version 2.10.2-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-dotnet/zeitgeist-sharp
+  DeprecatedEclass: version 0.8.0.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -7564,59 +7593,59 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-games-engines/exult
+games-roguelike/FTL
   MissingFile: required file ChangeLog doesn't exist
 
-games-engines/frobtads
+games-roguelike/adom
   MissingFile: required file ChangeLog doesn't exist
 
-games-engines/frotz
+games-roguelike/angband
   MissingFile: required file ChangeLog doesn't exist
 
-games-engines/gargoyle
+games-roguelike/crossfire-client
   MissingFile: required file ChangeLog doesn't exist
 
-games-engines/gemrb
+games-roguelike/dwarf-fortress
   MissingFile: required file ChangeLog doesn't exist
 
-games-engines/love
+games-roguelike/hengband
   MissingFile: required file ChangeLog doesn't exist
 
-games-engines/nazghul
+games-roguelike/mazesofmonad
   MissingFile: required file ChangeLog doesn't exist
 
-games-engines/odamex
+games-roguelike/moria
   MissingFile: required file ChangeLog doesn't exist
 
-games-engines/openmw
+games-roguelike/nethack
   MissingFile: required file ChangeLog doesn't exist
 
-games-engines/openxcom
+games-roguelike/powder
   MissingFile: required file ChangeLog doesn't exist
 
-games-engines/qtads
+games-roguelike/rogue
   MissingFile: required file ChangeLog doesn't exist
 
-games-engines/renpy
+games-roguelike/scourge
   MissingFile: required file ChangeLog doesn't exist
 
-games-engines/residualvm
+games-roguelike/slashem
+  DeprecatedEAPI: version 0.0.772: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.0.772: "se007e7f2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.0.772: "conf12s.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-roguelike/stone-soup
   MissingFile: required file ChangeLog doesn't exist
 
-games-engines/scummvm
+games-roguelike/tome
   MissingFile: required file ChangeLog doesn't exist
 
-games-engines/scummvm-tools
+games-roguelike/tomenet
   MissingFile: required file ChangeLog doesn't exist
 
-games-engines/solarus
+games-roguelike/wrogue
   MissingFile: required file ChangeLog doesn't exist
 
-games-engines/stratagus
-  MissingFile: required file ChangeLog doesn't exist
-
-games-engines/xzip
-  MissingFile: required file ChangeLog doesn't exist
-
-games-engines/zoom
+games-roguelike/zangband
   MissingFile: required file ChangeLog doesn't exist
