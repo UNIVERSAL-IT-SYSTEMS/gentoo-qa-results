@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 13 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-plugins/*' 'app-dicts/*' 'kde-base/*' 'sys-block/*' 'net-im/*' 'games-misc/*' 'kde-frameworks/*' 'media-radio/*' 'www-plugins/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'app-emulation/*' 'app-dicts/*' 'kde-base/*' 'sys-block/*' 'www-apache/*' 'media-tv/*' 'net-proxy/*' 'media-radio/*' 'x11-base/*' 'app-officeext/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /usr/lib64/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -14,1118 +14,340 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-media-plugins/alsa-plugins
+app-emulation/aqemu
   MissingFile: required file ChangeLog doesn't exist
 
-media-plugins/alsaequal
+app-emulation/aranym
   MissingFile: required file ChangeLog doesn't exist
 
-media-plugins/amb-plugins
-  DeprecatedEAPI: version 0.8.1: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.8.1: "AMB-plugins-0.8.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-media-plugins/ams-lv2
+app-emulation/armv8-fast-model
   MissingFile: required file ChangeLog doesn't exist
 
-media-plugins/audacious-dumb
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.65: "audacious-dumb-0.65.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.73: "audacious-dumb-0.73.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.74: "audacious-dumb-0.74.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.80: "audacious-dumb-0.80.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/audacious-plugins
-  DeprecatedEAPI: version 2.4.4-r1: uses deprecated EAPI: 3
-  DroppedKeywordWarning: version 3.6.2: keywords dropped: alpha, ppc, sparc
+app-emulation/bochs
   MissingFile: required file ChangeLog doesn't exist
 
-media-plugins/banshee-community-extensions
-  DeprecatedEclass: version 2.2.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEclass: version 2.4.0: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
-  DeprecatedEclass: version 2.4.0-r1: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+app-emulation/cloud-init
+  MissingFile: required file ChangeLog doesn't exist
+  SizeViolation: "files/growpart" exceeds 20k in size; 21323 bytes total
+
+app-emulation/coldfire
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-media-plugins/calf
+app-emulation/crossover-bin
   MissingFile: required file ChangeLog doesn't exist
 
-media-plugins/caps-plugins
+app-emulation/crossover-office-bin
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 6.0.0: "install-crossover-standard-6.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.0.1: "install-crossover-standard-6.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.1.0: "install-crossover-standard-6.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.2.0: "install-crossover-standard-6.2.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+app-emulation/crossover-office-pro-bin
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 5.0.0: "install-crossover-pro-5.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 5.0.1: "install-crossover-pro-5.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 5.0.3: "install-crossover-pro-5.0.3.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.0.0: "install-crossover-pro-6.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.1.0: "install-crossover-pro-6.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 6.2.0: "install-crossover-pro-6.2.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 7.0.2: "install-crossover-pro-7.0.2.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 7.1.0: "install-crossover-pro-7.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 8.0.0: "install-crossover-pro-8.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 9.0.0: "install-crossover-pro-9.0.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 9.0.1: "install-crossover-pro-9.0.1.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 9.1.0: "install-crossover-pro-9.1.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 9.2.0: "install-crossover-pro-9.2.0.sh" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+app-emulation/dinero
   MissingFile: required file ChangeLog doesn't exist
 
-media-plugins/emotion_generic_players
-  NonsolvableDeps: version 1.15.0: nonsolvable depset(depends) keyword(~alpha) profile (default/linux/alpha/13.0): solutions: [ media-video/vlc ]
-  NonsolvableDeps: version 1.15.0: nonsolvable depset(depends) keyword(~alpha) profile (default/linux/alpha/13.0/desktop): solutions: [ media-video/vlc ]
-  NonsolvableDeps: version 1.15.0: nonsolvable depset(depends) keyword(~alpha) profile (default/linux/alpha/13.0/desktop/gnome): solutions: [ media-video/vlc ]
-  NonsolvableDeps: version 1.15.0: nonsolvable depset(depends) keyword(~alpha) profile (default/linux/alpha/13.0/developer): solutions: [ media-video/vlc ]
-  NonsolvableDeps: version 1.15.0: nonsolvable depset(depends) keyword(~alpha) profile (default/linux/alpha/13.0/desktop/gnome/systemd): solutions: [ media-video/vlc ]
-  NonsolvableDeps: version 1.15.0: nonsolvable depset(depends) keyword(~alpha) profile (default/linux/alpha/13.0/desktop/kde): solutions: [ media-video/vlc ]
-  NonsolvableDeps: version 1.15.0: nonsolvable depset(depends) keyword(~alpha) profile (default/linux/alpha/13.0/desktop/kde/systemd): solutions: [ media-video/vlc ]
-  NonsolvableDeps: version 1.15.0: nonsolvable depset(rdepends) keyword(~alpha) profile (default/linux/alpha/13.0): solutions: [ media-video/vlc ]
-  NonsolvableDeps: version 1.15.0: nonsolvable depset(rdepends) keyword(~alpha) profile (default/linux/alpha/13.0/desktop): solutions: [ media-video/vlc ]
-  NonsolvableDeps: version 1.15.0: nonsolvable depset(rdepends) keyword(~alpha) profile (default/linux/alpha/13.0/desktop/gnome): solutions: [ media-video/vlc ]
-  NonsolvableDeps: version 1.15.0: nonsolvable depset(rdepends) keyword(~alpha) profile (default/linux/alpha/13.0/developer): solutions: [ media-video/vlc ]
-  NonsolvableDeps: version 1.15.0: nonsolvable depset(rdepends) keyword(~alpha) profile (default/linux/alpha/13.0/desktop/gnome/systemd): solutions: [ media-video/vlc ]
-  NonsolvableDeps: version 1.15.0: nonsolvable depset(rdepends) keyword(~alpha) profile (default/linux/alpha/13.0/desktop/kde): solutions: [ media-video/vlc ]
-  NonsolvableDeps: version 1.15.0: nonsolvable depset(rdepends) keyword(~alpha) profile (default/linux/alpha/13.0/desktop/kde/systemd): solutions: [ media-video/vlc ]
+app-emulation/dlx
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.0.0-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/docker
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/docker-compose
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/domi
+  DeprecatedEAPI: version 20060816: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/dosemu
+  DeprecatedEAPI: version 1.4.1_pre20091009: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/dynamips
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/e-uae
+  DeprecatedEAPI: version 0.8.29_rc4-r2: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/edumips64
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/free42
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/fuse
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/fuse-utils
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/ganeti
+  BadInsIntoDir: version 2.10.5-r4: ebuild uses insinto /etc/cron.d on line 154
+  BadInsIntoDir: version 2.11.6-r2: ebuild uses insinto /etc/cron.d on line 191
+  BadInsIntoDir: version 2.12.1-r3: ebuild uses insinto /etc/cron.d on line 224
+  BadInsIntoDir: version 2.12.3-r2: ebuild uses insinto /etc/cron.d on line 232
+  BadInsIntoDir: version 2.13.0-r2: ebuild uses insinto /etc/cron.d on line 228
+  BadInsIntoDir: version 2.14.1-r1: ebuild uses insinto /etc/cron.d on line 262
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/ganeti-htools
+  DeprecatedEAPI: version 0.2.8: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/ganeti-instance-debian-etch
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/ganeti-instance-debootstrap
+  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/ganeti-instance-image
+  NonExistentDeps: version 0.6: depset rdepends: nonexistent atoms [ sys-apps/mktemp ]
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/gxemul
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/hercules
+  DeprecatedEAPI: version 3.06: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/kvm-kmod
+  DeprecatedEAPI: version 3.3.6: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 3.4: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 3.6: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 3.8: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 3.10.1: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/libcacard
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/libguestfs
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/libguestfs-appliance
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/libspectrum
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/libvirt
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/libvirt-glib
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/libvirt-snmp
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/lxc
+  MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 1.1.0-r6: keywords dropped: arm64, ppc64, x86
+
+app-emulation/lxd
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/open-vm-tools
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/open-vm-tools-kmod
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/openstack-guest-agents-unix
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/phpvirtualbox
+  DeprecatedEAPI: version 4.1.7-r2: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 4.1.11: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 4.2.3b: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/playonlinux
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/q4wine
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/qemu
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   MissingFile: required file ChangeLog doesn't exist
 
-media-plugins/evas_generic_loaders
+app-emulation/qemu-guest-agent
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/qtemu
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/rex-client
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/runc
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/simh
+  DeprecatedEAPI: version 3.3.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 3.8.1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/ski
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/skyeye
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/softgun
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/spectemu
+  DeprecatedEAPI: version 0.99.3: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/spice
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/spice-protocol
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/spice-vdagent
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/spim
+  DeprecatedEAPI: version 8.0-r1: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/uade
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/uae
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/vagrant
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/vboxgtk
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/vice
+  MissingFile: required file ChangeLog doesn't exist
+
+app-emulation/virt-manager
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   MissingFile: required file ChangeLog doesn't exist
 
-media-plugins/fil-plugins
-  DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 0
+app-emulation/virt-viewer
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.3.0: "FIL-plugins-0.3.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-media-plugins/frei0r-plugins
+app-emulation/virt-what
   MissingFile: required file ChangeLog doesn't exist
 
-media-plugins/gimp-gmic
+app-emulation/virtualbox
   MissingFile: required file ChangeLog doesn't exist
 
-media-plugins/gimp-lensfun
+app-emulation/virtualbox-additions
   MissingFile: required file ChangeLog doesn't exist
 
-media-plugins/gimp-lqr
+app-emulation/virtualbox-bin
   MissingFile: required file ChangeLog doesn't exist
 
-media-plugins/gimp-resynthesizer
-  DeprecatedEAPI: version 0.16: uses deprecated EAPI: 2
+app-emulation/virtualbox-extpack-oracle
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.16: "resynthesizer-0.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-media-plugins/gkrellmpc
-  DeprecatedEAPI: version 0.1_beta9-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.1_beta10: uses deprecated EAPI: 2
+app-emulation/virtualbox-guest-additions
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.1_beta9-r1: "gkrellmpc-0.1_beta9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-media-plugins/gmpc-alarm
+app-emulation/virtualbox-modules
   MissingFile: required file ChangeLog doesn't exist
+  ExecutableFile: "files/create_vbox_modules_tarball.sh" has unnecessary executable bit
 
-media-plugins/gmpc-albumview
+app-emulation/vmips
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 11.8.16: "gmpc-albumview-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-media-plugins/gmpc-avahi
+app-emulation/vmips-cross-bin
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-media-plugins/gmpc-awn
+app-emulation/vmware-modules
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 11.8.16: "gmpc-awn-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  SizeViolation: "files/271-3.10.0.patch" exceeds 20k in size; 23418 bytes total
 
-media-plugins/gmpc-discogs
-  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+app-emulation/vmware-player
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.20.0: "gmpc-discogs-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-media-plugins/gmpc-extraplaylist
-  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+app-emulation/vmware-tools
+  DeprecatedEAPI: version 9.2.3.1031769: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.6.1.1379776: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 9.6.2.1744117: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.20.0: "gmpc-extraplaylist-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-media-plugins/gmpc-jamendo
+app-emulation/vmware-view-open-client
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 11.8.16: "gmpc-jamendo-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-media-plugins/gmpc-last-fm
-  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+app-emulation/vmware-vix
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.20.0: "gmpc-last-fm-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-media-plugins/gmpc-libnotify
+app-emulation/vmware-workstation
   MissingFile: required file ChangeLog doesn't exist
 
-media-plugins/gmpc-lyrics
+app-emulation/vov
+  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-media-plugins/gmpc-lyricwiki
+app-emulation/vpcs
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 11.8.16: "gmpc-lyricwiki-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-media-plugins/gmpc-magnatune
+app-emulation/wine
   MissingFile: required file ChangeLog doesn't exist
 
-media-plugins/gmpc-mdcover
-  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+app-emulation/winetricks
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.20.0: "gmpc-mdcover-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-media-plugins/gmpc-mmkeys
+app-emulation/x48
   MissingFile: required file ChangeLog doesn't exist
 
-media-plugins/gmpc-mserver
+app-emulation/xe-guest-utilities
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.20.0: "gmpc-mserver-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-media-plugins/gmpc-playlistsort
-  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+app-emulation/xen
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.20.0: "gmpc-playlistsort-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-media-plugins/gmpc-shout
-  DeprecatedEAPI: version 0.20.0: uses deprecated EAPI: 3
+app-emulation/xen-pvgrub
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.20.0: "gmpc-shout-0.20.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-media-plugins/gmpc-tagedit
+app-emulation/xen-tools
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 11.8.16: "gmpc-tagedit-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-media-plugins/gmpc-wikipedia
+app-emulation/xtrs
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 11.8.16: "gmpc-wikipedia-11.8.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/grilo-plugins
-  DroppedKeywordWarning: version 0.2.14: keywords dropped: alpha
-  DroppedKeywordWarning: version 0.2.13: keywords dropped: arm, ia64, sparc
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-a52dec
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-alsa
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-amr
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-annodex
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-assrender
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-cdio
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-cdparanoia
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-dash
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-dts
-  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-dv
-  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-dvb
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-dvdread
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-faac
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-faad
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-ffmpeg
-  WhitespaceFound: version 0.10.13_p201211-r4: ebuild has trailing whitespace on line 63
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-flac
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-gconf
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-gdkpixbuf
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-gio
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-gl
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-gnomevfs
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-gsm
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-hls
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-ivorbis
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-jack
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-jpeg
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-ladspa
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-lame
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-libav
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-libmms
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-libnice
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-libpng
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-libvisual
-  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-mad
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-meta
-  DroppedKeywordWarning: version 1.0-r3: keywords dropped: arm64
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-mimic
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-modplug
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-mpeg2dec
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-mpeg2enc
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-mplex
-  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-musepack
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-neon
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-ofa
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-ogg
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-opus
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-oss
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-pango
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-pulse
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-raw1394
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-resindvd
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-rtmp
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-schroedinger
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-shout2
-  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: sh
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-sidplay
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-smoothstreaming
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-soundtouch
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-soup
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-speex
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-taglib
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-theora
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-twolame
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-v4l2
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-vaapi
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-voaacenc
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-voamrwbenc
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-vorbis
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-vp8
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-vpx
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-wavpack
-  DroppedKeywordWarning: version 1.2.4-r1: keywords dropped: arm
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-x
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-x264
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-ximagesrc
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-xvid
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/gst-plugins-xvideo
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/hexter
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/imlib2_loaders
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/ir_lv2
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/kipi-plugins
-  NonExistentDeps: version 4.12.0: depset depends: nonexistent atoms [ >=kde-apps/libkgeomap-14.12.0:4 ]
-  NonExistentDeps: version 4.12.0: depset rdepends: nonexistent atoms [ >=kde-apps/libkgeomap-14.12.0:4 ]
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/ladspa-bs2b
-  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.9.1: "ladspa-bs2b-0.9.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/libvisual-plugins
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/libvisual-projectm
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 2.0.1: "projectM_libvisual-2.0.1-Source.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/live
-  DeprecatedEAPI: version 2012.01.07: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2012.09.13: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2013.02.11: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/mcp-plugins
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.4.0: "MCP-plugins-0.4.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-media-plugins/mda-lv2
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/mediastreamer-amr
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/mediastreamer-bcg729
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/mediastreamer-ilbc
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/mediastreamer-silk
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/mediastreamer-x264
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/mythplugins
-  DeprecatedEclass: version 0.26.0_p20130922: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.26.0_p20130922: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.26.0_p20130922: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.27_p20140321: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.27_p20140321: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.27_p20140321: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.27.1_p20140713: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.27.1_p20140713: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, =media-tv/mythtv-0.27.1_p20140713* ]
-  NonExistentDeps: version 0.27.1_p20140713: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, =media-tv/mythtv-0.27.1_p20140713* ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/developer): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/developer): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/developer): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/developer): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  NonsolvableDeps: version 0.27.1_p20140713: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ =media-tv/mythtv-0.27.1_p20140713*[python] ]
-  DeprecatedEclass: version 0.27.1_p20140817: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.27.1_p20140817: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.27.1_p20140817: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.27.3_p20140907: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.27.3_p20140907: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, =media-tv/mythtv-0.27.3_p20140907* ]
-  NonExistentDeps: version 0.27.3_p20140907: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, =media-tv/mythtv-0.27.3_p20140907* ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/developer): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/developer): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/developer): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/developer): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.3_p20140907: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ =media-tv/mythtv-0.27.3_p20140907*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  DeprecatedEclass: version 0.27.3_p20141009: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.27.3_p20141009: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.27.3_p20141009: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.27.4_p20141018: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.27.4_p20141018: depset depends: nonexistent atoms [ =media-tv/mythtv-0.27.4_p20141018*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.27.4_p20141018: depset rdepends: nonexistent atoms [ =media-tv/mythtv-0.27.4_p20141018*, =dev-lang/python-2.6* ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/developer): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/developer): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(depends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/developer): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~amd64) profile (hardened/linux/amd64/selinux): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/developer): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  NonsolvableDeps: version 0.27.4_p20141018: nonsolvable depset(rdepends) keyword(~x86) profile (hardened/linux/x86/selinux): solutions: [ =media-tv/mythtv-0.27.4_p20141018*[alsa,hls,ieee1394,libass,python,theora,vorbis,xml,xvid] ]
-  DeprecatedEclass: version 0.27.4_p20150124: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 0.27.5_p20150627: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/npapi-vlc
-  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 3
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 2.0.0: "npapi-vlc-2.0.0.tar.xz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-media-plugins/qmmp-plugin-pack
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/quodlibet-plugins
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/rev-plugins
-  DeprecatedEAPI: version 0.3.1-r1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.3.1-r1: "REV-plugins-0.3.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-media-plugins/swh-lv2
-  DeprecatedEAPI: version 1.0.15: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.0.15: "swh-lv2-1.0.15.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-media-plugins/swh-plugins
-  MissingFile: required file ChangeLog doesn't exist
-  SizeViolation: "files/swh-plugins-0.4.15-glibc-2.10.patch" exceeds 20k in size; 27458 bytes total
-
-media-plugins/tap-plugins
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vamp-aubio-plugins
-  DeprecatedEAPI: version 0.3.2c: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vamp-libxtract-plugins
-  DeprecatedEAPI: version 0.6.6.20121204: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vco-plugins
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.3.0: "VCO-plugins-0.3.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-media-plugins/vdr-actuator
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-admin
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.8.0: "vdr-admin-0.8.0.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/vdr-alcd
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.5.1: "vdr-alcd-1.5.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/vdr-arghdirector
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.2.6: "vdr-arghdirector-0.2.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-media-plugins/vdr-atscepg
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-audiorecorder
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-autosort
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-avards
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.2.4: "vdr-avards-0.2.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-media-plugins/vdr-beep
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.1.2: "vdr-beep-0.1.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/vdr-bgprocess
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.1.0: "vdr-bgprocess-0.1.0.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-media-plugins/vdr-browse
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.2.0: "vdr-browse-0.2.0.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-media-plugins/vdr-burn
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-burn-templates
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.0.2: "vdr-burn-templates-0.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/vdr-calc
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.0.1_rc5: "vdr-calc-0[1].0.1-rc5.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/vdr-cdplayer
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-chanman
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.0.9: "vdr-chanman-0.0.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/vdr-channelblocker
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.0.6: "vdr-channelblocker-0.0.6.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/vdr-cinebars
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.0.5: "vdr-cinebars-0.0.5.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-media-plugins/vdr-clock
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-console
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-coverviewer
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-cpumon
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.0.6_p1: "vdr-cpumon-0.0.6a.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/vdr-decruft
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-devstatus
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-dummydevice
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-duplicates
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-dvbapi
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-dvbhddevice
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-dvbsddevice
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-dvd
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-dvdswitch
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-epgsearch
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-epgsync
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-exec
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-extb
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.3.1: "vdr-extb-0.3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.3.1: "extb_firmware_1.08_lircd.conf.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.3.1: "extb.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/vdr-extrecmenu
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-femon
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-fepg
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-ffnetdev
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-filebrowser
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-freecell
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-fritzbox
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-graphlcd
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-graphtft
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-image
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-imonlcd
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-infosatepg
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-iptv
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-joystick
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-kvdrmon
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-launcher
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-lcdproc
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.0.10.9: "vdr-lcdproc-0.0.10.9.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/vdr-lcr
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-live
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-loadepg
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-mailbox
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.6.0: "vdr-mailbox-0.6.0.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/vdr-markad
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-menuorg
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-mlist
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-mount
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-mp3ng
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-mplayer
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-music
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-newsticker
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-noepg
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-nordlichtsepg
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-osdpip
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-osdserver
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.1.2: "vdr-osdserver-0.1.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/vdr-osdteletext
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-peer
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-permashift
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-picselshow
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.0.2: "vdr-picselshow-0.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/vdr-pilot
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-pilotskin
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-pin
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.1.9: "vdr-pin-0.1.9.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/vdr-powermate
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.0.5: "vdr-powermate-0.0.5.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/vdr-prefermenu
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-proxy
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.1.4-r1: "vdr-proxy-0.1.4.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/vdr-pvr350
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.7.3: "vdr-pvr350-1.7.3.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.7.4: "vdr-pvr350-1.7.4.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/vdr-pvrinput
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-quicktimer
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.1.1: "vdr-quicktimer-0.1.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-media-plugins/vdr-radio
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.9.0: "vdr-radio-0.9.0.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/vdr-radiolist
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.0.2: "vdr-radiolist-0.0.2.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/vdr-rcu
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-recsearch
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-recstatus
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.0.8: "vdr-recstatus-0.0.8.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/vdr-remote
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-remoteosd
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-remotetimers
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-rotor
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.1.5: "vdr-rotor-0.1.5.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-media-plugins/vdr-rpihddevice
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-rssreader
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-satip
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-scheduler
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.1.3: "vdr-scheduler-0.1.3.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-media-plugins/vdr-screenshot
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-serial
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-skincurses
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-skinelchi
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-skinenigmang
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-skinnopacity
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-skinsoppalusikka
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-sleeptimer
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-sndctl
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-solitaire
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-span
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.0.7: "vdr-span-0.0.7.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-media-plugins/vdr-streamdev
-  BadInsIntoDir: version 0.6.1: ebuild uses insinto /etc/conf.d on line 60
-
-media-plugins/vdr-spider
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.2.2: "vdr-spider-0.2.2.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-media-plugins/vdr-streamdev
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-sudoku
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.3.5: "vdr-sudoku-0.3.5.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/vdr-suspendoutput
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.0.1: "vdr-suspendoutput-1.0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-media-plugins/vdr-svdrposd
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-svdrpservice
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-systeminfo
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.1.1: "vdr-systeminfo-0.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/vdr-text2skin
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-ttxtsubs
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-tvguide
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-undelete
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-vcd
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-vdrmanager
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-videosystem
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.0.1: "vdr-videosystem-0.0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-media-plugins/vdr-vodcatcher
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-vompserver
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.3.1-r1: "vdr-vompserver-0.3.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-media-plugins/vdr-wapd
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-weatherng
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-wirbelscan
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-xine
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-xineliboutput
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-xvdr
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-zaphistory
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/vdr-zappilot
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/xbmc-addon-xvdr
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  MissingFile: required file ChangeLog doesn't exist
-
-media-plugins/xsynth-dssi
-  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.9.4: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.9.2: "xsynth-dssi-0.9.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.4: "xsynth-dssi-0.9.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -2828,693 +2050,663 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-im/ayttm
+www-apache/anyterm
+  DeprecatedEAPI: version 1.1.29: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.6.3: "ayttm-0.6.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.1.29: "anyterm-1.1.29.tbz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-im/birdie
-  MissingFile: required file ChangeLog doesn't exist
-
-net-im/bitlbee
+www-apache/libapreq2
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/bitlbee-steam
+www-apache/mod-auth-mysql
+  MissingFile: required file ChangeLog doesn't exist
+
+www-apache/mod_access_dnsbl
+  MissingFile: required file ChangeLog doesn't exist
+
+www-apache/mod_anonymize_ip
+  MissingFile: required file ChangeLog doesn't exist
+
+www-apache/mod_auth_cookie_mysql2
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+www-apache/mod_auth_imap2
+  DeprecatedEAPI: version 2.2.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.2.0: "mod_auth_imap2-2.2.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+www-apache/mod_auth_kerb
+  DeprecatedEAPI: version 5.3: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  SizeViolation: "files/mod_auth_kerb-5.4-s4u2proxy-r3.patch" exceeds 20k in size; 21037 bytes total
+  MissingChksum: version 5.3: "mod_auth_kerb-5.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+www-apache/mod_auth_mysql
+  DeprecatedEAPI: version 3.0.0-r3: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+
+www-apache/mod_auth_nufw
+  DeprecatedEAPI: version 2.2.2: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.2.2: "mod_auth_nufw-2.2.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+www-apache/mod_auth_openid
+  MissingFile: required file ChangeLog doesn't exist
+
+www-apache/mod_auth_pgsql
+  DeprecatedEAPI: version 2.0.3-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+www-apache/mod_auth_radius
+  MissingFile: required file ChangeLog doesn't exist
+
+www-apache/mod_auth_tkt
+  MissingFile: required file ChangeLog doesn't exist
+
+www-apache/mod_auth_token
+  DeprecatedEAPI: version 1.0.6_beta: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.6_beta: "mod_auth_token-1.0.6-beta.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+www-apache/mod_auth_xradius
+  MissingFile: required file ChangeLog doesn't exist
+
+www-apache/mod_authn_sasl
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+www-apache/mod_authnz_external
+  DeprecatedEAPI: version 3.2.6: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.2.6: "mod_authnz_external-3.2.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+www-apache/mod_authnz_persona
+  MissingFile: required file ChangeLog doesn't exist
+
+www-apache/mod_backtrace
+  MissingFile: required file ChangeLog doesn't exist
+
+www-apache/mod_bw
+  MissingFile: required file ChangeLog doesn't exist
+
+www-apache/mod_caucho
+  DeprecatedEAPI: version 4.0.26: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+
+www-apache/mod_cband
+  DeprecatedEAPI: version 0.9.7.5: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+www-apache/mod_common_redirect
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.1.1: "mod_common_redirect-0.1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+www-apache/mod_depends
+  DeprecatedEAPI: version 0.7.0_p200702041: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.7.0_p200702041: "mod_depends-0.7.0_p200702041.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+www-apache/mod_diagnostics
+  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.0.1: "mod_diagnostics-0.0.1.c" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+www-apache/mod_dnsbl_lookup
+  DeprecatedEAPI: version 0.91: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.91: "mod_dnsbl_lookup-0.91.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+www-apache/mod_dnssd
+  MissingFile: required file ChangeLog doesn't exist
+
+www-apache/mod_evasive
+  MissingFile: required file ChangeLog doesn't exist
+
+www-apache/mod_extract_forwarded
+  DeprecatedEAPI: version 2.0.2: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+
+www-apache/mod_fastcgi
+  DeprecatedEAPI: version 2.4.7_pre0910052141: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+www-apache/mod_fastcgi_handler
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.6: "mod_fastcgi_handler-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+www-apache/mod_fcgid
+  DeprecatedEAPI: version 2.3.9: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+www-apache/mod_flvx
+  DeprecatedEAPI: version 0.0.1-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.0.1-r1: "mod_flvx-0.0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+www-apache/mod_ftpd
+  DeprecatedEAPI: version 0.14-r1: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.14-r1: "mod_ftpd-0.14.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+www-apache/mod_geoip2
+  DeprecatedEAPI: version 1.2.7-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+www-apache/mod_gnutls
+  MissingFile: required file ChangeLog doesn't exist
+
+www-apache/mod_h2
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/centerim
-  DeprecatedEAPI: version 4.22.10: uses deprecated EAPI: 2
+www-apache/mod_jk
+  DeprecatedEAPI: version 1.2.37: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/choqok
+www-apache/mod_layout
+  DeprecatedEAPI: version 5.1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/climm
+www-apache/mod_ldap_userdir
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/coccinella
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.96.20: "Coccinella-0.96.20Src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-im/corebird
+www-apache/mod_limitipconn
+  DeprecatedEAPI: version 0.24: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/cpop
+www-apache/mod_loadavg
+  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/dianara
+www-apache/mod_log_rotate
+  DeprecatedEAPI: version 1.00: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ejabberd
+www-apache/mod_log_sql
+  DeprecatedEAPI: version 1.101-r1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ekg2
+www-apache/mod_macro
+  DeprecatedEAPI: version 1.1.10: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1.10: "mod_macro-1.1.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.2.1: "mod_macro-1.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+www-apache/mod_mono
+  DeprecatedEclass: version 2.10: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/developer): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/developer): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/developer): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/developer): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86): solutions: [ >=dev-lang/mono-2.10 ]
+  NonsolvableDeps: version 2.10: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=dev-lang/mono-2.10 ]
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/empathy
+www-apache/mod_musicindex
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/err
+www-apache/mod_nss
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/gajim
+www-apache/mod_pcgi2
+  DeprecatedEAPI: version 2.0.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.0.2: "mod_pcgi2-2.0.2-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+www-apache/mod_perl
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/gg-transport
-  DeprecatedEAPI: version 2.2.4: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 2.2.4: "jggtrans-2.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-im/indicator-messages
+www-apache/mod_proxy_fcgi
+  DeprecatedEAPI: version 0_p816361: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/jabber-base
-  DeprecatedEAPI: version 0.01: uses deprecated EAPI: 0
+www-apache/mod_proxy_html
+  DeprecatedEAPI: version 3.1.2: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/jabberd2
+www-apache/mod_python
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/kadu
-  DroppedKeywordWarning: version 2.1: keywords dropped: ppc
+www-apache/mod_qos
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/kde-telepathy-meta
+www-apache/mod_rpaf
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/kouchat
+www-apache/mod_scgi
+  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-accounts-kcm
+www-apache/mod_security
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-approver
+www-apache/mod_slotlimit
+  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-auth-handler
+www-apache/mod_spdy
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  MissingFile: required file ChangeLog doesn't exist
+  ExecutableFile: "files/make-snapshot.sh" has unnecessary executable bit
+
+www-apache/mod_tcl
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-call-ui
+www-apache/mod_tidy
+  DeprecatedEAPI: version 0.5.5-r1: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.5.5-r1: "mod_tidy-0.5.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+www-apache/mod_umask
+  DeprecatedEAPI: version 0.1.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.1.0: "mod_umask-0.1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+www-apache/mod_vdbh
+  DeprecatedEAPI: version 1.0.3-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.3-r1: "mod_vdbh-1.0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+www-apache/mod_vhost_ldap
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-common-internals
+www-apache/mod_whatkilledus
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-contact-list
+www-apache/mod_wsgi
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-contact-runner
+www-apache/mod_xml2enc
+  DeprecatedEAPI: version 1.0.3: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-desktop-applets
+www-apache/mod_xsendfile
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-filetransfer-handler
+www-apache/modsec-flameeyes
+  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-kded-module
+www-apache/modsecurity-crs
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-send-file
+www-apache/mpm_itk
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/ktp-text-ui
+www-apache/passenger
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/librvp
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 2
+www-apache/pwauth
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.9.6: "librvp-0.9.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.9.7: "librvp-0.9.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
 
-net-im/licq
-  MissingFile: required file ChangeLog doesn't exist
-
-net-im/mcabber
-  MissingFile: required file ChangeLog doesn't exist
-
-net-im/minbif
+media-tv/channeleditor
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/mu-conference
-  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
+media-tv/dvbstream
+  DeprecatedEAPI: version 0.7_pre20080516: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.7_pre20080516: "dvbstream-snapshot-20080302.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-tv/dvbstreamer
+  DeprecatedEAPI: version 1.1-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.0.0_rc1: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1-r1: "dvbstreamer-1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 2.0.0_rc1: "dvbstreamer-2.0.0rc1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-tv/dvbtune
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/openfire
+media-tv/freevo
+  DeprecatedEclass: version 1.9.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.9.0: uses deprecated EAPI: 3
+  NonExistentDeps: version 1.9.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  NonExistentDeps: version 1.9.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/pidgin
+media-tv/gentoo-vdr-scripts
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/pork
+media-tv/gtk-v4l
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/prosody
+media-tv/ivtvplayer
+  WrongIndentFound: version 0.1.3-r1: ebuild has whitespace in indentation on line 18
+
+media-tv/ivtv-utils
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.4.1: "ivtv-utils-1.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-tv/ivtvplayer
+  DeprecatedEAPI: version 0.1.3-r1: uses deprecated EAPI: 2
+  NonExistentDeps: version 0.1.3-r1: depset rdepends: nonexistent atoms [ media-tv/ivtv ]
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.1.3-r1: "ivtvplayer-0.1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-tv/kodi
+  MissingFile: required file ChangeLog doesn't exist
+  ExecutableFile: "files/generate.sh" has unnecessary executable bit
+
+media-tv/linuxtv-dvb-apps
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/psi
+media-tv/linuxtv-dvb-firmware
+  DeprecatedEAPI: version 2009.07.06-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 2009.09.19: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+media-tv/me-tv
+  MissingFile: required file ChangeLog doesn't exist
+
+media-tv/mythtv
+  DeprecatedEclass: version 0.26.0_p20130922: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.26.0_p20130922: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.26.0_p20130922: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.27_p20140321: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.27_p20140321: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.27_p20140321: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.27.1_p20140817: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.27.1_p20140817: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.27.1_p20140817: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.27.3_p20141009: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 0.27.3_p20141009: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.27.3_p20141009: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.27.4_p20150124: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.27.5_p20150627: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingFile: required file ChangeLog doesn't exist
+
+media-tv/mythtv-status
+  MissingFile: required file ChangeLog doesn't exist
+
+media-tv/nvtv
+  DeprecatedEAPI: version 0.4.7-r1: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.4.7-r1: "nvtv-0.4.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-tv/shoutcast2vdr
+  DeprecatedEAPI: version 0.0.8: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+media-tv/tvbrowser
+  WhitespaceFound: version 9999: ebuild has trailing whitespace on line 111
+  MissingFile: required file ChangeLog doesn't exist
+  SizeViolation: "files/tvbrowser-9999-build.xml" exceeds 20k in size; 37346 bytes total
+
+media-tv/tvheadend
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/psimedia
+media-tv/tvmovie2vdr
+  DeprecatedEAPI: version 0.5.13: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.0.3-r3: "psimedia-1.0.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.5.13: "tvmovie2vdr-0.5.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-im/purple-events
-  MissingFile: required file ChangeLog doesn't exist
-
-net-im/pyaim-t
+media-tv/tvnamer
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/pyicq-t
+media-tv/v4l-dvb-saa716x
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/qtwitter
+media-tv/v4l-utils
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/qutim
+media-tv/w_scan
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/qwit
-  DeprecatedEAPI: version 1.1_pre2: uses deprecated EAPI: 2
+media-tv/wis-go7007
+  DeprecatedEAPI: version 0.9.8-r3: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.9.8-r3: "wis-go7007-linux-0.9.8.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+media-tv/xawtv
+  DeprecatedEAPI: version 3.95-r2: uses deprecated EAPI: 1
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/reaim
+media-tv/xbmc
+  DeprecatedEclass: version 11.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 11.0: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, <media-video/libav-0.8.2-r1 ]
+  NonExistentDeps: version 11.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, <media-video/libav-0.8.2-r1 ]
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.8-r1: "reaim-0.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  ExecutableFile: "files/generate.sh" has unnecessary executable bit
 
-net-im/sendxmpp
+media-tv/xmltv
+  MissingFile: required file ChangeLog doesn't exist
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+WARNING pkgcore: metadata.dtd cannot be opened from
+               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
+               : refetch
+
+net-proxy/3proxy
+  DeprecatedEAPI: version 0.5.3k: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.5.3k: "3proxy-0.5.3k.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.6.1: "3proxy-0.6.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-proxy/adzapper
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/silc-server
+net-proxy/bfilter
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/silc-toolkit
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.1.10: "silc-toolkit-1.1.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-im/simpserver-bin
-  DeprecatedEAPI: version 2.1.0: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 2.1.0: "simpserver-2.1.0-linux-x86.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-im/skype
+net-proxy/c-icap
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/skypetab-ng
-  NonExistentDeps: version 0.5.2: depset rdepends: nonexistent atoms [ <net-im/skype-4.1 ]
+net-proxy/c-icap-modules
+  MissingFile: required file ChangeLog doesn't exist
+
+net-proxy/cntlm
+  MissingFile: required file ChangeLog doesn't exist
+
+net-proxy/dansguardian
+  MissingFile: required file ChangeLog doesn't exist
+
+net-proxy/dante
+  DeprecatedEAPI: version 1.1.19-r4: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+net-proxy/dnsproxy
+  MissingFile: required file ChangeLog doesn't exist
+
+net-proxy/haproxy
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <net-im/skype-4.1 ]
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/telepathy-connection-managers
+net-proxy/hatop
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/telepathy-logger
+net-proxy/havp
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/telepathy-mission-control
+net-proxy/http-replicator
+  DeprecatedEclass: version 3.0-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/tkabber
+net-proxy/httpush
+  DeprecatedEAPI: version 0.9_beta11-r1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.11.1-r1: "tkabber-plugins-0.11.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.9_beta11-r1: "httpush-0.9b11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-im/turses
+net-proxy/mitmproxy
   MissingFile: required file ChangeLog doesn't exist
 
-net-im/vacuum
+net-proxy/ntlmaps
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.9.9-r2: "ntlmaps-0.9.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-im/ysm
+net-proxy/nutcracker
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 2.9.9.1: "ysmv7_2_9_9_1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
 
-games-misc/OilWar
+net-proxy/nylon
   MissingFile: required file ChangeLog doesn't exist
 
-games-misc/asr-manpages
+net-proxy/obfsproxy
   MissingFile: required file ChangeLog doesn't exist
 
-games-misc/bsd-games
+net-proxy/oops
+  DeprecatedEAPI: version 1.5.24_pre20050503-r4: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-games-misc/bsd-games-non-free
+net-proxy/pingtunnel
   MissingFile: required file ChangeLog doesn't exist
 
-games-misc/bsod
+net-proxy/piper
+  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.14: "piper-1.14.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-games-misc/c++robots
+net-proxy/polipo
   MissingFile: required file ChangeLog doesn't exist
 
-games-misc/cowsay
+net-proxy/privoxy
   MissingFile: required file ChangeLog doesn't exist
 
-games-misc/doge
+net-proxy/ratproxy
+  DeprecatedEAPI: version 1.58: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.58: "ratproxy-1.58.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-misc/dont-starve
+net-proxy/rejik
   MissingFile: required file ChangeLog doesn't exist
 
-games-misc/exult-sound
+net-proxy/shadowsocks-libev
   MissingFile: required file ChangeLog doesn't exist
 
-games-misc/fortune-mod
+net-proxy/squid
   MissingFile: required file ChangeLog doesn't exist
 
-games-misc/fortune-mod-all
+net-proxy/squidclamav
   MissingFile: required file ChangeLog doesn't exist
 
-games-misc/fortune-mod-at-linux
+net-proxy/squidguard
+  DeprecatedEAPI: version 1.4-r4: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.4-r4: "squidGuard-1.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-misc/fortune-mod-bofh-excuses
+net-proxy/squirm
   MissingFile: required file ChangeLog doesn't exist
 
-games-misc/fortune-mod-calvin
+net-proxy/sshproxy
   MissingFile: required file ChangeLog doesn't exist
 
-games-misc/fortune-mod-chucknorris
+net-proxy/sshuttle
   MissingFile: required file ChangeLog doesn't exist
 
-games-misc/fortune-mod-cs
+net-proxy/tayga
+  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.9.2: "tayga-0.9.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-games-misc/fortune-mod-debilneho
+net-proxy/tinyproxy
   MissingFile: required file ChangeLog doesn't exist
 
-games-misc/fortune-mod-discworld
+net-proxy/torsocks
   MissingFile: required file ChangeLog doesn't exist
 
-games-misc/fortune-mod-dubya
+net-proxy/tsocks
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.8_beta5-r5: "tsocks-1.8b5-tordns1-gentoo-r1.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-misc/fortune-mod-dune
+net-proxy/ufdbguard
+  DeprecatedEAPI: version 1.24-r1: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.24-r1: "ufdbGuard-1.24.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.24-r1: "ufdbguard-1.24-manual.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-misc/fortune-mod-familyguy
+net-proxy/webscarab
+  DeprecatedEAPI: version 20070504: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 20070504: "webscarab-selfcontained-20070504-1631.jar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-games-misc/fortune-mod-firefly
+net-proxy/wwwoffle
   MissingFile: required file ChangeLog doesn't exist
 
-games-misc/fortune-mod-flashrider
-  DeprecatedEAPI: version 0.25: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.80: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 0.90: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.00: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.25: "fortunes-prolinux-0.25.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.80: "fortunes-flashrider-0.80.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.90: "fortunes-flashrider-0.90-BB-Styles-Edition.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-misc/fortune-mod-futurama
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/fortune-mod-fvl
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/fortune-mod-gentoo-dev
-  DeprecatedEAPI: version 20061115: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 20061115: "gentoo-dev-20061115.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-misc/fortune-mod-gentoo-forums
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/fortune-mod-gentoo-ru
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.25: "gentoo-ru-0.25.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.26: "gentoo-ru-0.26.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-misc/fortune-mod-hitchhiker
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/fortune-mod-homer
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/fortune-mod-humorixfortunes
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/fortune-mod-it
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/fortune-mod-kernelcookies
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/fortune-mod-mormon
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/fortune-mod-norbert-tretkowski
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/fortune-mod-osfortune
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/fortune-mod-powerpuff
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/fortune-mod-pqf
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/fortune-mod-rss
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/fortune-mod-scriptures
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.1.0: "fortune-mod-scriptures-1.1.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-misc/fortune-mod-simpsons-chalkboard
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/fortune-mod-slackware
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/fortune-mod-smac
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/fortune-mod-sp-fortunes
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.2: "SP-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-misc/fortune-mod-starwars
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/fortune-mod-strangelove
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/fortune-mod-tao
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/fortune-mod-taow
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/fortune-mod-thomas-ogrisegg
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/fortune-mod-woody-allen-it
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/fortune-mod-zx-error
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/funny-manpages
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/gBhed
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/games-envd
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/ggencoder
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.91a: "ggencoder-0.91a.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-misc/gtklife
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/katawa-shoujo
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/little-inferno
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/lolcat
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/lucidlife
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/nyancat
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/opengfx
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/openmsx
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/opensfx
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/papers-please
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/qlife
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/rfksay
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/robotfindskitten
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/sdljoytest
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/sex
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/sound-of-sorting
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/typespeed
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/wtf
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/wumpus
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/xcowsay
-  DeprecatedEAPI: version 1.3: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.3: "xcowsay-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-games-misc/xcruiser
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/xpenguins
-  MissingFile: required file ChangeLog doesn't exist
-
-games-misc/yadex
-  MissingFile: required file ChangeLog doesn't exist
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-WARNING pkgcore: metadata.dtd cannot be opened from
-               : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
-               : refetch
-
-kde-frameworks/attica
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/bluez-qt
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/extra-cmake-modules
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/frameworkintegration
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kactivities
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kapidox
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/karchive
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kauth
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kbookmarks
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kcmutils
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kcodecs
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kcompletion
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kconfig
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kconfigwidgets
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kcoreaddons
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kcrash
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kdbusaddons
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kdeclarative
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kded
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kdelibs4support
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kdesignerplugin
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kdesu
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kdewebkit
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kdnssd
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kdoctools
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kemoticons
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kf-env
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kglobalaccel
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kguiaddons
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/khtml
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/ki18n
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kiconthemes
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kidletime
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kimageformats
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kinit
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kio
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kitemmodels
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kitemviews
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kjobwidgets
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kjs
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kjsembed
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kmediaplayer
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/knewstuff
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/knotifications
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/knotifyconfig
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kpackage
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kparts
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kpeople
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kplotting
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kpty
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kross
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/krunner
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kservice
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/ktexteditor
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/ktextwidgets
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kunitconversion
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kwallet
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kwidgetsaddons
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kwindowsystem
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kxmlgui
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/kxmlrpcclient
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/modemmanager-qt
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/networkmanager-qt
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/plasma
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/solid
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/sonnet
-  MissingFile: required file ChangeLog doesn't exist
-
-kde-frameworks/threadweaver
+net-proxy/ziproxy
   MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -3601,42 +2793,19 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-www-plugins/adobe-flash
+x11-base/nouveau-drm
+  DeprecatedEAPI: version 20120728: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 20121015: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-www-plugins/chrome-binary-plugins
+x11-base/xorg-drivers
   MissingFile: required file ChangeLog doesn't exist
 
-www-plugins/freshplayerplugin
+x11-base/xorg-server
   MissingFile: required file ChangeLog doesn't exist
 
-www-plugins/gecko-mediaplayer
-  MissingFile: required file ChangeLog doesn't exist
-
-www-plugins/gnash
-  MissingFile: required file ChangeLog doesn't exist
-
-www-plugins/google-talkplugin
-  MissingFile: required file ChangeLog doesn't exist
-
-www-plugins/kaffeine-mozilla-plugin
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-
-www-plugins/kpartsplugin
-  MissingFile: required file ChangeLog doesn't exist
-
-www-plugins/lightspark
-  MissingFile: required file ChangeLog doesn't exist
-
-www-plugins/mozplugger
-  MissingFile: required file ChangeLog doesn't exist
-
-www-plugins/nspluginwrapper
-  MissingFile: required file ChangeLog doesn't exist
-
-www-plugins/pipelight
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+x11-base/xorg-x11
+  DeprecatedEAPI: version 7.4-r2: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will

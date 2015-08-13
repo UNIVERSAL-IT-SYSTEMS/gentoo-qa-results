@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 0 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'media-gfx/*' 'dev-db/*' 'app-crypt/*' 'www-client/*' 'mail-filter/*' 'gnome-base/*' 'app-accessibility/*' 'dev-games/*' 'dev-ada/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'media-gfx/*' 'dev-db/*' 'app-crypt/*' 'www-client/*' 'app-shells/*' 'games-action/*' 'app-accessibility/*' 'dev-games/*' 'dev-ada/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /usr/lib64/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1598,6 +1598,56 @@ media-gfx/optipng
 media-gfx/paint-mono
   DeprecatedEclass: version 0.1.63: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEAPI: version 0.1.63: uses deprecated EAPI: 2
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
+  NonsolvableDeps: version 0.1.63: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ >=dev-lang/mono-2.4[-minimal] ]
   MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 0.1.63: "paintdotnet-0.1.63.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
@@ -1640,6 +1690,56 @@ media-gfx/picturewall
 
 media-gfx/pinta
   DeprecatedEclass: version 1.4: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.4: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ dev-lang/mono ]
   DeprecatedEclass: version 1.5_pre20121118: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3), mono (migrate to mono-env) ]
   MissingFile: required file ChangeLog doesn't exist
@@ -2180,6 +2280,9 @@ dev-db/mariadb
   MissingFile: required file ChangeLog doesn't exist
 
 dev-db/mariadb-galera
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-db/maxscale
   MissingFile: required file ChangeLog doesn't exist
 
 dev-db/metakit
@@ -3050,257 +3153,140 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-mail-filter/MailScanner
-  DeprecatedEAPI: version 4.84.5.2: uses deprecated EAPI: 0
+app-shells/autojump
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/amavisd-milter
+app-shells/bash
+  DroppedKeywordWarning: version 4.4_alpha-r1: keywords dropped: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/amavisd-new
-  DroppedKeywordWarning: version 2.10.1-r1: keywords dropped: ppc
+app-shells/bash-completion
+  DeprecatedEAPI: version 1.3-r2: uses deprecated EAPI: 3
+  NonExistentDeps: version 1.3-r2: depset rdepends: nonexistent atoms [ <app-admin/eselect-1.3.7 ]
+  NonExistentDeps: version 2.1: depset rdepends: nonexistent atoms [ <app-admin/eselect-1.3.7 ]
+  NonExistentDeps: version 2.1-r2: depset rdepends: nonexistent atoms [ <app-admin/eselect-1.3.7 ]
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/anomy-sanitizer
+app-shells/bashdb
+  DeprecatedEAPI: version 4.1.0.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.2.0.6: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/anubis
+app-shells/bashish
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/ask
-  DeprecatedEAPI: version 2.4.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.5.3: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 2.4.1: "ask-2.4.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 2.5.3: "ask-2.5.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-mail-filter/assp
-  DeprecatedEAPI: version 1.8.5.9: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.4.7: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.4.8: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.4.9: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.8.13030: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.8.5.9: "ASSP_1.8.5.9-Install.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-mail-filter/bmf
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.9.4-r2: "bmf-0.9.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-mail-filter/bogofilter
+app-shells/ccsh
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/clamassassin
-  DeprecatedEAPI: version 1.2.4: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.2.4: "clamassassin-1.2.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-mail-filter/clamsmtp
-  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.10: "clamsmtp-1.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-mail-filter/couriersrs
-  DeprecatedEAPI: version 0.1.2: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.1.2: "couriersrs-0.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-mail-filter/dcc
-  DeprecatedEAPI: version 1.3.140-r1: uses deprecated EAPI: 2
+app-shells/dash
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/disspam
-  DeprecatedEAPI: version 0.14: uses deprecated EAPI: 0
+app-shells/dsh
+  DeprecatedEAPI: version 0.25.10: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/dkimproxy
+app-shells/esh
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/dovecot-antispam
+app-shells/fish
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/dovecot_deleted_to_trash
+app-shells/gentoo-bashcomp
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/dspam
+app-shells/gentoo-zsh-completions
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/exim-geoip
+app-shells/heirloom-sh
+  DeprecatedEAPI: version 050706: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/exim-p0f
+app-shells/ksh
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/gld
+app-shells/localshell
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/imapfilter
+app-shells/mksh
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/isbg
-  DeprecatedEclass: version 0.99-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.99-r1: uses deprecated EAPI: 3
+app-shells/mpibash
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/libdkim
+app-shells/pdmenu
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/libmilter
-  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 2
+app-shells/pdsh
+  DeprecatedEAPI: version 2.18-r1: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.26: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/libsieve
-  DeprecatedEAPI: version 2.2.7: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 2.2.7: "libsieve-2.2.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-mail-filter/libspf2
+app-shells/posh
+  DeprecatedEAPI: version 0.10.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.11: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/libsrs2
+app-shells/psh
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/libsrs_alt
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.0: "libsrs_alt-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-mail-filter/maildrop
+app-shells/push
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/mailfilter
-  DeprecatedEAPI: version 0.8.2: uses deprecated EAPI: 2
+app-shells/rc
+  DeprecatedEAPI: version 1.7.2: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/mapson
+app-shells/rrs
+  DeprecatedEAPI: version 1.70: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/milter-regex
+app-shells/rssh
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/mimedefang
+app-shells/rust-zshcomp
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/normalizemime
-  DeprecatedEAPI: version 1.19: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.19: "normalizemime-1.19.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-mail-filter/opendkim
+app-shells/sash
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/opendmarc
-  DroppedKeywordWarning: version 1.3.0: keywords dropped: ppc, ppc64, sparc
+app-shells/scsh
+  DeprecatedEAPI: version 0.6.7: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 0.6.7-r1: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/opensmtpd-extras
+app-shells/scsh-install-lib
+  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/p3scan
-  DeprecatedEAPI: version 2.3.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.3.2-r1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 2.3.1: "p3scan-2.3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-mail-filter/policyd
-  DeprecatedEAPI: version 1.82-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.82-r1: "policyd-1.82.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-mail-filter/policyd-weight
+app-shells/shish
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/popfile
+app-shells/smrsh
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/postfwd
+app-shells/soapbox
+  DeprecatedEAPI: version 0.3.1-r1: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/postgrey
+app-shells/squirrelsh
+  DeprecatedEAPI: version 1.2.3-r1: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/procmail
-  DeprecatedEAPI: version 3.22-r10: uses deprecated EAPI: 0
+app-shells/tcsh
+  DeprecatedEAPI: version 6.17-r1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 6.17.06: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 6.18.01: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 6.18.01-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 6.18.01-r3: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/procmail-lib
-  DeprecatedEAPI: version 20081108: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 20091202: uses deprecated EAPI: 0
+app-shells/zsh
   MissingFile: required file ChangeLog doesn't exist
 
-mail-filter/pypolicyd-spf
-  DeprecatedEclass: version 1.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-
-mail-filter/qmail-scanner
-  DeprecatedEAPI: version 1.25-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.05: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.06: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.08: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.25-r1: "qmail-scanner-1.25.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.25-r1: "q-s-1.25st-20050406.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 2.05: "qmail-scanner-2.05.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 2.05: "q-s-2.05st-20080728.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 2.06: "qmail-scanner-2.06.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 2.06: "q-s-2.06st-20090419.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 2.08: "qmail-scanner-2.08.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 2.08: "q-s-2.08st-20091012.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-mail-filter/razor
-  MissingFile: required file ChangeLog doesn't exist
-
-mail-filter/rblcheck
-  DeprecatedEAPI: version 1.5-r1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-
-mail-filter/scmail
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.3: "scmail-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-mail-filter/sid-milter
-  MissingFile: required file ChangeLog doesn't exist
-
-mail-filter/sieve-connect
-  MissingFile: required file ChangeLog doesn't exist
-
-mail-filter/spamass-milter
-  MissingFile: required file ChangeLog doesn't exist
-
-mail-filter/spamassassin
-  MissingFile: required file ChangeLog doesn't exist
-
-mail-filter/spamassassin-botnet
-  MissingFile: required file ChangeLog doesn't exist
-
-mail-filter/spambayes
-  MissingFile: required file ChangeLog doesn't exist
-
-mail-filter/spamdyke
-  DeprecatedEAPI: version 4.3.0: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 4.3.0: "spamdyke-4.3.0.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-mail-filter/spampd
-  DeprecatedEAPI: version 2.30: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-
-mail-filter/spamprobe
-  DeprecatedEAPI: version 1.4d: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-
-mail-filter/sqlgrey
-  DeprecatedEAPI: version 1.7.6-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-
-mail-filter/tmda
-  DeprecatedEclass: version 1.1.12: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.1.12: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.1.12: "tmda-1.1.12.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-mail-filter/zdkimfilter
+app-shells/zsh-completions
   MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -3309,122 +3295,269 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-gnome-base/dconf
+games-action/0verkill
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/dconf-editor
+games-action/abuse
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/gconf
+games-action/accelerator3d
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/gdm
+games-action/armagetronad
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/gnome
+games-action/atanks
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/gnome-common
+games-action/awesomenauts
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/gnome-control-center
+games-action/barrage
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/gnome-core-apps
+games-action/battalion
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/gnome-core-libs
+games-action/beathazardultra
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/gnome-desktop
+games-action/bomberclone
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/gnome-extra-apps
+games-action/brutal-legend
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/gnome-keyring
+games-action/btanks
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/gnome-light
-  WhitespaceFound: version 3.16.0: ebuild has trailing whitespace on line 54
+games-action/bzflag
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/gnome-menus
+games-action/chickens
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/gnome-session
-  BadInsIntoDir: version 3.14.0-r1: ebuild uses insinto /usr/share/applications on line 102
-
-gnome-base/gnome-mime-data
+games-action/chromium-bsu
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/gnome-session
-  BadInsIntoDir: version 3.14.0-r2: ebuild uses insinto /usr/share/applications on line 102
-  BadInsIntoDir: version 3.16.0: ebuild uses insinto /usr/share/applications on line 99
+games-action/clanbomber
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/gnome-settings-daemon
+games-action/cs2d
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/gnome-shell
+games-action/d1x-rebirth
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/gnome-vfs
+games-action/d2x-rebirth
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/gsettings-desktop-schemas
+games-action/deathchase3d
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/gvfs
-  NonExistentDeps: version 1.20.3: depset depends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
-  NonExistentDeps: version 1.20.3: depset rdepends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
-  NonExistentDeps: version 1.22.3: depset depends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
-  NonExistentDeps: version 1.22.3: depset rdepends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
-  NonExistentDeps: version 1.22.4: depset depends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
-  NonExistentDeps: version 1.22.4: depset rdepends: nonexistent atoms [ <dev-libs/libcdio-0.90 ]
+games-action/descent1-demodata
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/libbonobo
+games-action/descent2-data
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/libbonoboui
+games-action/descent2-demodata
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/libglade
+games-action/descent3
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.4.0b-r2: "descent3-1.4.0a-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.4.0b-r2: "descent3-1.4.0b-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-action/descent3-demo
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/libgnome
+games-action/extreme-tuxracer
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/libgnome-keyring
+games-action/fakk2
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/libgnomecanvas
+games-action/formido
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/libgnomekbd
+games-action/garden
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/libgnomeprint
+games-action/geki2-KXL
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/libgnomeprintui
+games-action/geki3-KXL
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/libgnomeui
+games-action/gltron
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/libgtop
+games-action/heretic2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.06c-r1: "heretic2-1.06b-unified-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.06c-r1: "heretic2-1.06c-unified-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.06c-r1: "heretic2-maps-1.0.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-action/heretic2-demo
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/librsvg
-  DroppedKeywordWarning: version 2.40.8: keywords dropped: arm64
+games-action/heroes
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/nautilus
+games-action/hotline-miami
   MissingFile: required file ChangeLog doesn't exist
 
-gnome-base/orbit
+games-action/intrusion2
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/koth
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/lugaru
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/lugaru-demo
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/luola
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/maelstrom
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/minetest
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/minetest_game
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/moon-buggy
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/mutantstorm-demo
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/nighthawk
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/noiz2sa
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/openastromenace
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/openclonk
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/openlierox
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/orbital-eunuchs-sniper
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/phobiaii
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/poopmup
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/postalplus
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/powermanga
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/rafkill
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/rrootage
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/rune
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/shadowgrounds-bin
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0_beta12-r1: "ShadowgroundsBeta12.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-action/shadowgrounds-survivor-bin
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0_beta11-r1: "SurvivorBeta11.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-action/shootingstar
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/slune
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/snipes
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/solar2
+  NonsolvableDeps: version 1.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.10: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.10: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.10: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ dev-lang/mono ]
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/spacearyarya-kxl
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/spacetripper-demo
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/super-hexagon
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/supertuxkart
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/swordandsworcery
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/teeworlds
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/towbowl-tactics
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/transcend
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/trine-bin
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.08: "Trine.64.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+games-action/trine2
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/trosh
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/tuxkart
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/violetland
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/wordwarvi
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/xblast
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/xbomber
+  MissingFile: required file ChangeLog doesn't exist
+
+games-action/xpilot
   MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will

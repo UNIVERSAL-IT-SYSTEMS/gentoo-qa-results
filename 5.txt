@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 5 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'net-libs/*' 'app-leechcraft/*' 'net-wireless/*' 'app-portage/*' 'sci-electronics/*' 'games-rpg/*' 'sys-firmware/*' 'kde-plasma/*' 'games-simulation/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-libs/*' 'net-libs/*' 'app-leechcraft/*' 'net-wireless/*' 'app-portage/*' 'sci-geosciences/*' 'net-dialup/*' 'sys-firmware/*' 'kde-plasma/*' 'games-simulation/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /usr/lib64/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -35,6 +35,56 @@ dev-libs/DirectFB
   MissingFile: required file ChangeLog doesn't exist
 
 dev-libs/Ice
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 3.5.1: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ dev-lang/mono ]
   MissingFile: required file ChangeLog doesn't exist
 
 dev-libs/MicroJSON
@@ -67,8 +117,8 @@ dev-libs/antlr-c
   MissingFile: required file ChangeLog doesn't exist
 
 dev-libs/appstream-glib
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.4.0: keywords dropped: ia64, ppc, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-libs/apr
   MissingFile: required file ChangeLog doesn't exist
@@ -102,8 +152,8 @@ dev-libs/bglibs
   DeprecatedEAPI: version 1.104: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.106: uses deprecated EAPI: 2
   DeprecatedEAPI: version 1.106-r1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.104: keywords dropped: arm
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-libs/bitset
   MissingFile: required file ChangeLog doesn't exist
@@ -382,6 +432,84 @@ dev-libs/glib
   MissingFile: required file ChangeLog doesn't exist
 
 dev-libs/gmime
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 2.6.20: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ dev-lang/mono ]
   MissingFile: required file ChangeLog doesn't exist
 
 dev-libs/gmp
@@ -421,8 +549,8 @@ dev-libs/granite
   MissingFile: required file ChangeLog doesn't exist
 
 dev-libs/grantlee
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 5.0.0: keywords dropped: ppc, ppc64, x86
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-libs/grok
   MissingFile: required file ChangeLog doesn't exist
@@ -456,8 +584,8 @@ dev-libs/hidapi
   MissingFile: required file ChangeLog doesn't exist
 
 dev-libs/hiredis
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.13.1: keywords dropped: alpha, arm, ia64, ppc, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-libs/http-fetcher
   DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 0
@@ -696,8 +824,8 @@ dev-libs/libevdev
   MissingFile: required file ChangeLog doesn't exist
 
 dev-libs/libevent
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 2.1.5: keywords dropped: m68k
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-libs/libevocosm
   MissingFile: required file ChangeLog doesn't exist
@@ -717,8 +845,8 @@ dev-libs/libf2c
   MissingFile: required file ChangeLog doesn't exist
 
 dev-libs/libffi
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 3.2: keywords dropped: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-libs/libflatarray
   MissingFile: required file ChangeLog doesn't exist
@@ -1002,8 +1130,8 @@ dev-libs/libproccpuinfo
 
 dev-libs/libpthread-stubs
   DeprecatedEAPI: version 0.1: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.3: keywords dropped: m68k
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-libs/libpwquality
   MissingFile: required file ChangeLog doesn't exist
@@ -1229,8 +1357,8 @@ dev-libs/lzo
 dev-libs/m17n-lib
   DeprecatedEAPI: version 1.5.2: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.5.5: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.6.3-r1: keywords dropped: ia64, ppc64, sh
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-libs/maloc
   MissingFile: required file ChangeLog doesn't exist
@@ -1260,8 +1388,8 @@ dev-libs/mm
   MissingFile: required file ChangeLog doesn't exist
 
 dev-libs/mongo-c-driver
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.98.2: keywords dropped: ppc
+  MissingFile: required file ChangeLog doesn't exist
 
 dev-libs/mozldap
   WrongIndentFound: version 6.0.6-r2: ebuild has whitespace in indentation on lines 83, 84
@@ -1940,8 +2068,8 @@ net-libs/libflowmanager
   MissingFile: required file ChangeLog doesn't exist
 
 net-libs/libgadu
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.12.0: keywords dropped: alpha, ia64, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 net-libs/libgcal
   MissingFile: required file ChangeLog doesn't exist
@@ -1996,6 +2124,38 @@ net-libs/libkolab
   MissingFile: required file ChangeLog doesn't exist
 
 net-libs/libkolabxml
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 1.0.1: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ dev-lang/mono ]
   MissingFile: required file ChangeLog doesn't exist
 
 net-libs/libkpeople
@@ -2134,14 +2294,92 @@ net-libs/libprotoident
 
 net-libs/libproxy
   DeprecatedEclass: version 0.4.11-r2: uses deprecated eclass(es): [ mono (migrate to mono-env) ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(depends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/no-multilib/selinux): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc32/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(amd64) profile (default/linux/amd64/13.0/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(amd64) profile (hardened/linux/amd64/selinux): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(ppc) profile (default/linux/powerpc/ppc64/13.0/32bit-userland/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/developer): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/gnome/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/kde/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(x86) profile (default/linux/x86/13.0/desktop/plasma/systemd): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86): solutions: [ dev-lang/mono ]
+  NonsolvableDeps: version 0.4.11-r2: nonsolvable depset(rdepends) keyword(x86) profile (hardened/linux/x86/selinux): solutions: [ dev-lang/mono ]
   MissingFile: required file ChangeLog doesn't exist
 
 net-libs/libqinfinity
   MissingFile: required file ChangeLog doesn't exist
 
 net-libs/libqmi
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.12.6: keywords dropped: arm64
+  MissingFile: required file ChangeLog doesn't exist
 
 net-libs/librouteros
   MissingFile: required file ChangeLog doesn't exist
@@ -2175,8 +2413,8 @@ net-libs/libsrtp
   MissingFile: required file ChangeLog doesn't exist
 
 net-libs/libssh
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.7.0-r1: keywords dropped: ia64
+  MissingFile: required file ChangeLog doesn't exist
 
 net-libs/libssh2
   MissingFile: required file ChangeLog doesn't exist
@@ -2253,8 +2491,8 @@ net-libs/nfqueue-bindings
 
 net-libs/nghttp2
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.0.1: keywords dropped: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
+  MissingFile: required file ChangeLog doesn't exist
 
 net-libs/nodejs
   DeprecatedEclass: version 0.8.28: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -2277,8 +2515,8 @@ net-libs/openpgm
 
 net-libs/openslp
   DeprecatedEAPI: version 1.2.1-r3: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 2.0.0: keywords dropped: alpha, amd64, arm, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
+  MissingFile: required file ChangeLog doesn't exist
 
 net-libs/ortp
   MissingFile: required file ChangeLog doesn't exist
@@ -2379,8 +2617,8 @@ net-libs/vanessa-socket
   MissingFile: required file ChangeLog doesn't exist
 
 net-libs/webkit-gtk
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 2.6.6: keywords dropped: mips
+  MissingFile: required file ChangeLog doesn't exist
 
 net-libs/wt
   DeprecatedEAPI: version 3.2.2_p1-r1: uses deprecated EAPI: 3
@@ -2752,8 +2990,8 @@ net-wireless/bluedevil
 
 net-wireless/blueman
   DeprecatedEclass: version 1.23-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 2.0: keywords dropped: ppc
+  MissingFile: required file ChangeLog doesn't exist
 
 net-wireless/bluez
   MissingFile: required file ChangeLog doesn't exist
@@ -3046,8 +3284,8 @@ app-portage/elogv
   MissingFile: required file ChangeLog doesn't exist
 
 app-portage/elogviewer
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 2.5: keywords dropped: sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 app-portage/emerge-delta-webrsync
   MissingFile: required file ChangeLog doesn't exist
@@ -3097,8 +3335,8 @@ app-portage/g-octave
 
 app-portage/g-sorcery
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.2: keywords dropped: alpha, arm, ia64, ppc, ppc64, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 app-portage/genlop
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -3146,8 +3384,8 @@ app-portage/kuroo4
 
 app-portage/layman
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 2.3.0: keywords dropped: alpha, arm64, ia64, m68k, sh, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 app-portage/layman-dbtools
   DeprecatedEclass: version 0_p20100322: uses deprecated eclass(es): [ git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -3167,8 +3405,8 @@ app-portage/metagen
 
 app-portage/mirrorselect
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 2.2.2: keywords dropped: m68k, s390, sh
+  MissingFile: required file ChangeLog doesn't exist
 
 app-portage/overlint
   MissingFile: required file ChangeLog doesn't exist
@@ -3215,7 +3453,6 @@ app-portage/prefix-chain-setup
   MissingFile: required file ChangeLog doesn't exist
 
 app-portage/repo-commit
-  NonExistentDeps: version 0.4: depset rdepends: nonexistent atoms [ <sys-apps/portage-2.2.0_alpha ]
   NonExistentDeps: version 0.4.1: depset rdepends: nonexistent atoms [ <sys-apps/portage-2.2.0_alpha ]
   NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ <sys-apps/portage-2.2.0_alpha ]
   MissingFile: required file ChangeLog doesn't exist
@@ -3239,203 +3476,235 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sci-electronics/Stage
+sci-geosciences/bt747
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.0.3: "BT747_2.0.3_full.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-geosciences/cdat-lite
   MissingFile: required file ChangeLog doesn't exist
 
-sci-electronics/alliance
+sci-geosciences/congen
   MissingFile: required file ChangeLog doesn't exist
 
-sci-electronics/balsa
+sci-geosciences/foxtrotgps
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1.0: "foxtrotgps-1.1.0.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-geosciences/gdal-grass
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.4.3-r1: "gdal-grass-1.4.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-geosciences/gebabbel
   MissingFile: required file ChangeLog doesn't exist
 
-sci-electronics/cirkuit
+sci-geosciences/geocode-glib
   MissingFile: required file ChangeLog doesn't exist
 
-sci-electronics/drawtiming
-  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 3
+sci-geosciences/gmapcatcher
   MissingFile: required file ChangeLog doesn't exist
 
-sci-electronics/eagle
+sci-geosciences/gmt
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 4.5.6: "GSHHS2.1.1_high.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-geosciences/gnome-maps
   MissingFile: required file ChangeLog doesn't exist
 
-sci-electronics/electric
-  DeprecatedEAPI: version 8.09: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 8.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 8.11: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.00: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.02: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 9.03: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 8.09: "electricBinary-8.09.jar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 8.10: "electricBinary-8.10.jar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 8.11: "electricBinary-8.11.jar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sci-electronics/electronics-menu
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 3
+sci-geosciences/googleearth
   MissingFile: required file ChangeLog doesn't exist
 
-sci-electronics/espresso-ab
+sci-geosciences/gpsbabel
   MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.4.3: "gpsbabel.org-style3.css" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-sci-electronics/freehdl
-  DeprecatedEAPI: version 0.0.7: uses deprecated EAPI: 0
+sci-geosciences/gpscorrelate
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.0.7: "freehdl-0.0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.6.1: "gpscorrelate-1.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-sci-electronics/fritzing
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/gazebo
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/geda
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/geda-suite
-  DeprecatedEAPI: version 20110427: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/geda-xgsch2pcb
-  DeprecatedEclass: version 0.1.3-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.1.3-r2: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/gerbv
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/ghdl
-  DeprecatedEAPI: version 0.29: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/gnetman
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/gnucap
-  DeprecatedEAPI: version 0.35.20091207: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/gplcver
-  DeprecatedEAPI: version 2.11a: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.12a: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 2.11a: "gplcver-2.11a.src.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sci-electronics/gresistor
-  DeprecatedEclass: version 0.0.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.0.1: uses deprecated EAPI: 3
-  NonExistentDeps: version 0.0.1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.0.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.0.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.0.1-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.0.1-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/gsmc
-  DeprecatedEAPI: version 1.1-r1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.1-r1: "gsmc-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-sci-electronics/gspeakers
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/gspiceui
-  DeprecatedEAPI: version 0.9.99: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.99-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/gtkwave
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/gwave
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/irsim
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/iverilog
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/kicad
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/klayout
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/linsmith
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/magic
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/netgen
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/ngspice
-  DeprecatedEAPI: version 26: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/oregano
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/osqoop
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.1.1: "osqoop-1.1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sci-electronics/pcb
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/petrify
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/plcedit
-  DeprecatedEAPI: version 2.2.1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/puff
-  DeprecatedEAPI: version 20100127: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-electronics/pulseview
+sci-geosciences/gpsd
+  MetadataError: version 2.95-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: sci-geosciences/gpsd-2.95-r1, attr fetchables
+error: mirror://berlios/gpsd/gpsd-2.95.tar.gz is unparseable
+flagged token- uri mirror://berlios/gpsd/gpsd-2.95.tar.gz isn't a known mirror tier
+  DeprecatedEclass: version 2.95-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.95-r1: uses deprecated EAPI: 3
+  NonExistentDeps: version 2.95-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 2.95-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  MetadataError: version 2.96-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: sci-geosciences/gpsd-2.96-r1, attr fetchables
+error: mirror://berlios/gpsd/gpsd-2.96bis.tar.gz is unparseable
+flagged token- uri mirror://berlios/gpsd/gpsd-2.96bis.tar.gz isn't a known mirror tier
+  DeprecatedEclass: version 2.96-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2.96-r1: uses deprecated EAPI: 3
+  NonExistentDeps: version 2.96-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 2.96-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.6: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 3.6: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.6: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.7: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 3.7: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.7: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.8: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 3.8: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.8: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.9: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 3.9: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.9: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 3.9-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 3.9-r1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 3.9-r1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   MissingFile: required file ChangeLog doesn't exist
 
-sci-electronics/qelectrotech
+sci-geosciences/gpx-viewer
   MissingFile: required file ChangeLog doesn't exist
 
-sci-electronics/qucs
+sci-geosciences/gpxpy
   MissingFile: required file ChangeLog doesn't exist
 
-sci-electronics/sigrok-cli
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+sci-geosciences/grass
+  DeprecatedEclass: version 6.4.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingFile: required file ChangeLog doesn't exist
 
-sci-electronics/spice
-  DeprecatedEAPI: version 3.5.5-r1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 3.5.5-r1: "spice3f5sfix.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sci-electronics/splat
+sci-geosciences/gshhs
   MissingFile: required file ChangeLog doesn't exist
 
-sci-electronics/systemc
+sci-geosciences/gshhs-data
   MissingFile: required file ChangeLog doesn't exist
 
-sci-electronics/vbs
-  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.4.0: "vbs-1.4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-sci-electronics/voacapl
+sci-geosciences/gtk-g-rays2
   MissingFile: required file ChangeLog doesn't exist
 
-sci-electronics/xcircuit
+sci-geosciences/harmonics-dwf-free
   MissingFile: required file ChangeLog doesn't exist
 
-sci-electronics/xnec2c
+sci-geosciences/harmonics-dwf-free-noncomm
   MissingFile: required file ChangeLog doesn't exist
 
-sci-electronics/xoscope
+sci-geosciences/josm
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/josm-plugins
+  DeprecatedEAPI: version 20101206: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 20101206: "josm-plugins-20101206.tar.xz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-geosciences/libtcd
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/mapnik
+  DeprecatedEclass: version 2.0.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 2.0.2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 2.1.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/mapnik-world-boundaries
+  DeprecatedEAPI: version 20090514: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/mapserver
+  DeprecatedEclass: version 6.0.1-r2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/mc2bsbh
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.0.9: "mc2bsbh-beta09.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-geosciences/merkaartor
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/mkgmap
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1995: "mkgmap-r1995-src.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-geosciences/mtkbabel
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.8.2: "mtkbabel-0.8.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-geosciences/opencpn
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/opencpn-plugin-br24radar
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/opencpn-plugin-climatology
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/opencpn-plugin-launcher
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/opencpn-plugin-logbookkonni
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/opencpn-plugin-objsearch
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/opencpn-plugin-ocpndebugger
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/opencpn-plugin-statusbar
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/opencpn-plugin-weather_routing
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/opencpn-plugin-weatherfax
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/opencpn-plugin-wmm
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/osgearth
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/osm-gps-map
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/osm2mp
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.80: "osm2mp_v080.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-geosciences/osm2pgsql
+  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/osmosis
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.35.1: "osmosis-0.35.1.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-geosciences/qgis
+  DeprecatedEclass: version 1.7.0: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.7.0: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/qlandkartegt
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/qlandkartegt-garmindev
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3.4: "garmindev-0.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-geosciences/readosm
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.0: "readosm-1.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+sci-geosciences/seawater
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/swmm
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/tappy
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/tcd-utils
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/tilecache
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/viking
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-geosciences/xtide
   MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -3444,222 +3713,214 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-games-rpg/a-bird-story
+net-dialup/accel-ppp
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/adonthell
+net-dialup/capi4k-utils
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/arx-fatalis-data
-  MissingUri: version 1.21-r2: file setup_arx_fatalis.exe is unfetchable- no URI available, and RESTRICT=fetch isn't set
+net-dialup/capidivert
+  DeprecatedEAPI: version 0.0.2: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/arx-fatalis-demo
+net-dialup/capifwd
+  DeprecatedEAPI: version 0.6.3-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.6.3-r1: "capifwd-0.6.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/capisuite
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/arx-libertatis
+net-dialup/cistronradius
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.6.8-r1: "radiusd-cistron-1.6.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/cutecom
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/avadon
+net-dialup/dgcmodem
+  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.10: "dgcmodem-1.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/dial
+  DeprecatedEAPI: version 1.2-r1: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2-r1: "dial-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/diald
+  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0-r2: "diald-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/drdsl
+  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2.0: "drdsl-1.0-1.i586.rpm" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.2.0: "drdsl-1.0-1.x86_64.rpm" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-dialup/dtrace
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/bass
+net-dialup/dwun
+  DeprecatedEAPI: version 0.96e-r2: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/bastion
+net-dialup/fbgetty
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/coe2
+net-dialup/fcpci
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/daimonin-client
+net-dialup/freeradius
+  DroppedKeywordWarning: version 3.0.3: keywords dropped: amd64, ppc, ppc64, sparc, x86
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/dear-esther
+net-dialup/freeradius-client
+  DeprecatedEAPI: version 1.1.6: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1.6: "freeradius-client-1.1.6.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/globespan-adsl
+  DeprecatedEAPI: version 0.11-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.12: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.11-r1: "eciadsl-usermode-0.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.12: "eciadsl-usermode-0.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/gnuradius
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/draci-historie
+net-dialup/gtkterm
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/dragonhunt
+net-dialup/hcfpcimodem
+  DeprecatedEAPI: version 1.20: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.21: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/drascula
+net-dialup/intel-536ep
+  DeprecatedEAPI: version 4.71: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 4.71: "intel-536ep-4.71.tgz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-dialup/isdn-firmware
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/dreamweb
+net-dialup/itund
+  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3.1: "itund-0.3.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/kpnadsl4linux
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/dungeon-defenders
+net-dialup/linux-atm
+  DeprecatedEAPI: version 2.5.0: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/egoboo
+net-dialup/lrzsz
+  DeprecatedEAPI: version 0.12.20-r3: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/eschalon-book-1-demo
+net-dialup/martian-modem
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/eternal-lands
-  DeprecatedEAPI: version 1.9.2: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.9.2-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.9.3: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 1.9.3-r1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.9.2: "elc_1.9.2-20110618.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-rpg/eternal-lands-bloodsucker
-  DeprecatedEAPI: version 3.0: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 3.0: "eternal-lands-bloodsucker-3.0.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-rpg/eternal-lands-data
-  DeprecatedEAPI: version 1.9.2-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.3: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1.9.3-r1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.9.2-r1: "el_linux_192.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-rpg/freedink
+net-dialup/mgetty
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/freedink-data
+net-dialup/mingetty
+  DeprecatedEAPI: version 1.08: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.08: "mingetty-1.08.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/minicom
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/freedroid
+net-dialup/moserial
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/freedroidrpg
+net-dialup/mwavem
+  DeprecatedEAPI: version 2.0-r1: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/grimrock
+net-dialup/neocon
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 20110228: "neocon-20110228.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-dialup/picocom
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/gwiz
+net-dialup/ppp
+  DeprecatedEAPI: version 2.4.4-r25: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/kqlives
+net-dialup/ppp-scripts
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/lure
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.1: "lure-es-1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.1: "lure-fr-1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.1: "lure-de-1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-rpg/mana
+net-dialup/pppconfig
+  DeprecatedEAPI: version 2.3.17-r1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/manaplus
+net-dialup/pptpclient
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/nwmouse
+net-dialup/pptpd
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/nwmovies
-  DeprecatedEAPI: version 20090223.080954: uses deprecated EAPI: 2
+net-dialup/qtwvdialer
+  DeprecatedEAPI: version 0.4.4_p20091228: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.4.4_p20091228: "qtwvdialer-0.4.4_p20091228.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/radiusclient
+  DeprecatedEAPI: version 0.3.2: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/nwn
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.68-r5: "French_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "French_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "French_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "Italian_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "Italian_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "Italian_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "English_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "English_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "English_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "Spanish_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "Spanish_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "Spanish_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "German_linuxclient168_orig.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "German_linuxclient168_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.68-r5: "German_linuxclient168_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.69-r1: "English_linuxclient169_xp1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.69-r1: "English_linuxclient169_xp2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-rpg/nwn-cep
-  DeprecatedEAPI: version 1.68-r1: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 2.0: uses deprecated EAPI: 2
+net-dialup/radiusclient-ng
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/nwn-data
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.29-r5: "nwresources129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.29-r5: "nwfrench129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.29-r5: "nwitalian129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.29-r5: "nwspanish129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.29-r5: "nwgerman129.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-rpg/nwn-penultima
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 1-r1: uses deprecated EAPI: 0
+net-dialup/rp-l2tp
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/nwn-penultimarerolled
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1: "PR0_and_PR1_Penultima_ReRolled_Starter_Pack_v1.4.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1: "PR2_Below_the_R00t.v1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1: "PR3_Homeland_Security.v1.4.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1: "PR4_Pastor_of_Muppets.v1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1: "PR5_The_Saving_Throw.v1.1.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-rpg/nwn-shadowlordsdreamcatcherdemon
-  DeprecatedEAPI: version 1: uses deprecated EAPI: 0
+net-dialup/rp-pppoe
+  DeprecatedEAPI: version 3.8-r2: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/openglad
+net-dialup/sendpage
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/pcgen
+net-dialup/sercd
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.0.0-r1: "sercd-3.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/speedtouch-usb
+  DeprecatedEAPI: version 3.0.1.2-r3: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.0.1.2-r3: "SpeedTouch330_firmware_3012.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-dialup/tkvoice
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/penumbra-collection
+net-dialup/ueagle-atm
+  DeprecatedEAPI: version 1.1-r3: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1-r3: "ueagle-data-src-1.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-dialup/ueagle4-atm
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0: "ueagle4-data-1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-dialup/wvdial
+  DeprecatedEAPI: version 1.61: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.61: "wvdial-1.61.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-dialup/xc
   MissingFile: required file ChangeLog doesn't exist
 
-games-rpg/queen
-  MissingFile: required file ChangeLog doesn't exist
-
-games-rpg/sacred-gold
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.0.01: "sacred-1.0-1.0.01-x86.run" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-games-rpg/soltys
-  MissingFile: required file ChangeLog doesn't exist
-
-games-rpg/sumwars
-  MissingFile: required file ChangeLog doesn't exist
-
-games-rpg/tmw
-  MissingFile: required file ChangeLog doesn't exist
-
-games-rpg/to-the-moon
-  MissingFile: required file ChangeLog doesn't exist
-
-games-rpg/twclone
-  MissingFile: required file ChangeLog doesn't exist
-
-games-rpg/valyriatear
-  MissingFile: required file ChangeLog doesn't exist
-
-games-rpg/vendetta-online-bin
-  MissingFile: required file ChangeLog doesn't exist
-
-games-rpg/wasteland2
-  MissingFile: required file ChangeLog doesn't exist
-
-games-rpg/wastesedge
-  MissingFile: required file ChangeLog doesn't exist
-
-games-rpg/xu4
-  MissingFile: required file ChangeLog doesn't exist
-
-games-rpg/zsdx
-  MissingFile: required file ChangeLog doesn't exist
-
-games-rpg/zsxd
+net-dialup/xl2tpd
   MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
@@ -3696,8 +3957,8 @@ sys-firmware/ivtv-firmware
   MissingFile: required file ChangeLog doesn't exist
 
 sys-firmware/iwl1000-ucode
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 128.50.3.1: keywords dropped: amd64, x86
+  MissingFile: required file ChangeLog doesn't exist
   MissingChksum: version 128.50.3.1: "iwlwifi-1000-ucode-128.50.3.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sys-firmware/iwl3160-7260-bt-ucode
@@ -3749,8 +4010,8 @@ sys-firmware/tt-s2-6400-firmware
   MissingFile: required file ChangeLog doesn't exist
 
 sys-firmware/vgabios
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.7a: keywords dropped: ppc, ppc64
+  MissingFile: required file ChangeLog doesn't exist
 
 sys-firmware/zd1201-firmware
   MissingFile: required file ChangeLog doesn't exist
