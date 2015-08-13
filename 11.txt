@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 11 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'virtual/*' 'app-i18n/*' 'gnome-extra/*' 'net-p2p/*' 'mail-client/*' 'dev-scheme/*' 'sys-infiniband/*' 'dev-go/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sys-apps/*' 'virtual/*' 'app-i18n/*' 'gnome-extra/*' 'net-p2p/*' 'mail-client/*' 'gnustep-apps/*' 'sys-infiniband/*' 'dev-go/*' 'mate-extra/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /usr/lib64/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -18,8 +18,8 @@ sys-apps/9base
   MissingFile: required file ChangeLog doesn't exist
 
 sys-apps/accountsservice
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.6.40: keywords dropped: arm64
+  MissingFile: required file ChangeLog doesn't exist
 
 sys-apps/ack
   MissingFile: required file ChangeLog doesn't exist
@@ -891,8 +891,8 @@ sys-apps/syslog-notify
 
 sys-apps/systemd
   NonExistentDeps: version 216-r3: depset rdepends: nonexistent atoms [ <sys-apps/sysvinit-2.88-r4 ]
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 220-r2: keywords dropped: alpha, ppc, ppc64, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 sys-apps/systemd-readahead
   MissingFile: required file ChangeLog doesn't exist
@@ -982,12 +982,12 @@ sys-apps/usbmon
 
 sys-apps/usbredir
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.5: keywords dropped: arm
+  MissingFile: required file ChangeLog doesn't exist
 
 sys-apps/usbutils
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 008-r1: keywords dropped: arm64
+  MissingFile: required file ChangeLog doesn't exist
 
 sys-apps/usermode-utilities
   MissingFile: required file ChangeLog doesn't exist
@@ -1030,8 +1030,8 @@ sys-apps/xmbmon
   MissingChksum: version 2.0.5-r1: "xmbmon205_fflush.patch" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
 sys-apps/yum
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 3.4.3_p20130218-r1: keywords dropped: ppc
+  MissingFile: required file ChangeLog doesn't exist
 
 sys-apps/zorroutils
   DeprecatedEAPI: version 0.04: uses deprecated EAPI: 0
@@ -1137,8 +1137,8 @@ virtual/gnat
   DeprecatedEAPI: version 4.2: uses deprecated EAPI: 0
   DeprecatedEAPI: version 4.3: uses deprecated EAPI: 0
   DeprecatedEAPI: version 4.4: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 4.4: keywords dropped: ppc
+  MissingFile: required file ChangeLog doesn't exist
 
 virtual/gnustep-back
   DeprecatedEAPI: version 0.22.0: uses deprecated EAPI: 0
@@ -1172,17 +1172,17 @@ virtual/inetd
   MissingFile: required file ChangeLog doesn't exist
 
 virtual/jdk
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.7.0: keywords dropped: ppc64
   DroppedKeywordWarning: version 1.8.0: keywords dropped: arm, ppc
+  MissingFile: required file ChangeLog doesn't exist
 
 virtual/jpeg
   MissingFile: required file ChangeLog doesn't exist
 
 virtual/jre
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.7.0: keywords dropped: ppc64
   DroppedKeywordWarning: version 1.8.0: keywords dropped: arm, ppc
+  MissingFile: required file ChangeLog doesn't exist
 
 virtual/krb5
   DeprecatedEAPI: version 0: uses deprecated EAPI: 3
@@ -1384,8 +1384,8 @@ virtual/perl-DB_File
 
 virtual/perl-Data-Dumper
   NonExistentDeps: version 2.158.0: depset rdepends: nonexistent atoms [ ~perl-core/Data-Dumper-2.158.0 ]
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 2.158.0: keywords dropped: arm64
+  MissingFile: required file ChangeLog doesn't exist
 
 virtual/perl-Devel-PPPort
   NonExistentDeps: version 3.210.0: depset rdepends: nonexistent atoms [ ~perl-core/Devel-PPPort-3.210.0 ]
@@ -1845,8 +1845,8 @@ app-i18n/canfep
 app-i18n/canna
   DeprecatedEAPI: version 3.7_p3-r1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 3.7_p3-r2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 3.7_p3-r2: keywords dropped: ia64
+  MissingFile: required file ChangeLog doesn't exist
 
 app-i18n/cstools
   MissingFile: required file ChangeLog doesn't exist
@@ -2076,8 +2076,8 @@ app-i18n/kcc
   MissingFile: required file ChangeLog doesn't exist
 
 app-i18n/kcm-fcitx
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.5.0: keywords dropped: ppc, ppc64
+  MissingFile: required file ChangeLog doesn't exist
 
 app-i18n/kde-l10n-scripts
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -2180,8 +2180,8 @@ app-i18n/opencc
   MissingFile: required file ChangeLog doesn't exist
 
 app-i18n/poedit
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.8.3: keywords dropped: hppa, ppc, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 app-i18n/pology
   MissingFile: required file ChangeLog doesn't exist
@@ -2204,8 +2204,8 @@ app-i18n/scim
 
 app-i18n/scim-anthy
   DeprecatedEAPI: version 1.3.1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 1.3.1: keywords dropped: alpha, arm, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 app-i18n/scim-bridge
   DeprecatedEAPI: version 0.4.16-r2: uses deprecated EAPI: 2
@@ -2465,8 +2465,8 @@ gnome-extra/gnome-color-chooser
   MissingFile: required file ChangeLog doesn't exist
 
 gnome-extra/gnome-color-manager
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 3.14.2: keywords dropped: alpha, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 gnome-extra/gnome-commander
   MissingFile: required file ChangeLog doesn't exist
@@ -2505,8 +2505,8 @@ gnome-extra/gnome-packagekit
   MissingFile: required file ChangeLog doesn't exist
 
 gnome-extra/gnome-power-manager
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 3.16.1: keywords dropped: alpha
+  MissingFile: required file ChangeLog doesn't exist
 
 gnome-extra/gnome-search-tool
   MissingFile: required file ChangeLog doesn't exist
@@ -2578,8 +2578,8 @@ gnome-extra/nemo
   MissingFile: required file ChangeLog doesn't exist
 
 gnome-extra/nm-applet
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.9.10.0: keywords dropped: alpha, arm, ia64, ppc, ppc64, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 gnome-extra/office-runner
   MissingFile: required file ChangeLog doesn't exist
@@ -3056,8 +3056,8 @@ mail-client/etpan-ng
   MissingChksum: version 0.7.1-r1: "etpan-ng-0.7.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 mail-client/evolution
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 3.16.3: keywords dropped: alpha, arm, ia64, ppc, ppc64, sparc
+  MissingFile: required file ChangeLog doesn't exist
 
 mail-client/geary
   MissingFile: required file ChangeLog doesn't exist
@@ -3127,8 +3127,8 @@ mail-client/thunderbird-bin
 
 mail-client/trojita
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
-  MissingFile: required file ChangeLog doesn't exist
   DroppedKeywordWarning: version 0.5: keywords dropped: ppc
+  MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -3136,168 +3136,170 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-dev-scheme/bigloo
-  DeprecatedEAPI: version 3.0c_p4: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 3.4a_p3: uses deprecated EAPI: 3
+gnustep-apps/aclock
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 3.0c_p4: "bigloo3.0c-4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.4a_p3: "bigloo-3.4a-patchset-1.tbz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.4a_p3: "bigloo3.4a-3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 3.6a: "bigloo3.6a.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.4.0: "AClock-0.4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-scheme/c-wrapper
+gnustep-apps/addresses
+  DeprecatedEAPI: version 0.4.7: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-dev-scheme/chicken
-  DeprecatedEAPI: version 4.8.0.3-r1: uses deprecated EAPI: 3
+gnustep-apps/affiche
+  DeprecatedEAPI: version 0.6.0-r3: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.6.0-r3: "Affiche-0.6.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+gnustep-apps/batmon
   MissingFile: required file ChangeLog doesn't exist
 
-dev-scheme/elk
+gnustep-apps/camera
+  DeprecatedEAPI: version 0.8-r1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-dev-scheme/escm
+gnustep-apps/cdplayer
   MissingFile: required file ChangeLog doesn't exist
 
-dev-scheme/gambit
+gnustep-apps/cenon
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 3.9.5: "Cenon-3.9.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-apps/clipbook
+  DeprecatedEAPI: version 0.6.0.8.3-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.6.0.8.3-r1: "gworkspace-0.8.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-apps/cynthiune
   MissingFile: required file ChangeLog doesn't exist
 
-dev-scheme/gauche
+gnustep-apps/displaycalibrator
+  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.9.3.3: "Gauche-0.9.3.3.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.7: "displaycalibrator-0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-dev-scheme/gauche-cdb
+gnustep-apps/easydiff
+  DeprecatedEAPI: version 0.4.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.4.0: "EasyDiff-0.4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-apps/fisicalab
   MissingFile: required file ChangeLog doesn't exist
 
-dev-scheme/gauche-gl
+gnustep-apps/gemas
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.3: "Gemas-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-apps/gmines
+  DeprecatedEAPI: version 0.1-r2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.2: "GMines-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-apps/gnumail
   MissingFile: required file ChangeLog doesn't exist
 
-dev-scheme/gauche-gtk
+gnustep-apps/gorm
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.6_pre1: "Gauche-gtk-0.6_pre1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.2.16: "gorm-1.2.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-dev-scheme/gauche-kakasi
+gnustep-apps/graphos
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.2: "Graphos-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.3: "Graphos-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-apps/gshisen
+  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.3.0: "GShisen-1.3.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+gnustep-apps/gspdf
+  DeprecatedEAPI: version 0.4: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.4: "GSPdf-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.5: "GSPdf-0.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+gnustep-apps/gwnet
+  DeprecatedEAPI: version 0.1.0.8.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.1.0.8.2: "gworkspace-0.8.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+gnustep-apps/gworkspace
+  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+
+gnustep-apps/lapispuzzle
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.2: "LapisPuzzle-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+gnustep-apps/laternamagica
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.4: "LaternaMagica-0.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+gnustep-apps/mpdcon
+  MissingFile: required file ChangeLog doesn't exist
+
+gnustep-apps/pictureframe
+  DeprecatedEAPI: version 1.0.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.0: "PictureFrame-1.0.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.1.2: "PictureFrame-1.1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 1.1.3: "PictureFrame-1.1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+gnustep-apps/preferences
+  DeprecatedEAPI: version 1.3.0_pre20061204-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.3.0_pre20100523: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.3.0_pre20061204-r1: "preferences-1.3.0_pre20061204.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.3.0_pre20100523: "preferences-1.3.0_pre20100523.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-apps/preview
+  DeprecatedEAPI: version 0.8.5-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.9: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+
+gnustep-apps/price
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.1.0: "PRICE-1.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-apps/projectcenter
+  MissingFile: required file ChangeLog doesn't exist
+
+gnustep-apps/remotedesk
   DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.1: "Gauche-kakasi-0.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.1: "RemoteDesk-0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-dev-scheme/gauche-qdbm
+gnustep-apps/simpleagenda
   MissingFile: required file ChangeLog doesn't exist
 
-dev-scheme/goosh
+gnustep-apps/stepulator
+  DeprecatedEAPI: version 1.0-r2: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0-r2: "stepulator-gs-1.0.tar.Z" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+gnustep-apps/sudoku
+  DeprecatedEAPI: version 0.7: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 0.7: "Sudoku-0.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-apps/systempreferences
+  DeprecatedEAPI: version 1.0.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.0.2: "SystemPreferences-1.0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.1.0: "SystemPreferences-1.1.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+gnustep-apps/terminal
+  DeprecatedEAPI: version 0.9.7: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+
+gnustep-apps/textedit
+  DeprecatedEAPI: version 0.95_pre20100427: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+
+gnustep-apps/zipper
   DeprecatedEAPI: version 1.3: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.3: "goosh-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-dev-scheme/greg
-  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-
-dev-scheme/guile
-  DeprecatedEAPI: version 2.0.0: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-  DroppedKeywordWarning: version 2.0.0: keywords dropped: alpha, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
-
-dev-scheme/guile-cairo
-  DeprecatedEAPI: version 1.4.0: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-
-dev-scheme/guile-gnome-platform
-  DeprecatedEAPI: version 2.16.1: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-
-dev-scheme/guile-gui
-  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.2: "guile-gui-0.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-dev-scheme/guile-lib
-  DeprecatedEAPI: version 0.1.9: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-
-dev-scheme/guile-www
-  MissingFile: required file ChangeLog doesn't exist
-
-dev-scheme/hop
-  DeprecatedEAPI: version 2.0.1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 2.0.1: "hop-2.0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-dev-scheme/ikarus
-  DeprecatedEAPI: version 0.0.3_p1870: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.0.3_p1870: "ikarus-scheme-r1870.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-dev-scheme/jscheme
-  DeprecatedEAPI: version 7.2: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-
-dev-scheme/kawa
-  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.10: "XQTS_1_0_2.zip" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-dev-scheme/net-http
-  DeprecatedEAPI: version 0.3.1: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.3.1: "net-http-0.3.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-dev-scheme/racket
-  MissingFile: required file ChangeLog doesn't exist
-  DroppedKeywordWarning: version 6.0.1: keywords dropped: ppc, ppc64
-  MissingChksum: version 5.1.2: "racket-5.1.2-src-unix.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-dev-scheme/scheme48
-  MissingFile: required file ChangeLog doesn't exist
-
-dev-scheme/schemik
-  DeprecatedEAPI: version 1.2.40.0: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.2.40.0: "schemik-1.2.40.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-dev-scheme/schoca
-  DeprecatedEAPI: version 0.3.0: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.3.0: "schoca-0.3.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-dev-scheme/scm
-  DeprecatedEAPI: version 5.5.6: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 5.5.6-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 5.5.6-r2: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-
-dev-scheme/scmxlate
-  DeprecatedEAPI: version 20090410: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-
-dev-scheme/sigscheme
-  DeprecatedEAPI: version 0.8.5: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.8.5: "sigscheme-0.8.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-dev-scheme/slib
-  DeprecatedEAPI: version 3.1.5-r1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.2.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 3.2.2: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-
-dev-scheme/stalin
-  MissingFile: required file ChangeLog doesn't exist
-
-dev-scheme/stklos
-  DeprecatedEAPI: version 1.10: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.10: "stklos-1.10.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-dev-scheme/termite
-  DeprecatedEAPI: version 0.15: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.15: "termite-0.15.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-dev-scheme/tinyscheme
-  MissingFile: required file ChangeLog doesn't exist
-
-dev-scheme/ypsilon
-  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 1.3: "Zipper-1.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

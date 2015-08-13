@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 9 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-util/*' 'x11-libs/*' 'app-emacs/*' 'x11-drivers/*' 'net-dns/*' 'sys-process/*' 'net-print/*' 'x11-proto/*' 'net-nntp/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-util/*' 'x11-libs/*' 'app-emacs/*' 'x11-drivers/*' 'net-dns/*' 'sys-process/*' 'sci-visualization/*' 'x11-proto/*' 'net-nntp/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /usr/lib64/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -3159,168 +3159,127 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-net-print/adobeps
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.0.6-r1: "winstDan.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstspa.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstfin.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstfre.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstita.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstjpn.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstkor.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstdut.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstnor.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstbrz.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "winstswe.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 1.0.6-r1: "Winstchs.exe" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-print/apsfilter
-  DeprecatedEAPI: version 7.2.5: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 7.2.5: "apsfilter-7.2.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-print/c2esp
+sci-visualization/circos
   MissingFile: required file ChangeLog doesn't exist
 
-net-print/cndrvcups-common-lb
+sci-visualization/epix
   MissingFile: required file ChangeLog doesn't exist
 
-net-print/cndrvcups-lb
+sci-visualization/extrema
   MissingFile: required file ChangeLog doesn't exist
 
-net-print/cups
+sci-visualization/fig2sxd
   MissingFile: required file ChangeLog doesn't exist
 
-net-print/cups-filters
-  WhitespaceFound: version 1.0.66: ebuild has leading whitespace on line 66
-  WrongIndentFound: version 1.0.66: ebuild has whitespace in indentation on line 66
-
-net-print/cups-bjnp
+sci-visualization/fityk
   MissingFile: required file ChangeLog doesn't exist
 
-net-print/cups-filters
-  WhitespaceFound: version 1.0.71: ebuild has leading whitespace on line 68
-  WrongIndentFound: version 1.0.71: ebuild has whitespace in indentation on line 68
-  WhitespaceFound: version 9999: ebuild has leading whitespace on line 66
-  WrongIndentFound: version 9999: ebuild has whitespace in indentation on line 66
+sci-visualization/g3data
   MissingFile: required file ChangeLog doesn't exist
 
-net-print/cups-pdf
+sci-visualization/gcalc
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 2.6.1: "cups-pdf_2.6.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 3.1_rc1: "GCalc-3.1-rc1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
 
-net-print/cups-pk-helper
-  MissingFile: required file ChangeLog doesn't exist
-
-net-print/cups-windows
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 6.0-r1: "cups-windows-6.0-source.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-print/dymo-cups-drivers
+sci-visualization/gfsview
   MissingFile: required file ChangeLog doesn't exist
 
-net-print/epson-inkjet-printer-escpr
+sci-visualization/ggobi
+  DeprecatedEAPI: version 2.1.8: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 2.1.8: "ggobi-2.1.8.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-visualization/gle
+  MissingFile: required file ChangeLog doesn't exist
+  MissingChksum: version 4.2.4b: "gle-manual-4.2.2.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 4.2.4b: "GLEusersguide.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-visualization/gnuplot
   MissingFile: required file ChangeLog doesn't exist
 
-net-print/fax4cups
+sci-visualization/grace
   MissingFile: required file ChangeLog doesn't exist
 
-net-print/foo2zjs
+sci-visualization/gri
+  DeprecatedEAPI: version 2.12.19: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
 
-net-print/foomatic-db
+sci-visualization/gwyddion
   MissingFile: required file ChangeLog doesn't exist
 
-net-print/foomatic-db-engine
+sci-visualization/kst
+  NonExistentDeps: version 2.0.7: depset depends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
+  NonExistentDeps: version 2.0.7: depset rdepends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
   MissingFile: required file ChangeLog doesn't exist
 
-net-print/foomatic-db-ppds
+sci-visualization/labplot
   MissingFile: required file ChangeLog doesn't exist
 
-net-print/foomatic-filters
+sci-visualization/mayavi
   MissingFile: required file ChangeLog doesn't exist
 
-net-print/foomatic-gui
+sci-visualization/nonolith-connect
   MissingFile: required file ChangeLog doesn't exist
 
-net-print/gmso2
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.1-r1: "gmso2-0.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-print/gtklp
+sci-visualization/opendx
   MissingFile: required file ChangeLog doesn't exist
 
-net-print/gutenprint
+sci-visualization/opendx-samples
   MissingFile: required file ChangeLog doesn't exist
 
-net-print/hplip
+sci-visualization/paraview
   MissingFile: required file ChangeLog doesn't exist
 
-net-print/ink
+sci-visualization/pythonprop
   MissingFile: required file ChangeLog doesn't exist
 
-net-print/kyocera-mita-ppds
-  DeprecatedEAPI: version 8.4: uses deprecated EAPI: 0
+sci-visualization/pyxplot
+  DeprecatedEclass: version 0.7.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 2
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 8.4: "Linux_PPDs_KSL8_4.zip" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.7.1: "pyxplot_0.7.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-print/libgnomecups
-  MissingFile: required file ChangeLog doesn't exist
-
-net-print/libinklevel
-  DeprecatedEAPI: version 0.8.0-r1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.8.0-r1: "libinklevel-0.8.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-print/lm1100
+sci-visualization/qtiplot
   MissingFile: required file ChangeLog doesn't exist
 
-net-print/lprng
+sci-visualization/quickplot
   MissingFile: required file ChangeLog doesn't exist
 
-net-print/magicfilter
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 2.3h: "magicfilter-2.3.h.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-net-print/mtink
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.0.16-r1: "mtink-1.0.16.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-print/npadmin
-  DeprecatedEAPI: version 0.8.7: uses deprecated EAPI: 0
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.8.7: "npadmin-0.8.7.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-net-print/pkpgcounter
-  DeprecatedEclass: version 3.50-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 3.50-r1: uses deprecated EAPI: 3
+sci-visualization/spectromatic
   MissingFile: required file ChangeLog doesn't exist
 
-net-print/pnm2ppa
+sci-visualization/spyview
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.13-r1: "pnm2ppa-1.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  DroppedKeywordWarning: version 20130823: keywords dropped: amd64
 
-net-print/poster
+sci-visualization/veusz
+  DeprecatedEclass: version 1.11: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 20060221: "poster-20060221.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.11: "veusz-1.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-print/pykota
-  DeprecatedEclass: version 1.26: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.26: uses deprecated EAPI: 3
+sci-visualization/visit
   MissingFile: required file ChangeLog doesn't exist
 
-net-print/splix
+sci-visualization/xd3d
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 2.0.0_p20111206: "splix-2.0.0_p20111206.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-print/sshlpr
+sci-visualization/xds-viewer
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1: "sshlpr-1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+  MissingChksum: version 0.6: "xds-viewer-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-net-print/xerox-drivers
-  DeprecatedEAPI: version 0_p20080123: uses deprecated EAPI: 2
+sci-visualization/xgraph
+  DeprecatedEAPI: version 12.1-r2: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0_p20080123: "LinuxCupsPrinterPkg.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+sci-visualization/xyscan
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-visualization/yt
+  MissingFile: required file ChangeLog doesn't exist
+
+sci-visualization/zhu3d
+  MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch

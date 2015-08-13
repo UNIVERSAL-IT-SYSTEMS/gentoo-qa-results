@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 8 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'app-admin/*' 'dev-vcs/*' 'x11-themes/*' 'dev-tex/*' 'app-eselect/*' 'sci-visualization/*' 'app-benchmarks/*' 'sci-calculators/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'net-misc/*' 'app-admin/*' 'dev-vcs/*' 'x11-themes/*' 'dev-tex/*' 'app-eselect/*' 'dev-tcltk/*' 'app-benchmarks/*' 'sci-calculators/*' 'net-voip/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /usr/lib64/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -4033,126 +4033,159 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sci-visualization/circos
+dev-tcltk/anigif
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/epix
+dev-tcltk/blt
+  DeprecatedEAPI: version 2.4z-r10: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/extrema
+dev-tcltk/bwidget
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/fig2sxd
+dev-tcltk/ck
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/fityk
+dev-tcltk/combobox
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/g3data
+dev-tcltk/expect
+  DeprecatedEAPI: version 5.44.1.15: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/gcalc
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 3.1_rc1: "GCalc-3.1-rc1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-
-sci-visualization/gfsview
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-visualization/ggobi
-  DeprecatedEAPI: version 2.1.8: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 2.1.8: "ggobi-2.1.8.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sci-visualization/gle
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 4.2.4b: "gle-manual-4.2.2.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 4.2.4b: "GLEusersguide.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sci-visualization/gnuplot
-  MissingFile: required file ChangeLog doesn't exist
-
-sci-visualization/grace
+dev-tcltk/expect-lite
+  DeprecatedEAPI: version 4.0.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.1.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.1.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.2.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.2.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.2.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.3.3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.4.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.4.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.5.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.6.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.6.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.6.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 4.7.2: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/gri
-  DeprecatedEAPI: version 2.12.19: uses deprecated EAPI: 2
+dev-tcltk/itcl
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/gwyddion
+dev-tcltk/itk
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/kst
-  NonExistentDeps: version 2.0.7: depset depends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
-  NonExistentDeps: version 2.0.7: depset rdepends: nonexistent atoms [ <dev-qt/qtgui-4.8.5:4 ]
+dev-tcltk/iwidgets
+  DeprecatedEAPI: version 4.0.1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/labplot
+dev-tcltk/mysqltcl
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/mayavi
+dev-tcltk/scwoop
+  DeprecatedEAPI: version 4.1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/nonolith-connect
+dev-tcltk/snack
+  DeprecatedEclass: version 2.2.10-r5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/opendx
+dev-tcltk/tablelist
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/opendx-samples
+dev-tcltk/tcl-gtk
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/paraview
+dev-tcltk/tcl-mccp
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/pythonprop
+dev-tcltk/tcl-sql
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/pyxplot
-  DeprecatedEclass: version 0.7.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 0.7.1: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.7.1: "pyxplot_0.7.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sci-visualization/qtiplot
+dev-tcltk/tcl3d
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/quickplot
+dev-tcltk/tcllib
+  DroppedKeywordWarning: version 1.16: keywords dropped: ia64, ppc64, s390, sparc
+  MissingFile: required file ChangeLog doesn't exist
+  SizeViolation: "files/tcllib-1.15-XSS-vuln.patch" exceeds 20k in size; 29465 bytes total
+
+dev-tcltk/tclperl
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/spectromatic
+dev-tcltk/tclpython
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/spyview
-  DroppedKeywordWarning: version 20130823: keywords dropped: amd64
+dev-tcltk/tclreadline
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/veusz
-  DeprecatedEclass: version 1.11: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.11: uses deprecated EAPI: 3
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.11: "veusz-1.11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sci-visualization/visit
+dev-tcltk/tclx
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/xd3d
+dev-tcltk/tclxml
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/xds-viewer
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.6: "xds-viewer-0.6.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-sci-visualization/xgraph
-  DeprecatedEAPI: version 12.1-r2: uses deprecated EAPI: 3
+dev-tcltk/tdom
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/xyscan
+dev-tcltk/thread
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/yt
+dev-tcltk/tix
   MissingFile: required file ChangeLog doesn't exist
 
-sci-visualization/zhu3d
+dev-tcltk/tkTheme
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-tcltk/tkXwin
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-tcltk/tkcon
+  DeprecatedEAPI: version 2.5: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-tcltk/tkdnd
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-tcltk/tkimg
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-tcltk/tklib
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-tcltk/tkpiechart
+  DeprecatedEAPI: version 6.5-r1: uses deprecated EAPI: 0
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-tcltk/tkpng
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-tcltk/tktable
+  DeprecatedEAPI: version 2.10: uses deprecated EAPI: 2
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-tcltk/tktray
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-tcltk/tktreectrl
+  DeprecatedEAPI: version 2.2.9: uses deprecated EAPI: 3
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-tcltk/tkzinc
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-tcltk/tls
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-tcltk/togl
+  MissingFile: required file ChangeLog doesn't exist
+
+dev-tcltk/vtcl
+  DeprecatedEAPI: version 1.6.0-r1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
