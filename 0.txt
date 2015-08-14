@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 0 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'dev-texlive/*' 'dev-db/*' 'app-crypt/*' 'www-client/*' 'app-backup/*' 'games-action/*' 'x11-terms/*' 'dev-games/*' 'dev-ada/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'sec-policy/*' 'dev-texlive/*' 'dev-db/*' 'app-crypt/*' 'www-client/*' 'app-backup/*' 'games-action/*' 'app-forensics/*' 'dev-games/*' 'dev-ada/*' 'app-antivirus/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /usr/lib64/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -2598,111 +2598,104 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-x11-terms/aterm
-  DeprecatedEAPI: version 1.0.1-r2: uses deprecated EAPI: 3
+app-forensics/afflib
+  DeprecatedEclass: version 3.7.1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   MissingFile: required file ChangeLog doesn't exist
 
-x11-terms/eterm
-  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+app-forensics/afl
   MissingFile: required file ChangeLog doesn't exist
 
-x11-terms/evilvte
+app-forensics/aide
+  DeprecatedEAPI: version 0.13.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.13.1-r3: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.13.1-r5: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.14.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.15.1: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
-x11-terms/gnome-terminal
-  NonExistentDeps: version 3.14.2-r2: depset depends: nonexistent atoms [ <=x11-libs/gtk+-2.24.10:2 ]
-  MissingFile: required file ChangeLog doesn't exist
-  SizeViolation: "files/gnome-terminal-3.16.2-restore-transparency.patch" exceeds 20k in size; 54792 bytes total
-
-x11-terms/guake
+app-forensics/air
   MissingFile: required file ChangeLog doesn't exist
 
-x11-terms/hanterm
-  DeprecatedEAPI: version 3.1.6-r2: uses deprecated EAPI: 0
+app-forensics/autopsy
   MissingFile: required file ChangeLog doesn't exist
 
-x11-terms/kterm
+app-forensics/chkrootkit
+  DeprecatedEAPI: version 0.48-r1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-x11-terms/lilyterm
+app-forensics/cmospwd
   MissingFile: required file ChangeLog doesn't exist
 
-x11-terms/mate-terminal
+app-forensics/examiner
   MissingFile: required file ChangeLog doesn't exist
 
-x11-terms/mlterm
-  DeprecatedEAPI: version 3.0.11-r1: uses deprecated EAPI: 3
+app-forensics/foremost
+  DeprecatedEAPI: version 0.69: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-x11-terms/mrxvt
+app-forensics/galleta
+  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-x11-terms/multi-aterm
+app-forensics/libbfio
+  MissingFile: required file ChangeLog doesn't exist
+  DroppedKeywordWarning: version 0.0.20130609_alpha: keywords dropped: hppa
+
+app-forensics/libewf
   MissingFile: required file ChangeLog doesn't exist
 
-x11-terms/pangoterm
+app-forensics/lynis
   MissingFile: required file ChangeLog doesn't exist
 
-x11-terms/qterminal
+app-forensics/mac-robber
   MissingFile: required file ChangeLog doesn't exist
 
-x11-terms/root-tail
-  DeprecatedEAPI: version 1.2-r3: uses deprecated EAPI: 2
-  MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 1.2-r3: "root-tail-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-x11-terms/roxterm
-  DeprecatedEclass: version 2.6.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 2.6.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 2.9.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingFile: required file ChangeLog doesn't exist
-  DroppedKeywordWarning: version 2.9.3: keywords dropped: ppc
-
-x11-terms/rxvt
+app-forensics/magicrescue
   MissingFile: required file ChangeLog doesn't exist
 
-x11-terms/rxvt-unicode
+app-forensics/memdump
   MissingFile: required file ChangeLog doesn't exist
 
-x11-terms/sakura
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-terms/st
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-terms/terminator
-  DeprecatedEclass: version 0.96-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  MissingFile: required file ChangeLog doesn't exist
-
-x11-terms/terminology
+app-forensics/openscap
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   MissingFile: required file ChangeLog doesn't exist
 
-x11-terms/terra
+app-forensics/ovaldi
+  DeprecatedEAPI: version 5.9.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 5.10.1.2: uses deprecated EAPI: 3
   MissingFile: required file ChangeLog doesn't exist
 
-x11-terms/tilda
+app-forensics/pasco
+  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-x11-terms/valaterm
+app-forensics/rdd
   MissingFile: required file ChangeLog doesn't exist
 
-x11-terms/xfce4-terminal
+app-forensics/rifiuti
+  DeprecatedEAPI: version 20040505_p1: uses deprecated EAPI: 0
   MissingFile: required file ChangeLog doesn't exist
 
-x11-terms/xterm
+app-forensics/rkhunter
   MissingFile: required file ChangeLog doesn't exist
 
-x11-terms/xvt
-  DeprecatedEAPI: version 2.1-r3: uses deprecated EAPI: 2
+app-forensics/scalpel
   MissingFile: required file ChangeLog doesn't exist
 
-x11-terms/yeahconsole
-  DeprecatedEAPI: version 0.3.4-r1: uses deprecated EAPI: 2
+app-forensics/sleuthkit
   MissingFile: required file ChangeLog doesn't exist
-  MissingChksum: version 0.3.4-r1: "yeahconsole-0.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+app-forensics/unhide
+  MissingFile: required file ChangeLog doesn't exist
+
+app-forensics/volatility
+  MissingFile: required file ChangeLog doesn't exist
+
+app-forensics/yasat
+  MissingFile: required file ChangeLog doesn't exist
+
+app-forensics/zzuf
+  MissingFile: required file ChangeLog doesn't exist
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
