@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 15 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-gfx/*' 'app-doc/*' 'sci-chemistry/*' 'sys-block/*' 'app-shells/*' 'games-board/*' 'x11-terms/*' 'app-mobilephone/*' 'www-misc/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-gfx/*' 'app-doc/*' 'sci-chemistry/*' 'sys-block/*' 'app-shells/*' 'games-board/*' 'net-proxy/*' 'app-mobilephone/*' 'www-misc/*' 'games-kids/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -339,13 +339,13 @@ media-gfx/gliv
 
 media-gfx/gnofract4d
   DeprecatedEclass: version 3.13: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.13: uses deprecated EAPI: 3
   NonExistentDeps: version 3.13: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 3.13: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 3.13: uses deprecated EAPI: 3
   DeprecatedEclass: version 3.14: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 3.14: uses deprecated EAPI: 3
   NonExistentDeps: version 3.14: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 3.14: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEAPI: version 3.14: uses deprecated EAPI: 3
   MissingChksum: version 3.13: "gnofract4d-3.13.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 media-gfx/gnome-raw-thumbnailer
@@ -430,19 +430,19 @@ media-gfx/metapixel
 
 media-gfx/mirage
   DeprecatedEclass: version 0.9.5.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.9.5.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.9.5.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
   DeprecatedEAPI: version 0.9.5.1: uses deprecated EAPI: 3
   MetadataError: version 0.9.5.1: attr(fetchables): error- Metadata Exception: pkg ebuild src: media-gfx/mirage-0.9.5.1, attr fetchables
 error: mirror://berlios/mirageiv/mirage-0.9.5.1.tar.bz2 is unparseable
 flagged token- uri mirror://berlios/mirageiv/mirage-0.9.5.1.tar.bz2 isn't a known mirror tier
+  NonExistentDeps: version 0.9.5.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.9.5.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
   DeprecatedEclass: version 0.9.5.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 0.9.5.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  NonExistentDeps: version 0.9.5.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
   DeprecatedEAPI: version 0.9.5.2: uses deprecated EAPI: 3
   MetadataError: version 0.9.5.2: attr(fetchables): error- Metadata Exception: pkg ebuild src: media-gfx/mirage-0.9.5.2, attr fetchables
 error: mirror://berlios/mirageiv/mirage-0.9.5.2.tar.bz2 is unparseable
 flagged token- uri mirror://berlios/mirageiv/mirage-0.9.5.2.tar.bz2 isn't a known mirror tier
+  NonExistentDeps: version 0.9.5.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  NonExistentDeps: version 0.9.5.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
   MetadataError: version 0.9.5.2-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: media-gfx/mirage-0.9.5.2-r1, attr fetchables
 error: mirror://berlios/mirageiv/mirage-0.9.5.2.tar.bz2 is unparseable
 flagged token- uri mirror://berlios/mirageiv/mirage-0.9.5.2.tar.bz2 isn't a known mirror tier
@@ -1192,8 +1192,8 @@ app-shells/bash
   DroppedKeywordWarning: version 4.4_alpha-r1: keywords dropped: alpha, amd64, arm, arm64, hppa, ia64, m68k, mips, ppc, ppc64, s390, sh, sparc, x86
 
 app-shells/bash-completion
-  NonExistentDeps: version 1.3-r2: depset rdepends: nonexistent atoms [ <app-admin/eselect-1.3.7 ]
   DeprecatedEAPI: version 1.3-r2: uses deprecated EAPI: 3
+  NonExistentDeps: version 1.3-r2: depset rdepends: nonexistent atoms [ <app-admin/eselect-1.3.7 ]
   NonExistentDeps: version 2.1: depset rdepends: nonexistent atoms [ <app-admin/eselect-1.3.7 ]
   NonExistentDeps: version 2.1-r2: depset rdepends: nonexistent atoms [ <app-admin/eselect-1.3.7 ]
 
@@ -1258,46 +1258,58 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-x11-terms/aterm
-  DeprecatedEAPI: version 1.0.1-r2: uses deprecated EAPI: 3
+net-proxy/3proxy
+  DeprecatedEAPI: version 0.5.3k: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.6.1: uses deprecated EAPI: 2
+  MissingChksum: version 0.5.3k: "3proxy-0.5.3k.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 0.6.1: "3proxy-0.6.1.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-x11-terms/eterm
-  DeprecatedEAPI: version 0.9.5: uses deprecated EAPI: 2
-  DeprecatedEAPI: version 0.9.6: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+net-proxy/dante
+  DeprecatedEAPI: version 1.1.19-r4: uses deprecated EAPI: 0
 
-x11-terms/gnome-terminal
-  NonExistentDeps: version 3.14.2-r2: depset depends: nonexistent atoms [ <=x11-libs/gtk+-2.24.10:2 ]
-  SizeViolation: "files/gnome-terminal-3.16.2-restore-transparency.patch" exceeds 20k in size; 54792 bytes total
-
-x11-terms/hanterm
-  DeprecatedEAPI: version 3.1.6-r2: uses deprecated EAPI: 0
-
-x11-terms/mlterm
-  DeprecatedEAPI: version 3.0.11-r1: uses deprecated EAPI: 3
-
-x11-terms/root-tail
-  DeprecatedEAPI: version 1.2-r3: uses deprecated EAPI: 2
-  MissingChksum: version 1.2-r3: "root-tail-1.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-x11-terms/roxterm
-  DeprecatedEclass: version 2.6.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 2.6.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEclass: version 2.9.3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DroppedKeywordWarning: version 2.9.3: keywords dropped: ppc
-
-x11-terms/terminator
-  DeprecatedEclass: version 0.96-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-
-x11-terms/terminology
+net-proxy/haproxy
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-x11-terms/xvt
-  DeprecatedEAPI: version 2.1-r3: uses deprecated EAPI: 2
+net-proxy/http-replicator
+  DeprecatedEclass: version 3.0-r4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-x11-terms/yeahconsole
-  DeprecatedEAPI: version 0.3.4-r1: uses deprecated EAPI: 2
-  MissingChksum: version 0.3.4-r1: "yeahconsole-0.3.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+net-proxy/httpush
+  DeprecatedEAPI: version 0.9_beta11-r1: uses deprecated EAPI: 0
+  MissingChksum: version 0.9_beta11-r1: "httpush-0.9b11.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-proxy/ntlmaps
+  MissingChksum: version 0.9.9-r2: "ntlmaps-0.9.9.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-proxy/oops
+  DeprecatedEAPI: version 1.5.24_pre20050503-r4: uses deprecated EAPI: 2
+
+net-proxy/piper
+  DeprecatedEAPI: version 1.14: uses deprecated EAPI: 0
+  MissingChksum: version 1.14: "piper-1.14.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-proxy/ratproxy
+  DeprecatedEAPI: version 1.58: uses deprecated EAPI: 0
+  MissingChksum: version 1.58: "ratproxy-1.58.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-proxy/squidguard
+  DeprecatedEAPI: version 1.4-r4: uses deprecated EAPI: 2
+  MissingChksum: version 1.4-r4: "squidGuard-1.4.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-proxy/tayga
+  DeprecatedEAPI: version 0.9.2: uses deprecated EAPI: 3
+  MissingChksum: version 0.9.2: "tayga-0.9.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+
+net-proxy/tsocks
+  MissingChksum: version 1.8_beta5-r5: "tsocks-1.8b5-tordns1-gentoo-r1.patch.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-proxy/ufdbguard
+  DeprecatedEAPI: version 1.24-r1: uses deprecated EAPI: 2
+  MissingChksum: version 1.24-r1: "ufdbGuard-1.24.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  MissingChksum: version 1.24-r1: "ufdbguard-1.24-manual.pdf" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+
+net-proxy/webscarab
+  DeprecatedEAPI: version 20070504: uses deprecated EAPI: 0
+  MissingChksum: version 20070504: "webscarab-selfcontained-20070504-1631.jar" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
@@ -1377,9 +1389,9 @@ www-misc/log-toolkit
 
 www-misc/reflector
   DeprecatedEclass: version 2011.05.13.1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 2011.05.13.1: uses deprecated EAPI: 3
   NonExistentDeps: version 2011.05.13.1: depset depends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
   NonExistentDeps: version 2011.05.13.1: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6*, =dev-lang/python-3.1*, =dev-lang/python-3.2* ]
-  DeprecatedEAPI: version 2011.05.13.1: uses deprecated EAPI: 3
   MissingChksum: version 2011.05.13.1: "reflector-2011.05.13.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 www-misc/visitors
