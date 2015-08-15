@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 9 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-util/*' 'x11-libs/*' 'www-apps/*' 'x11-drivers/*' 'net-dns/*' 'sys-process/*' 'sci-visualization/*' 'x11-proto/*' 'net-nntp/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-util/*' 'x11-libs/*' 'www-apps/*' 'x11-drivers/*' 'net-dns/*' 'app-eselect/*' 'sci-visualization/*' 'x11-proto/*' 'net-nntp/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1120,114 +1120,103 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-sys-process/acct
-  DeprecatedEAPI: version 6.5.5-r3: uses deprecated EAPI: 3
+app-eselect/eselect-audicle
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
 
-sys-process/anacron
-  DeprecatedEAPI: version 2.3-r2: uses deprecated EAPI: 0
-  ExecutableFile: "files/anacron.rc6" has unnecessary executable bit
+app-eselect/eselect-blas
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
 
-sys-process/atop
-  DeprecatedEAPI: version 1.27_p3: uses deprecated EAPI: 3
+app-eselect/eselect-cblas
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
 
-sys-process/audit
-  DeprecatedEclass: version 1.7.18: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  DeprecatedEAPI: version 1.7.18: uses deprecated EAPI: 3
-  DeprecatedEclass: version 2.0.5: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 2.0.5: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.0.5: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
-  DeprecatedEAPI: version 2.0.5: uses deprecated EAPI: 3
-  DeprecatedEclass: version 2.1.3-r1: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
-  NonExistentDeps: version 2.1.3-r1: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.1.3-r1: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
-  DeprecatedEAPI: version 2.1.3-r1: uses deprecated EAPI: 3
-  NonExistentDeps: version 2.2.2-r2: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.2.2-r2: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.2.2-r3: depset depends: nonexistent atoms [ dev-libs/libprelude ]
-  NonExistentDeps: version 2.2.2-r3: depset rdepends: nonexistent atoms [ dev-libs/libprelude ]
+app-eselect/eselect-chuck
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
 
-sys-process/bcron
-  DeprecatedEAPI: version 0.09: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.09-r2: uses deprecated EAPI: 2
-  MissingChksum: version 0.09: "bcron-0.09.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-eselect/eselect-esd
+  DeprecatedEAPI: version 20060719: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20091106: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20100127: uses deprecated EAPI: 0
 
-sys-process/cronbase
-  DeprecatedEAPI: version 0.3.3: uses deprecated EAPI: 0
-  ExecutableFile: "files/run-crons-0.3.3" has unnecessary executable bit
-  ExecutableFile: "files/run-crons-0.3.4" has unnecessary executable bit
-  ExecutableFile: "files/run-crons-0.3.5" has unnecessary executable bit
-  ExecutableFile: "files/run-crons-0.3.6" has unnecessary executable bit
-  ExecutableFile: "files/run-crons-0.3.7" has unnecessary executable bit
+app-eselect/eselect-fontconfig
+  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.1: uses deprecated EAPI: 0
 
-sys-process/cronie
-  BadInsIntoDir: version 1.4.12: ebuild uses insinto /etc/conf.d on line 48
-  BadInsIntoDir: version 1.4.12: ebuild uses insinto /etc/cron.hourly on line 73
-  BadInsIntoDir: version 1.5.0: ebuild uses insinto /etc/conf.d on line 52
-  BadInsIntoDir: version 1.5.0: ebuild uses insinto /etc/cron.hourly on line 75
-  BadInsIntoDir: version 1.5.0-r1: ebuild uses insinto /etc/conf.d on line 52
-  BadInsIntoDir: version 1.5.0-r1: ebuild uses insinto /etc/cron.hourly on line 75
+app-eselect/eselect-gnat
+  DeprecatedEAPI: version 1.3-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.4-r1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 1.5: uses deprecated EAPI: 0
 
-sys-process/daemontools
-  DeprecatedEAPI: version 0.76-r7: uses deprecated EAPI: 0
-  MissingChksum: version 0.76-r7: "daemontools-0.76.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 0.76-r7: "daemontools-0.76-man-20020131.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-eselect/eselect-java
+  DroppedKeywordWarning: version 0.1.0-r1: keywords dropped: ia64
 
-sys-process/dcron
-  BadInsIntoDir: version 4.5-r1: ebuild uses insinto /etc/cron.d on line 38
+app-eselect/eselect-lapack
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
 
-sys-process/fuser-bsd
-  DeprecatedEAPI: version 1142334561: uses deprecated EAPI: 2
-  MissingChksum: version 1142334561: "fuser-1142334561.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 1142334561: "fuser-bsd-patches-1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-eselect/eselect-maven
+  DeprecatedEAPI: version 0.2-r1: uses deprecated EAPI: 3
 
-sys-process/latencytop
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+app-eselect/eselect-mesa
+  DeprecatedEAPI: version 0.0.9: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 0.0.10: uses deprecated EAPI: 3
 
-sys-process/minit
-  DeprecatedEAPI: version 0.9.1: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.10: uses deprecated EAPI: 0
-  MissingChksum: version 0.9.1: "minit-0.9.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 0.10: "minit-0.10.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-eselect/eselect-miniaudicle
+  DeprecatedEAPI: version 1.0.1-r1: uses deprecated EAPI: 3
 
-sys-process/numad
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+app-eselect/eselect-mpost
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
 
-sys-process/pidof-bsd
-  DeprecatedEAPI: version 20050501-r4: uses deprecated EAPI: 0
-  MissingChksum: version 20050501-r4: "pidof-bsd-20050501.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-eselect/eselect-oodict
+  DeprecatedEAPI: version 20100228: uses deprecated EAPI: 0
 
-sys-process/pkill-darwin
-  DeprecatedEAPI: version 1.0: uses deprecated EAPI: 3
-  MissingChksum: version 1.0: "pkill-darwin-1.0.tar.xz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-eselect/eselect-package-manager
+  DeprecatedEAPI: version 20110108: uses deprecated EAPI: 0
 
-sys-process/prll
-  MissingChksum: version 0.6.2: "prll-0.6.2.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-eselect/eselect-pdftex
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
 
-sys-process/psinfo
-  MissingChksum: version 0.12: "psinfo-0.12.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-eselect/eselect-php
+  DeprecatedEAPI: version 0.6.2: uses deprecated EAPI: 3
 
-sys-process/runit
-  BadInsIntoDir: version 2.1.1-r1: ebuild uses insinto /etc/env.d on line 61
-  DeprecatedEAPI: version 2.1.1-r1: uses deprecated EAPI: 3
-  BadInsIntoDir: version 2.1.2: ebuild uses insinto /etc/env.d on line 71
+app-eselect/eselect-python
+  DeprecatedEAPI: version 20111108: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20131210: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20140115: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20140125: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 99999999: uses deprecated EAPI: 0
 
-sys-process/supervise-scripts
-  DeprecatedEAPI: version 4.0: uses deprecated EAPI: 2
-  MissingChksum: version 4.0: "supervise-scripts-4.0.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-eselect/eselect-rails
+  DeprecatedEAPI: version 0.18: uses deprecated EAPI: 0
 
-sys-process/top-apple
-  MissingChksum: version 73: "top-73.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-  MissingChksum: version 73: "libutil-11-top-73.h" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-eselect/eselect-ruby
+  DeprecatedEAPI: version 20131227: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20141227: uses deprecated EAPI: 0
 
-sys-process/unixtop
-  DeprecatedEAPI: version 3.8_beta1-r3: uses deprecated EAPI: 0
+app-eselect/eselect-sndpeek
+  DeprecatedEAPI: version 1.0.1: uses deprecated EAPI: 0
 
-sys-process/vixie-cron
-  DeprecatedEAPI: version 4.1-r14: uses deprecated EAPI: 0
+app-eselect/eselect-timidity
+  DeprecatedEAPI: version 20061203: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20091106: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 20110513: uses deprecated EAPI: 0
 
-sys-process/watchpid
-  DeprecatedEAPI: version 0.1-r1: uses deprecated EAPI: 0
-  MissingChksum: version 0.1-r1: "watchpid_0.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-eselect/eselect-unison
+  DeprecatedEAPI: version 0.1: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.2: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
+
+app-eselect/eselect-vi
+  DeprecatedEAPI: version 1.1.7-r1: uses deprecated EAPI: 3
+
+app-eselect/eselect-wxwidgets
+  DeprecatedEAPI: version 1.4: uses deprecated EAPI: 0
+  SizeViolation: "files/wxwin.m4-2.9" exceeds 20k in size; 40647 bytes total
+  SizeViolation: "files/wxwin.m4-3.0" exceeds 20k in size; 40561 bytes total
+
+app-eselect/eselect-xvmc
+  DeprecatedEAPI: version 0.3: uses deprecated EAPI: 0
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
