@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 10 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'sys-fs/*' 'www-apps/*' 'x11-drivers/*' 'games-puzzle/*' 'app-eselect/*' 'gnustep-apps/*' 'net-ftp/*' 'app-laptop/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'media-sound/*' 'sys-fs/*' 'www-apps/*' 'app-office/*' 'games-puzzle/*' 'app-eselect/*' 'gnustep-apps/*' 'net-ftp/*' 'app-laptop/*' 'games-sports/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -1492,86 +1492,65 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-x11-drivers/afb-ucode
-  DeprecatedEAPI: version 1.3.11: uses deprecated EAPI: 0
-  MissingChksum: version 1.3.11: "afb-ucode.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-office/eqe
+  DeprecatedEAPI: version 1.3.0: uses deprecated EAPI: 0
 
-x11-drivers/xf86-input-acecad
-  MissingChksum: version 1.5.0: "xf86-input-acecad-1.5.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-office/gtimelog
+  DeprecatedEclass: version 0.8.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-x11-drivers/xf86-input-aiptek
-  MissingChksum: version 1.4.1: "xf86-input-aiptek-1.4.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-office/libreoffice
+  DroppedKeywordWarning: version 5.0.0.5: keywords dropped: amd64, arm, x86
 
-x11-drivers/xf86-input-fpit
-  MissingChksum: version 1.4.0: "xf86-input-fpit-1.4.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-office/lyx
+  DeprecatedEAPI: version 1.6.10: uses deprecated EAPI: 2
+  DeprecatedEclass: version 1.6.10: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  NonExistentDeps: version 1.6.10: depset rdepends: nonexistent atoms [ <dev-vcs/subversion-1.7.0 ]
+  NonExistentDeps: version 2.0.8.1: depset rdepends: nonexistent atoms [ <dev-vcs/subversion-1.7.0 ]
 
-x11-drivers/xf86-input-hyperpen
-  MissingChksum: version 1.4.1: "xf86-input-hyperpen-1.4.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-office/ooextras
+  DeprecatedEAPI: version 20060909: uses deprecated EAPI: 0
 
-x11-drivers/xf86-input-libinput
-  DroppedKeywordWarning: version 0.8.0: keywords dropped: alpha
+app-office/openerp
+  DeprecatedEAPI: version 6.1.1-r1: uses deprecated EAPI: 3
+  DeprecatedEclass: version 6.1.1-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 7.0.20130219-r5: uses deprecated EAPI: 3
+  DeprecatedEclass: version 7.0.20130219-r5: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DroppedKeywordWarning: version 8.0.20140125: keywords dropped: amd64, x86
 
-x11-drivers/xf86-input-mutouch
-  MissingChksum: version 1.3.0: "xf86-input-mutouch-1.3.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-office/qchartdiary
+  DeprecatedEAPI: version 0.6.4.1-r2: uses deprecated EAPI: 2
 
-x11-drivers/xf86-input-penmount
-  MissingChksum: version 1.5.0: "xf86-input-penmount-1.5.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-office/rubrica
+  MetadataError: version 2.1.6-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: app-office/rubrica-2.1.6-r1, attr fetchables
+error: mirror://berlios/rubrica/rubrica2-2.1.6.tar.bz2 mirror://gentoo/rubrica-2.1.6-hu.po.bz2 is unparseable
+flagged token- uri mirror://berlios/rubrica/rubrica2-2.1.6.tar.bz2 isn't a known mirror tier
 
-x11-drivers/xf86-video-i128
-  MissingChksum: version 1.3.5: "xf86-video-i128-1.3.5.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-office/scribus
+  DroppedKeywordWarning: version 1.5.0-r1: keywords dropped: hppa, ppc, ppc64, sparc
 
-x11-drivers/xf86-video-intel
-  DeprecatedEAPI: version 2.9.1: uses deprecated EAPI: 0
-  DeprecatedEclass: version 2.9.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
+app-office/skrooge
+  DroppedKeywordWarning: version 2.0.0: keywords dropped: x86
 
-x11-drivers/xf86-video-newport
-  MissingChksum: version 0.2.3: "xf86-video-newport-0.2.3.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
-  MissingChksum: version 0.2.4: "xf86-video-newport-0.2.4.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-office/taskcoach
+  DeprecatedEAPI: version 1.3.18: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3.18: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.27: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3.27: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.29: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3.29: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 1.3.32: uses deprecated EAPI: 3
+  DeprecatedEclass: version 1.3.32: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
-x11-drivers/xf86-video-suncg14
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
-  DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
-  DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  MissingChksum: version 1.1.1: "xf86-video-suncg14-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+app-office/tedia2sql
+  DeprecatedEAPI: version 1.2.12: uses deprecated EAPI: 0
 
-x11-drivers/xf86-video-suncg3
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
-  DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
-  DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  MissingChksum: version 1.1.1: "xf86-video-suncg3-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-x11-drivers/xf86-video-suncg6
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
-  DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
-  DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  MissingChksum: version 1.1.1: "xf86-video-suncg6-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-x11-drivers/xf86-video-sunffb
-  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
-  DeprecatedEclass: version 1.2.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  MissingChksum: version 1.2.1: "xf86-video-sunffb-1.2.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-x11-drivers/xf86-video-sunleo
-  DeprecatedEAPI: version 1.2.0: uses deprecated EAPI: 0
-  DeprecatedEclass: version 1.2.0: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  DeprecatedEAPI: version 1.2.1: uses deprecated EAPI: 0
-  DeprecatedEclass: version 1.2.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  MissingChksum: version 1.2.0: "xf86-video-sunleo-1.2.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-x11-drivers/xf86-video-suntcx
-  DeprecatedEAPI: version 1.1.1: uses deprecated EAPI: 0
-  DeprecatedEclass: version 1.1.1: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  DeprecatedEAPI: version 1.1.2: uses deprecated EAPI: 0
-  DeprecatedEclass: version 1.1.2: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  MissingChksum: version 1.1.1: "xf86-video-suntcx-1.1.1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
-
-x11-drivers/xf86-video-v4l
-  DeprecatedEAPI: version 0.2.0: uses deprecated EAPI: 0
-  DeprecatedEclass: version 0.2.0: uses deprecated eclass(es): [ x-modular (migrate to xorg-2) ]
-  MissingChksum: version 0.2.0: "xf86-video-v4l-0.2.0.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: rmd160, sha1, sha256, size
+app-office/unoconv
+  DeprecatedEAPI: version 0.6: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.6: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 0.6.20131229: uses deprecated EAPI: 3
+  DeprecatedEclass: version 0.6.20131229: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEAPI: version 99999999: uses deprecated EAPI: 3
+  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
