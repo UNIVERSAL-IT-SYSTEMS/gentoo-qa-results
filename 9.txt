@@ -4,7 +4,7 @@
 + [[ ! -n 16 ]]
 + [[ 9 == global ]]
 + set +x
-+ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-util/*' 'x11-libs/*' 'app-emacs/*' 'app-office/*' 'net-dns/*' 'sys-boot/*' 'net-fs/*' 'app-benchmarks/*' 'net-nntp/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
++ exec pkgcheck -r gentoo --reporter FancyReporter 'dev-util/*' 'x11-libs/*' 'sys-kernel/*' 'app-office/*' 'net-dns/*' 'sys-boot/*' 'net-fs/*' 'app-benchmarks/*' 'net-nntp/*' 'gnustep-libs/*' -d imlate -d unstable_only -d cleanup -d stale_unstable -d UnusedGlobalFlags -d UnusedLicense --profile-disable-dev --profile-disable-exp
 /home/mgorny/pkgcore-venv/lib/python2.7/site-packages/pkgcheck/glsa_scan.py:99: UserWarning: disabling GLSA checks due to no glsa source being found, and the check not being explicitly enabled; this behaviour may change
   "disabling GLSA checks due to no glsa source "
 WARNING pkgcore: metadata.dtd cannot be opened from
@@ -638,59 +638,65 @@ WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
 
-app-emacs/cmail
-  DeprecatedEAPI: version 2.62-r1: uses deprecated EAPI: 0
+sys-kernel/genkernel
+  DeprecatedEAPI: version 3.4.45.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.48: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.49: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.49.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.49.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.50: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.51: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.51.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.51.2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4.51.4: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 9999: uses deprecated EAPI: 3
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 9999-r1: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DroppedKeywordWarning: version 3.4.50: keywords dropped: sh
 
-app-emacs/ddskk
-  DeprecatedEAPI: version 14.3: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 14.4: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 15.1: uses deprecated EAPI: 3
+sys-kernel/genkernel-next
+  DroppedKeywordWarning: version 60: keywords dropped: ppc, ppc64
+  DroppedKeywordWarning: version 55: keywords dropped: alpha
 
-app-emacs/emacs-wiki-blog
-  DeprecatedEAPI: version 0.5: uses deprecated EAPI: 0
+sys-kernel/kccmp
+  MissingChksum: version 0.3: "kccmp-0.3.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
-app-emacs/javascript
-  DeprecatedEAPI: version 2.0_beta8: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.2.1: uses deprecated EAPI: 0
+sys-kernel/linux-firmware
+  DeprecatedEclass: version 99999999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-emacs/navi2ch
-  DeprecatedEAPI: version 1.8.3-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 1.8.4: uses deprecated EAPI: 3
+sys-kernel/linux-headers
+  DeprecatedEAPI: version 3.1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.2-r1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.3: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4-r1: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.4-r2: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.5: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.6: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.7: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.8: uses deprecated EAPI: 3
+  DeprecatedEAPI: version 3.9: uses deprecated EAPI: 3
 
-app-emacs/prom-wl
-  DeprecatedEAPI: version 2.7.0-r1: uses deprecated EAPI: 0
+sys-kernel/raspberrypi-image
+  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-emacs/pymacs
-  DeprecatedEAPI: version 0.23-r1: uses deprecated EAPI: 3
-  DeprecatedEclass: version 0.23-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+sys-kernel/raspberrypi-sources
+  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.12.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.14.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.18.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.19.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-emacs/python-mode
-  DeprecatedEAPI: version 5.2.0: uses deprecated EAPI: 3
-
-app-emacs/rnc-mode
-  DeprecatedEAPI: version 1.0_beta3: uses deprecated EAPI: 0
-
-app-emacs/slime
-  DeprecatedEAPI: version 2.0_p20080731: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 2.0_p20080731-r1: uses deprecated EAPI: 3
-  DeprecatedEAPI: version 2.0_p20101103: uses deprecated EAPI: 3
-
-app-emacs/sumibi
-  DeprecatedEAPI: version 0.5.2: uses deprecated EAPI: 0
-
-app-emacs/tdtd
-  DeprecatedEAPI: version 0.7.1-r1: uses deprecated EAPI: 0
-
-app-emacs/twittering-mode
+sys-kernel/spl
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
-app-emacs/yasnippet
-  DeprecatedEAPI: version 0.5.10: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.6.0c: uses deprecated EAPI: 0
-  DeprecatedEAPI: version 0.6.1c: uses deprecated EAPI: 0
-
-app-emacs/yc
-  DeprecatedEAPI: version 4.0.13: uses deprecated EAPI: 3
+sys-kernel/zen-sources
+  DeprecatedEclass: version 3.8.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.9.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.10.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.11.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.12.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
+  DeprecatedEclass: version 3.13.9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 WARNING pkgcore: metadata.dtd cannot be opened from
                : /home/mgorny/repos/gentoo/metadata/dtd/metadata.dtd, will
                : refetch
