@@ -213,9 +213,9 @@ dev-libs/judy
   DeprecatedEAPI: version 1.0.5: uses deprecated EAPI: 2
 
 dev-libs/keybinder
-  DeprecatedEclass: version 0.3.0-r200: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.3.0-r200: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.3.0-r200: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.3.0-r200: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 dev-libs/klibc
   DeprecatedEAPI: version 1.5.25: uses deprecated EAPI: 0
@@ -632,8 +632,8 @@ sci-libs/gsl
 sci-libs/io_lib
   DeprecatedEAPI: version 1.10.1: uses deprecated EAPI: 0
   DeprecatedEAPI: version 1.11.2.1: uses deprecated EAPI: 0
-  DroppedKeywordWarning: version 1.12.5: keywords dropped: alpha, ia64, sparc
   MissingChksum: version 1.11.2.1: "io_lib-1.11.2.1.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
+  DroppedKeywordWarning: version 1.12.5: keywords dropped: alpha, ia64, sparc
 
 sci-libs/jama
   DeprecatedEAPI: version 1.2.5: uses deprecated EAPI: 0
@@ -664,12 +664,10 @@ sci-libs/libexcelformat
 sci-libs/libgenome
   DeprecatedEAPI: version 1.3-r1: uses deprecated EAPI: 2
   DeprecatedEAPI: version 9999: uses deprecated EAPI: 2
+  MissingChksum: version 1.3-r1: "libgenome-1.3-r1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-libs/libgeodecomp
   NoFinalNewline: version 0.3.1: ebuild lacks an ending newline
-
-sci-libs/libgenome
-  MissingChksum: version 1.3-r1: "libgenome-1.3-r1.tar.bz2" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-libs/libghemical
   DeprecatedEAPI: version 2.00: uses deprecated EAPI: 0
@@ -736,17 +734,13 @@ sci-libs/nlopt
   DeprecatedEclass: version 2.2.4: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 sci-libs/ogdi
-  DeprecatedEAPI: version 3.1.5-r1: uses deprecated EAPI: 0
   NonExistentDeps: version 3.1.5-r1: depset depends: nonexistent atoms [ <sci-libs/proj-4.8.0 ]
   NonExistentDeps: version 3.1.5-r1: depset rdepends: nonexistent atoms [ <sci-libs/proj-4.8.0 ]
-
-sci-libs/opencascade
-  BadInsIntoDir: version 6.7.1: ebuild uses insinto /etc/env.d on line 144
-
-sci-libs/ogdi
+  DeprecatedEAPI: version 3.1.5-r1: uses deprecated EAPI: 0
   MissingChksum: version 3.1.5-r1: "ogdi-3.1.5.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 sci-libs/opencascade
+  BadInsIntoDir: version 6.7.1: ebuild uses insinto /etc/env.d on line 144
   BadInsIntoDir: version 6.8.0: ebuild uses insinto /etc/env.d on line 142
   BadInsIntoDir: version 6.9.0: ebuild uses insinto /etc/env.d on line 147
 
@@ -804,8 +798,8 @@ sci-libs/umfpack
   DroppedKeywordWarning: version 5.6.2: keywords dropped: sparc
 
 sci-libs/votca-tools
-  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 3
   NonExistentDeps: version 1.2.2: depset depends: nonexistent atoms [ <app-doc/doxygen-1.7.6.1 ]
+  DeprecatedEAPI: version 1.2.2: uses deprecated EAPI: 3
   NonExistentDeps: version 1.2.4: depset depends: nonexistent atoms [ <app-doc/doxygen-1.7.6.1 ]
   MissingChksum: version 1.2.2: "votca-tools-1.2.2.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
@@ -837,9 +831,9 @@ app-leechcraft/lc-auscrie
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 app-leechcraft/lc-azoth
-  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
   NonExistentDeps: version 9999: depset depends: nonexistent atoms [ net-libs/tox ]
   NonExistentDeps: version 9999: depset rdepends: nonexistent atoms [ net-libs/tox ]
+  DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 app-leechcraft/lc-bittorrent
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
@@ -1059,14 +1053,14 @@ net-wireless/b43-fwcutter
   DeprecatedEAPI: version 018: uses deprecated EAPI: 0
 
 net-wireless/bcm43xx-fwcutter
+  DeprecatedEAPI: version 005: uses deprecated EAPI: 0
   MetadataError: version 005: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/bcm43xx-fwcutter-005, attr fetchables
 error: mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2 is unparseable: uri mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2 isn't a known mirror tier
 flagged token- mirror://berlios/bcm43xx/bcm43xx-fwcutter-005.tar.bz2
-  DeprecatedEAPI: version 005: uses deprecated EAPI: 0
+  DeprecatedEAPI: version 006: uses deprecated EAPI: 0
   MetadataError: version 006: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/bcm43xx-fwcutter-006, attr fetchables
 error: mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2 is unparseable: uri mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2 isn't a known mirror tier
 flagged token- mirror://berlios/bcm43xx/bcm43xx-fwcutter-006.tar.bz2
-  DeprecatedEAPI: version 006: uses deprecated EAPI: 0
 
 net-wireless/blueman
   DeprecatedEclass: version 1.23-r2: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -1080,14 +1074,14 @@ net-wireless/chillispot
   DeprecatedEAPI: version 1.1.0: uses deprecated EAPI: 0
 
 net-wireless/cpyrit-cuda
-  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 net-wireless/cpyrit-opencl
-  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.4.0: depset depends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.4.0: depset rdepends: nonexistent atoms [ =dev-lang/python-2.5*, =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.4.0: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 net-wireless/crda
   DeprecatedEclass: version 1.1.2-r3: uses deprecated eclass(es): [ python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
@@ -1157,10 +1151,10 @@ net-wireless/osmocom-bb
   DeprecatedEclass: version 9999: uses deprecated eclass(es): [ git-2 (migrate to git-r3) ]
 
 net-wireless/python-wifi
+  DeprecatedEAPI: version 0.5.0-r1: uses deprecated EAPI: 3
   MetadataError: version 0.5.0-r1: attr(fetchables): error- Metadata Exception: pkg ebuild src: net-wireless/python-wifi-0.5.0-r1, attr fetchables
 error: mirror://berlios/pythonwifi/python-wifi-0.5.0.tar.bz2 is unparseable
 flagged token- uri mirror://berlios/pythonwifi/python-wifi-0.5.0.tar.bz2 isn't a known mirror tier
-  DeprecatedEAPI: version 0.5.0-r1: uses deprecated EAPI: 3
   DeprecatedEclass: version 0.5.0-r1: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 net-wireless/rfswitch
@@ -1398,12 +1392,12 @@ www-servers/pound
   MissingChksum: version 2.6: "Pound-2.6.tgz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 www-servers/servefile
-  DeprecatedEclass: version 0.4.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.4.2: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.4.2: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
-  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
+  DeprecatedEclass: version 0.4.2: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
   NonExistentDeps: version 0.4.3: depset depends: nonexistent atoms [ =dev-lang/python-2.6* ]
   NonExistentDeps: version 0.4.3: depset rdepends: nonexistent atoms [ =dev-lang/python-2.6* ]
+  DeprecatedEclass: version 0.4.3: uses deprecated eclass(es): [ distutils (migrate to distutils-r1), python (migrate to python-r1 / python-single-r1 / python-any-r1) ]
 
 www-servers/skunkweb
   DeprecatedEAPI: version 3.4.4: uses deprecated EAPI: 3
@@ -1519,12 +1513,12 @@ net-nds/nsscache
   MissingChksum: version 0.8.8: "nsscache-0.8.8.tar.gz" missing required chksums: sha512, whirlpool; has chksums: sha256, size
 
 net-nds/openldap
-  DeprecatedEAPI: version 2.3.43-r3: uses deprecated EAPI: 2
   NonExistentDeps: version 2.3.43-r3: depset depends: nonexistent atoms [ <dev-lang/perl-5.16 ]
   NonExistentDeps: version 2.3.43-r3: depset rdepends: nonexistent atoms [ <dev-lang/perl-5.16 ]
-  DeprecatedEAPI: version 2.3.43-r4: uses deprecated EAPI: 2
+  DeprecatedEAPI: version 2.3.43-r3: uses deprecated EAPI: 2
   NonExistentDeps: version 2.3.43-r4: depset depends: nonexistent atoms [ <dev-lang/perl-5.16 ]
   NonExistentDeps: version 2.3.43-r4: depset rdepends: nonexistent atoms [ <dev-lang/perl-5.16 ]
+  DeprecatedEAPI: version 2.3.43-r4: uses deprecated EAPI: 2
 
 net-nds/phpldapadmin
   NonExistentDeps: version 1.2.3: depset rdepends: nonexistent atoms [ <dev-lang/php-5.3 ]
